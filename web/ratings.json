@@ -1,5 +1,5 @@
 {
- "generado": "2026-10-23T02:18:56+00:00",
+ "generado": "2026-10-23T15:42:51+00:00",
  "modelo": "Dixon-Coles con decaimiento temporal",
  "parametros": {
   "xi": 0.0019,
@@ -10,10 +10,10 @@
   "eng": {
    "nombre": "Premier League (Inglaterra)",
    "temporada": "2026-27",
-   "fuente": "openfootball",
-   "home": 1.4077,
-   "away": 1.2022,
-   "rho": -0.107,
+   "fuente": "footballdata",
+   "home": 1.4518,
+   "away": 1.2249,
+   "rho": -0.0936,
    "top": {
     "n": 4,
     "label": "Top 4 · Champions"
@@ -22,2070 +22,305 @@
     "n": 3,
     "label": "Descenso"
    },
-   "partidos_modelo": 810,
-   "ultimo_resultado": "2026-09-20",
+   "partidos_modelo": 830,
+   "ultimo_resultado": "2026-10-19",
    "equipos": [
     {
      "nombre": "Manchester City",
-     "ataque": 1.5443,
-     "defensa": 0.7295,
-     "partidos": 81,
+     "ataque": 1.526,
+     "defensa": 0.7202,
+     "partidos": 83,
      "sin_datos": false
     },
     {
      "nombre": "Arsenal",
-     "ataque": 1.3585,
-     "defensa": 0.5792,
-     "partidos": 81,
-     "sin_datos": false
-    },
-    {
-     "nombre": "Liverpool",
-     "ataque": 1.3762,
-     "defensa": 0.887,
-     "partidos": 81,
+     "ataque": 1.3261,
+     "defensa": 0.5642,
+     "partidos": 83,
      "sin_datos": false
     },
     {
      "nombre": "Brighton",
-     "ataque": 1.3085,
-     "defensa": 0.9181,
-     "partidos": 81,
+     "ataque": 1.3428,
+     "defensa": 0.8722,
+     "partidos": 83,
      "sin_datos": false
     },
     {
-     "nombre": "Brentford",
-     "ataque": 1.2341,
-     "defensa": 0.94,
-     "partidos": 81,
-     "sin_datos": false
-    },
-    {
-     "nombre": "Manchester United",
-     "ataque": 1.2386,
-     "defensa": 0.9615,
-     "partidos": 81,
+     "nombre": "Liverpool",
+     "ataque": 1.3291,
+     "defensa": 0.894,
+     "partidos": 83,
      "sin_datos": false
     },
     {
      "nombre": "Chelsea",
-     "ataque": 1.2464,
-     "defensa": 1.0022,
-     "partidos": 81,
+     "ataque": 1.2922,
+     "defensa": 0.9714,
+     "partidos": 83,
      "sin_datos": false
     },
     {
-     "nombre": "Bournemouth",
-     "ataque": 1.1583,
-     "defensa": 0.9366,
-     "partidos": 81,
+     "nombre": "Brentford",
+     "ataque": 1.209,
+     "defensa": 0.9491,
+     "partidos": 83,
      "sin_datos": false
     },
     {
-     "nombre": "Newcastle",
-     "ataque": 1.2266,
-     "defensa": 1.0135,
-     "partidos": 81,
+     "nombre": "Manchester United",
+     "ataque": 1.1899,
+     "defensa": 0.9449,
+     "partidos": 83,
      "sin_datos": false
     },
     {
      "nombre": "Aston Villa",
-     "ataque": 1.1259,
-     "defensa": 0.9562,
-     "partidos": 81,
+     "ataque": 1.1039,
+     "defensa": 0.9309,
+     "partidos": 83,
      "sin_datos": false
     },
     {
-     "nombre": "Leeds United",
-     "ataque": 1.0445,
-     "defensa": 0.8979,
-     "partidos": 43,
+     "nombre": "Bournemouth",
+     "ataque": 1.1355,
+     "defensa": 0.9682,
+     "partidos": 83,
      "sin_datos": false
     },
     {
-     "nombre": "Hull City",
-     "ataque": 0.9113,
-     "defensa": 0.7709,
-     "partidos": 5,
+     "nombre": "Leeds",
+     "ataque": 1.0175,
+     "defensa": 0.8932,
+     "partidos": 45,
+     "sin_datos": false
+    },
+    {
+     "nombre": "Newcastle",
+     "ataque": 1.1539,
+     "defensa": 1.0457,
+     "partidos": 83,
      "sin_datos": false
     },
     {
      "nombre": "Nottingham Forest",
-     "ataque": 1.0131,
-     "defensa": 0.8829,
-     "partidos": 81,
+     "ataque": 0.9726,
+     "defensa": 0.8941,
+     "partidos": 83,
      "sin_datos": false
     },
     {
      "nombre": "Everton",
-     "ataque": 0.9263,
-     "defensa": 0.8384,
-     "partidos": 81,
+     "ataque": 0.9054,
+     "defensa": 0.8585,
+     "partidos": 83,
+     "sin_datos": false
+    },
+    {
+     "nombre": "Hull",
+     "ataque": 0.8742,
+     "defensa": 0.8292,
+     "partidos": 7,
      "sin_datos": false
     },
     {
      "nombre": "Fulham",
-     "ataque": 0.9681,
-     "defensa": 0.9595,
-     "partidos": 81,
-     "sin_datos": false
-    },
-    {
-     "nombre": "Sunderland",
-     "ataque": 0.9207,
-     "defensa": 0.9596,
-     "partidos": 43,
-     "sin_datos": false
-    },
-    {
-     "nombre": "Crystal Palace",
-     "ataque": 0.9407,
-     "defensa": 1.0309,
-     "partidos": 81,
+     "ataque": 0.934,
+     "defensa": 0.9476,
+     "partidos": 83,
      "sin_datos": false
     },
     {
      "nombre": "Tottenham",
-     "ataque": 0.9788,
-     "defensa": 1.1126,
-     "partidos": 81,
+     "ataque": 0.9789,
+     "defensa": 1.0919,
+     "partidos": 83,
      "sin_datos": false
     },
     {
-     "nombre": "Ipswich Town",
-     "ataque": 0.8586,
-     "defensa": 1.4884,
-     "partidos": 43,
+     "nombre": "Sunderland",
+     "ataque": 0.8502,
+     "defensa": 0.9702,
+     "partidos": 45,
      "sin_datos": false
     },
     {
-     "nombre": "Coventry City",
-     "ataque": 0.5205,
-     "defensa": 1.1813,
-     "partidos": 5,
+     "nombre": "Crystal Palace",
+     "ataque": 0.9382,
+     "defensa": 1.0684,
+     "partidos": 83,
+     "sin_datos": false
+    },
+    {
+     "nombre": "Coventry",
+     "ataque": 0.7959,
+     "defensa": 1.2261,
+     "partidos": 7,
+     "sin_datos": false
+    },
+    {
+     "nombre": "Ipswich",
+     "ataque": 0.92,
+     "defensa": 1.4468,
+     "partidos": 45,
      "sin_datos": false
     }
    ],
    "tabla": {
     "Arsenal": {
-     "pj": 5,
-     "pts": 12,
-     "gf": 8,
-     "gc": 4
+     "pj": 7,
+     "pts": 18,
+     "gf": 11,
+     "gc": 5
     },
     "Aston Villa": {
-     "pj": 5,
-     "pts": 4,
-     "gf": 4,
-     "gc": 9
+     "pj": 7,
+     "pts": 8,
+     "gf": 7,
+     "gc": 11
     },
     "Bournemouth": {
-     "pj": 5,
-     "pts": 3,
-     "gf": 6,
-     "gc": 8
+     "pj": 7,
+     "pts": 6,
+     "gf": 9,
+     "gc": 13
     },
     "Brentford": {
-     "pj": 5,
-     "pts": 9,
-     "gf": 10,
-     "gc": 4
+     "pj": 7,
+     "pts": 10,
+     "gf": 13,
+     "gc": 8
     },
     "Brighton": {
-     "pj": 5,
-     "pts": 10,
-     "gf": 16,
+     "pj": 7,
+     "pts": 16,
+     "gf": 23,
      "gc": 5
     },
     "Chelsea": {
-     "pj": 5,
-     "pts": 7,
-     "gf": 10,
-     "gc": 12
+     "pj": 7,
+     "pts": 13,
+     "gf": 17,
+     "gc": 13
     },
-    "Coventry City": {
-     "pj": 5,
-     "pts": 3,
-     "gf": 1,
-     "gc": 10
+    "Coventry": {
+     "pj": 7,
+     "pts": 6,
+     "gf": 6,
+     "gc": 14
     },
     "Crystal Palace": {
-     "pj": 5,
-     "pts": 4,
-     "gf": 6,
-     "gc": 11
+     "pj": 7,
+     "pts": 7,
+     "gf": 9,
+     "gc": 17
     },
     "Everton": {
-     "pj": 5,
-     "pts": 9,
-     "gf": 6,
-     "gc": 3
+     "pj": 7,
+     "pts": 10,
+     "gf": 8,
+     "gc": 7
     },
     "Fulham": {
-     "pj": 5,
-     "pts": 2,
-     "gf": 5,
-     "gc": 8
-    },
-    "Hull City": {
-     "pj": 5,
-     "pts": 8,
-     "gf": 6,
-     "gc": 4
-    },
-    "Ipswich Town": {
-     "pj": 5,
-     "pts": 6,
-     "gf": 7,
-     "gc": 11
-    },
-    "Leeds United": {
-     "pj": 5,
-     "pts": 9,
-     "gf": 7,
-     "gc": 3
-    },
-    "Liverpool": {
-     "pj": 5,
-     "pts": 9,
-     "gf": 7,
-     "gc": 4
-    },
-    "Manchester City": {
-     "pj": 5,
-     "pts": 15,
-     "gf": 13,
-     "gc": 5
-    },
-    "Manchester United": {
-     "pj": 5,
+     "pj": 7,
      "pts": 5,
-     "gf": 8,
-     "gc": 8
-    },
-    "Newcastle": {
-     "pj": 5,
-     "pts": 8,
-     "gf": 9,
-     "gc": 9
-    },
-    "Nottingham Forest": {
-     "pj": 5,
-     "pts": 5,
-     "gf": 4,
-     "gc": 5
-    },
-    "Sunderland": {
-     "pj": 5,
-     "pts": 4,
-     "gf": 6,
+     "gf": 7,
      "gc": 10
     },
-    "Tottenham": {
-     "pj": 5,
-     "pts": 2,
-     "gf": 2,
+    "Hull": {
+     "pj": 7,
+     "pts": 9,
+     "gf": 8,
+     "gc": 7
+    },
+    "Ipswich": {
+     "pj": 7,
+     "pts": 9,
+     "gf": 11,
+     "gc": 15
+    },
+    "Leeds": {
+     "pj": 7,
+     "pts": 10,
+     "gf": 9,
+     "gc": 6
+    },
+    "Liverpool": {
+     "pj": 7,
+     "pts": 12,
+     "gf": 9,
      "gc": 8
+    },
+    "Manchester City": {
+     "pj": 7,
+     "pts": 21,
+     "gf": 19,
+     "gc": 7
+    },
+    "Manchester United": {
+     "pj": 7,
+     "pts": 7,
+     "gf": 10,
+     "gc": 10
+    },
+    "Newcastle": {
+     "pj": 7,
+     "pts": 8,
+     "gf": 10,
+     "gc": 14
+    },
+    "Nottingham Forest": {
+     "pj": 7,
+     "pts": 5,
+     "gf": 5,
+     "gc": 9
+    },
+    "Sunderland": {
+     "pj": 7,
+     "pts": 4,
+     "gf": 6,
+     "gc": 14
+    },
+    "Tottenham": {
+     "pj": 7,
+     "pts": 6,
+     "gf": 6,
+     "gc": 10
     }
    },
-   "restantes": [
-    [
-     "Manchester United",
-     "Tottenham"
-    ],
-    [
-     "Arsenal",
-     "Leeds United"
-    ],
-    [
-     "Sunderland",
-     "Brighton"
-    ],
-    [
-     "Chelsea",
-     "Bournemouth"
-    ],
-    [
-     "Ipswich Town",
-     "Fulham"
-    ],
-    [
-     "Aston Villa",
-     "Brentford"
-    ],
-    [
-     "Liverpool",
-     "Manchester City"
-    ],
-    [
-     "Crystal Palace",
-     "Nottingham Forest"
-    ],
-    [
-     "Hull City",
-     "Everton"
-    ],
-    [
-     "Coventry City",
-     "Newcastle"
-    ],
-    [
-     "Newcastle",
-     "Aston Villa"
-    ],
-    [
-     "Brentford",
-     "Liverpool"
-    ],
-    [
-     "Fulham",
-     "Hull City"
-    ],
-    [
-     "Everton",
-     "Chelsea"
-    ],
-    [
-     "Manchester City",
-     "Ipswich Town"
-    ],
-    [
-     "Bournemouth",
-     "Sunderland"
-    ],
-    [
-     "Leeds United",
-     "Manchester United"
-    ],
-    [
-     "Brighton",
-     "Crystal Palace"
-    ],
-    [
-     "Nottingham Forest",
-     "Arsenal"
-    ],
-    [
-     "Tottenham",
-     "Coventry City"
-    ],
-    [
-     "Ipswich Town",
-     "Nottingham Forest"
-    ],
-    [
-     "Arsenal",
-     "Everton"
-    ],
-    [
-     "Aston Villa",
-     "Manchester City"
-    ],
-    [
-     "Coventry City",
-     "Fulham"
-    ],
-    [
-     "Chelsea",
-     "Tottenham"
-    ],
-    [
-     "Liverpool",
-     "Brighton"
-    ],
-    [
-     "Crystal Palace",
-     "Newcastle"
-    ],
-    [
-     "Manchester United",
-     "Bournemouth"
-    ],
-    [
-     "Hull City",
-     "Brentford"
-    ],
-    [
-     "Sunderland",
-     "Leeds United"
-    ],
-    [
-     "Tottenham",
-     "Crystal Palace"
-    ],
-    [
-     "Brentford",
-     "Nottingham Forest"
-    ],
-    [
-     "Hull City",
-     "Ipswich Town"
-    ],
-    [
-     "Coventry City",
-     "Sunderland"
-    ],
-    [
-     "Manchester City",
-     "Brighton"
-    ],
-    [
-     "Chelsea",
-     "Manchester United"
-    ],
-    [
-     "Aston Villa",
-     "Fulham"
-    ],
-    [
-     "Bournemouth",
-     "Leeds United"
-    ],
-    [
-     "Liverpool",
-     "Arsenal"
-    ],
-    [
-     "Newcastle",
-     "Everton"
-    ],
-    [
-     "Leeds United",
-     "Tottenham"
-    ],
-    [
-     "Everton",
-     "Coventry City"
-    ],
-    [
-     "Arsenal",
-     "Hull City"
-    ],
-    [
-     "Nottingham Forest",
-     "Manchester City"
-    ],
-    [
-     "Fulham",
-     "Newcastle"
-    ],
-    [
-     "Brighton",
-     "Brentford"
-    ],
-    [
-     "Ipswich Town",
-     "Bournemouth"
-    ],
-    [
-     "Sunderland",
-     "Chelsea"
-    ],
-    [
-     "Crystal Palace",
-     "Liverpool"
-    ],
-    [
-     "Manchester United",
-     "Aston Villa"
-    ],
-    [
-     "Coventry City",
-     "Crystal Palace"
-    ],
-    [
-     "Brentford",
-     "Everton"
-    ],
-    [
-     "Tottenham",
-     "Ipswich Town"
-    ],
-    [
-     "Bournemouth",
-     "Nottingham Forest"
-    ],
-    [
-     "Liverpool",
-     "Manchester United"
-    ],
-    [
-     "Aston Villa",
-     "Sunderland"
-    ],
-    [
-     "Manchester City",
-     "Fulham"
-    ],
-    [
-     "Chelsea",
-     "Leeds United"
-    ],
-    [
-     "Hull City",
-     "Brighton"
-    ],
-    [
-     "Newcastle",
-     "Arsenal"
-    ],
-    [
-     "Manchester United",
-     "Brentford"
-    ],
-    [
-     "Arsenal",
-     "Manchester City"
-    ],
-    [
-     "Leeds United",
-     "Coventry City"
-    ],
-    [
-     "Ipswich Town",
-     "Aston Villa"
-    ],
-    [
-     "Everton",
-     "Liverpool"
-    ],
-    [
-     "Nottingham Forest",
-     "Chelsea"
-    ],
-    [
-     "Brighton",
-     "Newcastle"
-    ],
-    [
-     "Sunderland",
-     "Tottenham"
-    ],
-    [
-     "Crystal Palace",
-     "Hull City"
-    ],
-    [
-     "Fulham",
-     "Bournemouth"
-    ],
-    [
-     "Aston Villa",
-     "Everton"
-    ],
-    [
-     "Tottenham",
-     "Fulham"
-    ],
-    [
-     "Liverpool",
-     "Sunderland"
-    ],
-    [
-     "Hull City",
-     "Nottingham Forest"
-    ],
-    [
-     "Chelsea",
-     "Crystal Palace"
-    ],
-    [
-     "Bournemouth",
-     "Brighton"
-    ],
-    [
-     "Manchester City",
-     "Leeds United"
-    ],
-    [
-     "Newcastle",
-     "Manchester United"
-    ],
-    [
-     "Coventry City",
-     "Ipswich Town"
-    ],
-    [
-     "Brentford",
-     "Arsenal"
-    ],
-    [
-     "Leeds United",
-     "Ipswich Town"
-    ],
-    [
-     "Newcastle",
-     "Sunderland"
-    ],
-    [
-     "Tottenham",
-     "Arsenal"
-    ],
-    [
-     "Manchester United",
-     "Coventry City"
-    ],
-    [
-     "Chelsea",
-     "Liverpool"
-    ],
-    [
-     "Aston Villa",
-     "Crystal Palace"
-    ],
-    [
-     "Bournemouth",
-     "Hull City"
-    ],
-    [
-     "Everton",
-     "Fulham"
-    ],
-    [
-     "Brentford",
-     "Manchester City"
-    ],
-    [
-     "Nottingham Forest",
-     "Brighton"
-    ],
-    [
-     "Fulham",
-     "Brentford"
-    ],
-    [
-     "Liverpool",
-     "Leeds United"
-    ],
-    [
-     "Manchester City",
-     "Chelsea"
-    ],
-    [
-     "Arsenal",
-     "Bournemouth"
-    ],
-    [
-     "Coventry City",
-     "Aston Villa"
-    ],
-    [
-     "Brighton",
-     "Everton"
-    ],
-    [
-     "Hull City",
-     "Tottenham"
-    ],
-    [
-     "Crystal Palace",
-     "Manchester United"
-    ],
-    [
-     "Sunderland",
-     "Nottingham Forest"
-    ],
-    [
-     "Ipswich Town",
-     "Newcastle"
-    ],
-    [
-     "Brighton",
-     "Ipswich Town"
-    ],
-    [
-     "Brentford",
-     "Newcastle"
-    ],
-    [
-     "Leeds United",
-     "Fulham"
-    ],
-    [
-     "Nottingham Forest",
-     "Everton"
-    ],
-    [
-     "Manchester City",
-     "Hull City"
-    ],
-    [
-     "Bournemouth",
-     "Coventry City"
-    ],
-    [
-     "Arsenal",
-     "Manchester United"
-    ],
-    [
-     "Liverpool",
-     "Tottenham"
-    ],
-    [
-     "Chelsea",
-     "Aston Villa"
-    ],
-    [
-     "Sunderland",
-     "Crystal Palace"
-    ],
-    [
-     "Everton",
-     "Sunderland"
-    ],
-    [
-     "Aston Villa",
-     "Leeds United"
-    ],
-    [
-     "Fulham",
-     "Brighton"
-    ],
-    [
-     "Ipswich Town",
-     "Brentford"
-    ],
-    [
-     "Tottenham",
-     "Bournemouth"
-    ],
-    [
-     "Newcastle",
-     "Manchester City"
-    ],
-    [
-     "Hull City",
-     "Liverpool"
-    ],
-    [
-     "Coventry City",
-     "Chelsea"
-    ],
-    [
-     "Manchester United",
-     "Nottingham Forest"
-    ],
-    [
-     "Crystal Palace",
-     "Arsenal"
-    ],
-    [
-     "Hull City",
-     "Leeds United"
-    ],
-    [
-     "Tottenham",
-     "Brighton"
-    ],
-    [
-     "Everton",
-     "Manchester City"
-    ],
-    [
-     "Coventry City",
-     "Brentford"
-    ],
-    [
-     "Fulham",
-     "Arsenal"
-    ],
-    [
-     "Newcastle",
-     "Nottingham Forest"
-    ],
-    [
-     "Manchester United",
-     "Sunderland"
-    ],
-    [
-     "Crystal Palace",
-     "Bournemouth"
-    ],
-    [
-     "Aston Villa",
-     "Liverpool"
-    ],
-    [
-     "Ipswich Town",
-     "Chelsea"
-    ],
-    [
-     "Leeds United",
-     "Everton"
-    ],
-    [
-     "Arsenal",
-     "Ipswich Town"
-    ],
-    [
-     "Brentford",
-     "Crystal Palace"
-    ],
-    [
-     "Nottingham Forest",
-     "Fulham"
-    ],
-    [
-     "Brighton",
-     "Manchester United"
-    ],
-    [
-     "Liverpool",
-     "Coventry City"
-    ],
-    [
-     "Bournemouth",
-     "Aston Villa"
-    ],
-    [
-     "Sunderland",
-     "Hull City"
-    ],
-    [
-     "Chelsea",
-     "Newcastle"
-    ],
-    [
-     "Manchester City",
-     "Tottenham"
-    ],
-    [
-     "Sunderland",
-     "Liverpool"
-    ],
-    [
-     "Arsenal",
-     "Brentford"
-    ],
-    [
-     "Brighton",
-     "Bournemouth"
-    ],
-    [
-     "Nottingham Forest",
-     "Hull City"
-    ],
-    [
-     "Everton",
-     "Aston Villa"
-    ],
-    [
-     "Crystal Palace",
-     "Chelsea"
-    ],
-    [
-     "Fulham",
-     "Tottenham"
-    ],
-    [
-     "Leeds United",
-     "Manchester City"
-    ],
-    [
-     "Ipswich Town",
-     "Coventry City"
-    ],
-    [
-     "Manchester United",
-     "Newcastle"
-    ],
-    [
-     "Coventry City",
-     "Everton"
-    ],
-    [
-     "Tottenham",
-     "Leeds United"
-    ],
-    [
-     "Bournemouth",
-     "Ipswich Town"
-    ],
-    [
-     "Manchester City",
-     "Nottingham Forest"
-    ],
-    [
-     "Chelsea",
-     "Sunderland"
-    ],
-    [
-     "Brentford",
-     "Brighton"
-    ],
-    [
-     "Aston Villa",
-     "Manchester United"
-    ],
-    [
-     "Liverpool",
-     "Crystal Palace"
-    ],
-    [
-     "Hull City",
-     "Arsenal"
-    ],
-    [
-     "Newcastle",
-     "Fulham"
-    ],
-    [
-     "Sunderland",
-     "Coventry City"
-    ],
-    [
-     "Arsenal",
-     "Newcastle"
-    ],
-    [
-     "Leeds United",
-     "Chelsea"
-    ],
-    [
-     "Everton",
-     "Brentford"
-    ],
-    [
-     "Ipswich Town",
-     "Hull City"
-    ],
-    [
-     "Fulham",
-     "Aston Villa"
-    ],
-    [
-     "Brighton",
-     "Manchester City"
-    ],
-    [
-     "Crystal Palace",
-     "Tottenham"
-    ],
-    [
-     "Nottingham Forest",
-     "Bournemouth"
-    ],
-    [
-     "Manchester United",
-     "Liverpool"
-    ],
-    [
-     "Coventry City",
-     "Leeds United"
-    ],
-    [
-     "Tottenham",
-     "Sunderland"
-    ],
-    [
-     "Brentford",
-     "Manchester United"
-    ],
-    [
-     "Newcastle",
-     "Brighton"
-    ],
-    [
-     "Hull City",
-     "Crystal Palace"
-    ],
-    [
-     "Aston Villa",
-     "Ipswich Town"
-    ],
-    [
-     "Bournemouth",
-     "Fulham"
-    ],
-    [
-     "Liverpool",
-     "Everton"
-    ],
-    [
-     "Manchester City",
-     "Arsenal"
-    ],
-    [
-     "Chelsea",
-     "Nottingham Forest"
-    ],
-    [
-     "Ipswich Town",
-     "Tottenham"
-    ],
-    [
-     "Arsenal",
-     "Liverpool"
-    ],
-    [
-     "Brighton",
-     "Hull City"
-    ],
-    [
-     "Sunderland",
-     "Aston Villa"
-    ],
-    [
-     "Crystal Palace",
-     "Coventry City"
-    ],
-    [
-     "Everton",
-     "Newcastle"
-    ],
-    [
-     "Manchester United",
-     "Chelsea"
-    ],
-    [
-     "Fulham",
-     "Manchester City"
-    ],
-    [
-     "Nottingham Forest",
-     "Brentford"
-    ],
-    [
-     "Leeds United",
-     "Bournemouth"
-    ],
-    [
-     "Ipswich Town",
-     "Arsenal"
-    ],
-    [
-     "Manchester United",
-     "Brighton"
-    ],
-    [
-     "Tottenham",
-     "Manchester City"
-    ],
-    [
-     "Fulham",
-     "Nottingham Forest"
-    ],
-    [
-     "Newcastle",
-     "Chelsea"
-    ],
-    [
-     "Aston Villa",
-     "Bournemouth"
-    ],
-    [
-     "Hull City",
-     "Sunderland"
-    ],
-    [
-     "Coventry City",
-     "Liverpool"
-    ],
-    [
-     "Everton",
-     "Leeds United"
-    ],
-    [
-     "Crystal Palace",
-     "Brentford"
-    ],
-    [
-     "Bournemouth",
-     "Crystal Palace"
-    ],
-    [
-     "Brentford",
-     "Coventry City"
-    ],
-    [
-     "Chelsea",
-     "Ipswich Town"
-    ],
-    [
-     "Manchester City",
-     "Newcastle"
-    ],
-    [
-     "Liverpool",
-     "Hull City"
-    ],
-    [
-     "Arsenal",
-     "Fulham"
-    ],
-    [
-     "Nottingham Forest",
-     "Manchester United"
-    ],
-    [
-     "Brighton",
-     "Tottenham"
-    ],
-    [
-     "Sunderland",
-     "Everton"
-    ],
-    [
-     "Leeds United",
-     "Aston Villa"
-    ],
-    [
-     "Manchester United",
-     "Arsenal"
-    ],
-    [
-     "Ipswich Town",
-     "Brighton"
-    ],
-    [
-     "Everton",
-     "Nottingham Forest"
-    ],
-    [
-     "Crystal Palace",
-     "Sunderland"
-    ],
-    [
-     "Coventry City",
-     "Bournemouth"
-    ],
-    [
-     "Fulham",
-     "Leeds United"
-    ],
-    [
-     "Tottenham",
-     "Liverpool"
-    ],
-    [
-     "Newcastle",
-     "Brentford"
-    ],
-    [
-     "Aston Villa",
-     "Chelsea"
-    ],
-    [
-     "Hull City",
-     "Manchester City"
-    ],
-    [
-     "Manchester City",
-     "Everton"
-    ],
-    [
-     "Leeds United",
-     "Hull City"
-    ],
-    [
-     "Nottingham Forest",
-     "Newcastle"
-    ],
-    [
-     "Bournemouth",
-     "Tottenham"
-    ],
-    [
-     "Arsenal",
-     "Crystal Palace"
-    ],
-    [
-     "Liverpool",
-     "Aston Villa"
-    ],
-    [
-     "Sunderland",
-     "Manchester United"
-    ],
-    [
-     "Brighton",
-     "Fulham"
-    ],
-    [
-     "Brentford",
-     "Ipswich Town"
-    ],
-    [
-     "Chelsea",
-     "Coventry City"
-    ],
-    [
-     "Liverpool",
-     "Ipswich Town"
-    ],
-    [
-     "Leeds United",
-     "Brighton"
-    ],
-    [
-     "Tottenham",
-     "Nottingham Forest"
-    ],
-    [
-     "Crystal Palace",
-     "Fulham"
-    ],
-    [
-     "Coventry City",
-     "Manchester City"
-    ],
-    [
-     "Bournemouth",
-     "Newcastle"
-    ],
-    [
-     "Chelsea",
-     "Arsenal"
-    ],
-    [
-     "Aston Villa",
-     "Hull City"
-    ],
-    [
-     "Manchester United",
-     "Everton"
-    ],
-    [
-     "Sunderland",
-     "Brentford"
-    ],
-    [
-     "Ipswich Town",
-     "Crystal Palace"
-    ],
-    [
-     "Brentford",
-     "Bournemouth"
-    ],
-    [
-     "Manchester City",
-     "Manchester United"
-    ],
-    [
-     "Arsenal",
-     "Sunderland"
-    ],
-    [
-     "Brighton",
-     "Coventry City"
-    ],
-    [
-     "Hull City",
-     "Chelsea"
-    ],
-    [
-     "Nottingham Forest",
-     "Aston Villa"
-    ],
-    [
-     "Fulham",
-     "Liverpool"
-    ],
-    [
-     "Everton",
-     "Tottenham"
-    ],
-    [
-     "Newcastle",
-     "Leeds United"
-    ],
-    [
-     "Liverpool",
-     "Newcastle"
-    ],
-    [
-     "Sunderland",
-     "Ipswich Town"
-    ],
-    [
-     "Leeds United",
-     "Nottingham Forest"
-    ],
-    [
-     "Manchester United",
-     "Hull City"
-    ],
-    [
-     "Chelsea",
-     "Fulham"
-    ],
-    [
-     "Crystal Palace",
-     "Everton"
-    ],
-    [
-     "Coventry City",
-     "Arsenal"
-    ],
-    [
-     "Aston Villa",
-     "Brighton"
-    ],
-    [
-     "Tottenham",
-     "Brentford"
-    ],
-    [
-     "Bournemouth",
-     "Manchester City"
-    ],
-    [
-     "Brighton",
-     "Chelsea"
-    ],
-    [
-     "Fulham",
-     "Sunderland"
-    ],
-    [
-     "Brentford",
-     "Leeds United"
-    ],
-    [
-     "Nottingham Forest",
-     "Liverpool"
-    ],
-    [
-     "Hull City",
-     "Coventry City"
-    ],
-    [
-     "Arsenal",
-     "Aston Villa"
-    ],
-    [
-     "Ipswich Town",
-     "Manchester United"
-    ],
-    [
-     "Manchester City",
-     "Crystal Palace"
-    ],
-    [
-     "Newcastle",
-     "Tottenham"
-    ],
-    [
-     "Everton",
-     "Bournemouth"
-    ],
-    [
-     "Chelsea",
-     "Manchester City"
-    ],
-    [
-     "Bournemouth",
-     "Arsenal"
-    ],
-    [
-     "Tottenham",
-     "Hull City"
-    ],
-    [
-     "Manchester United",
-     "Crystal Palace"
-    ],
-    [
-     "Everton",
-     "Brighton"
-    ],
-    [
-     "Nottingham Forest",
-     "Sunderland"
-    ],
-    [
-     "Newcastle",
-     "Ipswich Town"
-    ],
-    [
-     "Aston Villa",
-     "Coventry City"
-    ],
-    [
-     "Brentford",
-     "Fulham"
-    ],
-    [
-     "Leeds United",
-     "Liverpool"
-    ],
-    [
-     "Sunderland",
-     "Newcastle"
-    ],
-    [
-     "Manchester City",
-     "Brentford"
-    ],
-    [
-     "Coventry City",
-     "Manchester United"
-    ],
-    [
-     "Hull City",
-     "Bournemouth"
-    ],
-    [
-     "Brighton",
-     "Nottingham Forest"
-    ],
-    [
-     "Liverpool",
-     "Chelsea"
-    ],
-    [
-     "Arsenal",
-     "Tottenham"
-    ],
-    [
-     "Crystal Palace",
-     "Aston Villa"
-    ],
-    [
-     "Ipswich Town",
-     "Leeds United"
-    ],
-    [
-     "Fulham",
-     "Everton"
-    ],
-    [
-     "Brentford",
-     "Aston Villa"
-    ],
-    [
-     "Manchester City",
-     "Liverpool"
-    ],
-    [
-     "Leeds United",
-     "Arsenal"
-    ],
-    [
-     "Nottingham Forest",
-     "Crystal Palace"
-    ],
-    [
-     "Fulham",
-     "Ipswich Town"
-    ],
-    [
-     "Newcastle",
-     "Coventry City"
-    ],
-    [
-     "Bournemouth",
-     "Manchester United"
-    ],
-    [
-     "Tottenham",
-     "Chelsea"
-    ],
-    [
-     "Everton",
-     "Hull City"
-    ],
-    [
-     "Brighton",
-     "Sunderland"
-    ],
-    [
-     "Hull City",
-     "Fulham"
-    ],
-    [
-     "Chelsea",
-     "Everton"
-    ],
-    [
-     "Crystal Palace",
-     "Brighton"
-    ],
-    [
-     "Aston Villa",
-     "Newcastle"
-    ],
-    [
-     "Manchester United",
-     "Leeds United"
-    ],
-    [
-     "Sunderland",
-     "Bournemouth"
-    ],
-    [
-     "Liverpool",
-     "Brentford"
-    ],
-    [
-     "Ipswich Town",
-     "Manchester City"
-    ],
-    [
-     "Arsenal",
-     "Nottingham Forest"
-    ],
-    [
-     "Coventry City",
-     "Tottenham"
-    ],
-    [
-     "Brighton",
-     "Liverpool"
-    ],
-    [
-     "Brentford",
-     "Hull City"
-    ],
-    [
-     "Leeds United",
-     "Sunderland"
-    ],
-    [
-     "Tottenham",
-     "Manchester United"
-    ],
-    [
-     "Newcastle",
-     "Crystal Palace"
-    ],
-    [
-     "Manchester City",
-     "Aston Villa"
-    ],
-    [
-     "Fulham",
-     "Coventry City"
-    ],
-    [
-     "Everton",
-     "Arsenal"
-    ],
-    [
-     "Bournemouth",
-     "Chelsea"
-    ],
-    [
-     "Nottingham Forest",
-     "Ipswich Town"
-    ],
-    [
-     "Sunderland",
-     "Manchester City"
-    ],
-    [
-     "Chelsea",
-     "Brentford"
-    ],
-    [
-     "Ipswich Town",
-     "Everton"
-    ],
-    [
-     "Arsenal",
-     "Brighton"
-    ],
-    [
-     "Liverpool",
-     "Bournemouth"
-    ],
-    [
-     "Coventry City",
-     "Nottingham Forest"
-    ],
-    [
-     "Aston Villa",
-     "Tottenham"
-    ],
-    [
-     "Hull City",
-     "Newcastle"
-    ],
-    [
-     "Manchester United",
-     "Fulham"
-    ],
-    [
-     "Crystal Palace",
-     "Leeds United"
-    ]
-   ],
-   "proximos": [
-    {
-     "fecha": "2026-10-23",
-     "local": "Ipswich Town",
-     "visitante": "Nottingham Forest",
-     "pendiente": false,
-     "lh": 1.0671,
-     "la": 1.8129,
-     "p1": 0.21,
-     "px": 0.2533,
-     "p2": 0.5367,
-     "o25": 0.5494,
-     "btts": 0.5606,
-     "marcador": "1-1",
-     "p_marcador": 0.1202
-    },
-    {
-     "fecha": "2026-10-24",
-     "local": "Arsenal",
-     "visitante": "Everton",
-     "pendiente": false,
-     "lh": 1.6034,
-     "la": 0.645,
-     "p1": 0.5943,
-     "px": 0.2698,
-     "p2": 0.1359,
-     "o25": 0.3902,
-     "btts": 0.3914,
-     "marcador": "1-0",
-     "p_marcador": 0.1576
-    },
-    {
-     "fecha": "2026-10-24",
-     "local": "Aston Villa",
-     "visitante": "Manchester City",
-     "pendiente": false,
-     "lh": 1.1563,
-     "la": 1.7752,
-     "p1": 0.2361,
-     "px": 0.2569,
-     "p2": 0.507,
-     "o25": 0.5613,
-     "btts": 0.5809,
-     "marcador": "1-1",
-     "p_marcador": 0.1212
-    },
-    {
-     "fecha": "2026-10-24",
-     "local": "Coventry City",
-     "visitante": "Fulham",
-     "pendiente": false,
-     "lh": 0.7031,
-     "la": 1.3749,
-     "p1": 0.1782,
-     "px": 0.3047,
-     "p2": 0.5171,
-     "o25": 0.3444,
-     "btts": 0.3902,
-     "marcador": "0-1",
-     "p_marcador": 0.1592
-    },
-    {
-     "fecha": "2026-10-24",
-     "local": "Chelsea",
-     "visitante": "Tottenham",
-     "pendiente": false,
-     "lh": 1.9521,
-     "la": 1.1793,
-     "p1": 0.5427,
-     "px": 0.2406,
-     "p2": 0.2167,
-     "o25": 0.6056,
-     "btts": 0.605,
-     "marcador": "1-1",
-     "p_marcador": 0.1113
-    },
-    {
-     "fecha": "2026-10-25",
-     "local": "Liverpool",
-     "visitante": "Brighton",
-     "pendiente": false,
-     "lh": 1.7786,
-     "la": 1.3953,
-     "p1": 0.4552,
-     "px": 0.2531,
-     "p2": 0.2917,
-     "o25": 0.6146,
-     "btts": 0.6363,
-     "marcador": "1-1",
-     "p_marcador": 0.1149
-    },
-    {
-     "fecha": "2026-10-25",
-     "local": "Crystal Palace",
-     "visitante": "Newcastle",
-     "pendiente": false,
-     "lh": 1.3423,
-     "la": 1.5203,
-     "p1": 0.3234,
-     "px": 0.2735,
-     "p2": 0.4032,
-     "o25": 0.5453,
-     "btts": 0.5897,
-     "marcador": "1-1",
-     "p_marcador": 0.129
-    },
-    {
-     "fecha": "2026-10-25",
-     "local": "Manchester United",
-     "visitante": "Bournemouth",
-     "pendiente": false,
-     "lh": 1.633,
-     "la": 1.3388,
-     "p1": 0.432,
-     "px": 0.2654,
-     "p2": 0.3025,
-     "o25": 0.5705,
-     "btts": 0.6057,
-     "marcador": "1-1",
-     "p_marcador": 0.1239
-    },
-    {
-     "fecha": "2026-10-25",
-     "local": "Hull City",
-     "visitante": "Brentford",
-     "pendiente": false,
-     "lh": 1.206,
-     "la": 1.1436,
-     "p1": 0.3612,
-     "px": 0.3081,
-     "p2": 0.3307,
-     "o25": 0.4171,
-     "btts": 0.4914,
-     "marcador": "1-1",
-     "p_marcador": 0.1457
-    },
-    {
-     "fecha": "2026-10-25",
-     "local": "Sunderland",
-     "visitante": "Leeds United",
-     "pendiente": false,
-     "lh": 1.1638,
-     "la": 1.205,
-     "p1": 0.3366,
-     "px": 0.3068,
-     "p2": 0.3567,
-     "o25": 0.4221,
-     "btts": 0.4956,
-     "marcador": "1-1",
-     "p_marcador": 0.1453
-    },
-    {
-     "fecha": "2026-10-31",
-     "local": "Tottenham",
-     "visitante": "Crystal Palace",
-     "pendiente": false,
-     "lh": 1.4206,
-     "la": 1.2583,
-     "p1": 0.3952,
-     "px": 0.2846,
-     "p2": 0.3202,
-     "o25": 0.5012,
-     "btts": 0.5561,
-     "marcador": "1-1",
-     "p_marcador": 0.1358
-    },
-    {
-     "fecha": "2026-10-31",
-     "local": "Brentford",
-     "visitante": "Nottingham Forest",
-     "pendiente": false,
-     "lh": 1.5338,
-     "la": 1.1449,
-     "p1": 0.4496,
-     "px": 0.2795,
-     "p2": 0.2709,
-     "o25": 0.5011,
-     "btts": 0.5476,
-     "marcador": "1-1",
-     "p_marcador": 0.1335
-    },
-    {
-     "fecha": "2026-10-31",
-     "local": "Hull City",
-     "visitante": "Ipswich Town",
-     "pendiente": false,
-     "lh": 1.9095,
-     "la": 0.7957,
-     "p1": 0.6257,
-     "px": 0.2359,
-     "p2": 0.1384,
-     "o25": 0.5076,
-     "btts": 0.4783,
-     "marcador": "2-0",
-     "p_marcador": 0.1219
-    },
-    {
-     "fecha": "2026-10-31",
-     "local": "Coventry City",
-     "visitante": "Sunderland",
-     "pendiente": false,
-     "lh": 0.7031,
-     "la": 1.3075,
-     "p1": 0.1875,
-     "px": 0.3147,
-     "p2": 0.4978,
-     "o25": 0.3262,
-     "btts": 0.3816,
-     "marcador": "0-1",
-     "p_marcador": 0.1619
-    },
-    {
-     "fecha": "2026-10-31",
-     "local": "Manchester City",
-     "visitante": "Brighton",
-     "pendiente": false,
-     "lh": 1.9958,
-     "la": 1.1476,
-     "p1": 0.5596,
-     "px": 0.2363,
-     "p2": 0.2041,
-     "o25": 0.6082,
-     "btts": 0.6004,
-     "marcador": "1-1",
-     "p_marcador": 0.1094
-    },
-    {
-     "fecha": "2026-10-31",
-     "local": "Chelsea",
-     "visitante": "Manchester United",
-     "pendiente": false,
-     "lh": 1.6869,
-     "la": 1.4923,
-     "p1": 0.4134,
-     "px": 0.2564,
-     "p2": 0.3302,
-     "o25": 0.6157,
-     "btts": 0.6429,
-     "marcador": "1-1",
-     "p_marcador": 0.116
-    },
-    {
-     "fecha": "2026-10-31",
-     "local": "Aston Villa",
-     "visitante": "Fulham",
-     "pendiente": false,
-     "lh": 1.5208,
-     "la": 1.1129,
-     "p1": 0.4536,
-     "px": 0.2816,
-     "p2": 0.2648,
-     "o25": 0.49,
-     "btts": 0.5377,
-     "marcador": "1-1",
-     "p_marcador": 0.1345
-    },
-    {
-     "fecha": "2026-10-31",
-     "local": "Bournemouth",
-     "visitante": "Leeds United",
-     "pendiente": false,
-     "lh": 1.4641,
-     "la": 1.1761,
-     "p1": 0.4245,
-     "px": 0.2847,
-     "p2": 0.2909,
-     "o25": 0.4916,
-     "btts": 0.5447,
-     "marcador": "1-1",
-     "p_marcador": 0.136
-    },
-    {
-     "fecha": "2026-11-01",
-     "local": "Liverpool",
-     "visitante": "Arsenal",
-     "pendiente": false,
-     "lh": 1.1221,
-     "la": 1.4486,
-     "p1": 0.2795,
-     "px": 0.288,
-     "p2": 0.4325,
-     "o25": 0.4742,
-     "btts": 0.5293,
-     "marcador": "1-1",
-     "p_marcador": 0.1376
-    },
-    {
-     "fecha": "2026-11-02",
-     "local": "Newcastle",
-     "visitante": "Everton",
-     "pendiente": false,
-     "lh": 1.4478,
-     "la": 1.1286,
-     "p1": 0.4308,
-     "px": 0.2879,
-     "p2": 0.2813,
-     "o25": 0.4756,
-     "btts": 0.5308,
-     "marcador": "1-1",
-     "p_marcador": 0.1376
-    },
-    {
-     "fecha": "2026-11-07",
-     "local": "Leeds United",
-     "visitante": "Tottenham",
-     "pendiente": false,
-     "lh": 1.636,
-     "la": 1.0566,
-     "p1": 0.4962,
-     "px": 0.2712,
-     "p2": 0.2326,
-     "o25": 0.5046,
-     "btts": 0.5378,
-     "marcador": "1-1",
-     "p_marcador": 0.1296
-    },
-    {
-     "fecha": "2026-11-07",
-     "local": "Everton",
-     "visitante": "Coventry City",
-     "pendiente": false,
-     "lh": 1.5404,
-     "la": 0.5247,
-     "p1": 0.6129,
-     "px": 0.2739,
-     "p2": 0.1132,
-     "o25": 0.3409,
-     "btts": 0.3317,
-     "marcador": "1-0",
-     "p_marcador": 0.1844
-    },
-    {
-     "fecha": "2026-11-07",
-     "local": "Arsenal",
-     "visitante": "Hull City",
-     "pendiente": false,
-     "lh": 1.4742,
-     "la": 0.6346,
-     "p1": 0.5636,
-     "px": 0.2887,
-     "p2": 0.1476,
-     "o25": 0.3527,
-     "btts": 0.3744,
-     "marcador": "1-0",
-     "p_marcador": 0.1668
-    },
-    {
-     "fecha": "2026-11-07",
-     "local": "Nottingham Forest",
-     "visitante": "Manchester City",
-     "pendiente": false,
-     "lh": 1.0404,
-     "la": 1.6391,
-     "p1": 0.2281,
-     "px": 0.271,
-     "p2": 0.5008,
-     "o25": 0.5013,
-     "btts": 0.5337,
-     "marcador": "1-1",
-     "p_marcador": 0.1295
-    },
-    {
-     "fecha": "2026-11-07",
-     "local": "Fulham",
-     "visitante": "Newcastle",
-     "pendiente": false,
-     "lh": 1.3813,
-     "la": 1.4149,
-     "p1": 0.3531,
-     "px": 0.2785,
-     "p2": 0.3684,
-     "o25": 0.5296,
-     "btts": 0.5796,
-     "marcador": "1-1",
-     "p_marcador": 0.1321
-    },
-    {
-     "fecha": "2026-11-07",
-     "local": "Brighton",
-     "visitante": "Brentford",
-     "pendiente": false,
-     "lh": 1.7316,
-     "la": 1.3621,
-     "p1": 0.451,
-     "px": 0.2574,
-     "p2": 0.2916,
-     "o25": 0.5975,
-     "btts": 0.6236,
-     "marcador": "1-1",
-     "p_marcador": 0.1184
-    },
-    {
-     "fecha": "2026-11-07",
-     "local": "Ipswich Town",
-     "visitante": "Bournemouth",
-     "pendiente": false,
-     "lh": 1.1321,
-     "la": 2.0726,
-     "p1": 0.1912,
-     "px": 0.2289,
-     "p2": 0.5799,
-     "o25": 0.6211,
-     "btts": 0.6025,
-     "marcador": "1-1",
-     "p_marcador": 0.1054
-    },
-    {
-     "fecha": "2026-11-07",
-     "local": "Sunderland",
-     "visitante": "Chelsea",
-     "pendiente": false,
-     "lh": 1.299,
-     "la": 1.4378,
-     "p1": 0.3275,
-     "px": 0.2813,
-     "p2": 0.3911,
-     "o25": 0.5153,
-     "btts": 0.5675,
-     "marcador": "1-1",
-     "p_marcador": 0.1339
-    },
-    {
-     "fecha": "2026-11-07",
-     "local": "Crystal Palace",
-     "visitante": "Liverpool",
-     "pendiente": false,
-     "lh": 1.1746,
-     "la": 1.7056,
-     "p1": 0.2508,
-     "px": 0.2632,
-     "p2": 0.486,
-     "o25": 0.5495,
-     "btts": 0.5776,
-     "marcador": "1-1",
-     "p_marcador": 0.1245
-    },
-    {
-     "fecha": "2026-11-07",
-     "local": "Manchester United",
-     "visitante": "Aston Villa",
-     "pendiente": false,
-     "lh": 1.6671,
-     "la": 1.3014,
-     "p1": 0.4484,
-     "px": 0.2639,
-     "p2": 0.2877,
-     "o25": 0.5697,
-     "btts": 0.6024,
-     "marcador": "1-1",
-     "p_marcador": 0.1234
-    }
-   ],
+   "restantes": [],
+   "proximos": [],
    "validacion": {
-    "partidos": 385,
-    "desde": "2025-09-20",
-    "hasta": "2026-09-20",
+    "partidos": 368,
+    "desde": "2025-10-19",
+    "hasta": "2026-10-19",
     "mercados": {
      "1X2": {
-      "modelo": 0.6250675211036317,
-      "base": 0.6625705212991249,
-      "logloss_modelo": 1.0409300238691863,
-      "logloss_base": 1.0934174402189853,
-      "mejora": 0.05660227702548504
+      "modelo": 0.6246445639710881,
+      "base": 0.6632655207857723,
+      "logloss_modelo": 1.039539001767941,
+      "logloss_base": 1.0943978581131182,
+      "mejora": 0.05822850065978069,
+      "mercado": 0.5999097411927757
      },
      "Más de 2.5": {
-      "modelo": 0.25647159537466746,
-      "base": 0.24713614727534303,
-      "mejora": -0.037774514987981345
+      "modelo": 0.25640037448792463,
+      "base": 0.24704166090524252,
+      "mejora": -0.03788313901545459
      },
      "Ambos anotan": {
-      "modelo": 0.2470609187309377,
-      "base": 0.2446177262299126,
-      "mejora": -0.009987798262537817
+      "modelo": 0.248880771060964,
+      "base": 0.245824170042881,
+      "mejora": -0.012434094733442258
      }
     },
-    "acierto_1x2": 0.4675324675324675
+    "acierto_1x2": 0.4673913043478261,
+    "apuestas_simuladas": {
+     "umbral_ve": 0.05,
+     "apuestas": 150,
+     "roi": -0.23306666666666667,
+     "nota": "Apuesta plana de 1 unidad al resultado 1X2 con mayor VE si supera el umbral, a cuota de cierre."
+    }
    },
    "apifootball_id": 39,
    "alias": {
@@ -2102,10 +337,10 @@
   "esp": {
    "nombre": "LaLiga (España)",
    "temporada": "2026-27",
-   "fuente": "openfootball",
-   "home": 1.4903,
-   "away": 1.1074,
-   "rho": -0.0026,
+   "fuente": "footballdata",
+   "home": 1.5037,
+   "away": 1.1208,
+   "rho": -0.0362,
    "top": {
     "n": 4,
     "label": "Top 4 · Champions"
@@ -2114,1994 +349,305 @@
     "n": 3,
     "label": "Descenso"
    },
-   "partidos_modelo": 819,
-   "ultimo_resultado": "2026-09-20",
+   "partidos_modelo": 849,
+   "ultimo_resultado": "2026-10-21",
    "equipos": [
     {
      "nombre": "Barcelona",
-     "ataque": 2.147,
-     "defensa": 0.7437,
-     "partidos": 82,
+     "ataque": 2.2089,
+     "defensa": 0.7326,
+     "partidos": 85,
      "sin_datos": false
     },
     {
      "nombre": "Real Madrid",
-     "ataque": 1.6519,
-     "defensa": 0.7359,
-     "partidos": 82,
+     "ataque": 1.6334,
+     "defensa": 0.7054,
+     "partidos": 85,
      "sin_datos": false
     },
     {
      "nombre": "Atlético de Madrid",
-     "ataque": 1.38,
-     "defensa": 0.7811,
-     "partidos": 82,
+     "ataque": 1.3815,
+     "defensa": 0.7465,
+     "partidos": 85,
      "sin_datos": false
     },
     {
      "nombre": "Villarreal",
-     "ataque": 1.4602,
-     "defensa": 0.9557,
-     "partidos": 82,
+     "ataque": 1.3921,
+     "defensa": 0.9101,
+     "partidos": 85,
      "sin_datos": false
     },
     {
      "nombre": "Real Betis",
-     "ataque": 1.2167,
-     "defensa": 0.882,
-     "partidos": 82,
+     "ataque": 1.279,
+     "defensa": 0.933,
+     "partidos": 85,
      "sin_datos": false
     },
     {
      "nombre": "Celta de Vigo",
-     "ataque": 1.0954,
-     "defensa": 0.9191,
-     "partidos": 82,
+     "ataque": 1.0801,
+     "defensa": 0.8876,
+     "partidos": 85,
      "sin_datos": false
     },
     {
      "nombre": "Athletic Club",
-     "ataque": 0.9883,
-     "defensa": 0.858,
-     "partidos": 81,
-     "sin_datos": false
-    },
-    {
-     "nombre": "Deportivo La Coruña",
-     "ataque": 1.0289,
-     "defensa": 0.9823,
-     "partidos": 7,
+     "ataque": 0.9577,
+     "defensa": 0.8617,
+     "partidos": 84,
      "sin_datos": false
     },
     {
      "nombre": "Real Sociedad",
-     "ataque": 1.1118,
-     "defensa": 1.0901,
-     "partidos": 82,
+     "ataque": 1.1887,
+     "defensa": 1.1066,
+     "partidos": 85,
      "sin_datos": false
     },
     {
      "nombre": "Rayo Vallecano",
-     "ataque": 0.9457,
-     "defensa": 0.9245,
-     "partidos": 82,
+     "ataque": 0.9389,
+     "defensa": 0.9105,
+     "partidos": 84,
      "sin_datos": false
     },
     {
      "nombre": "Alavés",
-     "ataque": 0.9542,
-     "defensa": 0.943,
-     "partidos": 82,
-     "sin_datos": false
-    },
-    {
-     "nombre": "Sevilla",
-     "ataque": 0.9706,
-     "defensa": 1.0239,
-     "partidos": 82,
-     "sin_datos": false
-    },
-    {
-     "nombre": "Getafe",
-     "ataque": 0.6581,
-     "defensa": 0.7165,
-     "partidos": 82,
-     "sin_datos": false
-    },
-    {
-     "nombre": "Elche",
-     "ataque": 1.0981,
-     "defensa": 1.1567,
-     "partidos": 45,
-     "sin_datos": false
-    },
-    {
-     "nombre": "Espanyol",
-     "ataque": 0.9203,
-     "defensa": 0.9995,
-     "partidos": 82,
-     "sin_datos": false
-    },
-    {
-     "nombre": "Osasuna",
-     "ataque": 0.9385,
-     "defensa": 1.0195,
-     "partidos": 82,
+     "ataque": 0.9489,
+     "defensa": 0.9511,
+     "partidos": 85,
      "sin_datos": false
     },
     {
      "nombre": "Levante",
-     "ataque": 1.0472,
-     "defensa": 1.1324,
-     "partidos": 44,
+     "ataque": 1.109,
+     "defensa": 1.1396,
+     "partidos": 47,
+     "sin_datos": false
+    },
+    {
+     "nombre": "Elche",
+     "ataque": 1.0342,
+     "defensa": 1.0716,
+     "partidos": 47,
+     "sin_datos": false
+    },
+    {
+     "nombre": "Deportivo La Coruña",
+     "ataque": 1.0027,
+     "defensa": 1.0473,
+     "partidos": 9,
+     "sin_datos": false
+    },
+    {
+     "nombre": "Sevilla",
+     "ataque": 1.0124,
+     "defensa": 1.0645,
+     "partidos": 85,
+     "sin_datos": false
+    },
+    {
+     "nombre": "Espanyol",
+     "ataque": 0.8972,
+     "defensa": 0.972,
+     "partidos": 85,
+     "sin_datos": false
+    },
+    {
+     "nombre": "Getafe",
+     "ataque": 0.6436,
+     "defensa": 0.7269,
+     "partidos": 85,
+     "sin_datos": false
+    },
+    {
+     "nombre": "Osasuna",
+     "ataque": 0.9479,
+     "defensa": 1.0345,
+     "partidos": 85,
      "sin_datos": false
     },
     {
      "nombre": "Valencia",
-     "ataque": 0.918,
-     "defensa": 1.0333,
-     "partidos": 82,
-     "sin_datos": false
-    },
-    {
-     "nombre": "Málaga",
-     "ataque": 0.5586,
-     "defensa": 1.0989,
-     "partidos": 7,
+     "ataque": 0.8951,
+     "defensa": 0.9994,
+     "partidos": 85,
      "sin_datos": false
     },
     {
      "nombre": "Racing de Santander",
-     "ataque": 1.2082,
-     "defensa": 1.7704,
-     "partidos": 7,
+     "ataque": 1.1196,
+     "defensa": 1.7435,
+     "partidos": 9,
+     "sin_datos": false
+    },
+    {
+     "nombre": "Málaga",
+     "ataque": 0.6439,
+     "defensa": 1.3289,
+     "partidos": 9,
      "sin_datos": false
     }
    ],
    "tabla": {
     "Alavés": {
-     "pj": 7,
+     "pj": 9,
      "pts": 11,
-     "gf": 11,
-     "gc": 6
+     "gf": 13,
+     "gc": 10
     },
     "Athletic Club": {
-     "pj": 6,
-     "pts": 8,
-     "gf": 7,
-     "gc": 6
+     "pj": 8,
+     "pts": 9,
+     "gf": 8,
+     "gc": 9
     },
     "Atlético de Madrid": {
-     "pj": 7,
-     "pts": 16,
-     "gf": 16,
-     "gc": 7
-    },
-    "Barcelona": {
-     "pj": 7,
-     "pts": 21,
-     "gf": 31,
-     "gc": 7
-    },
-    "Celta de Vigo": {
-     "pj": 7,
-     "pts": 7,
-     "gf": 8,
-     "gc": 6
-    },
-    "Deportivo La Coruña": {
-     "pj": 7,
-     "pts": 10,
-     "gf": 10,
+     "pj": 9,
+     "pts": 22,
+     "gf": 19,
      "gc": 8
     },
+    "Barcelona": {
+     "pj": 9,
+     "pts": 27,
+     "gf": 39,
+     "gc": 9
+    },
+    "Celta de Vigo": {
+     "pj": 9,
+     "pts": 11,
+     "gf": 10,
+     "gc": 7
+    },
+    "Deportivo La Coruña": {
+     "pj": 9,
+     "pts": 11,
+     "gf": 13,
+     "gc": 12
+    },
     "Elche": {
-     "pj": 7,
-     "pts": 5,
+     "pj": 9,
+     "pts": 7,
      "gf": 11,
      "gc": 17
     },
     "Espanyol": {
-     "pj": 7,
-     "pts": 7,
-     "gf": 10,
-     "gc": 10
+     "pj": 9,
+     "pts": 8,
+     "gf": 11,
+     "gc": 12
     },
     "Getafe": {
-     "pj": 7,
-     "pts": 8,
-     "gf": 4,
-     "gc": 7
+     "pj": 9,
+     "pts": 9,
+     "gf": 5,
+     "gc": 11
     },
     "Levante": {
-     "pj": 6,
-     "pts": 5,
-     "gf": 8,
-     "gc": 12
+     "pj": 9,
+     "pts": 10,
+     "gf": 15,
+     "gc": 17
     },
     "Málaga": {
-     "pj": 7,
-     "pts": 3,
-     "gf": 3,
-     "gc": 12
+     "pj": 9,
+     "pts": 4,
+     "gf": 6,
+     "gc": 18
     },
     "Osasuna": {
-     "pj": 7,
-     "pts": 8,
-     "gf": 6,
-     "gc": 13
+     "pj": 9,
+     "pts": 11,
+     "gf": 10,
+     "gc": 18
     },
     "Racing de Santander": {
-     "pj": 7,
-     "pts": 7,
-     "gf": 11,
-     "gc": 21
-    },
-    "Rayo Vallecano": {
-     "pj": 7,
-     "pts": 8,
-     "gf": 11,
-     "gc": 16
-    },
-    "Real Betis": {
-     "pj": 7,
-     "pts": 16,
-     "gf": 9,
-     "gc": 7
-    },
-    "Real Madrid": {
-     "pj": 7,
-     "pts": 15,
-     "gf": 18,
-     "gc": 8
-    },
-    "Real Sociedad": {
-     "pj": 7,
-     "pts": 10,
-     "gf": 9,
-     "gc": 13
-    },
-    "Sevilla": {
-     "pj": 7,
-     "pts": 13,
-     "gf": 10,
-     "gc": 9
-    },
-    "Valencia": {
-     "pj": 7,
-     "pts": 4,
-     "gf": 4,
-     "gc": 13
-    },
-    "Villarreal": {
-     "pj": 7,
+     "pj": 9,
      "pts": 8,
      "gf": 13,
-     "gc": 12
+     "gc": 25
+    },
+    "Rayo Vallecano": {
+     "pj": 8,
+     "pts": 9,
+     "gf": 12,
+     "gc": 17
+    },
+    "Real Betis": {
+     "pj": 9,
+     "pts": 19,
+     "gf": 16,
+     "gc": 14
+    },
+    "Real Madrid": {
+     "pj": 9,
+     "pts": 21,
+     "gf": 23,
+     "gc": 9
+    },
+    "Real Sociedad": {
+     "pj": 9,
+     "pts": 16,
+     "gf": 17,
+     "gc": 17
+    },
+    "Sevilla": {
+     "pj": 9,
+     "pts": 14,
+     "gf": 14,
+     "gc": 16
+    },
+    "Valencia": {
+     "pj": 9,
+     "pts": 6,
+     "gf": 6,
+     "gc": 15
+    },
+    "Villarreal": {
+     "pj": 9,
+     "pts": 9,
+     "gf": 13,
+     "gc": 13
     }
    },
-   "restantes": [
-    [
-     "Málaga",
-     "Espanyol"
-    ],
-    [
-     "Rayo Vallecano",
-     "Athletic Club"
-    ],
-    [
-     "Alavés",
-     "Atlético de Madrid"
-    ],
-    [
-     "Barcelona",
-     "Getafe"
-    ],
-    [
-     "Real Madrid",
-     "Villarreal"
-    ],
-    [
-     "Racing de Santander",
-     "Valencia"
-    ],
-    [
-     "Real Betis",
-     "Osasuna"
-    ],
-    [
-     "Real Sociedad",
-     "Deportivo La Coruña"
-    ],
-    [
-     "Elche",
-     "Celta de Vigo"
-    ],
-    [
-     "Levante",
-     "Sevilla"
-    ],
-    [
-     "Deportivo La Coruña",
-     "Levante"
-    ],
-    [
-     "Espanyol",
-     "Atlético de Madrid"
-    ],
-    [
-     "Villarreal",
-     "Elche"
-    ],
-    [
-     "Real Betis",
-     "Barcelona"
-    ],
-    [
-     "Valencia",
-     "Athletic Club"
-    ],
-    [
-     "Real Madrid",
-     "Sevilla"
-    ],
-    [
-     "Málaga",
-     "Real Sociedad"
-    ],
-    [
-     "Osasuna",
-     "Racing de Santander"
-    ],
-    [
-     "Celta de Vigo",
-     "Alavés"
-    ],
-    [
-     "Getafe",
-     "Rayo Vallecano"
-    ],
-    [
-     "Levante",
-     "Athletic Club"
-    ],
-    [
-     "Barcelona",
-     "Real Madrid"
-    ],
-    [
-     "Celta de Vigo",
-     "Real Betis"
-    ],
-    [
-     "Atlético de Madrid",
-     "Deportivo La Coruña"
-    ],
-    [
-     "Racing de Santander",
-     "Espanyol"
-    ],
-    [
-     "Real Sociedad",
-     "Levante"
-    ],
-    [
-     "Valencia",
-     "Villarreal"
-    ],
-    [
-     "Sevilla",
-     "Osasuna"
-    ],
-    [
-     "Athletic Club",
-     "Getafe"
-    ],
-    [
-     "Alavés",
-     "Málaga"
-    ],
-    [
-     "Rayo Vallecano",
-     "Elche"
-    ],
-    [
-     "Villarreal",
-     "Espanyol"
-    ],
-    [
-     "Elche",
-     "Valencia"
-    ],
-    [
-     "Real Betis",
-     "Málaga"
-    ],
-    [
-     "Levante",
-     "Atlético de Madrid"
-    ],
-    [
-     "Athletic Club",
-     "Real Sociedad"
-    ],
-    [
-     "Barcelona",
-     "Alavés"
-    ],
-    [
-     "Rayo Vallecano",
-     "Celta de Vigo"
-    ],
-    [
-     "Racing de Santander",
-     "Real Madrid"
-    ],
-    [
-     "Deportivo La Coruña",
-     "Osasuna"
-    ],
-    [
-     "Getafe",
-     "Sevilla"
-    ],
-    [
-     "Villarreal",
-     "Getafe"
-    ],
-    [
-     "Atlético de Madrid",
-     "Barcelona"
-    ],
-    [
-     "Espanyol",
-     "Deportivo La Coruña"
-    ],
-    [
-     "Málaga",
-     "Racing de Santander"
-    ],
-    [
-     "Valencia",
-     "Real Madrid"
-    ],
-    [
-     "Sevilla",
-     "Alavés"
-    ],
-    [
-     "Osasuna",
-     "Athletic Club"
-    ],
-    [
-     "Elche",
-     "Real Betis"
-    ],
-    [
-     "Celta de Vigo",
-     "Levante"
-    ],
-    [
-     "Real Sociedad",
-     "Rayo Vallecano"
-    ],
-    [
-     "Levante",
-     "Elche"
-    ],
-    [
-     "Getafe",
-     "Atlético de Madrid"
-    ],
-    [
-     "Sevilla",
-     "Real Betis"
-    ],
-    [
-     "Alavés",
-     "Deportivo La Coruña"
-    ],
-    [
-     "Real Madrid",
-     "Celta de Vigo"
-    ],
-    [
-     "Rayo Vallecano",
-     "Valencia"
-    ],
-    [
-     "Barcelona",
-     "Villarreal"
-    ],
-    [
-     "Athletic Club",
-     "Espanyol"
-    ],
-    [
-     "Osasuna",
-     "Málaga"
-    ],
-    [
-     "Racing de Santander",
-     "Real Sociedad"
-    ],
-    [
-     "Real Madrid",
-     "Alavés"
-    ],
-    [
-     "Elche",
-     "Atlético de Madrid"
-    ],
-    [
-     "Real Betis",
-     "Rayo Vallecano"
-    ],
-    [
-     "Valencia",
-     "Osasuna"
-    ],
-    [
-     "Celta de Vigo",
-     "Villarreal"
-    ],
-    [
-     "Espanyol",
-     "Getafe"
-    ],
-    [
-     "Málaga",
-     "Athletic Club"
-    ],
-    [
-     "Real Sociedad",
-     "Sevilla"
-    ],
-    [
-     "Levante",
-     "Racing de Santander"
-    ],
-    [
-     "Deportivo La Coruña",
-     "Barcelona"
-    ],
-    [
-     "Sevilla",
-     "Málaga"
-    ],
-    [
-     "Racing de Santander",
-     "Deportivo La Coruña"
-    ],
-    [
-     "Osasuna",
-     "Elche"
-    ],
-    [
-     "Atlético de Madrid",
-     "Real Betis"
-    ],
-    [
-     "Alavés",
-     "Espanyol"
-    ],
-    [
-     "Getafe",
-     "Valencia"
-    ],
-    [
-     "Rayo Vallecano",
-     "Levante"
-    ],
-    [
-     "Villarreal",
-     "Real Sociedad"
-    ],
-    [
-     "Barcelona",
-     "Celta de Vigo"
-    ],
-    [
-     "Athletic Club",
-     "Real Madrid"
-    ],
-    [
-     "Villarreal",
-     "Rayo Vallecano"
-    ],
-    [
-     "Atlético de Madrid",
-     "Valencia"
-    ],
-    [
-     "Real Sociedad",
-     "Getafe"
-    ],
-    [
-     "Real Betis",
-     "Racing de Santander"
-    ],
-    [
-     "Elche",
-     "Sevilla"
-    ],
-    [
-     "Espanyol",
-     "Celta de Vigo"
-    ],
-    [
-     "Deportivo La Coruña",
-     "Athletic Club"
-    ],
-    [
-     "Real Madrid",
-     "Osasuna"
-    ],
-    [
-     "Málaga",
-     "Barcelona"
-    ],
-    [
-     "Levante",
-     "Alavés"
-    ],
-    [
-     "Valencia",
-     "Espanyol"
-    ],
-    [
-     "Athletic Club",
-     "Real Betis"
-    ],
-    [
-     "Getafe",
-     "Levante"
-    ],
-    [
-     "Alavés",
-     "Elche"
-    ],
-    [
-     "Osasuna",
-     "Villarreal"
-    ],
-    [
-     "Barcelona",
-     "Real Sociedad"
-    ],
-    [
-     "Rayo Vallecano",
-     "Málaga"
-    ],
-    [
-     "Deportivo La Coruña",
-     "Real Madrid"
-    ],
-    [
-     "Sevilla",
-     "Racing de Santander"
-    ],
-    [
-     "Celta de Vigo",
-     "Atlético de Madrid"
-    ],
-    [
-     "Málaga",
-     "Elche"
-    ],
-    [
-     "Real Madrid",
-     "Getafe"
-    ],
-    [
-     "Real Sociedad",
-     "Osasuna"
-    ],
-    [
-     "Levante",
-     "Valencia"
-    ],
-    [
-     "Racing de Santander",
-     "Athletic Club"
-    ],
-    [
-     "Real Betis",
-     "Alavés"
-    ],
-    [
-     "Celta de Vigo",
-     "Deportivo La Coruña"
-    ],
-    [
-     "Espanyol",
-     "Barcelona"
-    ],
-    [
-     "Villarreal",
-     "Sevilla"
-    ],
-    [
-     "Rayo Vallecano",
-     "Atlético de Madrid"
-    ],
-    [
-     "Deportivo La Coruña",
-     "Rayo Vallecano"
-    ],
-    [
-     "Athletic Club",
-     "Villarreal"
-    ],
-    [
-     "Elche",
-     "Getafe"
-    ],
-    [
-     "Real Madrid",
-     "Levante"
-    ],
-    [
-     "Osasuna",
-     "Barcelona"
-    ],
-    [
-     "Atlético de Madrid",
-     "Racing de Santander"
-    ],
-    [
-     "Sevilla",
-     "Celta de Vigo"
-    ],
-    [
-     "Valencia",
-     "Málaga"
-    ],
-    [
-     "Alavés",
-     "Real Sociedad"
-    ],
-    [
-     "Espanyol",
-     "Real Betis"
-    ],
-    [
-     "Getafe",
-     "Athletic Club"
-    ],
-    [
-     "Real Betis",
-     "Deportivo La Coruña"
-    ],
-    [
-     "Rayo Vallecano",
-     "Sevilla"
-    ],
-    [
-     "Celta de Vigo",
-     "Valencia"
-    ],
-    [
-     "Racing de Santander",
-     "Osasuna"
-    ],
-    [
-     "Málaga",
-     "Real Madrid"
-    ],
-    [
-     "Levante",
-     "Espanyol"
-    ],
-    [
-     "Villarreal",
-     "Alavés"
-    ],
-    [
-     "Barcelona",
-     "Elche"
-    ],
-    [
-     "Atlético de Madrid",
-     "Real Sociedad"
-    ],
-    [
-     "Alavés",
-     "Barcelona"
-    ],
-    [
-     "Valencia",
-     "Sevilla"
-    ],
-    [
-     "Real Madrid",
-     "Real Betis"
-    ],
-    [
-     "Getafe",
-     "Osasuna"
-    ],
-    [
-     "Elche",
-     "Rayo Vallecano"
-    ],
-    [
-     "Real Sociedad",
-     "Málaga"
-    ],
-    [
-     "Athletic Club",
-     "Levante"
-    ],
-    [
-     "Espanyol",
-     "Villarreal"
-    ],
-    [
-     "Deportivo La Coruña",
-     "Atlético de Madrid"
-    ],
-    [
-     "Racing de Santander",
-     "Celta de Vigo"
-    ],
-    [
-     "Celta de Vigo",
-     "Getafe"
-    ],
-    [
-     "Real Betis",
-     "Elche"
-    ],
-    [
-     "Rayo Vallecano",
-     "Real Madrid"
-    ],
-    [
-     "Atlético de Madrid",
-     "Espanyol"
-    ],
-    [
-     "Villarreal",
-     "Racing de Santander"
-    ],
-    [
-     "Levante",
-     "Real Sociedad"
-    ],
-    [
-     "Sevilla",
-     "Athletic Club"
-    ],
-    [
-     "Osasuna",
-     "Deportivo La Coruña"
-    ],
-    [
-     "Málaga",
-     "Alavés"
-    ],
-    [
-     "Barcelona",
-     "Valencia"
-    ],
-    [
-     "Real Betis",
-     "Sevilla"
-    ],
-    [
-     "Elche",
-     "Levante"
-    ],
-    [
-     "Athletic Club",
-     "Osasuna"
-    ],
-    [
-     "Alavés",
-     "Celta de Vigo"
-    ],
-    [
-     "Espanyol",
-     "Rayo Vallecano"
-    ],
-    [
-     "Getafe",
-     "Villarreal"
-    ],
-    [
-     "Deportivo La Coruña",
-     "Málaga"
-    ],
-    [
-     "Real Sociedad",
-     "Real Madrid"
-    ],
-    [
-     "Valencia",
-     "Racing de Santander"
-    ],
-    [
-     "Barcelona",
-     "Atlético de Madrid"
-    ],
-    [
-     "Sevilla",
-     "Espanyol"
-    ],
-    [
-     "Osasuna",
-     "Atlético de Madrid"
-    ],
-    [
-     "Real Sociedad",
-     "Real Betis"
-    ],
-    [
-     "Celta de Vigo",
-     "Rayo Vallecano"
-    ],
-    [
-     "Villarreal",
-     "Barcelona"
-    ],
-    [
-     "Elche",
-     "Deportivo La Coruña"
-    ],
-    [
-     "Racing de Santander",
-     "Getafe"
-    ],
-    [
-     "Real Madrid",
-     "Athletic Club"
-    ],
-    [
-     "Valencia",
-     "Alavés"
-    ],
-    [
-     "Levante",
-     "Málaga"
-    ],
-    [
-     "Villarreal",
-     "Valencia"
-    ],
-    [
-     "Athletic Club",
-     "Celta de Vigo"
-    ],
-    [
-     "Alavés",
-     "Racing de Santander"
-    ],
-    [
-     "Málaga",
-     "Real Betis"
-    ],
-    [
-     "Barcelona",
-     "Levante"
-    ],
-    [
-     "Rayo Vallecano",
-     "Getafe"
-    ],
-    [
-     "Espanyol",
-     "Osasuna"
-    ],
-    [
-     "Sevilla",
-     "Real Madrid"
-    ],
-    [
-     "Atlético de Madrid",
-     "Elche"
-    ],
-    [
-     "Deportivo La Coruña",
-     "Real Sociedad"
-    ],
-    [
-     "Osasuna",
-     "Sevilla"
-    ],
-    [
-     "Celta de Vigo",
-     "Espanyol"
-    ],
-    [
-     "Levante",
-     "Deportivo La Coruña"
-    ],
-    [
-     "Málaga",
-     "Atlético de Madrid"
-    ],
-    [
-     "Real Madrid",
-     "Valencia"
-    ],
-    [
-     "Getafe",
-     "Alavés"
-    ],
-    [
-     "Athletic Club",
-     "Barcelona"
-    ],
-    [
-     "Racing de Santander",
-     "Rayo Vallecano"
-    ],
-    [
-     "Real Betis",
-     "Villarreal"
-    ],
-    [
-     "Real Sociedad",
-     "Elche"
-    ],
-    [
-     "Elche",
-     "Málaga"
-    ],
-    [
-     "Alavés",
-     "Athletic Club"
-    ],
-    [
-     "Sevilla",
-     "Real Sociedad"
-    ],
-    [
-     "Barcelona",
-     "Real Betis"
-    ],
-    [
-     "Rayo Vallecano",
-     "Osasuna"
-    ],
-    [
-     "Espanyol",
-     "Racing de Santander"
-    ],
-    [
-     "Atlético de Madrid",
-     "Celta de Vigo"
-    ],
-    [
-     "Valencia",
-     "Levante"
-    ],
-    [
-     "Deportivo La Coruña",
-     "Getafe"
-    ],
-    [
-     "Villarreal",
-     "Real Madrid"
-    ],
-    [
-     "Real Betis",
-     "Levante"
-    ],
-    [
-     "Osasuna",
-     "Celta de Vigo"
-    ],
-    [
-     "Elche",
-     "Villarreal"
-    ],
-    [
-     "Alavés",
-     "Sevilla"
-    ],
-    [
-     "Athletic Club",
-     "Valencia"
-    ],
-    [
-     "Málaga",
-     "Rayo Vallecano"
-    ],
-    [
-     "Racing de Santander",
-     "Atlético de Madrid"
-    ],
-    [
-     "Getafe",
-     "Real Sociedad"
-    ],
-    [
-     "Barcelona",
-     "Deportivo La Coruña"
-    ],
-    [
-     "Real Madrid",
-     "Espanyol"
-    ],
-    [
-     "Celta de Vigo",
-     "Real Madrid"
-    ],
-    [
-     "Villarreal",
-     "Málaga"
-    ],
-    [
-     "Sevilla",
-     "Elche"
-    ],
-    [
-     "Levante",
-     "Osasuna"
-    ],
-    [
-     "Real Sociedad",
-     "Alavés"
-    ],
-    [
-     "Racing de Santander",
-     "Real Betis"
-    ],
-    [
-     "Espanyol",
-     "Athletic Club"
-    ],
-    [
-     "Valencia",
-     "Deportivo La Coruña"
-    ],
-    [
-     "Atlético de Madrid",
-     "Getafe"
-    ],
-    [
-     "Rayo Vallecano",
-     "Barcelona"
-    ],
-    [
-     "Athletic Club",
-     "Racing de Santander"
-    ],
-    [
-     "Real Betis",
-     "Celta de Vigo"
-    ],
-    [
-     "Getafe",
-     "Espanyol"
-    ],
-    [
-     "Real Madrid",
-     "Atlético de Madrid"
-    ],
-    [
-     "Elche",
-     "Alavés"
-    ],
-    [
-     "Real Sociedad",
-     "Valencia"
-    ],
-    [
-     "Deportivo La Coruña",
-     "Villarreal"
-    ],
-    [
-     "Málaga",
-     "Osasuna"
-    ],
-    [
-     "Barcelona",
-     "Sevilla"
-    ],
-    [
-     "Levante",
-     "Rayo Vallecano"
-    ],
-    [
-     "Espanyol",
-     "Málaga"
-    ],
-    [
-     "Villarreal",
-     "Athletic Club"
-    ],
-    [
-     "Valencia",
-     "Getafe"
-    ],
-    [
-     "Rayo Vallecano",
-     "Real Sociedad"
-    ],
-    [
-     "Alavés",
-     "Real Betis"
-    ],
-    [
-     "Atlético de Madrid",
-     "Levante"
-    ],
-    [
-     "Sevilla",
-     "Deportivo La Coruña"
-    ],
-    [
-     "Racing de Santander",
-     "Barcelona"
-    ],
-    [
-     "Osasuna",
-     "Real Madrid"
-    ],
-    [
-     "Celta de Vigo",
-     "Elche"
-    ],
-    [
-     "Atlético de Madrid",
-     "Sevilla"
-    ],
-    [
-     "Barcelona",
-     "Espanyol"
-    ],
-    [
-     "Levante",
-     "Villarreal"
-    ],
-    [
-     "Real Sociedad",
-     "Racing de Santander"
-    ],
-    [
-     "Málaga",
-     "Valencia"
-    ],
-    [
-     "Deportivo La Coruña",
-     "Celta de Vigo"
-    ],
-    [
-     "Elche",
-     "Osasuna"
-    ],
-    [
-     "Alavés",
-     "Rayo Vallecano"
-    ],
-    [
-     "Real Betis",
-     "Athletic Club"
-    ],
-    [
-     "Getafe",
-     "Real Madrid"
-    ],
-    [
-     "Getafe",
-     "Real Betis"
-    ],
-    [
-     "Valencia",
-     "Rayo Vallecano"
-    ],
-    [
-     "Celta de Vigo",
-     "Barcelona"
-    ],
-    [
-     "Osasuna",
-     "Alavés"
-    ],
-    [
-     "Real Madrid",
-     "Elche"
-    ],
-    [
-     "Racing de Santander",
-     "Málaga"
-    ],
-    [
-     "Villarreal",
-     "Atlético de Madrid"
-    ],
-    [
-     "Sevilla",
-     "Levante"
-    ],
-    [
-     "Espanyol",
-     "Real Sociedad"
-    ],
-    [
-     "Athletic Club",
-     "Deportivo La Coruña"
-    ],
-    [
-     "Málaga",
-     "Getafe"
-    ],
-    [
-     "Atlético de Madrid",
-     "Alavés"
-    ],
-    [
-     "Levante",
-     "Real Madrid"
-    ],
-    [
-     "Elche",
-     "Espanyol"
-    ],
-    [
-     "Real Betis",
-     "Valencia"
-    ],
-    [
-     "Barcelona",
-     "Osasuna"
-    ],
-    [
-     "Real Sociedad",
-     "Athletic Club"
-    ],
-    [
-     "Celta de Vigo",
-     "Sevilla"
-    ],
-    [
-     "Deportivo La Coruña",
-     "Racing de Santander"
-    ],
-    [
-     "Rayo Vallecano",
-     "Villarreal"
-    ],
-    [
-     "Racing de Santander",
-     "Sevilla"
-    ],
-    [
-     "Athletic Club",
-     "Málaga"
-    ],
-    [
-     "Valencia",
-     "Atlético de Madrid"
-    ],
-    [
-     "Osasuna",
-     "Real Sociedad"
-    ],
-    [
-     "Alavés",
-     "Levante"
-    ],
-    [
-     "Real Madrid",
-     "Barcelona"
-    ],
-    [
-     "Villarreal",
-     "Celta de Vigo"
-    ],
-    [
-     "Getafe",
-     "Elche"
-    ],
-    [
-     "Real Betis",
-     "Espanyol"
-    ],
-    [
-     "Rayo Vallecano",
-     "Deportivo La Coruña"
-    ],
-    [
-     "Málaga",
-     "Celta de Vigo"
-    ],
-    [
-     "Atlético de Madrid",
-     "Rayo Vallecano"
-    ],
-    [
-     "Sevilla",
-     "Villarreal"
-    ],
-    [
-     "Real Sociedad",
-     "Barcelona"
-    ],
-    [
-     "Elche",
-     "Athletic Club"
-    ],
-    [
-     "Levante",
-     "Getafe"
-    ],
-    [
-     "Espanyol",
-     "Valencia"
-    ],
-    [
-     "Real Madrid",
-     "Racing de Santander"
-    ],
-    [
-     "Osasuna",
-     "Real Betis"
-    ],
-    [
-     "Deportivo La Coruña",
-     "Alavés"
-    ],
-    [
-     "Villarreal",
-     "Osasuna"
-    ],
-    [
-     "Atlético de Madrid",
-     "Athletic Club"
-    ],
-    [
-     "Alavés",
-     "Real Madrid"
-    ],
-    [
-     "Racing de Santander",
-     "Levante"
-    ],
-    [
-     "Sevilla",
-     "Getafe"
-    ],
-    [
-     "Barcelona",
-     "Málaga"
-    ],
-    [
-     "Celta de Vigo",
-     "Real Sociedad"
-    ],
-    [
-     "Valencia",
-     "Elche"
-    ],
-    [
-     "Rayo Vallecano",
-     "Real Betis"
-    ],
-    [
-     "Deportivo La Coruña",
-     "Espanyol"
-    ],
-    [
-     "Espanyol",
-     "Alavés"
-    ],
-    [
-     "Getafe",
-     "Barcelona"
-    ],
-    [
-     "Levante",
-     "Celta de Vigo"
-    ],
-    [
-     "Real Madrid",
-     "Deportivo La Coruña"
-    ],
-    [
-     "Real Betis",
-     "Atlético de Madrid"
-    ],
-    [
-     "Real Sociedad",
-     "Villarreal"
-    ],
-    [
-     "Málaga",
-     "Sevilla"
-    ],
-    [
-     "Elche",
-     "Racing de Santander"
-    ],
-    [
-     "Athletic Club",
-     "Rayo Vallecano"
-    ],
-    [
-     "Osasuna",
-     "Valencia"
-    ]
-   ],
-   "proximos": [
-    {
-     "fecha": "2026-10-25",
-     "local": "Barcelona",
-     "visitante": "Real Madrid",
-     "pendiente": false,
-     "lh": 2.3547,
-     "la": 1.3605,
-     "p1": 0.5956,
-     "px": 0.1926,
-     "p2": 0.2118,
-     "o25": 0.7171,
-     "btts": 0.6731,
-     "marcador": "2-1",
-     "p_marcador": 0.0918
-    },
-    {
-     "fecha": "2026-10-25",
-     "local": "Celta de Vigo",
-     "visitante": "Real Betis",
-     "pendiente": false,
-     "lh": 1.44,
-     "la": 1.2385,
-     "p1": 0.4173,
-     "px": 0.2585,
-     "p2": 0.3242,
-     "o25": 0.5011,
-     "btts": 0.5422,
-     "marcador": "1-1",
-     "p_marcador": 0.1228
-    },
-    {
-     "fecha": "2026-10-25",
-     "local": "Atlético de Madrid",
-     "visitante": "Deportivo La Coruña",
-     "pendiente": false,
-     "lh": 2.0202,
-     "la": 0.89,
-     "p1": 0.6362,
-     "px": 0.2068,
-     "p2": 0.157,
-     "o25": 0.5564,
-     "btts": 0.5114,
-     "marcador": "2-0",
-     "p_marcador": 0.1111
-    },
-    {
-     "fecha": "2026-10-25",
-     "local": "Racing de Santander",
-     "visitante": "Espanyol",
-     "pendiente": false,
-     "lh": 1.7996,
-     "la": 1.8043,
-     "p1": 0.3892,
-     "px": 0.2197,
-     "p2": 0.3911,
-     "o25": 0.6979,
-     "btts": 0.6975,
-     "marcador": "1-1",
-     "p_marcador": 0.0886
-    },
-    {
-     "fecha": "2026-10-25",
-     "local": "Real Sociedad",
-     "visitante": "Levante",
-     "pendiente": false,
-     "lh": 1.8762,
-     "la": 1.2642,
-     "p1": 0.517,
-     "px": 0.2259,
-     "p2": 0.257,
-     "o25": 0.6075,
-     "btts": 0.6079,
-     "marcador": "1-1",
-     "p_marcador": 0.1029
-    },
-    {
-     "fecha": "2026-10-25",
-     "local": "Valencia",
-     "visitante": "Villarreal",
-     "pendiente": false,
-     "lh": 1.3077,
-     "la": 1.6709,
-     "p1": 0.3002,
-     "px": 0.2402,
-     "p2": 0.4596,
-     "o25": 0.572,
-     "btts": 0.5926,
-     "marcador": "1-1",
-     "p_marcador": 0.1114
-    },
-    {
-     "fecha": "2026-10-25",
-     "local": "Sevilla",
-     "visitante": "Osasuna",
-     "pendiente": false,
-     "lh": 1.4747,
-     "la": 1.0641,
-     "p1": 0.4657,
-     "px": 0.2615,
-     "p2": 0.2728,
-     "o25": 0.4661,
-     "btts": 0.5054,
-     "marcador": "1-1",
-     "p_marcador": 0.1242
-    },
-    {
-     "fecha": "2026-10-25",
-     "local": "Athletic Club",
-     "visitante": "Getafe",
-     "pendiente": false,
-     "lh": 1.0554,
-     "la": 0.6253,
-     "p1": 0.4538,
-     "px": 0.3316,
-     "p2": 0.2146,
-     "o25": 0.2377,
-     "btts": 0.3034,
-     "marcador": "1-0",
-     "p_marcador": 0.1962
-    },
-    {
-     "fecha": "2026-10-25",
-     "local": "Alavés",
-     "visitante": "Málaga",
-     "pendiente": false,
-     "lh": 1.5627,
-     "la": 0.5833,
-     "p1": 0.6126,
-     "px": 0.251,
-     "p2": 0.1364,
-     "o25": 0.3628,
-     "btts": 0.3496,
-     "marcador": "1-0",
-     "p_marcador": 0.1825
-    },
-    {
-     "fecha": "2026-10-25",
-     "local": "Rayo Vallecano",
-     "visitante": "Elche",
-     "pendiente": false,
-     "lh": 1.6303,
-     "la": 1.1242,
-     "p1": 0.4911,
-     "px": 0.2466,
-     "p2": 0.2623,
-     "o25": 0.5196,
-     "btts": 0.5432,
-     "marcador": "1-1",
-     "p_marcador": 0.1169
-    },
-    {
-     "fecha": "2026-11-01",
-     "local": "Villarreal",
-     "visitante": "Espanyol",
-     "pendiente": false,
-     "lh": 2.1751,
-     "la": 0.974,
-     "p1": 0.6472,
-     "px": 0.1953,
-     "p2": 0.1575,
-     "o25": 0.6094,
-     "btts": 0.552,
-     "marcador": "2-0",
-     "p_marcador": 0.1015
-    },
-    {
-     "fecha": "2026-11-01",
-     "local": "Elche",
-     "visitante": "Valencia",
-     "pendiente": false,
-     "lh": 1.691,
-     "la": 1.176,
-     "p1": 0.4939,
-     "px": 0.2409,
-     "p2": 0.2652,
-     "o25": 0.5464,
-     "btts": 0.5643,
-     "marcador": "1-1",
-     "p_marcador": 0.1134
-    },
-    {
-     "fecha": "2026-11-01",
-     "local": "Real Betis",
-     "visitante": "Málaga",
-     "pendiente": false,
-     "lh": 1.9927,
-     "la": 0.5456,
-     "p1": 0.7175,
-     "px": 0.1917,
-     "p2": 0.0908,
-     "o25": 0.466,
-     "btts": 0.3634,
-     "marcador": "1-0",
-     "p_marcador": 0.1572
-    },
-    {
-     "fecha": "2026-11-01",
-     "local": "Levante",
-     "visitante": "Atlético de Madrid",
-     "pendiente": false,
-     "lh": 1.2192,
-     "la": 1.7305,
-     "p1": 0.2692,
-     "px": 0.2373,
-     "p2": 0.4935,
-     "o25": 0.5654,
-     "btts": 0.58,
-     "marcador": "1-1",
-     "p_marcador": 0.1108
-    },
-    {
-     "fecha": "2026-11-01",
-     "local": "Athletic Club",
-     "visitante": "Real Sociedad",
-     "pendiente": false,
-     "lh": 1.6057,
-     "la": 1.0564,
-     "p1": 0.501,
-     "px": 0.2496,
-     "p2": 0.2494,
-     "o25": 0.497,
-     "btts": 0.5217,
-     "marcador": "1-1",
-     "p_marcador": 0.1187
-    },
-    {
-     "fecha": "2026-11-01",
-     "local": "Barcelona",
-     "visitante": "Alavés",
-     "pendiente": false,
-     "lh": 3.0173,
-     "la": 0.7859,
-     "p1": 0.8173,
-     "px": 0.1164,
-     "p2": 0.0663,
-     "o25": 0.7315,
-     "btts": 0.5178,
-     "marcador": "3-0",
-     "p_marcador": 0.1021
-    },
-    {
-     "fecha": "2026-11-01",
-     "local": "Rayo Vallecano",
-     "visitante": "Celta de Vigo",
-     "pendiente": false,
-     "lh": 1.2955,
-     "la": 1.1214,
-     "p1": 0.4046,
-     "px": 0.2749,
-     "p2": 0.3205,
-     "o25": 0.4347,
-     "btts": 0.49,
-     "marcador": "1-1",
-     "p_marcador": 0.1299
-    },
-    {
-     "fecha": "2026-11-01",
-     "local": "Racing de Santander",
-     "visitante": "Real Madrid",
-     "pendiente": false,
-     "lh": 1.3251,
-     "la": 3.2388,
-     "p1": 0.1204,
-     "px": 0.1337,
-     "p2": 0.746,
-     "o25": 0.8334,
-     "btts": 0.7055,
-     "marcador": "1-3",
-     "p_marcador": 0.0782
-    },
-    {
-     "fecha": "2026-11-01",
-     "local": "Deportivo La Coruña",
-     "visitante": "Osasuna",
-     "pendiente": false,
-     "lh": 1.5633,
-     "la": 1.0209,
-     "p1": 0.4988,
-     "px": 0.254,
-     "p2": 0.2472,
-     "o25": 0.4776,
-     "btts": 0.506,
-     "marcador": "1-1",
-     "p_marcador": 0.1207
-    },
-    {
-     "fecha": "2026-11-01",
-     "local": "Getafe",
-     "visitante": "Sevilla",
-     "pendiente": false,
-     "lh": 1.0042,
-     "la": 0.7701,
-     "p1": 0.3996,
-     "px": 0.3291,
-     "p2": 0.2713,
-     "o25": 0.2625,
-     "btts": 0.3407,
-     "marcador": "1-0",
-     "p_marcador": 0.17
-    },
-    {
-     "fecha": "2026-11-08",
-     "local": "Villarreal",
-     "visitante": "Getafe",
-     "pendiente": false,
-     "lh": 1.5593,
-     "la": 0.6966,
-     "p1": 0.5806,
-     "px": 0.2541,
-     "p2": 0.1653,
-     "o25": 0.3922,
-     "btts": 0.3965,
-     "marcador": "1-0",
-     "p_marcador": 0.1631
-    },
-    {
-     "fecha": "2026-11-08",
-     "local": "Atlético de Madrid",
-     "visitante": "Barcelona",
-     "pendiente": false,
-     "lh": 1.5296,
-     "la": 1.8573,
-     "p1": 0.3198,
-     "px": 0.2244,
-     "p2": 0.4557,
-     "o25": 0.6577,
-     "btts": 0.6613,
-     "marcador": "1-1",
-     "p_marcador": 0.0963
-    },
-    {
-     "fecha": "2026-11-08",
-     "local": "Espanyol",
-     "visitante": "Deportivo La Coruña",
-     "pendiente": false,
-     "lh": 1.3472,
-     "la": 1.1388,
-     "p1": 0.4148,
-     "px": 0.2698,
-     "p2": 0.3154,
-     "o25": 0.4526,
-     "btts": 0.5034,
-     "marcador": "1-1",
-     "p_marcador": 0.128
-    },
-    {
-     "fecha": "2026-11-08",
-     "local": "Málaga",
-     "visitante": "Racing de Santander",
-     "pendiente": false,
-     "lh": 1.4738,
-     "la": 1.4702,
-     "p1": 0.3777,
-     "px": 0.2462,
-     "p2": 0.3761,
-     "o25": 0.5642,
-     "btts": 0.594,
-     "marcador": "1-1",
-     "p_marcador": 0.1144
-    },
-    {
-     "fecha": "2026-11-08",
-     "local": "Valencia",
-     "visitante": "Real Madrid",
-     "pendiente": false,
-     "lh": 1.0069,
-     "la": 1.8902,
-     "p1": 0.1974,
-     "px": 0.2227,
-     "p2": 0.58,
-     "o25": 0.5534,
-     "btts": 0.5391,
-     "marcador": "1-1",
-     "p_marcador": 0.1053
-    },
-    {
-     "fecha": "2026-11-08",
-     "local": "Sevilla",
-     "visitante": "Alavés",
-     "pendiente": false,
-     "lh": 1.364,
-     "la": 1.0819,
-     "p1": 0.4322,
-     "px": 0.2709,
-     "p2": 0.2969,
-     "o25": 0.4422,
-     "btts": 0.4924,
-     "marcador": "1-1",
-     "p_marcador": 0.1282
-    },
-    {
-     "fecha": "2026-11-08",
-     "local": "Osasuna",
-     "visitante": "Athletic Club",
-     "pendiente": false,
-     "lh": 1.2001,
-     "la": 1.1158,
-     "p1": 0.3793,
-     "px": 0.2829,
-     "p2": 0.3378,
-     "o25": 0.4082,
-     "btts": 0.4702,
-     "marcador": "1-1",
-     "p_marcador": 0.1325
-    },
-    {
-     "fecha": "2026-11-08",
-     "local": "Elche",
-     "visitante": "Real Betis",
-     "pendiente": false,
-     "lh": 1.4435,
-     "la": 1.5586,
-     "p1": 0.3532,
-     "px": 0.2431,
-     "p2": 0.4038,
-     "o25": 0.5773,
-     "btts": 0.6035,
-     "marcador": "1-1",
-     "p_marcador": 0.1121
-    },
-    {
-     "fecha": "2026-11-08",
-     "local": "Celta de Vigo",
-     "visitante": "Levante",
-     "pendiente": false,
-     "lh": 1.8486,
-     "la": 1.066,
-     "p1": 0.5565,
-     "px": 0.2274,
-     "p2": 0.2161,
-     "o25": 0.5574,
-     "btts": 0.5527,
-     "marcador": "1-1",
-     "p_marcador": 0.1071
-    },
-    {
-     "fecha": "2026-11-08",
-     "local": "Real Sociedad",
-     "visitante": "Rayo Vallecano",
-     "pendiente": false,
-     "lh": 1.5317,
-     "la": 1.1417,
-     "p1": 0.4624,
-     "px": 0.2546,
-     "p2": 0.283,
-     "o25": 0.4998,
-     "btts": 0.5339,
-     "marcador": "1-1",
-     "p_marcador": 0.121
-    }
-   ],
+   "restantes": [],
+   "proximos": [],
    "validacion": {
-    "partidos": 399,
-    "desde": "2025-09-20",
-    "hasta": "2026-09-20",
+    "partidos": 371,
+    "desde": "2025-10-24",
+    "hasta": "2026-10-21",
     "mercados": {
      "1X2": {
-      "modelo": 0.5838899226985588,
-      "base": 0.6361019816469302,
-      "logloss_modelo": 0.9818186262353711,
-      "logloss_base": 1.0550478885262062,
-      "mejora": 0.08208127070000526
+      "modelo": 0.580571562752561,
+      "base": 0.6359949461105879,
+      "logloss_modelo": 0.9776983221517361,
+      "logloss_base": 1.0549348380134664,
+      "mejora": 0.08714437700640121,
+      "mercado": 0.5452376013526343
      },
      "Más de 2.5": {
-      "modelo": 0.239250919288537,
-      "base": 0.2505568595215586,
-      "mejora": 0.04512325168271358
+      "modelo": 0.2441683339798331,
+      "base": 0.2504971169004046,
+      "mejora": 0.025264893260579013
      },
      "Ambos anotan": {
-      "modelo": 0.24911955381331188,
-      "base": 0.24615283464723464,
-      "mejora": -0.012052346138239134
+      "modelo": 0.2486851098304986,
+      "base": 0.24598388857992276,
+      "mejora": -0.010981293393523162
      }
     },
-    "acierto_1x2": 0.518796992481203
+    "acierto_1x2": 0.5283018867924528,
+    "apuestas_simuladas": {
+     "umbral_ve": 0.05,
+     "apuestas": 139,
+     "roi": -0.2300719424460432,
+     "nota": "Apuesta plana de 1 unidad al resultado 1X2 con mayor VE si supera el umbral, a cuota de cierre."
+    }
    },
    "apifootball_id": 140,
    "alias": {
