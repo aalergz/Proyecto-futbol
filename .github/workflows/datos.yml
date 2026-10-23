@@ -16,7 +16,7 @@ jobs:
           import urllib.request, pathlib
           out = pathlib.Path("crudos"); log = []
           urls = [(f"{s}_{d}.csv", f"https://www.football-data.co.uk/mmz4281/{s}/{d}.csv")
-                  for s in ["2223", "2324", "2425", "2526", "2627"] for d in ["E0", "SP1", "D1"]]
+                  for s in ["2223", "2324", "2425", "2526", "2627"] for d in ["E0", "SP1", "D1", "I1", "F1"]]
           urls.append(("fixtures.csv", "https://www.football-data.co.uk/fixtures.csv"))
           for nombre, url in urls:
               try:
