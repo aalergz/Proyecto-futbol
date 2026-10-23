@@ -1,0 +1,81 @@
+# Configuración del motor de la Pizarra Poisson
+#
+# fuentes: se prueban en orden y se usa la primera que responda.
+#   footballdata  → football-data.co.uk (CSV gratis, con cuotas de cierre)
+#   openfootball  → github.com/openfootball (gratis, a veces atrasado)
+#   apifootball   → api-sports.io (requiere API_FOOTBALL_KEY); resultados minutos después de cada partido
+#   csv           → archivo propio en datos/
+
+[modelo]
+xi = 0.0019               # decaimiento por día: un partido de hace un año pesa ~la mitad
+regularizacion = 0.1      # acerca a su punto de partida a equipos con pocos partidos (elegido por validación)
+temporadas_historial = 2  # temporadas anteriores a la actual que entran al ajuste
+validar_dias = 365        # ventana de validación fuera de muestra (0 = no validar)
+
+[web]
+# URL del Worker de Cloudflare que sirve los marcadores en vivo (ver worker/README).
+# Vacío = la web funciona igual, sin la sección En vivo.
+en_vivo_url = ""
+
+[ligas.eng]
+nombre = "Premier League (Inglaterra)"
+fuentes = ["apifootball", "footballdata", "openfootball"]
+apifootball = 39
+footballdata = "E0"
+openfootball = "en.1"
+temporada_actual = "auto"   # o un año fijo: 2026 = temporada 2026-27
+top = { n = 4, label = "Top 4 · Champions" }
+bot = { n = 3, label = "Descenso" }
+
+[ligas.eng.alias]
+"Brighton & Hove Albion" = "Brighton"
+"Tottenham Hotspur" = "Tottenham"
+"Wolverhampton Wanderers" = "Wolves"
+"West Ham United" = "West Ham"
+"Newcastle United" = "Newcastle"
+"Man City" = "Manchester City"
+"Man United" = "Manchester United"
+"Nott'm Forest" = "Nottingham Forest"
+
+[ligas.esp]
+nombre = "LaLiga (España)"
+fuentes = ["apifootball", "footballdata", "openfootball"]
+apifootball = 140
+footballdata = "SP1"
+openfootball = "es.1"
+temporada_actual = "auto"
+top = { n = 4, label = "Top 4 · Champions" }
+bot = { n = 3, label = "Descenso" }
+
+[ligas.esp.alias]
+"Club Atlético de Madrid" = "Atlético de Madrid"
+"Real Sociedad de Fútbol" = "Real Sociedad"
+"Rayo Vallecano de Madrid" = "Rayo Vallecano"
+"Real Racing Club de Santander" = "Racing de Santander"
+"Espanyol de Barcelona" = "Espanyol"
+"Deportivo Alavés" = "Alavés"
+"Espanol" = "Espanyol"
+"Sociedad" = "Real Sociedad"
+"Vallecano" = "Rayo Vallecano"
+"Celta" = "Celta de Vigo"
+"La Coruna" = "Deportivo La Coruña"
+"Malaga" = "Málaga"
+"Alaves" = "Alavés"
+"Santander" = "Racing de Santander"
+"Atlético Madrid" = "Atlético de Madrid"
+"Ath Madrid" = "Atlético de Madrid"
+"Ath Bilbao" = "Athletic Club"
+"Real Betis Balompié" = "Real Betis"
+"Betis" = "Real Betis"
+
+[ligas.crc]
+nombre = "Liga Promerica (Costa Rica)"
+fuentes = ["apifootball", "csv"]
+apifootball = "auto"        # busca la liga por país y nombre; o pon el id que da  python cli.py buscar-liga --pais Costa-Rica
+apifootball_pais = "Costa-Rica"
+apifootball_nombre = "Primera Division"
+csv = "datos/crc.csv"
+temporada_actual = "auto"
+formato_temporada = "anual"
+top = { n = 4, label = "Top 4 · fase final" }
+bot = { n = 1, label = "Último lugar" }
