@@ -1,0 +1,90 @@
+name: Actualizar ratings y publicar
+
+on:
+  schedule:
+    # Cada 2 horas, en el minuto 23. Con 3 ligas gasta ~3 solicitudes de
+    # API-Football por corrida (~36 al día), dentro del plan gratuito de 100.
+    - cron: "23 */2 * * *"
+  # El Worker de Cloudflare lo dispara cuando termina un partido (ver worker/)
+  repository_dispatch:
+    types: [partido-terminado]
+  # Si cambias la web, se vuelve a publicar
+  push:
+    branches: [main]
+    paths: ["web/index.html"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: actualizar
+  cancel-in-progress: false
+
+jobs:
+  actualizar:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Instalar dependencias
+        run: pip install -r requirements.txt
+
+      # Las temporadas pasadas se descargan una vez y se reutilizan entre corridas
+      - name: Recuperar descargas anteriores
+        uses: actions/cache@v4
+        with:
+          path: datos/cache
+          key: descargas-${{ github.run_id }}
+          restore-keys: descargas-
+
+      - name: Pruebas del modelo
+        run: python -m pytest -q
+
+      # Solo al ejecutarlo a mano: muestra el plan y qué temporadas entrega (gasta ~4 solicitudes)
+      - name: Comprobar API-Football
+        if: github.event_name == 'workflow_dispatch'
+        continue-on-error: true
+        env:
+          API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
+        run: python cli.py probar-api
+
+      - name: Descargar resultados y ajustar ratings
+        env:
+          API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
+        run: python cli.py actualizar
+
+      - name: Guardar ratings en el repositorio
+        id: guardar
+        run: |
+          git config user.name "pizarra-bot"
+          git config user.email "pizarra-bot@users.noreply.github.com"
+          git add salida/ratings.json web/ratings.json
+          if git diff --cached --quiet; then
+            echo "cambios=no" >> "$GITHUB_OUTPUT"
+          else
+            git commit -m "Actualizar ratings $(date -u +%F\ %H:%M)"
+            git push
+            echo "cambios=si" >> "$GITHUB_OUTPUT"
+          fi
+
+      # Publica solo si cambiaron los ratings, si se ejecutó a mano o si cambió la web
+      - if: steps.guardar.outputs.cambios == 'si' || github.event_name != 'schedule' && github.event_name != 'repository_dispatch'
+        uses: actions/configure-pages@v5
+      - if: steps.guardar.outputs.cambios == 'si' || github.event_name != 'schedule' && github.event_name != 'repository_dispatch'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: web
+      - if: steps.guardar.outputs.cambios == 'si' || github.event_name != 'schedule' && github.event_name != 'repository_dispatch'
+        id: deploy
+        uses: actions/deploy-pages@v4

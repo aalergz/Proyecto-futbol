@@ -1,0 +1,30 @@
+name = "pizarra-en-vivo"
+main = "src/index.js"
+compatibility_date = "2025-06-01"
+
+# Crea el espacio de almacenamiento con:  npx wrangler kv namespace create PIZARRA_KV
+# y pega aquí el id que te devuelve.
+[[kv_namespaces]]
+binding = "PIZARRA_KV"
+id = "PEGA_AQUI_EL_ID"
+
+[vars]
+# Ids de API-Football: Premier 39, LaLiga 140, y el de la Liga Promerica que
+# muestra  python cli.py buscar-liga --pais Costa-Rica
+LIGAS = "39,140"
+# Solicitudes diarias que puede gastar el Worker. Si comparte clave con GitHub
+# Actions (~36 al día), en el plan gratuito deja 50. En el plan Pro, 7000.
+CUOTA_DIARIA = "50"
+TTL_MIN = "60"            # nunca consulta más seguido que esto (segundos)
+TTL_SIN_PARTIDOS = "300"  # sin partidos en juego, como mínimo cada 5 minutos
+AVISO_CADA_MIN = "10"     # agrupa los avisos de partido terminado
+ORIGEN_PERMITIDO = "*"    # o tu sitio: https://tu-usuario.github.io
+GITHUB_REPO = ""          # tu-usuario/tu-repositorio, para reajustar al terminar un partido
+
+# Secretos (no van en este archivo):
+#   npx wrangler secret put API_FOOTBALL_KEY
+#   npx wrangler secret put GITHUB_TOKEN
+
+# Opcional: detectar partidos terminados aunque nadie tenga la web abierta.
+# [triggers]
+# crons = ["*/5 * * * *"]

@@ -38,11 +38,13 @@ Requiere Python 3.11 o superior.
 python -m venv .venv
 source .venv/bin/activate              # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
-python -m pytest -q                    # 11 pruebas
+python -m pytest -q                    # 12 pruebas
 export API_FOOTBALL_KEY="tu-clave"     # Windows: set API_FOOTBALL_KEY=tu-clave
 python cli.py actualizar
 python -m http.server 8000 --directory web     # abre http://localhost:8000
 ```
+
+`python cli.py probar-api` comprueba tu clave y te dice qué temporadas entrega tu plan, liga por liga. Gasta unas 4 solicitudes. GitHub también lo ejecuta cada vez que corres el flujo a mano.
 
 Sin clave también funciona: usa football-data.co.uk u openfootball y deja la Liga Promerica con ratings de ejemplo.
 

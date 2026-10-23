@@ -22,7 +22,8 @@ from pathlib import Path
 import pandas as pd
 
 from motor.exportar import bloque_liga, envoltorio
-from motor.fuentes import CUOTA, FuenteNoDisponible, buscar_ligas, cargar_liga, temporadas_liga
+from motor.fuentes import (CUOTA, FuenteNoDisponible, buscar_ligas, cargar_liga, estado_api,
+                           probar_temporada, resolver_apifootball, temporadas_liga)
 from motor.modelo import ajustar, predecir
 from motor.validacion import validar
 
@@ -149,6 +150,31 @@ def cmd_validar(a):
         print(f"detalle → {a.csv}")
 
 
+def cmd_probar_api(a):
+    """Comprueba la clave y qué temporadas entrega tu plan. Gasta ~4 solicitudes."""
+    try:
+        e = estado_api()
+    except FuenteNoDisponible as err:
+        sys.exit(f"✗ {err}")
+    print(f"✓ Clave válida · plan {e['plan']} · {e['usadas_hoy']}/{e['limite_dia']} solicitudes usadas hoy")
+    cfg = config()
+    todo_ok = True
+    for k, lc in cfg["ligas"].items():
+        if "apifootball" not in lc.get("fuentes", []):
+            continue
+        try:
+            liga_id, actual = resolver_apifootball(dict(lc))
+        except FuenteNoDisponible as err:
+            print(f"✗ {lc['nombre']}: {err}"); todo_ok = False; continue
+        ok, det = probar_temporada(liga_id, actual)
+        todo_ok &= ok
+        print(f"{'✓' if ok else '✗'} {lc['nombre']} · id {liga_id} · temporada {actual}: {det}")
+    if not todo_ok:
+        print("\nTu plan no entrega alguna temporada en curso. El motor seguirá funcionando con las otras\n"
+              "fuentes (football-data.co.uk y openfootball), pero la Liga Promerica necesitará un plan de\n"
+              "pago de API-Football o un CSV propio.")
+
+
 def cmd_buscar(a):
     for l in buscar_ligas(a.pais):
         print(f"{l['id']:>6}  {l['nombre']:<40} {l['tipo']:<8} temporadas {l['temporadas']}")
@@ -163,6 +189,7 @@ def main():
     x.set_defaults(f=cmd_predecir)
     x = s.add_parser("validar"); x.add_argument("liga"); x.add_argument("--desde"); x.add_argument("--csv")
     x.add_argument("--xi", type=float); x.add_argument("--reg", type=float); x.set_defaults(f=cmd_validar)
+    x = s.add_parser("probar-api"); x.set_defaults(f=cmd_probar_api)
     x = s.add_parser("buscar-liga"); x.add_argument("--pais", required=True); x.set_defaults(f=cmd_buscar)
     a = p.parse_args()
     a.f(a)
