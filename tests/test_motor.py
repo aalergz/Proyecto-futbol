@@ -159,3 +159,15 @@ def test_modelo_de_corners():
     df["crv"] = rng.poisson(4.3, len(df)).astype(float)
     c = ajustar(df, xi=0, reg=3.0, columnas=("crl", "crv"), dixon_coles=False)
     assert abs(c.media_local - 5.4) < 0.3 and abs(c.media_visitante - 4.3) < 0.3 and c.rho == 0.0
+
+
+def test_efecto_arbitro_en_tarjetas():
+    df, *_ = liga_sintetica(n=10, temporadas=2)
+    rng = np.random.default_rng(11)
+    df["arbitro"] = rng.choice(["Estricto", "Normal", "Permisivo"], len(df))
+    tasa = df["arbitro"].map({"Estricto": 1.5, "Normal": 1.0, "Permisivo": 0.6})
+    df["tjl"] = rng.poisson(2.0 * tasa).astype(float)
+    df["tjv"] = rng.poisson(2.2 * tasa).astype(float)
+    c = ajustar(df, xi=0, reg=3.0, columnas=("tjl", "tjv"), dixon_coles=False, reg_arbitro=1.0)
+    assert c.arbitros["Estricto"] > c.arbitros["Normal"] > c.arbitros["Permisivo"]
+    assert _gradiente(df, xi=0.001, reg=3.0, columnas=("tjl", "tjv"), dixon_coles=False, reg_arbitro=1.0) < 1e-5

@@ -109,7 +109,8 @@ def validar(df: pd.DataFrame, desde, xi=0.0019, reg=0.02, paso_dias=7, min_parti
 # --------------------------------------------------------------------------- #
 # Córners y tarjetas
 # --------------------------------------------------------------------------- #
-def validar_conteo(df: pd.DataFrame, desde, columnas, linea, xi=0.0019, reg=0.1, paso_dias=7) -> dict:
+def validar_conteo(df: pd.DataFrame, desde, columnas, linea, xi=0.0019, reg=0.1, paso_dias=7,
+                   reg_arbitro=None) -> dict:
     """Valida el modelo de un conteo (córners o tarjetas) en la línea dada:
     P(total > linea) del modelo frente a la frecuencia de la liga en el último año."""
     from scipy.stats import poisson
@@ -123,14 +124,15 @@ def validar_conteo(df: pd.DataFrame, desde, columnas, linea, xi=0.0019, reg=0.1,
         if te.empty or len(tr) < 100:
             continue
         r = ajustar(tr, fecha_ref=(t - timedelta(days=paso_dias)).date(), xi=xi, reg=reg, inicial=prev,
-                    columnas=tuple(columnas), dixon_coles=False)
+                    columnas=tuple(columnas), dixon_coles=False, reg_arbitro=reg_arbitro)
         prev = r
         base = tr[tr["fecha"] >= tr["fecha"].max() - timedelta(days=365)]
         pb = float(((base[columnas[0]] + base[columnas[1]]) > linea).mean())
         for _, m in te.iterrows():
             if m["local"] not in r.idx or m["visitante"] not in r.idx:
                 continue
-            lh, la = r.lambdas(m["local"], m["visitante"])
+            arb = m.get("arbitro") if reg_arbitro is not None else None
+            lh, la = r.lambdas(m["local"], m["visitante"], arb if isinstance(arb, str) else None)
             filas.append({"p": float(poisson.sf(np.floor(linea), lh + la)), "b": pb,
                           "y": float(m[columnas[0]] + m[columnas[1]] > linea)})
     if not filas:

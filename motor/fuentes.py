@@ -105,7 +105,8 @@ def _leer_csv_fd(texto: str, temporada: int | None, div: str | None = None) -> p
                        # estadísticas del partido: remates a puerta, xG, córners y tarjetas
                        "tl": num("HST"), "tv": num("AST"), "xgl": num("HxG"), "xgv": num("AxG"),
                        "crl": num("HC"), "crv": num("AC"),
-                       "tjl": num("HY") + num("HR").fillna(0), "tjv": num("AY") + num("AR").fillna(0)})
+                       "tjl": num("HY") + num("HR").fillna(0), "tjv": num("AY") + num("AR").fillna(0),
+                       "arbitro": raw["Referee"].astype("string").str.strip() if "Referee" in raw.columns else pd.NA})
     # Cuotas: cierre de Pinnacle si está; si no, promedio de cierre; si no, apertura
     for destino, opciones in {"c1": ["PSCH", "AvgCH", "B365CH", "PSH", "AvgH", "B365H"],
                               "cx": ["PSCD", "AvgCD", "B365CD", "PSD", "AvgD", "B365D"],

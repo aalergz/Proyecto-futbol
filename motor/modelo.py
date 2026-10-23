@@ -33,6 +33,8 @@ class Ratings:
     fecha_ref: date | None = None
     n_partidos: int = 0
     local: np.ndarray | None = None   # ventaja de local propia de cada equipo (log), opcional
+    arbitros: dict[str, float] = field(default_factory=dict)          # efecto de cada árbitro (log)
+    partidos_arbitro: dict[str, int] = field(default_factory=dict)
 
     def __post_init__(self):
         self.idx = {e: i for i, e in enumerate(self.equipos)}
@@ -51,10 +53,11 @@ class Ratings:
         i = self.idx[equipo]
         return float(np.exp(self.ataque[i])), float(np.exp(self.defensa[i]))
 
-    def lambdas(self, local: str, visitante: str) -> tuple[float, float]:
+    def lambdas(self, local: str, visitante: str, arbitro: str | None = None) -> tuple[float, float]:
         i, j = self.idx[local], self.idx[visitante]
-        lh = np.exp(self.c + self.h + self.local[i] + self.ataque[i] + self.defensa[j])
-        la = np.exp(self.c + self.ataque[j] + self.defensa[i])
+        r = self.arbitros.get(arbitro, 0.0) if arbitro else 0.0   # árbitro desconocido = promedio
+        lh = np.exp(self.c + self.h + self.local[i] + self.ataque[i] + self.defensa[j] + r)
+        la = np.exp(self.c + self.ataque[j] + self.defensa[i] + r)
         return float(lh), float(la)
 
     def vector(self) -> np.ndarray:
@@ -146,6 +149,7 @@ def ajustar(
     columnas: tuple[str, str] = ("gl", "gv"),
     dixon_coles: bool = True,
     reg_local: float | None = None,
+    reg_arbitro: float | None = None,
 ) -> Ratings:
     """Ajusta el modelo con partidos jugados antes de `fecha_ref`.
 
@@ -160,6 +164,8 @@ def ajustar(
     dixon_coles: corrige 0-0, 1-0, 0-1 y 1-1 (solo tiene sentido con goles).
     reg_local: si no es None, cada equipo tiene su propia ventaja de local,
          penalizada con esta fuerza hacia la ventaja media de la liga.
+    reg_arbitro: si no es None y hay columna "arbitro", cada árbitro multiplica
+         el conteo de los dos equipos (pensado para tarjetas), penalizado hacia 1.
     """
     df = df.dropna(subset=list(columnas))
     if fecha_ref is None:
@@ -201,6 +207,17 @@ def ajustar(
     const = gammaln(x + 1) + gammaln(y + 1)
     nl = n if reg_local is not None else 0
     rl = reg_local or 0.0
+    arbs: list[str] = []
+    if reg_arbitro is not None and "arbitro" in df:
+        col = df["arbitro"].astype("string")
+        arbs = sorted(set(col.dropna()))
+    nr = len(arbs)
+    if nr:
+        aidx = {a: k for k, a in enumerate(arbs)}
+        ri = df["arbitro"].astype("string").map(aidx).fillna(-1).to_numpy(int)
+        tiene = ri >= 0
+        ri_ok = np.where(tiene, ri, 0)
+    ra = reg_arbitro or 0.0
 
     def tau_y_derivadas(lh, la, rho):
         tau = np.ones_like(lh)
@@ -225,9 +242,11 @@ def ajustar(
         a = theta[:n] - theta[:n].mean()
         d = theta[n:2 * n] - theta[n:2 * n].mean()
         hl = theta[2 * n:2 * n + nl] if nl else 0.0
-        c, h, rho = theta[2 * n + nl:]
-        lh = np.exp(c + h + (hl[hi] if nl else 0.0) + a[hi] + d[ai])
-        la = np.exp(c + a[ai] + d[hi])
+        rr = theta[2 * n + nl:2 * n + nl + nr] if nr else None
+        c, h, rho = theta[2 * n + nl + nr:]
+        ef = np.where(tiene, rr[ri_ok], 0.0) if nr else 0.0
+        lh = np.exp(c + h + (hl[hi] if nl else 0.0) + a[hi] + d[ai] + ef)
+        la = np.exp(c + a[ai] + d[hi] + ef)
         if dc_en_ajuste:
             tau, dt_l, dt_a, dt_r = tau_y_derivadas(lh, la, rho)
         else:
@@ -238,6 +257,8 @@ def ajustar(
         nll = -(w * ll).sum() + reg * (ea @ ea + ed @ ed) / n
         if nl:
             nll += rl * (hl @ hl) / n
+        if nr:
+            nll += ra * (rr @ rr) / nr
 
         gh = w * (x - lh + lh * dt_l / tau)        # ∂ll/∂η_local
         ga = w * (y - la + la * dt_a / tau)        # ∂ll/∂η_visitante
@@ -250,15 +271,17 @@ def ajustar(
         partes = [g_a, g_d]
         if nl:
             partes.append(-np.bincount(hi, gh, n) + 2 * rl * hl / n)
+        if nr:
+            partes.append(-np.bincount(ri_ok[tiene], (gh + ga)[tiene], nr) + 2 * ra * rr / nr)
         g_c = -(gh.sum() + ga.sum())
         g_h = -gh.sum()
         g_r = -(w * dt_r / tau).sum() if dc_en_ajuste else 0.0
         return nll, np.concatenate(partes + [[g_c, g_h, g_r]])
 
-    theta0 = np.zeros(2 * n + nl + 3)
-    theta0[2 * n + nl] = np.log(max(y.mean(), 0.3))
-    theta0[2 * n + nl + 1] = np.log(max(x.mean(), 0.3) / max(y.mean(), 0.3))
-    theta0[2 * n + nl + 2] = -0.05 if dc_en_ajuste else 0.0
+    theta0 = np.zeros(2 * n + nl + nr + 3)
+    theta0[2 * n + nl + nr] = np.log(max(y.mean(), 0.3))
+    theta0[2 * n + nl + nr + 1] = np.log(max(x.mean(), 0.3) / max(y.mean(), 0.3))
+    theta0[2 * n + nl + nr + 2] = -0.05 if dc_en_ajuste else 0.0
     if inicial is not None:   # arranque en caliente: acelera mucho la validación
         for e, k in idx.items():
             if e in inicial.idx:
@@ -266,27 +289,34 @@ def ajustar(
                 theta0[n + k] = inicial.defensa[inicial.idx[e]]
                 if nl:
                     theta0[2 * n + k] = inicial.local[inicial.idx[e]]
-        theta0[2 * n + nl:2 * n + nl + 2] = [inicial.c, inicial.h]
+        for k, arb in enumerate(arbs):
+            theta0[2 * n + nl + k] = inicial.arbitros.get(arb, 0.0)
+        theta0[2 * n + nl + nr:2 * n + nl + nr + 2] = [inicial.c, inicial.h]
         if dc_en_ajuste:
             theta0[-1] = inicial.rho
 
-    bounds = [(None, None)] * (2 * n + nl + 2) + [(-0.25, 0.15) if dc_en_ajuste else (0.0, 0.0)]
+    bounds = [(None, None)] * (2 * n + nl + nr + 2) + [(-0.25, 0.15) if dc_en_ajuste else (0.0, 0.0)]
     res = minimize(objetivo, theta0, jac=True, method="L-BFGS-B", bounds=bounds,
                    options={"maxiter": 2000, "gtol": 1e-9})
     th = res.x
     a = th[:n] - th[:n].mean()
     d = th[n:2 * n] - th[n:2 * n].mean()
     hl = th[2 * n:2 * n + nl] if nl else np.zeros(n)
-    c, h, rho = (float(v) for v in th[2 * n + nl:])
+    rr = th[2 * n + nl:2 * n + nl + nr]
+    c, h, rho = (float(v) for v in th[2 * n + nl + nr:])
 
     if dixon_coles and not dc_en_ajuste:
         # ρ con los goles reales, dejando fijas las fuerzas
-        lh = np.exp(c + h + hl[hi] + a[hi] + d[ai])
-        la = np.exp(c + a[ai] + d[hi])
+        ef = np.where(tiene, rr[ri_ok], 0.0) if nr else 0.0
+        lh = np.exp(c + h + hl[hi] + a[hi] + d[ai] + ef)
+        la = np.exp(c + a[ai] + d[hi] + ef)
         f = lambda r: -(w * np.log(tau_y_derivadas(lh, la, r)[0])).sum()
         rho = float(minimize_scalar(f, bounds=(-0.25, 0.15), method="bounded").x)
 
     jugados = pd.concat([df["local"], df["visitante"]]).value_counts().to_dict()
+    pa = df["arbitro"].value_counts().to_dict() if nr else {}
     return Ratings(equipos, a, d, c, h, rho,
                    partidos={e: int(jugados.get(e, 0)) for e in equipos},
-                   fecha_ref=fecha_ref, n_partidos=len(df), local=hl)
+                   fecha_ref=fecha_ref, n_partidos=len(df), local=hl,
+                   arbitros={arb: float(rr[k]) for k, arb in enumerate(arbs)},
+                   partidos_arbitro={arb: int(pa.get(arb, 0)) for arb in arbs})
