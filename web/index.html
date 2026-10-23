@@ -278,6 +278,10 @@ footer .wrap{display:flex;gap:12px 24px;flex-wrap:wrap;justify-content:space-bet
 .dia .pk-head h3{font-size:17px;text-transform:uppercase;letter-spacing:.03em}
 .dia-col{display:grid;gap:8px;align-content:start}
 .dia-col .hist{margin:0}
+.niveles{display:flex;gap:4px;flex-wrap:wrap;margin:0 0 12px}
+.nivel{background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:6px 14px;font-weight:600;font-size:14px;cursor:pointer}
+.nivel[aria-pressed="true"]{background:var(--home);border-color:var(--home);color:var(--on-strong)}
+.nivel small{font-weight:400;opacity:.85}
 .toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--fg);color:var(--bg);padding:8px 14px;border-radius:4px;font-size:14px;z-index:20}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
@@ -963,26 +967,39 @@ function comboCard(k,cb){
 let DIA={};
 const diaLocal=x=>x.inicio?new Date(x.inicio).toLocaleDateString("en-CA"):x.fecha;
 const cons=x=>(x.prob+(x.prob_mercado??x.prob))/2;
+const NIVELES={normal:{t:"Normal",c:1.40,p:0.55},conservador:{t:"Conservador",c:1.20,p:0.70},muy_conservador:{t:"Muy conservador",c:1.05,p:0.80}};
+let NIVEL="conservador";
+try{const v=localStorage.getItem("pp-nivel");if(v&&NIVELES[v])NIVEL=v}catch(e){}
+function elegir(mercados,nv){   // misma regla que el motor: la de más consenso que cumpla el nivel
+  const ok=mercados.filter(x=>x.prob_mercado!=null&&x.cuota>=nv.c&&cons(x)>=nv.p);
+  return ok.length?ok.reduce((a,b)=>cons(b)>cons(a)?b:a):null;
+}
 function bloqueDia(sel){
-  const ahora=Date.now(), hoy=new Date().toLocaleDateString("en-CA");
-  const todas=sel.flatMap(([k,l])=>(l.selecciones.seguras||[]).map(x=>({...x,_k:k})))
-    .filter(x=>!x.inicio||new Date(x.inicio).getTime()>ahora);   // solo partidos que no han empezado
-  if(!todas.length) return "";
-  const dias=[...new Set(todas.map(diaLocal))].sort();
+  const ahora=Date.now(), hoy=new Date().toLocaleDateString("en-CA"), nv=NIVELES[NIVEL];
+  const partidos=sel.flatMap(([k,l])=>(l.selecciones.partidos||[]).map(m=>({...m,_k:k})))
+    .filter(m=>!m.inicio||new Date(m.inicio).getTime()>ahora);   // solo partidos que no han empezado
+  if(!partidos.length) return "";
+  const dias=[...new Set(partidos.map(diaLocal))].sort();
   const dia=dias.includes(hoy)?hoy:dias[0];
-  const del=todas.filter(x=>diaLocal(x)===dia).sort((a,b)=>cons(b)-cons(a));
+  const delDia=partidos.filter(m=>diaLocal(m)===dia);
+  const del=delDia.map(m=>{const x=elegir(m.mercados,nv);return x?{...x,fecha:m.fecha,inicio:m.inicio,local:m.local,visitante:m.visitante,_k:m._k}:null})
+    .filter(Boolean).sort((a,b)=>cons(b)-cons(a));
   const etq=new Date(dia+"T12:00:00").toLocaleDateString("es-CR",{weekday:"long",day:"numeric",month:"long"});
   const combo=n=>{if(del.length<n)return null;const patas=del.slice(0,n),prob=patas.reduce((a,x)=>a*x.prob,1),cuota=patas.reduce((a,x)=>a*x.cuota,1);return {patas,prob,cuota,ve:prob*cuota-1}};
   const d2=combo(2), d3=combo(3);
-  const h=(t,e)=>histTxt(DIA&&DIA[t],e);
+  const HN=DIA&&DIA.niveles?DIA.niveles[NIVEL]:(NIVEL==="normal"?DIA:null);
+  const h=(t,e)=>histTxt(HN&&HN[t],e);
   const n=DIA&&DIA.ligas?DIA.ligas.length:0;
-  return `<div class="dia"><div class="dia-top"><h2>Recomendaciones del día</h2><span>${dia===hoy?"Hoy, ":"Próximo día con partidos: "}${etq} · ${del.length} partido${del.length===1?"":"s"} con cuotas · horas de tu zona</span></div>
-    <div class="dia-grid">
+  const selector=`<div class="niveles" role="group" aria-label="Nivel de riesgo">${Object.entries(NIVELES).map(([k,v])=>`<button class="nivel" data-nivel="${k}" aria-pressed="${k===NIVEL}">${v.t} <small>cuota ≥ ${v.c.toFixed(2)} · prob. ≥ ${Math.round(v.p*100)}%</small></button>`).join("")}</div>`;
+  const cuerpo=!del.length?`<div class="empty">Ningún partido de este día cumple el nivel ${nv.t.toLowerCase()}. Prueba con un nivel menos estricto.</div>`:
+    `<div class="dia-grid">
       <div class="dia-col"><div class="pk-head"><h3>La más probable del día</h3><p>La selección en la que modelo y casas más coinciden.</p></div>${pkCard(del[0]._k,del[0])}${h("mejor","Regla diaria"+(n?` · ${n} ligas`:""))}</div>
       ${d2?`<div class="dia-col"><div class="pk-head"><h3>Doble del día</h3><p>Las 2 más probables del día, de partidos distintos.</p></div>${comboCard(null,d2)}${h("doble","Regla diaria")}</div>`:""}
       ${d3?`<div class="dia-col"><div class="pk-head"><h3>Triple del día</h3><p>Las 3 más probables del día.</p></div>${comboCard(null,d3)}${h("triple","Regla diaria")}</div>`:""}
-    </div>
-    <p class="note">No hay "valor del día": en el último año, apostar cada día la selección con más valor según el modelo perdió ${DIA&&DIA.valor&&DIA.valor.apuestas?signed(DIA.valor.roi*100,0,"%"):"dinero"}, una pérdida que no se explica por azar.</p></div>`;
+    </div>`;
+  return `<div class="dia"><div class="dia-top"><h2>Recomendaciones del día</h2><span>${dia===hoy?"Hoy, ":"Próximo día con partidos: "}${etq} · ${delDia.length} partido${delDia.length===1?"":"s"} con cuotas · horas de tu zona</span></div>
+    ${selector}${cuerpo}
+    <p class="note">Más conservador = cuotas más bajas y más aciertos, pero cada fallo cuesta más ganancias. No hay "valor del día": en el último año, apostar cada día la selección con más valor según el modelo perdió ${DIA&&DIA.valor&&DIA.valor.apuestas?signed(DIA.valor.roi*100,0,"%"):"dinero"}, una pérdida que no se explica por azar.</p></div>`;
 }
 function renderPicks(){
   const ls=Object.entries(LEAGUES).filter(([k,l])=>l.real&&l.selecciones);
@@ -1002,6 +1019,8 @@ function renderPicks(){
 }
 $("#pkFilters").addEventListener("click",e=>{const b=e.target.closest(".chip");if(!b)return;pkFiltro=b.dataset.f;renderPicks();});
 $("#pkList").addEventListener("click",e=>{
+  const nb=e.target.closest(".nivel");
+  if(nb){NIVEL=nb.dataset.nivel;try{localStorage.setItem("pp-nivel",NIVEL)}catch(err){}renderPicks();return}
   const b=e.target.closest("button[data-act]"); if(!b) return;
   if(b.dataset.act==="ver"){abrirPartido(b.dataset.l,b.dataset.h,b.dataset.a);showTab("analizador");return}
   if(b.dataset.act==="add"){const x=JSON.parse(b.dataset.j);S.parlay=S.parlay.filter(l=>!l.ex);

@@ -155,7 +155,15 @@ log λ_visitante = c     + ataque[visitante] + defensa[local]
 
 Las mismas reglas se aplican a la validación del último año con las cuotas de cierre, y la web muestra aciertos, rendimiento y su rango del 90%. En 2024-25 y 2025-27, las "más probables" quedaron entre −9% y +2%, las "de valor" entre −16% y −2%, y las combinadas variaron de −38% a +14%. Ninguna le gana al mercado de forma fiable.
 
-**Recomendaciones del día.** Con las cinco ligas juntas, la web toma los partidos de hoy (o del próximo día con partidos) que aún no empezaron y muestra la selección más probable del día, la doble y la triple. Su historial diario del último año: la más probable −7.7%, la doble −10.6%, la triple −16.7%. La "de más valor del día" perdió −25.3%, fuera del rango del azar, así que no se muestra como recomendación del día.
+**Recomendaciones del día.** Con las cinco ligas juntas, la web toma los partidos de hoy (o del próximo día con partidos) que aún no empezaron y muestra la selección más probable del día, la doble y la triple, en tres niveles de riesgo. "Probabilidad" es el promedio entre el modelo y las casas sin margen. Historial diario del último año:
+
+| Nivel | Regla | Simple del día | Doble | Triple |
+|---|---|---|---|---|
+| Normal | cuota ≥ 1.40 · prob. ≥ 55% | 63% @1.46 · −7.7% | 42% @2.19 · −10.6% | 27% @3.26 · −16.7% |
+| Conservador (por defecto) | cuota ≥ 1.20 · prob. ≥ 70% | 82% @1.24 · +1.4% | 65% @1.55 · +0.1% | 52% @1.94 · −0.6% |
+| Muy conservador | cuota ≥ 1.05 · prob. ≥ 80% | 91% @1.09 · −1.4% | 82% @1.18 · −2.8% | 74% @1.31 · −3.2% |
+
+Los niveles se eligieron probando 40 combinaciones en 2024-25 y 2025-26; los más conservadores aciertan más con cuotas más bajas y su rendimiento queda cerca de cero. La "de más valor del día" perdió alrededor de 25%, fuera del rango del azar, así que no se muestra como recomendación del día.
 
 **Árbitros (solo Premier).** La web muestra el árbitro designado y su historial: tarjetas por partido frente a las que se esperaban por los equipos que le tocaron. No entra en la probabilidad: al validarlo en 2024-25 y 2025-27, usar el árbitro empeoró la predicción de tarjetas. football-data.co.uk no publica los árbitros de LaLiga.
 

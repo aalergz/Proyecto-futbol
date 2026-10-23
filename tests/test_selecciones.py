@@ -37,6 +37,9 @@ def test_historial_del_dia_entre_ligas():
                               "gl": 2 if gana else 0, "gv": 0 if gana else 1} for i in range(6)])
     h = sel.historial_dia({"a": liga(True), "b": liga(False)})
     assert h["dias"] == 3 and h["ligas"] == ["a", "b"]
-    assert h["mejor"]["apuestas"] == 3                   # una por día
-    assert h["doble"]["apuestas"] == 3 and h["triple"]["apuestas"] == 3
-    assert h["triple"]["aciertos"] == 0.0                # 3 de 4 partidos: siempre entra uno perdido
+    n = h["niveles"]["normal"]
+    assert n["mejor"]["apuestas"] == 3                   # una por día
+    assert n["doble"]["apuestas"] == 3 and n["triple"]["apuestas"] == 3
+    assert n["triple"]["aciertos"] == 0.0                # 3 de 4 partidos: siempre entra uno perdido
+    # conservador: 1X (62%+22% = 84% modelo) a cuota ~1.19 no llega a 1.20 → elige otra o ninguna
+    assert set(h["niveles"]) == {"normal", "conservador", "muy_conservador"}

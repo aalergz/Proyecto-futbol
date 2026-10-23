@@ -18,6 +18,9 @@ import pandas as pd
 
 CUOTA_MIN_SEGURA = 1.40     # por debajo, ganar paga demasiado poco
 PROB_MIN_SEGURA = 0.55
+# Niveles de las recomendaciones del día: (cuota mínima, probabilidad mínima de consenso).
+# Elegidos con el historial de 2024-25 y 2025-26 en las cinco ligas.
+NIVELES = {"normal": (1.40, 0.55), "conservador": (1.20, 0.70), "muy_conservador": (1.05, 0.80)}
 VE_MIN = 0.05               # valor esperado mínimo para "el modelo ve valor"
 PROB_MIN_VALOR = 0.20       # evita apuestas muy improbables
 
@@ -64,10 +67,13 @@ def consenso(x: dict) -> float:
     return (x["prob"] + x["prob_mercado"]) / 2 if x.get("prob_mercado") is not None else x["prob"]
 
 
-def segura(cands: list[dict], modo: str = "consenso") -> dict | None:
+def segura(cands: list[dict], modo: str = "consenso", cuota_min: float | None = None,
+           prob_min: float | None = None) -> dict | None:
     """La selección más probable en la que modelo y mercado coinciden."""
     clave = consenso if modo == "consenso" else (lambda x: x["prob"])
-    v = [x for x in cands if x["cuota"] >= CUOTA_MIN_SEGURA and clave(x) >= PROB_MIN_SEGURA
+    cuota_min = CUOTA_MIN_SEGURA if cuota_min is None else cuota_min
+    prob_min = PROB_MIN_SEGURA if prob_min is None else prob_min
+    v = [x for x in cands if x["cuota"] >= cuota_min and clave(x) >= prob_min
          and (modo != "consenso" or x.get("prob_mercado") is not None)]
     return max(v, key=clave) if v else None
 
@@ -130,6 +136,20 @@ def historial(detalle: pd.DataFrame, modo: str = "consenso") -> dict:
 
 
 def historial_dia(detalles: dict[str, pd.DataFrame]) -> dict:
+    """Las reglas del día en cada nivel, más la de más valor del día."""
+    out = {"niveles": {}}
+    for nivel, (cmin, pmin) in NIVELES.items():
+        h = _historial_dia(detalles, cmin, pmin)
+        if not h:
+            return {}
+        out["niveles"][nivel] = {k: h[k] for k in ("mejor", "doble", "triple")}
+        out["niveles"][nivel]["regla"] = {"cuota_min": cmin, "prob_min": pmin}
+        if nivel == "normal":
+            out.update({k: h[k] for k in ("valor", "dias", "ligas", "desde", "hasta")})
+    return out
+
+
+def _historial_dia(detalles: dict[str, pd.DataFrame], cuota_min: float, prob_min: float) -> dict:
     """Reglas "del día" con todas las ligas juntas: cada día, la selección segura
     más probable, la doble y la triple con las más probables, y la de más valor."""
     partes = [d.assign(liga=k) for k, d in detalles.items() if d is not None and not d.empty and "c1" in d]
@@ -143,7 +163,7 @@ def historial_dia(detalles: dict[str, pd.DataFrame]) -> dict:
         for m in dia.itertuples():
             cs = candidatos({"p1": m.p1, "px": m.px, "p2": m.p2, "o25": m.o25},
                             {k: getattr(m, k, None) for k in ("c1", "cx", "c2", "co25", "cu25")})
-            s, v = segura(cs), con_valor(cs)
+            s, v = segura(cs, cuota_min=cuota_min, prob_min=prob_min), con_valor(cs)
             if s:
                 segs.append({**s, "ok": gano(s["mercado"], m.gl, m.gv)})
             if v:
@@ -173,12 +193,16 @@ def proximas(proximos: list[dict], dias: int = 8) -> dict:
         return {"seguras": [], "valor": [], "combinadas": []}
     inicio = pd.Timestamp(con_cuota[0]["fecha"])
     con_cuota = [m for m in con_cuota if pd.Timestamp(m["fecha"]) <= inicio + pd.Timedelta(days=dias)]
-    seguras, valor = [], []
+    seguras, valor, partidos = [], [], []
     for m in con_cuota:
         cs = candidatos(m, m["cuotas"])
         base = {"fecha": m["fecha"], "local": m["local"], "visitante": m["visitante"]}
         if m.get("inicio"):
             base["inicio"] = m["inicio"]
+        # Todos los mercados del partido, para que la web aplique cada nivel del día
+        partidos.append({**base, "mercados": [{k: (round(v, 4) if isinstance(v, float) else v)
+                                               for k, v in {**c, "etiqueta": c["etiqueta"].format(local=m["local"], visitante=m["visitante"])}.items()}
+                                              for c in cs if c.get("prob_mercado") is not None]})
         for regla, lista in ((segura, seguras), (con_valor, valor)):
             x = regla(cs)
             if x:
@@ -188,6 +212,6 @@ def proximas(proximos: list[dict], dias: int = 8) -> dict:
     combinadas = [cb for cb in (combinar(seguras, 2), combinar(seguras, 3)) if cb]
     r = lambda x: {k: (round(v, 4) if isinstance(v, float) else v) for k, v in x.items()}
     # Todas las del periodo: la web elige las del día y muestra las mejores de la semana
-    return {"seguras": [r(x) for x in seguras], "valor": [r(x) for x in valor],
+    return {"seguras": [r(x) for x in seguras], "valor": [r(x) for x in valor], "partidos": partidos,
             "combinadas": [{**r({k: v for k, v in cb.items() if k != "patas"}), "patas": [r(p) for p in cb["patas"]]}
                            for cb in combinadas]}
