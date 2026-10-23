@@ -751,7 +751,7 @@ function runSim(){
   const key=$("#sLeague").value, L=LEAGUES[key], T=L.teams, n=T.length, total=+$("#sN").value;
   const my=++simToken;
   const idxOf={}; T.forEach((t,i)=>idxOf[t[0]]=i);
-  const desdeTabla=!!(L.real&&L.tabla&&L.restantes);
+  const desdeTabla=!!(L.real&&L.tabla&&L.restantes&&L.restantes.length);
   const P0=new Int32Array(n), G0=new Int32Array(n), F0=new Int32Array(n);
   let fx=[];
   if(desdeTabla){
@@ -792,7 +792,7 @@ function renderSim(L,pos,pts,gd,total,P0,nfx){
   $("#sTable").innerHTML=`<tr><th>Equipo</th><th>Pos. media</th>${P0?"<th>Pts hoy</th>":""}<th>Pts finales</th><th>DG</th><th>Campeón</th><th>${L.top.label}</th><th>${L.bot.label}</th><th style="text-align:left">Probabilidad por posición (1 → ${n})</th></tr>`+
     rows.map((r,k)=>`<tr><td class="team ${k<L.top.n?"zone-top":k>=n-L.bot.n?"zone-bot":""}" style="padding-left:12px">${esc(r.name)}</td><td>${r.exp.toFixed(1)}</td>${P0?`<td>${r.hoy}</td>`:""}<td>${r.pts.toFixed(1)}</td><td>${signed(r.gd,1)}</td><td>${cell(r.champ)}</td><td>${cell(r.top)}</td><td>${cell(r.bot)}</td>
     <td style="text-align:left"><div class="strip">${r.dist.map((p,i)=>`<i title="Posición ${i+1}: ${pct(p,1)}" style="background:color-mix(in srgb, ${i<L.top.n?"var(--home)":i>=n-L.bot.n?"var(--neg)":"var(--away)"} ${Math.round(Math.sqrt(p)*100)}%, var(--surface-2))"></i>`).join("")}</div></td></tr>`).join("");
-  const origen=P0?`Desde la tabla actual (resultados hasta ${fecha(L.ultimo)}) · ${nfx} partidos por jugar`:`Temporada completa desde cero · ${nfx} partidos · ratings de ejemplo`;
+  const origen=P0?`Desde la tabla actual (resultados hasta ${fecha(L.ultimo)}) · ${nfx} partidos por jugar`:L.real?`Temporada completa desde cero · ${nfx} partidos · no hay calendario de partidos pendientes cargado`:`Temporada completa desde cero · ${nfx} partidos · ratings de ejemplo`;
   $("#sLegend").innerHTML=`<span>${total.toLocaleString("es-CR")} simulaciones · ${origen}</span><span><i class="dot" style="background:var(--home)"></i>${L.top.label}</span><span><i class="dot" style="background:var(--neg)"></i>${L.bot.label}</span><span>Celdas más intensas = más probable</span>`;
 }
 

@@ -8,10 +8,10 @@ on:
   # El Worker de Cloudflare lo dispara cuando termina un partido (ver worker/)
   repository_dispatch:
     types: [partido-terminado]
-  # Si cambias la web, se vuelve a publicar
+  # Si cambias la web, el motor o la configuración, se vuelve a ejecutar y publicar
   push:
     branches: [main]
-    paths: ["web/index.html"]
+    paths: ["web/index.html", "motor/**", "cli.py", "config.toml", "requirements.txt"]
   workflow_dispatch:
 
 permissions:

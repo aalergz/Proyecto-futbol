@@ -92,7 +92,9 @@ def openfootball(codigo: str, temporadas: list[int]) -> pd.DataFrame:
 # el mercado.
 # --------------------------------------------------------------------------- #
 def _leer_csv_fd(texto: str, temporada: int | None, div: str | None = None) -> pd.DataFrame:
+    texto = texto.lstrip("\ufeff").removeprefix("ï»¿")   # marca BOM que trae fixtures.csv
     raw = pd.read_csv(io.StringIO(texto), encoding_errors="ignore", on_bad_lines="skip")
+    raw.columns = [str(c).strip() for c in raw.columns]
     if div is not None:
         raw = raw[raw.get("Div") == div] if "Div" in raw else raw.iloc[0:0]
     raw = raw.dropna(subset=["HomeTeam", "AwayTeam"])
@@ -326,10 +328,63 @@ def cargar_liga(cfg: dict, temporadas: list[int]) -> tuple[pd.DataFrame, str]:
             else:
                 raise FuenteNoDisponible(f"fuente desconocida: {fuente}")
             df = aplicar_alias(df, cfg.get("alias", {}))
+            if fuente in ("footballdata", "openfootball"):
+                df = completar_calendario(df, cfg, temporadas, fuente)
             return df, fuente
         except FuenteNoDisponible as e:
             errores.append(str(e))
     raise FuenteNoDisponible(" | ".join(errores) or "sin fuentes configuradas")
+
+
+def _clave(n: str) -> str:
+    return re.sub(r"[^a-z0-9 ]", "", _sin_tildes(n)).strip()
+
+
+def emparejar_nombres(nombres: set[str], destino: set[str]) -> dict[str, str]:
+    """Empareja nombres de otra fuente con los de la fuente principal.
+    'Leeds United' ↔ 'Leeds', 'Hull City' ↔ 'Hull'. Solo acepta coincidencias únicas."""
+    dk = {_clave(d): d for d in destino}
+    out = {}
+    for n in nombres:
+        if n in destino:
+            out[n] = n
+            continue
+        k = _clave(n)
+        if k in dk:
+            out[n] = dk[k]
+            continue
+        cand = [d for c, d in dk.items() if c and (c in k.split() or k.startswith(c + " ") or c.startswith(k + " "))]
+        if len(cand) == 1:
+            out[n] = cand[0]
+    return out
+
+
+def completar_calendario(df: pd.DataFrame, cfg: dict, temporadas: list[int], fuente: str) -> pd.DataFrame:
+    """football-data.co.uk solo publica la próxima semana de partidos. Para que la
+    cartelera y el simulador conozcan toda la temporada, se añaden los partidos
+    pendientes del calendario de openfootball que aún no se han jugado."""
+    actual = max(temporadas)
+    temp = df[df["temporada"] == actual]
+    if temp.empty or fuente != "footballdata" or not cfg.get("openfootball"):
+        return df
+    try:
+        of = aplicar_alias(openfootball(cfg["openfootball"], [actual]), cfg.get("alias", {}))
+    except FuenteNoDisponible as e:
+        print(f"  · aviso: no pude completar el calendario ({e})")
+        return df
+    equipos = set(temp["local"]) | set(temp["visitante"])
+    mapa = emparejar_nombres(set(of["local"]) | set(of["visitante"]), equipos)
+    of = of.assign(local=of["local"].map(mapa), visitante=of["visitante"].map(mapa)).dropna(subset=["local", "visitante"])
+    ya = set(zip(temp["local"], temp["visitante"]))                 # jugados o ya programados
+    pend = of[[(a, b) not in ya for a, b in zip(of["local"], of["visitante"])]].copy()
+    pend["gl"] = np.nan
+    pend["gv"] = np.nan
+    pend["temporada"] = actual
+    # Los que quedaron con fecha pasada están aplazados: se juegan más adelante
+    pend["fecha"] = pend["fecha"].clip(lower=pd.Timestamp(date.today()))
+    if len(pend):
+        print(f"  · calendario completado con openfootball: {len(pend)} partidos pendientes")
+    return _limpiar(pd.concat([df, pend[["fecha", "local", "visitante", "gl", "gv", "temporada"]]], ignore_index=True))
 
 
 _SUFIJOS = re.compile(r"\s+(FC|CF|AFC|SC|CD|UD|SAD)$|^(AFC|FC|CF|CD|UD|RC|RCD|SD|CA)\s+")

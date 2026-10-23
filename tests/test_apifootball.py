@@ -119,3 +119,31 @@ def test_sin_temporada_actual_pasa_a_otra_fuente(api, monkeypatch, tmp_path):
     cfg = {**CFG, "fuentes": ["apifootball", "csv"], "csv": str(csv)}
     df, fuente = fuentes.cargar_liga(cfg, [2025, 2026])
     assert fuente == "csv"
+
+
+def test_completar_calendario_con_openfootball(monkeypatch):
+    import pandas as pd
+    from datetime import date
+    hoy = pd.Timestamp(date.today())
+    # football-data: nombres cortos, 2 partidos jugados y 1 programado
+    fd = pd.DataFrame({"fecha": [hoy - pd.Timedelta(days=9), hoy - pd.Timedelta(days=2), hoy + pd.Timedelta(days=2)],
+                       "local": ["Leeds", "Hull", "Arsenal"], "visitante": ["Arsenal", "Leeds", "Hull"],
+                       "gl": [1, 0, None], "gv": [2, 0, None], "temporada": 2026})
+    # openfootball: nombres largos, calendario completo, atrasado en resultados
+    pares = [("Leeds United", "Arsenal"), ("Hull City", "Leeds United"), ("Arsenal", "Hull City"),
+             ("Arsenal", "Leeds United"), ("Leeds United", "Hull City"), ("Hull City", "Arsenal")]
+    of = pd.DataFrame({"fecha": [hoy - pd.Timedelta(days=9 - 3 * i) for i in range(6)],
+                       "local": [a for a, _ in pares], "visitante": [b for _, b in pares],
+                       "gl": [1] + [None] * 5, "gv": [2] + [None] * 5, "temporada": 2026})
+    monkeypatch.setattr(fuentes, "openfootball", lambda codigo, temps: of)
+    out = fuentes.completar_calendario(fd, {"openfootball": "en.1"}, [2025, 2026], "footballdata")
+    pend = out[out["gl"].isna()]
+    assert len(out) == 6 and len(pend) == 4
+    assert set(pend["local"]) <= {"Arsenal", "Leeds", "Hull"}
+    assert (pend["fecha"] >= hoy).all()
+
+
+def test_bom_en_fixtures():
+    texto = "ï»¿Div,Date,Time,HomeTeam,AwayTeam\nE0,25/10/2026,15:00,Arsenal,Chelsea\nSP1,25/10/2026,16:15,Barcelona,Real Madrid\n"
+    df = fuentes._leer_csv_fd(texto, 2026, div="E0")
+    assert list(df["local"]) == ["Arsenal"]
