@@ -56,7 +56,7 @@ def validar(df: pd.DataFrame, desde, xi=0.0019, reg=0.02, paso_dias=7, min_parti
             fila = {"fecha": m["fecha"].date(), "local": m["local"], "visitante": m["visitante"],
                     "gl": int(m["gl"]), "gv": int(m["gv"]), **{k: p[k] for k in ("lh", "la", "p1", "px", "p2", "o25", "btts")},
                     "b1": b1, "bx": bx, "b2": 1 - b1 - bx, "b25": b25, "bbtts": bb}
-            for c in ("c1", "cx", "c2"):
+            for c in ("c1", "cx", "c2", "co25", "cu25"):
                 if c in m:
                     fila[c] = m[c]
             filas.append(fila)

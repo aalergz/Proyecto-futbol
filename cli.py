@@ -25,6 +25,7 @@ from motor.exportar import bloque_liga, envoltorio
 from motor.fuentes import (CUOTA, FuenteNoDisponible, buscar_ligas, cargar_liga, estado_api,
                            probar_temporada, resolver_apifootball, temporadas_liga)
 from motor.modelo import ajustar, predecir
+from motor.selecciones import historial
 from motor.validacion import validar, validar_conteo
 
 RAIZ = Path(__file__).resolve().parent
@@ -98,11 +99,14 @@ def cmd_actualizar(a):
             print("  · " + ", ".join(f"{n}: {c.media_local + c.media_visitante:.1f} por partido" for n, c in conteos.items()))
 
         val = None
+        hist_sel = (previo.get("ligas", {}).get(k, {}).get("selecciones") or {}).get("historial")
         dias = int(mod.get("validar_dias", 0))
         if dias and not a.sin_validar:
             t0 = time.time()
             desde = jug["fecha"].max() - timedelta(days=dias)
-            v = validar(df, desde, xi=mod["xi"], reg=mod["regularizacion"], **opc)["resumen"]
+            res_val = validar(df, desde, xi=mod["xi"], reg=mod["regularizacion"], **opc)
+            v = res_val["resumen"]
+            hist_sel = historial(res_val["detalle"])
             if v.get("partidos"):
                 val = v
                 for nombre, (cols, linea) in CONTEOS.items():
@@ -116,7 +120,7 @@ def cmd_actualizar(a):
         elif k in previo.get("ligas", {}):
             val = previo["ligas"][k].get("validacion")
 
-        ligas[k] = bloque_liga(k, lc, df, r, fuente, val, conteos=conteos)
+        ligas[k] = bloque_liga(k, lc, df, r, fuente, val, conteos=conteos, historial_sel=hist_sel)
         print(f"  · {len(ligas[k]['equipos'])} equipos, {len(ligas[k]['proximos'])} próximos partidos")
 
     out = envoltorio(ligas, {"xi": mod["xi"], "regularizacion": mod["regularizacion"], **opciones_modelo(mod)},

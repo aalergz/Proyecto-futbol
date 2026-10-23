@@ -110,7 +110,9 @@ def _leer_csv_fd(texto: str, temporada: int | None, div: str | None = None) -> p
     # Cuotas: cierre de Pinnacle si está; si no, promedio de cierre; si no, apertura
     for destino, opciones in {"c1": ["PSCH", "AvgCH", "B365CH", "PSH", "AvgH", "B365H"],
                               "cx": ["PSCD", "AvgCD", "B365CD", "PSD", "AvgD", "B365D"],
-                              "c2": ["PSCA", "AvgCA", "B365CA", "PSA", "AvgA", "B365A"]}.items():
+                              "c2": ["PSCA", "AvgCA", "B365CA", "PSA", "AvgA", "B365A"],
+                              "co25": ["PC>2.5", "AvgC>2.5", "B365C>2.5", "P>2.5", "Avg>2.5", "B365>2.5"],
+                              "cu25": ["PC<2.5", "AvgC<2.5", "B365C<2.5", "P<2.5", "Avg<2.5", "B365<2.5"]}.items():
         serie = pd.Series(np.nan, index=raw.index)
         for c in opciones:
             serie = serie.fillna(num(c))

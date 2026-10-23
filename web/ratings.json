@@ -1,5 +1,5 @@
 {
- "generado": "2026-10-23T16:30:53+00:00",
+ "generado": "2026-10-23T16:36:53+00:00",
  "modelo": "Dixon-Coles con decaimiento temporal",
  "parametros": {
   "xi": 0.0019,
@@ -121,6 +121,284 @@
      "partidos": 25,
      "tarjetas": 4.28,
      "esperadas": 3.95
+    }
+   },
+   "selecciones": {
+    "seguras": [
+     {
+      "fecha": "2026-10-24",
+      "local": "Arsenal",
+      "visitante": "Everton",
+      "mercado": "1",
+      "etiqueta": "Gana Arsenal",
+      "prob": 0.6164,
+      "cuota": 1.43,
+      "ve": -0.1185,
+      "prob_mercado": 0.6575
+     },
+     {
+      "fecha": "2026-10-25",
+      "local": "Crystal Palace",
+      "visitante": "Newcastle",
+      "mercado": "1X",
+      "etiqueta": "Crystal Palace o empate",
+      "prob": 0.6524,
+      "cuota": 1.59,
+      "ve": 0.0372,
+      "prob_mercado": 0.5892
+     },
+     {
+      "fecha": "2026-10-25",
+      "local": "Sunderland",
+      "visitante": "Leeds",
+      "mercado": "1X",
+      "etiqueta": "Sunderland o empate",
+      "prob": 0.6277,
+      "cuota": 1.56,
+      "ve": -0.0199,
+      "prob_mercado": 0.6008
+     },
+     {
+      "fecha": "2026-10-24",
+      "local": "Chelsea",
+      "visitante": "Tottenham",
+      "mercado": "o25",
+      "etiqueta": "Más de 2.5 goles",
+      "prob": 0.6021,
+      "cuota": 1.5,
+      "ve": -0.0969,
+      "prob_mercado": 0.625
+     },
+     {
+      "fecha": "2026-10-25",
+      "local": "Liverpool",
+      "visitante": "Brighton",
+      "mercado": "o25",
+      "etiqueta": "Más de 2.5 goles",
+      "prob": 0.5877,
+      "cuota": 1.53,
+      "ve": -0.1008,
+      "prob_mercado": 0.6117
+     },
+     {
+      "fecha": "2026-10-25",
+      "local": "Manchester United",
+      "visitante": "Bournemouth",
+      "mercado": "o25",
+      "etiqueta": "Más de 2.5 goles",
+      "prob": 0.6126,
+      "cuota": 1.6,
+      "ve": -0.0198,
+      "prob_mercado": 0.5855
+     },
+     {
+      "fecha": "2026-10-24",
+      "local": "Coventry",
+      "visitante": "Fulham",
+      "mercado": "1X",
+      "etiqueta": "Coventry o empate",
+      "prob": 0.601,
+      "cuota": 1.62,
+      "ve": -0.0275,
+      "prob_mercado": 0.5795
+     },
+     {
+      "fecha": "2026-10-24",
+      "local": "Aston Villa",
+      "visitante": "Manchester City",
+      "mercado": "o25",
+      "etiqueta": "Más de 2.5 goles",
+      "prob": 0.5551,
+      "cuota": 1.5,
+      "ve": -0.1673,
+      "prob_mercado": 0.6241
+     }
+    ],
+    "valor": [
+     {
+      "fecha": "2026-10-25",
+      "local": "Hull",
+      "visitante": "Brentford",
+      "mercado": "1",
+      "etiqueta": "Gana Hull",
+      "prob": 0.3507,
+      "cuota": 4.6,
+      "ve": 0.6132,
+      "prob_mercado": 0.2043
+     },
+     {
+      "fecha": "2026-10-24",
+      "local": "Aston Villa",
+      "visitante": "Manchester City",
+      "mercado": "1",
+      "etiqueta": "Gana Aston Villa",
+      "prob": 0.2789,
+      "cuota": 4.73,
+      "ve": 0.3192,
+      "prob_mercado": 0.1988
+     },
+     {
+      "fecha": "2026-10-23",
+      "local": "Ipswich",
+      "visitante": "Nottingham Forest",
+      "mercado": "2",
+      "etiqueta": "Gana Nottingham Forest",
+      "prob": 0.5739,
+      "cuota": 2.28,
+      "ve": 0.3085,
+      "prob_mercado": 0.4132
+     },
+     {
+      "fecha": "2026-10-25",
+      "local": "Crystal Palace",
+      "visitante": "Newcastle",
+      "mercado": "u25",
+      "etiqueta": "Menos de 2.5 goles",
+      "prob": 0.4901,
+      "cuota": 2.3,
+      "ve": 0.1272,
+      "prob_mercado": 0.4057
+     },
+     {
+      "fecha": "2026-10-24",
+      "local": "Arsenal",
+      "visitante": "Everton",
+      "mercado": "u25",
+      "etiqueta": "Menos de 2.5 goles",
+      "prob": 0.5761,
+      "cuota": 1.94,
+      "ve": 0.1176,
+      "prob_mercado": 0.4813
+     },
+     {
+      "fecha": "2026-10-24",
+      "local": "Coventry",
+      "visitante": "Fulham",
+      "mercado": "u25",
+      "etiqueta": "Menos de 2.5 goles",
+      "prob": 0.5382,
+      "cuota": 2.07,
+      "ve": 0.1141,
+      "prob_mercado": 0.4509
+     },
+     {
+      "fecha": "2026-10-25",
+      "local": "Liverpool",
+      "visitante": "Brighton",
+      "mercado": "2",
+      "etiqueta": "Gana Brighton",
+      "prob": 0.337,
+      "cuota": 3.13,
+      "ve": 0.0548,
+      "prob_mercado": 0.3003
+     }
+    ],
+    "combinadas": [
+     {
+      "prob": 0.4021,
+      "cuota": 2.27,
+      "ve": -0.0857,
+      "patas": [
+       {
+        "fecha": "2026-10-24",
+        "local": "Arsenal",
+        "visitante": "Everton",
+        "mercado": "1",
+        "etiqueta": "Gana Arsenal",
+        "prob": 0.6164,
+        "cuota": 1.43,
+        "ve": -0.1185,
+        "prob_mercado": 0.6575
+       },
+       {
+        "fecha": "2026-10-25",
+        "local": "Crystal Palace",
+        "visitante": "Newcastle",
+        "mercado": "1X",
+        "etiqueta": "Crystal Palace o empate",
+        "prob": 0.6524,
+        "cuota": 1.59,
+        "ve": 0.0372,
+        "prob_mercado": 0.5892
+       }
+      ]
+     },
+     {
+      "prob": 0.2524,
+      "cuota": 3.55,
+      "ve": -0.1047,
+      "patas": [
+       {
+        "fecha": "2026-10-24",
+        "local": "Arsenal",
+        "visitante": "Everton",
+        "mercado": "1",
+        "etiqueta": "Gana Arsenal",
+        "prob": 0.6164,
+        "cuota": 1.43,
+        "ve": -0.1185,
+        "prob_mercado": 0.6575
+       },
+       {
+        "fecha": "2026-10-25",
+        "local": "Crystal Palace",
+        "visitante": "Newcastle",
+        "mercado": "1X",
+        "etiqueta": "Crystal Palace o empate",
+        "prob": 0.6524,
+        "cuota": 1.59,
+        "ve": 0.0372,
+        "prob_mercado": 0.5892
+       },
+       {
+        "fecha": "2026-10-25",
+        "local": "Sunderland",
+        "visitante": "Leeds",
+        "mercado": "1X",
+        "etiqueta": "Sunderland o empate",
+        "prob": 0.6277,
+        "cuota": 1.56,
+        "ve": -0.0199,
+        "prob_mercado": 0.6008
+       }
+      ]
+     }
+    ],
+    "historial": {
+     "seguras": {
+      "apuestas": 293,
+      "aciertos": 0.621160409556314,
+      "cuota_media": 1.5789078498293516,
+      "roi": -0.023959044368600687,
+      "roi_min": -0.09796556421646915,
+      "roi_max": 0.05004747547926777
+     },
+     "valor": {
+      "apuestas": 299,
+      "aciertos": 0.3076923076923077,
+      "cuota_media": 3.556454849498328,
+      "roi": -0.1054180602006689,
+      "roi_min": -0.2447690731290871,
+      "roi_max": 0.033932952727749294
+     },
+     "doble": {
+      "apuestas": 36,
+      "aciertos": 0.4166666666666667,
+      "cuota_media": 2.1824999999999997,
+      "roi": -0.07583333333333335,
+      "roi_min": -0.38129864626796106,
+      "roi_max": 0.22963197960129433
+     },
+     "triple": {
+      "apuestas": 35,
+      "aciertos": 0.22857142857142856,
+      "cuota_media": 3.352571428571429,
+      "roi": -0.26171428571428573,
+      "roi_min": -0.6474641319496254,
+      "roi_max": 0.12403556052105391
+     },
+     "desde": "2025-10-19",
+     "hasta": "2026-10-19"
     }
    },
    "top": {
@@ -1834,6 +2112,13 @@
       2.08
      ],
      "arbitro": "T Bramall",
+     "cuotas": {
+      "c1": 3.01,
+      "cx": 3.44,
+      "c2": 2.28,
+      "co25": 1.72,
+      "cu25": 2.06
+     },
      "lh": 1.1273,
      "la": 2.0309,
      "p1": 0.1972,
@@ -1858,6 +2143,13 @@
       2.29
      ],
      "arbitro": "T Harrington",
+     "cuotas": {
+      "c1": 1.43,
+      "cx": 4.41,
+      "c2": 7.27,
+      "co25": 1.8,
+      "cu25": 1.94
+     },
      "lh": 1.7095,
      "la": 0.6662,
      "p1": 0.6164,
@@ -1882,6 +2174,13 @@
       2.26
      ],
      "arbitro": "P Bankes",
+     "cuotas": {
+      "c1": 4.73,
+      "cx": 4.26,
+      "c2": 1.62,
+      "co25": 1.5,
+      "cu25": 2.49
+     },
      "lh": 1.2486,
      "la": 1.6559,
      "p1": 0.2789,
@@ -1906,6 +2205,13 @@
       2.1
      ],
      "arbitro": "A Herczeg",
+     "cuotas": {
+      "c1": 3.04,
+      "cx": 3.46,
+      "c2": 2.23,
+      "co25": 1.7,
+      "cu25": 2.07
+     },
      "lh": 1.1688,
      "la": 1.3533,
      "p1": 0.3115,
@@ -1930,6 +2236,13 @@
       2.53
      ],
      "arbitro": "C Kavanagh",
+     "cuotas": {
+      "c1": 1.69,
+      "cx": 4.12,
+      "c2": 4.35,
+      "co25": 1.5,
+      "cu25": 2.5
+     },
      "lh": 1.9144,
      "la": 1.2008,
      "p1": 0.5313,
@@ -1954,6 +2267,13 @@
       2.32
      ],
      "arbitro": "S Barrott",
+     "cuotas": {
+      "c1": 2.09,
+      "cx": 3.76,
+      "c2": 3.13,
+      "co25": 1.53,
+      "cu25": 2.41
+     },
      "lh": 1.601,
      "la": 1.4479,
      "p1": 0.4038,
@@ -1978,6 +2298,13 @@
       2.52
      ],
      "arbitro": "J Gillett",
+     "cuotas": {
+      "c1": 2.1,
+      "cx": 3.63,
+      "c2": 3.19,
+      "co25": 1.6,
+      "cu25": 2.26
+     },
      "lh": 1.7558,
      "la": 1.4086,
      "p1": 0.449,
@@ -2002,6 +2329,13 @@
       2.03
      ],
      "arbitro": "P Tierney",
+     "cuotas": {
+      "c1": 2.86,
+      "cx": 3.58,
+      "c2": 2.28,
+      "co25": 1.57,
+      "cu25": 2.3
+     },
      "lh": 1.3857,
      "la": 1.3289,
      "p1": 0.3738,
@@ -2026,6 +2360,13 @@
       2.02
      ],
      "arbitro": "R Jones",
+     "cuotas": {
+      "c1": 4.6,
+      "cx": 3.92,
+      "c2": 1.69,
+      "co25": 1.63,
+      "cu25": 2.19
+     },
      "lh": 1.202,
      "la": 1.2006,
      "p1": 0.3507,
@@ -2050,6 +2391,13 @@
       2.01
      ],
      "arbitro": "S Attwell",
+     "cuotas": {
+      "c1": 3.04,
+      "cx": 3.21,
+      "c2": 2.35,
+      "co25": 2.07,
+      "cu25": 1.7
+     },
      "lh": 1.1194,
      "la": 1.2178,
      "p1": 0.3241,
@@ -2601,6 +2949,295 @@
     }
    },
    "arbitros": {},
+   "selecciones": {
+    "seguras": [
+     {
+      "fecha": "2026-10-25",
+      "local": "Athletic Club",
+      "visitante": "Getafe",
+      "mercado": "u25",
+      "etiqueta": "Menos de 2.5 goles",
+      "prob": 0.7273,
+      "cuota": 1.6,
+      "ve": 0.1637,
+      "prob_mercado": 0.5833
+     },
+     {
+      "fecha": "2026-10-25",
+      "local": "Celta de Vigo",
+      "visitante": "Real Betis",
+      "mercado": "1X",
+      "etiqueta": "Celta de Vigo o empate",
+      "prob": 0.6809,
+      "cuota": 1.56,
+      "ve": 0.0593,
+      "prob_mercado": 0.6017
+     },
+     {
+      "fecha": "2026-10-24",
+      "local": "Racing de Santander",
+      "visitante": "Espanyol",
+      "mercado": "o25",
+      "etiqueta": "Más de 2.5 goles",
+      "prob": 0.7011,
+      "cuota": 1.63,
+      "ve": 0.1428,
+      "prob_mercado": 0.5755
+     },
+     {
+      "fecha": "2026-10-23",
+      "local": "Alavés",
+      "visitante": "Málaga",
+      "mercado": "1",
+      "etiqueta": "Gana Alavés",
+      "prob": 0.6308,
+      "cuota": 1.62,
+      "ve": 0.0219,
+      "prob_mercado": 0.5826
+     },
+     {
+      "fecha": "2026-10-25",
+      "local": "Real Sociedad",
+      "visitante": "Levante",
+      "mercado": "o25",
+      "etiqueta": "Más de 2.5 goles",
+      "prob": 0.6018,
+      "cuota": 1.56,
+      "ve": -0.0612,
+      "prob_mercado": 0.5979
+     },
+     {
+      "fecha": "2026-10-24",
+      "local": "Atlético de Madrid",
+      "visitante": "Deportivo La Coruña",
+      "mercado": "o25",
+      "etiqueta": "Más de 2.5 goles",
+      "prob": 0.5886,
+      "cuota": 1.54,
+      "ve": -0.0936,
+      "prob_mercado": 0.6071
+     },
+     {
+      "fecha": "2026-10-25",
+      "local": "Barcelona",
+      "visitante": "Real Madrid",
+      "mercado": "1",
+      "etiqueta": "Gana Barcelona",
+      "prob": 0.5773,
+      "cuota": 1.6,
+      "ve": -0.0763,
+      "prob_mercado": 0.5855
+     },
+     {
+      "fecha": "2026-10-24",
+      "local": "Valencia",
+      "visitante": "Villarreal",
+      "mercado": "1X",
+      "etiqueta": "Valencia o empate",
+      "prob": 0.5899,
+      "cuota": 1.68,
+      "ve": -0.0112,
+      "prob_mercado": 0.5619
+     }
+    ],
+    "valor": [
+     {
+      "fecha": "2026-10-25",
+      "local": "Barcelona",
+      "visitante": "Real Madrid",
+      "mercado": "u25",
+      "etiqueta": "Menos de 2.5 goles",
+      "prob": 0.3163,
+      "cuota": 4.78,
+      "ve": 0.5119,
+      "prob_mercado": 0.1953
+     },
+     {
+      "fecha": "2026-10-25",
+      "local": "Athletic Club",
+      "visitante": "Getafe",
+      "mercado": "2",
+      "etiqueta": "Gana Getafe",
+      "prob": 0.2134,
+      "cuota": 6.11,
+      "ve": 0.3039,
+      "prob_mercado": 0.1534
+     },
+     {
+      "fecha": "2026-10-24",
+      "local": "Atlético de Madrid",
+      "visitante": "Deportivo La Coruña",
+      "mercado": "X2",
+      "etiqueta": "Deportivo La Coruña o empate",
+      "prob": 0.3399,
+      "cuota": 3.76,
+      "ve": 0.2786,
+      "prob_mercado": 0.2509
+     },
+     {
+      "fecha": "2026-10-25",
+      "local": "Celta de Vigo",
+      "visitante": "Real Betis",
+      "mercado": "1",
+      "etiqueta": "Gana Celta de Vigo",
+      "prob": 0.423,
+      "cuota": 2.89,
+      "ve": 0.2225,
+      "prob_mercado": 0.3239
+     },
+     {
+      "fecha": "2026-10-26",
+      "local": "Sevilla",
+      "visitante": "Osasuna",
+      "mercado": "2",
+      "etiqueta": "Gana Osasuna",
+      "prob": 0.2866,
+      "cuota": 4.0,
+      "ve": 0.1464,
+      "prob_mercado": 0.234
+     },
+     {
+      "fecha": "2026-10-24",
+      "local": "Racing de Santander",
+      "visitante": "Espanyol",
+      "mercado": "o25",
+      "etiqueta": "Más de 2.5 goles",
+      "prob": 0.7011,
+      "cuota": 1.63,
+      "ve": 0.1428,
+      "prob_mercado": 0.5755
+     },
+     {
+      "fecha": "2026-10-24",
+      "local": "Valencia",
+      "visitante": "Villarreal",
+      "mercado": "u25",
+      "etiqueta": "Menos de 2.5 goles",
+      "prob": 0.5406,
+      "cuota": 2.08,
+      "ve": 0.1244,
+      "prob_mercado": 0.4497
+     },
+     {
+      "fecha": "2026-10-25",
+      "local": "Real Sociedad",
+      "visitante": "Levante",
+      "mercado": "2",
+      "etiqueta": "Gana Levante",
+      "prob": 0.234,
+      "cuota": 4.74,
+      "ve": 0.1092,
+      "prob_mercado": 0.1979
+     }
+    ],
+    "combinadas": [
+     {
+      "prob": 0.4952,
+      "cuota": 2.5,
+      "ve": 0.2361,
+      "patas": [
+       {
+        "fecha": "2026-10-25",
+        "local": "Athletic Club",
+        "visitante": "Getafe",
+        "mercado": "u25",
+        "etiqueta": "Menos de 2.5 goles",
+        "prob": 0.7273,
+        "cuota": 1.6,
+        "ve": 0.1637,
+        "prob_mercado": 0.5833
+       },
+       {
+        "fecha": "2026-10-25",
+        "local": "Celta de Vigo",
+        "visitante": "Real Betis",
+        "mercado": "1X",
+        "etiqueta": "Celta de Vigo o empate",
+        "prob": 0.6809,
+        "cuota": 1.56,
+        "ve": 0.0593,
+        "prob_mercado": 0.6017
+       }
+      ]
+     },
+     {
+      "prob": 0.3472,
+      "cuota": 4.07,
+      "ve": 0.4126,
+      "patas": [
+       {
+        "fecha": "2026-10-25",
+        "local": "Athletic Club",
+        "visitante": "Getafe",
+        "mercado": "u25",
+        "etiqueta": "Menos de 2.5 goles",
+        "prob": 0.7273,
+        "cuota": 1.6,
+        "ve": 0.1637,
+        "prob_mercado": 0.5833
+       },
+       {
+        "fecha": "2026-10-25",
+        "local": "Celta de Vigo",
+        "visitante": "Real Betis",
+        "mercado": "1X",
+        "etiqueta": "Celta de Vigo o empate",
+        "prob": 0.6809,
+        "cuota": 1.56,
+        "ve": 0.0593,
+        "prob_mercado": 0.6017
+       },
+       {
+        "fecha": "2026-10-24",
+        "local": "Racing de Santander",
+        "visitante": "Espanyol",
+        "mercado": "o25",
+        "etiqueta": "Más de 2.5 goles",
+        "prob": 0.7011,
+        "cuota": 1.63,
+        "ve": 0.1428,
+        "prob_mercado": 0.5755
+       }
+      ]
+     }
+    ],
+    "historial": {
+     "seguras": {
+      "apuestas": 280,
+      "aciertos": 0.6392857142857142,
+      "cuota_media": 1.5562142857142858,
+      "roi": -0.008785714285714294,
+      "roi_min": -0.08281038371804214,
+      "roi_max": 0.06523895514661354
+     },
+     "valor": {
+      "apuestas": 287,
+      "aciertos": 0.3344947735191638,
+      "cuota_media": 3.186271777003484,
+      "roi": -0.09365853658536587,
+      "roi_min": -0.23109673273030712,
+      "roi_max": 0.04377965955957537
+     },
+     "doble": {
+      "apuestas": 36,
+      "aciertos": 0.5,
+      "cuota_media": 2.1075,
+      "roi": 0.0563888888888889,
+      "roi_min": -0.2382162137675116,
+      "roi_max": 0.3509939915452894
+     },
+     "triple": {
+      "apuestas": 35,
+      "aciertos": 0.2857142857142857,
+      "cuota_media": 3.1474285714285712,
+      "roi": -0.1122857142857143,
+      "roi_min": -0.5114329446922103,
+      "roi_max": 0.2868615161207818
+     },
+     "desde": "2025-10-24",
+     "hasta": "2026-10-21"
+    }
+   },
    "top": {
     "n": 4,
     "label": "Top 4 · Champions"
@@ -4258,6 +4895,13 @@
       2.29,
       2.45
      ],
+     "cuotas": {
+      "c1": 1.62,
+      "cx": 3.77,
+      "c2": 5.65,
+      "co25": 2.0,
+      "cu25": 1.77
+     },
      "lh": 1.7984,
      "la": 0.7101,
      "p1": 0.6308,
@@ -4281,6 +4925,13 @@
       2.1,
       2.38
      ],
+     "cuotas": {
+      "c1": 3.16,
+      "cx": 3.57,
+      "c2": 2.15,
+      "co25": 1.7,
+      "cu25": 2.08
+     },
      "lh": 1.155,
      "la": 1.3575,
      "p1": 0.3139,
@@ -4304,6 +4955,13 @@
       2.08,
       2.21
      ],
+     "cuotas": {
+      "c1": 1.26,
+      "cx": 5.81,
+      "c2": 10.67,
+      "co25": 1.54,
+      "cu25": 2.38
+     },
      "lh": 2.1592,
      "la": 0.8941,
      "p1": 0.6601,
@@ -4327,6 +4985,13 @@
       2.41,
       2.5
      ],
+     "cuotas": {
+      "c1": 1.77,
+      "cx": 3.72,
+      "c2": 4.36,
+      "co25": 1.82,
+      "cu25": 1.91
+     },
      "lh": 1.6205,
      "la": 1.0365,
      "p1": 0.5058,
@@ -4350,6 +5015,13 @@
       2.32,
       2.65
      ],
+     "cuotas": {
+      "c1": 2.37,
+      "cx": 3.6,
+      "c2": 2.76,
+      "co25": 1.63,
+      "cu25": 2.21
+     },
      "lh": 1.771,
      "la": 1.8506,
      "p1": 0.3718,
@@ -4373,6 +5045,13 @@
       2.12,
       2.26
      ],
+     "cuotas": {
+      "c1": 2.89,
+      "cx": 3.37,
+      "c2": 2.35,
+      "co25": 1.79,
+      "cu25": 1.94
+     },
      "lh": 1.5239,
      "la": 1.2935,
      "p1": 0.423,
@@ -4396,6 +5075,13 @@
       2.32,
       2.42
      ],
+     "cuotas": {
+      "c1": 1.64,
+      "cx": 4.08,
+      "c2": 4.74,
+      "co25": 1.56,
+      "cu25": 2.32
+     },
      "lh": 1.9138,
      "la": 1.1998,
      "p1": 0.5369,
@@ -4419,6 +5105,13 @@
       1.98,
       2.27
      ],
+     "cuotas": {
+      "c1": 1.6,
+      "cx": 5.23,
+      "c2": 3.98,
+      "co25": 1.16,
+      "cu25": 4.78
+     },
      "lh": 2.2168,
      "la": 1.3078,
      "p1": 0.5773,
@@ -4442,6 +5135,13 @@
       2.21,
       2.78
      ],
+     "cuotas": {
+      "c1": 1.56,
+      "cx": 3.81,
+      "c2": 6.11,
+      "co25": 2.24,
+      "cu25": 1.6
+     },
      "lh": 1.1382,
      "la": 0.6741,
      "p1": 0.4636,
@@ -4465,6 +5165,13 @@
       2.54,
       2.53
      ],
+     "cuotas": {
+      "c1": 1.92,
+      "cx": 3.36,
+      "c2": 4.0,
+      "co25": 2.1,
+      "cu25": 1.67
+     },
      "lh": 1.3919,
      "la": 1.0768,
      "p1": 0.437,

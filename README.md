@@ -148,6 +148,13 @@ log λ_visitante = c     + ataque[visitante] + defensa[local]
 - **Córners y tarjetas** (`reg_conteos = 3.0`): el mismo modelo, sin Dixon-Coles, con córners o con tarjetas (amarillas + rojas) en lugar de goles.
 - **Elección de parámetros:** todo se eligió por error fuera de muestra en Premier y LaLiga, en dos temporadas separadas (2024-25 y 2025-27), para no quedarse con lo que funcionó en una sola por casualidad.
 
+**Recomendaciones.** Para los próximos partidos con cuotas (football-data.co.uk publica las de la semana), el motor elige:
+- *Las más probables:* en cada partido, la selección (1X2, doble oportunidad o más/menos 2.5) con mayor probabilidad promedio entre el modelo y las casas, con cuota de al menos 1.40.
+- *Donde el modelo ve valor:* valor esperado de 5% o más con la cuota promedio de las casas.
+- *Combinadas:* las 2 y las 3 más probables de partidos distintos de la misma liga.
+
+Las mismas reglas se aplican a la validación del último año con las cuotas de cierre, y la web muestra aciertos, rendimiento y su rango del 90%. En 2024-25 y 2025-27, las "más probables" quedaron entre −9% y +2%, las "de valor" entre −16% y −2%, y las combinadas variaron de −38% a +14%. Ninguna le gana al mercado de forma fiable.
+
 **Árbitros (solo Premier).** La web muestra el árbitro designado y su historial: tarjetas por partido frente a las que se esperaban por los equipos que le tocaron. No entra en la probabilidad: al validarlo en 2024-25 y 2025-27, usar el árbitro empeoró la predicción de tarjetas. football-data.co.uk no publica los árbitros de LaLiga.
 
 **Bajas.** La web tiene botones con ajustes típicos (sin goleador −10% ataque, sin portero titular −7% solidez, etc.). El motor no recibe datos de lesiones.

@@ -7,6 +7,7 @@ import numpy as np
 import pandas as pd
 
 from .modelo import Ratings, predecir
+from .selecciones import proximas
 
 
 def tabla_actual(temp: pd.DataFrame) -> dict[str, dict]:
@@ -47,7 +48,8 @@ def estadisticas_arbitros(df: pd.DataFrame, modelo_tarjetas: Ratings | None) -> 
 
 
 def bloque_liga(clave: str, cfg: dict, df: pd.DataFrame, r: Ratings, fuente: str,
-                validacion: dict | None, hoy: date | None = None, conteos: dict | None = None) -> dict:
+                validacion: dict | None, hoy: date | None = None, conteos: dict | None = None,
+                historial_sel: dict | None = None) -> dict:
     conteos = conteos or {}
     hoy = pd.Timestamp(hoy or date.today())
     temporada = cfg.get("temporada_actual") or int(df["temporada"].max())
@@ -104,6 +106,10 @@ def bloque_liga(clave: str, cfg: dict, df: pd.DataFrame, r: Ratings, fuente: str
             extra["inicio"] = m.inicio
         if isinstance(getattr(m, "arbitro", None), str) and m.arbitro.strip():
             extra["arbitro"] = m.arbitro.strip()
+        cuotas = {k: round(float(getattr(m, k)), 2) for k in ("c1", "cx", "c2", "co25", "cu25")
+                  if getattr(m, k, None) is not None and getattr(m, k) == getattr(m, k) and getattr(m, k) > 1}
+        if cuotas:
+            extra["cuotas"] = cuotas
         proximos.append({
             "fecha": m.fecha.strftime("%Y-%m-%d"), "local": m.local, "visitante": m.visitante,
             "pendiente": bool(m.fecha < hoy), **extra,
@@ -120,6 +126,7 @@ def bloque_liga(clave: str, cfg: dict, df: pd.DataFrame, r: Ratings, fuente: str
         "rho": round(r.rho, 4),
         "conteos": {n: {"home": round(c.media_local, 4), "away": round(c.media_visitante, 4)} for n, c in conteos.items()},
         "arbitros": estadisticas_arbitros(df, conteos.get("tarjetas")),
+        "selecciones": {**proximas(proximos), "historial": historial_sel or {}},
         "top": cfg.get("top", {"n": 4, "label": "Top 4"}),
         "bot": cfg.get("bot", {"n": 3, "label": "Descenso"}),
         "partidos_modelo": r.n_partidos,
