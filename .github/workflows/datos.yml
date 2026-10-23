@@ -12,13 +12,22 @@ jobs:
       - name: Descargar CSV de football-data.co.uk
         run: |
           mkdir -p crudos
-          for s in 2223 2324 2425 2526 2627; do
-            for d in E0 SP1; do
-              curl -sSf -o crudos/${s}_${d}.csv "https://www.football-data.co.uk/mmz4281/${s}/${d}.csv" || echo "falta $s $d"
-            done
-          done
-          curl -sSf -o crudos/fixtures.csv "https://www.football-data.co.uk/fixtures.csv" || echo "falta fixtures"
-          ls -la crudos
+          python3 - <<'PY'
+          import urllib.request, pathlib
+          out = pathlib.Path("crudos"); log = []
+          urls = [(f"{s}_{d}.csv", f"https://www.football-data.co.uk/mmz4281/{s}/{d}.csv")
+                  for s in ["2223", "2324", "2425", "2526", "2627"] for d in ["E0", "SP1"]]
+          urls.append(("fixtures.csv", "https://www.football-data.co.uk/fixtures.csv"))
+          for nombre, url in urls:
+              try:
+                  req = urllib.request.Request(url, headers={"User-Agent": "pizarra-poisson/1.0"})
+                  data = urllib.request.urlopen(req, timeout=60).read()
+                  (out / nombre).write_bytes(data); log.append(f"{nombre} {len(data)}")
+              except Exception as e:
+                  log.append(f"{nombre} ERROR {e}")
+          (out / "registro.txt").write_text("\n".join(log))
+          print("\n".join(log))
+          PY
       - name: Guardar en la rama
         run: |
           git config user.name "pizarra-bot"
