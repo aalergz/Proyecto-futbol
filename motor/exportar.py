@@ -141,8 +141,9 @@ def bloque_liga(clave: str, cfg: dict, df: pd.DataFrame, r: Ratings, fuente: str
     }
 
 
-def envoltorio(ligas: dict, parametros: dict, en_vivo_url: str = "") -> dict:
+def envoltorio(ligas: dict, parametros: dict, en_vivo_url: str = "", dia: dict | None = None) -> dict:
     return {
+        "dia": dia or {},
         "generado": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "modelo": "Dixon-Coles con decaimiento temporal",
         "parametros": parametros,

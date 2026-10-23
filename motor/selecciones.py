@@ -129,6 +129,43 @@ def historial(detalle: pd.DataFrame, modo: str = "consenso") -> dict:
             "desde": str(d["fecha"].min()), "hasta": str(d["fecha"].max())}
 
 
+def historial_dia(detalles: dict[str, pd.DataFrame]) -> dict:
+    """Reglas "del día" con todas las ligas juntas: cada día, la selección segura
+    más probable, la doble y la triple con las más probables, y la de más valor."""
+    partes = [d.assign(liga=k) for k, d in detalles.items() if d is not None and not d.empty and "c1" in d]
+    if not partes:
+        return {}
+    d = pd.concat(partes, ignore_index=True)
+    res = {"mejor": [], "doble": [], "triple": [], "valor": []}
+    dias = 0
+    for _, dia in d.groupby(pd.to_datetime(d["fecha"]).dt.date):
+        segs, vals = [], []
+        for m in dia.itertuples():
+            cs = candidatos({"p1": m.p1, "px": m.px, "p2": m.p2, "o25": m.o25},
+                            {k: getattr(m, k, None) for k in ("c1", "cx", "c2", "co25", "cu25")})
+            s, v = segura(cs), con_valor(cs)
+            if s:
+                segs.append({**s, "ok": gano(s["mercado"], m.gl, m.gv)})
+            if v:
+                vals.append({**v, "ok": gano(v["mercado"], m.gl, m.gv)})
+        if not segs and not vals:
+            continue
+        dias += 1
+        segs.sort(key=lambda x: -consenso(x))
+        if segs:
+            res["mejor"].append((segs[0]["ok"], segs[0]["cuota"]))
+        for n, clave in ((2, "doble"), (3, "triple")):
+            if len(segs) >= n:
+                patas = segs[:n]
+                res[clave].append((all(x["ok"] for x in patas), float(np.prod([x["cuota"] for x in patas]))))
+        if vals:
+            best = max(vals, key=lambda x: x["ve"])
+            res["valor"].append((best["ok"], best["cuota"]))
+    out = {k: _resumen(v) for k, v in res.items()}
+    out.update({"dias": dias, "ligas": sorted(detalles), "desde": str(d["fecha"].min()), "hasta": str(d["fecha"].max())})
+    return out
+
+
 def proximas(proximos: list[dict], dias: int = 8) -> dict:
     """Selecciones para los próximos partidos que tienen cuotas."""
     con_cuota = [m for m in proximos if m.get("cuotas") and not m.get("pendiente")]
@@ -140,14 +177,17 @@ def proximas(proximos: list[dict], dias: int = 8) -> dict:
     for m in con_cuota:
         cs = candidatos(m, m["cuotas"])
         base = {"fecha": m["fecha"], "local": m["local"], "visitante": m["visitante"]}
+        if m.get("inicio"):
+            base["inicio"] = m["inicio"]
         for regla, lista in ((segura, seguras), (con_valor, valor)):
             x = regla(cs)
             if x:
-                lista.append({**base, **x, "etiqueta": x["etiqueta"].format(**base)})
+                lista.append({**base, **x, "etiqueta": x["etiqueta"].format(local=m["local"], visitante=m["visitante"])})
     seguras.sort(key=lambda x: -consenso(x))
     valor.sort(key=lambda x: -x["ve"])
     combinadas = [cb for cb in (combinar(seguras, 2), combinar(seguras, 3)) if cb]
     r = lambda x: {k: (round(v, 4) if isinstance(v, float) else v) for k, v in x.items()}
-    return {"seguras": [r(x) for x in seguras[:8]], "valor": [r(x) for x in valor[:8]],
+    # Todas las del periodo: la web elige las del día y muestra las mejores de la semana
+    return {"seguras": [r(x) for x in seguras], "valor": [r(x) for x in valor],
             "combinadas": [{**r({k: v for k, v in cb.items() if k != "patas"}), "patas": [r(p) for p in cb["patas"]]}
                            for cb in combinadas]}

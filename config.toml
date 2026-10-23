@@ -110,6 +110,71 @@ bot = { n = 3, label = "Descenso o promoción" }
 "SV Darmstadt 98" = "Darmstadt"
 "Holstein Kiel" = "Holstein Kiel"
 
+[ligas.ita]
+nombre = "Serie A (Italia)"
+fuentes = ["apifootball", "footballdata", "openfootball"]
+apifootball = 135
+footballdata = "I1"
+openfootball = "it.1"
+temporada_actual = "auto"
+top = { n = 4, label = "Top 4 · Champions" }
+bot = { n = 3, label = "Descenso" }
+
+[ligas.ita.alias]
+"AC Milan" = "Milan"
+"AC Monza" = "Monza"
+"ACF Fiorentina" = "Fiorentina"
+"AS Roma" = "Roma"
+"Atalanta BC" = "Atalanta"
+"Bologna FC 1909" = "Bologna"
+"Cagliari Calcio" = "Cagliari"
+"Como 1907" = "Como"
+"FC Internazionale Milano" = "Inter"
+"Frosinone Calcio" = "Frosinone"
+"Genoa CFC" = "Genoa"
+"Parma Calcio 1913" = "Parma"
+"SS Lazio" = "Lazio"
+"SSC Napoli" = "Napoli"
+"US Lecce" = "Lecce"
+"US Sassuolo Calcio" = "Sassuolo"
+"Udinese Calcio" = "Udinese"
+"Hellas Verona FC" = "Verona"
+"Empoli FC" = "Empoli"
+"US Cremonese" = "Cremonese"
+"Pisa SC" = "Pisa"
+
+[ligas.fra]
+nombre = "Ligue 1 (Francia)"
+fuentes = ["apifootball", "footballdata", "openfootball"]
+apifootball = 61
+footballdata = "F1"
+openfootball = "fr.1"
+temporada_actual = "auto"
+top = { n = 4, label = "Top 4 · Champions" }
+bot = { n = 3, label = "Descenso o promoción" }
+
+[ligas.fra.alias]
+"Paris SG" = "Paris Saint-Germain"
+"Paris FC" = "Paris FC"
+"AJ Auxerre" = "Auxerre"
+"AS Monaco FC" = "Monaco"
+"Angers SCO" = "Angers"
+"ES Troyes AC" = "Troyes"
+"Le Havre AC" = "Le Havre"
+"Lille OSC" = "Lille"
+"OGC Nice" = "Nice"
+"Olympique Lyonnais" = "Lyon"
+"Olympique de Marseille" = "Marseille"
+"RC Strasbourg Alsace" = "Strasbourg"
+"Racing Club de Lens" = "Lens"
+"Stade Brestois 29" = "Brest"
+"Stade Rennais FC 1901" = "Rennes"
+"FC Nantes" = "Nantes"
+"Stade de Reims" = "Reims"
+"FC Metz" = "Metz"
+"Montpellier HSC" = "Montpellier"
+"AS Saint-Étienne" = "St Etienne"
+
 [ligas.crc]
 nombre = "Liga Promerica (Costa Rica)"
 fuentes = ["apifootball", "csv"]

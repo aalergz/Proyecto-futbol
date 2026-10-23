@@ -25,7 +25,7 @@ from motor.exportar import bloque_liga, envoltorio
 from motor.fuentes import (CUOTA, FuenteNoDisponible, buscar_ligas, cargar_liga, estado_api,
                            probar_temporada, resolver_apifootball, temporadas_liga)
 from motor.modelo import ajustar, predecir
-from motor.selecciones import historial
+from motor.selecciones import historial, historial_dia
 from motor.validacion import validar, validar_conteo
 
 RAIZ = Path(__file__).resolve().parent
@@ -69,6 +69,7 @@ def cmd_actualizar(a):
     previo = json.loads(SALIDA.read_text()) if SALIDA.exists() else {"ligas": {}}
     # Las ligas que no se actualizan en esta corrida conservan su versión anterior
     ligas = {k: v for k, v in previo.get("ligas", {}).items() if k in cfg["ligas"] and k not in claves}
+    detalles = {}   # validación de cada liga, para el historial de las recomendaciones del día
     for k in claves:
         lc = dict(cfg["ligas"][k])
         print(f"▸ {lc['nombre']}")
@@ -107,6 +108,7 @@ def cmd_actualizar(a):
             res_val = validar(df, desde, xi=mod["xi"], reg=mod["regularizacion"], **opc)
             v = res_val["resumen"]
             hist_sel = historial(res_val["detalle"])
+            detalles[k] = res_val["detalle"]
             if v.get("partidos"):
                 val = v
                 for nombre, (cols, linea) in CONTEOS.items():
@@ -123,8 +125,11 @@ def cmd_actualizar(a):
         ligas[k] = bloque_liga(k, lc, df, r, fuente, val, conteos=conteos, historial_sel=hist_sel)
         print(f"  · {len(ligas[k]['equipos'])} equipos, {len(ligas[k]['proximos'])} próximos partidos")
 
+    # Solo se recalcula si esta corrida validó todas las ligas con datos; si no, se conserva
+    con_datos = [k for k, l in ligas.items() if l.get("validacion")]
+    dia = historial_dia(detalles) if detalles and set(con_datos) <= set(detalles) else previo.get("dia")
     out = envoltorio(ligas, {"xi": mod["xi"], "regularizacion": mod["regularizacion"], **opciones_modelo(mod)},
-                     cfg.get("web", {}).get("en_vivo_url", ""))
+                     cfg.get("web", {}).get("en_vivo_url", ""), dia)
     if CUOTA["usadas"]:
         print(f"  · API-Football: {CUOTA['usadas']} solicitudes en esta corrida, quedan {CUOTA['restantes']} hoy")
     sin_fecha = lambda d: {k: v for k, v in d.items() if k != "generado"}

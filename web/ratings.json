@@ -1,5 +1,49 @@
 {
- "generado": "2026-10-23T16:46:56+00:00",
+ "dia": {
+  "mejor": {
+   "apuestas": 180,
+   "aciertos": 0.6333333333333333,
+   "cuota_media": 1.4649999999999999,
+   "roi": -0.07683333333333334,
+   "roi_min": -0.1634634926353596,
+   "roi_max": 0.009796825968692913
+  },
+  "doble": {
+   "apuestas": 156,
+   "aciertos": 0.4166666666666667,
+   "cuota_media": 2.1866641025641025,
+   "roi": -0.10646025641025648,
+   "roi_min": -0.24679167027661308,
+   "roi_max": 0.0338711574561001
+  },
+  "triple": {
+   "apuestas": 128,
+   "aciertos": 0.265625,
+   "cuota_media": 3.259268890625,
+   "roi": -0.16721817968750008,
+   "roi_min": -0.3705770543380562,
+   "roi_max": 0.03614069496305608
+  },
+  "valor": {
+   "apuestas": 181,
+   "aciertos": 0.20441988950276244,
+   "cuota_media": 4.504419889502763,
+   "roi": -0.2530939226519337,
+   "roi_min": -0.4544160415372859,
+   "roi_max": -0.0517718037665815
+  },
+  "dias": 183,
+  "ligas": [
+   "eng",
+   "esp",
+   "fra",
+   "ger",
+   "ita"
+  ],
+  "desde": "2025-10-18",
+  "hasta": "2026-10-21"
+ },
+ "generado": "2026-10-23T16:52:09+00:00",
  "modelo": "Dixon-Coles con decaimiento temporal",
  "parametros": {
   "xi": 0.0019,
@@ -129,6 +173,7 @@
       "fecha": "2026-10-24",
       "local": "Arsenal",
       "visitante": "Everton",
+      "inicio": "2026-10-24T14:00:00Z",
       "mercado": "1",
       "etiqueta": "Gana Arsenal",
       "prob": 0.6164,
@@ -140,6 +185,7 @@
       "fecha": "2026-10-25",
       "local": "Crystal Palace",
       "visitante": "Newcastle",
+      "inicio": "2026-10-25T14:00:00Z",
       "mercado": "1X",
       "etiqueta": "Crystal Palace o empate",
       "prob": 0.6524,
@@ -151,6 +197,7 @@
       "fecha": "2026-10-25",
       "local": "Sunderland",
       "visitante": "Leeds",
+      "inicio": "2026-10-25T16:30:00Z",
       "mercado": "1X",
       "etiqueta": "Sunderland o empate",
       "prob": 0.6277,
@@ -162,6 +209,7 @@
       "fecha": "2026-10-24",
       "local": "Chelsea",
       "visitante": "Tottenham",
+      "inicio": "2026-10-24T16:30:00Z",
       "mercado": "o25",
       "etiqueta": "Más de 2.5 goles",
       "prob": 0.6021,
@@ -173,6 +221,7 @@
       "fecha": "2026-10-25",
       "local": "Liverpool",
       "visitante": "Brighton",
+      "inicio": "2026-10-25T14:00:00Z",
       "mercado": "o25",
       "etiqueta": "Más de 2.5 goles",
       "prob": 0.5877,
@@ -184,6 +233,7 @@
       "fecha": "2026-10-25",
       "local": "Manchester United",
       "visitante": "Bournemouth",
+      "inicio": "2026-10-25T14:00:00Z",
       "mercado": "o25",
       "etiqueta": "Más de 2.5 goles",
       "prob": 0.6126,
@@ -195,6 +245,7 @@
       "fecha": "2026-10-24",
       "local": "Coventry",
       "visitante": "Fulham",
+      "inicio": "2026-10-24T14:00:00Z",
       "mercado": "1X",
       "etiqueta": "Coventry o empate",
       "prob": 0.601,
@@ -206,12 +257,25 @@
       "fecha": "2026-10-24",
       "local": "Aston Villa",
       "visitante": "Manchester City",
+      "inicio": "2026-10-24T11:30:00Z",
       "mercado": "o25",
       "etiqueta": "Más de 2.5 goles",
       "prob": 0.5551,
       "cuota": 1.5,
       "ve": -0.1673,
       "prob_mercado": 0.6241
+     },
+     {
+      "fecha": "2026-10-23",
+      "local": "Ipswich",
+      "visitante": "Nottingham Forest",
+      "inicio": "2026-10-23T19:00:00Z",
+      "mercado": "o25",
+      "etiqueta": "Más de 2.5 goles",
+      "prob": 0.6113,
+      "cuota": 1.72,
+      "ve": 0.0514,
+      "prob_mercado": 0.545
      }
     ],
     "valor": [
@@ -219,6 +283,7 @@
       "fecha": "2026-10-25",
       "local": "Hull",
       "visitante": "Brentford",
+      "inicio": "2026-10-25T14:00:00Z",
       "mercado": "1",
       "etiqueta": "Gana Hull",
       "prob": 0.3507,
@@ -230,6 +295,7 @@
       "fecha": "2026-10-24",
       "local": "Aston Villa",
       "visitante": "Manchester City",
+      "inicio": "2026-10-24T11:30:00Z",
       "mercado": "1",
       "etiqueta": "Gana Aston Villa",
       "prob": 0.2789,
@@ -241,6 +307,7 @@
       "fecha": "2026-10-23",
       "local": "Ipswich",
       "visitante": "Nottingham Forest",
+      "inicio": "2026-10-23T19:00:00Z",
       "mercado": "2",
       "etiqueta": "Gana Nottingham Forest",
       "prob": 0.5739,
@@ -252,6 +319,7 @@
       "fecha": "2026-10-25",
       "local": "Crystal Palace",
       "visitante": "Newcastle",
+      "inicio": "2026-10-25T14:00:00Z",
       "mercado": "u25",
       "etiqueta": "Menos de 2.5 goles",
       "prob": 0.4901,
@@ -263,6 +331,7 @@
       "fecha": "2026-10-24",
       "local": "Arsenal",
       "visitante": "Everton",
+      "inicio": "2026-10-24T14:00:00Z",
       "mercado": "u25",
       "etiqueta": "Menos de 2.5 goles",
       "prob": 0.5761,
@@ -274,6 +343,7 @@
       "fecha": "2026-10-24",
       "local": "Coventry",
       "visitante": "Fulham",
+      "inicio": "2026-10-24T14:00:00Z",
       "mercado": "u25",
       "etiqueta": "Menos de 2.5 goles",
       "prob": 0.5382,
@@ -285,6 +355,7 @@
       "fecha": "2026-10-25",
       "local": "Liverpool",
       "visitante": "Brighton",
+      "inicio": "2026-10-25T14:00:00Z",
       "mercado": "2",
       "etiqueta": "Gana Brighton",
       "prob": 0.337,
@@ -303,6 +374,7 @@
         "fecha": "2026-10-24",
         "local": "Arsenal",
         "visitante": "Everton",
+        "inicio": "2026-10-24T14:00:00Z",
         "mercado": "1",
         "etiqueta": "Gana Arsenal",
         "prob": 0.6164,
@@ -314,6 +386,7 @@
         "fecha": "2026-10-25",
         "local": "Crystal Palace",
         "visitante": "Newcastle",
+        "inicio": "2026-10-25T14:00:00Z",
         "mercado": "1X",
         "etiqueta": "Crystal Palace o empate",
         "prob": 0.6524,
@@ -332,6 +405,7 @@
         "fecha": "2026-10-24",
         "local": "Arsenal",
         "visitante": "Everton",
+        "inicio": "2026-10-24T14:00:00Z",
         "mercado": "1",
         "etiqueta": "Gana Arsenal",
         "prob": 0.6164,
@@ -343,6 +417,7 @@
         "fecha": "2026-10-25",
         "local": "Crystal Palace",
         "visitante": "Newcastle",
+        "inicio": "2026-10-25T14:00:00Z",
         "mercado": "1X",
         "etiqueta": "Crystal Palace o empate",
         "prob": 0.6524,
@@ -354,6 +429,7 @@
         "fecha": "2026-10-25",
         "local": "Sunderland",
         "visitante": "Leeds",
+        "inicio": "2026-10-25T16:30:00Z",
         "mercado": "1X",
         "etiqueta": "Sunderland o empate",
         "prob": 0.6277,
@@ -2111,6 +2187,7 @@
       1.85,
       2.08
      ],
+     "inicio": "2026-10-23T19:00:00Z",
      "arbitro": "T Bramall",
      "cuotas": {
       "c1": 3.01,
@@ -2142,6 +2219,7 @@
       1.45,
       2.29
      ],
+     "inicio": "2026-10-24T14:00:00Z",
      "arbitro": "T Harrington",
      "cuotas": {
       "c1": 1.43,
@@ -2173,6 +2251,7 @@
       1.77,
       2.26
      ],
+     "inicio": "2026-10-24T11:30:00Z",
      "arbitro": "P Bankes",
      "cuotas": {
       "c1": 4.73,
@@ -2204,6 +2283,7 @@
       1.59,
       2.1
      ],
+     "inicio": "2026-10-24T14:00:00Z",
      "arbitro": "A Herczeg",
      "cuotas": {
       "c1": 3.04,
@@ -2235,6 +2315,7 @@
       2.06,
       2.53
      ],
+     "inicio": "2026-10-24T16:30:00Z",
      "arbitro": "C Kavanagh",
      "cuotas": {
       "c1": 1.69,
@@ -2266,6 +2347,7 @@
       1.74,
       2.32
      ],
+     "inicio": "2026-10-25T14:00:00Z",
      "arbitro": "S Barrott",
      "cuotas": {
       "c1": 2.09,
@@ -2297,6 +2379,7 @@
       1.77,
       2.52
      ],
+     "inicio": "2026-10-25T14:00:00Z",
      "arbitro": "J Gillett",
      "cuotas": {
       "c1": 2.1,
@@ -2328,6 +2411,7 @@
       1.95,
       2.03
      ],
+     "inicio": "2026-10-25T14:00:00Z",
      "arbitro": "P Tierney",
      "cuotas": {
       "c1": 2.86,
@@ -2359,6 +2443,7 @@
       1.9,
       2.02
      ],
+     "inicio": "2026-10-25T14:00:00Z",
      "arbitro": "R Jones",
      "cuotas": {
       "c1": 4.6,
@@ -2390,6 +2475,7 @@
       1.87,
       2.01
      ],
+     "inicio": "2026-10-25T16:30:00Z",
      "arbitro": "S Attwell",
      "cuotas": {
       "c1": 3.04,
@@ -2875,29 +2961,29 @@
     "hasta": "2026-10-19",
     "mercados": {
      "1X2": {
-      "modelo": 0.618939414264824,
+      "modelo": 0.6189395057788404,
       "base": 0.6632655207857722,
-      "logloss_modelo": 1.0309946363805071,
+      "logloss_modelo": 1.030994780929252,
       "logloss_base": 1.0943978581131182,
-      "mejora": 0.06683010820227009,
+      "mejora": 0.06682997022733617,
       "mercado": 0.6145357159285002
      },
      "Más de 2.5": {
-      "modelo": 0.2505373665709579,
+      "modelo": 0.2505372699924235,
       "base": 0.24704166090524246,
-      "mejora": -0.01415026782489237
+      "mejora": -0.014149876884619106
      },
      "Ambos anotan": {
-      "modelo": 0.24675995588316407,
+      "modelo": 0.2467596456761836,
       "base": 0.245824170042881,
-      "mejora": -0.003806728362470757
+      "mejora": -0.0038054664565303487
      },
      "Córners más de 9.5": {
       "partidos": 371,
       "linea": 9.5,
       "modelo": 0.25007755412615984,
       "base": 0.24827199032781333,
-      "prob_media": 0.5373783381229681,
+      "prob_media": 0.537378338122968,
       "frecuencia_real": 0.5471698113207547,
       "mejora": -0.007272523154796762
      },
@@ -2906,7 +2992,7 @@
       "linea": 4.5,
       "modelo": 0.232126176676165,
       "base": 0.23456425008395565,
-      "prob_media": 0.3610001780230524,
+      "prob_media": 0.3610001780230525,
       "frecuencia_real": 0.3719676549865229,
       "mejora": 0.010394053684301907
      }
@@ -2955,6 +3041,7 @@
       "fecha": "2026-10-25",
       "local": "Athletic Club",
       "visitante": "Getafe",
+      "inicio": "2026-10-25T13:00:00Z",
       "mercado": "u25",
       "etiqueta": "Menos de 2.5 goles",
       "prob": 0.7273,
@@ -2966,6 +3053,7 @@
       "fecha": "2026-10-25",
       "local": "Celta de Vigo",
       "visitante": "Real Betis",
+      "inicio": "2026-10-25T15:15:00Z",
       "mercado": "1X",
       "etiqueta": "Celta de Vigo o empate",
       "prob": 0.6809,
@@ -2977,6 +3065,7 @@
       "fecha": "2026-10-24",
       "local": "Racing de Santander",
       "visitante": "Espanyol",
+      "inicio": "2026-10-24T14:15:00Z",
       "mercado": "o25",
       "etiqueta": "Más de 2.5 goles",
       "prob": 0.7011,
@@ -2988,6 +3077,7 @@
       "fecha": "2026-10-23",
       "local": "Alavés",
       "visitante": "Málaga",
+      "inicio": "2026-10-23T19:00:00Z",
       "mercado": "1",
       "etiqueta": "Gana Alavés",
       "prob": 0.6308,
@@ -2999,6 +3089,7 @@
       "fecha": "2026-10-25",
       "local": "Real Sociedad",
       "visitante": "Levante",
+      "inicio": "2026-10-25T17:30:00Z",
       "mercado": "o25",
       "etiqueta": "Más de 2.5 goles",
       "prob": 0.6018,
@@ -3010,6 +3101,7 @@
       "fecha": "2026-10-24",
       "local": "Atlético de Madrid",
       "visitante": "Deportivo La Coruña",
+      "inicio": "2026-10-24T19:00:00Z",
       "mercado": "o25",
       "etiqueta": "Más de 2.5 goles",
       "prob": 0.5886,
@@ -3021,6 +3113,7 @@
       "fecha": "2026-10-25",
       "local": "Barcelona",
       "visitante": "Real Madrid",
+      "inicio": "2026-10-25T20:00:00Z",
       "mercado": "1",
       "etiqueta": "Gana Barcelona",
       "prob": 0.5773,
@@ -3032,12 +3125,25 @@
       "fecha": "2026-10-24",
       "local": "Valencia",
       "visitante": "Villarreal",
+      "inicio": "2026-10-24T16:30:00Z",
       "mercado": "1X",
       "etiqueta": "Valencia o empate",
       "prob": 0.5899,
       "cuota": 1.68,
       "ve": -0.0112,
       "prob_mercado": 0.5619
+     },
+     {
+      "fecha": "2026-10-26",
+      "local": "Sevilla",
+      "visitante": "Osasuna",
+      "inicio": "2026-10-26T20:00:00Z",
+      "mercado": "u25",
+      "etiqueta": "Menos de 2.5 goles",
+      "prob": 0.5519,
+      "cuota": 1.67,
+      "ve": -0.0783,
+      "prob_mercado": 0.557
      }
     ],
     "valor": [
@@ -3045,6 +3151,7 @@
       "fecha": "2026-10-25",
       "local": "Barcelona",
       "visitante": "Real Madrid",
+      "inicio": "2026-10-25T20:00:00Z",
       "mercado": "u25",
       "etiqueta": "Menos de 2.5 goles",
       "prob": 0.3163,
@@ -3056,6 +3163,7 @@
       "fecha": "2026-10-25",
       "local": "Athletic Club",
       "visitante": "Getafe",
+      "inicio": "2026-10-25T13:00:00Z",
       "mercado": "2",
       "etiqueta": "Gana Getafe",
       "prob": 0.2134,
@@ -3067,6 +3175,7 @@
       "fecha": "2026-10-24",
       "local": "Atlético de Madrid",
       "visitante": "Deportivo La Coruña",
+      "inicio": "2026-10-24T19:00:00Z",
       "mercado": "X2",
       "etiqueta": "Deportivo La Coruña o empate",
       "prob": 0.3399,
@@ -3078,6 +3187,7 @@
       "fecha": "2026-10-25",
       "local": "Celta de Vigo",
       "visitante": "Real Betis",
+      "inicio": "2026-10-25T15:15:00Z",
       "mercado": "1",
       "etiqueta": "Gana Celta de Vigo",
       "prob": 0.423,
@@ -3089,6 +3199,7 @@
       "fecha": "2026-10-26",
       "local": "Sevilla",
       "visitante": "Osasuna",
+      "inicio": "2026-10-26T20:00:00Z",
       "mercado": "2",
       "etiqueta": "Gana Osasuna",
       "prob": 0.2866,
@@ -3100,6 +3211,7 @@
       "fecha": "2026-10-24",
       "local": "Racing de Santander",
       "visitante": "Espanyol",
+      "inicio": "2026-10-24T14:15:00Z",
       "mercado": "o25",
       "etiqueta": "Más de 2.5 goles",
       "prob": 0.7011,
@@ -3111,6 +3223,7 @@
       "fecha": "2026-10-24",
       "local": "Valencia",
       "visitante": "Villarreal",
+      "inicio": "2026-10-24T16:30:00Z",
       "mercado": "u25",
       "etiqueta": "Menos de 2.5 goles",
       "prob": 0.5406,
@@ -3122,6 +3235,7 @@
       "fecha": "2026-10-25",
       "local": "Real Sociedad",
       "visitante": "Levante",
+      "inicio": "2026-10-25T17:30:00Z",
       "mercado": "2",
       "etiqueta": "Gana Levante",
       "prob": 0.234,
@@ -3140,6 +3254,7 @@
         "fecha": "2026-10-25",
         "local": "Athletic Club",
         "visitante": "Getafe",
+        "inicio": "2026-10-25T13:00:00Z",
         "mercado": "u25",
         "etiqueta": "Menos de 2.5 goles",
         "prob": 0.7273,
@@ -3151,6 +3266,7 @@
         "fecha": "2026-10-25",
         "local": "Celta de Vigo",
         "visitante": "Real Betis",
+        "inicio": "2026-10-25T15:15:00Z",
         "mercado": "1X",
         "etiqueta": "Celta de Vigo o empate",
         "prob": 0.6809,
@@ -3169,6 +3285,7 @@
         "fecha": "2026-10-25",
         "local": "Athletic Club",
         "visitante": "Getafe",
+        "inicio": "2026-10-25T13:00:00Z",
         "mercado": "u25",
         "etiqueta": "Menos de 2.5 goles",
         "prob": 0.7273,
@@ -3180,6 +3297,7 @@
         "fecha": "2026-10-25",
         "local": "Celta de Vigo",
         "visitante": "Real Betis",
+        "inicio": "2026-10-25T15:15:00Z",
         "mercado": "1X",
         "etiqueta": "Celta de Vigo o empate",
         "prob": 0.6809,
@@ -3191,6 +3309,7 @@
         "fecha": "2026-10-24",
         "local": "Racing de Santander",
         "visitante": "Espanyol",
+        "inicio": "2026-10-24T14:15:00Z",
         "mercado": "o25",
         "etiqueta": "Más de 2.5 goles",
         "prob": 0.7011,
@@ -4895,6 +5014,7 @@
       2.29,
       2.45
      ],
+     "inicio": "2026-10-23T19:00:00Z",
      "cuotas": {
       "c1": 1.62,
       "cx": 3.77,
@@ -4925,6 +5045,7 @@
       2.1,
       2.38
      ],
+     "inicio": "2026-10-24T16:30:00Z",
      "cuotas": {
       "c1": 3.16,
       "cx": 3.57,
@@ -4955,6 +5076,7 @@
       2.08,
       2.21
      ],
+     "inicio": "2026-10-24T19:00:00Z",
      "cuotas": {
       "c1": 1.26,
       "cx": 5.81,
@@ -4985,6 +5107,7 @@
       2.41,
       2.5
      ],
+     "inicio": "2026-10-24T12:00:00Z",
      "cuotas": {
       "c1": 1.77,
       "cx": 3.72,
@@ -5015,6 +5138,7 @@
       2.32,
       2.65
      ],
+     "inicio": "2026-10-24T14:15:00Z",
      "cuotas": {
       "c1": 2.37,
       "cx": 3.6,
@@ -5045,6 +5169,7 @@
       2.12,
       2.26
      ],
+     "inicio": "2026-10-25T15:15:00Z",
      "cuotas": {
       "c1": 2.89,
       "cx": 3.37,
@@ -5075,6 +5200,7 @@
       2.32,
       2.42
      ],
+     "inicio": "2026-10-25T17:30:00Z",
      "cuotas": {
       "c1": 1.64,
       "cx": 4.08,
@@ -5105,6 +5231,7 @@
       1.98,
       2.27
      ],
+     "inicio": "2026-10-25T20:00:00Z",
      "cuotas": {
       "c1": 1.6,
       "cx": 5.23,
@@ -5135,6 +5262,7 @@
       2.21,
       2.78
      ],
+     "inicio": "2026-10-25T13:00:00Z",
      "cuotas": {
       "c1": 1.56,
       "cx": 3.81,
@@ -5165,6 +5293,7 @@
       2.54,
       2.53
      ],
+     "inicio": "2026-10-26T20:00:00Z",
      "cuotas": {
       "c1": 1.92,
       "cx": 3.36,
@@ -5626,40 +5755,40 @@
     "hasta": "2026-10-21",
     "mercados": {
      "1X2": {
-      "modelo": 0.5794442686414276,
+      "modelo": 0.5794442686418151,
       "base": 0.635994946110588,
-      "logloss_modelo": 0.9763847903997867,
+      "logloss_modelo": 0.9763847904003892,
       "logloss_base": 1.0549348380134664,
-      "mejora": 0.08891686610875571,
+      "mejora": 0.08891686610814642,
       "mercado": 0.5640207966859556
      },
      "Más de 2.5": {
-      "modelo": 0.24086936060996053,
+      "modelo": 0.2408693606101103,
       "base": 0.2504971169004046,
-      "mejora": 0.038434599206473075
+      "mejora": 0.03843459920587511
      },
      "Ambos anotan": {
-      "modelo": 0.2461068249162272,
+      "modelo": 0.24610682491610525,
       "base": 0.24598388857992276,
-      "mejora": -0.0004997739364727138
+      "mejora": -0.0004997739359768882
      },
      "Córners más de 9.5": {
       "partidos": 375,
       "linea": 9.5,
-      "modelo": 0.24004980183283608,
+      "modelo": 0.2400498018328367,
       "base": 0.2505449017329316,
-      "prob_media": 0.49423874390820144,
+      "prob_media": 0.494238743908202,
       "frecuencia_real": 0.49333333333333335,
-      "mejora": 0.041889097832382816
+      "mejora": 0.04188909783238037
      },
      "Tarjetas más de 4.5": {
       "partidos": 375,
       "linea": 4.5,
-      "modelo": 0.24976481622191818,
+      "modelo": 0.2497648162219182,
       "base": 0.25084794402230903,
       "prob_media": 0.4953825030212653,
       "frecuencia_real": 0.48,
-      "mejora": 0.004317865967019996
+      "mejora": 0.004317865967019885
      }
     },
     "acierto_1x2": 0.5283018867924528,
@@ -5717,6 +5846,7 @@
       "fecha": "2026-10-24",
       "local": "RB Leipzig",
       "visitante": "Elversberg",
+      "inicio": "2026-10-24T13:30:00Z",
       "mercado": "1",
       "etiqueta": "Gana RB Leipzig",
       "prob": 0.6789,
@@ -5728,6 +5858,7 @@
       "fecha": "2026-10-25",
       "local": "Hoffenheim",
       "visitante": "Bayer Leverkusen",
+      "inicio": "2026-10-25T14:30:00Z",
       "mercado": "X2",
       "etiqueta": "Bayer Leverkusen o empate",
       "prob": 0.6528,
@@ -5739,6 +5870,7 @@
       "fecha": "2026-10-24",
       "local": "Borussia Dortmund",
       "visitante": "Eintracht Frankfurt",
+      "inicio": "2026-10-24T16:30:00Z",
       "mercado": "1",
       "etiqueta": "Gana Borussia Dortmund",
       "prob": 0.6461,
@@ -5750,6 +5882,7 @@
       "fecha": "2026-10-24",
       "local": "Paderborn",
       "visitante": "Hamburger SV",
+      "inicio": "2026-10-24T13:30:00Z",
       "mercado": "X2",
       "etiqueta": "Hamburger SV o empate",
       "prob": 0.647,
@@ -5761,6 +5894,7 @@
       "fecha": "2026-10-24",
       "local": "Augsburg",
       "visitante": "Union Berlin",
+      "inicio": "2026-10-24T13:30:00Z",
       "mercado": "o25",
       "etiqueta": "Más de 2.5 goles",
       "prob": 0.5359,
@@ -5772,6 +5906,7 @@
       "fecha": "2026-10-24",
       "local": "Mainz 05",
       "visitante": "Werder Bremen",
+      "inicio": "2026-10-24T13:30:00Z",
       "mercado": "o25",
       "etiqueta": "Más de 2.5 goles",
       "prob": 0.5452,
@@ -5785,6 +5920,7 @@
       "fecha": "2026-10-24",
       "local": "Paderborn",
       "visitante": "Hamburger SV",
+      "inicio": "2026-10-24T13:30:00Z",
       "mercado": "u25",
       "etiqueta": "Menos de 2.5 goles",
       "prob": 0.5742,
@@ -5796,6 +5932,7 @@
       "fecha": "2026-10-24",
       "local": "FC Köln",
       "visitante": "Schalke 04",
+      "inicio": "2026-10-24T13:30:00Z",
       "mercado": "u25",
       "etiqueta": "Menos de 2.5 goles",
       "prob": 0.5524,
@@ -5807,6 +5944,7 @@
       "fecha": "2026-10-23",
       "local": "Stuttgart",
       "visitante": "Borussia Mönchengladbach",
+      "inicio": "2026-10-23T18:30:00Z",
       "mercado": "u25",
       "etiqueta": "Menos de 2.5 goles",
       "prob": 0.3315,
@@ -5818,6 +5956,7 @@
       "fecha": "2026-10-24",
       "local": "Mainz 05",
       "visitante": "Werder Bremen",
+      "inicio": "2026-10-24T13:30:00Z",
       "mercado": "2",
       "etiqueta": "Gana Werder Bremen",
       "prob": 0.2924,
@@ -5829,6 +5968,7 @@
       "fecha": "2026-10-24",
       "local": "Augsburg",
       "visitante": "Union Berlin",
+      "inicio": "2026-10-24T13:30:00Z",
       "mercado": "u25",
       "etiqueta": "Menos de 2.5 goles",
       "prob": 0.4641,
@@ -5840,6 +5980,7 @@
       "fecha": "2026-10-25",
       "local": "Freiburg",
       "visitante": "Bayern Múnich",
+      "inicio": "2026-10-25T16:30:00Z",
       "mercado": "1X",
       "etiqueta": "Freiburg o empate",
       "prob": 0.3696,
@@ -5858,6 +5999,7 @@
         "fecha": "2026-10-24",
         "local": "RB Leipzig",
         "visitante": "Elversberg",
+        "inicio": "2026-10-24T13:30:00Z",
         "mercado": "1",
         "etiqueta": "Gana RB Leipzig",
         "prob": 0.6789,
@@ -5869,6 +6011,7 @@
         "fecha": "2026-10-25",
         "local": "Hoffenheim",
         "visitante": "Bayer Leverkusen",
+        "inicio": "2026-10-25T14:30:00Z",
         "mercado": "X2",
         "etiqueta": "Bayer Leverkusen o empate",
         "prob": 0.6528,
@@ -5887,6 +6030,7 @@
         "fecha": "2026-10-24",
         "local": "RB Leipzig",
         "visitante": "Elversberg",
+        "inicio": "2026-10-24T13:30:00Z",
         "mercado": "1",
         "etiqueta": "Gana RB Leipzig",
         "prob": 0.6789,
@@ -5898,6 +6042,7 @@
         "fecha": "2026-10-25",
         "local": "Hoffenheim",
         "visitante": "Bayer Leverkusen",
+        "inicio": "2026-10-25T14:30:00Z",
         "mercado": "X2",
         "etiqueta": "Bayer Leverkusen o empate",
         "prob": 0.6528,
@@ -5909,6 +6054,7 @@
         "fecha": "2026-10-24",
         "local": "Borussia Dortmund",
         "visitante": "Eintracht Frankfurt",
+        "inicio": "2026-10-24T16:30:00Z",
         "mercado": "1",
         "etiqueta": "Gana Borussia Dortmund",
         "prob": 0.6461,
@@ -7390,6 +7536,7 @@
       1.87,
       2.17
      ],
+     "inicio": "2026-10-23T18:30:00Z",
      "cuotas": {
       "c1": 1.34,
       "cx": 5.71,
@@ -7420,6 +7567,7 @@
       1.9,
       1.89
      ],
+     "inicio": "2026-10-24T16:30:00Z",
      "cuotas": {
       "c1": 1.45,
       "cx": 4.94,
@@ -7450,6 +7598,7 @@
       1.89,
       1.99
      ],
+     "inicio": "2026-10-24T13:30:00Z",
      "cuotas": {
       "c1": 2.04,
       "cx": 3.73,
@@ -7480,6 +7629,7 @@
       2.01,
       2.0
      ],
+     "inicio": "2026-10-24T13:30:00Z",
      "cuotas": {
       "c1": 1.84,
       "cx": 3.89,
@@ -7510,6 +7660,7 @@
       1.72,
       1.93
      ],
+     "inicio": "2026-10-24T13:30:00Z",
      "cuotas": {
       "c1": 1.41,
       "cx": 5.15,
@@ -7540,6 +7691,7 @@
       1.95,
       2.24
      ],
+     "inicio": "2026-10-24T13:30:00Z",
      "cuotas": {
       "c1": 1.72,
       "cx": 4.01,
@@ -7570,6 +7722,7 @@
       1.99,
       2.0
      ],
+     "inicio": "2026-10-24T13:30:00Z",
      "cuotas": {
       "c1": 2.22,
       "cx": 3.65,
@@ -7600,6 +7753,7 @@
       2.18,
       1.8
      ],
+     "inicio": "2026-10-25T14:30:00Z",
      "cuotas": {
       "c1": 2.71,
       "cx": 3.84,
@@ -7630,6 +7784,7 @@
       1.69,
       1.82
      ],
+     "inicio": "2026-10-25T16:30:00Z",
      "cuotas": {
       "c1": 6.43,
       "cx": 5.69,
@@ -8137,29 +8292,29 @@
     "hasta": "2026-10-18",
     "mercados": {
      "1X2": {
-      "modelo": 0.5777073634349595,
+      "modelo": 0.5777073634343723,
       "base": 0.6512878324616569,
-      "logloss_modelo": 0.9747956605572401,
+      "logloss_modelo": 0.9747956605570148,
       "logloss_base": 1.0760356661017871,
-      "mejora": 0.11297688266121453,
+      "mejora": 0.11297688266211614,
       "mercado": 0.5646604208767844
      },
      "Más de 2.5": {
-      "modelo": 0.22729944941332628,
+      "modelo": 0.22729944941256283,
       "base": 0.22657454938471502,
-      "mejora": -0.0031993885923189413
+      "mejora": -0.0031993885889494145
      },
      "Ambos anotan": {
-      "modelo": 0.2389018350150649,
+      "modelo": 0.2389018350155595,
       "base": 0.2358069731921039,
-      "mejora": -0.01312455599198814
+      "mejora": -0.013124555994085574
      },
      "Córners más de 9.5": {
       "partidos": 302,
       "linea": 9.5,
       "modelo": 0.24730971112239916,
       "base": 0.2501491539089643,
-      "prob_media": 0.4959745908807468,
+      "prob_media": 0.4959745908807467,
       "frecuencia_real": 0.5231788079470199,
       "mejora": 0.011350998962796788
      },
@@ -8209,6 +8364,5379 @@
     "VfL Bochum": "Bochum",
     "SV Darmstadt 98": "Darmstadt",
     "Holstein Kiel": "Holstein Kiel"
+   }
+  },
+  "ita": {
+   "nombre": "Serie A (Italia)",
+   "temporada": "2026-27",
+   "fuente": "footballdata",
+   "home": 1.2997,
+   "away": 1.1788,
+   "rho": -0.0036,
+   "conteos": {
+    "córners": {
+     "home": 5.006,
+     "away": 4.0237
+    },
+    "tarjetas": {
+     "home": 1.7871,
+     "away": 2.0234
+    }
+   },
+   "arbitros": {},
+   "selecciones": {
+    "seguras": [
+     {
+      "fecha": "2026-10-25",
+      "local": "Inter",
+      "visitante": "Fiorentina",
+      "inicio": "2026-10-25T11:30:00Z",
+      "mercado": "o25",
+      "etiqueta": "Más de 2.5 goles",
+      "prob": 0.6931,
+      "cuota": 1.4,
+      "ve": -0.0297,
+      "prob_mercado": 0.6667
+     },
+     {
+      "fecha": "2026-10-24",
+      "local": "Napoli",
+      "visitante": "Roma",
+      "inicio": "2026-10-24T16:00:00Z",
+      "mercado": "1X",
+      "etiqueta": "Napoli o empate",
+      "prob": 0.6781,
+      "cuota": 1.51,
+      "ve": 0.022,
+      "prob_mercado": 0.6248
+     },
+     {
+      "fecha": "2026-10-25",
+      "local": "Lecce",
+      "visitante": "Juventus",
+      "inicio": "2026-10-25T17:00:00Z",
+      "mercado": "2",
+      "etiqueta": "Gana Juventus",
+      "prob": 0.5902,
+      "cuota": 1.43,
+      "ve": -0.156,
+      "prob_mercado": 0.655
+     },
+     {
+      "fecha": "2026-10-24",
+      "local": "Como",
+      "visitante": "Sassuolo",
+      "inicio": "2026-10-24T13:00:00Z",
+      "mercado": "1",
+      "etiqueta": "Gana Como",
+      "prob": 0.5936,
+      "cuota": 1.49,
+      "ve": -0.1155,
+      "prob_mercado": 0.6322
+     },
+     {
+      "fecha": "2026-10-24",
+      "local": "Cagliari",
+      "visitante": "Bologna",
+      "inicio": "2026-10-24T13:00:00Z",
+      "mercado": "1X",
+      "etiqueta": "Cagliari o empate",
+      "prob": 0.5686,
+      "cuota": 1.53,
+      "ve": -0.1272,
+      "prob_mercado": 0.6138
+     }
+    ],
+    "valor": [
+     {
+      "fecha": "2026-10-24",
+      "local": "Lazio",
+      "visitante": "Parma",
+      "inicio": "2026-10-24T18:45:00Z",
+      "mercado": "X2",
+      "etiqueta": "Parma o empate",
+      "prob": 0.4264,
+      "cuota": 2.93,
+      "ve": 0.2484,
+      "prob_mercado": 0.3219
+     },
+     {
+      "fecha": "2026-10-24",
+      "local": "Como",
+      "visitante": "Sassuolo",
+      "inicio": "2026-10-24T13:00:00Z",
+      "mercado": "u25",
+      "etiqueta": "Menos de 2.5 goles",
+      "prob": 0.4399,
+      "cuota": 2.71,
+      "ve": 0.1921,
+      "prob_mercado": 0.3454
+     },
+     {
+      "fecha": "2026-10-24",
+      "local": "Napoli",
+      "visitante": "Roma",
+      "inicio": "2026-10-24T16:00:00Z",
+      "mercado": "u25",
+      "etiqueta": "Menos de 2.5 goles",
+      "prob": 0.6212,
+      "cuota": 1.91,
+      "ve": 0.1865,
+      "prob_mercado": 0.4907
+     },
+     {
+      "fecha": "2026-10-25",
+      "local": "Lecce",
+      "visitante": "Juventus",
+      "inicio": "2026-10-25T17:00:00Z",
+      "mercado": "u25",
+      "etiqueta": "Menos de 2.5 goles",
+      "prob": 0.6128,
+      "cuota": 1.93,
+      "ve": 0.1827,
+      "prob_mercado": 0.484
+     },
+     {
+      "fecha": "2026-10-25",
+      "local": "Atalanta",
+      "visitante": "Frosinone",
+      "inicio": "2026-10-25T14:00:00Z",
+      "mercado": "u25",
+      "etiqueta": "Menos de 2.5 goles",
+      "prob": 0.4033,
+      "cuota": 2.91,
+      "ve": 0.1736,
+      "prob_mercado": 0.3217
+     },
+     {
+      "fecha": "2026-10-25",
+      "local": "Udinese",
+      "visitante": "Milan",
+      "inicio": "2026-10-25T19:45:00Z",
+      "mercado": "1",
+      "etiqueta": "Gana Udinese",
+      "prob": 0.2264,
+      "cuota": 5.02,
+      "ve": 0.1365,
+      "prob_mercado": 0.1866
+     },
+     {
+      "fecha": "2026-10-24",
+      "local": "Cagliari",
+      "visitante": "Bologna",
+      "inicio": "2026-10-24T13:00:00Z",
+      "mercado": "2",
+      "etiqueta": "Gana Bologna",
+      "prob": 0.4314,
+      "cuota": 2.44,
+      "ve": 0.0526,
+      "prob_mercado": 0.3862
+     }
+    ],
+    "combinadas": [
+     {
+      "prob": 0.47,
+      "cuota": 2.11,
+      "ve": -0.0064,
+      "patas": [
+       {
+        "fecha": "2026-10-25",
+        "local": "Inter",
+        "visitante": "Fiorentina",
+        "inicio": "2026-10-25T11:30:00Z",
+        "mercado": "o25",
+        "etiqueta": "Más de 2.5 goles",
+        "prob": 0.6931,
+        "cuota": 1.4,
+        "ve": -0.0297,
+        "prob_mercado": 0.6667
+       },
+       {
+        "fecha": "2026-10-24",
+        "local": "Napoli",
+        "visitante": "Roma",
+        "inicio": "2026-10-24T16:00:00Z",
+        "mercado": "1X",
+        "etiqueta": "Napoli o empate",
+        "prob": 0.6781,
+        "cuota": 1.51,
+        "ve": 0.022,
+        "prob_mercado": 0.6248
+       }
+      ]
+     },
+     {
+      "prob": 0.2774,
+      "cuota": 3.02,
+      "ve": -0.1614,
+      "patas": [
+       {
+        "fecha": "2026-10-25",
+        "local": "Inter",
+        "visitante": "Fiorentina",
+        "inicio": "2026-10-25T11:30:00Z",
+        "mercado": "o25",
+        "etiqueta": "Más de 2.5 goles",
+        "prob": 0.6931,
+        "cuota": 1.4,
+        "ve": -0.0297,
+        "prob_mercado": 0.6667
+       },
+       {
+        "fecha": "2026-10-24",
+        "local": "Napoli",
+        "visitante": "Roma",
+        "inicio": "2026-10-24T16:00:00Z",
+        "mercado": "1X",
+        "etiqueta": "Napoli o empate",
+        "prob": 0.6781,
+        "cuota": 1.51,
+        "ve": 0.022,
+        "prob_mercado": 0.6248
+       },
+       {
+        "fecha": "2026-10-25",
+        "local": "Lecce",
+        "visitante": "Juventus",
+        "inicio": "2026-10-25T17:00:00Z",
+        "mercado": "2",
+        "etiqueta": "Gana Juventus",
+        "prob": 0.5902,
+        "cuota": 1.43,
+        "ve": -0.156,
+        "prob_mercado": 0.655
+       }
+      ]
+     }
+    ],
+    "historial": {
+     "seguras": {
+      "apuestas": 303,
+      "aciertos": 0.5907590759075908,
+      "cuota_media": 1.5523762376237624,
+      "roi": -0.08894389438943893,
+      "roi_min": -0.1611995107335543,
+      "roi_max": -0.01668827804532358
+     },
+     "valor": {
+      "apuestas": 309,
+      "aciertos": 0.3074433656957929,
+      "cuota_media": 3.582653721682848,
+      "roi": -0.05061488673139159,
+      "roi_min": -0.1981977741249071,
+      "roi_max": 0.09696800066212394
+     },
+     "doble": {
+      "apuestas": 38,
+      "aciertos": 0.39473684210526316,
+      "cuota_media": 2.13578947368421,
+      "roi": -0.16157894736842107,
+      "roi_min": -0.4442998346018353,
+      "roi_max": 0.12114193986499319
+     },
+     "triple": {
+      "apuestas": 37,
+      "aciertos": 0.32432432432432434,
+      "cuota_media": 3.2297297297297294,
+      "roi": 0.06972972972972968,
+      "roi_min": -0.3595171352329273,
+      "roi_max": 0.49897659469238664
+     },
+     "desde": "2025-10-19",
+     "hasta": "2026-10-19"
+    }
+   },
+   "top": {
+    "n": 4,
+    "label": "Top 4 · Champions"
+   },
+   "bot": {
+    "n": 3,
+    "label": "Descenso"
+   },
+   "partidos_modelo": 830,
+   "ultimo_resultado": "2026-10-19",
+   "equipos": [
+    {
+     "nombre": "Inter",
+     "ataque": 1.6962,
+     "defensa": 0.8028,
+     "local": 1.107,
+     "partidos": 83,
+     "sin_datos": false,
+     "córners": [
+      1.2175,
+      0.8217
+     ],
+     "tarjetas": [
+      0.9349,
+      0.9599
+     ]
+    },
+    {
+     "nombre": "Roma",
+     "ataque": 1.2324,
+     "defensa": 0.7068,
+     "local": 1.1541,
+     "partidos": 83,
+     "sin_datos": false,
+     "córners": [
+      1.0729,
+      0.8574
+     ],
+     "tarjetas": [
+      0.9887,
+      1.0698
+     ]
+    },
+    {
+     "nombre": "Juventus",
+     "ataque": 1.2164,
+     "defensa": 0.7353,
+     "local": 1.0827,
+     "partidos": 83,
+     "sin_datos": false,
+     "córners": [
+      1.1836,
+      0.909
+     ],
+     "tarjetas": [
+      0.9108,
+      1.0348
+     ]
+    },
+    {
+     "nombre": "Como",
+     "ataque": 1.2728,
+     "defensa": 0.795,
+     "local": 1.0519,
+     "partidos": 83,
+     "sin_datos": false,
+     "córners": [
+      1.0706,
+      0.8635
+     ],
+     "tarjetas": [
+      1.0429,
+      1.1223
+     ]
+    },
+    {
+     "nombre": "Napoli",
+     "ataque": 1.1385,
+     "defensa": 0.7144,
+     "local": 1.1165,
+     "partidos": 83,
+     "sin_datos": false,
+     "córners": [
+      1.1676,
+      0.8309
+     ],
+     "tarjetas": [
+      0.8458,
+      0.983
+     ]
+    },
+    {
+     "nombre": "Atalanta",
+     "ataque": 1.277,
+     "defensa": 0.8932,
+     "local": 0.9252,
+     "partidos": 83,
+     "sin_datos": false,
+     "córners": [
+      1.0924,
+      0.9328
+     ],
+     "tarjetas": [
+      0.9257,
+      0.8686
+     ]
+    },
+    {
+     "nombre": "Milan",
+     "ataque": 1.2119,
+     "defensa": 0.833,
+     "local": 1.0057,
+     "partidos": 83,
+     "sin_datos": false,
+     "córners": [
+      0.9883,
+      0.9303
+     ],
+     "tarjetas": [
+      0.9849,
+      1.0022
+     ]
+    },
+    {
+     "nombre": "Lazio",
+     "ataque": 1.0633,
+     "defensa": 0.8637,
+     "local": 1.1011,
+     "partidos": 83,
+     "sin_datos": false,
+     "córners": [
+      1.0209,
+      0.9776
+     ],
+     "tarjetas": [
+      1.0989,
+      1.2205
+     ]
+    },
+    {
+     "nombre": "Bologna",
+     "ataque": 1.0917,
+     "defensa": 0.9299,
+     "local": 0.919,
+     "partidos": 83,
+     "sin_datos": false,
+     "córners": [
+      0.9985,
+      0.9638
+     ],
+     "tarjetas": [
+      0.9904,
+      1.0601
+     ]
+    },
+    {
+     "nombre": "Frosinone",
+     "ataque": 1.2227,
+     "defensa": 1.174,
+     "local": 1.1324,
+     "partidos": 7,
+     "sin_datos": false,
+     "córners": [
+      1.0495,
+      1.117
+     ],
+     "tarjetas": [
+      0.9828,
+      1.0377
+     ]
+    },
+    {
+     "nombre": "Fiorentina",
+     "ataque": 1.0441,
+     "defensa": 1.0608,
+     "local": 0.9545,
+     "partidos": 83,
+     "sin_datos": false,
+     "córners": [
+      0.9876,
+      0.9687
+     ],
+     "tarjetas": [
+      1.0642,
+      1.1045
+     ]
+    },
+    {
+     "nombre": "Udinese",
+     "ataque": 1.0672,
+     "defensa": 1.1009,
+     "local": 0.8178,
+     "partidos": 83,
+     "sin_datos": false,
+     "córners": [
+      0.9955,
+      1.0743
+     ],
+     "tarjetas": [
+      1.0253,
+      0.9138
+     ]
+    },
+    {
+     "nombre": "Sassuolo",
+     "ataque": 1.0574,
+     "defensa": 1.1123,
+     "local": 1.0418,
+     "partidos": 45,
+     "sin_datos": false,
+     "córners": [
+      0.9316,
+      1.0882
+     ],
+     "tarjetas": [
+      1.0305,
+      1.0355
+     ]
+    },
+    {
+     "nombre": "Torino",
+     "ataque": 0.9653,
+     "defensa": 1.1101,
+     "local": 1.0298,
+     "partidos": 83,
+     "sin_datos": false,
+     "córners": [
+      0.9103,
+      1.0219
+     ],
+     "tarjetas": [
+      0.9697,
+      0.9064
+     ]
+    },
+    {
+     "nombre": "Cagliari",
+     "ataque": 0.8575,
+     "defensa": 1.0439,
+     "local": 1.0233,
+     "partidos": 83,
+     "sin_datos": false,
+     "córners": [
+      0.9576,
+      1.0941
+     ],
+     "tarjetas": [
+      1.0003,
+      0.9307
+     ]
+    },
+    {
+     "nombre": "Genoa",
+     "ataque": 0.8262,
+     "defensa": 1.0289,
+     "local": 1.0882,
+     "partidos": 83,
+     "sin_datos": false,
+     "córners": [
+      0.9266,
+      1.0517
+     ],
+     "tarjetas": [
+      1.0003,
+      1.1043
+     ]
+    },
+    {
+     "nombre": "Parma",
+     "ataque": 0.7254,
+     "defensa": 1.036,
+     "local": 1.0136,
+     "partidos": 83,
+     "sin_datos": false,
+     "córners": [
+      0.9254,
+      1.0945
+     ],
+     "tarjetas": [
+      0.9821,
+      1.0137
+     ]
+    },
+    {
+     "nombre": "Lecce",
+     "ataque": 0.7762,
+     "defensa": 1.0935,
+     "local": 0.9018,
+     "partidos": 83,
+     "sin_datos": false,
+     "córners": [
+      0.9792,
+      1.095
+     ],
+     "tarjetas": [
+      0.9799,
+      0.9577
+     ]
+    },
+    {
+     "nombre": "Monza",
+     "ataque": 0.9526,
+     "defensa": 1.3409,
+     "local": 1.0268,
+     "partidos": 45,
+     "sin_datos": false,
+     "córners": [
+      0.9361,
+      1.0473
+     ],
+     "tarjetas": [
+      1.0293,
+      0.9775
+     ]
+    },
+    {
+     "nombre": "Venezia",
+     "ataque": 0.862,
+     "defensa": 1.2896,
+     "local": 0.952,
+     "partidos": 45,
+     "sin_datos": false,
+     "córners": [
+      0.9358,
+      1.0982
+     ],
+     "tarjetas": [
+      1.0586,
+      0.9586
+     ]
+    }
+   ],
+   "tabla": {
+    "Atalanta": {
+     "pj": 7,
+     "pts": 9,
+     "gf": 10,
+     "gc": 11
+    },
+    "Bologna": {
+     "pj": 7,
+     "pts": 5,
+     "gf": 6,
+     "gc": 10
+    },
+    "Cagliari": {
+     "pj": 7,
+     "pts": 13,
+     "gf": 6,
+     "gc": 7
+    },
+    "Como": {
+     "pj": 7,
+     "pts": 14,
+     "gf": 12,
+     "gc": 7
+    },
+    "Fiorentina": {
+     "pj": 7,
+     "pts": 4,
+     "gf": 8,
+     "gc": 17
+    },
+    "Frosinone": {
+     "pj": 7,
+     "pts": 13,
+     "gf": 13,
+     "gc": 9
+    },
+    "Genoa": {
+     "pj": 7,
+     "pts": 4,
+     "gf": 5,
+     "gc": 13
+    },
+    "Inter": {
+     "pj": 7,
+     "pts": 19,
+     "gf": 21,
+     "gc": 9
+    },
+    "Juventus": {
+     "pj": 7,
+     "pts": 11,
+     "gf": 9,
+     "gc": 8
+    },
+    "Lazio": {
+     "pj": 7,
+     "pts": 19,
+     "gf": 14,
+     "gc": 4
+    },
+    "Lecce": {
+     "pj": 7,
+     "pts": 9,
+     "gf": 9,
+     "gc": 12
+    },
+    "Milan": {
+     "pj": 7,
+     "pts": 15,
+     "gf": 14,
+     "gc": 7
+    },
+    "Monza": {
+     "pj": 7,
+     "pts": 7,
+     "gf": 13,
+     "gc": 15
+    },
+    "Napoli": {
+     "pj": 7,
+     "pts": 10,
+     "gf": 10,
+     "gc": 7
+    },
+    "Parma": {
+     "pj": 7,
+     "pts": 4,
+     "gf": 4,
+     "gc": 13
+    },
+    "Roma": {
+     "pj": 7,
+     "pts": 17,
+     "gf": 16,
+     "gc": 3
+    },
+    "Sassuolo": {
+     "pj": 7,
+     "pts": 8,
+     "gf": 12,
+     "gc": 14
+    },
+    "Torino": {
+     "pj": 7,
+     "pts": 10,
+     "gf": 10,
+     "gc": 9
+    },
+    "Udinese": {
+     "pj": 7,
+     "pts": 4,
+     "gf": 9,
+     "gc": 16
+    },
+    "Venezia": {
+     "pj": 7,
+     "pts": 3,
+     "gf": 6,
+     "gc": 16
+    }
+   },
+   "restantes": [
+    [
+     "Torino",
+     "Monza"
+    ],
+    [
+     "Napoli",
+     "Roma"
+    ],
+    [
+     "Lazio",
+     "Parma"
+    ],
+    [
+     "Cagliari",
+     "Bologna"
+    ],
+    [
+     "Como",
+     "Sassuolo"
+    ],
+    [
+     "Atalanta",
+     "Frosinone"
+    ],
+    [
+     "Inter",
+     "Fiorentina"
+    ],
+    [
+     "Udinese",
+     "Milan"
+    ],
+    [
+     "Genoa",
+     "Venezia"
+    ],
+    [
+     "Lecce",
+     "Juventus"
+    ],
+    [
+     "Roma",
+     "Cagliari"
+    ],
+    [
+     "Torino",
+     "Como"
+    ],
+    [
+     "Sassuolo",
+     "Lazio"
+    ],
+    [
+     "Monza",
+     "Napoli"
+    ],
+    [
+     "Genoa",
+     "Juventus"
+    ],
+    [
+     "Milan",
+     "Bologna"
+    ],
+    [
+     "Venezia",
+     "Inter"
+    ],
+    [
+     "Parma",
+     "Udinese"
+    ],
+    [
+     "Frosinone",
+     "Lecce"
+    ],
+    [
+     "Fiorentina",
+     "Atalanta"
+    ],
+    [
+     "Udinese",
+     "Roma"
+    ],
+    [
+     "Milan",
+     "Inter"
+    ],
+    [
+     "Bologna",
+     "Monza"
+    ],
+    [
+     "Juventus",
+     "Napoli"
+    ],
+    [
+     "Lecce",
+     "Genoa"
+    ],
+    [
+     "Como",
+     "Venezia"
+    ],
+    [
+     "Frosinone",
+     "Torino"
+    ],
+    [
+     "Lazio",
+     "Cagliari"
+    ],
+    [
+     "Atalanta",
+     "Parma"
+    ],
+    [
+     "Sassuolo",
+     "Fiorentina"
+    ],
+    [
+     "Venezia",
+     "Udinese"
+    ],
+    [
+     "Roma",
+     "Sassuolo"
+    ],
+    [
+     "Parma",
+     "Bologna"
+    ],
+    [
+     "Torino",
+     "Lecce"
+    ],
+    [
+     "Cagliari",
+     "Frosinone"
+    ],
+    [
+     "Genoa",
+     "Milan"
+    ],
+    [
+     "Napoli",
+     "Lazio"
+    ],
+    [
+     "Monza",
+     "Atalanta"
+    ],
+    [
+     "Fiorentina",
+     "Juventus"
+    ],
+    [
+     "Inter",
+     "Como"
+    ],
+    [
+     "Napoli",
+     "Torino"
+    ],
+    [
+     "Parma",
+     "Roma"
+    ],
+    [
+     "Como",
+     "Cagliari"
+    ],
+    [
+     "Lazio",
+     "Lecce"
+    ],
+    [
+     "Sassuolo",
+     "Genoa"
+    ],
+    [
+     "Milan",
+     "Frosinone"
+    ],
+    [
+     "Atalanta",
+     "Inter"
+    ],
+    [
+     "Bologna",
+     "Udinese"
+    ],
+    [
+     "Monza",
+     "Fiorentina"
+    ],
+    [
+     "Juventus",
+     "Venezia"
+    ],
+    [
+     "Lecce",
+     "Atalanta"
+    ],
+    [
+     "Torino",
+     "Lazio"
+    ],
+    [
+     "Como",
+     "Juventus"
+    ],
+    [
+     "Udinese",
+     "Fiorentina"
+    ],
+    [
+     "Venezia",
+     "Bologna"
+    ],
+    [
+     "Cagliari",
+     "Milan"
+    ],
+    [
+     "Roma",
+     "Monza"
+    ],
+    [
+     "Inter",
+     "Genoa"
+    ],
+    [
+     "Sassuolo",
+     "Napoli"
+    ],
+    [
+     "Frosinone",
+     "Parma"
+    ],
+    [
+     "Frosinone",
+     "Inter"
+    ],
+    [
+     "Genoa",
+     "Torino"
+    ],
+    [
+     "Juventus",
+     "Udinese"
+    ],
+    [
+     "Fiorentina",
+     "Cagliari"
+    ],
+    [
+     "Bologna",
+     "Roma"
+    ],
+    [
+     "Monza",
+     "Como"
+    ],
+    [
+     "Lazio",
+     "Atalanta"
+    ],
+    [
+     "Napoli",
+     "Lecce"
+    ],
+    [
+     "Milan",
+     "Parma"
+    ],
+    [
+     "Venezia",
+     "Sassuolo"
+    ],
+    [
+     "Lazio",
+     "Roma"
+    ],
+    [
+     "Juventus",
+     "Monza"
+    ],
+    [
+     "Cagliari",
+     "Venezia"
+    ],
+    [
+     "Inter",
+     "Torino"
+    ],
+    [
+     "Atalanta",
+     "Genoa"
+    ],
+    [
+     "Lecce",
+     "Sassuolo"
+    ],
+    [
+     "Napoli",
+     "Milan"
+    ],
+    [
+     "Como",
+     "Bologna"
+    ],
+    [
+     "Parma",
+     "Fiorentina"
+    ],
+    [
+     "Udinese",
+     "Frosinone"
+    ],
+    [
+     "Roma",
+     "Juventus"
+    ],
+    [
+     "Atalanta",
+     "Napoli"
+    ],
+    [
+     "Milan",
+     "Como"
+    ],
+    [
+     "Sassuolo",
+     "Parma"
+    ],
+    [
+     "Frosinone",
+     "Lazio"
+    ],
+    [
+     "Torino",
+     "Cagliari"
+    ],
+    [
+     "Fiorentina",
+     "Bologna"
+    ],
+    [
+     "Genoa",
+     "Udinese"
+    ],
+    [
+     "Lecce",
+     "Inter"
+    ],
+    [
+     "Venezia",
+     "Monza"
+    ],
+    [
+     "Bologna",
+     "Juventus"
+    ],
+    [
+     "Inter",
+     "Sassuolo"
+    ],
+    [
+     "Monza",
+     "Milan"
+    ],
+    [
+     "Fiorentina",
+     "Lazio"
+    ],
+    [
+     "Torino",
+     "Venezia"
+    ],
+    [
+     "Como",
+     "Lecce"
+    ],
+    [
+     "Roma",
+     "Frosinone"
+    ],
+    [
+     "Cagliari",
+     "Genoa"
+    ],
+    [
+     "Parma",
+     "Napoli"
+    ],
+    [
+     "Udinese",
+     "Atalanta"
+    ],
+    [
+     "Frosinone",
+     "Bologna"
+    ],
+    [
+     "Sassuolo",
+     "Udinese"
+    ],
+    [
+     "Genoa",
+     "Monza"
+    ],
+    [
+     "Napoli",
+     "Cagliari"
+    ],
+    [
+     "Juventus",
+     "Torino"
+    ],
+    [
+     "Atalanta",
+     "Como"
+    ],
+    [
+     "Lazio",
+     "Inter"
+    ],
+    [
+     "Lecce",
+     "Parma"
+    ],
+    [
+     "Milan",
+     "Fiorentina"
+    ],
+    [
+     "Venezia",
+     "Roma"
+    ],
+    [
+     "Parma",
+     "Venezia"
+    ],
+    [
+     "Roma",
+     "Milan"
+    ],
+    [
+     "Bologna",
+     "Genoa"
+    ],
+    [
+     "Como",
+     "Lazio"
+    ],
+    [
+     "Cagliari",
+     "Sassuolo"
+    ],
+    [
+     "Monza",
+     "Frosinone"
+    ],
+    [
+     "Udinese",
+     "Napoli"
+    ],
+    [
+     "Inter",
+     "Juventus"
+    ],
+    [
+     "Torino",
+     "Atalanta"
+    ],
+    [
+     "Fiorentina",
+     "Lecce"
+    ],
+    [
+     "Lecce",
+     "Udinese"
+    ],
+    [
+     "Parma",
+     "Inter"
+    ],
+    [
+     "Juventus",
+     "Genoa"
+    ],
+    [
+     "Cagliari",
+     "Como"
+    ],
+    [
+     "Napoli",
+     "Fiorentina"
+    ],
+    [
+     "Atalanta",
+     "Roma"
+    ],
+    [
+     "Sassuolo",
+     "Monza"
+    ],
+    [
+     "Lazio",
+     "Bologna"
+    ],
+    [
+     "Venezia",
+     "Frosinone"
+    ],
+    [
+     "Milan",
+     "Torino"
+    ],
+    [
+     "Monza",
+     "Lazio"
+    ],
+    [
+     "Bologna",
+     "Atalanta"
+    ],
+    [
+     "Como",
+     "Napoli"
+    ],
+    [
+     "Genoa",
+     "Parma"
+    ],
+    [
+     "Roma",
+     "Udinese"
+    ],
+    [
+     "Fiorentina",
+     "Sassuolo"
+    ],
+    [
+     "Juventus",
+     "Cagliari"
+    ],
+    [
+     "Lecce",
+     "Torino"
+    ],
+    [
+     "Frosinone",
+     "Milan"
+    ],
+    [
+     "Inter",
+     "Venezia"
+    ],
+    [
+     "Genoa",
+     "Lecce"
+    ],
+    [
+     "Lazio",
+     "Venezia"
+    ],
+    [
+     "Atalanta",
+     "Fiorentina"
+    ],
+    [
+     "Cagliari",
+     "Parma"
+    ],
+    [
+     "Napoli",
+     "Inter"
+    ],
+    [
+     "Udinese",
+     "Bologna"
+    ],
+    [
+     "Monza",
+     "Roma"
+    ],
+    [
+     "Milan",
+     "Juventus"
+    ],
+    [
+     "Sassuolo",
+     "Como"
+    ],
+    [
+     "Torino",
+     "Frosinone"
+    ],
+    [
+     "Parma",
+     "Frosinone"
+    ],
+    [
+     "Atalanta",
+     "Lazio"
+    ],
+    [
+     "Fiorentina",
+     "Udinese"
+    ],
+    [
+     "Bologna",
+     "Milan"
+    ],
+    [
+     "Roma",
+     "Torino"
+    ],
+    [
+     "Venezia",
+     "Genoa"
+    ],
+    [
+     "Como",
+     "Monza"
+    ],
+    [
+     "Inter",
+     "Cagliari"
+    ],
+    [
+     "Juventus",
+     "Sassuolo"
+    ],
+    [
+     "Lecce",
+     "Napoli"
+    ],
+    [
+     "Roma",
+     "Parma"
+    ],
+    [
+     "Udinese",
+     "Venezia"
+    ],
+    [
+     "Inter",
+     "Milan"
+    ],
+    [
+     "Cagliari",
+     "Lazio"
+    ],
+    [
+     "Genoa",
+     "Atalanta"
+    ],
+    [
+     "Bologna",
+     "Como"
+    ],
+    [
+     "Napoli",
+     "Juventus"
+    ],
+    [
+     "Monza",
+     "Lecce"
+    ],
+    [
+     "Frosinone",
+     "Fiorentina"
+    ],
+    [
+     "Torino",
+     "Sassuolo"
+    ],
+    [
+     "Venezia",
+     "Cagliari"
+    ],
+    [
+     "Sassuolo",
+     "Roma"
+    ],
+    [
+     "Lazio",
+     "Napoli"
+    ],
+    [
+     "Lecce",
+     "Frosinone"
+    ],
+    [
+     "Milan",
+     "Genoa"
+    ],
+    [
+     "Fiorentina",
+     "Inter"
+    ],
+    [
+     "Juventus",
+     "Bologna"
+    ],
+    [
+     "Udinese",
+     "Parma"
+    ],
+    [
+     "Atalanta",
+     "Monza"
+    ],
+    [
+     "Como",
+     "Torino"
+    ],
+    [
+     "Bologna",
+     "Lecce"
+    ],
+    [
+     "Torino",
+     "Fiorentina"
+    ],
+    [
+     "Frosinone",
+     "Napoli"
+    ],
+    [
+     "Monza",
+     "Juventus"
+    ],
+    [
+     "Como",
+     "Milan"
+    ],
+    [
+     "Inter",
+     "Atalanta"
+    ],
+    [
+     "Genoa",
+     "Lazio"
+    ],
+    [
+     "Parma",
+     "Sassuolo"
+    ],
+    [
+     "Cagliari",
+     "Udinese"
+    ],
+    [
+     "Roma",
+     "Venezia"
+    ],
+    [
+     "Juventus",
+     "Roma"
+    ],
+    [
+     "Milan",
+     "Cagliari"
+    ],
+    [
+     "Sassuolo",
+     "Bologna"
+    ],
+    [
+     "Monza",
+     "Genoa"
+    ],
+    [
+     "Fiorentina",
+     "Venezia"
+    ],
+    [
+     "Lazio",
+     "Frosinone"
+    ],
+    [
+     "Udinese",
+     "Inter"
+    ],
+    [
+     "Napoli",
+     "Parma"
+    ],
+    [
+     "Atalanta",
+     "Torino"
+    ],
+    [
+     "Lecce",
+     "Como"
+    ],
+    [
+     "Torino",
+     "Inter"
+    ],
+    [
+     "Venezia",
+     "Atalanta"
+    ],
+    [
+     "Lazio",
+     "Juventus"
+    ],
+    [
+     "Como",
+     "Udinese"
+    ],
+    [
+     "Frosinone",
+     "Monza"
+    ],
+    [
+     "Milan",
+     "Sassuolo"
+    ],
+    [
+     "Genoa",
+     "Roma"
+    ],
+    [
+     "Cagliari",
+     "Fiorentina"
+    ],
+    [
+     "Bologna",
+     "Napoli"
+    ],
+    [
+     "Parma",
+     "Lecce"
+    ],
+    [
+     "Atalanta",
+     "Milan"
+    ],
+    [
+     "Monza",
+     "Bologna"
+    ],
+    [
+     "Roma",
+     "Lecce"
+    ],
+    [
+     "Inter",
+     "Frosinone"
+    ],
+    [
+     "Juventus",
+     "Como"
+    ],
+    [
+     "Udinese",
+     "Torino"
+    ],
+    [
+     "Fiorentina",
+     "Genoa"
+    ],
+    [
+     "Napoli",
+     "Venezia"
+    ],
+    [
+     "Parma",
+     "Lazio"
+    ],
+    [
+     "Sassuolo",
+     "Cagliari"
+    ],
+    [
+     "Genoa",
+     "Inter"
+    ],
+    [
+     "Roma",
+     "Bologna"
+    ],
+    [
+     "Lecce",
+     "Lazio"
+    ],
+    [
+     "Cagliari",
+     "Napoli"
+    ],
+    [
+     "Como",
+     "Fiorentina"
+    ],
+    [
+     "Sassuolo",
+     "Atalanta"
+    ],
+    [
+     "Milan",
+     "Monza"
+    ],
+    [
+     "Torino",
+     "Juventus"
+    ],
+    [
+     "Venezia",
+     "Parma"
+    ],
+    [
+     "Frosinone",
+     "Udinese"
+    ],
+    [
+     "Udinese",
+     "Monza"
+    ],
+    [
+     "Inter",
+     "Roma"
+    ],
+    [
+     "Parma",
+     "Como"
+    ],
+    [
+     "Bologna",
+     "Venezia"
+    ],
+    [
+     "Frosinone",
+     "Genoa"
+    ],
+    [
+     "Cagliari",
+     "Atalanta"
+    ],
+    [
+     "Juventus",
+     "Lecce"
+    ],
+    [
+     "Fiorentina",
+     "Milan"
+    ],
+    [
+     "Napoli",
+     "Sassuolo"
+    ],
+    [
+     "Lazio",
+     "Torino"
+    ],
+    [
+     "Atalanta",
+     "Udinese"
+    ],
+    [
+     "Torino",
+     "Genoa"
+    ],
+    [
+     "Milan",
+     "Napoli"
+    ],
+    [
+     "Venezia",
+     "Juventus"
+    ],
+    [
+     "Bologna",
+     "Cagliari"
+    ],
+    [
+     "Monza",
+     "Inter"
+    ],
+    [
+     "Como",
+     "Frosinone"
+    ],
+    [
+     "Roma",
+     "Lazio"
+    ],
+    [
+     "Fiorentina",
+     "Parma"
+    ],
+    [
+     "Sassuolo",
+     "Lecce"
+    ],
+    [
+     "Inter",
+     "Bologna"
+    ],
+    [
+     "Venezia",
+     "Torino"
+    ],
+    [
+     "Lecce",
+     "Milan"
+    ],
+    [
+     "Genoa",
+     "Sassuolo"
+    ],
+    [
+     "Juventus",
+     "Fiorentina"
+    ],
+    [
+     "Napoli",
+     "Udinese"
+    ],
+    [
+     "Cagliari",
+     "Monza"
+    ],
+    [
+     "Frosinone",
+     "Roma"
+    ],
+    [
+     "Lazio",
+     "Como"
+    ],
+    [
+     "Parma",
+     "Atalanta"
+    ],
+    [
+     "Milan",
+     "Lazio"
+    ],
+    [
+     "Sassuolo",
+     "Frosinone"
+    ],
+    [
+     "Atalanta",
+     "Juventus"
+    ],
+    [
+     "Torino",
+     "Parma"
+    ],
+    [
+     "Udinese",
+     "Genoa"
+    ],
+    [
+     "Roma",
+     "Napoli"
+    ],
+    [
+     "Monza",
+     "Venezia"
+    ],
+    [
+     "Lecce",
+     "Cagliari"
+    ],
+    [
+     "Como",
+     "Inter"
+    ],
+    [
+     "Bologna",
+     "Fiorentina"
+    ],
+    [
+     "Venezia",
+     "Como"
+    ],
+    [
+     "Udinese",
+     "Juventus"
+    ],
+    [
+     "Fiorentina",
+     "Roma"
+    ],
+    [
+     "Frosinone",
+     "Atalanta"
+    ],
+    [
+     "Torino",
+     "Bologna"
+    ],
+    [
+     "Lazio",
+     "Sassuolo"
+    ],
+    [
+     "Parma",
+     "Milan"
+    ],
+    [
+     "Genoa",
+     "Cagliari"
+    ],
+    [
+     "Napoli",
+     "Monza"
+    ],
+    [
+     "Inter",
+     "Lecce"
+    ],
+    [
+     "Monza",
+     "Parma"
+    ],
+    [
+     "Milan",
+     "Roma"
+    ],
+    [
+     "Cagliari",
+     "Torino"
+    ],
+    [
+     "Sassuolo",
+     "Venezia"
+    ],
+    [
+     "Juventus",
+     "Inter"
+    ],
+    [
+     "Lazio",
+     "Udinese"
+    ],
+    [
+     "Lecce",
+     "Fiorentina"
+    ],
+    [
+     "Napoli",
+     "Genoa"
+    ],
+    [
+     "Como",
+     "Atalanta"
+    ],
+    [
+     "Bologna",
+     "Frosinone"
+    ],
+    [
+     "Udinese",
+     "Sassuolo"
+    ],
+    [
+     "Genoa",
+     "Bologna"
+    ],
+    [
+     "Venezia",
+     "Milan"
+    ],
+    [
+     "Fiorentina",
+     "Monza"
+    ],
+    [
+     "Frosinone",
+     "Cagliari"
+    ],
+    [
+     "Parma",
+     "Juventus"
+    ],
+    [
+     "Inter",
+     "Lazio"
+    ],
+    [
+     "Roma",
+     "Como"
+    ],
+    [
+     "Torino",
+     "Napoli"
+    ],
+    [
+     "Atalanta",
+     "Lecce"
+    ],
+    [
+     "Como",
+     "Genoa"
+    ],
+    [
+     "Napoli",
+     "Atalanta"
+    ],
+    [
+     "Lecce",
+     "Venezia"
+    ],
+    [
+     "Milan",
+     "Udinese"
+    ],
+    [
+     "Juventus",
+     "Frosinone"
+    ],
+    [
+     "Monza",
+     "Torino"
+    ],
+    [
+     "Sassuolo",
+     "Inter"
+    ],
+    [
+     "Cagliari",
+     "Roma"
+    ],
+    [
+     "Lazio",
+     "Fiorentina"
+    ],
+    [
+     "Bologna",
+     "Parma"
+    ]
+   ],
+   "proximos": [
+    {
+     "fecha": "2026-10-23",
+     "local": "Torino",
+     "visitante": "Monza",
+     "pendiente": false,
+     "córners": [
+      4.77,
+      3.85
+     ],
+     "tarjetas": [
+      1.69,
+      1.89
+     ],
+     "inicio": "2026-10-23T18:45:00Z",
+     "cuotas": {
+      "c1": 2.09,
+      "cx": 3.45,
+      "c2": 3.43,
+      "co25": 1.79,
+      "cu25": 1.96
+     },
+     "lh": 1.7323,
+     "la": 1.2467,
+     "p1": 0.4876,
+     "px": 0.2371,
+     "p2": 0.2753,
+     "o25": 0.5721,
+     "btts": 0.5869,
+     "marcador": "1-1",
+     "p_marcador": 0.1102
+    },
+    {
+     "fecha": "2026-10-24",
+     "local": "Napoli",
+     "visitante": "Roma",
+     "pendiente": false,
+     "córners": [
+      5.01,
+      3.59
+     ],
+     "tarjetas": [
+      1.62,
+      1.97
+     ],
+     "inicio": "2026-10-24T16:00:00Z",
+     "cuotas": {
+      "c1": 2.76,
+      "cx": 3.32,
+      "c2": 2.51,
+      "co25": 1.84,
+      "cu25": 1.91
+     },
+     "lh": 1.1677,
+     "la": 1.0378,
+     "p1": 0.3871,
+     "px": 0.291,
+     "p2": 0.3218,
+     "o25": 0.3788,
+     "btts": 0.4454,
+     "marcador": "1-1",
+     "p_marcador": 0.134
+    },
+    {
+     "fecha": "2026-10-24",
+     "local": "Lazio",
+     "visitante": "Parma",
+     "pendiente": false,
+     "córners": [
+      5.59,
+      3.64
+     ],
+     "tarjetas": [
+      1.99,
+      2.43
+     ],
+     "inicio": "2026-10-24T18:45:00Z",
+     "cuotas": {
+      "c1": 1.39,
+      "cx": 4.56,
+      "c2": 8.18,
+      "co25": 1.83,
+      "cu25": 1.92
+     },
+     "lh": 1.5764,
+     "la": 0.7386,
+     "p1": 0.5735,
+     "px": 0.2527,
+     "p2": 0.1737,
+     "o25": 0.4079,
+     "btts": 0.4147,
+     "marcador": "1-0",
+     "p_marcador": 0.1553
+    },
+    {
+     "fecha": "2026-10-24",
+     "local": "Cagliari",
+     "visitante": "Bologna",
+     "pendiente": false,
+     "córners": [
+      4.62,
+      4.4
+     ],
+     "tarjetas": [
+      1.9,
+      1.87
+     ],
+     "inicio": "2026-10-24T13:00:00Z",
+     "cuotas": {
+      "c1": 3.07,
+      "cx": 3.07,
+      "c2": 2.44,
+      "co25": 2.14,
+      "cu25": 1.67
+     },
+     "lh": 1.0604,
+     "la": 1.3433,
+     "p1": 0.2948,
+     "px": 0.2738,
+     "p2": 0.4314,
+     "o25": 0.4313,
+     "btts": 0.4836,
+     "marcador": "1-1",
+     "p_marcador": 0.1292
+    },
+    {
+     "fecha": "2026-10-24",
+     "local": "Como",
+     "visitante": "Sassuolo",
+     "pendiente": false,
+     "córners": [
+      5.83,
+      3.24
+     ],
+     "tarjetas": [
+      1.93,
+      2.34
+     ],
+     "inicio": "2026-10-24T13:00:00Z",
+     "cuotas": {
+      "c1": 1.49,
+      "cx": 4.6,
+      "c2": 5.78,
+      "co25": 1.43,
+      "cu25": 2.71
+     },
+     "lh": 1.9354,
+     "la": 0.991,
+     "p1": 0.5936,
+     "px": 0.2183,
+     "p2": 0.1881,
+     "o25": 0.5601,
+     "btts": 0.5384,
+     "marcador": "1-0",
+     "p_marcador": 0.1033
+    },
+    {
+     "fecha": "2026-10-25",
+     "local": "Atalanta",
+     "visitante": "Frosinone",
+     "pendiente": false,
+     "córners": [
+      6.11,
+      3.94
+     ],
+     "tarjetas": [
+      1.72,
+      1.73
+     ],
+     "inicio": "2026-10-25T14:00:00Z",
+     "cuotas": {
+      "c1": 1.79,
+      "cx": 4.11,
+      "c2": 3.75,
+      "co25": 1.38,
+      "cu25": 2.91
+     },
+     "lh": 1.8027,
+     "la": 1.2873,
+     "p1": 0.495,
+     "px": 0.2314,
+     "p2": 0.2736,
+     "o25": 0.5967,
+     "btts": 0.605,
+     "marcador": "1-1",
+     "p_marcador": 0.106
+    },
+    {
+     "fecha": "2026-10-25",
+     "local": "Inter",
+     "visitante": "Fiorentina",
+     "pendiente": false,
+     "córners": [
+      5.9,
+      3.27
+     ],
+     "tarjetas": [
+      1.85,
+      2.07
+     ],
+     "inicio": "2026-10-25T11:30:00Z",
+     "cuotas": {
+      "c1": 1.34,
+      "cx": 5.31,
+      "c2": 7.7,
+      "co25": 1.4,
+      "cu25": 2.8
+     },
+     "lh": 2.5887,
+     "la": 0.9881,
+     "p1": 0.7173,
+     "px": 0.1611,
+     "p2": 0.1216,
+     "o25": 0.6931,
+     "btts": 0.5808,
+     "marcador": "2-0",
+     "p_marcador": 0.0937
+    },
+    {
+     "fecha": "2026-10-25",
+     "local": "Udinese",
+     "visitante": "Milan",
+     "pendiente": false,
+     "córners": [
+      4.64,
+      4.27
+     ],
+     "tarjetas": [
+      1.84,
+      1.82
+     ],
+     "inicio": "2026-10-25T19:45:00Z",
+     "cuotas": {
+      "c1": 5.02,
+      "cx": 3.76,
+      "c2": 1.66,
+      "co25": 1.83,
+      "cu25": 1.91
+     },
+     "lh": 0.9449,
+     "la": 1.5728,
+     "p1": 0.2264,
+     "px": 0.254,
+     "p2": 0.5197,
+     "o25": 0.4607,
+     "btts": 0.4849,
+     "marcador": "0-1",
+     "p_marcador": 0.1264
+    },
+    {
+     "fecha": "2026-10-25",
+     "local": "Genoa",
+     "visitante": "Venezia",
+     "pendiente": false,
+     "córners": [
+      5.09,
+      3.96
+     ],
+     "tarjetas": [
+      1.71,
+      2.37
+     ],
+     "inicio": "2026-10-25T14:00:00Z",
+     "cuotas": {
+      "c1": 2.08,
+      "cx": 3.34,
+      "c2": 3.49,
+      "co25": 1.91,
+      "cu25": 1.83
+     },
+     "lh": 1.5068,
+     "la": 1.0455,
+     "p1": 0.4784,
+     "px": 0.2592,
+     "p2": 0.2624,
+     "o25": 0.4695,
+     "btts": 0.5052,
+     "marcador": "1-1",
+     "p_marcador": 0.1232
+    },
+    {
+     "fecha": "2026-10-25",
+     "local": "Lecce",
+     "visitante": "Juventus",
+     "pendiente": false,
+     "córners": [
+      4.46,
+      5.21
+     ],
+     "tarjetas": [
+      1.81,
+      1.76
+     ],
+     "inicio": "2026-10-25T17:00:00Z",
+     "cuotas": {
+      "c1": 7.31,
+      "cx": 4.32,
+      "c2": 1.43,
+      "co25": 1.81,
+      "cu25": 1.93
+     },
+     "lh": 0.669,
+     "la": 1.568,
+     "p1": 0.1572,
+     "px": 0.2526,
+     "p2": 0.5902,
+     "o25": 0.3872,
+     "btts": 0.3865,
+     "marcador": "0-1",
+     "p_marcador": 0.167
+    },
+    {
+     "fecha": "2026-10-27",
+     "local": "Roma",
+     "visitante": "Cagliari",
+     "pendiente": false,
+     "córners": [
+      5.88,
+      3.3
+     ],
+     "tarjetas": [
+      1.64,
+      2.17
+     ],
+     "lh": 1.9296,
+     "la": 0.7145,
+     "p1": 0.6611,
+     "px": 0.2092,
+     "p2": 0.1297,
+     "o25": 0.4926,
+     "btts": 0.4368,
+     "marcador": "1-0",
+     "p_marcador": 0.1368
+    },
+    {
+     "fecha": "2026-10-27",
+     "local": "Torino",
+     "visitante": "Como",
+     "pendiente": false,
+     "córners": [
+      3.93,
+      4.4
+     ],
+     "tarjetas": [
+      1.94,
+      1.91
+     ],
+     "lh": 1.0271,
+     "la": 1.6656,
+     "p1": 0.233,
+     "px": 0.2444,
+     "p2": 0.5226,
+     "o25": 0.5046,
+     "btts": 0.521,
+     "marcador": "1-1",
+     "p_marcador": 0.1162
+    },
+    {
+     "fecha": "2026-10-27",
+     "local": "Sassuolo",
+     "visitante": "Lazio",
+     "pendiente": false,
+     "córners": [
+      4.56,
+      4.47
+     ],
+     "tarjetas": [
+      2.25,
+      2.3
+     ],
+     "lh": 1.2366,
+     "la": 1.3942,
+     "p1": 0.3323,
+     "px": 0.262,
+     "p2": 0.4057,
+     "o25": 0.4893,
+     "btts": 0.5341,
+     "marcador": "1-1",
+     "p_marcador": 0.1246
+    },
+    {
+     "fecha": "2026-10-28",
+     "local": "Monza",
+     "visitante": "Napoli",
+     "pendiente": false,
+     "córners": [
+      3.89,
+      4.92
+     ],
+     "tarjetas": [
+      1.81,
+      1.67
+     ],
+     "lh": 0.9081,
+     "la": 1.7996,
+     "p1": 0.1865,
+     "px": 0.23,
+     "p2": 0.5836,
+     "o25": 0.5082,
+     "btts": 0.4984,
+     "marcador": "0-1",
+     "p_marcador": 0.1196
+    },
+    {
+     "fecha": "2026-10-28",
+     "local": "Genoa",
+     "visitante": "Juventus",
+     "pendiente": false,
+     "córners": [
+      4.22,
+      5.01
+     ],
+     "tarjetas": [
+      1.85,
+      2.04
+     ],
+     "lh": 0.8592,
+     "la": 1.4753,
+     "p1": 0.2187,
+     "px": 0.2654,
+     "p2": 0.516,
+     "o25": 0.4131,
+     "btts": 0.4451,
+     "marcador": "0-1",
+     "p_marcador": 0.1424
+    },
+    {
+     "fecha": "2026-10-28",
+     "local": "Milan",
+     "visitante": "Bologna",
+     "pendiente": false,
+     "córners": [
+      4.77,
+      3.74
+     ],
+     "tarjetas": [
+      1.87,
+      2.01
+     ],
+     "lh": 1.4729,
+     "la": 1.072,
+     "p1": 0.4633,
+     "px": 0.2617,
+     "p2": 0.275,
+     "o25": 0.4677,
+     "btts": 0.5074,
+     "marcador": "1-1",
+     "p_marcador": 0.1244
+    },
+    {
+     "fecha": "2026-10-28",
+     "local": "Venezia",
+     "visitante": "Inter",
+     "pendiente": false,
+     "córners": [
+      3.85,
+      5.38
+     ],
+     "tarjetas": [
+      1.82,
+      1.81
+     ],
+     "lh": 0.8562,
+     "la": 2.5785,
+     "p1": 0.1016,
+     "px": 0.1543,
+     "p2": 0.744,
+     "o25": 0.6669,
+     "btts": 0.5318,
+     "marcador": "0-2",
+     "p_marcador": 0.1072
+    },
+    {
+     "fecha": "2026-10-28",
+     "local": "Parma",
+     "visitante": "Udinese",
+     "pendiente": false,
+     "córners": [
+      4.98,
+      4.38
+     ],
+     "tarjetas": [
+      1.6,
+      2.1
+     ],
+     "lh": 1.0521,
+     "la": 1.3033,
+     "p1": 0.2998,
+     "px": 0.2779,
+     "p2": 0.4223,
+     "o25": 0.4186,
+     "btts": 0.4745,
+     "marcador": "1-1",
+     "p_marcador": 0.1305
+    },
+    {
+     "fecha": "2026-10-29",
+     "local": "Frosinone",
+     "visitante": "Lecce",
+     "pendiente": false,
+     "córners": [
+      5.75,
+      4.4
+     ],
+     "tarjetas": [
+      1.68,
+      2.06
+     ],
+     "lh": 1.9678,
+     "la": 1.0742,
+     "p1": 0.5809,
+     "px": 0.217,
+     "p2": 0.2021,
+     "o25": 0.5861,
+     "btts": 0.5668,
+     "marcador": "1-1",
+     "p_marcador": 0.1013
+    },
+    {
+     "fecha": "2026-10-29",
+     "local": "Fiorentina",
+     "visitante": "Atalanta",
+     "pendiente": false,
+     "córners": [
+      4.61,
+      4.26
+     ],
+     "tarjetas": [
+      1.65,
+      2.07
+     ],
+     "lh": 1.1568,
+     "la": 1.5968,
+     "p1": 0.2757,
+     "px": 0.2491,
+     "p2": 0.4752,
+     "o25": 0.5194,
+     "btts": 0.5471,
+     "marcador": "1-1",
+     "p_marcador": 0.1181
+    },
+    {
+     "fecha": "2026-10-31",
+     "local": "Udinese",
+     "visitante": "Roma",
+     "pendiente": false,
+     "córners": [
+      4.27,
+      4.64
+     ],
+     "tarjetas": [
+      1.96,
+      1.83
+     ],
+     "lh": 0.8017,
+     "la": 1.5994,
+     "p1": 0.1866,
+     "px": 0.2507,
+     "p2": 0.5627,
+     "o25": 0.4306,
+     "btts": 0.4405,
+     "marcador": "0-1",
+     "p_marcador": 0.1445
+    },
+    {
+     "fecha": "2026-10-31",
+     "local": "Milan",
+     "visitante": "Inter",
+     "pendiente": false,
+     "córners": [
+      4.07,
+      4.56
+     ],
+     "tarjetas": [
+      1.69,
+      1.9
+     ],
+     "lh": 1.2717,
+     "la": 1.6657,
+     "p1": 0.2923,
+     "px": 0.2416,
+     "p2": 0.4661,
+     "o25": 0.5626,
+     "btts": 0.584,
+     "marcador": "1-1",
+     "p_marcador": 0.1127
+    },
+    {
+     "fecha": "2026-10-31",
+     "local": "Bologna",
+     "visitante": "Monza",
+     "pendiente": false,
+     "córners": [
+      5.23,
+      3.63
+     ],
+     "tarjetas": [
+      1.73,
+      2.21
+     ],
+     "lh": 1.7484,
+     "la": 1.0442,
+     "p1": 0.5384,
+     "px": 0.2366,
+     "p2": 0.225,
+     "o25": 0.5288,
+     "btts": 0.5356,
+     "marcador": "1-1",
+     "p_marcador": 0.1123
+    },
+    {
+     "fecha": "2026-11-01",
+     "local": "Juventus",
+     "visitante": "Napoli",
+     "pendiente": false,
+     "córners": [
+      4.92,
+      4.27
+     ],
+     "tarjetas": [
+      1.6,
+      1.77
+     ],
+     "lh": 1.2227,
+     "la": 0.9869,
+     "p1": 0.4147,
+     "px": 0.2889,
+     "p2": 0.2965,
+     "o25": 0.3799,
+     "btts": 0.4431,
+     "marcador": "1-0",
+     "p_marcador": 0.1337
+    },
+    {
+     "fecha": "2026-11-01",
+     "local": "Lecce",
+     "visitante": "Genoa",
+     "pendiente": false,
+     "córners": [
+      5.16,
+      4.08
+     ],
+     "tarjetas": [
+      1.93,
+      1.94
+     ],
+     "lh": 0.936,
+     "la": 1.065,
+     "p1": 0.312,
+     "px": 0.3085,
+     "p2": 0.3795,
+     "o25": 0.3236,
+     "btts": 0.3988,
+     "marcador": "0-1",
+     "p_marcador": 0.1435
+    },
+    {
+     "fecha": "2026-11-01",
+     "local": "Como",
+     "visitante": "Venezia",
+     "pendiente": false,
+     "córners": [
+      5.89,
+      3.25
+     ],
+     "tarjetas": [
+      1.79,
+      2.4
+     ],
+     "lh": 2.2438,
+     "la": 0.8078,
+     "p1": 0.6991,
+     "px": 0.1812,
+     "p2": 0.1197,
+     "o25": 0.5883,
+     "btts": 0.4957,
+     "marcador": "2-0",
+     "p_marcador": 0.119
+    },
+    {
+     "fecha": "2026-11-01",
+     "local": "Frosinone",
+     "visitante": "Torino",
+     "pendiente": false,
+     "córners": [
+      5.37,
+      4.09
+     ],
+     "tarjetas": [
+      1.59,
+      2.04
+     ],
+     "lh": 1.9977,
+     "la": 1.3359,
+     "p1": 0.5279,
+     "px": 0.2174,
+     "p2": 0.2547,
+     "o25": 0.6473,
+     "btts": 0.6375,
+     "marcador": "1-1",
+     "p_marcador": 0.0955
+    },
+    {
+     "fecha": "2026-11-01",
+     "local": "Lazio",
+     "visitante": "Cagliari",
+     "pendiente": false,
+     "córners": [
+      5.59,
+      3.77
+     ],
+     "tarjetas": [
+      1.83,
+      2.47
+     ],
+     "lh": 1.5884,
+     "la": 0.8731,
+     "p1": 0.5416,
+     "px": 0.2524,
+     "p2": 0.206,
+     "o25": 0.4463,
+     "btts": 0.4638,
+     "marcador": "1-0",
+     "p_marcador": 0.1351
+    },
+    {
+     "fecha": "2026-11-02",
+     "local": "Atalanta",
+     "visitante": "Parma",
+     "pendiente": false,
+     "córners": [
+      5.99,
+      3.47
+     ],
+     "tarjetas": [
+      1.68,
+      1.73
+     ],
+     "lh": 1.5907,
+     "la": 0.7638,
+     "p1": 0.5705,
+     "px": 0.2513,
+     "p2": 0.1782,
+     "o25": 0.4184,
+     "btts": 0.4257,
+     "marcador": "1-0",
+     "p_marcador": 0.1506
+    },
+    {
+     "fecha": "2026-11-02",
+     "local": "Sassuolo",
+     "visitante": "Fiorentina",
+     "pendiente": false,
+     "córners": [
+      4.52,
+      4.32
+     ],
+     "tarjetas": [
+      2.03,
+      2.23
+     ],
+     "lh": 1.5187,
+     "la": 1.369,
+     "p1": 0.4093,
+     "px": 0.2484,
+     "p2": 0.3423,
+     "o25": 0.5512,
+     "btts": 0.5828,
+     "marcador": "1-1",
+     "p_marcador": 0.1162
+    }
+   ],
+   "validacion": {
+    "partidos": 382,
+    "desde": "2025-10-19",
+    "hasta": "2026-10-19",
+    "mercados": {
+     "1X2": {
+      "modelo": 0.5832721255962212,
+      "base": 0.6542704121980825,
+      "logloss_modelo": 0.980304206366807,
+      "logloss_base": 1.0792637818224033,
+      "mejora": 0.10851520300808937,
+      "mercado": 0.5736918304588922
+     },
+     "Más de 2.5": {
+      "modelo": 0.2570052585224851,
+      "base": 0.25145921788154163,
+      "mejora": -0.022055427864872135
+     },
+     "Ambos anotan": {
+      "modelo": 0.24946943987122838,
+      "base": 0.25031536278766475,
+      "mejora": 0.0033794286815466146
+     },
+     "Córners más de 9.5": {
+      "partidos": 384,
+      "linea": 9.5,
+      "modelo": 0.23841674318799058,
+      "base": 0.24004895904682347,
+      "prob_media": 0.4211702197184395,
+      "frecuencia_real": 0.390625,
+      "mejora": 0.006799512338291458
+     },
+     "Tarjetas más de 4.5": {
+      "partidos": 384,
+      "linea": 4.5,
+      "modelo": 0.21185655083696195,
+      "base": 0.22542840803583694,
+      "prob_media": 0.36488286697989786,
+      "frecuencia_real": 0.3411458333333333,
+      "mejora": 0.0602047333658029
+     }
+    },
+    "acierto_1x2": 0.5445026178010471,
+    "apuestas_simuladas": {
+     "umbral_ve": 0.05,
+     "apuestas": 284,
+     "roi": -0.06218309859154932,
+     "nota": "Apuesta plana de 1 unidad al resultado 1X2 con mayor VE si supera el umbral, a cuota de cierre."
+    }
+   },
+   "apifootball_id": 135,
+   "alias": {
+    "AC Milan": "Milan",
+    "AC Monza": "Monza",
+    "ACF Fiorentina": "Fiorentina",
+    "AS Roma": "Roma",
+    "Atalanta BC": "Atalanta",
+    "Bologna FC 1909": "Bologna",
+    "Cagliari Calcio": "Cagliari",
+    "Como 1907": "Como",
+    "FC Internazionale Milano": "Inter",
+    "Frosinone Calcio": "Frosinone",
+    "Genoa CFC": "Genoa",
+    "Parma Calcio 1913": "Parma",
+    "SS Lazio": "Lazio",
+    "SSC Napoli": "Napoli",
+    "US Lecce": "Lecce",
+    "US Sassuolo Calcio": "Sassuolo",
+    "Udinese Calcio": "Udinese",
+    "Hellas Verona FC": "Verona",
+    "Empoli FC": "Empoli",
+    "US Cremonese": "Cremonese",
+    "Pisa SC": "Pisa"
+   }
+  },
+  "fra": {
+   "nombre": "Ligue 1 (Francia)",
+   "temporada": "2026-27",
+   "fuente": "footballdata",
+   "home": 1.5376,
+   "away": 1.2687,
+   "rho": -0.0246,
+   "conteos": {
+    "córners": {
+     "home": 5.0735,
+     "away": 4.3377
+    },
+    "tarjetas": {
+     "home": 1.825,
+     "away": 2.0203
+    }
+   },
+   "arbitros": {},
+   "selecciones": {
+    "seguras": [
+     {
+      "fecha": "2026-10-24",
+      "local": "Lens",
+      "visitante": "Paris FC",
+      "inicio": "2026-10-24T18:45:00Z",
+      "mercado": "1X",
+      "etiqueta": "Lens o empate",
+      "prob": 0.7662,
+      "cuota": 1.43,
+      "ve": 0.0957,
+      "prob_mercado": 0.6571
+     },
+     {
+      "fecha": "2026-10-25",
+      "local": "Rennes",
+      "visitante": "Strasbourg",
+      "inicio": "2026-10-25T16:15:00Z",
+      "mercado": "o25",
+      "etiqueta": "Más de 2.5 goles",
+      "prob": 0.6743,
+      "cuota": 1.41,
+      "ve": -0.0492,
+      "prob_mercado": 0.6611
+     },
+     {
+      "fecha": "2026-10-25",
+      "local": "Marseille",
+      "visitante": "Le Havre",
+      "inicio": "2026-10-25T16:15:00Z",
+      "mercado": "1",
+      "etiqueta": "Gana Marseille",
+      "prob": 0.6689,
+      "cuota": 1.55,
+      "ve": 0.0368,
+      "prob_mercado": 0.603
+     },
+     {
+      "fecha": "2026-10-26",
+      "local": "Paris Saint-Germain",
+      "visitante": "Lyon",
+      "inicio": "2026-10-26T19:30:00Z",
+      "mercado": "1",
+      "etiqueta": "Gana Paris Saint-Germain",
+      "prob": 0.6124,
+      "cuota": 1.43,
+      "ve": -0.1243,
+      "prob_mercado": 0.6562
+     },
+     {
+      "fecha": "2026-10-25",
+      "local": "Toulouse",
+      "visitante": "Troyes",
+      "inicio": "2026-10-25T16:15:00Z",
+      "mercado": "1",
+      "etiqueta": "Gana Toulouse",
+      "prob": 0.6775,
+      "cuota": 1.59,
+      "ve": 0.0772,
+      "prob_mercado": 0.5865
+     },
+     {
+      "fecha": "2026-10-25",
+      "local": "Angers",
+      "visitante": "Lorient",
+      "inicio": "2026-10-25T16:15:00Z",
+      "mercado": "1X",
+      "etiqueta": "Angers o empate",
+      "prob": 0.5747,
+      "cuota": 1.53,
+      "ve": -0.122,
+      "prob_mercado": 0.613
+     },
+     {
+      "fecha": "2026-10-25",
+      "local": "Auxerre",
+      "visitante": "Le Mans",
+      "inicio": "2026-10-25T16:15:00Z",
+      "mercado": "o25",
+      "etiqueta": "Más de 2.5 goles",
+      "prob": 0.607,
+      "cuota": 1.67,
+      "ve": 0.0137,
+      "prob_mercado": 0.5594
+     },
+     {
+      "fecha": "2026-10-23",
+      "local": "Brest",
+      "visitante": "Nice",
+      "inicio": "2026-10-23T18:45:00Z",
+      "mercado": "o25",
+      "etiqueta": "Más de 2.5 goles",
+      "prob": 0.5964,
+      "cuota": 1.69,
+      "ve": 0.0079,
+      "prob_mercado": 0.5541
+     },
+     {
+      "fecha": "2026-10-25",
+      "local": "Monaco",
+      "visitante": "Lille",
+      "inicio": "2026-10-25T14:00:00Z",
+      "mercado": "X2",
+      "etiqueta": "Lille o empate",
+      "prob": 0.5967,
+      "cuota": 1.72,
+      "ve": 0.0278,
+      "prob_mercado": 0.5422
+     }
+    ],
+    "valor": [
+     {
+      "fecha": "2026-10-25",
+      "local": "Rennes",
+      "visitante": "Strasbourg",
+      "inicio": "2026-10-25T16:15:00Z",
+      "mercado": "2",
+      "etiqueta": "Gana Strasbourg",
+      "prob": 0.3219,
+      "cuota": 3.92,
+      "ve": 0.2618,
+      "prob_mercado": 0.2396
+     },
+     {
+      "fecha": "2026-10-24",
+      "local": "Lens",
+      "visitante": "Paris FC",
+      "inicio": "2026-10-24T18:45:00Z",
+      "mercado": "1",
+      "etiqueta": "Gana Lens",
+      "prob": 0.5184,
+      "cuota": 2.39,
+      "ve": 0.239,
+      "prob_mercado": 0.3931
+     },
+     {
+      "fecha": "2026-10-26",
+      "local": "Paris Saint-Germain",
+      "visitante": "Lyon",
+      "inicio": "2026-10-26T19:30:00Z",
+      "mercado": "u25",
+      "etiqueta": "Menos de 2.5 goles",
+      "prob": 0.4042,
+      "cuota": 2.93,
+      "ve": 0.1843,
+      "prob_mercado": 0.3186
+     },
+     {
+      "fecha": "2026-10-25",
+      "local": "Monaco",
+      "visitante": "Lille",
+      "inicio": "2026-10-25T14:00:00Z",
+      "mercado": "2",
+      "etiqueta": "Gana Lille",
+      "prob": 0.3328,
+      "cuota": 3.46,
+      "ve": 0.1515,
+      "prob_mercado": 0.2699
+     },
+     {
+      "fecha": "2026-10-23",
+      "local": "Brest",
+      "visitante": "Nice",
+      "inicio": "2026-10-23T18:45:00Z",
+      "mercado": "1",
+      "etiqueta": "Gana Brest",
+      "prob": 0.4922,
+      "cuota": 2.21,
+      "ve": 0.0878,
+      "prob_mercado": 0.4266
+     },
+     {
+      "fecha": "2026-10-25",
+      "local": "Toulouse",
+      "visitante": "Troyes",
+      "inicio": "2026-10-25T16:15:00Z",
+      "mercado": "1",
+      "etiqueta": "Gana Toulouse",
+      "prob": 0.6775,
+      "cuota": 1.59,
+      "ve": 0.0772,
+      "prob_mercado": 0.5865
+     },
+     {
+      "fecha": "2026-10-25",
+      "local": "Angers",
+      "visitante": "Lorient",
+      "inicio": "2026-10-25T16:15:00Z",
+      "mercado": "u25",
+      "etiqueta": "Menos de 2.5 goles",
+      "prob": 0.6006,
+      "cuota": 1.77,
+      "ve": 0.0631,
+      "prob_mercado": 0.5267
+     }
+    ],
+    "combinadas": [
+     {
+      "prob": 0.5166,
+      "cuota": 2.02,
+      "ve": 0.0417,
+      "patas": [
+       {
+        "fecha": "2026-10-24",
+        "local": "Lens",
+        "visitante": "Paris FC",
+        "inicio": "2026-10-24T18:45:00Z",
+        "mercado": "1X",
+        "etiqueta": "Lens o empate",
+        "prob": 0.7662,
+        "cuota": 1.43,
+        "ve": 0.0957,
+        "prob_mercado": 0.6571
+       },
+       {
+        "fecha": "2026-10-25",
+        "local": "Rennes",
+        "visitante": "Strasbourg",
+        "inicio": "2026-10-25T16:15:00Z",
+        "mercado": "o25",
+        "etiqueta": "Más de 2.5 goles",
+        "prob": 0.6743,
+        "cuota": 1.41,
+        "ve": -0.0492,
+        "prob_mercado": 0.6611
+       }
+      ]
+     },
+     {
+      "prob": 0.3456,
+      "cuota": 3.13,
+      "ve": 0.08,
+      "patas": [
+       {
+        "fecha": "2026-10-24",
+        "local": "Lens",
+        "visitante": "Paris FC",
+        "inicio": "2026-10-24T18:45:00Z",
+        "mercado": "1X",
+        "etiqueta": "Lens o empate",
+        "prob": 0.7662,
+        "cuota": 1.43,
+        "ve": 0.0957,
+        "prob_mercado": 0.6571
+       },
+       {
+        "fecha": "2026-10-25",
+        "local": "Rennes",
+        "visitante": "Strasbourg",
+        "inicio": "2026-10-25T16:15:00Z",
+        "mercado": "o25",
+        "etiqueta": "Más de 2.5 goles",
+        "prob": 0.6743,
+        "cuota": 1.41,
+        "ve": -0.0492,
+        "prob_mercado": 0.6611
+       },
+       {
+        "fecha": "2026-10-25",
+        "local": "Marseille",
+        "visitante": "Le Havre",
+        "inicio": "2026-10-25T16:15:00Z",
+        "mercado": "1",
+        "etiqueta": "Gana Marseille",
+        "prob": 0.6689,
+        "cuota": 1.55,
+        "ve": 0.0368,
+        "prob_mercado": 0.603
+       }
+      ]
+     }
+    ],
+    "historial": {
+     "seguras": {
+      "apuestas": 229,
+      "aciertos": 0.6069868995633187,
+      "cuota_media": 1.5731877729257644,
+      "roi": -0.055764192139737996,
+      "roi_min": -0.13911657509340578,
+      "roi_max": 0.02758819081392979
+     },
+     "valor": {
+      "apuestas": 248,
+      "aciertos": 0.3387096774193548,
+      "cuota_media": 3.1023387096774195,
+      "roi": -0.0974193548387097,
+      "roi_min": -0.24209780467981828,
+      "roi_max": 0.04725909500239889
+     },
+     "doble": {
+      "apuestas": 33,
+      "aciertos": 0.42424242424242425,
+      "cuota_media": 2.1857575757575756,
+      "roi": -0.061212121212121225,
+      "roi_min": -0.3804662987728082,
+      "roi_max": 0.25804205634856575
+     },
+     "triple": {
+      "apuestas": 33,
+      "aciertos": 0.30303030303030304,
+      "cuota_media": 3.3424242424242423,
+      "roi": 0.03363636363636363,
+      "roi_min": -0.42497811221075293,
+      "roi_max": 0.4922508394834802
+     },
+     "desde": "2025-10-18",
+     "hasta": "2026-10-18"
+    }
+   },
+   "top": {
+    "n": 4,
+    "label": "Top 4 · Champions"
+   },
+   "bot": {
+    "n": 3,
+    "label": "Descenso o promoción"
+   },
+   "partidos_modelo": 675,
+   "ultimo_resultado": "2026-10-18",
+   "equipos": [
+    {
+     "nombre": "Paris Saint-Germain",
+     "ataque": 1.7108,
+     "defensa": 0.6887,
+     "local": 0.9522,
+     "partidos": 75,
+     "sin_datos": false,
+     "córners": [
+      1.2211,
+      0.7643
+     ],
+     "tarjetas": [
+      0.8121,
+      0.9368
+     ]
+    },
+    {
+     "nombre": "Lens",
+     "ataque": 1.2824,
+     "defensa": 0.8199,
+     "local": 1.002,
+     "partidos": 75,
+     "sin_datos": false,
+     "córners": [
+      1.2011,
+      0.8901
+     ],
+     "tarjetas": [
+      1.0858,
+      1.0117
+     ]
+    },
+    {
+     "nombre": "Lille",
+     "ataque": 1.1154,
+     "defensa": 0.7215,
+     "local": 0.9228,
+     "partidos": 75,
+     "sin_datos": false,
+     "córners": [
+      1.0445,
+      0.9058
+     ],
+     "tarjetas": [
+      1.0655,
+      1.0261
+     ]
+    },
+    {
+     "nombre": "Marseille",
+     "ataque": 1.2844,
+     "defensa": 0.9375,
+     "local": 1.1749,
+     "partidos": 75,
+     "sin_datos": false,
+     "córners": [
+      1.0589,
+      0.8398
+     ],
+     "tarjetas": [
+      1.0537,
+      0.9917
+     ]
+    },
+    {
+     "nombre": "Lyon",
+     "ataque": 1.1673,
+     "defensa": 0.8249,
+     "local": 1.0995,
+     "partidos": 75,
+     "sin_datos": false,
+     "córners": [
+      1.1089,
+      1.0594
+     ],
+     "tarjetas": [
+      0.9731,
+      1.1231
+     ]
+    },
+    {
+     "nombre": "Rennes",
+     "ataque": 1.3425,
+     "defensa": 1.0304,
+     "local": 0.9208,
+     "partidos": 75,
+     "sin_datos": false,
+     "córners": [
+      1.1542,
+      0.9887
+     ],
+     "tarjetas": [
+      1.01,
+      1.0684
+     ]
+    },
+    {
+     "nombre": "Monaco",
+     "ataque": 1.1981,
+     "defensa": 0.8966,
+     "local": 1.0694,
+     "partidos": 75,
+     "sin_datos": false,
+     "córners": [
+      1.0452,
+      0.9236
+     ],
+     "tarjetas": [
+      1.0378,
+      0.984
+     ]
+    },
+    {
+     "nombre": "Toulouse",
+     "ataque": 1.139,
+     "defensa": 0.8877,
+     "local": 0.895,
+     "partidos": 75,
+     "sin_datos": false,
+     "córners": [
+      0.9602,
+      0.9693
+     ],
+     "tarjetas": [
+      1.0284,
+      0.9991
+     ]
+    },
+    {
+     "nombre": "Strasbourg",
+     "ataque": 1.2069,
+     "defensa": 0.9976,
+     "local": 0.9832,
+     "partidos": 75,
+     "sin_datos": false,
+     "córners": [
+      0.8949,
+      0.9983
+     ],
+     "tarjetas": [
+      0.9914,
+      0.9781
+     ]
+    },
+    {
+     "nombre": "Paris FC",
+     "ataque": 1.0082,
+     "defensa": 0.85,
+     "local": 1.1504,
+     "partidos": 41,
+     "sin_datos": false,
+     "córners": [
+      0.9445,
+      1.0413
+     ],
+     "tarjetas": [
+      1.0678,
+      0.9324
+     ]
+    },
+    {
+     "nombre": "Lorient",
+     "ataque": 0.9225,
+     "defensa": 0.8549,
+     "local": 1.0772,
+     "partidos": 41,
+     "sin_datos": false,
+     "córners": [
+      0.8384,
+      1.0846
+     ],
+     "tarjetas": [
+      0.9157,
+      1.079
+     ]
+    },
+    {
+     "nombre": "Auxerre",
+     "ataque": 1.0179,
+     "defensa": 1.0271,
+     "local": 0.8601,
+     "partidos": 75,
+     "sin_datos": false,
+     "córners": [
+      0.9958,
+      1.1113
+     ],
+     "tarjetas": [
+      1.0221,
+      1.068
+     ]
+    },
+    {
+     "nombre": "Nice",
+     "ataque": 0.976,
+     "defensa": 1.012,
+     "local": 0.9993,
+     "partidos": 75,
+     "sin_datos": false,
+     "córners": [
+      1.0663,
+      1.0556
+     ],
+     "tarjetas": [
+      1.003,
+      0.9905
+     ]
+    },
+    {
+     "nombre": "Brest",
+     "ataque": 0.962,
+     "defensa": 1.04,
+     "local": 1.203,
+     "partidos": 75,
+     "sin_datos": false,
+     "córners": [
+      0.9178,
+      1.0796
+     ],
+     "tarjetas": [
+      0.9653,
+      0.9714
+     ]
+    },
+    {
+     "nombre": "Le Havre",
+     "ataque": 0.8618,
+     "defensa": 1.0182,
+     "local": 0.8605,
+     "partidos": 75,
+     "sin_datos": false,
+     "córners": [
+      0.9552,
+      1.0373
+     ],
+     "tarjetas": [
+      0.9943,
+      1.0218
+     ]
+    },
+    {
+     "nombre": "Le Mans",
+     "ataque": 1.0708,
+     "defensa": 1.2944,
+     "local": 0.9827,
+     "partidos": 7,
+     "sin_datos": false,
+     "córners": [
+      0.8949,
+      1.0482
+     ],
+     "tarjetas": [
+      1.0459,
+      0.9966
+     ]
+    },
+    {
+     "nombre": "Angers",
+     "ataque": 0.7453,
+     "defensa": 1.0951,
+     "local": 1.022,
+     "partidos": 75,
+     "sin_datos": false,
+     "córners": [
+      0.9219,
+      1.0465
+     ],
+     "tarjetas": [
+      0.9182,
+      0.948
+     ]
+    },
+    {
+     "nombre": "Troyes",
+     "ataque": 0.744,
+     "defensa": 1.3881,
+     "local": 0.9746,
+     "partidos": 7,
+     "sin_datos": false,
+     "córners": [
+      1.1516,
+      0.8697
+     ],
+     "tarjetas": [
+      0.98,
+      0.9561
+     ]
+    }
+   ],
+   "tabla": {
+    "Angers": {
+     "pj": 7,
+     "pts": 7,
+     "gf": 9,
+     "gc": 15
+    },
+    "Auxerre": {
+     "pj": 7,
+     "pts": 9,
+     "gf": 11,
+     "gc": 17
+    },
+    "Brest": {
+     "pj": 7,
+     "pts": 9,
+     "gf": 13,
+     "gc": 10
+    },
+    "Le Havre": {
+     "pj": 7,
+     "pts": 2,
+     "gf": 5,
+     "gc": 11
+    },
+    "Le Mans": {
+     "pj": 7,
+     "pts": 6,
+     "gf": 10,
+     "gc": 15
+    },
+    "Lens": {
+     "pj": 7,
+     "pts": 10,
+     "gf": 14,
+     "gc": 11
+    },
+    "Lille": {
+     "pj": 7,
+     "pts": 14,
+     "gf": 10,
+     "gc": 5
+    },
+    "Lorient": {
+     "pj": 7,
+     "pts": 11,
+     "gf": 7,
+     "gc": 6
+    },
+    "Lyon": {
+     "pj": 7,
+     "pts": 14,
+     "gf": 13,
+     "gc": 5
+    },
+    "Marseille": {
+     "pj": 7,
+     "pts": 9,
+     "gf": 14,
+     "gc": 10
+    },
+    "Monaco": {
+     "pj": 7,
+     "pts": 14,
+     "gf": 10,
+     "gc": 6
+    },
+    "Nice": {
+     "pj": 7,
+     "pts": 8,
+     "gf": 6,
+     "gc": 9
+    },
+    "Paris FC": {
+     "pj": 7,
+     "pts": 14,
+     "gf": 12,
+     "gc": 7
+    },
+    "Paris Saint-Germain": {
+     "pj": 7,
+     "pts": 14,
+     "gf": 14,
+     "gc": 9
+    },
+    "Rennes": {
+     "pj": 7,
+     "pts": 13,
+     "gf": 15,
+     "gc": 14
+    },
+    "Strasbourg": {
+     "pj": 7,
+     "pts": 7,
+     "gf": 12,
+     "gc": 15
+    },
+    "Toulouse": {
+     "pj": 7,
+     "pts": 9,
+     "gf": 12,
+     "gc": 11
+    },
+    "Troyes": {
+     "pj": 7,
+     "pts": 4,
+     "gf": 5,
+     "gc": 16
+    }
+   },
+   "restantes": [
+    [
+     "Brest",
+     "Nice"
+    ],
+    [
+     "Lens",
+     "Paris FC"
+    ],
+    [
+     "Rennes",
+     "Strasbourg"
+    ],
+    [
+     "Marseille",
+     "Le Havre"
+    ],
+    [
+     "Toulouse",
+     "Troyes"
+    ],
+    [
+     "Angers",
+     "Lorient"
+    ],
+    [
+     "Monaco",
+     "Lille"
+    ],
+    [
+     "Auxerre",
+     "Le Mans"
+    ],
+    [
+     "Paris Saint-Germain",
+     "Lyon"
+    ],
+    [
+     "Lille",
+     "Lens"
+    ],
+    [
+     "Le Havre",
+     "Paris Saint-Germain"
+    ],
+    [
+     "Lyon",
+     "Angers"
+    ],
+    [
+     "Nice",
+     "Rennes"
+    ],
+    [
+     "Troyes",
+     "Le Mans"
+    ],
+    [
+     "Lorient",
+     "Brest"
+    ],
+    [
+     "Strasbourg",
+     "Auxerre"
+    ],
+    [
+     "Paris FC",
+     "Monaco"
+    ],
+    [
+     "Marseille",
+     "Toulouse"
+    ],
+    [
+     "Toulouse",
+     "Strasbourg"
+    ],
+    [
+     "Paris Saint-Germain",
+     "Troyes"
+    ],
+    [
+     "Auxerre",
+     "Paris FC"
+    ],
+    [
+     "Brest",
+     "Lyon"
+    ],
+    [
+     "Rennes",
+     "Lille"
+    ],
+    [
+     "Le Mans",
+     "Monaco"
+    ],
+    [
+     "Lens",
+     "Marseille"
+    ],
+    [
+     "Le Havre",
+     "Lorient"
+    ],
+    [
+     "Angers",
+     "Nice"
+    ],
+    [
+     "Troyes",
+     "Le Havre"
+    ],
+    [
+     "Strasbourg",
+     "Brest"
+    ],
+    [
+     "Lens",
+     "Toulouse"
+    ],
+    [
+     "Lille",
+     "Lyon"
+    ],
+    [
+     "Monaco",
+     "Auxerre"
+    ],
+    [
+     "Nice",
+     "Paris Saint-Germain"
+    ],
+    [
+     "Paris FC",
+     "Angers"
+    ],
+    [
+     "Lorient",
+     "Rennes"
+    ],
+    [
+     "Marseille",
+     "Le Mans"
+    ],
+    [
+     "Brest",
+     "Paris FC"
+    ],
+    [
+     "Le Havre",
+     "Strasbourg"
+    ],
+    [
+     "Nice",
+     "Troyes"
+    ],
+    [
+     "Angers",
+     "Lens"
+    ],
+    [
+     "Paris Saint-Germain",
+     "Lorient"
+    ],
+    [
+     "Le Mans",
+     "Lille"
+    ],
+    [
+     "Auxerre",
+     "Marseille"
+    ],
+    [
+     "Lyon",
+     "Monaco"
+    ],
+    [
+     "Toulouse",
+     "Rennes"
+    ],
+    [
+     "Marseille",
+     "Nice"
+    ],
+    [
+     "Strasbourg",
+     "Lorient"
+    ],
+    [
+     "Lens",
+     "Le Havre"
+    ],
+    [
+     "Toulouse",
+     "Paris Saint-Germain"
+    ],
+    [
+     "Paris FC",
+     "Le Mans"
+    ],
+    [
+     "Rennes",
+     "Brest"
+    ],
+    [
+     "Troyes",
+     "Lyon"
+    ],
+    [
+     "Lille",
+     "Auxerre"
+    ],
+    [
+     "Monaco",
+     "Angers"
+    ],
+    [
+     "Paris Saint-Germain",
+     "Paris FC"
+    ],
+    [
+     "Brest",
+     "Troyes"
+    ],
+    [
+     "Angers",
+     "Strasbourg"
+    ],
+    [
+     "Auxerre",
+     "Toulouse"
+    ],
+    [
+     "Le Havre",
+     "Le Mans"
+    ],
+    [
+     "Rennes",
+     "Monaco"
+    ],
+    [
+     "Nice",
+     "Lens"
+    ],
+    [
+     "Lorient",
+     "Lille"
+    ],
+    [
+     "Lyon",
+     "Marseille"
+    ],
+    [
+     "Brest",
+     "Marseille"
+    ],
+    [
+     "Monaco",
+     "Nice"
+    ],
+    [
+     "Toulouse",
+     "Angers"
+    ],
+    [
+     "Lorient",
+     "Auxerre"
+    ],
+    [
+     "Lille",
+     "Strasbourg"
+    ],
+    [
+     "Le Mans",
+     "Lyon"
+    ],
+    [
+     "Paris FC",
+     "Le Havre"
+    ],
+    [
+     "Troyes",
+     "Rennes"
+    ],
+    [
+     "Lens",
+     "Paris Saint-Germain"
+    ],
+    [
+     "Angers",
+     "Paris Saint-Germain"
+    ],
+    [
+     "Marseille",
+     "Lille"
+    ],
+    [
+     "Lyon",
+     "Lorient"
+    ],
+    [
+     "Paris FC",
+     "Toulouse"
+    ],
+    [
+     "Rennes",
+     "Lens"
+    ],
+    [
+     "Nice",
+     "Le Havre"
+    ],
+    [
+     "Auxerre",
+     "Troyes"
+    ],
+    [
+     "Strasbourg",
+     "Le Mans"
+    ],
+    [
+     "Monaco",
+     "Brest"
+    ],
+    [
+     "Lorient",
+     "Marseille"
+    ],
+    [
+     "Le Mans",
+     "Angers"
+    ],
+    [
+     "Paris Saint-Germain",
+     "Auxerre"
+    ],
+    [
+     "Troyes",
+     "Monaco"
+    ],
+    [
+     "Toulouse",
+     "Nice"
+    ],
+    [
+     "Strasbourg",
+     "Lyon"
+    ],
+    [
+     "Le Havre",
+     "Rennes"
+    ],
+    [
+     "Lens",
+     "Brest"
+    ],
+    [
+     "Lille",
+     "Paris FC"
+    ],
+    [
+     "Angers",
+     "Le Havre"
+    ],
+    [
+     "Toulouse",
+     "Lens"
+    ],
+    [
+     "Monaco",
+     "Paris Saint-Germain"
+    ],
+    [
+     "Marseille",
+     "Troyes"
+    ],
+    [
+     "Brest",
+     "Strasbourg"
+    ],
+    [
+     "Rennes",
+     "Lorient"
+    ],
+    [
+     "Le Mans",
+     "Nice"
+    ],
+    [
+     "Lyon",
+     "Lille"
+    ],
+    [
+     "Paris FC",
+     "Auxerre"
+    ],
+    [
+     "Lorient",
+     "Le Mans"
+    ],
+    [
+     "Troyes",
+     "Lille"
+    ],
+    [
+     "Lens",
+     "Angers"
+    ],
+    [
+     "Le Havre",
+     "Toulouse"
+    ],
+    [
+     "Rennes",
+     "Lyon"
+    ],
+    [
+     "Strasbourg",
+     "Paris FC"
+    ],
+    [
+     "Auxerre",
+     "Monaco"
+    ],
+    [
+     "Nice",
+     "Brest"
+    ],
+    [
+     "Paris Saint-Germain",
+     "Marseille"
+    ],
+    [
+     "Lyon",
+     "Lens"
+    ],
+    [
+     "Lille",
+     "Nice"
+    ],
+    [
+     "Marseille",
+     "Angers"
+    ],
+    [
+     "Toulouse",
+     "Monaco"
+    ],
+    [
+     "Le Mans",
+     "Paris Saint-Germain"
+    ],
+    [
+     "Paris FC",
+     "Troyes"
+    ],
+    [
+     "Brest",
+     "Rennes"
+    ],
+    [
+     "Lorient",
+     "Le Havre"
+    ],
+    [
+     "Auxerre",
+     "Strasbourg"
+    ],
+    [
+     "Le Havre",
+     "Lyon"
+    ],
+    [
+     "Nice",
+     "Auxerre"
+    ],
+    [
+     "Monaco",
+     "Le Mans"
+    ],
+    [
+     "Lille",
+     "Lorient"
+    ],
+    [
+     "Strasbourg",
+     "Marseille"
+    ],
+    [
+     "Lens",
+     "Troyes"
+    ],
+    [
+     "Paris Saint-Germain",
+     "Brest"
+    ],
+    [
+     "Rennes",
+     "Toulouse"
+    ],
+    [
+     "Angers",
+     "Paris FC"
+    ],
+    [
+     "Brest",
+     "Monaco"
+    ],
+    [
+     "Strasbourg",
+     "Le Havre"
+    ],
+    [
+     "Auxerre",
+     "Lille"
+    ],
+    [
+     "Troyes",
+     "Nice"
+    ],
+    [
+     "Marseille",
+     "Rennes"
+    ],
+    [
+     "Lyon",
+     "Toulouse"
+    ],
+    [
+     "Lorient",
+     "Angers"
+    ],
+    [
+     "Le Mans",
+     "Paris FC"
+    ],
+    [
+     "Paris Saint-Germain",
+     "Lens"
+    ],
+    [
+     "Angers",
+     "Auxerre"
+    ],
+    [
+     "Paris FC",
+     "Brest"
+    ],
+    [
+     "Monaco",
+     "Lyon"
+    ],
+    [
+     "Troyes",
+     "Lorient"
+    ],
+    [
+     "Lille",
+     "Marseille"
+    ],
+    [
+     "Lens",
+     "Strasbourg"
+    ],
+    [
+     "Paris Saint-Germain",
+     "Rennes"
+    ],
+    [
+     "Le Havre",
+     "Nice"
+    ],
+    [
+     "Toulouse",
+     "Le Mans"
+    ],
+    [
+     "Marseille",
+     "Monaco"
+    ],
+    [
+     "Le Havre",
+     "Lens"
+    ],
+    [
+     "Brest",
+     "Lille"
+    ],
+    [
+     "Auxerre",
+     "Paris Saint-Germain"
+    ],
+    [
+     "Lyon",
+     "Troyes"
+    ],
+    [
+     "Paris FC",
+     "Lorient"
+    ],
+    [
+     "Le Mans",
+     "Rennes"
+    ],
+    [
+     "Strasbourg",
+     "Angers"
+    ],
+    [
+     "Nice",
+     "Toulouse"
+    ],
+    [
+     "Angers",
+     "Le Mans"
+    ],
+    [
+     "Rennes",
+     "Paris FC"
+    ],
+    [
+     "Toulouse",
+     "Brest"
+    ],
+    [
+     "Troyes",
+     "Auxerre"
+    ],
+    [
+     "Lens",
+     "Lille"
+    ],
+    [
+     "Lorient",
+     "Nice"
+    ],
+    [
+     "Monaco",
+     "Le Havre"
+    ],
+    [
+     "Paris Saint-Germain",
+     "Strasbourg"
+    ],
+    [
+     "Marseille",
+     "Lyon"
+    ],
+    [
+     "Brest",
+     "Lorient"
+    ],
+    [
+     "Strasbourg",
+     "Toulouse"
+    ],
+    [
+     "Nice",
+     "Lyon"
+    ],
+    [
+     "Paris FC",
+     "Paris Saint-Germain"
+    ],
+    [
+     "Angers",
+     "Monaco"
+    ],
+    [
+     "Auxerre",
+     "Lens"
+    ],
+    [
+     "Le Havre",
+     "Troyes"
+    ],
+    [
+     "Lille",
+     "Rennes"
+    ],
+    [
+     "Le Mans",
+     "Marseille"
+    ],
+    [
+     "Marseille",
+     "Brest"
+    ],
+    [
+     "Monaco",
+     "Rennes"
+    ],
+    [
+     "Troyes",
+     "Angers"
+    ],
+    [
+     "Paris Saint-Germain",
+     "Le Havre"
+    ],
+    [
+     "Lyon",
+     "Strasbourg"
+    ],
+    [
+     "Lille",
+     "Toulouse"
+    ],
+    [
+     "Nice",
+     "Paris FC"
+    ],
+    [
+     "Lorient",
+     "Lens"
+    ],
+    [
+     "Le Mans",
+     "Auxerre"
+    ],
+    [
+     "Toulouse",
+     "Paris FC"
+    ],
+    [
+     "Paris Saint-Germain",
+     "Lille"
+    ],
+    [
+     "Lens",
+     "Nice"
+    ],
+    [
+     "Le Havre",
+     "Marseille"
+    ],
+    [
+     "Brest",
+     "Le Mans"
+    ],
+    [
+     "Auxerre",
+     "Lorient"
+    ],
+    [
+     "Rennes",
+     "Troyes"
+    ],
+    [
+     "Angers",
+     "Lyon"
+    ],
+    [
+     "Monaco",
+     "Strasbourg"
+    ],
+    [
+     "Lille",
+     "Monaco"
+    ],
+    [
+     "Lorient",
+     "Paris Saint-Germain"
+    ],
+    [
+     "Troyes",
+     "Toulouse"
+    ],
+    [
+     "Nice",
+     "Angers"
+    ],
+    [
+     "Marseille",
+     "Auxerre"
+    ],
+    [
+     "Le Mans",
+     "Le Havre"
+    ],
+    [
+     "Strasbourg",
+     "Rennes"
+    ],
+    [
+     "Paris FC",
+     "Lens"
+    ],
+    [
+     "Lyon",
+     "Brest"
+    ],
+    [
+     "Lens",
+     "Le Mans"
+    ],
+    [
+     "Strasbourg",
+     "Lille"
+    ],
+    [
+     "Monaco",
+     "Lorient"
+    ],
+    [
+     "Troyes",
+     "Brest"
+    ],
+    [
+     "Toulouse",
+     "Marseille"
+    ],
+    [
+     "Paris Saint-Germain",
+     "Angers"
+    ],
+    [
+     "Le Havre",
+     "Paris FC"
+    ],
+    [
+     "Rennes",
+     "Nice"
+    ],
+    [
+     "Auxerre",
+     "Lyon"
+    ],
+    [
+     "Angers",
+     "Toulouse"
+    ],
+    [
+     "Lens",
+     "Monaco"
+    ],
+    [
+     "Rennes",
+     "Le Havre"
+    ],
+    [
+     "Nice",
+     "Marseille"
+    ],
+    [
+     "Lorient",
+     "Strasbourg"
+    ],
+    [
+     "Paris FC",
+     "Lille"
+    ],
+    [
+     "Brest",
+     "Auxerre"
+    ],
+    [
+     "Le Mans",
+     "Troyes"
+    ],
+    [
+     "Lyon",
+     "Paris Saint-Germain"
+    ],
+    [
+     "Brest",
+     "Le Havre"
+    ],
+    [
+     "Marseille",
+     "Lens"
+    ],
+    [
+     "Auxerre",
+     "Rennes"
+    ],
+    [
+     "Strasbourg",
+     "Troyes"
+    ],
+    [
+     "Lille",
+     "Angers"
+    ],
+    [
+     "Paris Saint-Germain",
+     "Nice"
+    ],
+    [
+     "Lyon",
+     "Le Mans"
+    ],
+    [
+     "Monaco",
+     "Paris FC"
+    ],
+    [
+     "Toulouse",
+     "Lorient"
+    ],
+    [
+     "Angers",
+     "Brest"
+    ],
+    [
+     "Nice",
+     "Monaco"
+    ],
+    [
+     "Troyes",
+     "Paris Saint-Germain"
+    ],
+    [
+     "Lorient",
+     "Lyon"
+    ],
+    [
+     "Paris FC",
+     "Marseille"
+    ],
+    [
+     "Le Mans",
+     "Strasbourg"
+    ],
+    [
+     "Toulouse",
+     "Auxerre"
+    ],
+    [
+     "Lens",
+     "Rennes"
+    ],
+    [
+     "Le Havre",
+     "Lille"
+    ],
+    [
+     "Lille",
+     "Le Mans"
+    ],
+    [
+     "Marseille",
+     "Lorient"
+    ],
+    [
+     "Rennes",
+     "Angers"
+    ],
+    [
+     "Brest",
+     "Lens"
+    ],
+    [
+     "Lyon",
+     "Paris FC"
+    ],
+    [
+     "Paris Saint-Germain",
+     "Toulouse"
+    ],
+    [
+     "Monaco",
+     "Troyes"
+    ],
+    [
+     "Auxerre",
+     "Le Havre"
+    ],
+    [
+     "Strasbourg",
+     "Nice"
+    ]
+   ],
+   "proximos": [
+    {
+     "fecha": "2026-10-23",
+     "local": "Brest",
+     "visitante": "Nice",
+     "pendiente": false,
+     "córners": [
+      4.92,
+      4.99
+     ],
+     "tarjetas": [
+      1.75,
+      1.97
+     ],
+     "inicio": "2026-10-23T18:45:00Z",
+     "cuotas": {
+      "c1": 2.21,
+      "cx": 3.49,
+      "c2": 3.11,
+      "co25": 1.69,
+      "cu25": 2.1
+     },
+     "lh": 1.8009,
+     "la": 1.2878,
+     "p1": 0.4922,
+     "px": 0.236,
+     "p2": 0.2718,
+     "o25": 0.5964,
+     "btts": 0.6071,
+     "marcador": "1-1",
+     "p_marcador": 0.1083
+    },
+    {
+     "fecha": "2026-10-24",
+     "local": "Lens",
+     "visitante": "Paris FC",
+     "pendiente": false,
+     "córners": [
+      6.35,
+      3.65
+     ],
+     "tarjetas": [
+      1.85,
+      2.18
+     ],
+     "inicio": "2026-10-24T18:45:00Z",
+     "cuotas": {
+      "c1": 2.39,
+      "cx": 3.56,
+      "c2": 2.74,
+      "co25": 1.62,
+      "cu25": 2.21
+     },
+     "lh": 1.6796,
+     "la": 1.0487,
+     "p1": 0.5184,
+     "px": 0.2478,
+     "p2": 0.2337,
+     "o25": 0.5133,
+     "btts": 0.5313,
+     "marcador": "1-1",
+     "p_marcador": 0.1179
+    },
+    {
+     "fecha": "2026-10-25",
+     "local": "Rennes",
+     "visitante": "Strasbourg",
+     "pendiente": false,
+     "córners": [
+      5.85,
+      3.84
+     ],
+     "tarjetas": [
+      1.8,
+      2.14
+     ],
+     "inicio": "2026-10-25T16:15:00Z",
+     "cuotas": {
+      "c1": 1.75,
+      "cx": 4.2,
+      "c2": 3.92,
+      "co25": 1.41,
+      "cu25": 2.75
+     },
+     "lh": 1.896,
+     "la": 1.5777,
+     "p1": 0.4525,
+     "px": 0.2256,
+     "p2": 0.3219,
+     "o25": 0.6743,
+     "btts": 0.6767,
+     "marcador": "1-1",
+     "p_marcador": 0.095
+    },
+    {
+     "fecha": "2026-10-25",
+     "local": "Marseille",
+     "visitante": "Le Havre",
+     "pendiente": false,
+     "córners": [
+      5.57,
+      3.48
+     ],
+     "tarjetas": [
+      1.96,
+      1.99
+     ],
+     "inicio": "2026-10-25T16:15:00Z",
+     "cuotas": {
+      "c1": 1.55,
+      "cx": 4.38,
+      "c2": 5.09,
+      "co25": 1.52,
+      "cu25": 2.41
+     },
+     "lh": 2.3625,
+     "la": 1.0251,
+     "p1": 0.6689,
+     "px": 0.1848,
+     "p2": 0.1464,
+     "o25": 0.6578,
+     "btts": 0.5828,
+     "marcador": "2-1",
+     "p_marcador": 0.0967
+    },
+    {
+     "fecha": "2026-10-25",
+     "local": "Toulouse",
+     "visitante": "Troyes",
+     "pendiente": false,
+     "córners": [
+      4.24,
+      4.84
+     ],
+     "tarjetas": [
+      1.79,
+      1.98
+     ],
+     "inicio": "2026-10-25T16:15:00Z",
+     "cuotas": {
+      "c1": 1.59,
+      "cx": 4.13,
+      "c2": 4.97,
+      "co25": 1.59,
+      "cu25": 2.26
+     },
+     "lh": 2.1757,
+     "la": 0.8379,
+     "p1": 0.6775,
+     "px": 0.1931,
+     "p2": 0.1293,
+     "o25": 0.5798,
+     "btts": 0.5052,
+     "marcador": "2-0",
+     "p_marcador": 0.1163
+    },
+    {
+     "fecha": "2026-10-25",
+     "local": "Angers",
+     "visitante": "Lorient",
+     "pendiente": false,
+     "córners": [
+      5.07,
+      3.81
+     ],
+     "tarjetas": [
+      1.81,
+      1.75
+     ],
+     "inicio": "2026-10-25T16:15:00Z",
+     "cuotas": {
+      "c1": 2.86,
+      "cx": 3.28,
+      "c2": 2.42,
+      "co25": 1.97,
+      "cu25": 1.77
+     },
+     "lh": 1.0012,
+     "la": 1.2816,
+     "p1": 0.2869,
+     "px": 0.2878,
+     "p2": 0.4254,
+     "o25": 0.3994,
+     "btts": 0.4602,
+     "marcador": "1-1",
+     "p_marcador": 0.1341
+    },
+    {
+     "fecha": "2026-10-25",
+     "local": "Monaco",
+     "visitante": "Lille",
+     "pendiente": false,
+     "córners": [
+      4.8,
+      4.18
+     ],
+     "tarjetas": [
+      1.94,
+      2.12
+     ],
+     "inicio": "2026-10-25T14:00:00Z",
+     "cuotas": {
+      "c1": 2.04,
+      "cx": 3.43,
+      "c2": 3.46,
+      "co25": 1.78,
+      "cu25": 1.96
+     },
+     "lh": 1.4215,
+     "la": 1.2688,
+     "p1": 0.4033,
+     "px": 0.2639,
+     "p2": 0.3328,
+     "o25": 0.504,
+     "btts": 0.5484,
+     "marcador": "1-1",
+     "p_marcador": 0.1254
+    },
+    {
+     "fecha": "2026-10-25",
+     "local": "Auxerre",
+     "visitante": "Le Mans",
+     "pendiente": false,
+     "córners": [
+      5.3,
+      4.31
+     ],
+     "tarjetas": [
+      1.86,
+      2.26
+     ],
+     "inicio": "2026-10-25T16:15:00Z",
+     "cuotas": {
+      "c1": 2.08,
+      "cx": 3.59,
+      "c2": 3.22,
+      "co25": 1.67,
+      "cu25": 2.12
+     },
+     "lh": 1.7423,
+     "la": 1.3954,
+     "p1": 0.4552,
+     "px": 0.2384,
+     "p2": 0.3064,
+     "o25": 0.607,
+     "btts": 0.6231,
+     "marcador": "1-1",
+     "p_marcador": 0.1081
+    },
+    {
+     "fecha": "2026-10-26",
+     "local": "Paris Saint-Germain",
+     "visitante": "Lyon",
+     "pendiente": false,
+     "córners": [
+      6.56,
+      3.68
+     ],
+     "tarjetas": [
+      1.66,
+      1.84
+     ],
+     "inicio": "2026-10-26T19:30:00Z",
+     "cuotas": {
+      "c1": 1.43,
+      "cx": 4.94,
+      "c2": 6.1,
+      "co25": 1.37,
+      "cu25": 2.93
+     },
+     "lh": 2.0661,
+     "la": 1.0199,
+     "p1": 0.6124,
+     "px": 0.211,
+     "p2": 0.1766,
+     "o25": 0.5958,
+     "btts": 0.5607,
+     "marcador": "2-1",
+     "p_marcador": 0.0994
+    },
+    {
+     "fecha": "2026-10-30",
+     "local": "Lille",
+     "visitante": "Lens",
+     "pendiente": false,
+     "córners": [
+      4.72,
+      4.72
+     ],
+     "tarjetas": [
+      1.97,
+      2.25
+     ],
+     "lh": 1.2976,
+     "la": 1.174,
+     "p1": 0.3908,
+     "px": 0.2776,
+     "p2": 0.3316,
+     "o25": 0.4489,
+     "btts": 0.5053,
+     "marcador": "1-1",
+     "p_marcador": 0.1318
+    },
+    {
+     "fecha": "2026-10-30",
+     "local": "Le Havre",
+     "visitante": "Paris Saint-Germain",
+     "pendiente": false,
+     "córners": [
+      3.7,
+      5.49
+     ],
+     "tarjetas": [
+      1.7,
+      1.68
+     ],
+     "lh": 0.7853,
+     "la": 2.21,
+     "p1": 0.1166,
+     "px": 0.1869,
+     "p2": 0.6965,
+     "o25": 0.5757,
+     "btts": 0.4865,
+     "marcador": "0-2",
+     "p_marcador": 0.1222
+    },
+    {
+     "fecha": "2026-10-31",
+     "local": "Lyon",
+     "visitante": "Angers",
+     "pendiente": false,
+     "córners": [
+      5.89,
+      4.24
+     ],
+     "tarjetas": [
+      1.68,
+      2.08
+     ],
+     "lh": 2.1611,
+     "la": 0.78,
+     "p1": 0.6887,
+     "px": 0.1915,
+     "p2": 0.1198,
+     "o25": 0.5635,
+     "btts": 0.4814,
+     "marcador": "2-0",
+     "p_marcador": 0.1233
+    },
+    {
+     "fecha": "2026-10-31",
+     "local": "Nice",
+     "visitante": "Rennes",
+     "pendiente": false,
+     "córners": [
+      5.35,
+      5.28
+     ],
+     "tarjetas": [
+      1.96,
+      2.02
+     ],
+     "lh": 1.5453,
+     "la": 1.7237,
+     "p1": 0.3445,
+     "px": 0.2355,
+     "p2": 0.4199,
+     "o25": 0.6343,
+     "btts": 0.6489,
+     "marcador": "1-1",
+     "p_marcador": 0.1038
+    },
+    {
+     "fecha": "2026-10-31",
+     "local": "Troyes",
+     "visitante": "Le Mans",
+     "pendiente": false,
+     "córners": [
+      6.12,
+      3.38
+     ],
+     "tarjetas": [
+      1.78,
+      2.02
+     ],
+     "lh": 1.4431,
+     "la": 1.8859,
+     "p1": 0.2936,
+     "px": 0.2284,
+     "p2": 0.4781,
+     "o25": 0.6463,
+     "btts": 0.6503,
+     "marcador": "1-1",
+     "p_marcador": 0.0999
+    },
+    {
+     "fecha": "2026-10-31",
+     "local": "Lorient",
+     "visitante": "Brest",
+     "pendiente": false,
+     "córners": [
+      4.59,
+      4.32
+     ],
+     "tarjetas": [
+      1.62,
+      2.1
+     ],
+     "lh": 1.589,
+     "la": 1.0433,
+     "p1": 0.4973,
+     "px": 0.2565,
+     "p2": 0.2462,
+     "o25": 0.4897,
+     "btts": 0.5184,
+     "marcador": "1-1",
+     "p_marcador": 0.1221
+    },
+    {
+     "fecha": "2026-11-01",
+     "local": "Strasbourg",
+     "visitante": "Auxerre",
+     "pendiente": false,
+     "córners": [
+      5.05,
+      4.31
+     ],
+     "tarjetas": [
+      1.93,
+      2.02
+     ],
+     "lh": 1.874,
+     "la": 1.2883,
+     "p1": 0.5089,
+     "px": 0.2305,
+     "p2": 0.2606,
+     "o25": 0.6122,
+     "btts": 0.6156,
+     "marcador": "1-1",
+     "p_marcador": 0.1047
+    },
+    {
+     "fecha": "2026-11-01",
+     "local": "Paris FC",
+     "visitante": "Monaco",
+     "pendiente": false,
+     "córners": [
+      4.43,
+      4.72
+     ],
+     "tarjetas": [
+      1.92,
+      1.95
+     ],
+     "lh": 1.5989,
+     "la": 1.2921,
+     "p1": 0.443,
+     "px": 0.2506,
+     "p2": 0.3064,
+     "o25": 0.552,
+     "btts": 0.5815,
+     "marcador": "1-1",
+     "p_marcador": 0.1175
+    },
+    {
+     "fecha": "2026-11-01",
+     "local": "Marseille",
+     "visitante": "Toulouse",
+     "pendiente": false,
+     "córners": [
+      5.21,
+      3.5
+     ],
+     "tarjetas": [
+      1.92,
+      2.06
+     ],
+     "lh": 2.0596,
+     "la": 1.3548,
+     "p1": 0.5352,
+     "px": 0.217,
+     "p2": 0.2479,
+     "o25": 0.663,
+     "btts": 0.6497,
+     "marcador": "2-1",
+     "p_marcador": 0.0945
+    },
+    {
+     "fecha": "2026-11-06",
+     "local": "Toulouse",
+     "visitante": "Strasbourg",
+     "pendiente": false,
+     "córners": [
+      4.86,
+      3.76
+     ],
+     "tarjetas": [
+      1.84,
+      2.0
+     ],
+     "lh": 1.5636,
+     "la": 1.3592,
+     "p1": 0.42,
+     "px": 0.2508,
+     "p2": 0.3292,
+     "o25": 0.5593,
+     "btts": 0.5904,
+     "marcador": "1-1",
+     "p_marcador": 0.1171
+    },
+    {
+     "fecha": "2026-11-07",
+     "local": "Paris Saint-Germain",
+     "visitante": "Troyes",
+     "pendiente": false,
+     "córners": [
+      5.39,
+      3.82
+     ],
+     "tarjetas": [
+      1.42,
+      1.85
+     ],
+     "lh": 3.4767,
+     "la": 0.65,
+     "p1": 0.8838,
+     "px": 0.0811,
+     "p2": 0.0352,
+     "o25": 0.7797,
+     "btts": 0.4641,
+     "marcador": "3-0",
+     "p_marcador": 0.1131
+    },
+    {
+     "fecha": "2026-11-07",
+     "local": "Auxerre",
+     "visitante": "Paris FC",
+     "pendiente": false,
+     "córners": [
+      5.26,
+      4.55
+     ],
+     "tarjetas": [
+      1.74,
+      2.3
+     ],
+     "lh": 1.1442,
+     "la": 1.3138,
+     "p1": 0.3204,
+     "px": 0.2779,
+     "p2": 0.4017,
+     "o25": 0.4454,
+     "btts": 0.5015,
+     "marcador": "1-1",
+     "p_marcador": 0.1318
+    },
+    {
+     "fecha": "2026-11-08",
+     "local": "Brest",
+     "visitante": "Lyon",
+     "pendiente": false,
+     "córners": [
+      4.93,
+      5.19
+     ],
+     "tarjetas": [
+      1.98,
+      1.91
+     ],
+     "lh": 1.4679,
+     "la": 1.5402,
+     "p1": 0.3601,
+     "px": 0.2479,
+     "p2": 0.3919,
+     "o25": 0.5786,
+     "btts": 0.6074,
+     "marcador": "1-1",
+     "p_marcador": 0.1144
+    },
+    {
+     "fecha": "2026-11-08",
+     "local": "Rennes",
+     "visitante": "Lille",
+     "pendiente": false,
+     "córners": [
+      5.3,
+      4.48
+     ],
+     "tarjetas": [
+      1.89,
+      2.3
+     ],
+     "lh": 1.3713,
+     "la": 1.4581,
+     "p1": 0.352,
+     "px": 0.2568,
+     "p2": 0.3912,
+     "o25": 0.5375,
+     "btts": 0.5755,
+     "marcador": "1-1",
+     "p_marcador": 0.121
+    },
+    {
+     "fecha": "2026-11-08",
+     "local": "Le Mans",
+     "visitante": "Monaco",
+     "pendiente": false,
+     "córners": [
+      4.19,
+      4.75
+     ],
+     "tarjetas": [
+      1.88,
+      2.09
+     ],
+     "lh": 1.4507,
+     "la": 1.9676,
+     "p1": 0.2823,
+     "px": 0.2231,
+     "p2": 0.4946,
+     "o25": 0.6638,
+     "btts": 0.6609,
+     "marcador": "1-1",
+     "p_marcador": 0.0958
+    },
+    {
+     "fecha": "2026-11-08",
+     "local": "Lens",
+     "visitante": "Marseille",
+     "pendiente": false,
+     "córners": [
+      5.12,
+      4.09
+     ],
+     "tarjetas": [
+      1.97,
+      2.15
+     ],
+     "lh": 1.8524,
+     "la": 1.336,
+     "p1": 0.4935,
+     "px": 0.2318,
+     "p2": 0.2747,
+     "o25": 0.6177,
+     "btts": 0.624,
+     "marcador": "1-1",
+     "p_marcador": 0.1046
+    },
+    {
+     "fecha": "2026-11-08",
+     "local": "Le Havre",
+     "visitante": "Lorient",
+     "pendiente": false,
+     "córners": [
+      5.26,
+      3.77
+     ],
+     "tarjetas": [
+      1.96,
+      1.89
+     ],
+     "lh": 0.9748,
+     "la": 1.1917,
+     "p1": 0.2961,
+     "px": 0.2982,
+     "p2": 0.4057,
+     "o25": 0.3683,
+     "btts": 0.4369,
+     "marcador": "1-1",
+     "p_marcador": 0.1364
+    },
+    {
+     "fecha": "2026-11-08",
+     "local": "Angers",
+     "visitante": "Nice",
+     "pendiente": false,
+     "córners": [
+      4.94,
+      4.84
+     ],
+     "tarjetas": [
+      1.66,
+      1.92
+     ],
+     "lh": 1.1853,
+     "la": 1.356,
+     "p1": 0.3234,
+     "px": 0.2725,
+     "p2": 0.4041,
+     "o25": 0.4667,
+     "btts": 0.5185,
+     "marcador": "1-1",
+     "p_marcador": 0.1297
+    },
+    {
+     "fecha": "2026-11-20",
+     "local": "Troyes",
+     "visitante": "Le Havre",
+     "pendiente": false,
+     "córners": [
+      6.06,
+      3.6
+     ],
+     "tarjetas": [
+      1.83,
+      1.92
+     ],
+     "lh": 1.1352,
+     "la": 1.5178,
+     "p1": 0.2811,
+     "px": 0.2612,
+     "p2": 0.4577,
+     "o25": 0.4948,
+     "btts": 0.5329,
+     "marcador": "1-1",
+     "p_marcador": 0.1244
+    },
+    {
+     "fecha": "2026-11-21",
+     "local": "Strasbourg",
+     "visitante": "Brest",
+     "pendiente": false,
+     "córners": [
+      4.9,
+      3.97
+     ],
+     "tarjetas": [
+      1.76,
+      1.91
+     ],
+     "lh": 1.8974,
+     "la": 1.2175,
+     "p1": 0.5301,
+     "px": 0.2288,
+     "p2": 0.2411,
+     "o25": 0.6021,
+     "btts": 0.601,
+     "marcador": "1-1",
+     "p_marcador": 0.105
+    },
+    {
+     "fecha": "2026-11-21",
+     "local": "Lens",
+     "visitante": "Toulouse",
+     "pendiente": false,
+     "córners": [
+      5.91,
+      3.71
+     ],
+     "tarjetas": [
+      1.98,
+      2.1
+     ],
+     "lh": 1.754,
+     "la": 1.1849,
+     "p1": 0.5044,
+     "px": 0.2405,
+     "p2": 0.255,
+     "o25": 0.563,
+     "btts": 0.5768,
+     "marcador": "1-1",
+     "p_marcador": 0.1127
+    }
+   ],
+   "validacion": {
+    "partidos": 299,
+    "desde": "2025-10-18",
+    "hasta": "2026-10-18",
+    "mercados": {
+     "1X2": {
+      "modelo": 0.6019822101937925,
+      "base": 0.6505865117103681,
+      "logloss_modelo": 1.0071282573808826,
+      "logloss_base": 1.0757294908408157,
+      "mejora": 0.07470843714358089,
+      "mercado": 0.5906262173127039
+     },
+     "Más de 2.5": {
+      "modelo": 0.24471539145412088,
+      "base": 0.2480213823790617,
+      "mejora": 0.013329459312052983
+     },
+     "Ambos anotan": {
+      "modelo": 0.24983141441158613,
+      "base": 0.2504487143498398,
+      "mejora": 0.002464775831874988
+     },
+     "Córners más de 9.5": {
+      "partidos": 303,
+      "linea": 9.5,
+      "modelo": 0.24928651878039731,
+      "base": 0.2518249404660893,
+      "prob_media": 0.46206786201719147,
+      "frecuencia_real": 0.4884488448844885,
+      "mejora": 0.010080104381217092
+     },
+     "Tarjetas más de 4.5": {
+      "partidos": 303,
+      "linea": 4.5,
+      "modelo": 0.2241694665358533,
+      "base": 0.22824788074256852,
+      "prob_media": 0.3670788688887204,
+      "frecuencia_real": 0.34983498349834985,
+      "mejora": 0.01786835519982377
+     }
+    },
+    "acierto_1x2": 0.5317725752508361,
+    "apuestas_simuladas": {
+     "umbral_ve": 0.05,
+     "apuestas": 217,
+     "roi": -0.07562211981566822,
+     "nota": "Apuesta plana de 1 unidad al resultado 1X2 con mayor VE si supera el umbral, a cuota de cierre."
+    }
+   },
+   "apifootball_id": 61,
+   "alias": {
+    "Paris SG": "Paris Saint-Germain",
+    "Paris FC": "Paris FC",
+    "AJ Auxerre": "Auxerre",
+    "AS Monaco FC": "Monaco",
+    "Angers SCO": "Angers",
+    "ES Troyes AC": "Troyes",
+    "Le Havre AC": "Le Havre",
+    "Lille OSC": "Lille",
+    "OGC Nice": "Nice",
+    "Olympique Lyonnais": "Lyon",
+    "Olympique de Marseille": "Marseille",
+    "RC Strasbourg Alsace": "Strasbourg",
+    "Racing Club de Lens": "Lens",
+    "Stade Brestois 29": "Brest",
+    "Stade Rennais FC 1901": "Rennes",
+    "FC Nantes": "Nantes",
+    "Stade de Reims": "Reims",
+    "FC Metz": "Metz",
+    "Montpellier HSC": "Montpellier",
+    "AS Saint-Étienne": "St Etienne"
    }
   }
  }

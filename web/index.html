@@ -270,6 +270,14 @@ footer .wrap{display:flex;gap:12px 24px;flex-wrap:wrap;justify-content:space-bet
 .pk-legs{display:grid;gap:4px;font-size:14px}
 .pk-legs div{display:flex;justify-content:space-between;gap:8px;border-bottom:1px solid var(--surface-2);padding-bottom:4px}
 .pk-legs small{color:var(--muted)}
+.dia{border:1px solid var(--home);border-radius:var(--r);padding:16px;margin-bottom:28px;background:color-mix(in srgb,var(--home) 5%,var(--surface))}
+.dia-top{display:flex;justify-content:space-between;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:10px}
+.dia-top h2{font-size:28px;text-transform:uppercase}
+.dia-top span{color:var(--muted);font-size:14px}
+.dia-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:10px;margin-bottom:12px}
+.dia .pk-head h3{font-size:17px;text-transform:uppercase;letter-spacing:.03em}
+.dia-col{display:grid;gap:8px;align-content:start}
+.dia-col .hist{margin:0}
 .toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--fg);color:var(--bg);padding:8px 14px;border-radius:4px;font-size:14px;z-index:20}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
@@ -932,19 +940,49 @@ function histTxt(h,etq){
     <span>rendimiento <span class="mej ${sig}">${signed(h.roi*100,1,"%")}</span> <span class="note">[${signed(h.roi_min*100,0,"%")}, ${signed(h.roi_max*100,0,"%")}]</span></span>
     <span class="note">${sig==="pos"?"ganó incluso en el peor caso del rango":sig==="neg"?"perdió incluso en el mejor caso del rango":"puede ser ganancia o pérdida: no se distingue del azar"}</span></div>`;
 }
+function cuando(x){
+  if(!x.inicio) return fecha(x.fecha,true);
+  const d=new Date(x.inicio);
+  return d.toLocaleDateString("es-CR",{weekday:"short",day:"numeric",month:"short"})+" · "+d.toLocaleTimeString("es-CR",{hour:"2-digit",minute:"2-digit"});
+}
+const ligaCorta=k=>LEAGUES[k]?LEAGUES[k].name.replace(/\s*\(.*\)/,""):"";
 function pkCard(k,x){
   const mk=x.prob_mercado;
-  return `<div class="pk"><div class="pk-meta"><span>${esc(LEAGUES[k].name.replace(/\s*\(.*\)/,""))} · ${fecha(x.fecha,true)}</span><span>${esc(x.local)} vs ${esc(x.visitante)}</span></div>
+  return `<div class="pk"><div class="pk-meta"><span>${esc(ligaCorta(k))} · ${cuando(x)}</span><span>${esc(x.local)} vs ${esc(x.visitante)}</span></div>
     <div class="pk-sel">${esc(x.etiqueta)}</div>
     <div class="pk-nums"><div><span>Modelo</span><b>${pct(x.prob,0)}</b></div><div><span>Casas</span><b>${mk!=null?pct(mk,0):"—"}</b></div><div><span>Cuota</span><b>${x.cuota.toFixed(2)}</b></div><div><span>Valor esp.</span><b class="${x.ve>0?"posv":"negv"}">${signed(x.ve*100,0,"%")}</b></div></div>
     <div class="pk-acts"><button class="btn" data-act="ver" data-l="${k}" data-h="${esc(x.local)}" data-a="${esc(x.visitante)}">Analizar partido</button><button class="btn" data-act="add" data-l="${k}" data-j="${esc(JSON.stringify({match:x.local+" vs "+x.visitante,label:x.etiqueta,p:x.prob,o:x.cuota}))}">Añadir a mi combinada</button></div></div>`;
 }
 function comboCard(k,cb){
   const legs=cb.patas.map(p=>({match:p.local+" vs "+p.visitante,label:p.etiqueta,p:p.prob,o:p.cuota}));
-  return `<div class="pk"><div class="pk-meta"><span>${esc(LEAGUES[k].name.replace(/\s*\(.*\)/,""))}</span><span>${cb.patas.length} selecciones</span></div>
-    <div class="pk-legs">${cb.patas.map(p=>`<div><span>${esc(p.etiqueta)}<br><small>${esc(p.local)} vs ${esc(p.visitante)} · ${fecha(p.fecha,true)}</small></span><span class="mono">@${p.cuota.toFixed(2)}</span></div>`).join("")}</div>
+  return `<div class="pk"><div class="pk-meta"><span>${k?esc(ligaCorta(k)):"Varias ligas"}</span><span>${cb.patas.length} selecciones</span></div>
+    <div class="pk-legs">${cb.patas.map(p=>`<div><span>${esc(p.etiqueta)}<br><small>${p._k&&!k?esc(ligaCorta(p._k))+" · ":""}${esc(p.local)} vs ${esc(p.visitante)} · ${cuando(p)}</small></span><span class="mono">@${p.cuota.toFixed(2)}</span></div>`).join("")}</div>
     <div class="pk-nums"><div><span>Prob. modelo</span><b>${pct(cb.prob,1)}</b></div><div><span>Cuota</span><b>${cb.cuota.toFixed(2)}</b></div><div><span>Justa</span><b>${(1/cb.prob).toFixed(2)}</b></div><div><span>Valor esp.</span><b class="${cb.ve>0?"posv":"negv"}">${signed(cb.ve*100,0,"%")}</b></div></div>
     <div class="pk-acts"><button class="btn" data-act="combo" data-j="${esc(JSON.stringify(legs))}">Pasar a mi combinada</button></div></div>`;
+}
+let DIA={};
+const diaLocal=x=>x.inicio?new Date(x.inicio).toLocaleDateString("en-CA"):x.fecha;
+const cons=x=>(x.prob+(x.prob_mercado??x.prob))/2;
+function bloqueDia(sel){
+  const ahora=Date.now(), hoy=new Date().toLocaleDateString("en-CA");
+  const todas=sel.flatMap(([k,l])=>(l.selecciones.seguras||[]).map(x=>({...x,_k:k})))
+    .filter(x=>!x.inicio||new Date(x.inicio).getTime()>ahora);   // solo partidos que no han empezado
+  if(!todas.length) return "";
+  const dias=[...new Set(todas.map(diaLocal))].sort();
+  const dia=dias.includes(hoy)?hoy:dias[0];
+  const del=todas.filter(x=>diaLocal(x)===dia).sort((a,b)=>cons(b)-cons(a));
+  const etq=new Date(dia+"T12:00:00").toLocaleDateString("es-CR",{weekday:"long",day:"numeric",month:"long"});
+  const combo=n=>{if(del.length<n)return null;const patas=del.slice(0,n),prob=patas.reduce((a,x)=>a*x.prob,1),cuota=patas.reduce((a,x)=>a*x.cuota,1);return {patas,prob,cuota,ve:prob*cuota-1}};
+  const d2=combo(2), d3=combo(3);
+  const h=(t,e)=>histTxt(DIA&&DIA[t],e);
+  const n=DIA&&DIA.ligas?DIA.ligas.length:0;
+  return `<div class="dia"><div class="dia-top"><h2>Recomendaciones del día</h2><span>${dia===hoy?"Hoy, ":"Próximo día con partidos: "}${etq} · ${del.length} partido${del.length===1?"":"s"} con cuotas · horas de tu zona</span></div>
+    <div class="dia-grid">
+      <div class="dia-col"><div class="pk-head"><h3>La más probable del día</h3><p>La selección en la que modelo y casas más coinciden.</p></div>${pkCard(del[0]._k,del[0])}${h("mejor","Regla diaria"+(n?` · ${n} ligas`:""))}</div>
+      ${d2?`<div class="dia-col"><div class="pk-head"><h3>Doble del día</h3><p>Las 2 más probables del día, de partidos distintos.</p></div>${comboCard(null,d2)}${h("doble","Regla diaria")}</div>`:""}
+      ${d3?`<div class="dia-col"><div class="pk-head"><h3>Triple del día</h3><p>Las 3 más probables del día.</p></div>${comboCard(null,d3)}${h("triple","Regla diaria")}</div>`:""}
+    </div>
+    <p class="note">No hay "valor del día": en el último año, apostar cada día la selección con más valor según el modelo perdió ${DIA&&DIA.valor&&DIA.valor.apuestas?signed(DIA.valor.roi*100,0,"%"):"dinero"}, una pérdida que no se explica por azar.</p></div>`;
 }
 function renderPicks(){
   const ls=Object.entries(LEAGUES).filter(([k,l])=>l.real&&l.selecciones);
@@ -957,7 +995,7 @@ function renderPicks(){
   const seg=unir("seguras").sort((a,b)=>((b[1].prob+(b[1].prob_mercado??b[1].prob))-(a[1].prob+(a[1].prob_mercado??a[1].prob))));
   const val=unir("valor").sort((a,b)=>b[1].ve-a[1].ve);
   const cmb=unir("combinadas");
-  $("#pkList").innerHTML=
+  $("#pkList").innerHTML=bloqueDia(sel)+
     bloque("seguras",hs("seguras"),seg.slice(0,9).map(([k,x])=>pkCard(k,x)))+
     bloque("valor",hs("valor"),val.slice(0,6).map(([k,x])=>pkCard(k,x)))+
     bloque("combinadas",sel.map(([k,l])=>histTxt(l.selecciones.historial&&l.selecciones.historial.doble,l.name.replace(/\s*\(.*\)/,"")+" · dobles")+histTxt(l.selecciones.historial&&l.selecciones.historial.triple,l.name.replace(/\s*\(.*\)/,"")+" · triples")).join(""),cmb.map(([k,cb])=>comboCard(k,cb)));
@@ -1196,6 +1234,7 @@ function aplicarDatos(d){
   Object.entries(LEAGUES).forEach(([k,l])=>{if(!nuevas[k])nuevas[k]=l;});
   Object.keys(LEAGUES).forEach(k=>delete LEAGUES[k]); Object.assign(LEAGUES,nuevas);
   VIVO.url=d.en_vivo_url||"";
+  DIA=d.dia||{};
   const gen=new Date(d.generado);
   $("#dataBadge").classList.add("real");
   $("#dataBadge").lastElementChild.textContent=`Datos reales · actualizado ${gen.toLocaleDateString("es-CR",{day:"numeric",month:"short"})}`;

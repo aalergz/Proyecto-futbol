@@ -29,3 +29,14 @@ def test_historial_y_combinadas():
     assert h["seguras"]["apuestas"] == 12 and abs(h["seguras"]["aciertos"] - 0.75) < 1e-9
     assert h["doble"]["apuestas"] == 4 and h["triple"]["apuestas"] == 4
     assert h["seguras"]["roi_min"] <= h["seguras"]["roi"] <= h["seguras"]["roi_max"]
+
+
+def test_historial_del_dia_entre_ligas():
+    def liga(gana):
+        return pd.DataFrame([{"fecha": pd.Timestamp("2026-01-10") + pd.Timedelta(days=i // 2), **P, **C,
+                              "gl": 2 if gana else 0, "gv": 0 if gana else 1} for i in range(6)])
+    h = sel.historial_dia({"a": liga(True), "b": liga(False)})
+    assert h["dias"] == 3 and h["ligas"] == ["a", "b"]
+    assert h["mejor"]["apuestas"] == 3                   # una por día
+    assert h["doble"]["apuestas"] == 3 and h["triple"]["apuestas"] == 3
+    assert h["triple"]["aciertos"] == 0.0                # 3 de 4 partidos: siempre entra uno perdido

@@ -155,6 +155,8 @@ log λ_visitante = c     + ataque[visitante] + defensa[local]
 
 Las mismas reglas se aplican a la validación del último año con las cuotas de cierre, y la web muestra aciertos, rendimiento y su rango del 90%. En 2024-25 y 2025-27, las "más probables" quedaron entre −9% y +2%, las "de valor" entre −16% y −2%, y las combinadas variaron de −38% a +14%. Ninguna le gana al mercado de forma fiable.
 
+**Recomendaciones del día.** Con las cinco ligas juntas, la web toma los partidos de hoy (o del próximo día con partidos) que aún no empezaron y muestra la selección más probable del día, la doble y la triple. Su historial diario del último año: la más probable −7.7%, la doble −10.6%, la triple −16.7%. La "de más valor del día" perdió −25.3%, fuera del rango del azar, así que no se muestra como recomendación del día.
+
 **Árbitros (solo Premier).** La web muestra el árbitro designado y su historial: tarjetas por partido frente a las que se esperaban por los equipos que le tocaron. No entra en la probabilidad: al validarlo en 2024-25 y 2025-27, usar el árbitro empeoró la predicción de tarjetas. football-data.co.uk no publica los árbitros de LaLiga.
 
 **Bajas.** La web tiene botones con ajustes típicos (sin goleador −10% ataque, sin portero titular −7% solidez, etc.). El motor no recibe datos de lesiones.
@@ -165,17 +167,18 @@ Las mismas reglas se aplican a la validación del último año con las cuotas de
 
 Backtest semanal del último año: cada semana se reajusta solo con partidos anteriores y se predicen los de esa semana. Se mide con el Brier score (menor es mejor) contra una línea base con las frecuencias de la liga.
 
-| Mejora frente a la media de la liga | Premier | LaLiga | Bundesliga |
-|---|---|---|---|
-| 1X2 | **+6.7%** | **+8.9%** | **+11.3%** |
-| Más de 2.5 goles | −1.4% | +3.8% | −0.3% |
-| Ambos anotan | −0.4% | 0.0% | −1.3% |
-| Córners, más de 9.5 | −0.7% | +4.2% | +1.1% |
-| Tarjetas, más de 4.5 | +1.0% | +0.4% | −1.3% |
-| Brier 1X2: modelo / casas de apuestas | 0.619 / 0.615 | 0.579 / 0.564 | 0.578 / 0.565 |
-| Recomendaciones "de valor", último año | −10.5% | −9.4% | −21.8% |
+| Mejora frente a la media de la liga | Premier | LaLiga | Bundesliga | Serie A | Ligue 1 |
+|---|---|---|---|---|---|
+| 1X2 | **+6.7%** | **+8.9%** | **+11.3%** | **+10.9%** | **+7.5%** |
+| Más de 2.5 goles | −1.4% | +3.8% | −0.3% | −2.2% | +1.3% |
+| Ambos anotan | −0.4% | −0.0% | −1.3% | +0.3% | +0.2% |
+| Córners, más de 9.5 | −0.7% | +4.2% | +1.1% | +0.7% | +1.0% |
+| Tarjetas, más de 4.5 | +1.0% | +0.4% | −1.3% | +6.0% | +1.8% |
+| Brier 1X2: modelo / casas de apuestas | 0.619 / 0.615 | 0.579 / 0.564 | 0.578 / 0.565 | 0.583 / 0.574 | 0.602 / 0.591 |
+| Recomendaciones "más probables", último año | −2.4% | −0.9% | −0.4% | −8.9% | −5.6% |
+| Recomendaciones "de valor", último año | −10.5% | −9.4% | −21.8% | −5.1% | −9.7% |
 
-Unos 300–370 partidos por liga, del 19 de octubre de 2025 al 21 de octubre de 2026, con datos de football-data.co.uk. El modelo mejora con claridad el 1X2 y en la Premier queda casi al nivel de las casas, pero no las supera: seguir su "valor" pierde dinero. Los mercados secundarios cambian de signo según la liga y el periodo; en el promedio de dos temporadas todos mejoran un poco (1–3%). La pestaña *Precisión* de la web se recalcula en cada actualización.
+Unos 300–380 partidos por liga, de octubre de 2025 a octubre de 2026, con datos de football-data.co.uk. El modelo mejora con claridad el 1X2 y en la Premier queda casi al nivel de las casas, pero no las supera: seguir su "valor" pierde dinero. Los mercados secundarios cambian de signo según la liga y el periodo; en el promedio de dos temporadas todos mejoran un poco (1–3%). La pestaña *Precisión* de la web se recalcula en cada actualización.
 
 ## Estructura
 
