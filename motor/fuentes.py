@@ -212,13 +212,21 @@ def resolver_apifootball(cfg: dict) -> tuple[int, int | None]:
 def apifootball(liga_id: int, temporadas: list[int], cache_actual_h: float = 1.0) -> pd.DataFrame:
     filas = []
     ultima = max(temporadas)
-    for t in temporadas:
+    # Si el plan no entrega la temporada en curso, no se vuelve a intentar en 24 h.
+    # Al mejorar el plan, el motor empieza a usarlo solo al día siguiente (o antes, borrando el archivo).
+    bloqueo = CACHE / f"apif_bloqueo_{liga_id}_{ultima}.txt"
+    if bloqueo.exists() and time.time() - bloqueo.stat().st_mtime < 24 * 3600:
+        raise FuenteNoDisponible(f"API-Football: {bloqueo.read_text().strip()} (se reintenta en 24 h)")
+    for t in sorted(temporadas, reverse=True):   # primero la actual: si está bloqueada, no se gasta más
         # Temporadas terminadas no cambian: se guardan un mes. La actual, ~1 hora.
         edad = cache_actual_h if t == ultima else 24 * 30
         try:
             data = _api(f"/fixtures?league={liga_id}&season={t}", f"apif_{liga_id}_{t}.json", edad)
         except FuenteNoDisponible as e:
             if t == ultima:
+                if "plan" in str(e).lower() or "season" in str(e).lower():
+                    CACHE.mkdir(parents=True, exist_ok=True)
+                    bloqueo.write_text(f"tu plan no incluye la temporada {t}")
                 # Sin la temporada en curso los datos estarían viejos: mejor pasar a la siguiente fuente
                 raise FuenteNoDisponible(f"API-Football no entrega la temporada {t} ({e}). "
                                          "Revisa tu plan con: python cli.py probar-api") from e

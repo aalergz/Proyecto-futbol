@@ -147,3 +147,17 @@ def test_bom_en_fixtures():
     texto = "ï»¿Div,Date,Time,HomeTeam,AwayTeam\nE0,25/10/2026,15:00,Arsenal,Chelsea\nSP1,25/10/2026,16:15,Barcelona,Real Madrid\n"
     df = fuentes._leer_csv_fd(texto, 2026, div="E0")
     assert list(df["local"]) == ["Arsenal"]
+
+
+def test_bloqueo_de_plan_se_recuerda(api, monkeypatch):
+    def urlopen(req, timeout=30):
+        api.append(req.full_url)
+        return Resp({"errors": {"plan": "Free plans do not have access to this season, try from 2022 to 2024."}, "response": []})
+    monkeypatch.setattr(fuentes.urllib.request, "urlopen", urlopen)
+    with pytest.raises(fuentes.FuenteNoDisponible):
+        fuentes.apifootball(39, [2025, 2026])
+    n = len(api)
+    assert n == 1                      # pidió solo la temporada actual
+    with pytest.raises(fuentes.FuenteNoDisponible, match="24 h"):
+        fuentes.apifootball(39, [2025, 2026])
+    assert len(api) == n               # la segunda vez no gastó solicitudes
