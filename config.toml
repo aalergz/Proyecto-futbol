@@ -71,6 +71,45 @@ bot = { n = 3, label = "Descenso" }
 "Real Betis Balompié" = "Real Betis"
 "Betis" = "Real Betis"
 
+[ligas.ger]
+nombre = "Bundesliga (Alemania)"
+fuentes = ["apifootball", "footballdata", "openfootball"]
+apifootball = 78
+footballdata = "D1"
+openfootball = "de.1"
+temporada_actual = "auto"
+top = { n = 4, label = "Top 4 · Champions" }
+bot = { n = 3, label = "Descenso o promoción" }
+
+# football-data.co.uk y openfootball escriben distinto los nombres: se unifican aquí
+[ligas.ger.alias]
+"Bayern Munich" = "Bayern Múnich"
+"FC Bayern München" = "Bayern Múnich"
+"Dortmund" = "Borussia Dortmund"
+"Leverkusen" = "Bayer Leverkusen"
+"Bayer 04 Leverkusen" = "Bayer Leverkusen"
+"Ein Frankfurt" = "Eintracht Frankfurt"
+"M'gladbach" = "Borussia Mönchengladbach"
+"FC Koln" = "FC Köln"
+"1. FC Köln" = "FC Köln"
+"1. FC Union Berlin" = "Union Berlin"
+"SV Werder Bremen" = "Werder Bremen"
+"VfL Wolfsburg" = "Wolfsburg"
+"SC Freiburg" = "Freiburg"
+"TSG 1899 Hoffenheim" = "Hoffenheim"
+"Mainz" = "Mainz 05"
+"1. FSV Mainz 05" = "Mainz 05"
+"VfB Stuttgart" = "Stuttgart"
+"1. FC Heidenheim 1846" = "Heidenheim"
+"St Pauli" = "St. Pauli"
+"FC St. Pauli 1910" = "St. Pauli"
+"Hamburg" = "Hamburger SV"
+"SV 07 Elversberg" = "Elversberg"
+"SC Paderborn 07" = "Paderborn"
+"VfL Bochum" = "Bochum"
+"SV Darmstadt 98" = "Darmstadt"
+"Holstein Kiel" = "Holstein Kiel"
+
 [ligas.crc]
 nombre = "Liga Promerica (Costa Rica)"
 fuentes = ["apifootball", "csv"]

@@ -1,5 +1,5 @@
 {
- "generado": "2026-10-23T16:38:42+00:00",
+ "generado": "2026-10-23T16:45:49+00:00",
  "modelo": "Dixon-Coles con decaimiento temporal",
  "parametros": {
   "xi": 0.0019,
@@ -2875,29 +2875,29 @@
     "hasta": "2026-10-19",
     "mercados": {
      "1X2": {
-      "modelo": 0.618939414264824,
+      "modelo": 0.6189395057788404,
       "base": 0.6632655207857722,
-      "logloss_modelo": 1.0309946363805071,
+      "logloss_modelo": 1.030994780929252,
       "logloss_base": 1.0943978581131182,
-      "mejora": 0.06683010820227009,
+      "mejora": 0.06682997022733617,
       "mercado": 0.6145357159285002
      },
      "Más de 2.5": {
-      "modelo": 0.2505373665709579,
+      "modelo": 0.2505372699924235,
       "base": 0.24704166090524246,
-      "mejora": -0.01415026782489237
+      "mejora": -0.014149876884619106
      },
      "Ambos anotan": {
-      "modelo": 0.24675995588316407,
+      "modelo": 0.2467596456761836,
       "base": 0.245824170042881,
-      "mejora": -0.003806728362470757
+      "mejora": -0.0038054664565303487
      },
      "Córners más de 9.5": {
       "partidos": 371,
       "linea": 9.5,
       "modelo": 0.25007755412615984,
       "base": 0.24827199032781333,
-      "prob_media": 0.5373783381229681,
+      "prob_media": 0.537378338122968,
       "frecuencia_real": 0.5471698113207547,
       "mejora": -0.007272523154796762
      },
@@ -2906,7 +2906,7 @@
       "linea": 4.5,
       "modelo": 0.232126176676165,
       "base": 0.23456425008395565,
-      "prob_media": 0.3610001780230524,
+      "prob_media": 0.3610001780230525,
       "frecuencia_real": 0.3719676549865229,
       "mejora": 0.010394053684301907
      }
@@ -5626,40 +5626,40 @@
     "hasta": "2026-10-21",
     "mercados": {
      "1X2": {
-      "modelo": 0.5794442686414276,
+      "modelo": 0.5794442686418151,
       "base": 0.635994946110588,
-      "logloss_modelo": 0.9763847903997867,
+      "logloss_modelo": 0.9763847904003892,
       "logloss_base": 1.0549348380134664,
-      "mejora": 0.08891686610875571,
+      "mejora": 0.08891686610814642,
       "mercado": 0.5640207966859556
      },
      "Más de 2.5": {
-      "modelo": 0.24086936060996053,
+      "modelo": 0.2408693606101103,
       "base": 0.2504971169004046,
-      "mejora": 0.038434599206473075
+      "mejora": 0.03843459920587511
      },
      "Ambos anotan": {
-      "modelo": 0.2461068249162272,
+      "modelo": 0.24610682491610525,
       "base": 0.24598388857992276,
-      "mejora": -0.0004997739364727138
+      "mejora": -0.0004997739359768882
      },
      "Córners más de 9.5": {
       "partidos": 375,
       "linea": 9.5,
-      "modelo": 0.24004980183283608,
+      "modelo": 0.2400498018328367,
       "base": 0.2505449017329316,
-      "prob_media": 0.49423874390820144,
+      "prob_media": 0.494238743908202,
       "frecuencia_real": 0.49333333333333335,
-      "mejora": 0.041889097832382816
+      "mejora": 0.04188909783238037
      },
      "Tarjetas más de 4.5": {
       "partidos": 375,
       "linea": 4.5,
-      "modelo": 0.24976481622191818,
+      "modelo": 0.2497648162219182,
       "base": 0.25084794402230903,
       "prob_media": 0.4953825030212653,
       "frecuencia_real": 0.48,
-      "mejora": 0.004317865967019996
+      "mejora": 0.004317865967019885
      }
     },
     "acierto_1x2": 0.5283018867924528,
@@ -5691,6 +5691,2524 @@
     "Ath Bilbao": "Athletic Club",
     "Real Betis Balompié": "Real Betis",
     "Betis": "Real Betis"
+   }
+  },
+  "ger": {
+   "nombre": "Bundesliga (Alemania)",
+   "temporada": "2026-27",
+   "fuente": "footballdata",
+   "home": 1.6593,
+   "away": 1.3609,
+   "rho": -0.0394,
+   "conteos": {
+    "córners": {
+     "home": 5.553,
+     "away": 4.3025
+    },
+    "tarjetas": {
+     "home": 1.8721,
+     "away": 1.99
+    }
+   },
+   "arbitros": {},
+   "selecciones": {
+    "seguras": [
+     {
+      "fecha": "2026-10-24",
+      "local": "RB Leipzig",
+      "visitante": "Elversberg",
+      "mercado": "1",
+      "etiqueta": "Gana RB Leipzig",
+      "prob": 0.6789,
+      "cuota": 1.41,
+      "ve": -0.0428,
+      "prob_mercado": 0.6635
+     },
+     {
+      "fecha": "2026-10-25",
+      "local": "Hoffenheim",
+      "visitante": "Bayer Leverkusen",
+      "mercado": "X2",
+      "etiqueta": "Bayer Leverkusen o empate",
+      "prob": 0.6528,
+      "cuota": 1.43,
+      "ve": -0.0661,
+      "prob_mercado": 0.6545
+     },
+     {
+      "fecha": "2026-10-24",
+      "local": "Borussia Dortmund",
+      "visitante": "Eintracht Frankfurt",
+      "mercado": "1",
+      "etiqueta": "Gana Borussia Dortmund",
+      "prob": 0.6461,
+      "cuota": 1.45,
+      "ve": -0.0632,
+      "prob_mercado": 0.6453
+     },
+     {
+      "fecha": "2026-10-24",
+      "local": "Paderborn",
+      "visitante": "Hamburger SV",
+      "mercado": "X2",
+      "etiqueta": "Hamburger SV o empate",
+      "prob": 0.647,
+      "cuota": 1.62,
+      "ve": 0.0496,
+      "prob_mercado": 0.5778
+     },
+     {
+      "fecha": "2026-10-24",
+      "local": "Augsburg",
+      "visitante": "Union Berlin",
+      "mercado": "o25",
+      "etiqueta": "Más de 2.5 goles",
+      "prob": 0.5359,
+      "cuota": 1.48,
+      "ve": -0.2069,
+      "prob_mercado": 0.6346
+     },
+     {
+      "fecha": "2026-10-24",
+      "local": "Mainz 05",
+      "visitante": "Werder Bremen",
+      "mercado": "o25",
+      "etiqueta": "Más de 2.5 goles",
+      "prob": 0.5452,
+      "cuota": 1.52,
+      "ve": -0.1713,
+      "prob_mercado": 0.6171
+     }
+    ],
+    "valor": [
+     {
+      "fecha": "2026-10-24",
+      "local": "Paderborn",
+      "visitante": "Hamburger SV",
+      "mercado": "u25",
+      "etiqueta": "Menos de 2.5 goles",
+      "prob": 0.5742,
+      "cuota": 2.36,
+      "ve": 0.3551,
+      "prob_mercado": 0.3964
+     },
+     {
+      "fecha": "2026-10-24",
+      "local": "FC Köln",
+      "visitante": "Schalke 04",
+      "mercado": "u25",
+      "etiqueta": "Menos de 2.5 goles",
+      "prob": 0.5524,
+      "cuota": 2.31,
+      "ve": 0.276,
+      "prob_mercado": 0.4046
+     },
+     {
+      "fecha": "2026-10-23",
+      "local": "Stuttgart",
+      "visitante": "Borussia Mönchengladbach",
+      "mercado": "u25",
+      "etiqueta": "Menos de 2.5 goles",
+      "prob": 0.3315,
+      "cuota": 3.78,
+      "ve": 0.2531,
+      "prob_mercado": 0.2485
+     },
+     {
+      "fecha": "2026-10-24",
+      "local": "Mainz 05",
+      "visitante": "Werder Bremen",
+      "mercado": "2",
+      "etiqueta": "Gana Werder Bremen",
+      "prob": 0.2924,
+      "cuota": 4.21,
+      "ve": 0.231,
+      "prob_mercado": 0.2223
+     },
+     {
+      "fecha": "2026-10-24",
+      "local": "Augsburg",
+      "visitante": "Union Berlin",
+      "mercado": "u25",
+      "etiqueta": "Menos de 2.5 goles",
+      "prob": 0.4641,
+      "cuota": 2.57,
+      "ve": 0.1927,
+      "prob_mercado": 0.3654
+     },
+     {
+      "fecha": "2026-10-25",
+      "local": "Freiburg",
+      "visitante": "Bayern Múnich",
+      "mercado": "1X",
+      "etiqueta": "Freiburg o empate",
+      "prob": 0.3696,
+      "cuota": 3.02,
+      "ve": 0.1157,
+      "prob_mercado": 0.3106
+     }
+    ],
+    "combinadas": [
+     {
+      "prob": 0.4432,
+      "cuota": 2.02,
+      "ve": -0.1064,
+      "patas": [
+       {
+        "fecha": "2026-10-24",
+        "local": "RB Leipzig",
+        "visitante": "Elversberg",
+        "mercado": "1",
+        "etiqueta": "Gana RB Leipzig",
+        "prob": 0.6789,
+        "cuota": 1.41,
+        "ve": -0.0428,
+        "prob_mercado": 0.6635
+       },
+       {
+        "fecha": "2026-10-25",
+        "local": "Hoffenheim",
+        "visitante": "Bayer Leverkusen",
+        "mercado": "X2",
+        "etiqueta": "Bayer Leverkusen o empate",
+        "prob": 0.6528,
+        "cuota": 1.43,
+        "ve": -0.0661,
+        "prob_mercado": 0.6545
+       }
+      ]
+     },
+     {
+      "prob": 0.2863,
+      "cuota": 2.92,
+      "ve": -0.1628,
+      "patas": [
+       {
+        "fecha": "2026-10-24",
+        "local": "RB Leipzig",
+        "visitante": "Elversberg",
+        "mercado": "1",
+        "etiqueta": "Gana RB Leipzig",
+        "prob": 0.6789,
+        "cuota": 1.41,
+        "ve": -0.0428,
+        "prob_mercado": 0.6635
+       },
+       {
+        "fecha": "2026-10-25",
+        "local": "Hoffenheim",
+        "visitante": "Bayer Leverkusen",
+        "mercado": "X2",
+        "etiqueta": "Bayer Leverkusen o empate",
+        "prob": 0.6528,
+        "cuota": 1.43,
+        "ve": -0.0661,
+        "prob_mercado": 0.6545
+       },
+       {
+        "fecha": "2026-10-24",
+        "local": "Borussia Dortmund",
+        "visitante": "Eintracht Frankfurt",
+        "mercado": "1",
+        "etiqueta": "Gana Borussia Dortmund",
+        "prob": 0.6461,
+        "cuota": 1.45,
+        "ve": -0.0632,
+        "prob_mercado": 0.6453
+       }
+      ]
+     }
+    ],
+    "historial": {
+     "seguras": {
+      "apuestas": 234,
+      "aciertos": 0.6495726495726496,
+      "cuota_media": 1.542991452991453,
+      "roi": -0.0040598290598290645,
+      "roi_min": -0.08340825799725639,
+      "roi_max": 0.07528859987759827
+     },
+     "valor": {
+      "apuestas": 219,
+      "aciertos": 0.2922374429223744,
+      "cuota_media": 3.227488584474886,
+      "roi": -0.2178082191780822,
+      "roi_min": -0.3692358432116104,
+      "roi_max": -0.06638059514455405
+     },
+     "doble": {
+      "apuestas": 33,
+      "aciertos": 0.48484848484848486,
+      "cuota_media": 2.1566666666666667,
+      "roi": 0.04424242424242424,
+      "roi_min": -0.26973747369207995,
+      "roi_max": 0.35822232217692845
+     },
+     "triple": {
+      "apuestas": 33,
+      "aciertos": 0.3333333333333333,
+      "cuota_media": 3.212121212121212,
+      "roi": 0.0548484848484848,
+      "roi_min": -0.38009497107315426,
+      "roi_max": 0.4897919407701239
+     },
+     "desde": "2025-10-18",
+     "hasta": "2026-10-18"
+    }
+   },
+   "top": {
+    "n": 4,
+    "label": "Top 4 · Champions"
+   },
+   "bot": {
+    "n": 3,
+    "label": "Descenso o promoción"
+   },
+   "partidos_modelo": 666,
+   "ultimo_resultado": "2026-10-18",
+   "equipos": [
+    {
+     "nombre": "Bayern Múnich",
+     "ataque": 1.9454,
+     "defensa": 0.6747,
+     "local": 1.1426,
+     "partidos": 74,
+     "sin_datos": false,
+     "córners": [
+      1.2834,
+      0.7649
+     ],
+     "tarjetas": [
+      0.8989,
+      0.9707
+     ]
+    },
+    {
+     "nombre": "Borussia Dortmund",
+     "ataque": 1.1795,
+     "defensa": 0.7185,
+     "local": 1.1143,
+     "partidos": 74,
+     "sin_datos": false,
+     "córners": [
+      1.0604,
+      0.8859
+     ],
+     "tarjetas": [
+      1.0312,
+      0.9506
+     ]
+    },
+    {
+     "nombre": "Stuttgart",
+     "ataque": 1.3837,
+     "defensa": 0.939,
+     "local": 0.8898,
+     "partidos": 74,
+     "sin_datos": false,
+     "córners": [
+      1.1328,
+      0.941
+     ],
+     "tarjetas": [
+      0.9795,
+      1.0592
+     ]
+    },
+    {
+     "nombre": "Bayer Leverkusen",
+     "ataque": 1.3175,
+     "defensa": 0.8894,
+     "local": 1.0395,
+     "partidos": 74,
+     "sin_datos": false,
+     "córners": [
+      1.1695,
+      0.8375
+     ],
+     "tarjetas": [
+      0.984,
+      1.1096
+     ]
+    },
+    {
+     "nombre": "Mainz 05",
+     "ataque": 1.1811,
+     "defensa": 0.9491,
+     "local": 0.7862,
+     "partidos": 74,
+     "sin_datos": false,
+     "córners": [
+      1.0128,
+      0.9531
+     ],
+     "tarjetas": [
+      1.0614,
+      1.0678
+     ]
+    },
+    {
+     "nombre": "RB Leipzig",
+     "ataque": 1.0854,
+     "defensa": 0.8965,
+     "local": 1.3333,
+     "partidos": 74,
+     "sin_datos": false,
+     "córners": [
+      1.0463,
+      1.004
+     ],
+     "tarjetas": [
+      0.9249,
+      0.9553
+     ]
+    },
+    {
+     "nombre": "Eintracht Frankfurt",
+     "ataque": 1.2128,
+     "defensa": 1.118,
+     "local": 0.9342,
+     "partidos": 74,
+     "sin_datos": false,
+     "córners": [
+      0.999,
+      0.9581
+     ],
+     "tarjetas": [
+      0.9979,
+      0.9856
+     ]
+    },
+    {
+     "nombre": "Hoffenheim",
+     "ataque": 1.1386,
+     "defensa": 1.0628,
+     "local": 1.0153,
+     "partidos": 74,
+     "sin_datos": false,
+     "córners": [
+      1.109,
+      0.9897
+     ],
+     "tarjetas": [
+      1.0479,
+      0.9195
+     ]
+    },
+    {
+     "nombre": "Freiburg",
+     "ataque": 0.9364,
+     "defensa": 0.9436,
+     "local": 1.2503,
+     "partidos": 74,
+     "sin_datos": false,
+     "córners": [
+      0.9009,
+      0.8819
+     ],
+     "tarjetas": [
+      0.9311,
+      1.019
+     ]
+    },
+    {
+     "nombre": "Augsburg",
+     "ataque": 1.015,
+     "defensa": 1.0542,
+     "local": 0.9777,
+     "partidos": 74,
+     "sin_datos": false,
+     "córners": [
+      1.0027,
+      1.0871
+     ],
+     "tarjetas": [
+      1.0786,
+      0.9518
+     ]
+    },
+    {
+     "nombre": "Elversberg",
+     "ataque": 1.1294,
+     "defensa": 1.1919,
+     "local": 1.1965,
+     "partidos": 6,
+     "sin_datos": false,
+     "córners": [
+      0.9475,
+      1.1584
+     ],
+     "tarjetas": [
+      1.0138,
+      0.9947
+     ]
+    },
+    {
+     "nombre": "Werder Bremen",
+     "ataque": 0.9685,
+     "defensa": 1.0456,
+     "local": 0.9345,
+     "partidos": 74,
+     "sin_datos": false,
+     "córners": [
+      0.946,
+      1.0017
+     ],
+     "tarjetas": [
+      1.0552,
+      0.9798
+     ]
+    },
+    {
+     "nombre": "Schalke 04",
+     "ataque": 0.6807,
+     "defensa": 0.854,
+     "local": 0.7937,
+     "partidos": 6,
+     "sin_datos": false,
+     "córners": [
+      0.912,
+      1.0661
+     ],
+     "tarjetas": [
+      0.9448,
+      1.0036
+     ]
+    },
+    {
+     "nombre": "Hamburger SV",
+     "ataque": 0.8612,
+     "defensa": 1.0395,
+     "local": 0.9923,
+     "partidos": 40,
+     "sin_datos": false,
+     "córners": [
+      0.8679,
+      1.1091
+     ],
+     "tarjetas": [
+      1.0564,
+      1.104
+     ]
+    },
+    {
+     "nombre": "FC Köln",
+     "ataque": 0.9082,
+     "defensa": 1.0919,
+     "local": 1.1308,
+     "partidos": 40,
+     "sin_datos": false,
+     "córners": [
+      1.0155,
+      1.0737
+     ],
+     "tarjetas": [
+      1.0042,
+      1.0565
+     ]
+    },
+    {
+     "nombre": "Union Berlin",
+     "ataque": 0.7967,
+     "defensa": 1.0199,
+     "local": 1.0366,
+     "partidos": 74,
+     "sin_datos": false,
+     "córners": [
+      0.9698,
+      0.9993
+     ],
+     "tarjetas": [
+      1.0567,
+      0.9953
+     ]
+    },
+    {
+     "nombre": "Borussia Mönchengladbach",
+     "ataque": 0.8983,
+     "defensa": 1.1234,
+     "local": 1.0839,
+     "partidos": 74,
+     "sin_datos": false,
+     "córners": [
+      0.9184,
+      1.0091
+     ],
+     "tarjetas": [
+      1.0318,
+      1.0212
+     ]
+    },
+    {
+     "nombre": "Paderborn",
+     "ataque": 0.7053,
+     "defensa": 1.0218,
+     "local": 0.9744,
+     "partidos": 6,
+     "sin_datos": false,
+     "córners": [
+      0.9851,
+      1.0555
+     ],
+     "tarjetas": [
+      0.9639,
+      0.9525
+     ]
+    }
+   ],
+   "tabla": {
+    "Augsburg": {
+     "pj": 6,
+     "pts": 8,
+     "gf": 16,
+     "gc": 12
+    },
+    "Bayer Leverkusen": {
+     "pj": 6,
+     "pts": 13,
+     "gf": 16,
+     "gc": 9
+    },
+    "Bayern Múnich": {
+     "pj": 6,
+     "pts": 14,
+     "gf": 22,
+     "gc": 5
+    },
+    "Borussia Dortmund": {
+     "pj": 6,
+     "pts": 14,
+     "gf": 11,
+     "gc": 4
+    },
+    "Borussia Mönchengladbach": {
+     "pj": 6,
+     "pts": 0,
+     "gf": 8,
+     "gc": 20
+    },
+    "Eintracht Frankfurt": {
+     "pj": 6,
+     "pts": 8,
+     "gf": 10,
+     "gc": 16
+    },
+    "Elversberg": {
+     "pj": 6,
+     "pts": 10,
+     "gf": 12,
+     "gc": 11
+    },
+    "FC Köln": {
+     "pj": 6,
+     "pts": 7,
+     "gf": 8,
+     "gc": 11
+    },
+    "Freiburg": {
+     "pj": 6,
+     "pts": 13,
+     "gf": 15,
+     "gc": 6
+    },
+    "Hamburger SV": {
+     "pj": 6,
+     "pts": 9,
+     "gf": 6,
+     "gc": 15
+    },
+    "Hoffenheim": {
+     "pj": 6,
+     "pts": 6,
+     "gf": 11,
+     "gc": 14
+    },
+    "Mainz 05": {
+     "pj": 6,
+     "pts": 10,
+     "gf": 14,
+     "gc": 10
+    },
+    "Paderborn": {
+     "pj": 6,
+     "pts": 5,
+     "gf": 5,
+     "gc": 9
+    },
+    "RB Leipzig": {
+     "pj": 6,
+     "pts": 9,
+     "gf": 16,
+     "gc": 11
+    },
+    "Schalke 04": {
+     "pj": 6,
+     "pts": 5,
+     "gf": 4,
+     "gc": 7
+    },
+    "Stuttgart": {
+     "pj": 6,
+     "pts": 6,
+     "gf": 8,
+     "gc": 10
+    },
+    "Union Berlin": {
+     "pj": 6,
+     "pts": 5,
+     "gf": 5,
+     "gc": 17
+    },
+    "Werder Bremen": {
+     "pj": 6,
+     "pts": 9,
+     "gf": 12,
+     "gc": 12
+    }
+   },
+   "restantes": [
+    [
+     "Stuttgart",
+     "Borussia Mönchengladbach"
+    ],
+    [
+     "Borussia Dortmund",
+     "Eintracht Frankfurt"
+    ],
+    [
+     "FC Köln",
+     "Schalke 04"
+    ],
+    [
+     "Augsburg",
+     "Union Berlin"
+    ],
+    [
+     "RB Leipzig",
+     "Elversberg"
+    ],
+    [
+     "Mainz 05",
+     "Werder Bremen"
+    ],
+    [
+     "Paderborn",
+     "Hamburger SV"
+    ],
+    [
+     "Hoffenheim",
+     "Bayer Leverkusen"
+    ],
+    [
+     "Freiburg",
+     "Bayern Múnich"
+    ],
+    [
+     "Elversberg",
+     "Mainz 05"
+    ],
+    [
+     "Bayer Leverkusen",
+     "Stuttgart"
+    ],
+    [
+     "Werder Bremen",
+     "Hoffenheim"
+    ],
+    [
+     "Bayern Múnich",
+     "Borussia Dortmund"
+    ],
+    [
+     "Schalke 04",
+     "RB Leipzig"
+    ],
+    [
+     "Borussia Mönchengladbach",
+     "Paderborn"
+    ],
+    [
+     "Augsburg",
+     "Freiburg"
+    ],
+    [
+     "Eintracht Frankfurt",
+     "Hamburger SV"
+    ],
+    [
+     "Union Berlin",
+     "FC Köln"
+    ],
+    [
+     "Hamburger SV",
+     "Borussia Mönchengladbach"
+    ],
+    [
+     "Stuttgart",
+     "Werder Bremen"
+    ],
+    [
+     "RB Leipzig",
+     "Augsburg"
+    ],
+    [
+     "Paderborn",
+     "Eintracht Frankfurt"
+    ],
+    [
+     "Mainz 05",
+     "Bayern Múnich"
+    ],
+    [
+     "Borussia Dortmund",
+     "Elversberg"
+    ],
+    [
+     "FC Köln",
+     "Bayer Leverkusen"
+    ],
+    [
+     "Freiburg",
+     "Union Berlin"
+    ],
+    [
+     "Hoffenheim",
+     "Schalke 04"
+    ],
+    [
+     "Bayern Múnich",
+     "FC Köln"
+    ],
+    [
+     "Eintracht Frankfurt",
+     "Hoffenheim"
+    ],
+    [
+     "Schalke 04",
+     "Stuttgart"
+    ],
+    [
+     "Borussia Mönchengladbach",
+     "Borussia Dortmund"
+    ],
+    [
+     "Bayer Leverkusen",
+     "Paderborn"
+    ],
+    [
+     "Union Berlin",
+     "RB Leipzig"
+    ],
+    [
+     "Elversberg",
+     "Freiburg"
+    ],
+    [
+     "Werder Bremen",
+     "Hamburger SV"
+    ],
+    [
+     "Augsburg",
+     "Mainz 05"
+    ],
+    [
+     "Werder Bremen",
+     "Borussia Mönchengladbach"
+    ],
+    [
+     "Stuttgart",
+     "Eintracht Frankfurt"
+    ],
+    [
+     "Hamburger SV",
+     "Bayern Múnich"
+    ],
+    [
+     "Paderborn",
+     "Schalke 04"
+    ],
+    [
+     "FC Köln",
+     "Elversberg"
+    ],
+    [
+     "Mainz 05",
+     "Union Berlin"
+    ],
+    [
+     "Hoffenheim",
+     "Augsburg"
+    ],
+    [
+     "Borussia Dortmund",
+     "Bayer Leverkusen"
+    ],
+    [
+     "Freiburg",
+     "RB Leipzig"
+    ],
+    [
+     "Bayer Leverkusen",
+     "Borussia Mönchengladbach"
+    ],
+    [
+     "RB Leipzig",
+     "Mainz 05"
+    ],
+    [
+     "Union Berlin",
+     "Hamburger SV"
+    ],
+    [
+     "Schalke 04",
+     "Borussia Dortmund"
+    ],
+    [
+     "Eintracht Frankfurt",
+     "Werder Bremen"
+    ],
+    [
+     "Freiburg",
+     "Hoffenheim"
+    ],
+    [
+     "Bayern Múnich",
+     "Paderborn"
+    ],
+    [
+     "Augsburg",
+     "FC Köln"
+    ],
+    [
+     "Elversberg",
+     "Stuttgart"
+    ],
+    [
+     "Borussia Dortmund",
+     "Augsburg"
+    ],
+    [
+     "Werder Bremen",
+     "Bayer Leverkusen"
+    ],
+    [
+     "Paderborn",
+     "Elversberg"
+    ],
+    [
+     "Mainz 05",
+     "Freiburg"
+    ],
+    [
+     "Stuttgart",
+     "Union Berlin"
+    ],
+    [
+     "Hoffenheim",
+     "Bayern Múnich"
+    ],
+    [
+     "FC Köln",
+     "RB Leipzig"
+    ],
+    [
+     "Borussia Mönchengladbach",
+     "Eintracht Frankfurt"
+    ],
+    [
+     "Hamburger SV",
+     "Schalke 04"
+    ],
+    [
+     "Schalke 04",
+     "Borussia Mönchengladbach"
+    ],
+    [
+     "Bayern Múnich",
+     "Werder Bremen"
+    ],
+    [
+     "Elversberg",
+     "Hamburger SV"
+    ],
+    [
+     "Freiburg",
+     "Stuttgart"
+    ],
+    [
+     "Bayer Leverkusen",
+     "Eintracht Frankfurt"
+    ],
+    [
+     "Mainz 05",
+     "FC Köln"
+    ],
+    [
+     "Union Berlin",
+     "Hoffenheim"
+    ],
+    [
+     "Augsburg",
+     "Paderborn"
+    ],
+    [
+     "RB Leipzig",
+     "Borussia Dortmund"
+    ],
+    [
+     "Hoffenheim",
+     "Elversberg"
+    ],
+    [
+     "Paderborn",
+     "RB Leipzig"
+    ],
+    [
+     "Werder Bremen",
+     "Union Berlin"
+    ],
+    [
+     "Borussia Mönchengladbach",
+     "Bayern Múnich"
+    ],
+    [
+     "FC Köln",
+     "Freiburg"
+    ],
+    [
+     "Eintracht Frankfurt",
+     "Schalke 04"
+    ],
+    [
+     "Borussia Dortmund",
+     "Mainz 05"
+    ],
+    [
+     "Hamburger SV",
+     "Bayer Leverkusen"
+    ],
+    [
+     "Stuttgart",
+     "Augsburg"
+    ],
+    [
+     "Schalke 04",
+     "Werder Bremen"
+    ],
+    [
+     "Mainz 05",
+     "Hoffenheim"
+    ],
+    [
+     "Freiburg",
+     "Hamburger SV"
+    ],
+    [
+     "Union Berlin",
+     "Paderborn"
+    ],
+    [
+     "RB Leipzig",
+     "Stuttgart"
+    ],
+    [
+     "Augsburg",
+     "Borussia Mönchengladbach"
+    ],
+    [
+     "FC Köln",
+     "Borussia Dortmund"
+    ],
+    [
+     "Bayern Múnich",
+     "Bayer Leverkusen"
+    ],
+    [
+     "Elversberg",
+     "Eintracht Frankfurt"
+    ],
+    [
+     "Hoffenheim",
+     "RB Leipzig"
+    ],
+    [
+     "Werder Bremen",
+     "Elversberg"
+    ],
+    [
+     "Eintracht Frankfurt",
+     "Bayern Múnich"
+    ],
+    [
+     "Paderborn",
+     "FC Köln"
+    ],
+    [
+     "Bayer Leverkusen",
+     "Schalke 04"
+    ],
+    [
+     "Hamburger SV",
+     "Augsburg"
+    ],
+    [
+     "Borussia Mönchengladbach",
+     "Union Berlin"
+    ],
+    [
+     "Borussia Dortmund",
+     "Freiburg"
+    ],
+    [
+     "Stuttgart",
+     "Mainz 05"
+    ],
+    [
+     "Hoffenheim",
+     "FC Köln"
+    ],
+    [
+     "Stuttgart",
+     "Bayern Múnich"
+    ],
+    [
+     "Bayer Leverkusen",
+     "Elversberg"
+    ],
+    [
+     "Eintracht Frankfurt",
+     "Union Berlin"
+    ],
+    [
+     "Borussia Mönchengladbach",
+     "RB Leipzig"
+    ],
+    [
+     "Paderborn",
+     "Mainz 05"
+    ],
+    [
+     "Hamburger SV",
+     "Borussia Dortmund"
+    ],
+    [
+     "Werder Bremen",
+     "Freiburg"
+    ],
+    [
+     "Schalke 04",
+     "Augsburg"
+    ],
+    [
+     "Union Berlin",
+     "Bayer Leverkusen"
+    ],
+    [
+     "Bayern Múnich",
+     "Schalke 04"
+    ],
+    [
+     "Borussia Dortmund",
+     "Hoffenheim"
+    ],
+    [
+     "Freiburg",
+     "Paderborn"
+    ],
+    [
+     "Mainz 05",
+     "Hamburger SV"
+    ],
+    [
+     "RB Leipzig",
+     "Werder Bremen"
+    ],
+    [
+     "Augsburg",
+     "Eintracht Frankfurt"
+    ],
+    [
+     "Elversberg",
+     "Borussia Mönchengladbach"
+    ],
+    [
+     "FC Köln",
+     "Stuttgart"
+    ],
+    [
+     "Bayer Leverkusen",
+     "Augsburg"
+    ],
+    [
+     "Schalke 04",
+     "Union Berlin"
+    ],
+    [
+     "Hamburger SV",
+     "RB Leipzig"
+    ],
+    [
+     "Werder Bremen",
+     "FC Köln"
+    ],
+    [
+     "Eintracht Frankfurt",
+     "Mainz 05"
+    ],
+    [
+     "Bayern Múnich",
+     "Elversberg"
+    ],
+    [
+     "Paderborn",
+     "Borussia Dortmund"
+    ],
+    [
+     "Borussia Mönchengladbach",
+     "Freiburg"
+    ],
+    [
+     "Stuttgart",
+     "Hoffenheim"
+    ],
+    [
+     "Freiburg",
+     "Eintracht Frankfurt"
+    ],
+    [
+     "Borussia Dortmund",
+     "Stuttgart"
+    ],
+    [
+     "Hoffenheim",
+     "Paderborn"
+    ],
+    [
+     "Mainz 05",
+     "Borussia Mönchengladbach"
+    ],
+    [
+     "Augsburg",
+     "Werder Bremen"
+    ],
+    [
+     "Elversberg",
+     "Schalke 04"
+    ],
+    [
+     "Union Berlin",
+     "Bayern Múnich"
+    ],
+    [
+     "FC Köln",
+     "Hamburger SV"
+    ],
+    [
+     "RB Leipzig",
+     "Bayer Leverkusen"
+    ],
+    [
+     "Bayer Leverkusen",
+     "Mainz 05"
+    ],
+    [
+     "Elversberg",
+     "Union Berlin"
+    ],
+    [
+     "Bayern Múnich",
+     "Augsburg"
+    ],
+    [
+     "Eintracht Frankfurt",
+     "RB Leipzig"
+    ],
+    [
+     "Schalke 04",
+     "Freiburg"
+    ],
+    [
+     "Werder Bremen",
+     "Borussia Dortmund"
+    ],
+    [
+     "Borussia Mönchengladbach",
+     "FC Köln"
+    ],
+    [
+     "Stuttgart",
+     "Paderborn"
+    ],
+    [
+     "Hamburger SV",
+     "Hoffenheim"
+    ],
+    [
+     "Hoffenheim",
+     "Borussia Mönchengladbach"
+    ],
+    [
+     "RB Leipzig",
+     "Bayern Múnich"
+    ],
+    [
+     "Paderborn",
+     "Werder Bremen"
+    ],
+    [
+     "Borussia Dortmund",
+     "Union Berlin"
+    ],
+    [
+     "Mainz 05",
+     "Schalke 04"
+    ],
+    [
+     "FC Köln",
+     "Eintracht Frankfurt"
+    ],
+    [
+     "Augsburg",
+     "Elversberg"
+    ],
+    [
+     "Freiburg",
+     "Bayer Leverkusen"
+    ],
+    [
+     "Stuttgart",
+     "Hamburger SV"
+    ],
+    [
+     "Schalke 04",
+     "FC Köln"
+    ],
+    [
+     "Bayern Múnich",
+     "Freiburg"
+    ],
+    [
+     "Eintracht Frankfurt",
+     "Borussia Dortmund"
+    ],
+    [
+     "Bayer Leverkusen",
+     "Hoffenheim"
+    ],
+    [
+     "Werder Bremen",
+     "Mainz 05"
+    ],
+    [
+     "Union Berlin",
+     "Augsburg"
+    ],
+    [
+     "Elversberg",
+     "RB Leipzig"
+    ],
+    [
+     "Borussia Mönchengladbach",
+     "Stuttgart"
+    ],
+    [
+     "Hamburger SV",
+     "Paderborn"
+    ],
+    [
+     "RB Leipzig",
+     "Schalke 04"
+    ],
+    [
+     "Paderborn",
+     "Borussia Mönchengladbach"
+    ],
+    [
+     "Hoffenheim",
+     "Werder Bremen"
+    ],
+    [
+     "FC Köln",
+     "Union Berlin"
+    ],
+    [
+     "Hamburger SV",
+     "Eintracht Frankfurt"
+    ],
+    [
+     "Mainz 05",
+     "Elversberg"
+    ],
+    [
+     "Freiburg",
+     "Augsburg"
+    ],
+    [
+     "Borussia Dortmund",
+     "Bayern Múnich"
+    ],
+    [
+     "Stuttgart",
+     "Bayer Leverkusen"
+    ],
+    [
+     "Werder Bremen",
+     "Stuttgart"
+    ],
+    [
+     "Bayer Leverkusen",
+     "FC Köln"
+    ],
+    [
+     "Bayern Múnich",
+     "Mainz 05"
+    ],
+    [
+     "Schalke 04",
+     "Hoffenheim"
+    ],
+    [
+     "Eintracht Frankfurt",
+     "Paderborn"
+    ],
+    [
+     "Elversberg",
+     "Borussia Dortmund"
+    ],
+    [
+     "Union Berlin",
+     "Freiburg"
+    ],
+    [
+     "Borussia Mönchengladbach",
+     "Hamburger SV"
+    ],
+    [
+     "Augsburg",
+     "RB Leipzig"
+    ],
+    [
+     "Freiburg",
+     "Elversberg"
+    ],
+    [
+     "Paderborn",
+     "Bayer Leverkusen"
+    ],
+    [
+     "RB Leipzig",
+     "Union Berlin"
+    ],
+    [
+     "Borussia Dortmund",
+     "Borussia Mönchengladbach"
+    ],
+    [
+     "Hamburger SV",
+     "Werder Bremen"
+    ],
+    [
+     "FC Köln",
+     "Bayern Múnich"
+    ],
+    [
+     "Mainz 05",
+     "Augsburg"
+    ],
+    [
+     "Stuttgart",
+     "Schalke 04"
+    ],
+    [
+     "Hoffenheim",
+     "Eintracht Frankfurt"
+    ],
+    [
+     "Elversberg",
+     "FC Köln"
+    ],
+    [
+     "Bayern Múnich",
+     "Hamburger SV"
+    ],
+    [
+     "Augsburg",
+     "Hoffenheim"
+    ],
+    [
+     "Borussia Mönchengladbach",
+     "Werder Bremen"
+    ],
+    [
+     "Union Berlin",
+     "Mainz 05"
+    ],
+    [
+     "Bayer Leverkusen",
+     "Borussia Dortmund"
+    ],
+    [
+     "Schalke 04",
+     "Paderborn"
+    ],
+    [
+     "Eintracht Frankfurt",
+     "Stuttgart"
+    ],
+    [
+     "RB Leipzig",
+     "Freiburg"
+    ],
+    [
+     "Borussia Dortmund",
+     "Schalke 04"
+    ],
+    [
+     "Hamburger SV",
+     "Union Berlin"
+    ],
+    [
+     "FC Köln",
+     "Augsburg"
+    ],
+    [
+     "Borussia Mönchengladbach",
+     "Bayer Leverkusen"
+    ],
+    [
+     "Werder Bremen",
+     "Eintracht Frankfurt"
+    ],
+    [
+     "Hoffenheim",
+     "Freiburg"
+    ],
+    [
+     "Paderborn",
+     "Bayern Múnich"
+    ],
+    [
+     "Stuttgart",
+     "Elversberg"
+    ],
+    [
+     "Mainz 05",
+     "RB Leipzig"
+    ],
+    [
+     "Schalke 04",
+     "Hamburger SV"
+    ],
+    [
+     "Freiburg",
+     "Mainz 05"
+    ],
+    [
+     "RB Leipzig",
+     "FC Köln"
+    ],
+    [
+     "Elversberg",
+     "Paderborn"
+    ],
+    [
+     "Eintracht Frankfurt",
+     "Borussia Mönchengladbach"
+    ],
+    [
+     "Bayern Múnich",
+     "Hoffenheim"
+    ],
+    [
+     "Bayer Leverkusen",
+     "Werder Bremen"
+    ],
+    [
+     "Union Berlin",
+     "Stuttgart"
+    ],
+    [
+     "Augsburg",
+     "Borussia Dortmund"
+    ],
+    [
+     "Paderborn",
+     "Augsburg"
+    ],
+    [
+     "Eintracht Frankfurt",
+     "Bayer Leverkusen"
+    ],
+    [
+     "Borussia Mönchengladbach",
+     "Schalke 04"
+    ],
+    [
+     "Stuttgart",
+     "Freiburg"
+    ],
+    [
+     "Hamburger SV",
+     "Elversberg"
+    ],
+    [
+     "Borussia Dortmund",
+     "RB Leipzig"
+    ],
+    [
+     "FC Köln",
+     "Mainz 05"
+    ],
+    [
+     "Werder Bremen",
+     "Bayern Múnich"
+    ],
+    [
+     "Hoffenheim",
+     "Union Berlin"
+    ],
+    [
+     "Elversberg",
+     "Hoffenheim"
+    ],
+    [
+     "Bayer Leverkusen",
+     "Hamburger SV"
+    ],
+    [
+     "Bayern Múnich",
+     "Borussia Mönchengladbach"
+    ],
+    [
+     "Augsburg",
+     "Stuttgart"
+    ],
+    [
+     "Union Berlin",
+     "Werder Bremen"
+    ],
+    [
+     "RB Leipzig",
+     "Paderborn"
+    ],
+    [
+     "Schalke 04",
+     "Eintracht Frankfurt"
+    ],
+    [
+     "Mainz 05",
+     "Borussia Dortmund"
+    ],
+    [
+     "Freiburg",
+     "FC Köln"
+    ],
+    [
+     "Borussia Dortmund",
+     "FC Köln"
+    ],
+    [
+     "Paderborn",
+     "Union Berlin"
+    ],
+    [
+     "Stuttgart",
+     "RB Leipzig"
+    ],
+    [
+     "Werder Bremen",
+     "Schalke 04"
+    ],
+    [
+     "Borussia Mönchengladbach",
+     "Augsburg"
+    ],
+    [
+     "Bayer Leverkusen",
+     "Bayern Múnich"
+    ],
+    [
+     "Hoffenheim",
+     "Mainz 05"
+    ],
+    [
+     "Eintracht Frankfurt",
+     "Elversberg"
+    ],
+    [
+     "Hamburger SV",
+     "Freiburg"
+    ],
+    [
+     "Mainz 05",
+     "Stuttgart"
+    ],
+    [
+     "Elversberg",
+     "Werder Bremen"
+    ],
+    [
+     "Bayern Múnich",
+     "Eintracht Frankfurt"
+    ],
+    [
+     "Schalke 04",
+     "Bayer Leverkusen"
+    ],
+    [
+     "Augsburg",
+     "Hamburger SV"
+    ],
+    [
+     "Union Berlin",
+     "Borussia Mönchengladbach"
+    ],
+    [
+     "RB Leipzig",
+     "Hoffenheim"
+    ],
+    [
+     "Freiburg",
+     "Borussia Dortmund"
+    ],
+    [
+     "FC Köln",
+     "Paderborn"
+    ]
+   ],
+   "proximos": [
+    {
+     "fecha": "2026-10-23",
+     "local": "Stuttgart",
+     "visitante": "Borussia Mönchengladbach",
+     "pendiente": false,
+     "córners": [
+      6.35,
+      3.72
+     ],
+     "tarjetas": [
+      1.87,
+      2.17
+     ],
+     "cuotas": {
+      "c1": 1.34,
+      "cx": 5.71,
+      "c2": 7.02,
+      "co25": 1.25,
+      "cu25": 3.78
+     },
+     "lh": 2.295,
+     "la": 1.1479,
+     "p1": 0.6275,
+     "px": 0.1975,
+     "p2": 0.175,
+     "o25": 0.6685,
+     "btts": 0.6172,
+     "marcador": "2-1",
+     "p_marcador": 0.0967
+    },
+    {
+     "fecha": "2026-10-24",
+     "local": "Borussia Dortmund",
+     "visitante": "Eintracht Frankfurt",
+     "pendiente": false,
+     "córners": [
+      5.64,
+      3.81
+     ],
+     "tarjetas": [
+      1.9,
+      1.89
+     ],
+     "cuotas": {
+      "c1": 1.45,
+      "cx": 4.94,
+      "c2": 5.66,
+      "co25": 1.33,
+      "cu25": 3.18
+     },
+     "lh": 2.4383,
+     "la": 1.1859,
+     "p1": 0.6461,
+     "px": 0.1872,
+     "p2": 0.1667,
+     "o25": 0.7015,
+     "btts": 0.6369,
+     "marcador": "2-1",
+     "p_marcador": 0.094
+    },
+    {
+     "fecha": "2026-10-24",
+     "local": "FC Köln",
+     "visitante": "Schalke 04",
+     "pendiente": false,
+     "córners": [
+      6.01,
+      4.21
+     ],
+     "tarjetas": [
+      1.89,
+      1.99
+     ],
+     "cuotas": {
+      "c1": 2.04,
+      "cx": 3.73,
+      "c2": 3.23,
+      "co25": 1.57,
+      "cu25": 2.31
+     },
+     "lh": 1.4552,
+     "la": 1.0116,
+     "p1": 0.4685,
+     "px": 0.2738,
+     "p2": 0.2577,
+     "o25": 0.4476,
+     "btts": 0.4928,
+     "marcador": "1-1",
+     "p_marcador": 0.1298
+    },
+    {
+     "fecha": "2026-10-24",
+     "local": "Augsburg",
+     "visitante": "Union Berlin",
+     "pendiente": false,
+     "córners": [
+      5.56,
+      4.54
+     ],
+     "tarjetas": [
+      2.01,
+      2.0
+     ],
+     "cuotas": {
+      "c1": 1.84,
+      "cx": 3.89,
+      "c2": 3.73,
+      "co25": 1.48,
+      "cu25": 2.57
+     },
+     "lh": 1.6794,
+     "la": 1.143,
+     "p1": 0.4945,
+     "px": 0.2506,
+     "p2": 0.2549,
+     "o25": 0.5359,
+     "btts": 0.5586,
+     "marcador": "1-1",
+     "p_marcador": 0.1186
+    },
+    {
+     "fecha": "2026-10-24",
+     "local": "RB Leipzig",
+     "visitante": "Elversberg",
+     "pendiente": false,
+     "córners": [
+      6.73,
+      4.09
+     ],
+     "tarjetas": [
+      1.72,
+      1.93
+     ],
+     "cuotas": {
+      "c1": 1.41,
+      "cx": 5.15,
+      "c2": 6.04,
+      "co25": 1.26,
+      "cu25": 3.63
+     },
+     "lh": 2.862,
+     "la": 1.3779,
+     "p1": 0.6789,
+     "px": 0.1634,
+     "p2": 0.1577,
+     "o25": 0.7949,
+     "btts": 0.7074,
+     "marcador": "2-1",
+     "p_marcador": 0.0813
+    },
+    {
+     "fecha": "2026-10-24",
+     "local": "Mainz 05",
+     "visitante": "Werder Bremen",
+     "pendiente": false,
+     "córners": [
+      5.63,
+      3.88
+     ],
+     "tarjetas": [
+      1.95,
+      2.24
+     ],
+     "cuotas": {
+      "c1": 1.72,
+      "cx": 4.01,
+      "c2": 4.21,
+      "co25": 1.52,
+      "cu25": 2.45
+     },
+     "lh": 1.6111,
+     "la": 1.251,
+     "p1": 0.4533,
+     "px": 0.2542,
+     "p2": 0.2924,
+     "o25": 0.5452,
+     "btts": 0.5758,
+     "marcador": "1-1",
+     "p_marcador": 0.1197
+    },
+    {
+     "fecha": "2026-10-24",
+     "local": "Paderborn",
+     "visitante": "Hamburger SV",
+     "pendiente": false,
+     "córners": [
+      6.07,
+      3.94
+     ],
+     "tarjetas": [
+      1.99,
+      2.0
+     ],
+     "cuotas": {
+      "c1": 2.22,
+      "cx": 3.65,
+      "c2": 2.92,
+      "co25": 1.55,
+      "cu25": 2.36
+     },
+     "lh": 1.1854,
+     "la": 1.1975,
+     "p1": 0.353,
+     "px": 0.2881,
+     "p2": 0.3589,
+     "o25": 0.4258,
+     "btts": 0.4899,
+     "marcador": "1-1",
+     "p_marcador": 0.1362
+    },
+    {
+     "fecha": "2026-10-25",
+     "local": "Hoffenheim",
+     "visitante": "Bayer Leverkusen",
+     "pendiente": false,
+     "córners": [
+      5.16,
+      4.98
+     ],
+     "tarjetas": [
+      2.18,
+      1.8
+     ],
+     "cuotas": {
+      "c1": 2.71,
+      "cx": 3.84,
+      "c2": 2.28,
+      "co25": 1.36,
+      "cu25": 3.0
+     },
+     "lh": 1.706,
+     "la": 1.9057,
+     "p1": 0.3473,
+     "px": 0.2249,
+     "p2": 0.4279,
+     "o25": 0.6993,
+     "btts": 0.7002,
+     "marcador": "1-1",
+     "p_marcador": 0.0913
+    },
+    {
+     "fecha": "2026-10-25",
+     "local": "Freiburg",
+     "visitante": "Bayern Múnich",
+     "pendiente": false,
+     "córners": [
+      3.83,
+      4.87
+     ],
+     "tarjetas": [
+      1.69,
+      1.82
+     ],
+     "cuotas": {
+      "c1": 6.43,
+      "cx": 5.69,
+      "c2": 1.36,
+      "co25": 1.22,
+      "cu25": 4.01
+     },
+     "lh": 1.3106,
+     "la": 2.4983,
+     "p1": 0.183,
+     "px": 0.1866,
+     "p2": 0.6304,
+     "o25": 0.7325,
+     "btts": 0.6732,
+     "marcador": "1-2",
+     "p_marcador": 0.0907
+    },
+    {
+     "fecha": "2026-10-30",
+     "local": "Elversberg",
+     "visitante": "Mainz 05",
+     "pendiente": false,
+     "córners": [
+      5.01,
+      5.05
+     ],
+     "tarjetas": [
+      2.03,
+      2.1
+     ],
+     "lh": 2.1283,
+     "la": 1.9158,
+     "p1": 0.4355,
+     "px": 0.2104,
+     "p2": 0.3541,
+     "o25": 0.7683,
+     "btts": 0.7541,
+     "marcador": "2-1",
+     "p_marcador": 0.076
+    },
+    {
+     "fecha": "2026-10-31",
+     "local": "Bayer Leverkusen",
+     "visitante": "Stuttgart",
+     "pendiente": false,
+     "córners": [
+      6.11,
+      4.08
+     ],
+     "tarjetas": [
+      1.95,
+      2.16
+     ],
+     "lh": 2.1338,
+     "la": 1.6748,
+     "p1": 0.483,
+     "px": 0.2139,
+     "p2": 0.3031,
+     "o25": 0.7325,
+     "btts": 0.7196,
+     "marcador": "2-1",
+     "p_marcador": 0.0846
+    },
+    {
+     "fecha": "2026-10-31",
+     "local": "Werder Bremen",
+     "visitante": "Hoffenheim",
+     "pendiente": false,
+     "córners": [
+      5.2,
+      4.78
+     ],
+     "tarjetas": [
+      1.82,
+      2.04
+     ],
+     "lh": 1.5961,
+     "la": 1.6202,
+     "p1": 0.374,
+     "px": 0.2418,
+     "p2": 0.3843,
+     "o25": 0.6235,
+     "btts": 0.6437,
+     "marcador": "1-1",
+     "p_marcador": 0.1078
+    },
+    {
+     "fecha": "2026-10-31",
+     "local": "Bayern Múnich",
+     "visitante": "Borussia Dortmund",
+     "pendiente": false,
+     "córners": [
+      6.31,
+      3.49
+     ],
+     "tarjetas": [
+      1.6,
+      1.99
+     ],
+     "lh": 2.6499,
+     "la": 1.083,
+     "p1": 0.7046,
+     "px": 0.1661,
+     "p2": 0.1293,
+     "o25": 0.7201,
+     "btts": 0.6174,
+     "marcador": "2-1",
+     "p_marcador": 0.091
+    },
+    {
+     "fecha": "2026-10-31",
+     "local": "Schalke 04",
+     "visitante": "RB Leipzig",
+     "pendiente": false,
+     "córners": [
+      5.08,
+      4.8
+     ],
+     "tarjetas": [
+      1.69,
+      1.85
+     ],
+     "lh": 0.8037,
+     "la": 1.2614,
+     "p1": 0.2319,
+     "px": 0.302,
+     "p2": 0.4661,
+     "o25": 0.3409,
+     "btts": 0.401,
+     "marcador": "0-1",
+     "p_marcador": 0.1549
+    },
+    {
+     "fecha": "2026-10-31",
+     "local": "Borussia Mönchengladbach",
+     "visitante": "Paderborn",
+     "pendiente": false,
+     "córners": [
+      5.38,
+      4.28
+     ],
+     "tarjetas": [
+      1.84,
+      1.96
+     ],
+     "lh": 1.6508,
+     "la": 1.0784,
+     "p1": 0.5026,
+     "px": 0.2538,
+     "p2": 0.2436,
+     "o25": 0.5135,
+     "btts": 0.5378,
+     "marcador": "1-1",
+     "p_marcador": 0.1208
+    },
+    {
+     "fecha": "2026-10-31",
+     "local": "Augsburg",
+     "visitante": "Freiburg",
+     "pendiente": false,
+     "córners": [
+      4.91,
+      4.21
+     ],
+     "tarjetas": [
+      2.06,
+      1.76
+     ],
+     "lh": 1.5538,
+     "la": 1.3434,
+     "p1": 0.4192,
+     "px": 0.2555,
+     "p2": 0.3254,
+     "o25": 0.5534,
+     "btts": 0.5873,
+     "marcador": "1-1",
+     "p_marcador": 0.1197
+    },
+    {
+     "fecha": "2026-11-01",
+     "local": "Eintracht Frankfurt",
+     "visitante": "Hamburger SV",
+     "pendiente": false,
+     "córners": [
+      6.15,
+      3.58
+     ],
+     "tarjetas": [
+      2.06,
+      2.07
+     ],
+     "lh": 1.954,
+     "la": 1.3103,
+     "p1": 0.5205,
+     "px": 0.2274,
+     "p2": 0.2521,
+     "o25": 0.6333,
+     "btts": 0.6306,
+     "marcador": "1-1",
+     "p_marcador": 0.1017
+    },
+    {
+     "fecha": "2026-11-01",
+     "local": "Union Berlin",
+     "visitante": "FC Köln",
+     "pendiente": false,
+     "córners": [
+      5.78,
+      4.37
+     ],
+     "tarjetas": [
+      2.09,
+      1.99
+     ],
+     "lh": 1.4963,
+     "la": 1.2607,
+     "p1": 0.4224,
+     "px": 0.2625,
+     "p2": 0.3151,
+     "o25": 0.5202,
+     "btts": 0.5608,
+     "marcador": "1-1",
+     "p_marcador": 0.1245
+    },
+    {
+     "fecha": "2026-11-06",
+     "local": "Hamburger SV",
+     "visitante": "Borussia Mönchengladbach",
+     "pendiente": false,
+     "córners": [
+      4.86,
+      4.38
+     ],
+     "tarjetas": [
+      2.02,
+      2.27
+     ],
+     "lh": 1.5928,
+     "la": 1.2708,
+     "p1": 0.4445,
+     "px": 0.2551,
+     "p2": 0.3005,
+     "o25": 0.5456,
+     "btts": 0.5777,
+     "marcador": "1-1",
+     "p_marcador": 0.1201
+    },
+    {
+     "fecha": "2026-11-07",
+     "local": "Stuttgart",
+     "visitante": "Werder Bremen",
+     "pendiente": false,
+     "córners": [
+      6.3,
+      3.83
+     ],
+     "tarjetas": [
+      1.8,
+      2.22
+     ],
+     "lh": 2.1361,
+     "la": 1.2377,
+     "p1": 0.5757,
+     "px": 0.2127,
+     "p2": 0.2116,
+     "o25": 0.6552,
+     "btts": 0.6297,
+     "marcador": "2-1",
+     "p_marcador": 0.0967
+    },
+    {
+     "fecha": "2026-11-07",
+     "local": "RB Leipzig",
+     "visitante": "Augsburg",
+     "pendiente": false,
+     "córners": [
+      6.32,
+      4.33
+     ],
+     "tarjetas": [
+      1.65,
+      2.05
+     ],
+     "lh": 2.5313,
+     "la": 1.2383,
+     "p1": 0.6516,
+     "px": 0.1818,
+     "p2": 0.1666,
+     "o25": 0.7261,
+     "btts": 0.6565,
+     "marcador": "2-1",
+     "p_marcador": 0.0915
+    },
+    {
+     "fecha": "2026-11-07",
+     "local": "Paderborn",
+     "visitante": "Eintracht Frankfurt",
+     "pendiente": false,
+     "córners": [
+      5.24,
+      4.54
+     ],
+     "tarjetas": [
+      1.78,
+      1.89
+     ],
+     "lh": 1.275,
+     "la": 1.6865,
+     "p1": 0.2856,
+     "px": 0.248,
+     "p2": 0.4664,
+     "o25": 0.5681,
+     "btts": 0.5915,
+     "marcador": "1-1",
+     "p_marcador": 0.1156
+    },
+    {
+     "fecha": "2026-11-07",
+     "local": "Mainz 05",
+     "visitante": "Bayern Múnich",
+     "pendiente": false,
+     "córners": [
+      4.3,
+      5.26
+     ],
+     "tarjetas": [
+      1.93,
+      1.91
+     ],
+     "lh": 1.0395,
+     "la": 2.5128,
+     "p1": 0.1339,
+     "px": 0.1751,
+     "p2": 0.691,
+     "o25": 0.6887,
+     "btts": 0.597,
+     "marcador": "1-2",
+     "p_marcador": 0.0941
+    },
+    {
+     "fecha": "2026-11-07",
+     "local": "Borussia Dortmund",
+     "visitante": "Elversberg",
+     "pendiente": false,
+     "córners": [
+      6.82,
+      3.61
+     ],
+     "tarjetas": [
+      1.92,
+      1.92
+     ],
+     "lh": 2.5994,
+     "la": 1.1044,
+     "p1": 0.6918,
+     "px": 0.1711,
+     "p2": 0.1371,
+     "o25": 0.7152,
+     "btts": 0.6217,
+     "marcador": "2-1",
+     "p_marcador": 0.0919
+    },
+    {
+     "fecha": "2026-11-08",
+     "local": "FC Köln",
+     "visitante": "Bayer Leverkusen",
+     "pendiente": false,
+     "córners": [
+      4.72,
+      5.4
+     ],
+     "tarjetas": [
+      2.09,
+      2.07
+     ],
+     "lh": 1.5156,
+     "la": 1.9579,
+     "p1": 0.2967,
+     "px": 0.2258,
+     "p2": 0.4775,
+     "o25": 0.6742,
+     "btts": 0.6738,
+     "marcador": "1-1",
+     "p_marcador": 0.0956
+    },
+    {
+     "fecha": "2026-11-08",
+     "local": "Freiburg",
+     "visitante": "Union Berlin",
+     "pendiente": false,
+     "córners": [
+      5.0,
+      3.68
+     ],
+     "tarjetas": [
+      1.73,
+      2.14
+     ],
+     "lh": 1.9814,
+     "la": 1.0231,
+     "p1": 0.5923,
+     "px": 0.2219,
+     "p2": 0.1858,
+     "o25": 0.5778,
+     "btts": 0.5562,
+     "marcador": "1-1",
+     "p_marcador": 0.1044
+    },
+    {
+     "fecha": "2026-11-08",
+     "local": "Hoffenheim",
+     "visitante": "Schalke 04",
+     "pendiente": false,
+     "córners": [
+      6.57,
+      3.88
+     ],
+     "tarjetas": [
+      1.97,
+      1.73
+     ],
+     "lh": 1.6381,
+     "la": 0.9846,
+     "p1": 0.522,
+     "px": 0.2555,
+     "p2": 0.2224,
+     "o25": 0.4873,
+     "btts": 0.5093,
+     "marcador": "1-1",
+     "p_marcador": 0.1217
+    },
+    {
+     "fecha": "2026-11-20",
+     "local": "Bayern Múnich",
+     "visitante": "FC Köln",
+     "pendiente": false,
+     "córners": [
+      7.65,
+      3.34
+     ],
+     "tarjetas": [
+      1.78,
+      1.94
+     ],
+     "lh": 4.0272,
+     "la": 0.8339,
+     "p1": 0.8983,
+     "px": 0.0679,
+     "p2": 0.0337,
+     "o25": 0.8627,
+     "btts": 0.5566,
+     "marcador": "4-0",
+     "p_marcador": 0.0851
+    },
+    {
+     "fecha": "2026-11-21",
+     "local": "Eintracht Frankfurt",
+     "visitante": "Hoffenheim",
+     "pendiente": false,
+     "córners": [
+      5.49,
+      4.57
+     ],
+     "tarjetas": [
+      1.72,
+      2.06
+     ],
+     "lh": 1.9979,
+     "la": 1.7325,
+     "p1": 0.4428,
+     "px": 0.2199,
+     "p2": 0.3373,
+     "o25": 0.7197,
+     "btts": 0.7148,
+     "marcador": "1-1",
+     "p_marcador": 0.0863
+    },
+    {
+     "fecha": "2026-11-21",
+     "local": "Schalke 04",
+     "visitante": "Stuttgart",
+     "pendiente": false,
+     "córners": [
+      4.77,
+      5.2
+     ],
+     "tarjetas": [
+      1.87,
+      1.96
+     ],
+     "lh": 0.8419,
+     "la": 1.6081,
+     "p1": 0.1913,
+     "px": 0.2584,
+     "p2": 0.5503,
+     "o25": 0.4433,
+     "btts": 0.4597,
+     "marcador": "0-1",
+     "p_marcador": 0.1342
+    }
+   ],
+   "validacion": {
+    "partidos": 296,
+    "desde": "2025-10-18",
+    "hasta": "2026-10-18",
+    "mercados": {
+     "1X2": {
+      "modelo": 0.5777073634343723,
+      "base": 0.6512878324616569,
+      "logloss_modelo": 0.9747956605570148,
+      "logloss_base": 1.0760356661017871,
+      "mejora": 0.11297688266211614,
+      "mercado": 0.5646604208767844
+     },
+     "Más de 2.5": {
+      "modelo": 0.22729944941256283,
+      "base": 0.22657454938471502,
+      "mejora": -0.0031993885889494145
+     },
+     "Ambos anotan": {
+      "modelo": 0.2389018350155595,
+      "base": 0.2358069731921039,
+      "mejora": -0.013124555994085574
+     },
+     "Córners más de 9.5": {
+      "partidos": 302,
+      "linea": 9.5,
+      "modelo": 0.24730971112239916,
+      "base": 0.2501491539089643,
+      "prob_media": 0.4959745908807467,
+      "frecuencia_real": 0.5231788079470199,
+      "mejora": 0.011350998962796788
+     },
+     "Tarjetas más de 4.5": {
+      "partidos": 302,
+      "linea": 4.5,
+      "modelo": 0.22089976736896796,
+      "base": 0.21801035234112984,
+      "prob_media": 0.3796185596946553,
+      "frecuencia_real": 0.31788079470198677,
+      "mejora": -0.013253567992573823
+     }
+    },
+    "acierto_1x2": 0.5540540540540541,
+    "apuestas_simuladas": {
+     "umbral_ve": 0.05,
+     "apuestas": 188,
+     "roi": -0.1876063829787234,
+     "nota": "Apuesta plana de 1 unidad al resultado 1X2 con mayor VE si supera el umbral, a cuota de cierre."
+    }
+   },
+   "apifootball_id": 78,
+   "alias": {
+    "Bayern Munich": "Bayern Múnich",
+    "FC Bayern München": "Bayern Múnich",
+    "Dortmund": "Borussia Dortmund",
+    "Leverkusen": "Bayer Leverkusen",
+    "Bayer 04 Leverkusen": "Bayer Leverkusen",
+    "Ein Frankfurt": "Eintracht Frankfurt",
+    "M'gladbach": "Borussia Mönchengladbach",
+    "FC Koln": "FC Köln",
+    "1. FC Köln": "FC Köln",
+    "1. FC Union Berlin": "Union Berlin",
+    "SV Werder Bremen": "Werder Bremen",
+    "VfL Wolfsburg": "Wolfsburg",
+    "SC Freiburg": "Freiburg",
+    "TSG 1899 Hoffenheim": "Hoffenheim",
+    "Mainz": "Mainz 05",
+    "1. FSV Mainz 05": "Mainz 05",
+    "VfB Stuttgart": "Stuttgart",
+    "1. FC Heidenheim 1846": "Heidenheim",
+    "St Pauli": "St. Pauli",
+    "FC St. Pauli 1910": "St. Pauli",
+    "Hamburg": "Hamburger SV",
+    "SV 07 Elversberg": "Elversberg",
+    "SC Paderborn 07": "Paderborn",
+    "VfL Bochum": "Bochum",
+    "SV Darmstadt 98": "Darmstadt",
+    "Holstein Kiel": "Holstein Kiel"
    }
   }
  }

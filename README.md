@@ -165,17 +165,17 @@ Las mismas reglas se aplican a la validación del último año con las cuotas de
 
 Backtest semanal del último año: cada semana se reajusta solo con partidos anteriores y se predicen los de esa semana. Se mide con el Brier score (menor es mejor) contra una línea base con las frecuencias de la liga.
 
-| Mejora frente a la media de la liga | Premier | LaLiga |
-|---|---|---|
-| 1X2 | **+6.7%** | **+8.9%** |
-| Más de 2.5 goles | −1.4% | +3.8% |
-| Ambos anotan | −0.4% | 0.0% |
-| Córners, más de 9.5 | −0.7% | +4.2% |
-| Tarjetas, más de 4.5 | +1.0% | +0.4% |
-| Brier 1X2: modelo / casas de apuestas | 0.619 / 0.615 | 0.579 / 0.564 |
-| ROI de apostar donde el modelo ve valor | −23% | −13% |
+| Mejora frente a la media de la liga | Premier | LaLiga | Bundesliga |
+|---|---|---|---|
+| 1X2 | **+6.7%** | **+8.9%** | **+11.3%** |
+| Más de 2.5 goles | −1.4% | +3.8% | −0.3% |
+| Ambos anotan | −0.4% | 0.0% | −1.3% |
+| Córners, más de 9.5 | −0.7% | +4.2% | +1.1% |
+| Tarjetas, más de 4.5 | +1.0% | +0.4% | −1.3% |
+| Brier 1X2: modelo / casas de apuestas | 0.619 / 0.615 | 0.579 / 0.564 | 0.578 / 0.565 |
+| Recomendaciones "de valor", último año | −10.5% | −9.4% | −21.8% |
 
-Unos 370 partidos por liga, del 19 de octubre de 2025 al 21 de octubre de 2026, con datos de football-data.co.uk. El modelo mejora con claridad el 1X2 y en la Premier queda casi al nivel de las casas, pero no las supera: seguir su "valor" pierde dinero. Los mercados secundarios cambian de signo según la liga y el periodo; en el promedio de dos temporadas todos mejoran un poco (1–3%). La pestaña *Precisión* de la web se recalcula en cada actualización.
+Unos 300–370 partidos por liga, del 19 de octubre de 2025 al 21 de octubre de 2026, con datos de football-data.co.uk. El modelo mejora con claridad el 1X2 y en la Premier queda casi al nivel de las casas, pero no las supera: seguir su "valor" pierde dinero. Los mercados secundarios cambian de signo según la liga y el periodo; en el promedio de dos temporadas todos mejoran un poco (1–3%). La pestaña *Precisión* de la web se recalcula en cada actualización.
 
 ## Estructura
 

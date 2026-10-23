@@ -9,9 +9,9 @@ binding = "PIZARRA_KV"
 id = "PEGA_AQUI_EL_ID"
 
 [vars]
-# Ids de API-Football: Premier 39, LaLiga 140, y el de la Liga Promerica que
+# Ids de API-Football: Premier 39, LaLiga 140, Bundesliga 78, y el de la Liga Promerica que
 # muestra  python cli.py buscar-liga --pais Costa-Rica
-LIGAS = "39,140"
+LIGAS = "39,140,78"
 # Solicitudes diarias que puede gastar el Worker. Si comparte clave con GitHub
 # Actions (~36 al día), en el plan gratuito deja 50. En el plan Pro, 7000.
 CUOTA_DIARIA = "50"
