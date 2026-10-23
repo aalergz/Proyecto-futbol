@@ -148,6 +148,8 @@ log λ_visitante = c     + ataque[visitante] + defensa[local]
 - **Córners y tarjetas** (`reg_conteos = 3.0`): el mismo modelo, sin Dixon-Coles, con córners o con tarjetas (amarillas + rojas) en lugar de goles.
 - **Elección de parámetros:** todo se eligió por error fuera de muestra en Premier y LaLiga, en dos temporadas separadas (2024-25 y 2025-27), para no quedarse con lo que funcionó en una sola por casualidad.
 
+**Árbitros (solo Premier).** La web muestra el árbitro designado y su historial: tarjetas por partido frente a las que se esperaban por los equipos que le tocaron. No entra en la probabilidad: al validarlo en 2024-25 y 2025-27, usar el árbitro empeoró la predicción de tarjetas. football-data.co.uk no publica los árbitros de LaLiga.
+
 **Bajas.** La web tiene botones con ajustes típicos (sin goleador −10% ataque, sin portero titular −7% solidez, etc.). El motor no recibe datos de lesiones.
 
 **En vivo.** Los goles esperados se escalan por la parte del partido que falta, con el 55% de los goles en la segunda mitad, y se suman al marcador actual. Una roja baja un 30% los goles del equipo que la recibe y sube un 20% los del rival.

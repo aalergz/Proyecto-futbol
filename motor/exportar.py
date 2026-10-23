@@ -22,6 +22,30 @@ def tabla_actual(temp: pd.DataFrame) -> dict[str, dict]:
     return t
 
 
+def estadisticas_arbitros(df: pd.DataFrame, modelo_tarjetas: Ratings | None) -> dict:
+    """Historial de cada árbitro: tarjetas por partido y las que se esperaban por los
+    equipos que le tocaron (según el modelo de tarjetas). Es informativo: en la
+    validación, usar el árbitro empeoró la predicción, así que no la modifica."""
+    if "arbitro" not in df or modelo_tarjetas is None:
+        return {}
+    jug = df.dropna(subset=["tjl", "tjv"])
+    jug = jug[jug["arbitro"].notna()]
+    if jug.empty:
+        return {}
+    filas = []
+    for m in jug.itertuples():
+        esp = np.nan
+        if m.local in modelo_tarjetas.idx and m.visitante in modelo_tarjetas.idx:
+            esp = sum(modelo_tarjetas.lambdas(m.local, m.visitante))
+        filas.append((str(m.arbitro), m.tjl + m.tjv, esp))
+    t = pd.DataFrame(filas, columns=["arbitro", "real", "esperado"])
+    g = t.groupby("arbitro").agg(partidos=("real", "size"), tarjetas=("real", "mean"), esperadas=("esperado", "mean"))
+    g = g[g["partidos"] >= 10]   # con menos partidos el promedio es casi puro azar
+    return {a: {"partidos": int(v.partidos), "tarjetas": round(float(v.tarjetas), 2),
+                "esperadas": round(float(v.esperadas), 2) if v.esperadas == v.esperadas else None}
+            for a, v in g.iterrows()}
+
+
 def bloque_liga(clave: str, cfg: dict, df: pd.DataFrame, r: Ratings, fuente: str,
                 validacion: dict | None, hoy: date | None = None, conteos: dict | None = None) -> dict:
     conteos = conteos or {}
@@ -78,6 +102,8 @@ def bloque_liga(clave: str, cfg: dict, df: pd.DataFrame, r: Ratings, fuente: str
             extra["fid"] = int(fid)
         if isinstance(getattr(m, "inicio", None), str):
             extra["inicio"] = m.inicio
+        if isinstance(getattr(m, "arbitro", None), str) and m.arbitro.strip():
+            extra["arbitro"] = m.arbitro.strip()
         proximos.append({
             "fecha": m.fecha.strftime("%Y-%m-%d"), "local": m.local, "visitante": m.visitante,
             "pendiente": bool(m.fecha < hoy), **extra,
@@ -93,6 +119,7 @@ def bloque_liga(clave: str, cfg: dict, df: pd.DataFrame, r: Ratings, fuente: str
         "away": round(r.media_visitante, 4),
         "rho": round(r.rho, 4),
         "conteos": {n: {"home": round(c.media_local, 4), "away": round(c.media_visitante, 4)} for n, c in conteos.items()},
+        "arbitros": estadisticas_arbitros(df, conteos.get("tarjetas")),
         "top": cfg.get("top", {"n": 4, "label": "Top 4"}),
         "bot": cfg.get("bot", {"n": 3, "label": "Descenso"}),
         "partidos_modelo": r.n_partidos,

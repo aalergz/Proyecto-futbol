@@ -1,5 +1,5 @@
 {
- "generado": "2026-10-23T16:13:59+00:00",
+ "generado": "2026-10-23T16:30:53+00:00",
  "modelo": "Dixon-Coles con decaimiento temporal",
  "parametros": {
   "xi": 0.0019,
@@ -24,6 +24,103 @@
     "tarjetas": {
      "home": 1.7966,
      "away": 2.1397
+    }
+   },
+   "arbitros": {
+    "A Madley": {
+     "partidos": 45,
+     "tarjetas": 3.89,
+     "esperadas": 3.98
+    },
+    "A Taylor": {
+     "partidos": 61,
+     "tarjetas": 3.57,
+     "esperadas": 3.99
+    },
+    "C Kavanagh": {
+     "partidos": 59,
+     "tarjetas": 4.25,
+     "esperadas": 3.98
+    },
+    "C Pawson": {
+     "partidos": 47,
+     "tarjetas": 3.74,
+     "esperadas": 4.03
+    },
+    "D Bond": {
+     "partidos": 14,
+     "tarjetas": 4.0,
+     "esperadas": 3.93
+    },
+    "D England": {
+     "partidos": 47,
+     "tarjetas": 4.32,
+     "esperadas": 3.96
+    },
+    "J Brooks": {
+     "partidos": 34,
+     "tarjetas": 4.85,
+     "esperadas": 4.02
+    },
+    "J Gillett": {
+     "partidos": 43,
+     "tarjetas": 3.98,
+     "esperadas": 4.05
+    },
+    "M Oliver": {
+     "partidos": 60,
+     "tarjetas": 3.73,
+     "esperadas": 4.0
+    },
+    "M Salisbury": {
+     "partidos": 32,
+     "tarjetas": 3.56,
+     "esperadas": 3.92
+    },
+    "P Bankes": {
+     "partidos": 49,
+     "tarjetas": 3.92,
+     "esperadas": 4.03
+    },
+    "P Tierney": {
+     "partidos": 16,
+     "tarjetas": 3.62,
+     "esperadas": 3.92
+    },
+    "R Jones": {
+     "partidos": 44,
+     "tarjetas": 4.18,
+     "esperadas": 4.03
+    },
+    "S Attwell": {
+     "partidos": 48,
+     "tarjetas": 4.54,
+     "esperadas": 4.03
+    },
+    "S Barrott": {
+     "partidos": 51,
+     "tarjetas": 4.12,
+     "esperadas": 3.99
+    },
+    "S Hooper": {
+     "partidos": 38,
+     "tarjetas": 4.53,
+     "esperadas": 4.02
+    },
+    "T Bramall": {
+     "partidos": 37,
+     "tarjetas": 3.81,
+     "esperadas": 3.96
+    },
+    "T Harrington": {
+     "partidos": 32,
+     "tarjetas": 3.72,
+     "esperadas": 3.91
+    },
+    "T Robinson": {
+     "partidos": 25,
+     "tarjetas": 4.28,
+     "esperadas": 3.95
     }
    },
    "top": {
@@ -1736,6 +1833,7 @@
       1.85,
       2.08
      ],
+     "arbitro": "T Bramall",
      "lh": 1.1273,
      "la": 2.0309,
      "p1": 0.1972,
@@ -1759,6 +1857,7 @@
       1.45,
       2.29
      ],
+     "arbitro": "T Harrington",
      "lh": 1.7095,
      "la": 0.6662,
      "p1": 0.6164,
@@ -1782,6 +1881,7 @@
       1.77,
       2.26
      ],
+     "arbitro": "P Bankes",
      "lh": 1.2486,
      "la": 1.6559,
      "p1": 0.2789,
@@ -1805,6 +1905,7 @@
       1.59,
       2.1
      ],
+     "arbitro": "A Herczeg",
      "lh": 1.1688,
      "la": 1.3533,
      "p1": 0.3115,
@@ -1828,6 +1929,7 @@
       2.06,
       2.53
      ],
+     "arbitro": "C Kavanagh",
      "lh": 1.9144,
      "la": 1.2008,
      "p1": 0.5313,
@@ -1851,6 +1953,7 @@
       1.74,
       2.32
      ],
+     "arbitro": "S Barrott",
      "lh": 1.601,
      "la": 1.4479,
      "p1": 0.4038,
@@ -1874,6 +1977,7 @@
       1.77,
       2.52
      ],
+     "arbitro": "J Gillett",
      "lh": 1.7558,
      "la": 1.4086,
      "p1": 0.449,
@@ -1897,6 +2001,7 @@
       1.95,
       2.03
      ],
+     "arbitro": "P Tierney",
      "lh": 1.3857,
      "la": 1.3289,
      "p1": 0.3738,
@@ -1920,6 +2025,7 @@
       1.9,
       2.02
      ],
+     "arbitro": "R Jones",
      "lh": 1.202,
      "la": 1.2006,
      "p1": 0.3507,
@@ -1943,6 +2049,7 @@
       1.87,
       2.01
      ],
+     "arbitro": "S Attwell",
      "lh": 1.1194,
      "la": 1.2178,
      "p1": 0.3241,
@@ -2420,29 +2527,29 @@
     "hasta": "2026-10-19",
     "mercados": {
      "1X2": {
-      "modelo": 0.618939414264824,
+      "modelo": 0.6189395057788404,
       "base": 0.6632655207857722,
-      "logloss_modelo": 1.0309946363805071,
+      "logloss_modelo": 1.030994780929252,
       "logloss_base": 1.0943978581131182,
-      "mejora": 0.06683010820227009,
+      "mejora": 0.06682997022733617,
       "mercado": 0.6145357159285002
      },
      "Más de 2.5": {
-      "modelo": 0.2505373665709579,
+      "modelo": 0.2505372699924235,
       "base": 0.24704166090524246,
-      "mejora": -0.01415026782489237
+      "mejora": -0.014149876884619106
      },
      "Ambos anotan": {
-      "modelo": 0.24675995588316407,
+      "modelo": 0.2467596456761836,
       "base": 0.245824170042881,
-      "mejora": -0.003806728362470757
+      "mejora": -0.0038054664565303487
      },
      "Córners más de 9.5": {
       "partidos": 371,
       "linea": 9.5,
       "modelo": 0.25007755412615984,
       "base": 0.24827199032781333,
-      "prob_media": 0.5373783381229681,
+      "prob_media": 0.537378338122968,
       "frecuencia_real": 0.5471698113207547,
       "mejora": -0.007272523154796762
      },
@@ -2451,7 +2558,7 @@
       "linea": 4.5,
       "modelo": 0.232126176676165,
       "base": 0.23456425008395565,
-      "prob_media": 0.3610001780230524,
+      "prob_media": 0.3610001780230525,
       "frecuencia_real": 0.3719676549865229,
       "mejora": 0.010394053684301907
      }
@@ -2493,6 +2600,7 @@
      "away": 2.4331
     }
    },
+   "arbitros": {},
    "top": {
     "n": 4,
     "label": "Top 4 · Champions"
@@ -4811,40 +4919,40 @@
     "hasta": "2026-10-21",
     "mercados": {
      "1X2": {
-      "modelo": 0.5794442686414276,
+      "modelo": 0.5794442686418151,
       "base": 0.635994946110588,
-      "logloss_modelo": 0.9763847903997867,
+      "logloss_modelo": 0.9763847904003892,
       "logloss_base": 1.0549348380134664,
-      "mejora": 0.08891686610875571,
+      "mejora": 0.08891686610814642,
       "mercado": 0.5640207966859556
      },
      "Más de 2.5": {
-      "modelo": 0.24086936060996053,
+      "modelo": 0.2408693606101103,
       "base": 0.2504971169004046,
-      "mejora": 0.038434599206473075
+      "mejora": 0.03843459920587511
      },
      "Ambos anotan": {
-      "modelo": 0.2461068249162272,
+      "modelo": 0.24610682491610525,
       "base": 0.24598388857992276,
-      "mejora": -0.0004997739364727138
+      "mejora": -0.0004997739359768882
      },
      "Córners más de 9.5": {
       "partidos": 375,
       "linea": 9.5,
-      "modelo": 0.24004980183283608,
+      "modelo": 0.2400498018328367,
       "base": 0.2505449017329316,
-      "prob_media": 0.49423874390820144,
+      "prob_media": 0.494238743908202,
       "frecuencia_real": 0.49333333333333335,
-      "mejora": 0.041889097832382816
+      "mejora": 0.04188909783238037
      },
      "Tarjetas más de 4.5": {
       "partidos": 375,
       "linea": 4.5,
-      "modelo": 0.24976481622191818,
+      "modelo": 0.2497648162219182,
       "base": 0.25084794402230903,
       "prob_media": 0.4953825030212653,
       "frecuencia_real": 0.48,
-      "mejora": 0.004317865967019996
+      "mejora": 0.004317865967019885
      }
     },
     "acierto_1x2": 0.5283018867924528,

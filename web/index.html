@@ -248,6 +248,9 @@ footer .wrap{display:flex;gap:12px 24px;flex-wrap:wrap;justify-content:space-bet
 .baja[aria-pressed="true"]{border-style:solid;border-color:var(--neg);color:var(--fg);background:color-mix(in srgb,var(--neg) 10%,var(--surface))}
 .vnota{font-size:12px;color:var(--muted);margin:6px 0 0}
 .vnota b{font-weight:600}
+.fx-arb{font-size:12.5px;color:var(--muted)}
+.arb{margin-top:8px;padding:8px 10px;border-radius:4px;background:var(--surface-2);font-size:13px}
+.arb b{font-weight:600}
 .toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--fg);color:var(--bg);padding:8px 14px;border-radius:4px;font-size:14px;z-index:20}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
@@ -475,6 +478,11 @@ footer .wrap{display:flex;gap:12px 24px;flex-wrap:wrap;justify-content:space-bet
   <div class="box" style="padding:12px 14px">
     <div class="tbl-wrap"><table class="data" id="rTable"></table></div>
   </div>
+  <div class="box" id="arbBox" style="padding:12px 14px;margin-top:16px" hidden>
+    <h2>Árbitros</h2>
+    <p class="sub">Tarjetas (amarillas + rojas) por partido en las últimas temporadas, frente a las que se esperaban por los equipos que le tocaron. Es solo informativo: al probarlo, usar el árbitro no mejoró las predicciones.</p>
+    <div class="tbl-wrap"><table class="data" id="arbTable"></table></div>
+  </div>
 </section>
 
 <!-- PRECISIÓN -->
@@ -649,6 +657,16 @@ const GROUPS = [
   ["cr","Córners",""],["tj","Tarjetas","amarillas + rojas"]
 ];
 const VALIDA={cr:"Córners más de 9.5",tj:"Tarjetas más de 4.5"};
+function arbitroDe(L,hn,an){const m=(L.proximos||[]).find(p=>p.local===hn&&p.visitante===an);return m&&m.arbitro||null}
+function notaArbitro(L,hn,an){
+  const a=arbitroDe(L,hn,an); if(!a) return "";
+  const st=L.arbitros&&L.arbitros[a], media=L.conteos&&L.conteos["tarjetas"]?L.conteos["tarjetas"].home+L.conteos["tarjetas"].away:null;
+  if(!st) return `<div class="arb">Árbitro designado: <b>${esc(a)}</b> · sin historial suficiente en esta liga.</div>`;
+  const dif=st.esperadas!=null?st.tarjetas-st.esperadas:null;
+  return `<div class="arb">Árbitro designado: <b>${esc(a)}</b> · ${st.tarjetas.toFixed(1)} tarjetas por partido en ${st.partidos} partidos`+
+    (dif!=null?` (se esperaban ${st.esperadas.toFixed(1)} por los equipos que le tocaron: ${Math.abs(dif)<0.25?"saca lo normal":dif>0?"tiende a sacar más":"tiende a sacar menos"})`:"")+
+    (media?` · media de la liga ${media.toFixed(1)}`:"")+`. No cambia la probabilidad.</div>`;
+}
 function rowsHTML(list){
   const max=Math.max(...list.map(m=>m.pw));
   return `<div class="mtable"><div class="mhead"><span>Mercado</span><span>Prob.</span><span>Justa</span></div>`+
@@ -678,7 +696,8 @@ function renderAnalyzer(){
     let extra="";
     if(S.conteos&&S.conteos[g]){const [a,b]=S.conteos[g], v=L.validacion&&L.validacion.mercados&&L.validacion.mercados[VALIDA[g]];
       small=`esperados ${a.toFixed(1)} – ${b.toFixed(1)}`+(small?` · ${small}`:"");
-      if(v) extra=`<p class="vnota">Validación: ${v.mejora>0.01?`<b>${signed(v.mejora*100,1,"%")}</b> mejor que el promedio de la liga`:v.mejora<-0.01?`<b>${signed(v.mejora*100,1,"%")}</b>, peor que el promedio de la liga: tómalo con cuidado`:"igual que el promedio de la liga"} en ${v.partidos} partidos.</p>`;}
+      if(g==="tj") extra+=notaArbitro(L,H[0],A[0]);
+      if(v) extra+=`<p class="vnota">Validación: ${v.mejora>0.01?`<b>${signed(v.mejora*100,1,"%")}</b> mejor que el promedio de la liga`:v.mejora<-0.01?`<b>${signed(v.mejora*100,1,"%")}</b>, peor que el promedio de la liga: tómalo con cuidado`:"igual que el promedio de la liga"} en ${v.partidos} partidos.</p>`;}
     html+=`<div class="card"><h3>${title}${small?`<small>${small}</small>`:""}</h3>${rowsHTML(lista)}${extra}</div>`;
   });
   html+=`<div class="card wide"><h3>Matriz de marcadores<small>filas: goles de ${esc(H[0])} · columnas: goles de ${esc(A[0])}</small></h3>${matrixHTML()}</div>`;
@@ -855,6 +874,7 @@ function renderProximos(){
     l.proximos.slice(0,lim).map(m=>`<button class="fx" data-l="${k}" data-h="${esc(m.local)}" data-a="${esc(m.visitante)}">
       <div class="fx-top"><span>${fecha(m.fecha,true)}</span>${m.pendiente?`<span class="tagp">Resultado pendiente</span>`:`<span>Más probable ${m.marcador.replace("-","–")}</span>`}</div>
       <div class="fx-teams"><b>${esc(m.local)}</b><span>${m.lh.toFixed(2)} xG</span><b>${esc(m.visitante)}</b><span>${m.la.toFixed(2)} xG</span></div>
+      ${m.arbitro?`<div class="fx-arb">Árbitro: ${esc(m.arbitro)}${l.arbitros&&l.arbitros[m.arbitro]?` · ${l.arbitros[m.arbitro].tarjetas.toFixed(1)} tarjetas por partido`:""}</div>`:""}
       <div class="bar"><div class="h" style="flex-basis:${m.p1*100}%">${m.p1>.12?pct(m.p1,0):""}</div><div class="d" style="flex-basis:${m.px*100}%">${m.px>.12?pct(m.px,0):""}</div><div class="a" style="flex-basis:${m.p2*100}%">${m.p2>.12?pct(m.p2,0):""}</div></div>
       <div class="fx-foot"><span>Justas ${fairOdds(m.p1)} · ${fairOdds(m.px)} · ${fairOdds(m.p2)}</span><span>+2.5 ${pct(m.o25,0)}${m["córners"]?` · córners ${(m["córners"][0]+m["córners"][1]).toFixed(1)}`:""}</span></div>
     </button>`).join("")+`</div></div>`).join("")+
@@ -882,8 +902,16 @@ function renderPrecision(){
 }
 
 /* ---------- Ranking ---------- */
+function renderArbitros(L){
+  const lista=Object.entries(L.arbitros||{});
+  $("#arbBox").hidden=!lista.length; if(!lista.length) return;
+  const filas=lista.map(([n,v])=>({n,...v,dif:v.esperadas!=null?v.tarjetas-v.esperadas:0})).sort((a,b)=>b.dif-a.dif);
+  $("#arbTable").innerHTML=`<tr><th style="text-align:left">Árbitro</th><th>Partidos</th><th>Tarjetas por partido</th><th>Esperadas</th><th>Diferencia</th></tr>`+
+    filas.map(f=>`<tr><td class="team">${esc(f.n)}</td><td>${f.partidos}</td><td>${f.tarjetas.toFixed(2)}</td><td>${f.esperadas!=null?f.esperadas.toFixed(2):"—"}</td><td class="${f.dif>0.25?"negv":f.dif<-0.25?"posv":""}">${signed(f.dif,2)}</td></tr>`).join("");
+}
 function renderRanking(){
   const L=LEAGUES[$("#rLeague").value], avg=(L.home+L.away)/2;
+  renderArbitros(L);
   const rows=L.teams.map(t=>({n:t[0],gf:avg*t[1],gc:avg*t[2],loc:t[5]})).map(r=>({...r,net:r.gf-r.gc})).sort((a,b)=>b.net-a.net);
   const hayLoc=rows.some(r=>r.loc);
   const mx=Math.max(...rows.map(r=>Math.abs(r.net)));
@@ -1072,7 +1100,7 @@ function aplicarDatos(d){
     if(!l.equipos||l.equipos.length<2) return;
     nuevas[k]={name:l.nombre,home:l.home,away:l.away,rho:l.rho,top:l.top,bot:l.bot,real:true,
       teams:l.equipos.map(e=>[e.nombre,e.ataque,e.defensa,e.partidos,e.sin_datos,e.local||1,e["córners"]||null,e["tarjetas"]||null]),
-      conteos:l.conteos||null,
+      conteos:l.conteos||null,arbitros:l.arbitros||{},
       tabla:l.tabla,restantes:l.restantes,proximos:l.proximos||[],validacion:l.validacion,
       apifootball_id:l.apifootball_id,alias:l.alias||{},
       temporada:l.temporada,ultimo:l.ultimo_resultado,fuente:l.fuente};
