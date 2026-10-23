@@ -103,3 +103,59 @@ def test_csv_local(tmp_path):
                  "2026-07-20,Saprissa,Herediano,2,1\n2026-12-01,Alajuelense,Saprissa,,\n")
     df = fuentes.csv_local(str(p))
     assert df["gl"].isna().sum() == 1 and df["gl"].iloc[0] == 2
+
+
+def _gradiente(df, **kw):
+    from scipy.optimize import check_grad
+    import motor.modelo as mm
+    capturado = {}
+    real = mm.minimize
+
+    def espia(fun, x0, **k):
+        capturado["f"] = fun
+        capturado["x"] = x0 + np.random.default_rng(0).normal(0, 0.1, len(x0))
+        return real(fun, x0, **k)
+
+    mm.minimize = espia
+    try:
+        ajustar(df, **kw)
+    finally:
+        mm.minimize = real
+    f = capturado["f"]
+    return check_grad(lambda t: f(t)[0], lambda t: f(t)[1], capturado["x"])
+
+
+def test_gradiente_con_local_por_equipo_y_remates():
+    df, *_ = liga_sintetica(n=8, temporadas=1)
+    rng = np.random.default_rng(3)
+    df["tl"] = df["gl"] * 3 + rng.integers(0, 4, len(df))
+    df["tv"] = df["gv"] * 3 + rng.integers(0, 4, len(df))
+    assert _gradiente(df, xi=0.001, reg=0.05, reg_local=0.3) < 1e-5
+    assert _gradiente(df, xi=0.001, reg=0.05, peso_goles=0.7, reg_local=0.3) < 1e-5
+
+
+def test_remates_mezclados_y_rho_con_goles_reales():
+    df, *_ = liga_sintetica(n=12, temporadas=2)
+    df["tl"] = (df["gl"] * 3 + 2).astype(float)
+    df["tv"] = (df["gv"] * 3 + 2).astype(float)
+    r = ajustar(df, xi=0, reg=0.1, peso_goles=0.7)
+    assert -0.25 <= r.rho <= 0.15 and r.rho != 0.0
+    assert abs(r.media_local - (df["gl"].mean())) < 0.3
+
+
+def test_ventaja_local_por_equipo_recupera_un_estadio_dificil():
+    df, equipos, *_ = liga_sintetica(n=10, temporadas=3, seed=4)
+    rng = np.random.default_rng(5)
+    fuerte = df["local"] == equipos[0]
+    df.loc[fuerte, "gl"] = df.loc[fuerte, "gl"] + rng.poisson(0.8, fuerte.sum())
+    r = ajustar(df, xi=0, reg=0.1, reg_local=0.3)
+    assert r.local[r.idx[equipos[0]]] == max(r.local)
+
+
+def test_modelo_de_corners():
+    df, *_ = liga_sintetica(n=10, temporadas=2)
+    rng = np.random.default_rng(7)
+    df["crl"] = rng.poisson(5.4, len(df)).astype(float)
+    df["crv"] = rng.poisson(4.3, len(df)).astype(float)
+    c = ajustar(df, xi=0, reg=3.0, columnas=("crl", "crv"), dixon_coles=False)
+    assert abs(c.media_local - 5.4) < 0.3 and abs(c.media_visitante - 4.3) < 0.3 and c.rho == 0.0

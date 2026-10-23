@@ -38,7 +38,7 @@ Requiere Python 3.11 o superior.
 python -m venv .venv
 source .venv/bin/activate              # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
-python -m pytest -q                    # 12 pruebas
+python -m pytest -q                    # 19 pruebas
 export API_FOOTBALL_KEY="tu-clave"     # Windows: set API_FOOTBALL_KEY=tu-clave
 python cli.py actualizar
 python -m http.server 8000 --directory web     # abre http://localhost:8000
@@ -135,15 +135,20 @@ Para revisar la cuota: `https://pizarra-en-vivo.<tu-cuenta>.workers.dev/estado`.
 ## El modelo
 
 ```
-log λ_local     = c + h + ataque[local]     + defensa[visitante]
+log λ_local     = c + h + estadio[local] + ataque[local] + defensa[visitante]
 log λ_visitante = c     + ataque[visitante] + defensa[local]
 ```
 
 - **Máxima verosimilitud** con gradiente analítico (L-BFGS-B). Un ajuste tarda menos de un segundo.
-- **Corrección Dixon-Coles (ρ)** para 0–0, 1–0, 0–1 y 1–1, estimada por liga.
-- **Decaimiento temporal** `xi = 0.0019` por día: un partido de hace un año pesa cerca de la mitad.
+- **Goles corregidos con remates** (`peso_goles = 0.7`): la fuerza se calcula con 70% goles reales y 30% goles esperados (xG) o, si no hay xG, remates a puerta × la tasa de gol de la liga. Los goles tienen mucha suerte; los remates muestran mejor lo que el equipo generó.
+- **Factor de estadio por equipo** (`reg_local = 0.3`): cada equipo tiene su propia ventaja de local, penalizada hacia la media de la liga.
+- **Corrección Dixon-Coles (ρ)** para 0–0, 1–0, 0–1 y 1–1, estimada con los goles reales.
+- **Decaimiento temporal** `xi = 0.0019` por día: un partido de hace un año pesa cerca de la mitad. Dar más peso a la forma reciente empeoró las predicciones.
 - **Regularización** `0.1`: frena a equipos con pocos partidos. Un ascendido parte de ataque ×0.86 y defensa ×1.16.
-- **Elección de parámetros:** `xi` y `regularizacion` se eligieron por log-loss fuera de muestra en Premier y LaLiga 2025-26.
+- **Córners y tarjetas** (`reg_conteos = 3.0`): el mismo modelo, sin Dixon-Coles, con córners o con tarjetas (amarillas + rojas) en lugar de goles.
+- **Elección de parámetros:** todo se eligió por error fuera de muestra en Premier y LaLiga, en dos temporadas separadas (2024-25 y 2025-27), para no quedarse con lo que funcionó en una sola por casualidad.
+
+**Bajas.** La web tiene botones con ajustes típicos (sin goleador −10% ataque, sin portero titular −7% solidez, etc.). El motor no recibe datos de lesiones.
 
 **En vivo.** Los goles esperados se escalan por la parte del partido que falta, con el 55% de los goles en la segunda mitad, y se suman al marcador actual. Una roja baja un 30% los goles del equipo que la recibe y sube un 20% los del rival.
 
@@ -151,12 +156,17 @@ log λ_visitante = c     + ataque[visitante] + defensa[local]
 
 Backtest semanal del último año: cada semana se reajusta solo con partidos anteriores y se predicen los de esa semana. Se mide con el Brier score (menor es mejor) contra una línea base con las frecuencias de la liga.
 
-| Liga | Partidos | 1X2 | Más de 2.5 | Ambos anotan | Acierto del favorito |
-|---|---|---|---|---|---|
-| Premier League | 385 | **+5.7%** | −3.8% | −1.0% | 46.8% |
-| LaLiga | 399 | **+8.2%** | +4.5% | −1.2% | 51.9% |
+| Mejora frente a la media de la liga | Premier | LaLiga |
+|---|---|---|
+| 1X2 | **+6.7%** | **+8.9%** |
+| Más de 2.5 goles | −1.4% | +3.8% |
+| Ambos anotan | −0.4% | 0.0% |
+| Córners, más de 9.5 | −0.7% | +4.2% |
+| Tarjetas, más de 4.5 | +1.0% | +0.4% |
+| Brier 1X2: modelo / casas de apuestas | 0.619 / 0.615 | 0.579 / 0.564 |
+| ROI de apostar donde el modelo ve valor | −23% | −13% |
 
-Datos de openfootball hasta el 20 de septiembre de 2026. El modelo mejora con claridad el 1X2. En totales de goles y ambos anotan todavía no supera a la media de la liga. La pestaña *Precisión* de la web se recalcula en cada actualización.
+Unos 370 partidos por liga, del 19 de octubre de 2025 al 21 de octubre de 2026, con datos de football-data.co.uk. El modelo mejora con claridad el 1X2 y en la Premier queda casi al nivel de las casas, pero no las supera: seguir su "valor" pierde dinero. Los mercados secundarios cambian de signo según la liga y el periodo; en el promedio de dos temporadas todos mejoran un poco (1–3%). La pestaña *Precisión* de la web se recalcula en cada actualización.
 
 ## Estructura
 

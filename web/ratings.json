@@ -1,9 +1,11 @@
 {
- "generado": "2026-10-23T15:45:49+00:00",
+ "generado": "2026-10-23T16:10:57+00:00",
  "modelo": "Dixon-Coles con decaimiento temporal",
  "parametros": {
   "xi": 0.0019,
-  "regularizacion": 0.1
+  "regularizacion": 0.1,
+  "peso_goles": 0.7,
+  "reg_local": 0.3
  },
  "en_vivo_url": "",
  "ligas": {
@@ -11,9 +13,19 @@
    "nombre": "Premier League (Inglaterra)",
    "temporada": "2026-27",
    "fuente": "footballdata",
-   "home": 1.4518,
-   "away": 1.2249,
-   "rho": -0.0936,
+   "home": 1.4521,
+   "away": 1.2509,
+   "rho": -0.0874,
+   "conteos": {
+    "córners": {
+     "home": 5.2164,
+     "away": 4.5952
+    },
+    "tarjetas": {
+     "home": 1.7966,
+     "away": 2.1397
+    }
+   },
    "top": {
     "n": 4,
     "label": "Top 4 · Champions"
@@ -26,144 +38,324 @@
    "ultimo_resultado": "2026-10-19",
    "equipos": [
     {
-     "nombre": "Manchester City",
-     "ataque": 1.526,
-     "defensa": 0.7202,
-     "partidos": 83,
-     "sin_datos": false
-    },
-    {
      "nombre": "Arsenal",
-     "ataque": 1.3261,
-     "defensa": 0.5642,
+     "ataque": 1.2424,
+     "defensa": 0.5864,
+     "local": 1.0609,
      "partidos": 83,
-     "sin_datos": false
+     "sin_datos": false,
+     "córners": [
+      1.1173,
+      0.796
+     ],
+     "tarjetas": [
+      0.8805,
+      1.0571
+     ]
     },
     {
-     "nombre": "Brighton",
-     "ataque": 1.3428,
-     "defensa": 0.8722,
+     "nombre": "Manchester City",
+     "ataque": 1.3944,
+     "defensa": 0.7482,
+     "local": 1.1044,
      "partidos": 83,
-     "sin_datos": false
+     "sin_datos": false,
+     "córners": [
+      1.2154,
+      0.8361
+     ],
+     "tarjetas": [
+      0.9207,
+      1.0416
+     ]
     },
     {
      "nombre": "Liverpool",
-     "ataque": 1.3291,
-     "defensa": 0.894,
+     "ataque": 1.3283,
+     "defensa": 0.8925,
+     "local": 0.9422,
      "partidos": 83,
-     "sin_datos": false
+     "sin_datos": false,
+     "córners": [
+      1.1753,
+      0.8844
+     ],
+     "tarjetas": [
+      0.9516,
+      1.0482
+     ]
+    },
+    {
+     "nombre": "Brighton",
+     "ataque": 1.2969,
+     "defensa": 0.881,
+     "local": 1.0183,
+     "partidos": 83,
+     "sin_datos": false,
+     "córners": [
+      1.0264,
+      0.9824
+     ],
+     "tarjetas": [
+      1.0337,
+      1.0148
+     ]
     },
     {
      "nombre": "Chelsea",
-     "ataque": 1.2922,
-     "defensa": 0.9714,
+     "ataque": 1.2325,
+     "defensa": 0.9575,
+     "local": 1.0131,
      "partidos": 83,
-     "sin_datos": false
-    },
-    {
-     "nombre": "Brentford",
-     "ataque": 1.209,
-     "defensa": 0.9491,
-     "partidos": 83,
-     "sin_datos": false
-    },
-    {
-     "nombre": "Manchester United",
-     "ataque": 1.1899,
-     "defensa": 0.9449,
-     "partidos": 83,
-     "sin_datos": false
-    },
-    {
-     "nombre": "Aston Villa",
-     "ataque": 1.1039,
-     "defensa": 0.9309,
-     "partidos": 83,
-     "sin_datos": false
+     "sin_datos": false,
+     "córners": [
+      1.1716,
+      0.9108
+     ],
+     "tarjetas": [
+      1.1071,
+      1.1027
+     ]
     },
     {
      "nombre": "Bournemouth",
-     "ataque": 1.1355,
-     "defensa": 0.9682,
+     "ataque": 1.2172,
+     "defensa": 0.9493,
+     "local": 0.8969,
      "partidos": 83,
-     "sin_datos": false
-    },
-    {
-     "nombre": "Leeds",
-     "ataque": 1.0175,
-     "defensa": 0.8932,
-     "partidos": 45,
-     "sin_datos": false
-    },
-    {
-     "nombre": "Newcastle",
-     "ataque": 1.1539,
-     "defensa": 1.0457,
-     "partidos": 83,
-     "sin_datos": false
+     "sin_datos": false,
+     "córners": [
+      1.0939,
+      0.9885
+     ],
+     "tarjetas": [
+      1.129,
+      1.0074
+     ]
     },
     {
      "nombre": "Nottingham Forest",
-     "ataque": 0.9726,
-     "defensa": 0.8941,
+     "ataque": 1.1749,
+     "defensa": 0.9133,
+     "local": 0.7187,
      "partidos": 83,
-     "sin_datos": false
+     "sin_datos": false,
+     "córners": [
+      1.0014,
+      1.029
+     ],
+     "tarjetas": [
+      0.9775,
+      1.0083
+     ]
+    },
+    {
+     "nombre": "Manchester United",
+     "ataque": 1.1547,
+     "defensa": 0.9251,
+     "local": 1.1031,
+     "partidos": 83,
+     "sin_datos": false,
+     "córners": [
+      1.0421,
+      0.9509
+     ],
+     "tarjetas": [
+      0.9805,
+      1.0414
+     ]
+    },
+    {
+     "nombre": "Brentford",
+     "ataque": 1.0866,
+     "defensa": 0.9684,
+     "local": 1.1223,
+     "partidos": 83,
+     "sin_datos": false,
+     "córners": [
+      0.9635,
+      1.0829
+     ],
+     "tarjetas": [
+      0.9989,
+      0.9988
+     ]
+    },
+    {
+     "nombre": "Aston Villa",
+     "ataque": 1.0468,
+     "defensa": 0.9493,
+     "local": 1.0978,
+     "partidos": 83,
+     "sin_datos": false,
+     "córners": [
+      1.0357,
+      0.9569
+     ],
+     "tarjetas": [
+      0.9479,
+      1.1495
+     ]
+    },
+    {
+     "nombre": "Leeds",
+     "ataque": 0.9791,
+     "defensa": 0.9143,
+     "local": 1.0598,
+     "partidos": 45,
+     "sin_datos": false,
+     "córners": [
+      0.9351,
+      1.0015
+     ],
+     "tarjetas": [
+      0.9507,
+      0.9965
+     ]
     },
     {
      "nombre": "Everton",
-     "ataque": 0.9054,
-     "defensa": 0.8585,
+     "ataque": 0.9083,
+     "defensa": 0.8932,
+     "local": 1.0264,
      "partidos": 83,
-     "sin_datos": false
+     "sin_datos": false,
+     "córners": [
+      0.9341,
+      1.046
+     ],
+     "tarjetas": [
+      1.0104,
+      0.9161
+     ]
+    },
+    {
+     "nombre": "Newcastle",
+     "ataque": 1.0184,
+     "defensa": 1.0369,
+     "local": 1.2217,
+     "partidos": 83,
+     "sin_datos": false,
+     "córners": [
+      1.116,
+      1.0045
+     ],
+     "tarjetas": [
+      0.9849,
+      1.106
+     ]
     },
     {
      "nombre": "Hull",
-     "ataque": 0.8742,
-     "defensa": 0.8292,
+     "ataque": 0.8327,
+     "defensa": 0.8833,
+     "local": 1.0264,
      "partidos": 7,
-     "sin_datos": false
-    },
-    {
-     "nombre": "Fulham",
-     "ataque": 0.934,
-     "defensa": 0.9476,
-     "partidos": 83,
-     "sin_datos": false
+     "sin_datos": false,
+     "córners": [
+      0.9491,
+      1.074
+     ],
+     "tarjetas": [
+      1.0578,
+      0.9453
+     ]
     },
     {
      "nombre": "Tottenham",
-     "ataque": 0.9789,
-     "defensa": 1.0919,
+     "ataque": 1.0025,
+     "defensa": 1.0558,
+     "local": 0.9609,
      "partidos": 83,
-     "sin_datos": false
+     "sin_datos": false,
+     "córners": [
+      1.134,
+      0.9735
+     ],
+     "tarjetas": [
+      1.0722,
+      1.0337
+     ]
     },
     {
-     "nombre": "Sunderland",
-     "ataque": 0.8502,
-     "defensa": 0.9702,
-     "partidos": 45,
-     "sin_datos": false
+     "nombre": "Fulham",
+     "ataque": 0.8892,
+     "defensa": 0.9428,
+     "local": 1.1394,
+     "partidos": 83,
+     "sin_datos": false,
+     "córners": [
+      1.0587,
+      1.0042
+     ],
+     "tarjetas": [
+      1.0125,
+      0.9248
+     ]
     },
     {
      "nombre": "Crystal Palace",
-     "ataque": 0.9382,
-     "defensa": 1.0684,
+     "ataque": 0.9799,
+     "defensa": 1.0432,
+     "local": 0.9391,
      "partidos": 83,
-     "sin_datos": false
+     "sin_datos": false,
+     "córners": [
+      0.9028,
+      1.0539
+     ],
+     "tarjetas": [
+      0.9825,
+      0.9621
+     ]
     },
     {
-     "nombre": "Coventry",
-     "ataque": 0.7959,
-     "defensa": 1.2261,
-     "partidos": 7,
-     "sin_datos": false
+     "nombre": "Sunderland",
+     "ataque": 0.892,
+     "defensa": 0.9942,
+     "local": 0.9452,
+     "partidos": 45,
+     "sin_datos": false,
+     "córners": [
+      0.8878,
+      0.9987
+     ],
+     "tarjetas": [
+      1.0429,
+      0.9875
+     ]
     },
     {
      "nombre": "Ipswich",
-     "ataque": 0.92,
-     "defensa": 1.4468,
+     "ataque": 1.0024,
+     "defensa": 1.3818,
+     "local": 0.8479,
      "partidos": 45,
-     "sin_datos": false
+     "sin_datos": false,
+     "córners": [
+      0.881,
+      1.0789
+     ],
+     "tarjetas": [
+      1.02,
+      0.9969
+     ]
+    },
+    {
+     "nombre": "Coventry",
+     "ataque": 0.7998,
+     "defensa": 1.2166,
+     "local": 1.0674,
+     "partidos": 7,
+     "sin_datos": false,
+     "córners": [
+      0.9504,
+      0.9678
+     ],
+     "tarjetas": [
+      0.9556,
+      0.9692
+     ]
     }
    ],
    "tabla": {
@@ -1536,450 +1728,690 @@
      "local": "Ipswich",
      "visitante": "Nottingham Forest",
      "pendiente": false,
-     "lh": 1.1943,
-     "la": 1.7235,
-     "p1": 0.2543,
-     "px": 0.2583,
-     "p2": 0.4874,
-     "o25": 0.5581,
-     "btts": 0.5831,
+     "córners": [
+      4.73,
+      4.96
+     ],
+     "tarjetas": [
+      1.85,
+      2.08
+     ],
+     "lh": 1.1273,
+     "la": 2.0309,
+     "p1": 0.1972,
+     "px": 0.2289,
+     "p2": 0.5739,
+     "o25": 0.6113,
+     "btts": 0.5959,
      "marcador": "1-1",
-     "p_marcador": 0.1217
+     "p_marcador": 0.1058
     },
     {
      "fecha": "2026-10-24",
      "local": "Arsenal",
      "visitante": "Everton",
      "pendiente": false,
-     "lh": 1.6529,
-     "la": 0.6257,
-     "p1": 0.6133,
-     "px": 0.2589,
-     "p2": 0.1278,
-     "o25": 0.3983,
-     "btts": 0.386,
+     "córners": [
+      6.1,
+      3.42
+     ],
+     "tarjetas": [
+      1.45,
+      2.29
+     ],
+     "lh": 1.7095,
+     "la": 0.6662,
+     "p1": 0.6164,
+     "px": 0.2515,
+     "p2": 0.1321,
+     "o25": 0.4239,
+     "btts": 0.4076,
      "marcador": "1-0",
-     "p_marcador": 0.1594
+     "p_marcador": 0.1496
     },
     {
      "fecha": "2026-10-24",
      "local": "Aston Villa",
      "visitante": "Manchester City",
      "pendiente": false,
-     "lh": 1.1543,
-     "la": 1.7401,
-     "p1": 0.2422,
-     "px": 0.2572,
-     "p2": 0.5005,
-     "o25": 0.5527,
-     "btts": 0.575,
+     "córners": [
+      4.52,
+      5.34
+     ],
+     "tarjetas": [
+      1.77,
+      2.26
+     ],
+     "lh": 1.2486,
+     "la": 1.6559,
+     "p1": 0.2789,
+     "px": 0.2617,
+     "p2": 0.4594,
+     "o25": 0.5551,
+     "btts": 0.5869,
      "marcador": "1-1",
-     "p_marcador": 0.1215
+     "p_marcador": 0.1231
     },
     {
      "fecha": "2026-10-24",
      "local": "Coventry",
      "visitante": "Fulham",
      "pendiente": false,
-     "lh": 1.095,
-     "la": 1.4026,
-     "p1": 0.282,
-     "px": 0.29,
-     "p2": 0.4281,
-     "o25": 0.4556,
-     "btts": 0.5136,
+     "córners": [
+      4.98,
+      4.71
+     ],
+     "tarjetas": [
+      1.59,
+      2.1
+     ],
+     "lh": 1.1688,
+     "la": 1.3533,
+     "p1": 0.3115,
+     "px": 0.2895,
+     "p2": 0.399,
+     "o25": 0.4618,
+     "btts": 0.5223,
      "marcador": "1-1",
-     "p_marcador": 0.1382
+     "p_marcador": 0.1381
     },
     {
      "fecha": "2026-10-24",
      "local": "Chelsea",
      "visitante": "Tottenham",
      "pendiente": false,
-     "lh": 2.0485,
-     "la": 1.1647,
-     "p1": 0.5685,
-     "px": 0.2291,
-     "p2": 0.2024,
-     "o25": 0.6228,
-     "btts": 0.6083,
+     "córners": [
+      5.95,
+      4.75
+     ],
+     "tarjetas": [
+      2.06,
+      2.53
+     ],
+     "lh": 1.9144,
+     "la": 1.2008,
+     "p1": 0.5313,
+     "px": 0.2401,
+     "p2": 0.2286,
+     "o25": 0.6021,
+     "btts": 0.6049,
      "marcador": "1-1",
-     "p_marcador": 0.105
+     "p_marcador": 0.1109
     },
     {
      "fecha": "2026-10-25",
      "local": "Liverpool",
      "visitante": "Brighton",
      "pendiente": false,
-     "lh": 1.6831,
-     "la": 1.4704,
-     "p1": 0.4184,
-     "px": 0.2546,
-     "p2": 0.327,
-     "o25": 0.6103,
-     "btts": 0.637,
+     "córners": [
+      6.02,
+      4.17
+     ],
+     "tarjetas": [
+      1.74,
+      2.32
+     ],
+     "lh": 1.601,
+     "la": 1.4479,
+     "p1": 0.4038,
+     "px": 0.2592,
+     "p2": 0.337,
+     "o25": 0.5877,
+     "btts": 0.6203,
      "marcador": "1-1",
-     "p_marcador": 0.1156
+     "p_marcador": 0.1195
     },
     {
      "fecha": "2026-10-25",
      "local": "Manchester United",
      "visitante": "Bournemouth",
      "pendiente": false,
-     "lh": 1.6726,
-     "la": 1.3142,
-     "p1": 0.4485,
-     "px": 0.2602,
-     "p2": 0.2913,
-     "o25": 0.5738,
-     "btts": 0.6044,
+     "córners": [
+      5.37,
+      4.78
+     ],
+     "tarjetas": [
+      1.77,
+      2.52
+     ],
+     "lh": 1.7558,
+     "la": 1.4086,
+     "p1": 0.449,
+     "px": 0.2503,
+     "p2": 0.3006,
+     "o25": 0.6126,
+     "btts": 0.6341,
      "marcador": "1-1",
-     "p_marcador": 0.1213
+     "p_marcador": 0.1136
     },
     {
      "fecha": "2026-10-25",
      "local": "Crystal Palace",
      "visitante": "Newcastle",
      "pendiente": false,
-     "lh": 1.4243,
-     "la": 1.51,
-     "p1": 0.3473,
-     "px": 0.2673,
-     "p2": 0.3854,
-     "o25": 0.5619,
-     "btts": 0.6023,
+     "córners": [
+      4.73,
+      5.4
+     ],
+     "tarjetas": [
+      1.95,
+      2.03
+     ],
+     "lh": 1.3857,
+     "la": 1.3289,
+     "p1": 0.3738,
+     "px": 0.2786,
+     "p2": 0.3477,
+     "o25": 0.5099,
+     "btts": 0.562,
      "marcador": "1-1",
-     "p_marcador": 0.1251
+     "p_marcador": 0.1326
     },
     {
      "fecha": "2026-10-25",
      "local": "Hull",
      "visitante": "Brentford",
      "pendiente": false,
-     "lh": 1.2045,
-     "la": 1.2279,
-     "p1": 0.345,
-     "px": 0.2987,
-     "p2": 0.3563,
-     "o25": 0.4387,
-     "btts": 0.5073,
+     "córners": [
+      5.36,
+      4.75
+     ],
+     "tarjetas": [
+      1.9,
+      2.02
+     ],
+     "lh": 1.202,
+     "la": 1.2006,
+     "p1": 0.3507,
+     "px": 0.2993,
+     "p2": 0.35,
+     "o25": 0.431,
+     "btts": 0.5003,
      "marcador": "1-1",
-     "p_marcador": 0.1421
+     "p_marcador": 0.142
     },
     {
      "fecha": "2026-10-25",
      "local": "Sunderland",
      "visitante": "Leeds",
      "pendiente": false,
-     "lh": 1.1025,
-     "la": 1.2091,
-     "p1": 0.3202,
-     "px": 0.3071,
-     "p2": 0.3727,
-     "o25": 0.407,
-     "btts": 0.481,
+     "córners": [
+      4.64,
+      4.29
+     ],
+     "tarjetas": [
+      1.87,
+      2.01
+     ],
+     "lh": 1.1194,
+     "la": 1.2178,
+     "p1": 0.3241,
+     "px": 0.3036,
+     "p2": 0.3723,
+     "o25": 0.4138,
+     "btts": 0.4857,
      "marcador": "1-1",
-     "p_marcador": 0.1445
+     "p_marcador": 0.1432
     },
     {
      "fecha": "2026-10-31",
      "local": "Chelsea",
      "visitante": "Manchester United",
      "pendiente": false,
-     "lh": 1.7727,
-     "la": 1.4158,
-     "p1": 0.4509,
-     "px": 0.2503,
-     "p2": 0.2988,
-     "o25": 0.6177,
-     "btts": 0.6383,
+     "córners": [
+      5.81,
+      4.36
+     ],
+     "tarjetas": [
+      2.07,
+      2.31
+     ],
+     "lh": 1.6774,
+     "la": 1.3831,
+     "p1": 0.4357,
+     "px": 0.2565,
+     "p2": 0.3078,
+     "o25": 0.5902,
+     "btts": 0.6187,
      "marcador": "1-1",
-     "p_marcador": 0.1132
+     "p_marcador": 0.1182
     },
     {
      "fecha": "2026-10-31",
      "local": "Bournemouth",
      "visitante": "Leeds",
      "pendiente": false,
-     "lh": 1.4726,
-     "la": 1.2066,
-     "p1": 0.4216,
-     "px": 0.2795,
-     "p2": 0.2989,
-     "o25": 0.5013,
-     "btts": 0.5515,
+     "córners": [
+      5.71,
+      4.25
+     ],
+     "tarjetas": [
+      2.02,
+      2.05
+     ],
+     "lh": 1.4494,
+     "la": 1.1627,
+     "p1": 0.426,
+     "px": 0.2816,
+     "p2": 0.2924,
+     "o25": 0.4846,
+     "btts": 0.5368,
      "marcador": "1-1",
-     "p_marcador": 0.1333
+     "p_marcador": 0.1345
     },
     {
      "fecha": "2026-10-31",
      "local": "Brentford",
      "visitante": "Nottingham Forest",
      "pendiente": false,
-     "lh": 1.5693,
-     "la": 1.1306,
-     "p1": 0.4636,
-     "px": 0.2734,
-     "p2": 0.263,
-     "o25": 0.5064,
-     "btts": 0.5474,
+     "córners": [
+      5.17,
+      4.98
+     ],
+     "tarjetas": [
+      1.81,
+      2.09
+     ],
+     "lh": 1.6175,
+     "la": 1.4233,
+     "p1": 0.4128,
+     "px": 0.2592,
+     "p2": 0.328,
+     "o25": 0.5859,
+     "btts": 0.6181,
      "marcador": "1-1",
-     "p_marcador": 0.1304
+     "p_marcador": 0.1197
     },
     {
      "fecha": "2026-10-31",
      "local": "Manchester City",
      "visitante": "Brighton",
      "pendiente": false,
-     "lh": 1.9325,
-     "la": 1.1846,
-     "p1": 0.5384,
-     "px": 0.2398,
-     "p2": 0.2218,
-     "o25": 0.6025,
-     "btts": 0.6031,
+     "córners": [
+      6.23,
+      3.94
+     ],
+     "tarjetas": [
+      1.68,
+      2.3
+     ],
+     "lh": 1.97,
+     "la": 1.2139,
+     "p1": 0.5408,
+     "px": 0.2353,
+     "p2": 0.2238,
+     "o25": 0.6167,
+     "btts": 0.6136,
      "marcador": "1-1",
-     "p_marcador": 0.1109
+     "p_marcador": 0.1077
     },
     {
      "fecha": "2026-10-31",
      "local": "Aston Villa",
      "visitante": "Fulham",
      "pendiente": false,
-     "lh": 1.5188,
-     "la": 1.065,
-     "p1": 0.4658,
-     "px": 0.2797,
-     "p2": 0.2545,
-     "o25": 0.4775,
-     "btts": 0.5232,
+     "córners": [
+      5.43,
+      4.66
+     ],
+     "tarjetas": [
+      1.57,
+      2.49
+     ],
+     "lh": 1.5732,
+     "la": 1.056,
+     "p1": 0.4828,
+     "px": 0.2729,
+     "p2": 0.2443,
+     "o25": 0.4889,
+     "btts": 0.5274,
      "marcador": "1-1",
-     "p_marcador": 0.1335
+     "p_marcador": 0.1303
     },
     {
      "fecha": "2026-10-31",
      "local": "Hull",
      "visitante": "Ipswich",
      "pendiente": false,
-     "lh": 1.8362,
-     "la": 0.9344,
-     "p1": 0.5757,
-     "px": 0.2461,
-     "p2": 0.1782,
-     "o25": 0.5235,
-     "btts": 0.5205,
+     "córners": [
+      5.34,
+      4.35
+     ],
+     "tarjetas": [
+      1.89,
+      2.06
+     ],
+     "lh": 1.7151,
+     "la": 1.1076,
+     "p1": 0.506,
+     "px": 0.2585,
+     "p2": 0.2355,
+     "o25": 0.5359,
+     "btts": 0.559,
      "marcador": "1-1",
-     "p_marcador": 0.1175
+     "p_marcador": 0.1228
     },
     {
      "fecha": "2026-10-31",
      "local": "Coventry",
      "visitante": "Sunderland",
      "pendiente": false,
-     "lh": 1.121,
-     "la": 1.2767,
-     "p1": 0.3122,
-     "px": 0.3001,
-     "p2": 0.3877,
-     "o25": 0.4297,
-     "btts": 0.4982,
+     "córners": [
+      4.95,
+      3.95
+     ],
+     "tarjetas": [
+      1.7,
+      2.16
+     ],
+     "lh": 1.2326,
+     "la": 1.3575,
+     "p1": 0.3278,
+     "px": 0.2858,
+     "p2": 0.3864,
+     "o25": 0.4791,
+     "btts": 0.5371,
      "marcador": "1-1",
-     "p_marcador": 0.1423
+     "p_marcador": 0.1365
     },
     {
      "fecha": "2026-10-31",
      "local": "Tottenham",
      "visitante": "Crystal Palace",
      "pendiente": false,
-     "lh": 1.5184,
-     "la": 1.2547,
-     "p1": 0.4229,
-     "px": 0.274,
-     "p2": 0.3031,
-     "o25": 0.5241,
-     "btts": 0.5694,
+     "córners": [
+      6.23,
+      4.04
+     ],
+     "tarjetas": [
+      1.85,
+      2.17
+     ],
+     "lh": 1.4593,
+     "la": 1.2942,
+     "p1": 0.4,
+     "px": 0.2753,
+     "p2": 0.3247,
+     "o25": 0.5194,
+     "btts": 0.5677,
      "marcador": "1-1",
-     "p_marcador": 0.1302
+     "p_marcador": 0.1308
     },
     {
      "fecha": "2026-11-01",
      "local": "Liverpool",
      "visitante": "Arsenal",
      "pendiente": false,
-     "lh": 1.0888,
-     "la": 1.4521,
-     "p1": 0.2718,
-     "px": 0.2855,
-     "p2": 0.4427,
-     "o25": 0.4666,
-     "btts": 0.5198,
+     "córners": [
+      4.88,
+      4.54
+     ],
+     "tarjetas": [
+      1.81,
+      1.97
+     ],
+     "lh": 1.0656,
+     "la": 1.3871,
+     "p1": 0.2776,
+     "px": 0.291,
+     "p2": 0.4314,
+     "o25": 0.444,
+     "btts": 0.5029,
      "marcador": "1-1",
-     "p_marcador": 0.1362
+     "p_marcador": 0.1383
     },
     {
      "fecha": "2026-11-02",
      "local": "Newcastle",
      "visitante": "Everton",
      "pendiente": false,
-     "lh": 1.4382,
-     "la": 1.1596,
-     "p1": 0.4229,
-     "px": 0.2842,
-     "p2": 0.2928,
-     "o25": 0.481,
-     "btts": 0.5351,
+     "córners": [
+      6.09,
+      4.31
+     ],
+     "tarjetas": [
+      1.62,
+      2.39
+     ],
+     "lh": 1.6136,
+     "la": 1.1781,
+     "p1": 0.4647,
+     "px": 0.2668,
+     "p2": 0.2684,
+     "o25": 0.5286,
+     "btts": 0.5645,
      "marcador": "1-1",
-     "p_marcador": 0.1358
+     "p_marcador": 0.1267
     },
     {
      "fecha": "2026-11-07",
      "local": "Crystal Palace",
      "visitante": "Liverpool",
      "pendiente": false,
-     "lh": 1.2177,
-     "la": 1.7394,
-     "p1": 0.2574,
-     "px": 0.2566,
-     "p2": 0.4859,
-     "o25": 0.5671,
-     "btts": 0.5907,
+     "córners": [
+      4.16,
+      5.69
+     ],
+     "tarjetas": [
+      1.85,
+      1.96
+     ],
+     "lh": 1.1928,
+     "la": 1.7334,
+     "p1": 0.2531,
+     "px": 0.2561,
+     "p2": 0.4908,
+     "o25": 0.5601,
+     "btts": 0.5832,
      "marcador": "1-1",
-     "p_marcador": 0.1204
+     "p_marcador": 0.1205
     },
     {
      "fecha": "2026-11-07",
      "local": "Ipswich",
      "visitante": "Bournemouth",
      "pendiente": false,
-     "lh": 1.2933,
-     "la": 2.0122,
-     "p1": 0.2348,
-     "px": 0.2333,
-     "p2": 0.5319,
-     "o25": 0.6417,
-     "btts": 0.6376,
+     "córners": [
+      4.54,
+      5.42
+     ],
+     "tarjetas": [
+      1.85,
+      2.41
+     ],
+     "lh": 1.1717,
+     "la": 2.1039,
+     "p1": 0.1976,
+     "px": 0.2231,
+     "p2": 0.5793,
+     "o25": 0.6357,
+     "btts": 0.6141,
      "marcador": "1-1",
-     "p_marcador": 0.1044
+     "p_marcador": 0.1013
     },
     {
      "fecha": "2026-11-07",
      "local": "Sunderland",
      "visitante": "Chelsea",
      "pendiente": false,
-     "lh": 1.199,
-     "la": 1.5356,
-     "p1": 0.286,
-     "px": 0.2745,
-     "p2": 0.4395,
-     "o25": 0.5148,
-     "btts": 0.5593,
+     "córners": [
+      4.22,
+      5.38
+     ],
+     "tarjetas": [
+      2.07,
+      2.34
+     ],
+     "lh": 1.1723,
+     "la": 1.5329,
+     "p1": 0.2804,
+     "px": 0.2741,
+     "p2": 0.4455,
+     "o25": 0.5076,
+     "btts": 0.5518,
      "marcador": "1-1",
-     "p_marcador": 0.1307
+     "p_marcador": 0.1306
     },
     {
      "fecha": "2026-11-07",
      "local": "Manchester United",
      "visitante": "Aston Villa",
      "pendiente": false,
-     "lh": 1.6082,
-     "la": 1.2776,
-     "p1": 0.4406,
-     "px": 0.2662,
-     "p2": 0.2933,
-     "o25": 0.5508,
-     "btts": 0.5876,
+     "córners": [
+      5.2,
+      4.53
+     ],
+     "tarjetas": [
+      2.02,
+      2.11
+     ],
+     "lh": 1.7559,
+     "la": 1.2114,
+     "p1": 0.492,
+     "px": 0.2539,
+     "p2": 0.2541,
+     "o25": 0.5694,
+     "btts": 0.5905,
      "marcador": "1-1",
-     "p_marcador": 0.1254
+     "p_marcador": 0.119
     },
     {
      "fecha": "2026-11-07",
      "local": "Brighton",
      "visitante": "Brentford",
      "pendiente": false,
-     "lh": 1.8502,
-     "la": 1.2916,
-     "p1": 0.4957,
-     "px": 0.2465,
-     "p2": 0.2578,
-     "o25": 0.6078,
-     "btts": 0.6208,
+     "córners": [
+      5.8,
+      4.35
+     ],
+     "tarjetas": [
+      1.85,
+      2.17
+     ],
+     "lh": 1.857,
+     "la": 1.1975,
+     "p1": 0.5189,
+     "px": 0.2452,
+     "p2": 0.2359,
+     "o25": 0.5889,
+     "btts": 0.5982,
      "marcador": "1-1",
-     "p_marcador": 0.1129
+     "p_marcador": 0.114
     },
     {
      "fecha": "2026-11-07",
      "local": "Nottingham Forest",
      "visitante": "Manchester City",
      "pendiente": false,
-     "lh": 1.017,
-     "la": 1.6713,
-     "p1": 0.2193,
-     "px": 0.2647,
-     "p2": 0.5161,
-     "o25": 0.5035,
-     "btts": 0.5291,
+     "córners": [
+      4.37,
+      5.75
+     ],
+     "tarjetas": [
+      1.83,
+      1.99
+     ],
+     "lh": 0.9176,
+     "la": 1.5931,
+     "p1": 0.2066,
+     "px": 0.2718,
+     "p2": 0.5216,
+     "o25": 0.4589,
+     "btts": 0.4888,
      "marcador": "1-1",
-     "p_marcador": 0.1264
+     "p_marcador": 0.1291
     },
     {
      "fecha": "2026-11-07",
      "local": "Arsenal",
      "visitante": "Hull",
      "pendiente": false,
-     "lh": 1.5965,
-     "la": 0.6042,
-     "p1": 0.6055,
-     "px": 0.2662,
-     "p2": 0.1283,
-     "o25": 0.3775,
-     "btts": 0.3716,
+     "córners": [
+      6.26,
+      3.47
+     ],
+     "tarjetas": [
+      1.5,
+      2.39
+     ],
+     "lh": 1.6905,
+     "la": 0.6108,
+     "p1": 0.6271,
+     "px": 0.2515,
+     "p2": 0.1213,
+     "o25": 0.4043,
+     "btts": 0.3818,
      "marcador": "1-0",
-     "p_marcador": 0.1668
+     "p_marcador": 0.1602
     },
     {
      "fecha": "2026-11-07",
      "local": "Everton",
      "visitante": "Coventry",
      "pendiente": false,
-     "lh": 1.6117,
-     "la": 0.8369,
-     "p1": 0.5462,
-     "px": 0.2705,
-     "p2": 0.1833,
-     "o25": 0.4429,
-     "btts": 0.4647,
-     "marcador": "1-0",
-     "p_marcador": 0.1284
+     "córners": [
+      4.72,
+      4.57
+     ],
+     "tarjetas": [
+      1.76,
+      1.87
+     ],
+     "lh": 1.6469,
+     "la": 0.8937,
+     "p1": 0.5412,
+     "px": 0.2654,
+     "p2": 0.1933,
+     "o25": 0.4666,
+     "btts": 0.4872,
+     "marcador": "1-1",
+     "p_marcador": 0.1261
     },
     {
      "fecha": "2026-11-07",
      "local": "Leeds",
      "visitante": "Tottenham",
      "pendiente": false,
-     "lh": 1.6129,
-     "la": 1.0709,
-     "p1": 0.4886,
-     "px": 0.2702,
-     "p2": 0.2412,
-     "o25": 0.5024,
-     "btts": 0.5373,
+     "córners": [
+      4.75,
+      5.22
+     ],
+     "tarjetas": [
+      1.77,
+      2.29
+     ],
+     "lh": 1.5909,
+     "la": 1.1466,
+     "p1": 0.4662,
+     "px": 0.2695,
+     "p2": 0.2643,
+     "o25": 0.5155,
+     "btts": 0.5536,
      "marcador": "1-1",
-     "p_marcador": 0.129
+     "p_marcador": 0.1284
     },
     {
      "fecha": "2026-11-07",
      "local": "Fulham",
      "visitante": "Newcastle",
      "pendiente": false,
-     "lh": 1.4179,
-     "la": 1.3393,
-     "p1": 0.3792,
-     "px": 0.2774,
-     "p2": 0.3434,
-     "o25": 0.5203,
-     "btts": 0.5705,
+     "córners": [
+      5.55,
+      5.15
+     ],
+     "tarjetas": [
+      2.01,
+      1.95
+     ],
+     "lh": 1.5255,
+     "la": 1.201,
+     "p1": 0.4372,
+     "px": 0.2738,
+     "p2": 0.289,
+     "o25": 0.5128,
+     "btts": 0.5575,
      "marcador": "1-1",
-     "p_marcador": 0.1318
+     "p_marcador": 0.1304
     }
    ],
    "validacion": {
@@ -1988,29 +2420,47 @@
     "hasta": "2026-10-19",
     "mercados": {
      "1X2": {
-      "modelo": 0.6246445639710736,
+      "modelo": 0.6189395057788404,
       "base": 0.6632655207857722,
-      "logloss_modelo": 1.0395390017678807,
+      "logloss_modelo": 1.030994780929252,
       "logloss_base": 1.0943978581131182,
-      "mejora": 0.05822850065980245,
-      "mercado": 0.5999097411927756
+      "mejora": 0.06682997022733617,
+      "mercado": 0.6145357159285002
      },
      "Más de 2.5": {
-      "modelo": 0.25640037448796665,
+      "modelo": 0.2505372699924235,
       "base": 0.24704166090524246,
-      "mejora": -0.0378831390156249
+      "mejora": -0.014149876884619106
      },
      "Ambos anotan": {
-      "modelo": 0.24888077106090825,
+      "modelo": 0.2467596456761836,
       "base": 0.245824170042881,
-      "mejora": -0.012434094733215328
+      "mejora": -0.0038054664565303487
+     },
+     "Córners más de 9.5": {
+      "partidos": 371,
+      "linea": 9.5,
+      "modelo": 0.25007755412615984,
+      "base": 0.24827199032781333,
+      "prob_media": 0.537378338122968,
+      "frecuencia_real": 0.5471698113207547,
+      "mejora": -0.007272523154796762
+     },
+     "Tarjetas más de 4.5": {
+      "partidos": 371,
+      "linea": 4.5,
+      "modelo": 0.232126176676165,
+      "base": 0.23456425008395565,
+      "prob_media": 0.3610001780230525,
+      "frecuencia_real": 0.3719676549865229,
+      "mejora": 0.010394053684301907
      }
     },
-    "acierto_1x2": 0.4673913043478261,
+    "acierto_1x2": 0.48641304347826086,
     "apuestas_simuladas": {
      "umbral_ve": 0.05,
-     "apuestas": 150,
-     "roi": -0.23306666666666673,
+     "apuestas": 262,
+     "roi": -0.23362595419847332,
      "nota": "Apuesta plana de 1 unidad al resultado 1X2 con mayor VE si supera el umbral, a cuota de cierre."
     }
    },
@@ -2030,9 +2480,19 @@
    "nombre": "LaLiga (España)",
    "temporada": "2026-27",
    "fuente": "footballdata",
-   "home": 1.5037,
-   "away": 1.1208,
-   "rho": -0.0362,
+   "home": 1.4873,
+   "away": 1.1455,
+   "rho": -0.0333,
+   "conteos": {
+    "córners": {
+     "home": 5.3742,
+     "away": 4.2515
+    },
+    "tarjetas": {
+     "home": 2.1955,
+     "away": 2.4331
+    }
+   },
    "top": {
     "n": 4,
     "label": "Top 4 · Champions"
@@ -2046,143 +2506,323 @@
    "equipos": [
     {
      "nombre": "Barcelona",
-     "ataque": 2.2089,
-     "defensa": 0.7326,
+     "ataque": 2.1227,
+     "defensa": 0.7441,
+     "local": 0.9686,
      "partidos": 85,
-     "sin_datos": false
+     "sin_datos": false,
+     "córners": [
+      1.3271,
+      0.8698
+     ],
+     "tarjetas": [
+      0.8505,
+      1.0034
+     ]
     },
     {
      "nombre": "Real Madrid",
-     "ataque": 1.6334,
-     "defensa": 0.7054,
+     "ataque": 1.5342,
+     "defensa": 0.7249,
+     "local": 1.1181,
      "partidos": 85,
-     "sin_datos": false
+     "sin_datos": false,
+     "córners": [
+      1.2347,
+      0.8638
+     ],
+     "tarjetas": [
+      0.9302,
+      1.0588
+     ]
     },
     {
      "nombre": "Atlético de Madrid",
-     "ataque": 1.3815,
-     "defensa": 0.7465,
+     "ataque": 1.2513,
+     "defensa": 0.771,
+     "local": 1.1377,
      "partidos": 85,
-     "sin_datos": false
+     "sin_datos": false,
+     "córners": [
+      1.194,
+      0.8695
+     ],
+     "tarjetas": [
+      0.9737,
+      0.916
+     ]
     },
     {
      "nombre": "Villarreal",
-     "ataque": 1.3921,
-     "defensa": 0.9101,
+     "ataque": 1.2098,
+     "defensa": 0.9048,
+     "local": 1.1993,
      "partidos": 85,
-     "sin_datos": false
+     "sin_datos": false,
+     "córners": [
+      1.0252,
+      0.9904
+     ],
+     "tarjetas": [
+      0.9578,
+      1.0054
+     ]
     },
     {
      "nombre": "Real Betis",
-     "ataque": 1.279,
-     "defensa": 0.933,
+     "ataque": 1.2556,
+     "defensa": 0.9687,
+     "local": 1.0122,
      "partidos": 85,
-     "sin_datos": false
-    },
-    {
-     "nombre": "Celta de Vigo",
-     "ataque": 1.0801,
-     "defensa": 0.8876,
-     "partidos": 85,
-     "sin_datos": false
+     "sin_datos": false,
+     "córners": [
+      0.9993,
+      1.0318
+     ],
+     "tarjetas": [
+      0.915,
+      1.0393
+     ]
     },
     {
      "nombre": "Athletic Club",
-     "ataque": 0.9577,
-     "defensa": 0.8617,
+     "ataque": 1.0138,
+     "defensa": 0.8625,
+     "local": 0.9743,
      "partidos": 84,
-     "sin_datos": false
+     "sin_datos": false,
+     "córners": [
+      1.1455,
+      0.8741
+     ],
+     "tarjetas": [
+      0.9525,
+      0.9448
+     ]
+    },
+    {
+     "nombre": "Celta de Vigo",
+     "ataque": 1.0326,
+     "defensa": 0.8993,
+     "local": 1.0243,
+     "partidos": 85,
+     "sin_datos": false,
+     "córners": [
+      0.8372,
+      0.9441
+     ],
+     "tarjetas": [
+      0.9313,
+      1.0161
+     ]
     },
     {
      "nombre": "Real Sociedad",
-     "ataque": 1.1887,
-     "defensa": 1.1066,
+     "ataque": 1.1731,
+     "defensa": 1.074,
+     "local": 0.9567,
      "partidos": 85,
-     "sin_datos": false
+     "sin_datos": false,
+     "córners": [
+      1.1564,
+      0.9685
+     ],
+     "tarjetas": [
+      1.0171,
+      1.037
+     ]
     },
     {
      "nombre": "Rayo Vallecano",
-     "ataque": 0.9389,
-     "defensa": 0.9105,
+     "ataque": 0.9971,
+     "defensa": 0.9277,
+     "local": 1.0145,
      "partidos": 84,
-     "sin_datos": false
-    },
-    {
-     "nombre": "Alavés",
-     "ataque": 0.9489,
-     "defensa": 0.9511,
-     "partidos": 85,
-     "sin_datos": false
-    },
-    {
-     "nombre": "Levante",
-     "ataque": 1.109,
-     "defensa": 1.1396,
-     "partidos": 47,
-     "sin_datos": false
-    },
-    {
-     "nombre": "Elche",
-     "ataque": 1.0342,
-     "defensa": 1.0716,
-     "partidos": 47,
-     "sin_datos": false
-    },
-    {
-     "nombre": "Deportivo La Coruña",
-     "ataque": 1.0027,
-     "defensa": 1.0473,
-     "partidos": 9,
-     "sin_datos": false
+     "sin_datos": false,
+     "córners": [
+      1.1181,
+      1.0737
+     ],
+     "tarjetas": [
+      1.1038,
+      1.018
+     ]
     },
     {
      "nombre": "Sevilla",
-     "ataque": 1.0124,
-     "defensa": 1.0645,
+     "ataque": 1.0789,
+     "defensa": 1.0169,
+     "local": 0.8401,
      "partidos": 85,
-     "sin_datos": false
+     "sin_datos": false,
+     "córners": [
+      0.9555,
+      0.8963
+     ],
+     "tarjetas": [
+      1.1402,
+      1.0033
+     ]
+    },
+    {
+     "nombre": "Alavés",
+     "ataque": 0.9673,
+     "defensa": 0.9346,
+     "local": 0.9802,
+     "partidos": 85,
+     "sin_datos": false,
+     "córners": [
+      0.9991,
+      1.0092
+     ],
+     "tarjetas": [
+      1.0529,
+      1.0336
+     ]
+    },
+    {
+     "nombre": "Deportivo La Coruña",
+     "ataque": 1.0123,
+     "defensa": 1.0198,
+     "local": 0.8868,
+     "partidos": 9,
+     "sin_datos": false,
+     "córners": [
+      1.028,
+      1.0433
+     ],
+     "tarjetas": [
+      0.9903,
+      0.9749
+     ]
     },
     {
      "nombre": "Espanyol",
-     "ataque": 0.8972,
-     "defensa": 0.972,
+     "ataque": 0.9506,
+     "defensa": 1.0111,
+     "local": 0.9074,
      "partidos": 85,
-     "sin_datos": false
-    },
-    {
-     "nombre": "Getafe",
-     "ataque": 0.6436,
-     "defensa": 0.7269,
-     "partidos": 85,
-     "sin_datos": false
-    },
-    {
-     "nombre": "Osasuna",
-     "ataque": 0.9479,
-     "defensa": 1.0345,
-     "partidos": 85,
-     "sin_datos": false
+     "sin_datos": false,
+     "córners": [
+      0.9031,
+      1.056
+     ],
+     "tarjetas": [
+      1.0606,
+      1.0245
+     ]
     },
     {
      "nombre": "Valencia",
-     "ataque": 0.8951,
-     "defensa": 0.9994,
+     "ataque": 0.8935,
+     "defensa": 0.9796,
+     "local": 0.9606,
      "partidos": 85,
-     "sin_datos": false
+     "sin_datos": false,
+     "córners": [
+      1.0017,
+      0.9858
+     ],
+     "tarjetas": [
+      0.95,
+      1.0199
+     ]
     },
     {
-     "nombre": "Racing de Santander",
-     "ataque": 1.1196,
-     "defensa": 1.7435,
-     "partidos": 9,
-     "sin_datos": false
+     "nombre": "Getafe",
+     "ataque": 0.6823,
+     "defensa": 0.7748,
+     "local": 0.9468,
+     "partidos": 85,
+     "sin_datos": false,
+     "córners": [
+      0.9062,
+      0.9755
+     ],
+     "tarjetas": [
+      1.208,
+      1.0551
+     ]
+    },
+    {
+     "nombre": "Elche",
+     "ataque": 0.9753,
+     "defensa": 1.0771,
+     "local": 1.0514,
+     "partidos": 47,
+     "sin_datos": false,
+     "córners": [
+      0.9154,
+      0.9475
+     ],
+     "tarjetas": [
+      1.0098,
+      0.9946
+     ]
+    },
+    {
+     "nombre": "Osasuna",
+     "ataque": 0.9244,
+     "defensa": 1.0325,
+     "local": 1.0839,
+     "partidos": 85,
+     "sin_datos": false,
+     "córners": [
+      0.8955,
+      0.9999
+     ],
+     "tarjetas": [
+      1.0373,
+      1.0127
+     ]
+    },
+    {
+     "nombre": "Levante",
+     "ataque": 0.9752,
+     "defensa": 1.1466,
+     "local": 1.2234,
+     "partidos": 47,
+     "sin_datos": false,
+     "córners": [
+      0.9354,
+      1.0912
+     ],
+     "tarjetas": [
+      0.9574,
+      1.0389
+     ]
     },
     {
      "nombre": "Málaga",
-     "ataque": 0.6439,
-     "defensa": 1.3289,
+     "ataque": 0.6632,
+     "defensa": 1.2753,
+     "local": 1.0168,
      "partidos": 9,
-     "sin_datos": false
+     "sin_datos": false,
+     "córners": [
+      1.0476,
+      1.0002
+     ],
+     "tarjetas": [
+      0.976,
+      0.9928
+     ]
+    },
+    {
+     "nombre": "Racing de Santander",
+     "ataque": 1.0185,
+     "defensa": 1.6994,
+     "local": 1.1563,
+     "partidos": 9,
+     "sin_datos": false,
+     "córners": [
+      1.0011,
+      1.2127
+     ],
+     "tarjetas": [
+      1.0307,
+      1.025
+     ]
     }
    ],
    "tabla": {
@@ -3479,450 +4119,690 @@
      "local": "Rayo Vallecano",
      "visitante": "Athletic Club",
      "pendiente": false,
-     "lh": 1.2164,
-     "la": 0.9772,
-     "p1": 0.4108,
-     "px": 0.2987,
-     "p2": 0.2905,
-     "o25": 0.3756,
-     "btts": 0.4437,
+     "córners": [
+      5.25,
+      5.23
+     ],
+     "tarjetas": [
+      2.29,
+      2.36
+     ],
+     "lh": 1.2977,
+     "la": 1.0774,
+     "p1": 0.4111,
+     "px": 0.2849,
+     "p2": 0.304,
+     "o25": 0.4238,
+     "btts": 0.4837,
      "marcador": "1-1",
-     "p_marcador": 0.1374
+     "p_marcador": 0.1344
     },
     {
      "fecha": "2026-10-23",
      "local": "Alavés",
      "visitante": "Málaga",
      "pendiente": false,
-     "lh": 1.8961,
-     "la": 0.6863,
-     "p1": 0.6581,
-     "px": 0.2181,
-     "p2": 0.1238,
-     "o25": 0.4772,
-     "btts": 0.4256,
+     "córners": [
+      5.37,
+      4.49
+     ],
+     "tarjetas": [
+      2.29,
+      2.45
+     ],
+     "lh": 1.7984,
+     "la": 0.7101,
+     "p1": 0.6308,
+     "px": 0.2305,
+     "p2": 0.1386,
+     "o25": 0.4583,
+     "btts": 0.4277,
      "marcador": "1-0",
-     "p_marcador": 0.1398
+     "p_marcador": 0.1429
     },
     {
      "fecha": "2026-10-24",
      "local": "Valencia",
      "visitante": "Villarreal",
      "pendiente": false,
-     "lh": 1.2249,
-     "la": 1.5593,
-     "p1": 0.2952,
-     "px": 0.2582,
-     "p2": 0.4466,
-     "o25": 0.5268,
-     "btts": 0.562,
+     "córners": [
+      5.33,
+      4.3
+     ],
+     "tarjetas": [
+      2.1,
+      2.38
+     ],
+     "lh": 1.155,
+     "la": 1.3575,
+     "p1": 0.3139,
+     "px": 0.276,
+     "p2": 0.4101,
+     "o25": 0.4594,
+     "btts": 0.5129,
      "marcador": "1-1",
-     "p_marcador": 0.1223
+     "p_marcador": 0.1313
     },
     {
      "fecha": "2026-10-24",
      "local": "Atlético de Madrid",
      "visitante": "Deportivo La Coruña",
      "pendiente": false,
-     "lh": 2.1755,
-     "la": 0.8389,
-     "p1": 0.6762,
-     "px": 0.1953,
-     "p2": 0.1285,
-     "o25": 0.58,
-     "btts": 0.5066,
+     "córners": [
+      6.69,
+      3.8
+     ],
+     "tarjetas": [
+      2.08,
+      2.21
+     ],
+     "lh": 2.1592,
+     "la": 0.8941,
+     "p1": 0.6601,
+     "px": 0.1991,
+     "p2": 0.1408,
+     "o25": 0.5886,
+     "btts": 0.5258,
      "marcador": "2-0",
-     "p_marcador": 0.1161
+     "p_marcador": 0.11
     },
     {
      "fecha": "2026-10-24",
      "local": "Rayo Vallecano",
      "visitante": "Elche",
      "pendiente": false,
-     "lh": 1.5128,
-     "la": 1.0554,
-     "p1": 0.4736,
-     "px": 0.2664,
-     "p2": 0.26,
-     "o25": 0.4736,
-     "btts": 0.5128,
+     "córners": [
+      5.69,
+      4.18
+     ],
+     "tarjetas": [
+      2.41,
+      2.5
+     ],
+     "lh": 1.6205,
+     "la": 1.0365,
+     "p1": 0.5058,
+     "px": 0.2556,
+     "p2": 0.2386,
+     "o25": 0.4958,
+     "btts": 0.5216,
      "marcador": "1-1",
-     "p_marcador": 0.1269
+     "p_marcador": 0.1218
     },
     {
      "fecha": "2026-10-24",
      "local": "Racing de Santander",
      "visitante": "Espanyol",
      "pendiente": false,
-     "lh": 1.6364,
-     "la": 1.7532,
-     "p1": 0.359,
-     "px": 0.2335,
-     "p2": 0.4076,
-     "o25": 0.6582,
-     "btts": 0.6693,
+     "córners": [
+      5.68,
+      4.66
+     ],
+     "tarjetas": [
+      2.32,
+      2.65
+     ],
+     "lh": 1.771,
+     "la": 1.8506,
+     "p1": 0.3718,
+     "px": 0.2243,
+     "p2": 0.4039,
+     "o25": 0.7011,
+     "btts": 0.7023,
      "marcador": "1-1",
-     "p_marcador": 0.1003
+     "p_marcador": 0.0906
     },
     {
      "fecha": "2026-10-25",
      "local": "Celta de Vigo",
      "visitante": "Real Betis",
      "pendiente": false,
-     "lh": 1.5153,
-     "la": 1.2723,
-     "p1": 0.4251,
-     "px": 0.2599,
-     "p2": 0.315,
-     "o25": 0.5276,
-     "btts": 0.5659,
+     "córners": [
+      4.64,
+      4.01
+     ],
+     "tarjetas": [
+      2.12,
+      2.26
+     ],
+     "lh": 1.5239,
+     "la": 1.2935,
+     "p1": 0.423,
+     "px": 0.2579,
+     "p2": 0.3191,
+     "o25": 0.5347,
+     "btts": 0.5715,
      "marcador": "1-1",
-     "p_marcador": 0.123
+     "p_marcador": 0.1217
     },
     {
      "fecha": "2026-10-25",
      "local": "Real Sociedad",
      "visitante": "Levante",
      "pendiente": false,
-     "lh": 2.0371,
-     "la": 1.3755,
-     "p1": 0.5247,
-     "px": 0.2208,
-     "p2": 0.2545,
-     "o25": 0.6627,
-     "btts": 0.6532,
+     "córners": [
+      6.78,
+      3.85
+     ],
+     "tarjetas": [
+      2.32,
+      2.42
+     ],
+     "lh": 1.9138,
+     "la": 1.1998,
+     "p1": 0.5369,
+     "px": 0.2292,
+     "p2": 0.234,
+     "o25": 0.6018,
+     "btts": 0.5991,
      "marcador": "1-1",
-     "p_marcador": 0.0957
+     "p_marcador": 0.1054
     },
     {
      "fecha": "2026-10-25",
      "local": "Barcelona",
      "visitante": "Real Madrid",
      "pendiente": false,
-     "lh": 2.343,
-     "la": 1.3411,
-     "p1": 0.5949,
-     "px": 0.1983,
-     "p2": 0.2068,
-     "o25": 0.7119,
-     "btts": 0.6704,
+     "córners": [
+      6.16,
+      4.57
+     ],
+     "tarjetas": [
+      1.98,
+      2.27
+     ],
+     "lh": 2.2168,
+     "la": 1.3078,
+     "p1": 0.5773,
+     "px": 0.2065,
+     "p2": 0.2162,
+     "o25": 0.6837,
+     "btts": 0.6529,
      "marcador": "2-1",
-     "p_marcador": 0.0925
+     "p_marcador": 0.0947
     },
     {
      "fecha": "2026-10-25",
      "local": "Athletic Club",
      "visitante": "Getafe",
      "pendiente": false,
-     "lh": 1.0468,
-     "la": 0.6215,
-     "p1": 0.4478,
-     "px": 0.3416,
-     "p2": 0.2106,
-     "o25": 0.2344,
-     "btts": 0.3048,
-     "marcador": "0-0",
-     "p_marcador": 0.193
+     "córners": [
+      6.01,
+      3.37
+     ],
+     "tarjetas": [
+      2.21,
+      2.78
+     ],
+     "lh": 1.1382,
+     "la": 0.6741,
+     "p1": 0.4636,
+     "px": 0.3231,
+     "p2": 0.2134,
+     "o25": 0.2727,
+     "btts": 0.3375,
+     "marcador": "1-0",
+     "p_marcador": 0.1817
     },
     {
      "fecha": "2026-10-26",
      "local": "Sevilla",
      "visitante": "Osasuna",
      "pendiente": false,
-     "lh": 1.5749,
-     "la": 1.1309,
-     "p1": 0.4718,
-     "px": 0.2592,
-     "p2": 0.269,
-     "o25": 0.5078,
-     "btts": 0.5414,
+     "córners": [
+      5.13,
+      3.41
+     ],
+     "tarjetas": [
+      2.54,
+      2.53
+     ],
+     "lh": 1.3919,
+     "la": 1.0768,
+     "p1": 0.437,
+     "px": 0.2764,
+     "p2": 0.2866,
+     "o25": 0.4481,
+     "btts": 0.4996,
      "marcador": "1-1",
-     "p_marcador": 0.1233
+     "p_marcador": 0.1312
     },
     {
      "fecha": "2026-11-01",
      "local": "Deportivo La Coruña",
      "visitante": "Osasuna",
      "pendiente": false,
-     "lh": 1.5599,
-     "la": 1.1126,
-     "p1": 0.4722,
-     "px": 0.2609,
-     "p2": 0.2669,
-     "o25": 0.4996,
-     "btts": 0.5346,
+     "córners": [
+      5.52,
+      3.97
+     ],
+     "tarjetas": [
+      2.2,
+      2.46
+     ],
+     "lh": 1.3785,
+     "la": 1.0799,
+     "p1": 0.4327,
+     "px": 0.2775,
+     "p2": 0.2899,
+     "o25": 0.4455,
+     "btts": 0.4982,
      "marcador": "1-1",
-     "p_marcador": 0.1242
+     "p_marcador": 0.1316
     },
     {
      "fecha": "2026-11-01",
      "local": "Rayo Vallecano",
      "visitante": "Celta de Vigo",
      "pendiente": false,
-     "lh": 1.253,
-     "la": 1.1022,
-     "p1": 0.3927,
-     "px": 0.2882,
-     "p2": 0.319,
-     "o25": 0.4185,
-     "btts": 0.4818,
+     "córners": [
+      5.67,
+      3.82
+     ],
+     "tarjetas": [
+      2.46,
+      2.31
+     ],
+     "lh": 1.3531,
+     "la": 1.0974,
+     "p1": 0.4218,
+     "px": 0.279,
+     "p2": 0.2992,
+     "o25": 0.4434,
+     "btts": 0.4983,
      "marcador": "1-1",
-     "p_marcador": 0.1358
+     "p_marcador": 0.1323
     },
     {
      "fecha": "2026-11-01",
      "local": "Racing de Santander",
      "visitante": "Real Madrid",
      "pendiente": false,
-     "lh": 1.1876,
-     "la": 3.1918,
-     "p1": 0.104,
-     "px": 0.1328,
-     "p2": 0.7632,
-     "o25": 0.8123,
-     "btts": 0.6682,
-     "marcador": "1-3",
-     "p_marcador": 0.0807
+     "córners": [
+      4.65,
+      6.37
+     ],
+     "tarjetas": [
+      2.4,
+      2.32
+     ],
+     "lh": 1.2698,
+     "la": 2.9867,
+     "p1": 0.1306,
+     "px": 0.1499,
+     "p2": 0.7195,
+     "o25": 0.7971,
+     "btts": 0.6846,
+     "marcador": "1-2",
+     "p_marcador": 0.0803
     },
     {
      "fecha": "2026-11-01",
      "local": "Barcelona",
      "visitante": "Alavés",
      "pendiente": false,
-     "lh": 3.1589,
-     "la": 0.7791,
-     "p1": 0.8326,
-     "px": 0.1099,
-     "p2": 0.0574,
-     "o25": 0.7526,
-     "btts": 0.5199,
-     "marcador": "3-0",
-     "p_marcador": 0.1024
+     "córners": [
+      7.2,
+      3.69
+     ],
+     "tarjetas": [
+      1.93,
+      2.57
+     ],
+     "lh": 2.8581,
+     "la": 0.8245,
+     "p1": 0.7885,
+     "px": 0.134,
+     "p2": 0.0775,
+     "o25": 0.7116,
+     "btts": 0.5313,
+     "marcador": "2-0",
+     "p_marcador": 0.1028
     },
     {
      "fecha": "2026-11-01",
      "local": "Getafe",
      "visitante": "Sevilla",
      "pendiente": false,
-     "lh": 1.0301,
-     "la": 0.8249,
-     "p1": 0.3903,
-     "px": 0.3301,
-     "p2": 0.2797,
-     "o25": 0.2841,
-     "btts": 0.366,
+     "córners": [
+      4.37,
+      3.96
+     ],
+     "tarjetas": [
+      2.66,
+      2.93
+     ],
+     "lh": 0.977,
+     "la": 0.9577,
+     "p1": 0.3433,
+     "px": 0.3238,
+     "p2": 0.333,
+     "o25": 0.3056,
+     "btts": 0.3888,
      "marcador": "0-0",
-     "p_marcador": 0.1613
+     "p_marcador": 0.149
     },
     {
      "fecha": "2026-11-01",
      "local": "Elche",
      "visitante": "Valencia",
      "pendiente": false,
-     "lh": 1.5543,
-     "la": 1.075,
-     "p1": 0.4796,
-     "px": 0.2621,
-     "p2": 0.2583,
-     "o25": 0.4889,
-     "btts": 0.5238,
+     "córners": [
+      4.85,
+      4.03
+     ],
+     "tarjetas": [
+      2.26,
+      2.3
+     ],
+     "lh": 1.4938,
+     "la": 1.1024,
+     "p1": 0.458,
+     "px": 0.2663,
+     "p2": 0.2757,
+     "o25": 0.4806,
+     "btts": 0.5221,
      "marcador": "1-1",
-     "p_marcador": 0.1249
+     "p_marcador": 0.1269
     },
     {
      "fecha": "2026-11-01",
      "local": "Villarreal",
      "visitante": "Espanyol",
      "pendiente": false,
-     "lh": 2.0347,
-     "la": 0.9151,
-     "p1": 0.6298,
-     "px": 0.2128,
-     "p2": 0.1574,
-     "o25": 0.5655,
-     "btts": 0.5247,
+     "córners": [
+      5.82,
+      3.8
+     ],
+     "tarjetas": [
+      2.15,
+      2.59
+     ],
+     "lh": 2.1817,
+     "la": 0.9853,
+     "p1": 0.6431,
+     "px": 0.2007,
+     "p2": 0.1562,
+     "o25": 0.6132,
+     "btts": 0.559,
      "marcador": "2-0",
-     "p_marcador": 0.1084
+     "p_marcador": 0.1003
     },
     {
      "fecha": "2026-11-01",
      "local": "Real Betis",
      "visitante": "Málaga",
      "pendiente": false,
-     "lh": 2.5558,
-     "la": 0.6733,
-     "p1": 0.7781,
-     "px": 0.1482,
-     "p2": 0.0737,
-     "o25": 0.6261,
-     "btts": 0.4544,
+     "córners": [
+      5.37,
+      4.6
+     ],
+     "tarjetas": [
+      1.99,
+      2.47
+     ],
+     "lh": 2.4106,
+     "la": 0.736,
+     "p1": 0.742,
+     "px": 0.1657,
+     "p2": 0.0923,
+     "o25": 0.6088,
+     "btts": 0.4767,
      "marcador": "2-0",
-     "p_marcador": 0.1293
+     "p_marcador": 0.1249
     },
     {
      "fecha": "2026-11-01",
      "local": "Levante",
      "visitante": "Atlético de Madrid",
      "pendiente": false,
-     "lh": 1.2448,
-     "la": 1.7645,
-     "p1": 0.2662,
-     "px": 0.2417,
-     "p2": 0.4921,
-     "o25": 0.5789,
-     "btts": 0.594,
+     "córners": [
+      4.37,
+      5.54
+     ],
+     "tarjetas": [
+      1.93,
+      2.46
+     ],
+     "lh": 1.3682,
+     "la": 1.6435,
+     "p1": 0.316,
+     "px": 0.2474,
+     "p2": 0.4366,
+     "o25": 0.5794,
+     "btts": 0.605,
      "marcador": "1-1",
-     "p_marcador": 0.1123
+     "p_marcador": 0.1143
     },
     {
      "fecha": "2026-11-01",
      "local": "Athletic Club",
      "visitante": "Real Sociedad",
      "pendiente": false,
-     "lh": 1.5935,
-     "la": 1.148,
-     "p1": 0.4726,
-     "px": 0.2572,
-     "p2": 0.2702,
-     "o25": 0.5165,
-     "btts": 0.5483,
+     "córners": [
+      5.96,
+      4.3
+     ],
+     "tarjetas": [
+      2.17,
+      2.34
+     ],
+     "lh": 1.5777,
+     "la": 1.159,
+     "p1": 0.4664,
+     "px": 0.2576,
+     "p2": 0.276,
+     "o25": 0.5153,
+     "btts": 0.5485,
      "marcador": "1-1",
-     "p_marcador": 0.1222
+     "p_marcador": 0.1224
     },
     {
      "fecha": "2026-11-08",
      "local": "Real Sociedad",
      "visitante": "Rayo Vallecano",
      "pendiente": false,
-     "lh": 1.6275,
-     "la": 1.1644,
-     "p1": 0.4772,
-     "px": 0.254,
-     "p2": 0.2688,
-     "o25": 0.5286,
-     "btts": 0.557,
+     "córners": [
+      6.67,
+      4.6
+     ],
+     "tarjetas": [
+      2.27,
+      2.79
+     ],
+     "lh": 1.5485,
+     "la": 1.2268,
+     "p1": 0.4438,
+     "px": 0.2583,
+     "p2": 0.2979,
+     "o25": 0.5246,
+     "btts": 0.5605,
      "marcador": "1-1",
-     "p_marcador": 0.1204
+     "p_marcador": 0.1224
     },
     {
      "fecha": "2026-11-08",
      "local": "Málaga",
      "visitante": "Racing de Santander",
      "pendiente": false,
-     "lh": 1.6881,
-     "la": 1.6675,
-     "p1": 0.3867,
-     "px": 0.2352,
-     "p2": 0.3781,
-     "o25": 0.6516,
-     "btts": 0.6649,
+     "córners": [
+      6.83,
+      4.26
+     ],
+     "tarjetas": [
+      2.2,
+      2.49
+     ],
+     "lh": 1.7043,
+     "la": 1.488,
+     "p1": 0.4261,
+     "px": 0.2401,
+     "p2": 0.3338,
+     "o25": 0.6185,
+     "btts": 0.6368,
      "marcador": "1-1",
-     "p_marcador": 0.1018
+     "p_marcador": 0.1076
     },
     {
      "fecha": "2026-11-08",
      "local": "Villarreal",
      "visitante": "Getafe",
      "pendiente": false,
-     "lh": 1.5217,
-     "la": 0.6564,
-     "p1": 0.5781,
-     "px": 0.2662,
-     "p2": 0.1557,
-     "o25": 0.3714,
-     "btts": 0.3803,
+     "córners": [
+      5.37,
+      3.82
+     ],
+     "tarjetas": [
+      2.22,
+      2.96
+     ],
+     "lh": 1.672,
+     "la": 0.7072,
+     "p1": 0.6021,
+     "px": 0.2464,
+     "p2": 0.1515,
+     "o25": 0.4249,
+     "btts": 0.4154,
      "marcador": "1-0",
-     "p_marcador": 0.1682
+     "p_marcador": 0.1512
     },
     {
      "fecha": "2026-11-08",
      "local": "Atlético de Madrid",
      "visitante": "Barcelona",
      "pendiente": false,
-     "lh": 1.5218,
-     "la": 1.8479,
-     "p1": 0.3164,
-     "px": 0.2316,
-     "p2": 0.452,
-     "o25": 0.6544,
-     "btts": 0.662,
+     "córners": [
+      5.58,
+      4.91
+     ],
+     "tarjetas": [
+      2.15,
+      1.9
+     ],
+     "lh": 1.5755,
+     "la": 1.8748,
+     "p1": 0.3242,
+     "px": 0.2284,
+     "p2": 0.4474,
+     "o25": 0.6699,
+     "btts": 0.6746,
      "marcador": "1-1",
-     "p_marcador": 0.1002
+     "p_marcador": 0.0969
     },
     {
      "fecha": "2026-11-08",
      "local": "Espanyol",
      "visitante": "Deportivo La Coruña",
      "pendiente": false,
-     "lh": 1.4129,
-     "la": 1.0924,
-     "p1": 0.4387,
-     "px": 0.2746,
-     "p2": 0.2867,
-     "o25": 0.4575,
-     "btts": 0.5074,
+     "córners": [
+      5.06,
+      4.62
+     ],
+     "tarjetas": [
+      2.27,
+      2.47
+     ],
+     "lh": 1.3083,
+     "la": 1.1725,
+     "p1": 0.3929,
+     "px": 0.2791,
+     "p2": 0.328,
+     "o25": 0.4512,
+     "btts": 0.5081,
      "marcador": "1-1",
-     "p_marcador": 0.1306
+     "p_marcador": 0.1326
     },
     {
      "fecha": "2026-11-08",
      "local": "Celta de Vigo",
      "visitante": "Levante",
      "pendiente": false,
-     "lh": 1.8509,
-     "la": 1.1032,
-     "p1": 0.5446,
-     "px": 0.2346,
-     "p2": 0.2207,
-     "o25": 0.5664,
-     "btts": 0.5671,
+     "córners": [
+      4.91,
+      3.75
+     ],
+     "tarjetas": [
+      2.12,
+      2.37
+     ],
+     "lh": 1.8037,
+     "la": 1.0046,
+     "p1": 0.5576,
+     "px": 0.2376,
+     "p2": 0.2049,
+     "o25": 0.5325,
+     "btts": 0.5331,
      "marcador": "1-1",
-     "p_marcador": 0.1103
+     "p_marcador": 0.1129
     },
     {
      "fecha": "2026-11-08",
      "local": "Osasuna",
      "visitante": "Athletic Club",
      "pendiente": false,
-     "lh": 1.2282,
-     "la": 1.1104,
-     "p1": 0.384,
-     "px": 0.2898,
-     "p2": 0.3262,
-     "o25": 0.4142,
-     "btts": 0.479,
+     "córners": [
+      4.21,
+      4.87
+     ],
+     "tarjetas": [
+      2.15,
+      2.35
+     ],
+     "lh": 1.2852,
+     "la": 1.199,
+     "p1": 0.3809,
+     "px": 0.2793,
+     "p2": 0.3398,
+     "o25": 0.4521,
+     "btts": 0.5096,
      "marcador": "1-1",
-     "p_marcador": 0.1363
+     "p_marcador": 0.1328
     },
     {
      "fecha": "2026-11-08",
      "local": "Elche",
      "visitante": "Real Betis",
      "pendiente": false,
-     "lh": 1.451,
-     "la": 1.5361,
-     "p1": 0.3555,
-     "px": 0.2515,
-     "p2": 0.393,
-     "o25": 0.5739,
-     "btts": 0.6049,
+     "córners": [
+      5.08,
+      4.03
+     ],
+     "tarjetas": [
+      2.3,
+      2.21
+     ],
+     "lh": 1.4773,
+     "la": 1.5492,
+     "p1": 0.3597,
+     "px": 0.249,
+     "p2": 0.3912,
+     "o25": 0.5827,
+     "btts": 0.6115,
      "marcador": "1-1",
-     "p_marcador": 0.1165
+     "p_marcador": 0.1147
     },
     {
      "fecha": "2026-11-08",
      "local": "Sevilla",
      "visitante": "Alavés",
      "pendiente": false,
-     "lh": 1.4479,
-     "la": 1.132,
-     "p1": 0.4389,
-     "px": 0.2702,
-     "p2": 0.291,
-     "o25": 0.4765,
-     "btts": 0.5228,
+     "córners": [
+      5.18,
+      3.81
+     ],
+     "tarjetas": [
+      2.59,
+      2.57
+     ],
+     "lh": 1.26,
+     "la": 1.1268,
+     "p1": 0.3896,
+     "px": 0.2855,
+     "p2": 0.3249,
+     "o25": 0.4268,
+     "btts": 0.4885,
      "marcador": "1-1",
-     "p_marcador": 0.1287
+     "p_marcador": 0.1349
     }
    ],
    "validacion": {
@@ -3931,29 +4811,47 @@
     "hasta": "2026-10-21",
     "mercados": {
      "1X2": {
-      "modelo": 0.580571562752577,
+      "modelo": 0.5794442686418151,
       "base": 0.635994946110588,
-      "logloss_modelo": 0.9776983221517599,
+      "logloss_modelo": 0.9763847904003892,
       "logloss_base": 1.0549348380134664,
-      "mejora": 0.08714437700637623,
-      "mercado": 0.5452376013526342
+      "mejora": 0.08891686610814642,
+      "mercado": 0.5640207966859556
      },
      "Más de 2.5": {
-      "modelo": 0.24416833397985024,
+      "modelo": 0.2408693606101103,
       "base": 0.2504971169004046,
-      "mejora": 0.025264893260510513
+      "mejora": 0.03843459920587511
      },
      "Ambos anotan": {
-      "modelo": 0.24868510983052716,
+      "modelo": 0.24610682491610525,
       "base": 0.24598388857992276,
-      "mejora": -0.010981293393639291
+      "mejora": -0.0004997739359768882
+     },
+     "Córners más de 9.5": {
+      "partidos": 375,
+      "linea": 9.5,
+      "modelo": 0.2400498018328367,
+      "base": 0.2505449017329316,
+      "prob_media": 0.494238743908202,
+      "frecuencia_real": 0.49333333333333335,
+      "mejora": 0.04188909783238037
+     },
+     "Tarjetas más de 4.5": {
+      "partidos": 375,
+      "linea": 4.5,
+      "modelo": 0.2497648162219182,
+      "base": 0.25084794402230903,
+      "prob_media": 0.4953825030212653,
+      "frecuencia_real": 0.48,
+      "mejora": 0.004317865967019885
      }
     },
     "acierto_1x2": 0.5283018867924528,
     "apuestas_simuladas": {
      "umbral_ve": 0.05,
-     "apuestas": 139,
-     "roi": -0.23007194244604318,
+     "apuestas": 258,
+     "roi": -0.12798449612403098,
      "nota": "Apuesta plana de 1 unidad al resultado 1X2 con mayor VE si supera el umbral, a cuota de cierre."
     }
    },

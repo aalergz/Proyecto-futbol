@@ -25,7 +25,7 @@ from motor.exportar import bloque_liga, envoltorio
 from motor.fuentes import (CUOTA, FuenteNoDisponible, buscar_ligas, cargar_liga, estado_api,
                            probar_temporada, resolver_apifootball, temporadas_liga)
 from motor.modelo import ajustar, predecir
-from motor.validacion import validar
+from motor.validacion import validar, validar_conteo
 
 RAIZ = Path(__file__).resolve().parent
 SALIDA = RAIZ / "salida" / "ratings.json"
@@ -43,6 +43,23 @@ def temporadas(cfg_liga: dict, modelo: dict) -> list[int]:
 
 def pct(x: float) -> str:
     return f"{x * 100:5.1f}%"
+
+
+CONTEOS = {"córners": (("crl", "crv"), 9.5), "tarjetas": (("tjl", "tjv"), 4.5)}
+
+
+def opciones_modelo(mod: dict) -> dict:
+    return {"peso_goles": float(mod.get("peso_goles", 1.0)), "reg_local": mod.get("reg_local")}
+
+
+def ajustar_conteos(jug, mod) -> dict:
+    """Modelos de córners y tarjetas, si la fuente trae esas estadísticas."""
+    out = {}
+    for nombre, (cols, _) in CONTEOS.items():
+        if all(c in jug for c in cols) and jug[list(cols)].notna().all(axis=1).sum() >= 100:
+            out[nombre] = ajustar(jug, xi=mod["xi"], reg=float(mod.get("reg_conteos", 3.0)),
+                                  columnas=cols, dixon_coles=False)
+    return out
 
 
 def cmd_actualizar(a):
@@ -67,33 +84,42 @@ def cmd_actualizar(a):
         jug = df.dropna(subset=["gl", "gv"])
         print(f"  · {fuente}: {len(jug)} partidos jugados, {df['gl'].isna().sum()} por jugar, último {jug['fecha'].max():%Y-%m-%d}")
         t0 = time.time()
+        opc = opciones_modelo(mod)
         try:
-            r = ajustar(jug, fecha_ref=jug["fecha"].max().date(), xi=mod["xi"], reg=mod["regularizacion"])
+            r = ajustar(jug, fecha_ref=jug["fecha"].max().date(), xi=mod["xi"], reg=mod["regularizacion"], **opc)
         except ValueError as e:
             print(f"  · no se puede ajustar: {e}")
             if k in previo.get("ligas", {}):
                 ligas[k] = previo["ligas"][k]
             continue
         print(f"  · ajuste: media local {r.media_local:.2f}, visitante {r.media_visitante:.2f}, ρ {r.rho:+.3f} ({time.time() - t0:.1f}s)")
+        conteos = ajustar_conteos(jug, mod)
+        if conteos:
+            print("  · " + ", ".join(f"{n}: {c.media_local + c.media_visitante:.1f} por partido" for n, c in conteos.items()))
 
         val = None
         dias = int(mod.get("validar_dias", 0))
         if dias and not a.sin_validar:
             t0 = time.time()
             desde = jug["fecha"].max() - timedelta(days=dias)
-            v = validar(df, desde, xi=mod["xi"], reg=mod["regularizacion"])["resumen"]
+            v = validar(df, desde, xi=mod["xi"], reg=mod["regularizacion"], **opc)["resumen"]
             if v.get("partidos"):
                 val = v
+                for nombre, (cols, linea) in CONTEOS.items():
+                    if nombre in conteos:
+                        vc = validar_conteo(df, desde, cols, linea, xi=mod["xi"], reg=mod.get("reg_conteos", 3.0))
+                        if vc.get("partidos"):
+                            val["mercados"][f"{nombre.capitalize()} más de {linea}"] = vc
                 m = v["mercados"]["1X2"]
                 print(f"  · validación: {v['partidos']} partidos fuera de muestra, Brier 1X2 {m['modelo']:.4f} vs base {m['base']:.4f} "
                       f"({m['mejora'] * 100:+.1f}%) ({time.time() - t0:.0f}s)")
         elif k in previo.get("ligas", {}):
             val = previo["ligas"][k].get("validacion")
 
-        ligas[k] = bloque_liga(k, lc, df, r, fuente, val)
+        ligas[k] = bloque_liga(k, lc, df, r, fuente, val, conteos=conteos)
         print(f"  · {len(ligas[k]['equipos'])} equipos, {len(ligas[k]['proximos'])} próximos partidos")
 
-    out = envoltorio(ligas, {"xi": mod["xi"], "regularizacion": mod["regularizacion"]},
+    out = envoltorio(ligas, {"xi": mod["xi"], "regularizacion": mod["regularizacion"], **opciones_modelo(mod)},
                      cfg.get("web", {}).get("en_vivo_url", ""))
     if CUOTA["usadas"]:
         print(f"  · API-Football: {CUOTA['usadas']} solicitudes en esta corrida, quedan {CUOTA['restantes']} hoy")
@@ -112,7 +138,7 @@ def cmd_predecir(a):
     cfg = config(); mod = cfg["modelo"]; lc = cfg["ligas"][a.liga]
     df, _ = cargar_liga(lc, temporadas(lc, mod))
     jug = df.dropna(subset=["gl", "gv"])
-    r = ajustar(jug, xi=mod["xi"], reg=mod["regularizacion"])
+    r = ajustar(jug, xi=mod["xi"], reg=mod["regularizacion"], **opciones_modelo(mod))
     def buscar(n):
         cand = [e for e in r.equipos if n.lower() in e.lower()]
         if not cand:
@@ -132,7 +158,10 @@ def cmd_validar(a):
     cfg = config(); mod = cfg["modelo"]; lc = cfg["ligas"][a.liga]
     df, fuente = cargar_liga(lc, temporadas(lc, mod))
     desde = pd.Timestamp(a.desde) if a.desde else df.dropna(subset=["gl"])["fecha"].max() - timedelta(days=365)
-    out = validar(df, desde, xi=a.xi or mod["xi"], reg=mod["regularizacion"] if a.reg is None else a.reg)
+    opc = opciones_modelo(mod)
+    if a.peso_goles is not None:
+        opc["peso_goles"] = a.peso_goles
+    out = validar(df, desde, xi=a.xi or mod["xi"], reg=mod["regularizacion"] if a.reg is None else a.reg, **opc)
     v = out["resumen"]
     if not v.get("partidos"):
         sys.exit("No hay suficientes partidos para validar en ese rango.")
@@ -188,7 +217,8 @@ def main():
     x = s.add_parser("predecir"); x.add_argument("liga"); x.add_argument("local"); x.add_argument("visitante")
     x.set_defaults(f=cmd_predecir)
     x = s.add_parser("validar"); x.add_argument("liga"); x.add_argument("--desde"); x.add_argument("--csv")
-    x.add_argument("--xi", type=float); x.add_argument("--reg", type=float); x.set_defaults(f=cmd_validar)
+    x.add_argument("--xi", type=float); x.add_argument("--reg", type=float); x.add_argument("--peso-goles", type=float)
+    x.set_defaults(f=cmd_validar)
     x = s.add_parser("probar-api"); x.set_defaults(f=cmd_probar_api)
     x = s.add_parser("buscar-liga"); x.add_argument("--pais", required=True); x.set_defaults(f=cmd_buscar)
     a = p.parse_args()

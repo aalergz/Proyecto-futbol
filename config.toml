@@ -11,6 +11,9 @@ xi = 0.0019               # decaimiento por día: un partido de hace un año pes
 regularizacion = 0.1      # acerca a su punto de partida a equipos con pocos partidos (elegido por validación)
 temporadas_historial = 2  # temporadas anteriores a la actual que entran al ajuste
 validar_dias = 365        # ventana de validación fuera de muestra (0 = no validar)
+peso_goles = 0.7          # 70% goles reales + 30% xG o remates a puerta (elegido por validación)
+reg_local = 0.3           # ventaja de local propia de cada equipo; quitar la línea = igual para todos
+reg_conteos = 3.0         # regularización de los modelos de córners y tarjetas
 
 [web]
 # URL del Worker de Cloudflare que sirve los marcadores en vivo (ver worker/README).

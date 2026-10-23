@@ -99,13 +99,21 @@ def _leer_csv_fd(texto: str, temporada: int | None, div: str | None = None) -> p
         raw = raw[raw.get("Div") == div] if "Div" in raw else raw.iloc[0:0]
     raw = raw.dropna(subset=["HomeTeam", "AwayTeam"])
     fechas = pd.to_datetime(raw["Date"], dayfirst=True, errors="coerce", format="mixed")
+    num = lambda c: pd.to_numeric(raw[c], errors="coerce") if c in raw.columns else pd.Series(np.nan, index=raw.index)
     df = pd.DataFrame({"fecha": fechas, "local": raw["HomeTeam"], "visitante": raw["AwayTeam"],
-                       "gl": raw.get("FTHG"), "gv": raw.get("FTAG")})
-    for destino, opciones in {"c1": ["PSCH", "PSH", "AvgCH", "AvgH", "B365H"],
-                              "cx": ["PSCD", "PSD", "AvgCD", "AvgD", "B365D"],
-                              "c2": ["PSCA", "PSA", "AvgCA", "AvgA", "B365A"]}.items():
-        col = next((c for c in opciones if c in raw.columns), None)
-        df[destino] = pd.to_numeric(raw[col], errors="coerce") if col else np.nan
+                       "gl": num("FTHG"), "gv": num("FTAG"),
+                       # estadísticas del partido: remates a puerta, xG, córners y tarjetas
+                       "tl": num("HST"), "tv": num("AST"), "xgl": num("HxG"), "xgv": num("AxG"),
+                       "crl": num("HC"), "crv": num("AC"),
+                       "tjl": num("HY") + num("HR").fillna(0), "tjv": num("AY") + num("AR").fillna(0)})
+    # Cuotas: cierre de Pinnacle si está; si no, promedio de cierre; si no, apertura
+    for destino, opciones in {"c1": ["PSCH", "AvgCH", "B365CH", "PSH", "AvgH", "B365H"],
+                              "cx": ["PSCD", "AvgCD", "B365CD", "PSD", "AvgD", "B365D"],
+                              "c2": ["PSCA", "AvgCA", "B365CA", "PSA", "AvgA", "B365A"]}.items():
+        serie = pd.Series(np.nan, index=raw.index)
+        for c in opciones:
+            serie = serie.fillna(num(c))
+        df[destino] = serie
     if temporada is not None:
         df["temporada"] = temporada
     return df.dropna(subset=["fecha"])

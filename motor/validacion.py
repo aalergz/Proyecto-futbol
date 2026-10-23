@@ -29,7 +29,8 @@ def _brier_bin(p: np.ndarray, y: np.ndarray) -> float:
 
 
 def validar(df: pd.DataFrame, desde, xi=0.0019, reg=0.02, paso_dias=7, min_partidos_equipo=3,
-            umbral_ve=0.05) -> dict:
+            umbral_ve=0.05, **opciones) -> dict:
+    """opciones: se pasan a ajustar (peso_goles, reg_local)."""
     jug = df.dropna(subset=["gl", "gv"]).copy()
     jug["fecha"] = pd.to_datetime(jug["fecha"])
     inicio = pd.Timestamp(desde)
@@ -42,7 +43,7 @@ def validar(df: pd.DataFrame, desde, xi=0.0019, reg=0.02, paso_dias=7, min_parti
         t += timedelta(days=paso_dias)
         if te.empty or len(tr) < 100:
             continue
-        r = ajustar(tr, fecha_ref=(t - timedelta(days=paso_dias)).date(), xi=xi, reg=reg, inicial=prev)
+        r = ajustar(tr, fecha_ref=(t - timedelta(days=paso_dias)).date(), xi=xi, reg=reg, inicial=prev, **opciones)
         prev = r
         base = tr[tr["fecha"] >= tr["fecha"].max() - timedelta(days=365)]
         b1 = (base["gl"] > base["gv"]).mean(); bx = (base["gl"] == base["gv"]).mean()
@@ -103,3 +104,41 @@ def validar(df: pd.DataFrame, desde, xi=0.0019, reg=0.02, paso_dias=7, min_parti
                 "nota": "Apuesta plana de 1 unidad al resultado 1X2 con mayor VE si supera el umbral, a cuota de cierre.",
             }
     return {"resumen": out, "detalle": P}
+
+
+# --------------------------------------------------------------------------- #
+# Córners y tarjetas
+# --------------------------------------------------------------------------- #
+def validar_conteo(df: pd.DataFrame, desde, columnas, linea, xi=0.0019, reg=0.1, paso_dias=7) -> dict:
+    """Valida el modelo de un conteo (córners o tarjetas) en la línea dada:
+    P(total > linea) del modelo frente a la frecuencia de la liga en el último año."""
+    from scipy.stats import poisson
+    jug = df.dropna(subset=list(columnas)).copy()
+    jug["fecha"] = pd.to_datetime(jug["fecha"])
+    t, fin, filas, prev = pd.Timestamp(desde), jug["fecha"].max(), [], None
+    while t <= fin:
+        tr = jug[jug["fecha"] < t]
+        te = jug[(jug["fecha"] >= t) & (jug["fecha"] < t + timedelta(days=paso_dias))]
+        t += timedelta(days=paso_dias)
+        if te.empty or len(tr) < 100:
+            continue
+        r = ajustar(tr, fecha_ref=(t - timedelta(days=paso_dias)).date(), xi=xi, reg=reg, inicial=prev,
+                    columnas=tuple(columnas), dixon_coles=False)
+        prev = r
+        base = tr[tr["fecha"] >= tr["fecha"].max() - timedelta(days=365)]
+        pb = float(((base[columnas[0]] + base[columnas[1]]) > linea).mean())
+        for _, m in te.iterrows():
+            if m["local"] not in r.idx or m["visitante"] not in r.idx:
+                continue
+            lh, la = r.lambdas(m["local"], m["visitante"])
+            filas.append({"p": float(poisson.sf(np.floor(linea), lh + la)), "b": pb,
+                          "y": float(m[columnas[0]] + m[columnas[1]] > linea)})
+    if not filas:
+        return {"partidos": 0}
+    P = pd.DataFrame(filas)
+    out = {"partidos": int(len(P)), "linea": linea,
+           "modelo": _brier_bin(P["p"].to_numpy(), P["y"].to_numpy()),
+           "base": _brier_bin(P["b"].to_numpy(), P["y"].to_numpy()),
+           "prob_media": float(P["p"].mean()), "frecuencia_real": float(P["y"].mean())}
+    out["mejora"] = 1 - out["modelo"] / out["base"]
+    return out

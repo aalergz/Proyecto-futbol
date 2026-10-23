@@ -15,7 +15,7 @@ from datetime import date
 
 import numpy as np
 import pandas as pd
-from scipy.optimize import minimize
+from scipy.optimize import minimize, minimize_scalar
 from scipy.special import gammaln
 
 MAX_GOLES = 10
@@ -32,9 +32,12 @@ class Ratings:
     partidos: dict[str, int] = field(default_factory=dict)
     fecha_ref: date | None = None
     n_partidos: int = 0
+    local: np.ndarray | None = None   # ventaja de local propia de cada equipo (log), opcional
 
     def __post_init__(self):
         self.idx = {e: i for i, e in enumerate(self.equipos)}
+        if self.local is None:
+            self.local = np.zeros(len(self.equipos))
 
     @property
     def media_local(self) -> float:
@@ -50,7 +53,7 @@ class Ratings:
 
     def lambdas(self, local: str, visitante: str) -> tuple[float, float]:
         i, j = self.idx[local], self.idx[visitante]
-        lh = np.exp(self.c + self.h + self.ataque[i] + self.defensa[j])
+        lh = np.exp(self.c + self.h + self.local[i] + self.ataque[i] + self.defensa[j])
         la = np.exp(self.c + self.ataque[j] + self.defensa[i])
         return float(lh), float(la)
 
@@ -104,6 +107,34 @@ def pesos_temporales(fechas: pd.Series, fecha_ref: date, xi: float) -> np.ndarra
     return np.exp(-xi * np.clip(dias, 0, None))
 
 
+def objetivos(df: pd.DataFrame, peso_goles: float) -> tuple[np.ndarray, np.ndarray, float]:
+    """Goles "corregidos" para ajustar la fuerza de los equipos.
+
+    Los goles tienen mucha suerte. Los goles esperados (xG) o los remates a puerta
+    miden mejor lo que el equipo generó. Se mezcla:
+        objetivo = peso_goles × goles + (1 − peso_goles) × indicador
+    donde indicador = xG si existe; si no, remates a puerta × conversión de la liga.
+    """
+    gl = df["gl"].to_numpy(float)
+    gv = df["gv"].to_numpy(float)
+    if peso_goles >= 1 or "tl" not in df:
+        return gl, gv, float("nan")
+    tl = df["tl"].to_numpy(float)
+    tv = df["tv"].to_numpy(float)
+    ok = ~np.isnan(tl) & ~np.isnan(tv)
+    conv = (gl[ok].sum() + gv[ok].sum()) / max(tl[ok].sum() + tv[ok].sum(), 1) if ok.any() else np.nan
+    il = np.where(ok, tl * conv, gl)
+    iv = np.where(ok, tv * conv, gv)
+    if "xgl" in df:
+        xl = df["xgl"].to_numpy(float)
+        xv = df["xgv"].to_numpy(float)
+        hay = ~np.isnan(xl) & ~np.isnan(xv)
+        il = np.where(hay, xl, il)
+        iv = np.where(hay, xv, iv)
+    w = peso_goles
+    return w * gl + (1 - w) * il, w * gv + (1 - w) * iv, float(conv)
+
+
 def ajustar(
     df: pd.DataFrame,
     fecha_ref: date | None = None,
@@ -111,18 +142,26 @@ def ajustar(
     reg: float = 0.02,
     inicial: Ratings | None = None,
     prior_nuevo: tuple[float, float] = (-0.15, 0.15),
+    peso_goles: float = 1.0,
+    columnas: tuple[str, str] = ("gl", "gv"),
+    dixon_coles: bool = True,
+    reg_local: float | None = None,
 ) -> Ratings:
-    """Ajusta Dixon-Coles con partidos jugados antes de `fecha_ref`.
+    """Ajusta el modelo con partidos jugados antes de `fecha_ref`.
 
-    df: columnas fecha, local, visitante, gl, gv (solo partidos jugados).
+    df: columnas fecha, local, visitante, gl, gv (y opcionalmente tl, tv, xgl, xgv).
     xi: decaimiento por día. 0.0019 ≈ un partido de hace un año pesa la mitad.
     reg: penalización L2 que acerca a su punto de partida a los equipos con pocos
          partidos, para que un par de goleadas no los dispare.
     prior_nuevo: punto de partida (log ataque, log defensa) de un equipo que solo
-         aparece en la última temporada de los datos, típicamente un ascendido:
-         (−0.15, +0.15) ≈ marca 14% menos y concede 16% más que la media.
+         aparece en la última temporada de los datos, típicamente un ascendido.
+    peso_goles: 1 = solo goles; menos de 1 mezcla xG o remates a puerta (ver objetivos).
+    columnas: qué se cuenta. ("crl", "crv") ajusta córners; ("tjl", "tjv"), tarjetas.
+    dixon_coles: corrige 0-0, 1-0, 0-1 y 1-1 (solo tiene sentido con goles).
+    reg_local: si no es None, cada equipo tiene su propia ventaja de local,
+         penalizada con esta fuerza hacia la ventaja media de la liga.
     """
-    df = df.dropna(subset=["gl", "gv"])
+    df = df.dropna(subset=list(columnas))
     if fecha_ref is None:
         fecha_ref = pd.to_datetime(df["fecha"]).max().date()
     df = df[pd.to_datetime(df["fecha"]) < pd.Timestamp(fecha_ref) + pd.Timedelta(days=1)]
@@ -139,27 +178,31 @@ def ajustar(
         previos = set(df.loc[df["temporada"] < ultima, "local"]) | set(df.loc[df["temporada"] < ultima, "visitante"])
         for e, k in idx.items():
             if e not in previos:
-                mu_a[k], mu_d[k] = prior_nuevo
+                mu_a[k], mu_d[k] = prior_nuevo if columnas == ("gl", "gv") else (0.0, 0.0)
     hi = df["local"].map(idx).to_numpy()
     ai = df["visitante"].map(idx).to_numpy()
-    x = df["gl"].to_numpy(dtype=float)
-    y = df["gv"].to_numpy(dtype=float)
+    if columnas == ("gl", "gv"):
+        x, y, _ = objetivos(df, peso_goles)
+        gx = df["gl"].to_numpy(float)
+        gy = df["gv"].to_numpy(float)
+    else:
+        x = df[columnas[0]].to_numpy(float)
+        y = df[columnas[1]].to_numpy(float)
+        gx, gy = x, y
     w = pesos_temporales(df["fecha"], fecha_ref, xi)
     w = w / w.sum()
 
-    m00 = (x == 0) & (y == 0)
-    m01 = (x == 0) & (y == 1)
-    m10 = (x == 1) & (y == 0)
-    m11 = (x == 1) & (y == 1)
+    # Con objetivos no enteros, ρ se estima después, con los goles reales
+    dc_en_ajuste = dixon_coles and np.array_equal(x, gx) and np.array_equal(y, gy)
+    m00 = (gx == 0) & (gy == 0)
+    m01 = (gx == 0) & (gy == 1)
+    m10 = (gx == 1) & (gy == 0)
+    m11 = (gx == 1) & (gy == 1)
     const = gammaln(x + 1) + gammaln(y + 1)
+    nl = n if reg_local is not None else 0
+    rl = reg_local or 0.0
 
-    def objetivo(theta):
-        a = theta[:n] - theta[:n].mean()
-        d = theta[n:2 * n] - theta[n:2 * n].mean()
-        c, h, rho = theta[2 * n:]
-        lh = np.exp(c + h + a[hi] + d[ai])
-        la = np.exp(c + a[ai] + d[hi])
-
+    def tau_y_derivadas(lh, la, rho):
         tau = np.ones_like(lh)
         dt_l = np.zeros_like(lh)
         dt_a = np.zeros_like(lh)
@@ -176,11 +219,25 @@ def ajustar(
         dt_r[m10] = la[m10]
         tau[m11] = 1 - rho
         dt_r[m11] = -1
-        tau = np.clip(tau, 1e-10, None)
+        return np.clip(tau, 1e-10, None), dt_l, dt_a, dt_r
+
+    def objetivo(theta):
+        a = theta[:n] - theta[:n].mean()
+        d = theta[n:2 * n] - theta[n:2 * n].mean()
+        hl = theta[2 * n:2 * n + nl] if nl else 0.0
+        c, h, rho = theta[2 * n + nl:]
+        lh = np.exp(c + h + (hl[hi] if nl else 0.0) + a[hi] + d[ai])
+        la = np.exp(c + a[ai] + d[hi])
+        if dc_en_ajuste:
+            tau, dt_l, dt_a, dt_r = tau_y_derivadas(lh, la, rho)
+        else:
+            tau = np.ones_like(lh); dt_l = dt_a = dt_r = np.zeros_like(lh)
 
         ll = np.log(tau) + x * np.log(lh) - lh + y * np.log(la) - la - const
         ea, ed = a - mu_a, d - mu_d
         nll = -(w * ll).sum() + reg * (ea @ ea + ed @ ed) / n
+        if nl:
+            nll += rl * (hl @ hl) / n
 
         gh = w * (x - lh + lh * dt_l / tau)        # ∂ll/∂η_local
         ga = w * (y - la + la * dt_a / tau)        # ∂ll/∂η_visitante
@@ -190,29 +247,46 @@ def ajustar(
         g_d = -g_d + 2 * reg * ed / n
         g_a -= g_a.mean()   # derivada a través del centrado a = θ − media(θ)
         g_d -= g_d.mean()
+        partes = [g_a, g_d]
+        if nl:
+            partes.append(-np.bincount(hi, gh, n) + 2 * rl * hl / n)
         g_c = -(gh.sum() + ga.sum())
         g_h = -gh.sum()
-        g_r = -(w * dt_r / tau).sum()
-        return nll, np.concatenate([g_a, g_d, [g_c, g_h, g_r]])
+        g_r = -(w * dt_r / tau).sum() if dc_en_ajuste else 0.0
+        return nll, np.concatenate(partes + [[g_c, g_h, g_r]])
 
-    theta0 = np.zeros(2 * n + 3)
-    theta0[2 * n] = np.log(max(y.mean(), 0.3))
-    theta0[2 * n + 1] = np.log(max(x.mean(), 0.3) / max(y.mean(), 0.3))
-    theta0[2 * n + 2] = -0.05
+    theta0 = np.zeros(2 * n + nl + 3)
+    theta0[2 * n + nl] = np.log(max(y.mean(), 0.3))
+    theta0[2 * n + nl + 1] = np.log(max(x.mean(), 0.3) / max(y.mean(), 0.3))
+    theta0[2 * n + nl + 2] = -0.05 if dc_en_ajuste else 0.0
     if inicial is not None:   # arranque en caliente: acelera mucho la validación
         for e, k in idx.items():
             if e in inicial.idx:
                 theta0[k] = inicial.ataque[inicial.idx[e]]
                 theta0[n + k] = inicial.defensa[inicial.idx[e]]
-        theta0[2 * n:] = [inicial.c, inicial.h, inicial.rho]
+                if nl:
+                    theta0[2 * n + k] = inicial.local[inicial.idx[e]]
+        theta0[2 * n + nl:2 * n + nl + 2] = [inicial.c, inicial.h]
+        if dc_en_ajuste:
+            theta0[-1] = inicial.rho
 
-    bounds = [(None, None)] * (2 * n + 2) + [(-0.25, 0.15)]
+    bounds = [(None, None)] * (2 * n + nl + 2) + [(-0.25, 0.15) if dc_en_ajuste else (0.0, 0.0)]
     res = minimize(objetivo, theta0, jac=True, method="L-BFGS-B", bounds=bounds,
                    options={"maxiter": 2000, "gtol": 1e-9})
     th = res.x
     a = th[:n] - th[:n].mean()
     d = th[n:2 * n] - th[n:2 * n].mean()
+    hl = th[2 * n:2 * n + nl] if nl else np.zeros(n)
+    c, h, rho = (float(v) for v in th[2 * n + nl:])
+
+    if dixon_coles and not dc_en_ajuste:
+        # ρ con los goles reales, dejando fijas las fuerzas
+        lh = np.exp(c + h + hl[hi] + a[hi] + d[ai])
+        la = np.exp(c + a[ai] + d[hi])
+        f = lambda r: -(w * np.log(tau_y_derivadas(lh, la, r)[0])).sum()
+        rho = float(minimize_scalar(f, bounds=(-0.25, 0.15), method="bounded").x)
+
     jugados = pd.concat([df["local"], df["visitante"]]).value_counts().to_dict()
-    return Ratings(equipos, a, d, float(th[2 * n]), float(th[2 * n + 1]), float(th[2 * n + 2]),
+    return Ratings(equipos, a, d, c, h, rho,
                    partidos={e: int(jugados.get(e, 0)) for e in equipos},
-                   fecha_ref=fecha_ref, n_partidos=len(df))
+                   fecha_ref=fecha_ref, n_partidos=len(df), local=hl)

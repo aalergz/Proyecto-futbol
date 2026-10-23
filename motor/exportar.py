@@ -23,7 +23,8 @@ def tabla_actual(temp: pd.DataFrame) -> dict[str, dict]:
 
 
 def bloque_liga(clave: str, cfg: dict, df: pd.DataFrame, r: Ratings, fuente: str,
-                validacion: dict | None, hoy: date | None = None) -> dict:
+                validacion: dict | None, hoy: date | None = None, conteos: dict | None = None) -> dict:
+    conteos = conteos or {}
     hoy = pd.Timestamp(hoy or date.today())
     temporada = cfg.get("temporada_actual") or int(df["temporada"].max())
     temp = df[df["temporada"] == temporada]
@@ -44,13 +45,19 @@ def bloque_liga(clave: str, cfg: dict, df: pd.DataFrame, r: Ratings, fuente: str
             r.ataque = np.append(r.ataque, a0)
             r.defensa = np.append(r.defensa, d0)
             r.partidos[e] = 0
+            r.local = np.append(r.local, 0.0)
         r.idx = {e: i for i, e in enumerate(r.equipos)}
 
     equipos = []
     for e in equipos_temp:
         at, de = r.multiplicadores(e)
-        equipos.append({"nombre": e, "ataque": round(at, 4), "defensa": round(de, 4),
-                        "partidos": r.partidos.get(e, 0), "sin_datos": e in sin_datos})
+        fila = {"nombre": e, "ataque": round(at, 4), "defensa": round(de, 4),
+                "local": round(float(np.exp(r.local[r.idx[e]])), 4),
+                "partidos": r.partidos.get(e, 0), "sin_datos": e in sin_datos}
+        for nombre, c in conteos.items():
+            if e in c.idx:   # a favor / en contra, como multiplicadores
+                fila[nombre] = [round(v, 4) for v in c.multiplicadores(e)]
+        equipos.append(fila)
     equipos.sort(key=lambda x: x["ataque"] - x["defensa"], reverse=True)
 
     tabla = tabla_actual(temp)
@@ -63,6 +70,9 @@ def bloque_liga(clave: str, cfg: dict, df: pd.DataFrame, r: Ratings, fuente: str
     for m in lista.head(30).itertuples():
         p = predecir(r, m.local, m.visitante)
         extra = {}
+        for nombre, c in conteos.items():
+            if m.local in c.idx and m.visitante in c.idx:
+                extra[nombre] = [round(v, 2) for v in c.lambdas(m.local, m.visitante)]
         fid = getattr(m, "fid", None)
         if fid is not None and fid == fid:   # fid == fid descarta NaN
             extra["fid"] = int(fid)
@@ -82,6 +92,7 @@ def bloque_liga(clave: str, cfg: dict, df: pd.DataFrame, r: Ratings, fuente: str
         "home": round(r.media_local, 4),
         "away": round(r.media_visitante, 4),
         "rho": round(r.rho, 4),
+        "conteos": {n: {"home": round(c.media_local, 4), "away": round(c.media_visitante, 4)} for n, c in conteos.items()},
         "top": cfg.get("top", {"n": 4, "label": "Top 4"}),
         "bot": cfg.get("bot", {"n": 3, "label": "Descenso"}),
         "partidos_modelo": r.n_partidos,
