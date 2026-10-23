@@ -27,5 +27,5 @@ def test_historial_y_combinadas():
                       "gl": 2 if i % 4 else 0, "gv": 0 if i % 4 else 1, **P, **C})
     h = sel.historial(pd.DataFrame(filas))
     assert h["seguras"]["apuestas"] == 12 and abs(h["seguras"]["aciertos"] - 0.75) < 1e-9
-    assert h["doble"]["apuestas"] == 4 and h["roi_min"] if False else True
+    assert h["doble"]["apuestas"] == 4 and h["triple"]["apuestas"] == 4
     assert h["seguras"]["roi_min"] <= h["seguras"]["roi"] <= h["seguras"]["roi_max"]
