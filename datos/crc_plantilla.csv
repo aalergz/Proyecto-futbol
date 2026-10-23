@@ -1,8 +1,0 @@
-# Plantilla para cargar resultados a mano (Liga Promerica u otra liga sin API).
-# Copia este archivo como datos/crc.csv, borra los ejemplos y añade una fila por partido.
-# Fecha en formato AAAA-MM-DD. Deja los goles vacíos en los partidos que faltan por jugar.
-# La columna temporada es opcional (por defecto se usa el año de la fecha).
-fecha,local,visitante,goles_local,goles_visitante,temporada
-2026-07-19,Saprissa,Sporting FC,2,0,2026
-2026-07-20,Alajuelense,Cartaginés,1,1,2026
-2026-11-29,Herediano,Saprissa,,,2026

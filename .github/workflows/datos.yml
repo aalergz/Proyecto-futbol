@@ -1,0 +1,27 @@
+name: Descargar datos crudos (temporal)
+on:
+  push:
+    branches: [datos]
+permissions:
+  contents: write
+jobs:
+  bajar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Descargar CSV de football-data.co.uk
+        run: |
+          mkdir -p crudos
+          for s in 2223 2324 2425 2526 2627; do
+            for d in E0 SP1; do
+              curl -sSf -o crudos/${s}_${d}.csv "https://www.football-data.co.uk/mmz4281/${s}/${d}.csv" || echo "falta $s $d"
+            done
+          done
+          curl -sSf -o crudos/fixtures.csv "https://www.football-data.co.uk/fixtures.csv" || echo "falta fixtures"
+          ls -la crudos
+      - name: Guardar en la rama
+        run: |
+          git config user.name "pizarra-bot"
+          git config user.email "pizarra-bot@users.noreply.github.com"
+          git add crudos
+          git commit -m "Datos crudos de football-data" && git push
