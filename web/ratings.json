@@ -3,28 +3,28 @@
   "niveles": {
    "normal": {
     "mejor": {
-     "apuestas": 183,
-     "aciertos": 0.6338797814207651,
-     "cuota_media": 1.466830601092896,
-     "roi": -0.07551912568306011,
-     "roi_min": -0.161458589241954,
-     "roi_max": 0.010420337875833768
+     "apuestas": 180,
+     "aciertos": 0.6444444444444445,
+     "cuota_media": 1.4689444444444442,
+     "roi": -0.058222222222222245,
+     "roi_min": -0.14453328995320885,
+     "roi_max": 0.02808884550876435
     },
     "doble": {
-     "apuestas": 157,
-     "aciertos": 0.4267515923566879,
-     "cuota_media": 2.1873713375796178,
-     "roi": -0.08520318471337586,
-     "roi_min": -0.22547889440303015,
-     "roi_max": 0.055072524976278445
+     "apuestas": 156,
+     "aciertos": 0.40384615384615385,
+     "cuota_media": 2.1917423076923077,
+     "roi": -0.13211538461538466,
+     "roi_min": -0.2720907441331202,
+     "roi_max": 0.007859974902350825
     },
     "triple": {
      "apuestas": 130,
-     "aciertos": 0.26153846153846155,
-     "cuota_media": 3.2689535999999992,
-     "roi": -0.17647426153846166,
-     "roi_min": -0.37809915378069464,
-     "roi_max": 0.025150630703771326
+     "aciertos": 0.24615384615384617,
+     "cuota_media": 3.2814598538461532,
+     "roi": -0.2257889692307693,
+     "roi_min": -0.4232287065202208,
+     "roi_max": -0.028349231941317776
     },
     "regla": {
      "cuota_min": 1.4,
@@ -33,28 +33,28 @@
    },
    "conservador": {
     "mejor": {
-     "apuestas": 183,
-     "aciertos": 0.8087431693989071,
-     "cuota_media": 1.2424590163934426,
-     "roi": 0.005464480874316934,
-     "roi_min": -0.0543593671006271,
-     "roi_max": 0.06528832884926097
+     "apuestas": 180,
+     "aciertos": 0.7944444444444444,
+     "cuota_media": 1.240222222222222,
+     "roi": -0.01422222222222223,
+     "roi_min": -0.07605727655999106,
+     "roi_max": 0.04761283211554661
     },
     "doble": {
-     "apuestas": 166,
-     "aciertos": 0.6385542168674698,
-     "cuota_media": 1.5544512048192771,
-     "roi": -0.009549397590361445,
-     "roi_min": -0.10541959053551732,
-     "roi_max": 0.08632079535479444
+     "apuestas": 163,
+     "aciertos": 0.6441717791411042,
+     "cuota_media": 1.5517742331288344,
+     "roi": -0.0013981595092024553,
+     "roi_min": -0.09776152158966504,
+     "roi_max": 0.09496520257126013
     },
     "triple": {
-     "apuestas": 136,
-     "aciertos": 0.5,
-     "cuota_media": 1.950336830882353,
-     "roi": -0.03490513235294118,
-     "roi_min": -0.17237752066649226,
-     "roi_max": 0.1025672559606099
+     "apuestas": 134,
+     "aciertos": 0.4925373134328358,
+     "cuota_media": 1.9420022462686566,
+     "roi": -0.05081258208955225,
+     "roi_min": -0.18898563330193677,
+     "roi_max": 0.08736046912283227
     },
     "regla": {
      "cuota_min": 1.2,
@@ -63,28 +63,28 @@
    },
    "muy_conservador": {
     "mejor": {
-     "apuestas": 141,
-     "aciertos": 0.900709219858156,
-     "cuota_media": 1.0872340425531917,
-     "roi": -0.020709219858155974,
-     "roi_min": -0.06609912083966409,
-     "roi_max": 0.02468068112335214
+     "apuestas": 140,
+     "aciertos": 0.9071428571428571,
+     "cuota_media": 1.0860714285714286,
+     "roi": -0.013999999999999953,
+     "roi_min": -0.05821043016768224,
+     "roi_max": 0.030210430167682326
     },
     "doble": {
      "apuestas": 99,
-     "aciertos": 0.8484848484848485,
-     "cuota_media": 1.1851353535353535,
-     "roi": 0.003329292929293029,
-     "roi_min": -0.06767984605586654,
-     "roi_max": 0.0743384319144526
+     "aciertos": 0.8383838383838383,
+     "cuota_media": 1.1841343434343434,
+     "roi": -0.01010606060606051,
+     "roi_min": -0.08285814746906832,
+     "roi_max": 0.0626460262569473
     },
     "triple": {
-     "apuestas": 78,
-     "aciertos": 0.7435897435897436,
-     "cuota_media": 1.3086286794871798,
-     "roi": -0.033258948717948544,
-     "roi_min": -0.14044413536052874,
-     "roi_max": 0.07392623792463165
+     "apuestas": 77,
+     "aciertos": 0.7532467532467533,
+     "cuota_media": 1.3061752857142859,
+     "roi": -0.023032441558441388,
+     "roi_min": -0.1293187652015987,
+     "roi_max": 0.08325388208471594
     },
     "regla": {
      "cuota_min": 1.05,
@@ -93,14 +93,14 @@
    }
   },
   "valor": {
-   "apuestas": 185,
-   "aciertos": 0.20540540540540542,
-   "cuota_media": 4.439837837837837,
-   "roi": -0.2945945945945946,
-   "roi_min": -0.48056998718702093,
-   "roi_max": -0.10861920200216826
+   "apuestas": 181,
+   "aciertos": 0.2154696132596685,
+   "cuota_media": 4.438950276243094,
+   "roi": -0.2632044198895028,
+   "roi_min": -0.4538204446665369,
+   "roi_max": -0.0725883951124687
   },
-  "dias": 187,
+  "dias": 183,
   "ligas": [
    "eng",
    "esp",
@@ -108,10 +108,10 @@
    "ger",
    "ita"
   ],
-  "desde": "2025-10-18",
+  "desde": "2025-10-25",
   "hasta": "2026-10-26"
  },
- "generado": "2026-10-27T01:11:46+00:00",
+ "generado": "2026-10-27T07:13:03+00:00",
  "modelo": "Dixon-Coles con decaimiento temporal",
  "parametros": {
   "xi": 0.0019,
@@ -125,34 +125,34 @@
    "nombre": "Premier League (Inglaterra)",
    "temporada": "2026-27",
    "fuente": "footballdata",
-   "home": 1.4521,
-   "away": 1.2509,
-   "rho": -0.0874,
+   "home": 1.4314,
+   "away": 1.2418,
+   "rho": -0.0982,
    "conteos": {
     "córners": {
-     "home": 5.2164,
-     "away": 4.5952
+     "home": 5.2069,
+     "away": 4.5977
     },
     "tarjetas": {
-     "home": 1.7966,
-     "away": 2.1397
+     "home": 1.7954,
+     "away": 2.1348
     }
    },
    "arbitros": {
     "A Madley": {
      "partidos": 45,
      "tarjetas": 3.89,
-     "esperadas": 3.98
+     "esperadas": 3.99
     },
     "A Taylor": {
      "partidos": 61,
      "tarjetas": 3.57,
-     "esperadas": 3.99
+     "esperadas": 4.0
     },
     "C Kavanagh": {
-     "partidos": 59,
-     "tarjetas": 4.25,
-     "esperadas": 3.98
+     "partidos": 60,
+     "tarjetas": 4.32,
+     "esperadas": 3.99
     },
     "C Pawson": {
      "partidos": 47,
@@ -175,14 +175,14 @@
      "esperadas": 4.02
     },
     "J Gillett": {
-     "partidos": 43,
-     "tarjetas": 3.98,
-     "esperadas": 4.05
+     "partidos": 44,
+     "tarjetas": 4.0,
+     "esperadas": 4.07
     },
     "M Oliver": {
      "partidos": 60,
      "tarjetas": 3.73,
-     "esperadas": 4.0
+     "esperadas": 4.01
     },
     "M Salisbury": {
      "partidos": 32,
@@ -190,28 +190,28 @@
      "esperadas": 3.92
     },
     "P Bankes": {
-     "partidos": 49,
-     "tarjetas": 3.92,
-     "esperadas": 4.03
+     "partidos": 50,
+     "tarjetas": 4.0,
+     "esperadas": 4.04
     },
     "P Tierney": {
-     "partidos": 16,
-     "tarjetas": 3.62,
-     "esperadas": 3.92
+     "partidos": 17,
+     "tarjetas": 3.76,
+     "esperadas": 3.93
     },
     "R Jones": {
-     "partidos": 44,
-     "tarjetas": 4.18,
-     "esperadas": 4.03
+     "partidos": 45,
+     "tarjetas": 4.11,
+     "esperadas": 4.04
     },
     "S Attwell": {
-     "partidos": 48,
-     "tarjetas": 4.54,
+     "partidos": 49,
+     "tarjetas": 4.51,
      "esperadas": 4.03
     },
     "S Barrott": {
-     "partidos": 51,
-     "tarjetas": 4.12,
+     "partidos": 52,
+     "tarjetas": 4.08,
      "esperadas": 3.99
     },
     "S Hooper": {
@@ -220,19 +220,19 @@
      "esperadas": 4.02
     },
     "T Bramall": {
-     "partidos": 37,
-     "tarjetas": 3.81,
-     "esperadas": 3.96
+     "partidos": 38,
+     "tarjetas": 3.76,
+     "esperadas": 3.97
     },
     "T Harrington": {
-     "partidos": 32,
-     "tarjetas": 3.72,
-     "esperadas": 3.91
+     "partidos": 33,
+     "tarjetas": 3.73,
+     "esperadas": 3.9
     },
     "T Robinson": {
      "partidos": 25,
      "tarjetas": 4.28,
-     "esperadas": 3.95
+     "esperadas": 3.94
     }
    },
    "selecciones": {
@@ -241,39 +241,39 @@
     "combinadas": [],
     "historial": {
      "seguras": {
-      "apuestas": 293,
-      "aciertos": 0.621160409556314,
-      "cuota_media": 1.5789078498293516,
-      "roi": -0.023959044368600687,
-      "roi_min": -0.09796556421646915,
-      "roi_max": 0.05004747547926777
+      "apuestas": 295,
+      "aciertos": 0.6033898305084746,
+      "cuota_media": 1.5769491525423727,
+      "roi": -0.0540677966101695,
+      "roi_min": -0.12822184217039762,
+      "roi_max": 0.020086248950058616
      },
      "valor": {
-      "apuestas": 299,
-      "aciertos": 0.3076923076923077,
-      "cuota_media": 3.556454849498328,
-      "roi": -0.1054180602006689,
-      "roi_min": -0.2447690731290871,
-      "roi_max": 0.033932952727749294
+      "apuestas": 300,
+      "aciertos": 0.31333333333333335,
+      "cuota_media": 3.537033333333333,
+      "roi": -0.09626666666666667,
+      "roi_min": -0.23515281171253494,
+      "roi_max": 0.0426194783792016
      },
      "doble": {
       "apuestas": 36,
       "aciertos": 0.4166666666666667,
-      "cuota_media": 2.1824999999999997,
-      "roi": -0.07583333333333335,
-      "roi_min": -0.38129864626796106,
-      "roi_max": 0.22963197960129433
+      "cuota_media": 2.168611111111111,
+      "roi": -0.09444444444444447,
+      "roi_min": -0.3933083486459521,
+      "roi_max": 0.20441945975706313
      },
      "triple": {
-      "apuestas": 35,
-      "aciertos": 0.22857142857142856,
-      "cuota_media": 3.352571428571429,
-      "roi": -0.26171428571428573,
-      "roi_min": -0.6474641319496254,
-      "roi_max": 0.12403556052105391
+      "apuestas": 36,
+      "aciertos": 0.2222222222222222,
+      "cuota_media": 3.3200000000000003,
+      "roi": -0.2822222222222222,
+      "roi_min": -0.658618557704115,
+      "roi_max": 0.09417411325967062
      },
-     "desde": "2025-10-19",
-     "hasta": "2026-10-19"
+     "desde": "2025-10-25",
+     "hasta": "2026-10-25"
     }
    },
    "top": {
@@ -284,524 +284,484 @@
     "n": 3,
     "label": "Descenso"
    },
-   "partidos_modelo": 830,
-   "ultimo_resultado": "2026-10-19",
+   "partidos_modelo": 840,
+   "ultimo_resultado": "2026-10-25",
    "equipos": [
     {
      "nombre": "Arsenal",
-     "ataque": 1.2424,
-     "defensa": 0.5864,
-     "local": 1.0609,
-     "partidos": 83,
+     "ataque": 1.2528,
+     "defensa": 0.5838,
+     "local": 1.072,
+     "partidos": 84,
      "sin_datos": false,
      "córners": [
-      1.1173,
-      0.796
+      1.1378,
+      0.7969
      ],
      "tarjetas": [
-      0.8805,
-      1.0571
+      0.8802,
+      1.0604
      ]
     },
     {
      "nombre": "Manchester City",
-     "ataque": 1.3944,
-     "defensa": 0.7482,
-     "local": 1.1044,
-     "partidos": 83,
+     "ataque": 1.3895,
+     "defensa": 0.759,
+     "local": 1.1227,
+     "partidos": 84,
      "sin_datos": false,
      "córners": [
-      1.2154,
-      0.8361
+      1.2207,
+      0.8362
      ],
      "tarjetas": [
-      0.9207,
-      1.0416
+      0.9315,
+      1.0542
      ]
     },
     {
      "nombre": "Liverpool",
-     "ataque": 1.3283,
-     "defensa": 0.8925,
-     "local": 0.9422,
-     "partidos": 83,
+     "ataque": 1.338,
+     "defensa": 0.8815,
+     "local": 0.9493,
+     "partidos": 84,
      "sin_datos": false,
      "córners": [
-      1.1753,
-      0.8844
+      1.1681,
+      0.8784
      ],
      "tarjetas": [
-      0.9516,
-      1.0482
+      0.9433,
+      1.0456
      ]
     },
     {
      "nombre": "Brighton",
-     "ataque": 1.2969,
-     "defensa": 0.881,
-     "local": 1.0183,
-     "partidos": 83,
+     "ataque": 1.2772,
+     "defensa": 0.8915,
+     "local": 1.0417,
+     "partidos": 84,
      "sin_datos": false,
      "córners": [
-      1.0264,
-      0.9824
+      1.0194,
+      0.9755
      ],
      "tarjetas": [
-      1.0337,
-      1.0148
-     ]
-    },
-    {
-     "nombre": "Chelsea",
-     "ataque": 1.2325,
-     "defensa": 0.9575,
-     "local": 1.0131,
-     "partidos": 83,
-     "sin_datos": false,
-     "córners": [
-      1.1716,
-      0.9108
-     ],
-     "tarjetas": [
-      1.1071,
-      1.1027
+      1.0315,
+      1.0046
      ]
     },
     {
      "nombre": "Bournemouth",
-     "ataque": 1.2172,
-     "defensa": 0.9493,
-     "local": 0.8969,
-     "partidos": 83,
+     "ataque": 1.2625,
+     "defensa": 0.9346,
+     "local": 0.8815,
+     "partidos": 84,
      "sin_datos": false,
      "córners": [
-      1.0939,
-      0.9885
+      1.091,
+      0.9872
      ],
      "tarjetas": [
-      1.129,
-      1.0074
+      1.119,
+      1.0195
+     ]
+    },
+    {
+     "nombre": "Chelsea",
+     "ataque": 1.2296,
+     "defensa": 0.9675,
+     "local": 0.9865,
+     "partidos": 84,
+     "sin_datos": false,
+     "córners": [
+      1.1644,
+      0.915
+     ],
+     "tarjetas": [
+      1.1237,
+      1.1048
      ]
     },
     {
      "nombre": "Nottingham Forest",
-     "ataque": 1.1749,
-     "defensa": 0.9133,
-     "local": 0.7187,
-     "partidos": 83,
+     "ataque": 1.1634,
+     "defensa": 0.9151,
+     "local": 0.734,
+     "partidos": 84,
      "sin_datos": false,
      "córners": [
-      1.0014,
-      1.029
+      1.002,
+      1.013
      ],
      "tarjetas": [
-      0.9775,
-      1.0083
+      0.9719,
+      1.0033
      ]
     },
     {
      "nombre": "Manchester United",
-     "ataque": 1.1547,
-     "defensa": 0.9251,
-     "local": 1.1031,
-     "partidos": 83,
+     "ataque": 1.1558,
+     "defensa": 0.9513,
+     "local": 1.0823,
+     "partidos": 84,
      "sin_datos": false,
      "córners": [
-      1.0421,
-      0.9509
+      1.0412,
+      0.9488
      ],
      "tarjetas": [
-      0.9805,
-      1.0414
+      0.9933,
+      1.0326
      ]
     },
     {
      "nombre": "Brentford",
-     "ataque": 1.0866,
-     "defensa": 0.9684,
-     "local": 1.1223,
-     "partidos": 83,
+     "ataque": 1.0963,
+     "defensa": 0.9732,
+     "local": 1.1271,
+     "partidos": 84,
      "sin_datos": false,
      "córners": [
-      0.9635,
-      1.0829
+      0.9687,
+      1.0813
      ],
      "tarjetas": [
-      0.9989,
-      0.9988
+      0.9932,
+      0.9882
      ]
     },
     {
      "nombre": "Aston Villa",
-     "ataque": 1.0468,
-     "defensa": 0.9493,
-     "local": 1.0978,
-     "partidos": 83,
+     "ataque": 1.0563,
+     "defensa": 0.9473,
+     "local": 1.1092,
+     "partidos": 84,
      "sin_datos": false,
      "córners": [
-      1.0357,
-      0.9569
+      1.0351,
+      0.9623
      ],
      "tarjetas": [
-      0.9479,
-      1.1495
+      0.9612,
+      1.1585
      ]
     },
     {
      "nombre": "Leeds",
-     "ataque": 0.9791,
-     "defensa": 0.9143,
-     "local": 1.0598,
-     "partidos": 45,
+     "ataque": 0.95,
+     "defensa": 0.9006,
+     "local": 1.0891,
+     "partidos": 46,
      "sin_datos": false,
      "córners": [
-      0.9351,
-      1.0015
+      0.9396,
+      0.9984
      ],
      "tarjetas": [
-      0.9507,
-      0.9965
-     ]
-    },
-    {
-     "nombre": "Everton",
-     "ataque": 0.9083,
-     "defensa": 0.8932,
-     "local": 1.0264,
-     "partidos": 83,
-     "sin_datos": false,
-     "córners": [
-      0.9341,
-      1.046
-     ],
-     "tarjetas": [
-      1.0104,
-      0.9161
+      0.9519,
+      0.9909
      ]
     },
     {
      "nombre": "Newcastle",
-     "ataque": 1.0184,
-     "defensa": 1.0369,
-     "local": 1.2217,
-     "partidos": 83,
+     "ataque": 1.0382,
+     "defensa": 1.03,
+     "local": 1.2143,
+     "partidos": 84,
      "sin_datos": false,
      "córners": [
-      1.116,
-      1.0045
+      1.1113,
+      1.0118
      ],
      "tarjetas": [
-      0.9849,
-      1.106
+      0.9908,
+      1.1113
      ]
     },
     {
-     "nombre": "Hull",
-     "ataque": 0.8327,
-     "defensa": 0.8833,
-     "local": 1.0264,
-     "partidos": 7,
+     "nombre": "Everton",
+     "ataque": 0.9022,
+     "defensa": 0.9022,
+     "local": 1.0404,
+     "partidos": 84,
      "sin_datos": false,
      "córners": [
-      0.9491,
-      1.074
+      0.9346,
+      1.0653
      ],
      "tarjetas": [
-      1.0578,
-      0.9453
+      1.0144,
+      0.9148
      ]
     },
     {
      "nombre": "Tottenham",
-     "ataque": 1.0025,
-     "defensa": 1.0558,
-     "local": 0.9609,
-     "partidos": 83,
+     "ataque": 1.0196,
+     "defensa": 1.0364,
+     "local": 0.9589,
+     "partidos": 84,
      "sin_datos": false,
      "córners": [
-      1.134,
-      0.9735
+      1.1377,
+      0.9675
      ],
      "tarjetas": [
-      1.0722,
-      1.0337
+      1.0749,
+      1.0499
      ]
     },
     {
      "nombre": "Fulham",
-     "ataque": 0.8892,
-     "defensa": 0.9428,
-     "local": 1.1394,
-     "partidos": 83,
+     "ataque": 0.8845,
+     "defensa": 0.9339,
+     "local": 1.1514,
+     "partidos": 84,
      "sin_datos": false,
      "córners": [
-      1.0587,
-      1.0042
+      1.0634,
+      1.0015
      ],
      "tarjetas": [
-      1.0125,
-      0.9248
+      1.0122,
+      0.9175
+     ]
+    },
+    {
+     "nombre": "Hull",
+     "ataque": 0.8378,
+     "defensa": 0.9015,
+     "local": 1.0232,
+     "partidos": 8,
+     "sin_datos": false,
+     "córners": [
+      0.9464,
+      1.0829
+     ],
+     "tarjetas": [
+      1.0394,
+      0.9375
      ]
     },
     {
      "nombre": "Crystal Palace",
-     "ataque": 0.9799,
-     "defensa": 1.0432,
-     "local": 0.9391,
-     "partidos": 83,
+     "ataque": 0.9802,
+     "defensa": 1.0545,
+     "local": 0.9252,
+     "partidos": 84,
      "sin_datos": false,
      "córners": [
-      0.9028,
-      1.0539
+      0.9118,
+      1.0491
      ],
      "tarjetas": [
-      0.9825,
-      0.9621
+      0.9893,
+      0.9681
      ]
     },
     {
      "nombre": "Sunderland",
-     "ataque": 0.892,
-     "defensa": 0.9942,
-     "local": 0.9452,
-     "partidos": 45,
+     "ataque": 0.8874,
+     "defensa": 0.9792,
+     "local": 0.9257,
+     "partidos": 46,
      "sin_datos": false,
      "córners": [
-      0.8878,
-      0.9987
+      0.8873,
+      1.0012
      ],
      "tarjetas": [
-      1.0429,
-      0.9875
+      1.037,
+      0.9876
      ]
     },
     {
      "nombre": "Ipswich",
-     "ataque": 1.0024,
-     "defensa": 1.3818,
-     "local": 0.8479,
-     "partidos": 45,
+     "ataque": 0.9985,
+     "defensa": 1.37,
+     "local": 0.8467,
+     "partidos": 46,
      "sin_datos": false,
      "córners": [
-      0.881,
-      1.0789
+      0.8598,
+      1.0777
      ],
      "tarjetas": [
-      1.02,
-      0.9969
+      1.0135,
+      0.9888
      ]
     },
     {
      "nombre": "Coventry",
-     "ataque": 0.7998,
-     "defensa": 1.2166,
-     "local": 1.0674,
-     "partidos": 7,
+     "ataque": 0.7459,
+     "defensa": 1.1835,
+     "local": 1.0154,
+     "partidos": 8,
      "sin_datos": false,
      "córners": [
-      0.9504,
-      0.9678
+      0.9448,
+      0.9771
      ],
      "tarjetas": [
-      0.9556,
-      0.9692
+      0.9431,
+      0.9693
      ]
     }
    ],
    "tabla": {
     "Arsenal": {
-     "pj": 7,
-     "pts": 18,
-     "gf": 11,
+     "pj": 8,
+     "pts": 21,
+     "gf": 13,
      "gc": 5
     },
     "Aston Villa": {
-     "pj": 7,
-     "pts": 8,
-     "gf": 7,
-     "gc": 11
+     "pj": 8,
+     "pts": 11,
+     "gf": 9,
+     "gc": 12
     },
     "Bournemouth": {
-     "pj": 7,
-     "pts": 6,
-     "gf": 9,
+     "pj": 8,
+     "pts": 9,
+     "gf": 12,
      "gc": 13
     },
     "Brentford": {
-     "pj": 7,
-     "pts": 10,
-     "gf": 13,
-     "gc": 8
+     "pj": 8,
+     "pts": 11,
+     "gf": 14,
+     "gc": 9
     },
     "Brighton": {
-     "pj": 7,
+     "pj": 8,
      "pts": 16,
      "gf": 23,
-     "gc": 5
-    },
-    "Chelsea": {
-     "pj": 7,
-     "pts": 13,
-     "gf": 17,
-     "gc": 13
-    },
-    "Coventry": {
-     "pj": 7,
-     "pts": 6,
-     "gf": 6,
-     "gc": 14
-    },
-    "Crystal Palace": {
-     "pj": 7,
-     "pts": 7,
-     "gf": 9,
-     "gc": 17
-    },
-    "Everton": {
-     "pj": 7,
-     "pts": 10,
-     "gf": 8,
      "gc": 7
     },
+    "Chelsea": {
+     "pj": 8,
+     "pts": 13,
+     "gf": 17,
+     "gc": 15
+    },
+    "Coventry": {
+     "pj": 8,
+     "pts": 6,
+     "gf": 6,
+     "gc": 15
+    },
+    "Crystal Palace": {
+     "pj": 8,
+     "pts": 7,
+     "gf": 9,
+     "gc": 19
+    },
+    "Everton": {
+     "pj": 8,
+     "pts": 10,
+     "gf": 8,
+     "gc": 9
+    },
     "Fulham": {
-     "pj": 7,
-     "pts": 5,
-     "gf": 7,
+     "pj": 8,
+     "pts": 8,
+     "gf": 8,
      "gc": 10
     },
     "Hull": {
-     "pj": 7,
-     "pts": 9,
-     "gf": 8,
-     "gc": 7
+     "pj": 8,
+     "pts": 10,
+     "gf": 9,
+     "gc": 8
     },
     "Ipswich": {
-     "pj": 7,
-     "pts": 9,
-     "gf": 11,
-     "gc": 15
+     "pj": 8,
+     "pts": 10,
+     "gf": 12,
+     "gc": 16
     },
     "Leeds": {
-     "pj": 7,
-     "pts": 10,
+     "pj": 8,
+     "pts": 11,
      "gf": 9,
      "gc": 6
     },
     "Liverpool": {
-     "pj": 7,
-     "pts": 12,
-     "gf": 9,
+     "pj": 8,
+     "pts": 15,
+     "gf": 11,
      "gc": 8
     },
     "Manchester City": {
-     "pj": 7,
+     "pj": 8,
      "pts": 21,
-     "gf": 19,
-     "gc": 7
+     "gf": 20,
+     "gc": 9
     },
     "Manchester United": {
-     "pj": 7,
+     "pj": 8,
      "pts": 7,
      "gf": 10,
-     "gc": 10
+     "gc": 13
     },
     "Newcastle": {
-     "pj": 7,
-     "pts": 8,
-     "gf": 10,
+     "pj": 8,
+     "pts": 11,
+     "gf": 12,
      "gc": 14
     },
     "Nottingham Forest": {
-     "pj": 7,
-     "pts": 5,
-     "gf": 5,
-     "gc": 9
+     "pj": 8,
+     "pts": 6,
+     "gf": 6,
+     "gc": 10
     },
     "Sunderland": {
-     "pj": 7,
-     "pts": 4,
+     "pj": 8,
+     "pts": 5,
      "gf": 6,
      "gc": 14
     },
     "Tottenham": {
-     "pj": 7,
-     "pts": 6,
-     "gf": 6,
+     "pj": 8,
+     "pts": 9,
+     "gf": 8,
      "gc": 10
     }
    },
    "restantes": [
     [
-     "Ipswich",
-     "Nottingham Forest"
-    ],
-    [
-     "Arsenal",
-     "Everton"
-    ],
-    [
-     "Aston Villa",
-     "Manchester City"
-    ],
-    [
      "Coventry",
-     "Fulham"
-    ],
-    [
-     "Chelsea",
-     "Tottenham"
-    ],
-    [
-     "Liverpool",
-     "Brighton"
-    ],
-    [
-     "Manchester United",
-     "Bournemouth"
-    ],
-    [
-     "Crystal Palace",
-     "Newcastle"
-    ],
-    [
-     "Hull",
-     "Brentford"
-    ],
-    [
-     "Sunderland",
-     "Leeds"
-    ],
-    [
-     "Chelsea",
-     "Manchester United"
-    ],
-    [
-     "Bournemouth",
-     "Leeds"
-    ],
-    [
-     "Brentford",
-     "Nottingham Forest"
-    ],
-    [
-     "Manchester City",
-     "Brighton"
-    ],
-    [
-     "Aston Villa",
-     "Fulham"
+     "Sunderland"
     ],
     [
      "Hull",
      "Ipswich"
     ],
     [
-     "Coventry",
-     "Sunderland"
+     "Aston Villa",
+     "Fulham"
     ],
     [
      "Tottenham",
      "Crystal Palace"
+    ],
+    [
+     "Brentford",
+     "Nottingham Forest"
+    ],
+    [
+     "Bournemouth",
+     "Leeds"
+    ],
+    [
+     "Manchester City",
+     "Brighton"
+    ],
+    [
+     "Chelsea",
+     "Manchester United"
     ],
     [
      "Liverpool",
@@ -824,12 +784,12 @@
      "Chelsea"
     ],
     [
-     "Manchester United",
-     "Aston Villa"
-    ],
-    [
      "Brighton",
      "Brentford"
+    ],
+    [
+     "Manchester United",
+     "Aston Villa"
     ],
     [
      "Nottingham Forest",
@@ -852,10 +812,6 @@
      "Newcastle"
     ],
     [
-     "Chelsea",
-     "Leeds"
-    ],
-    [
      "Liverpool",
      "Manchester United"
     ],
@@ -864,24 +820,16 @@
      "Nottingham Forest"
     ],
     [
-     "Aston Villa",
-     "Sunderland"
+     "Chelsea",
+     "Leeds"
     ],
     [
      "Manchester City",
      "Fulham"
     ],
     [
-     "Hull",
-     "Brighton"
-    ],
-    [
-     "Coventry",
-     "Crystal Palace"
-    ],
-    [
-     "Brentford",
-     "Everton"
+     "Aston Villa",
+     "Sunderland"
     ],
     [
      "Newcastle",
@@ -890,6 +838,42 @@
     [
      "Tottenham",
      "Ipswich"
+    ],
+    [
+     "Brentford",
+     "Everton"
+    ],
+    [
+     "Coventry",
+     "Crystal Palace"
+    ],
+    [
+     "Hull",
+     "Brighton"
+    ],
+    [
+     "Brighton",
+     "Newcastle"
+    ],
+    [
+     "Crystal Palace",
+     "Hull"
+    ],
+    [
+     "Sunderland",
+     "Tottenham"
+    ],
+    [
+     "Nottingham Forest",
+     "Chelsea"
+    ],
+    [
+     "Everton",
+     "Liverpool"
+    ],
+    [
+     "Manchester United",
+     "Brentford"
     ],
     [
      "Fulham",
@@ -900,80 +884,56 @@
      "Aston Villa"
     ],
     [
-     "Arsenal",
-     "Manchester City"
-    ],
-    [
-     "Manchester United",
-     "Brentford"
-    ],
-    [
-     "Nottingham Forest",
-     "Chelsea"
-    ],
-    [
-     "Brighton",
-     "Newcastle"
-    ],
-    [
-     "Everton",
-     "Liverpool"
-    ],
-    [
-     "Sunderland",
-     "Tottenham"
-    ],
-    [
-     "Crystal Palace",
-     "Hull"
-    ],
-    [
      "Leeds",
      "Coventry"
     ],
     [
-     "Brentford",
-     "Arsenal"
+     "Arsenal",
+     "Manchester City"
     ],
     [
-     "Manchester City",
-     "Leeds"
-    ],
-    [
-     "Bournemouth",
-     "Brighton"
-    ],
-    [
-     "Coventry",
-     "Ipswich"
-    ],
-    [
-     "Newcastle",
-     "Manchester United"
-    ],
-    [
-     "Aston Villa",
-     "Everton"
-    ],
-    [
-     "Hull",
-     "Nottingham Forest"
+     "Chelsea",
+     "Crystal Palace"
     ],
     [
      "Liverpool",
      "Sunderland"
     ],
     [
-     "Chelsea",
-     "Crystal Palace"
+     "Hull",
+     "Nottingham Forest"
     ],
     [
      "Tottenham",
      "Fulham"
     ],
     [
+     "Manchester City",
+     "Leeds"
+    ],
+    [
+     "Newcastle",
+     "Manchester United"
+    ],
+    [
+     "Coventry",
+     "Ipswich"
+    ],
+    [
+     "Bournemouth",
+     "Brighton"
+    ],
+    [
      "Brentford",
-     "Manchester City"
+     "Arsenal"
+    ],
+    [
+     "Aston Villa",
+     "Everton"
+    ],
+    [
+     "Everton",
+     "Fulham"
     ],
     [
      "Bournemouth",
@@ -988,8 +948,8 @@
      "Crystal Palace"
     ],
     [
-     "Everton",
-     "Fulham"
+     "Brentford",
+     "Manchester City"
     ],
     [
      "Newcastle",
@@ -1010,10 +970,6 @@
     [
      "Leeds",
      "Ipswich"
-    ],
-    [
-     "Arsenal",
-     "Bournemouth"
     ],
     [
      "Coventry",
@@ -1024,84 +980,80 @@
      "Brentford"
     ],
     [
-     "Manchester City",
-     "Chelsea"
-    ],
-    [
      "Liverpool",
      "Leeds"
+    ],
+    [
+     "Arsenal",
+     "Bournemouth"
+    ],
+    [
+     "Manchester City",
+     "Chelsea"
     ],
     [
      "Brighton",
      "Everton"
     ],
     [
-     "Ipswich",
-     "Newcastle"
+     "Hull",
+     "Tottenham"
     ],
     [
      "Sunderland",
      "Nottingham Forest"
     ],
     [
-     "Crystal Palace",
-     "Manchester United"
-    ],
-    [
-     "Hull",
-     "Tottenham"
-    ],
-    [
-     "Brentford",
+     "Ipswich",
      "Newcastle"
     ],
     [
-     "Leeds",
-     "Fulham"
-    ],
-    [
-     "Brighton",
-     "Ipswich"
-    ],
-    [
-     "Nottingham Forest",
-     "Everton"
-    ],
-    [
-     "Manchester City",
-     "Hull"
-    ],
-    [
-     "Sunderland",
-     "Crystal Palace"
+     "Crystal Palace",
+     "Manchester United"
     ],
     [
      "Arsenal",
      "Manchester United"
     ],
     [
-     "Liverpool",
-     "Tottenham"
+     "Bournemouth",
+     "Coventry"
     ],
     [
      "Chelsea",
      "Aston Villa"
     ],
     [
-     "Bournemouth",
-     "Coventry"
+     "Liverpool",
+     "Tottenham"
     ],
     [
-     "Hull",
-     "Liverpool"
+     "Sunderland",
+     "Crystal Palace"
     ],
     [
-     "Everton",
-     "Sunderland"
+     "Leeds",
+     "Fulham"
     ],
     [
-     "Newcastle",
-     "Manchester City"
+     "Nottingham Forest",
+     "Everton"
+    ],
+    [
+     "Brighton",
+     "Ipswich"
+    ],
+    [
+     "Manchester City",
+     "Hull"
+    ],
+    [
+     "Brentford",
+     "Newcastle"
+    ],
+    [
+     "Aston Villa",
+     "Leeds"
     ],
     [
      "Fulham",
@@ -1112,12 +1064,20 @@
      "Brentford"
     ],
     [
+     "Everton",
+     "Sunderland"
+    ],
+    [
      "Tottenham",
      "Bournemouth"
     ],
     [
-     "Aston Villa",
-     "Leeds"
+     "Hull",
+     "Liverpool"
+    ],
+    [
+     "Newcastle",
+     "Manchester City"
     ],
     [
      "Coventry",
@@ -1132,36 +1092,24 @@
      "Arsenal"
     ],
     [
-     "Hull",
-     "Leeds"
+     "Everton",
+     "Manchester City"
     ],
     [
      "Tottenham",
      "Brighton"
     ],
     [
-     "Everton",
-     "Manchester City"
-    ],
-    [
-     "Newcastle",
-     "Nottingham Forest"
-    ],
-    [
-     "Crystal Palace",
-     "Bournemouth"
-    ],
-    [
-     "Ipswich",
-     "Chelsea"
-    ],
-    [
-     "Aston Villa",
-     "Liverpool"
+     "Hull",
+     "Leeds"
     ],
     [
      "Coventry",
      "Brentford"
+    ],
+    [
+     "Newcastle",
+     "Nottingham Forest"
     ],
     [
      "Fulham",
@@ -1172,8 +1120,36 @@
      "Sunderland"
     ],
     [
+     "Aston Villa",
+     "Liverpool"
+    ],
+    [
+     "Ipswich",
+     "Chelsea"
+    ],
+    [
+     "Crystal Palace",
+     "Bournemouth"
+    ],
+    [
      "Leeds",
      "Everton"
+    ],
+    [
+     "Bournemouth",
+     "Aston Villa"
+    ],
+    [
+     "Brighton",
+     "Manchester United"
+    ],
+    [
+     "Brentford",
+     "Crystal Palace"
+    ],
+    [
+     "Arsenal",
+     "Ipswich"
     ],
     [
      "Sunderland",
@@ -1188,32 +1164,12 @@
      "Fulham"
     ],
     [
-     "Arsenal",
-     "Ipswich"
-    ],
-    [
-     "Brighton",
-     "Manchester United"
-    ],
-    [
-     "Brentford",
-     "Crystal Palace"
-    ],
-    [
-     "Bournemouth",
-     "Aston Villa"
-    ],
-    [
-     "Manchester City",
-     "Tottenham"
-    ],
-    [
      "Chelsea",
      "Newcastle"
     ],
     [
-     "Everton",
-     "Aston Villa"
+     "Manchester City",
+     "Tottenham"
     ],
     [
      "Sunderland",
@@ -1232,12 +1188,8 @@
      "Hull"
     ],
     [
-     "Crystal Palace",
-     "Chelsea"
-    ],
-    [
-     "Fulham",
-     "Tottenham"
+     "Everton",
+     "Aston Villa"
     ],
     [
      "Leeds",
@@ -1248,20 +1200,16 @@
      "Coventry"
     ],
     [
+     "Fulham",
+     "Tottenham"
+    ],
+    [
+     "Crystal Palace",
+     "Chelsea"
+    ],
+    [
      "Manchester United",
      "Newcastle"
-    ],
-    [
-     "Tottenham",
-     "Leeds"
-    ],
-    [
-     "Bournemouth",
-     "Ipswich"
-    ],
-    [
-     "Chelsea",
-     "Sunderland"
     ],
     [
      "Brentford",
@@ -1272,8 +1220,24 @@
      "Manchester United"
     ],
     [
+     "Bournemouth",
+     "Ipswich"
+    ],
+    [
+     "Chelsea",
+     "Sunderland"
+    ],
+    [
+     "Tottenham",
+     "Leeds"
+    ],
+    [
      "Coventry",
      "Everton"
+    ],
+    [
+     "Liverpool",
+     "Crystal Palace"
     ],
     [
      "Hull",
@@ -1288,72 +1252,64 @@
      "Nottingham Forest"
     ],
     [
-     "Liverpool",
-     "Crystal Palace"
-    ],
-    [
-     "Everton",
-     "Brentford"
-    ],
-    [
-     "Crystal Palace",
-     "Tottenham"
-    ],
-    [
-     "Brighton",
-     "Manchester City"
-    ],
-    [
-     "Leeds",
-     "Chelsea"
-    ],
-    [
-     "Fulham",
-     "Aston Villa"
-    ],
-    [
-     "Ipswich",
-     "Hull"
-    ],
-    [
-     "Arsenal",
-     "Newcastle"
+     "Sunderland",
+     "Coventry"
     ],
     [
      "Manchester United",
      "Liverpool"
     ],
     [
-     "Sunderland",
-     "Coventry"
+     "Arsenal",
+     "Newcastle"
+    ],
+    [
+     "Ipswich",
+     "Hull"
     ],
     [
      "Nottingham Forest",
      "Bournemouth"
     ],
     [
-     "Liverpool",
-     "Everton"
+     "Fulham",
+     "Aston Villa"
     ],
     [
-     "Bournemouth",
-     "Fulham"
+     "Leeds",
+     "Chelsea"
     ],
     [
-     "Aston Villa",
-     "Ipswich"
+     "Brighton",
+     "Manchester City"
+    ],
+    [
+     "Crystal Palace",
+     "Tottenham"
+    ],
+    [
+     "Everton",
+     "Brentford"
     ],
     [
      "Manchester City",
      "Arsenal"
     ],
     [
+     "Liverpool",
+     "Everton"
+    ],
+    [
+     "Aston Villa",
+     "Ipswich"
+    ],
+    [
      "Chelsea",
      "Nottingham Forest"
     ],
     [
-     "Hull",
-     "Crystal Palace"
+     "Bournemouth",
+     "Fulham"
     ],
     [
      "Coventry",
@@ -1372,6 +1328,10 @@
      "Brighton"
     ],
     [
+     "Hull",
+     "Crystal Palace"
+    ],
+    [
      "Fulham",
      "Manchester City"
     ],
@@ -1392,6 +1352,10 @@
      "Newcastle"
     ],
     [
+     "Sunderland",
+     "Aston Villa"
+    ],
+    [
      "Crystal Palace",
      "Coventry"
     ],
@@ -1408,14 +1372,6 @@
      "Liverpool"
     ],
     [
-     "Sunderland",
-     "Aston Villa"
-    ],
-    [
-     "Tottenham",
-     "Manchester City"
-    ],
-    [
      "Newcastle",
      "Chelsea"
     ],
@@ -1426,6 +1382,10 @@
     [
      "Manchester United",
      "Brighton"
+    ],
+    [
+     "Tottenham",
+     "Manchester City"
     ],
     [
      "Fulham",
@@ -1472,10 +1432,6 @@
      "Aston Villa"
     ],
     [
-     "Chelsea",
-     "Ipswich"
-    ],
-    [
      "Brentford",
      "Coventry"
     ],
@@ -1492,6 +1448,14 @@
      "Hull"
     ],
     [
+     "Chelsea",
+     "Ipswich"
+    ],
+    [
+     "Newcastle",
+     "Brentford"
+    ],
+    [
      "Tottenham",
      "Liverpool"
     ],
@@ -1502,10 +1466,6 @@
     [
      "Hull",
      "Manchester City"
-    ],
-    [
-     "Newcastle",
-     "Brentford"
     ],
     [
      "Fulham",
@@ -1588,16 +1548,16 @@
      "Everton"
     ],
     [
-     "Tottenham",
-     "Nottingham Forest"
-    ],
-    [
-     "Crystal Palace",
-     "Fulham"
+     "Coventry",
+     "Manchester City"
     ],
     [
      "Liverpool",
      "Ipswich"
+    ],
+    [
+     "Crystal Palace",
+     "Fulham"
     ],
     [
      "Bournemouth",
@@ -1608,12 +1568,12 @@
      "Brighton"
     ],
     [
-     "Coventry",
-     "Manchester City"
+     "Tottenham",
+     "Nottingham Forest"
     ],
     [
-     "Hull",
-     "Chelsea"
+     "Ipswich",
+     "Crystal Palace"
     ],
     [
      "Arsenal",
@@ -1632,10 +1592,6 @@
      "Manchester United"
     ],
     [
-     "Ipswich",
-     "Crystal Palace"
-    ],
-    [
      "Fulham",
      "Liverpool"
     ],
@@ -1652,20 +1608,24 @@
      "Leeds"
     ],
     [
-     "Aston Villa",
-     "Brighton"
-    ],
-    [
-     "Tottenham",
-     "Brentford"
+     "Hull",
+     "Chelsea"
     ],
     [
      "Coventry",
      "Arsenal"
     ],
     [
+     "Tottenham",
+     "Brentford"
+    ],
+    [
      "Bournemouth",
      "Manchester City"
+    ],
+    [
+     "Aston Villa",
+     "Brighton"
     ],
     [
      "Crystal Palace",
@@ -1680,16 +1640,16 @@
      "Newcastle"
     ],
     [
-     "Manchester United",
-     "Hull"
-    ],
-    [
      "Leeds",
      "Nottingham Forest"
     ],
     [
      "Chelsea",
      "Fulham"
+    ],
+    [
+     "Manchester United",
+     "Hull"
     ],
     [
      "Everton",
@@ -1975,118 +1935,26 @@
    "proximos": [
     {
      "fecha": "2026-10-31",
-     "local": "Chelsea",
-     "visitante": "Manchester United",
+     "local": "Coventry",
+     "visitante": "Sunderland",
      "pendiente": false,
      "córners": [
-      5.81,
-      4.36
+      4.93,
+      3.99
      ],
      "tarjetas": [
-      2.07,
-      2.31
+      1.67,
+      2.15
      ],
-     "lh": 1.6774,
-     "la": 1.3831,
-     "p1": 0.4357,
-     "px": 0.2565,
-     "p2": 0.3078,
-     "o25": 0.5902,
-     "btts": 0.6187,
+     "lh": 1.0615,
+     "la": 1.3042,
+     "p1": 0.29,
+     "px": 0.3019,
+     "p2": 0.4081,
+     "o25": 0.4213,
+     "btts": 0.4893,
      "marcador": "1-1",
-     "p_marcador": 0.1182
-    },
-    {
-     "fecha": "2026-10-31",
-     "local": "Bournemouth",
-     "visitante": "Leeds",
-     "pendiente": false,
-     "córners": [
-      5.71,
-      4.25
-     ],
-     "tarjetas": [
-      2.02,
-      2.05
-     ],
-     "lh": 1.4494,
-     "la": 1.1627,
-     "p1": 0.426,
-     "px": 0.2816,
-     "p2": 0.2924,
-     "o25": 0.4846,
-     "btts": 0.5368,
-     "marcador": "1-1",
-     "p_marcador": 0.1345
-    },
-    {
-     "fecha": "2026-10-31",
-     "local": "Brentford",
-     "visitante": "Nottingham Forest",
-     "pendiente": false,
-     "córners": [
-      5.17,
-      4.98
-     ],
-     "tarjetas": [
-      1.81,
-      2.09
-     ],
-     "lh": 1.6175,
-     "la": 1.4233,
-     "p1": 0.4128,
-     "px": 0.2592,
-     "p2": 0.328,
-     "o25": 0.5859,
-     "btts": 0.6181,
-     "marcador": "1-1",
-     "p_marcador": 0.1197
-    },
-    {
-     "fecha": "2026-10-31",
-     "local": "Manchester City",
-     "visitante": "Brighton",
-     "pendiente": false,
-     "córners": [
-      6.23,
-      3.94
-     ],
-     "tarjetas": [
-      1.68,
-      2.3
-     ],
-     "lh": 1.97,
-     "la": 1.2139,
-     "p1": 0.5408,
-     "px": 0.2353,
-     "p2": 0.2238,
-     "o25": 0.6167,
-     "btts": 0.6136,
-     "marcador": "1-1",
-     "p_marcador": 0.1077
-    },
-    {
-     "fecha": "2026-10-31",
-     "local": "Aston Villa",
-     "visitante": "Fulham",
-     "pendiente": false,
-     "córners": [
-      5.43,
-      4.66
-     ],
-     "tarjetas": [
-      1.57,
-      2.49
-     ],
-     "lh": 1.5732,
-     "la": 1.056,
-     "p1": 0.4828,
-     "px": 0.2729,
-     "p2": 0.2443,
-     "o25": 0.4889,
-     "btts": 0.5274,
-     "marcador": "1-1",
-     "p_marcador": 0.1303
+     "p_marcador": 0.1427
     },
     {
      "fecha": "2026-10-31",
@@ -2094,45 +1962,45 @@
      "visitante": "Ipswich",
      "pendiente": false,
      "córners": [
-      5.34,
-      4.35
+      5.31,
+      4.28
      ],
      "tarjetas": [
-      1.89,
-      2.06
+      1.85,
+      2.03
      ],
-     "lh": 1.7151,
-     "la": 1.1076,
-     "p1": 0.506,
-     "px": 0.2585,
-     "p2": 0.2355,
-     "o25": 0.5359,
+     "lh": 1.6812,
+     "la": 1.1178,
+     "p1": 0.4941,
+     "px": 0.2641,
+     "p2": 0.2418,
+     "o25": 0.5303,
      "btts": 0.559,
      "marcador": "1-1",
-     "p_marcador": 0.1228
+     "p_marcador": 0.1256
     },
     {
      "fecha": "2026-10-31",
-     "local": "Coventry",
-     "visitante": "Sunderland",
+     "local": "Aston Villa",
+     "visitante": "Fulham",
      "pendiente": false,
      "córners": [
-      4.95,
-      3.95
+      5.4,
+      4.7
      ],
      "tarjetas": [
-      1.7,
-      2.16
+      1.58,
+      2.5
      ],
-     "lh": 1.2326,
-     "la": 1.3575,
-     "p1": 0.3278,
-     "px": 0.2858,
-     "p2": 0.3864,
-     "o25": 0.4791,
-     "btts": 0.5371,
+     "lh": 1.5662,
+     "la": 1.0405,
+     "p1": 0.4834,
+     "px": 0.2764,
+     "p2": 0.2402,
+     "o25": 0.4833,
+     "btts": 0.5235,
      "marcador": "1-1",
-     "p_marcador": 0.1365
+     "p_marcador": 0.132
     },
     {
      "fecha": "2026-10-31",
@@ -2140,22 +2008,114 @@
      "visitante": "Crystal Palace",
      "pendiente": false,
      "córners": [
-      6.23,
-      4.04
+      6.21,
+      4.06
      ],
      "tarjetas": [
-      1.85,
-      2.17
+      1.87,
+      2.22
      ],
-     "lh": 1.4593,
-     "la": 1.2942,
-     "p1": 0.4,
-     "px": 0.2753,
-     "p2": 0.3247,
-     "o25": 0.5194,
-     "btts": 0.5677,
+     "lh": 1.4758,
+     "la": 1.2616,
+     "p1": 0.4099,
+     "px": 0.2781,
+     "p2": 0.312,
+     "o25": 0.5155,
+     "btts": 0.5648,
      "marcador": "1-1",
-     "p_marcador": 0.1308
+     "p_marcador": 0.1324
+    },
+    {
+     "fecha": "2026-10-31",
+     "local": "Brentford",
+     "visitante": "Nottingham Forest",
+     "pendiente": false,
+     "córners": [
+      5.11,
+      4.98
+     ],
+     "tarjetas": [
+      1.79,
+      2.05
+     ],
+     "lh": 1.6184,
+     "la": 1.406,
+     "p1": 0.4154,
+     "px": 0.2621,
+     "p2": 0.3225,
+     "o25": 0.5822,
+     "btts": 0.6161,
+     "marcador": "1-1",
+     "p_marcador": 0.1214
+    },
+    {
+     "fecha": "2026-10-31",
+     "local": "Bournemouth",
+     "visitante": "Leeds",
+     "pendiente": false,
+     "córners": [
+      5.67,
+      4.26
+     ],
+     "tarjetas": [
+      1.99,
+      2.07
+     ],
+     "lh": 1.4347,
+     "la": 1.1026,
+     "p1": 0.4344,
+     "px": 0.2878,
+     "p2": 0.2778,
+     "o25": 0.4657,
+     "btts": 0.5212,
+     "marcador": "1-1",
+     "p_marcador": 0.1374
+    },
+    {
+     "fecha": "2026-10-31",
+     "local": "Manchester City",
+     "visitante": "Brighton",
+     "pendiente": false,
+     "córners": [
+      6.2,
+      3.92
+     ],
+     "tarjetas": [
+      1.68,
+      2.32
+     ],
+     "lh": 1.9909,
+     "la": 1.2038,
+     "p1": 0.5466,
+     "px": 0.2356,
+     "p2": 0.2178,
+     "o25": 0.619,
+     "btts": 0.614,
+     "marcador": "1-1",
+     "p_marcador": 0.1079
+    },
+    {
+     "fecha": "2026-10-31",
+     "local": "Chelsea",
+     "visitante": "Manchester United",
+     "pendiente": false,
+     "córners": [
+      5.75,
+      4.38
+     ],
+     "tarjetas": [
+      2.08,
+      2.34
+     ],
+     "lh": 1.6517,
+     "la": 1.3887,
+     "p1": 0.4271,
+     "px": 0.2605,
+     "p2": 0.3124,
+     "o25": 0.5858,
+     "btts": 0.6175,
+     "marcador": "1-1",
+     "p_marcador": 0.1205
     },
     {
      "fecha": "2026-11-01",
@@ -2163,22 +2123,22 @@
      "visitante": "Arsenal",
      "pendiente": false,
      "córners": [
-      4.88,
-      4.54
+      4.85,
+      4.6
      ],
      "tarjetas": [
-      1.81,
-      1.97
+      1.8,
+      1.96
      ],
-     "lh": 1.0656,
-     "la": 1.3871,
-     "p1": 0.2776,
-     "px": 0.291,
-     "p2": 0.4314,
-     "o25": 0.444,
-     "btts": 0.5029,
+     "lh": 1.0613,
+     "la": 1.3714,
+     "p1": 0.2778,
+     "px": 0.2954,
+     "p2": 0.4267,
+     "o25": 0.4388,
+     "btts": 0.5006,
      "marcador": "1-1",
-     "p_marcador": 0.1383
+     "p_marcador": 0.1403
     },
     {
      "fecha": "2026-11-02",
@@ -2186,22 +2146,22 @@
      "visitante": "Everton",
      "pendiente": false,
      "córners": [
-      6.09,
-      4.31
+      6.16,
+      4.35
      ],
      "tarjetas": [
-      1.62,
-      2.39
+      1.63,
+      2.41
      ],
-     "lh": 1.6136,
-     "la": 1.1781,
-     "p1": 0.4647,
-     "px": 0.2668,
-     "p2": 0.2684,
-     "o25": 0.5286,
-     "btts": 0.5645,
+     "lh": 1.6281,
+     "la": 1.154,
+     "p1": 0.4725,
+     "px": 0.2686,
+     "p2": 0.2589,
+     "o25": 0.5263,
+     "btts": 0.5617,
      "marcador": "1-1",
-     "p_marcador": 0.1267
+     "p_marcador": 0.1277
     },
     {
      "fecha": "2026-11-07",
@@ -2209,22 +2169,22 @@
      "visitante": "Liverpool",
      "pendiente": false,
      "córners": [
-      4.16,
-      5.69
+      4.17,
+      5.63
      ],
      "tarjetas": [
-      1.85,
-      1.96
+      1.86,
+      1.95
      ],
-     "lh": 1.1928,
-     "la": 1.7334,
-     "p1": 0.2531,
-     "px": 0.2561,
-     "p2": 0.4908,
-     "o25": 0.5601,
-     "btts": 0.5832,
+     "lh": 1.1444,
+     "la": 1.7521,
+     "p1": 0.2376,
+     "px": 0.2572,
+     "p2": 0.5051,
+     "o25": 0.5532,
+     "btts": 0.5743,
      "marcador": "1-1",
-     "p_marcador": 0.1205
+     "p_marcador": 0.1216
     },
     {
      "fecha": "2026-11-07",
@@ -2232,22 +2192,22 @@
      "visitante": "Bournemouth",
      "pendiente": false,
      "córners": [
-      4.54,
-      5.42
+      4.42,
+      5.41
      ],
      "tarjetas": [
-      1.85,
-      2.41
+      1.86,
+      2.36
      ],
-     "lh": 1.1717,
-     "la": 2.1039,
-     "p1": 0.1976,
-     "px": 0.2231,
-     "p2": 0.5793,
-     "o25": 0.6357,
-     "btts": 0.6141,
+     "lh": 1.131,
+     "la": 2.1479,
+     "p1": 0.183,
+     "px": 0.2203,
+     "p2": 0.5968,
+     "o25": 0.6363,
+     "btts": 0.6072,
      "marcador": "1-1",
-     "p_marcador": 0.1013
+     "p_marcador": 0.1005
     },
     {
      "fecha": "2026-11-07",
@@ -2255,45 +2215,22 @@
      "visitante": "Chelsea",
      "pendiente": false,
      "córners": [
-      4.22,
-      5.38
+      4.23,
+      5.36
      ],
      "tarjetas": [
-      2.07,
-      2.34
+      2.06,
+      2.37
      ],
-     "lh": 1.1723,
-     "la": 1.5329,
-     "p1": 0.2804,
-     "px": 0.2741,
-     "p2": 0.4455,
-     "o25": 0.5076,
-     "btts": 0.5518,
+     "lh": 1.1377,
+     "la": 1.4951,
+     "p1": 0.2766,
+     "px": 0.2811,
+     "p2": 0.4423,
+     "o25": 0.4898,
+     "btts": 0.5391,
      "marcador": "1-1",
-     "p_marcador": 0.1306
-    },
-    {
-     "fecha": "2026-11-07",
-     "local": "Manchester United",
-     "visitante": "Aston Villa",
-     "pendiente": false,
-     "córners": [
-      5.2,
-      4.53
-     ],
-     "tarjetas": [
-      2.02,
-      2.11
-     ],
-     "lh": 1.7559,
-     "la": 1.2114,
-     "p1": 0.492,
-     "px": 0.2539,
-     "p2": 0.2541,
-     "o25": 0.5694,
-     "btts": 0.5905,
-     "marcador": "1-1",
-     "p_marcador": 0.119
+     "p_marcador": 0.1343
     },
     {
      "fecha": "2026-11-07",
@@ -2301,22 +2238,45 @@
      "visitante": "Brentford",
      "pendiente": false,
      "córners": [
-      5.8,
-      4.35
+      5.74,
+      4.34
      ],
      "tarjetas": [
-      1.85,
-      2.17
+      1.83,
+      2.13
      ],
-     "lh": 1.857,
-     "la": 1.1975,
-     "p1": 0.5189,
-     "px": 0.2452,
-     "p2": 0.2359,
-     "o25": 0.5889,
-     "btts": 0.5982,
+     "lh": 1.8534,
+     "la": 1.2137,
+     "p1": 0.5133,
+     "px": 0.2477,
+     "p2": 0.239,
+     "o25": 0.5917,
+     "btts": 0.603,
      "marcador": "1-1",
-     "p_marcador": 0.114
+     "p_marcador": 0.115
+    },
+    {
+     "fecha": "2026-11-07",
+     "local": "Manchester United",
+     "visitante": "Aston Villa",
+     "pendiente": false,
+     "córners": [
+      5.22,
+      4.52
+     ],
+     "tarjetas": [
+      2.07,
+      2.12
+     ],
+     "lh": 1.6961,
+     "la": 1.2478,
+     "p1": 0.4682,
+     "px": 0.2608,
+     "p2": 0.2709,
+     "o25": 0.5641,
+     "btts": 0.5931,
+     "marcador": "1-1",
+     "p_marcador": 0.1224
     },
     {
      "fecha": "2026-11-07",
@@ -2324,22 +2284,22 @@
      "visitante": "Manchester City",
      "pendiente": false,
      "córners": [
-      4.37,
-      5.75
+      4.36,
+      5.69
      ],
      "tarjetas": [
-      1.83,
-      1.99
+      1.84,
+      2.0
      ],
-     "lh": 0.9176,
-     "la": 1.5931,
-     "p1": 0.2066,
-     "px": 0.2718,
-     "p2": 0.5216,
-     "o25": 0.4589,
-     "btts": 0.4888,
+     "lh": 0.9278,
+     "la": 1.579,
+     "p1": 0.2098,
+     "px": 0.276,
+     "p2": 0.5142,
+     "o25": 0.4579,
+     "btts": 0.4917,
      "marcador": "1-1",
-     "p_marcador": 0.1291
+     "p_marcador": 0.1312
     },
     {
      "fecha": "2026-11-07",
@@ -2347,22 +2307,22 @@
      "visitante": "Hull",
      "pendiente": false,
      "córners": [
-      6.26,
+      6.42,
       3.47
      ],
      "tarjetas": [
-      1.5,
-      2.39
+      1.48,
+      2.35
      ],
-     "lh": 1.6905,
-     "la": 0.6108,
-     "p1": 0.6271,
-     "px": 0.2515,
-     "p2": 0.1213,
-     "o25": 0.4043,
-     "btts": 0.3818,
+     "lh": 1.733,
+     "la": 0.6074,
+     "p1": 0.6369,
+     "px": 0.2476,
+     "p2": 0.1155,
+     "o25": 0.4147,
+     "btts": 0.3847,
      "marcador": "1-0",
-     "p_marcador": 0.1602
+     "p_marcador": 0.1569
     },
     {
      "fecha": "2026-11-07",
@@ -2370,22 +2330,22 @@
      "visitante": "Coventry",
      "pendiente": false,
      "córners": [
-      4.72,
-      4.57
+      4.75,
+      4.63
      ],
      "tarjetas": [
-      1.76,
-      1.87
+      1.77,
+      1.84
      ],
-     "lh": 1.6469,
-     "la": 0.8937,
-     "p1": 0.5412,
-     "px": 0.2654,
-     "p2": 0.1933,
-     "o25": 0.4666,
-     "btts": 0.4872,
-     "marcador": "1-1",
-     "p_marcador": 0.1261
+     "lh": 1.5901,
+     "la": 0.8357,
+     "p1": 0.5405,
+     "px": 0.2743,
+     "p2": 0.1852,
+     "o25": 0.437,
+     "btts": 0.4625,
+     "marcador": "1-0",
+     "p_marcador": 0.129
     },
     {
      "fecha": "2026-11-07",
@@ -2393,22 +2353,22 @@
      "visitante": "Tottenham",
      "pendiente": false,
      "córners": [
-      4.75,
+      4.73,
       5.22
      ],
      "tarjetas": [
-      1.77,
-      2.29
+      1.79,
+      2.27
      ],
-     "lh": 1.5909,
-     "la": 1.1466,
-     "p1": 0.4662,
-     "px": 0.2695,
-     "p2": 0.2643,
-     "o25": 0.5155,
-     "btts": 0.5536,
+     "lh": 1.5349,
+     "la": 1.1403,
+     "p1": 0.452,
+     "px": 0.2774,
+     "p2": 0.2706,
+     "o25": 0.5003,
+     "btts": 0.5455,
      "marcador": "1-1",
-     "p_marcador": 0.1284
+     "p_marcador": 0.1324
     },
     {
      "fecha": "2026-11-07",
@@ -2416,20 +2376,66 @@
      "visitante": "Newcastle",
      "pendiente": false,
      "córners": [
-      5.55,
-      5.15
+      5.6,
+      5.12
      ],
      "tarjetas": [
-      2.01,
-      1.95
+      2.02,
+      1.94
      ],
-     "lh": 1.5255,
-     "la": 1.201,
-     "p1": 0.4372,
-     "px": 0.2738,
-     "p2": 0.289,
-     "o25": 0.5128,
-     "btts": 0.5575,
+     "lh": 1.5017,
+     "la": 1.204,
+     "p1": 0.4291,
+     "px": 0.2783,
+     "p2": 0.2926,
+     "o25": 0.5078,
+     "btts": 0.556,
+     "marcador": "1-1",
+     "p_marcador": 0.1327
+    },
+    {
+     "fecha": "2026-11-21",
+     "local": "Liverpool",
+     "visitante": "Manchester United",
+     "pendiente": false,
+     "córners": [
+      5.77,
+      4.2
+     ],
+     "tarjetas": [
+      1.75,
+      2.22
+     ],
+     "lh": 1.7295,
+     "la": 1.2652,
+     "p1": 0.4724,
+     "px": 0.2577,
+     "p2": 0.2698,
+     "o25": 0.5756,
+     "btts": 0.6013,
+     "marcador": "1-1",
+     "p_marcador": 0.1203
+    },
+    {
+     "fecha": "2026-11-21",
+     "local": "Bournemouth",
+     "visitante": "Nottingham Forest",
+     "pendiente": false,
+     "córners": [
+      5.75,
+      4.55
+     ],
+     "tarjetas": [
+      2.02,
+      2.12
+     ],
+     "lh": 1.4577,
+     "la": 1.3503,
+     "p1": 0.3867,
+     "px": 0.2753,
+     "p2": 0.338,
+     "o25": 0.5324,
+     "btts": 0.5801,
      "marcador": "1-1",
      "p_marcador": 0.1304
     },
@@ -2439,91 +2445,22 @@
      "visitante": "Leeds",
      "pendiente": false,
      "córners": [
-      6.12,
-      3.91
+      6.05,
+      3.95
      ],
      "tarjetas": [
-      1.98,
-      2.24
+      2.0,
+      2.25
      ],
-     "lh": 1.6579,
-     "la": 1.1728,
-     "p1": 0.4769,
-     "px": 0.263,
-     "p2": 0.26,
-     "o25": 0.5378,
-     "btts": 0.569,
+     "lh": 1.5637,
+     "la": 1.1414,
+     "p1": 0.4591,
+     "px": 0.2747,
+     "p2": 0.2661,
+     "o25": 0.5076,
+     "btts": 0.5499,
      "marcador": "1-1",
-     "p_marcador": 0.1247
-    },
-    {
-     "fecha": "2026-11-21",
-     "local": "Liverpool",
-     "visitante": "Manchester United",
-     "pendiente": false,
-     "córners": [
-      5.83,
-      4.24
-     ],
-     "tarjetas": [
-      1.78,
-      2.2
-     ],
-     "lh": 1.6813,
-     "la": 1.2892,
-     "p1": 0.4567,
-     "px": 0.2587,
-     "p2": 0.2845,
-     "o25": 0.5702,
-     "btts": 0.5994,
-     "marcador": "1-1",
-     "p_marcador": 0.1209
-    },
-    {
-     "fecha": "2026-11-21",
-     "local": "Bournemouth",
-     "visitante": "Nottingham Forest",
-     "pendiente": false,
-     "córners": [
-      5.87,
-      4.55
-     ],
-     "tarjetas": [
-      2.05,
-      2.11
-     ],
-     "lh": 1.4478,
-     "la": 1.3952,
-     "p1": 0.3763,
-     "px": 0.2711,
-     "p2": 0.3526,
-     "o25": 0.5407,
-     "btts": 0.5857,
-     "marcador": "1-1",
-     "p_marcador": 0.1279
-    },
-    {
-     "fecha": "2026-11-21",
-     "local": "Aston Villa",
-     "visitante": "Sunderland",
-     "pendiente": false,
-     "córners": [
-      5.4,
-      3.9
-     ],
-     "tarjetas": [
-      1.68,
-      2.57
-     ],
-     "lh": 1.6591,
-     "la": 1.0592,
-     "p1": 0.5037,
-     "px": 0.2643,
-     "p2": 0.2321,
-     "o25": 0.5109,
-     "btts": 0.5391,
-     "marcador": "1-1",
-     "p_marcador": 0.1261
+     "p_marcador": 0.1311
     },
     {
      "fecha": "2026-11-21",
@@ -2532,90 +2469,44 @@
      "pendiente": false,
      "córners": [
       6.37,
-      4.07
+      4.09
      ],
      "tarjetas": [
       1.53,
-      2.26
+      2.28
      ],
-     "lh": 2.1083,
-     "la": 0.8323,
-     "p1": 0.66,
-     "px": 0.2113,
-     "p2": 0.1287,
-     "o25": 0.5634,
-     "btts": 0.5044,
+     "lh": 2.0855,
+     "la": 0.8337,
+     "p1": 0.6541,
+     "px": 0.2159,
+     "p2": 0.13,
+     "o25": 0.5585,
+     "btts": 0.5045,
      "marcador": "2-0",
      "p_marcador": 0.1174
     },
     {
      "fecha": "2026-11-21",
-     "local": "Hull",
-     "visitante": "Brighton",
+     "local": "Aston Villa",
+     "visitante": "Sunderland",
      "pendiente": false,
      "córners": [
-      4.86,
-      5.07
+      5.4,
+      3.93
      ],
      "tarjetas": [
-      1.93,
-      2.09
+      1.7,
+      2.56
      ],
-     "lh": 1.0934,
-     "la": 1.4329,
-     "p1": 0.2771,
-     "px": 0.2856,
-     "p2": 0.4373,
-     "o25": 0.4629,
-     "btts": 0.5172,
+     "lh": 1.6421,
+     "la": 1.0439,
+     "p1": 0.5018,
+     "px": 0.2686,
+     "p2": 0.2296,
+     "o25": 0.503,
+     "btts": 0.534,
      "marcador": "1-1",
-     "p_marcador": 0.1362
-    },
-    {
-     "fecha": "2026-11-21",
-     "local": "Coventry",
-     "visitante": "Crystal Palace",
-     "pendiente": false,
-     "córners": [
-      5.22,
-      4.02
-     ],
-     "tarjetas": [
-      1.65,
-      2.04
-     ],
-     "lh": 1.2933,
-     "la": 1.4914,
-     "p1": 0.3185,
-     "px": 0.273,
-     "p2": 0.4084,
-     "o25": 0.5269,
-     "btts": 0.5727,
-     "marcador": "1-1",
-     "p_marcador": 0.1295
-    },
-    {
-     "fecha": "2026-11-21",
-     "local": "Brentford",
-     "visitante": "Everton",
-     "pendiente": false,
-     "córners": [
-      5.26,
-      4.65
-     ],
-     "tarjetas": [
-      1.64,
-      2.16
-     ],
-     "lh": 1.5818,
-     "la": 1.1002,
-     "p1": 0.4746,
-     "px": 0.2713,
-     "p2": 0.2541,
-     "o25": 0.502,
-     "btts": 0.5404,
-     "marcador": "1-1",
-     "p_marcador": 0.1295
+     "p_marcador": 0.1283
     },
     {
      "fecha": "2026-11-21",
@@ -2623,22 +2514,22 @@
      "visitante": "Arsenal",
      "pendiente": false,
      "córners": [
-      4.63,
-      5.16
+      4.61,
+      5.29
      ],
      "tarjetas": [
-      1.87,
-      2.08
+      1.89,
+      2.09
      ],
-     "lh": 1.0593,
-     "la": 1.6114,
-     "p1": 0.2393,
-     "px": 0.269,
-     "p2": 0.4917,
-     "o25": 0.4992,
-     "btts": 0.5332,
+     "lh": 1.0535,
+     "la": 1.6024,
+     "p1": 0.2379,
+     "px": 0.2726,
+     "p2": 0.4895,
+     "o25": 0.4955,
+     "btts": 0.5318,
      "marcador": "1-1",
-     "p_marcador": 0.1284
+     "p_marcador": 0.1302
     },
     {
      "fecha": "2026-11-21",
@@ -2647,70 +2538,139 @@
      "pendiente": false,
      "córners": [
       6.38,
-      3.94
+      3.82
      ],
      "tarjetas": [
-      1.92,
-      2.26
+      1.91,
+      2.27
      ],
-     "lh": 1.9329,
-     "la": 1.3239,
-     "p1": 0.5081,
-     "px": 0.2384,
-     "p2": 0.2535,
-     "o25": 0.6318,
-     "btts": 0.6363,
+     "lh": 1.9174,
+     "la": 1.2851,
+     "p1": 0.512,
+     "px": 0.242,
+     "p2": 0.246,
+     "o25": 0.6206,
+     "btts": 0.6269,
      "marcador": "1-1",
-     "p_marcador": 0.1072
+     "p_marcador": 0.11
+    },
+    {
+     "fecha": "2026-11-21",
+     "local": "Brentford",
+     "visitante": "Everton",
+     "pendiente": false,
+     "córners": [
+      5.37,
+      4.65
+     ],
+     "tarjetas": [
+      1.63,
+      2.14
+     ],
+     "lh": 1.5956,
+     "la": 1.0903,
+     "p1": 0.4791,
+     "px": 0.2727,
+     "p2": 0.2482,
+     "o25": 0.5029,
+     "btts": 0.5409,
+     "marcador": "1-1",
+     "p_marcador": 0.1302
+    },
+    {
+     "fecha": "2026-11-21",
+     "local": "Coventry",
+     "visitante": "Crystal Palace",
+     "pendiente": false,
+     "córners": [
+      5.16,
+      4.1
+     ],
+     "tarjetas": [
+      1.64,
+      2.05
+     ],
+     "lh": 1.1432,
+     "la": 1.4407,
+     "p1": 0.2875,
+     "px": 0.2858,
+     "p2": 0.4267,
+     "o25": 0.4775,
+     "btts": 0.5321,
+     "marcador": "1-1",
+     "p_marcador": 0.1365
+    },
+    {
+     "fecha": "2026-11-21",
+     "local": "Hull",
+     "visitante": "Brighton",
+     "pendiente": false,
+     "córners": [
+      4.81,
+      5.08
+     ],
+     "tarjetas": [
+      1.87,
+      2.06
+     ],
+     "lh": 1.0941,
+     "la": 1.4299,
+     "p1": 0.2764,
+     "px": 0.2886,
+     "p2": 0.435,
+     "o25": 0.4623,
+     "btts": 0.5183,
+     "marcador": "1-1",
+     "p_marcador": 0.1377
     }
    ],
    "validacion": {
-    "partidos": 368,
-    "desde": "2025-10-19",
-    "hasta": "2026-10-19",
+    "partidos": 374,
+    "desde": "2025-10-25",
+    "hasta": "2026-10-25",
     "mercados": {
      "1X2": {
-      "modelo": 0.618939414264824,
-      "base": 0.6632655207857722,
-      "logloss_modelo": 1.0309946363805071,
-      "logloss_base": 1.0943978581131182,
-      "mejora": 0.06683010820227009,
-      "mercado": 0.6145357159285002
+      "modelo": 0.619062680788248,
+      "base": 0.6638135427448674,
+      "logloss_modelo": 1.0312645250987538,
+      "logloss_base": 1.0952574966872046,
+      "mejora": 0.06741480713330228,
+      "mercado": 0.6149747916686897
      },
      "Más de 2.5": {
-      "modelo": 0.2505373665709579,
-      "base": 0.24704166090524246,
-      "mejora": -0.01415026782489237
+      "modelo": 0.2505803707238002,
+      "base": 0.24835996093479631,
+      "mejora": -0.008940288847874456
      },
      "Ambos anotan": {
-      "modelo": 0.24675995588316407,
-      "base": 0.245824170042881,
-      "mejora": -0.003806728362470757
+      "modelo": 0.24758018688422997,
+      "base": 0.24669255999726514,
+      "mejora": -0.0035981096753574526
      },
      "Córners más de 9.5": {
-      "partidos": 371,
+      "partidos": 377,
       "linea": 9.5,
-      "modelo": 0.25007755412615984,
-      "base": 0.24827199032781333,
-      "prob_media": 0.5373783381229681,
-      "frecuencia_real": 0.5471698113207547,
-      "mejora": -0.007272523154796762
+      "modelo": 0.25002125818407755,
+      "base": 0.24827632047619713,
+      "prob_media": 0.5364420563060873,
+      "frecuencia_real": 0.5464190981432361,
+      "mejora": -0.00702820834678719
      },
      "Tarjetas más de 4.5": {
-      "partidos": 371,
+      "partidos": 377,
       "linea": 4.5,
-      "modelo": 0.232126176676165,
-      "base": 0.23456425008395565,
-      "prob_media": 0.3610001780230524,
-      "frecuencia_real": 0.3719676549865229,
-      "mejora": 0.010394053684301907
+      "modelo": 0.23184262618575832,
+      "base": 0.2349952523051983,
+      "prob_media": 0.361172630546864,
+      "frecuencia_real": 0.3740053050397878,
+      "mejora": 0.013415701332321062
      }
     },
-    "acierto_1x2": 0.48641304347826086,
+    "acierto_1x2": 0.4786096256684492,
     "apuestas_simuladas": {
      "umbral_ve": 0.05,
-     "apuestas": 262,
-     "roi": -0.23362595419847332,
+     "apuestas": 260,
+     "roi": -0.20280769230769236,
      "nota": "Apuesta plana de 1 unidad al resultado 1X2 con mayor VE si supera el umbral, a cuota de cierre."
     }
    },
@@ -2730,17 +2690,17 @@
    "nombre": "LaLiga (España)",
    "temporada": "2026-27",
    "fuente": "footballdata",
-   "home": 1.4873,
-   "away": 1.1455,
-   "rho": -0.0333,
+   "home": 1.4804,
+   "away": 1.14,
+   "rho": -0.041,
    "conteos": {
     "córners": {
-     "home": 5.3742,
-     "away": 4.2515
+     "home": 5.3517,
+     "away": 4.2559
     },
     "tarjetas": {
-     "home": 2.1955,
-     "away": 2.4331
+     "home": 2.2046,
+     "away": 2.4401
     }
    },
    "arbitros": {},
@@ -2750,39 +2710,39 @@
     "combinadas": [],
     "historial": {
      "seguras": {
-      "apuestas": 280,
-      "aciertos": 0.6392857142857142,
-      "cuota_media": 1.5562142857142858,
-      "roi": -0.008785714285714294,
-      "roi_min": -0.08281038371804214,
-      "roi_max": 0.06523895514661354
+      "apuestas": 284,
+      "aciertos": 0.6443661971830986,
+      "cuota_media": 1.5545070422535212,
+      "roi": -0.0007746478873239428,
+      "roi_min": -0.0740448603356114,
+      "roi_max": 0.07249556456096352
      },
      "valor": {
-      "apuestas": 287,
-      "aciertos": 0.3344947735191638,
-      "cuota_media": 3.1862717770034843,
-      "roi": -0.09365853658536585,
-      "roi_min": -0.2310967327303071,
-      "roi_max": 0.043779659559575385
+      "apuestas": 288,
+      "aciertos": 0.3229166666666667,
+      "cuota_media": 3.1997569444444443,
+      "roi": -0.11788194444444446,
+      "roi_min": -0.2546961497119417,
+      "roi_max": 0.018932260823052813
      },
      "doble": {
       "apuestas": 36,
       "aciertos": 0.5,
-      "cuota_media": 2.1075,
-      "roi": 0.0563888888888889,
-      "roi_min": -0.2382162137675116,
-      "roi_max": 0.3509939915452894
+      "cuota_media": 2.111111111111111,
+      "roi": 0.060000000000000005,
+      "roi_min": -0.23562163519344193,
+      "roi_max": 0.3556216351934419
      },
      "triple": {
       "apuestas": 35,
-      "aciertos": 0.2857142857142857,
-      "cuota_media": 3.1474285714285712,
-      "roi": -0.1122857142857143,
-      "roi_min": -0.5114329446922103,
-      "roi_max": 0.2868615161207818
+      "aciertos": 0.34285714285714286,
+      "cuota_media": 3.140285714285714,
+      "roi": 0.07514285714285708,
+      "roi_min": -0.3476112890572858,
+      "roi_max": 0.4978970033429999
      },
-     "desde": "2025-10-24",
-     "hasta": "2026-10-21"
+     "desde": "2025-10-26",
+     "hasta": "2026-10-26"
     }
    },
    "top": {
@@ -2793,508 +2753,476 @@
     "n": 3,
     "label": "Descenso"
    },
-   "partidos_modelo": 849,
-   "ultimo_resultado": "2026-10-21",
+   "partidos_modelo": 859,
+   "ultimo_resultado": "2026-10-26",
    "equipos": [
     {
      "nombre": "Barcelona",
-     "ataque": 2.1227,
-     "defensa": 0.7441,
-     "local": 0.9686,
-     "partidos": 85,
+     "ataque": 2.1192,
+     "defensa": 0.7582,
+     "local": 0.9561,
+     "partidos": 86,
      "sin_datos": false,
      "córners": [
-      1.3271,
-      0.8698
+      1.3258,
+      0.8765
      ],
      "tarjetas": [
-      0.8505,
-      1.0034
+      0.856,
+      1.0051
      ]
     },
     {
      "nombre": "Real Madrid",
-     "ataque": 1.5342,
-     "defensa": 0.7249,
-     "local": 1.1181,
-     "partidos": 85,
+     "ataque": 1.5566,
+     "defensa": 0.712,
+     "local": 1.1036,
+     "partidos": 86,
      "sin_datos": false,
      "córners": [
-      1.2347,
-      0.8638
+      1.2384,
+      0.8663
      ],
      "tarjetas": [
-      0.9302,
-      1.0588
+      0.9334,
+      1.0617
      ]
     },
     {
      "nombre": "Atlético de Madrid",
-     "ataque": 1.2513,
-     "defensa": 0.771,
-     "local": 1.1377,
-     "partidos": 85,
+     "ataque": 1.2467,
+     "defensa": 0.7682,
+     "local": 1.1218,
+     "partidos": 86,
      "sin_datos": false,
      "córners": [
-      1.194,
-      0.8695
+      1.1802,
+      0.8724
      ],
      "tarjetas": [
-      0.9737,
-      0.916
+      0.9821,
+      0.9147
      ]
     },
     {
      "nombre": "Villarreal",
-     "ataque": 1.2098,
-     "defensa": 0.9048,
-     "local": 1.1993,
-     "partidos": 85,
+     "ataque": 1.2288,
+     "defensa": 0.9084,
+     "local": 1.188,
+     "partidos": 86,
      "sin_datos": false,
      "córners": [
-      1.0252,
-      0.9904
+      1.0423,
+      0.9948
      ],
      "tarjetas": [
-      0.9578,
-      1.0054
+      0.9653,
+      1.0233
      ]
     },
     {
      "nombre": "Real Betis",
-     "ataque": 1.2556,
-     "defensa": 0.9687,
-     "local": 1.0122,
-     "partidos": 85,
+     "ataque": 1.2267,
+     "defensa": 0.9545,
+     "local": 1.0292,
+     "partidos": 86,
      "sin_datos": false,
      "córners": [
-      0.9993,
-      1.0318
+      0.9999,
+      1.0278
      ],
      "tarjetas": [
-      0.915,
-      1.0393
+      0.9086,
+      1.0358
      ]
     },
     {
      "nombre": "Athletic Club",
-     "ataque": 1.0138,
-     "defensa": 0.8625,
-     "local": 0.9743,
-     "partidos": 84,
+     "ataque": 1.0269,
+     "defensa": 0.8603,
+     "local": 1.0114,
+     "partidos": 85,
      "sin_datos": false,
      "córners": [
-      1.1455,
-      0.8741
+      1.1313,
+      0.8782
      ],
      "tarjetas": [
-      0.9525,
-      0.9448
+      0.9463,
+      0.9494
      ]
     },
     {
      "nombre": "Celta de Vigo",
-     "ataque": 1.0326,
-     "defensa": 0.8993,
-     "local": 1.0243,
-     "partidos": 85,
+     "ataque": 1.0238,
+     "defensa": 0.8881,
+     "local": 1.0038,
+     "partidos": 86,
      "sin_datos": false,
      "córners": [
-      0.8372,
-      0.9441
+      0.8339,
+      0.9461
      ],
      "tarjetas": [
-      0.9313,
-      1.0161
+      0.9302,
+      1.0077
      ]
     },
     {
      "nombre": "Real Sociedad",
-     "ataque": 1.1731,
-     "defensa": 1.074,
-     "local": 0.9567,
-     "partidos": 85,
+     "ataque": 1.1768,
+     "defensa": 1.0753,
+     "local": 0.9603,
+     "partidos": 86,
      "sin_datos": false,
      "córners": [
-      1.1564,
-      0.9685
+      1.1397,
+      0.9676
      ],
      "tarjetas": [
-      1.0171,
-      1.037
-     ]
-    },
-    {
-     "nombre": "Rayo Vallecano",
-     "ataque": 0.9971,
-     "defensa": 0.9277,
-     "local": 1.0145,
-     "partidos": 84,
-     "sin_datos": false,
-     "córners": [
-      1.1181,
-      1.0737
-     ],
-     "tarjetas": [
-      1.1038,
-      1.018
+      1.0088,
+      1.0372
      ]
     },
     {
      "nombre": "Sevilla",
-     "ataque": 1.0789,
-     "defensa": 1.0169,
-     "local": 0.8401,
-     "partidos": 85,
+     "ataque": 1.0825,
+     "defensa": 1.01,
+     "local": 0.8452,
+     "partidos": 86,
      "sin_datos": false,
      "córners": [
-      0.9555,
-      0.8963
+      0.9624,
+      0.9008
      ],
      "tarjetas": [
-      1.1402,
-      1.0033
+      1.1283,
+      0.998
      ]
     },
     {
-     "nombre": "Alavés",
-     "ataque": 0.9673,
-     "defensa": 0.9346,
-     "local": 0.9802,
+     "nombre": "Rayo Vallecano",
+     "ataque": 0.9896,
+     "defensa": 0.9608,
+     "local": 0.9944,
      "partidos": 85,
      "sin_datos": false,
      "córners": [
-      0.9991,
-      1.0092
+      1.1084,
+      1.0701
      ],
      "tarjetas": [
-      1.0529,
-      1.0336
+      1.1044,
+      1.0183
      ]
     },
     {
      "nombre": "Deportivo La Coruña",
-     "ataque": 1.0123,
-     "defensa": 1.0198,
-     "local": 0.8868,
-     "partidos": 9,
+     "ataque": 0.9815,
+     "defensa": 0.958,
+     "local": 0.9019,
+     "partidos": 10,
      "sin_datos": false,
      "córners": [
-      1.028,
-      1.0433
+      1.0297,
+      1.0181
      ],
      "tarjetas": [
-      0.9903,
-      0.9749
+      0.9883,
+      0.9905
      ]
     },
     {
-     "nombre": "Espanyol",
-     "ataque": 0.9506,
-     "defensa": 1.0111,
-     "local": 0.9074,
-     "partidos": 85,
+     "nombre": "Alavés",
+     "ataque": 0.965,
+     "defensa": 0.9423,
+     "local": 0.9675,
+     "partidos": 86,
      "sin_datos": false,
      "córners": [
-      0.9031,
-      1.056
+      1.0045,
+      1.0029
      ],
      "tarjetas": [
-      1.0606,
-      1.0245
-     ]
-    },
-    {
-     "nombre": "Valencia",
-     "ataque": 0.8935,
-     "defensa": 0.9796,
-     "local": 0.9606,
-     "partidos": 85,
-     "sin_datos": false,
-     "córners": [
-      1.0017,
-      0.9858
-     ],
-     "tarjetas": [
-      0.95,
-      1.0199
-     ]
-    },
-    {
-     "nombre": "Getafe",
-     "ataque": 0.6823,
-     "defensa": 0.7748,
-     "local": 0.9468,
-     "partidos": 85,
-     "sin_datos": false,
-     "córners": [
-      0.9062,
-      0.9755
-     ],
-     "tarjetas": [
-      1.208,
-      1.0551
+      1.0489,
+      1.0235
      ]
     },
     {
      "nombre": "Elche",
-     "ataque": 0.9753,
-     "defensa": 1.0771,
-     "local": 1.0514,
-     "partidos": 47,
+     "ataque": 1.042,
+     "defensa": 1.0589,
+     "local": 1.0047,
+     "partidos": 48,
      "sin_datos": false,
      "córners": [
-      0.9154,
-      0.9475
+      0.912,
+      0.939
      ],
      "tarjetas": [
-      1.0098,
-      0.9946
+      1.0108,
+      0.9963
+     ]
+    },
+    {
+     "nombre": "Espanyol",
+     "ataque": 0.9244,
+     "defensa": 1.0195,
+     "local": 0.9278,
+     "partidos": 86,
+     "sin_datos": false,
+     "córners": [
+      0.9027,
+      1.0688
+     ],
+     "tarjetas": [
+      1.0657,
+      1.026
+     ]
+    },
+    {
+     "nombre": "Valencia",
+     "ataque": 0.8969,
+     "defensa": 0.9922,
+     "local": 0.9559,
+     "partidos": 86,
+     "sin_datos": false,
+     "córners": [
+      1.0053,
+      1.0025
+     ],
+     "tarjetas": [
+      0.9686,
+      1.0266
+     ]
+    },
+    {
+     "nombre": "Getafe",
+     "ataque": 0.6699,
+     "defensa": 0.8081,
+     "local": 0.9634,
+     "partidos": 86,
+     "sin_datos": false,
+     "córners": [
+      0.9095,
+      0.9648
+     ],
+     "tarjetas": [
+      1.2104,
+      1.0464
      ]
     },
     {
      "nombre": "Osasuna",
-     "ataque": 0.9244,
-     "defensa": 1.0325,
-     "local": 1.0839,
-     "partidos": 85,
+     "ataque": 0.902,
+     "defensa": 1.0455,
+     "local": 1.1038,
+     "partidos": 86,
      "sin_datos": false,
      "córners": [
-      0.8955,
-      0.9999
+      0.8994,
+      1.0077
      ],
      "tarjetas": [
-      1.0373,
-      1.0127
+      1.033,
+      1.0028
      ]
     },
     {
      "nombre": "Levante",
-     "ataque": 0.9752,
-     "defensa": 1.1466,
-     "local": 1.2234,
-     "partidos": 47,
+     "ataque": 0.9679,
+     "defensa": 1.1553,
+     "local": 1.2296,
+     "partidos": 48,
      "sin_datos": false,
      "córners": [
-      0.9354,
-      1.0912
+      0.9325,
+      1.0732
      ],
      "tarjetas": [
-      0.9574,
-      1.0389
+      0.9598,
+      1.0293
      ]
     },
     {
      "nombre": "Málaga",
-     "ataque": 0.6632,
-     "defensa": 1.2753,
-     "local": 1.0168,
-     "partidos": 9,
+     "ataque": 0.6822,
+     "defensa": 1.2567,
+     "local": 1.011,
+     "partidos": 10,
      "sin_datos": false,
      "córners": [
-      1.0476,
-      1.0002
+      1.0308,
+      1.0123
      ],
      "tarjetas": [
-      0.976,
-      0.9928
+      0.9642,
+      0.9896
      ]
     },
     {
      "nombre": "Racing de Santander",
-     "ataque": 1.0185,
-     "defensa": 1.6994,
-     "local": 1.1563,
-     "partidos": 9,
+     "ataque": 1.0278,
+     "defensa": 1.6468,
+     "local": 1.1702,
+     "partidos": 10,
      "sin_datos": false,
      "córners": [
-      1.0011,
-      1.2127
+      1.0243,
+      1.2043
      ],
      "tarjetas": [
-      1.0307,
-      1.025
+      1.0354,
+      1.0347
      ]
     }
    ],
    "tabla": {
     "Alavés": {
-     "pj": 9,
-     "pts": 11,
-     "gf": 13,
-     "gc": 10
+     "pj": 10,
+     "pts": 12,
+     "gf": 14,
+     "gc": 11
     },
     "Athletic Club": {
-     "pj": 8,
-     "pts": 9,
-     "gf": 8,
+     "pj": 9,
+     "pts": 12,
+     "gf": 12,
      "gc": 9
     },
     "Atlético de Madrid": {
-     "pj": 9,
-     "pts": 22,
-     "gf": 19,
+     "pj": 10,
+     "pts": 25,
+     "gf": 20,
      "gc": 8
     },
     "Barcelona": {
-     "pj": 9,
+     "pj": 10,
      "pts": 27,
-     "gf": 39,
-     "gc": 9
+     "gf": 40,
+     "gc": 11
     },
     "Celta de Vigo": {
-     "pj": 9,
-     "pts": 11,
+     "pj": 10,
+     "pts": 12,
      "gf": 10,
      "gc": 7
     },
     "Deportivo La Coruña": {
-     "pj": 9,
+     "pj": 10,
      "pts": 11,
      "gf": 13,
-     "gc": 12
+     "gc": 13
     },
     "Elche": {
-     "pj": 9,
-     "pts": 7,
-     "gf": 11,
+     "pj": 10,
+     "pts": 10,
+     "gf": 14,
      "gc": 17
     },
     "Espanyol": {
-     "pj": 9,
+     "pj": 10,
      "pts": 8,
-     "gf": 11,
-     "gc": 12
+     "gf": 12,
+     "gc": 14
     },
     "Getafe": {
-     "pj": 9,
+     "pj": 10,
      "pts": 9,
      "gf": 5,
-     "gc": 11
+     "gc": 15
     },
     "Levante": {
-     "pj": 9,
+     "pj": 10,
      "pts": 10,
-     "gf": 15,
-     "gc": 17
+     "gf": 16,
+     "gc": 19
     },
     "Málaga": {
-     "pj": 9,
-     "pts": 4,
-     "gf": 6,
-     "gc": 18
+     "pj": 10,
+     "pts": 5,
+     "gf": 7,
+     "gc": 19
     },
     "Osasuna": {
-     "pj": 9,
+     "pj": 10,
      "pts": 11,
      "gf": 10,
-     "gc": 18
+     "gc": 20
     },
     "Racing de Santander": {
-     "pj": 9,
-     "pts": 8,
-     "gf": 13,
-     "gc": 25
+     "pj": 10,
+     "pts": 11,
+     "gf": 15,
+     "gc": 26
     },
     "Rayo Vallecano": {
-     "pj": 8,
+     "pj": 9,
      "pts": 9,
      "gf": 12,
-     "gc": 17
+     "gc": 20
     },
     "Real Betis": {
-     "pj": 9,
-     "pts": 19,
+     "pj": 10,
+     "pts": 20,
      "gf": 16,
      "gc": 14
     },
     "Real Madrid": {
-     "pj": 9,
-     "pts": 21,
-     "gf": 23,
-     "gc": 9
+     "pj": 10,
+     "pts": 24,
+     "gf": 25,
+     "gc": 10
     },
     "Real Sociedad": {
-     "pj": 9,
-     "pts": 16,
-     "gf": 17,
-     "gc": 17
+     "pj": 10,
+     "pts": 19,
+     "gf": 19,
+     "gc": 18
     },
     "Sevilla": {
-     "pj": 9,
-     "pts": 14,
-     "gf": 14,
+     "pj": 10,
+     "pts": 17,
+     "gf": 16,
      "gc": 16
     },
     "Valencia": {
-     "pj": 9,
+     "pj": 10,
      "pts": 6,
-     "gf": 6,
-     "gc": 15
+     "gf": 7,
+     "gc": 17
     },
     "Villarreal": {
-     "pj": 9,
-     "pts": 9,
-     "gf": 13,
-     "gc": 13
+     "pj": 10,
+     "pts": 12,
+     "gf": 15,
+     "gc": 14
     }
    },
    "restantes": [
     [
-     "Alavés",
-     "Málaga"
-    ],
-    [
-     "Rayo Vallecano",
-     "Elche"
-    ],
-    [
-     "Valencia",
-     "Villarreal"
-    ],
-    [
-     "Atlético de Madrid",
-     "Deportivo La Coruña"
-    ],
-    [
-     "Racing de Santander",
-     "Espanyol"
-    ],
-    [
-     "Celta de Vigo",
-     "Real Betis"
-    ],
-    [
-     "Athletic Club",
-     "Getafe"
-    ],
-    [
-     "Real Sociedad",
-     "Levante"
-    ],
-    [
-     "Barcelona",
-     "Real Madrid"
-    ],
-    [
-     "Sevilla",
-     "Osasuna"
-    ],
-    [
      "Rayo Vallecano",
      "Athletic Club"
     ],
     [
-     "Deportivo La Coruña",
-     "Osasuna"
+     "Levante",
+     "Atlético de Madrid"
     ],
     [
-     "Rayo Vallecano",
-     "Celta de Vigo"
+     "Real Betis",
+     "Málaga"
     ],
     [
-     "Racing de Santander",
-     "Real Madrid"
+     "Villarreal",
+     "Espanyol"
+    ],
+    [
+     "Elche",
+     "Valencia"
+    ],
+    [
+     "Athletic Club",
+     "Real Sociedad"
     ],
     [
      "Barcelona",
@@ -3305,24 +3233,16 @@
      "Sevilla"
     ],
     [
-     "Elche",
-     "Valencia"
+     "Racing de Santander",
+     "Real Madrid"
     ],
     [
-     "Villarreal",
-     "Espanyol"
+     "Rayo Vallecano",
+     "Celta de Vigo"
     ],
     [
-     "Real Betis",
-     "Málaga"
-    ],
-    [
-     "Levante",
-     "Atlético de Madrid"
-    ],
-    [
-     "Athletic Club",
-     "Real Sociedad"
+     "Deportivo La Coruña",
+     "Osasuna"
     ],
     [
      "Real Sociedad",
@@ -3337,16 +3257,16 @@
      "Getafe"
     ],
     [
-     "Atlético de Madrid",
-     "Barcelona"
-    ],
-    [
      "Espanyol",
      "Deportivo La Coruña"
     ],
     [
-     "Celta de Vigo",
-     "Levante"
+     "Atlético de Madrid",
+     "Barcelona"
+    ],
+    [
+     "Valencia",
+     "Real Madrid"
     ],
     [
      "Osasuna",
@@ -3361,12 +3281,8 @@
      "Alavés"
     ],
     [
-     "Valencia",
-     "Real Madrid"
-    ],
-    [
-     "Racing de Santander",
-     "Real Sociedad"
+     "Celta de Vigo",
+     "Levante"
     ],
     [
      "Athletic Club",
@@ -3377,24 +3293,16 @@
      "Villarreal"
     ],
     [
-     "Osasuna",
-     "Málaga"
+     "Racing de Santander",
+     "Real Sociedad"
     ],
     [
      "Rayo Vallecano",
      "Valencia"
     ],
     [
-     "Alavés",
-     "Deportivo La Coruña"
-    ],
-    [
-     "Getafe",
-     "Atlético de Madrid"
-    ],
-    [
-     "Levante",
-     "Elche"
+     "Osasuna",
+     "Málaga"
     ],
     [
      "Real Madrid",
@@ -3405,52 +3313,56 @@
      "Real Betis"
     ],
     [
-     "Elche",
+     "Levante",
+     "Elche"
+    ],
+    [
+     "Getafe",
      "Atlético de Madrid"
     ],
     [
-     "Real Betis",
-     "Rayo Vallecano"
-    ],
-    [
-     "Real Madrid",
-     "Alavés"
-    ],
-    [
-     "Celta de Vigo",
-     "Villarreal"
-    ],
-    [
-     "Deportivo La Coruña",
-     "Barcelona"
+     "Alavés",
+     "Deportivo La Coruña"
     ],
     [
      "Espanyol",
      "Getafe"
     ],
     [
-     "Real Sociedad",
-     "Sevilla"
+     "Málaga",
+     "Athletic Club"
     ],
     [
      "Levante",
      "Racing de Santander"
     ],
     [
-     "Málaga",
-     "Athletic Club"
+     "Real Sociedad",
+     "Sevilla"
+    ],
+    [
+     "Deportivo La Coruña",
+     "Barcelona"
+    ],
+    [
+     "Real Betis",
+     "Rayo Vallecano"
+    ],
+    [
+     "Celta de Vigo",
+     "Villarreal"
+    ],
+    [
+     "Real Madrid",
+     "Alavés"
     ],
     [
      "Valencia",
      "Osasuna"
     ],
     [
-     "Barcelona",
-     "Celta de Vigo"
-    ],
-    [
-     "Getafe",
-     "Valencia"
+     "Elche",
+     "Atlético de Madrid"
     ],
     [
      "Rayo Vallecano",
@@ -3465,8 +3377,16 @@
      "Real Madrid"
     ],
     [
-     "Racing de Santander",
-     "Deportivo La Coruña"
+     "Getafe",
+     "Valencia"
+    ],
+    [
+     "Barcelona",
+     "Celta de Vigo"
+    ],
+    [
+     "Atlético de Madrid",
+     "Real Betis"
     ],
     [
      "Alavés",
@@ -3481,8 +3401,8 @@
      "Elche"
     ],
     [
-     "Atlético de Madrid",
-     "Real Betis"
+     "Racing de Santander",
+     "Deportivo La Coruña"
     ],
     [
      "Atlético de Madrid",
@@ -3505,8 +3425,8 @@
      "Getafe"
     ],
     [
-     "Málaga",
-     "Barcelona"
+     "Deportivo La Coruña",
+     "Athletic Club"
     ],
     [
      "Espanyol",
@@ -3521,12 +3441,12 @@
      "Osasuna"
     ],
     [
-     "Deportivo La Coruña",
-     "Athletic Club"
+     "Málaga",
+     "Barcelona"
     ],
     [
-     "Celta de Vigo",
-     "Atlético de Madrid"
+     "Rayo Vallecano",
+     "Málaga"
     ],
     [
      "Sevilla",
@@ -3537,36 +3457,32 @@
      "Real Madrid"
     ],
     [
-     "Rayo Vallecano",
-     "Málaga"
-    ],
-    [
      "Barcelona",
      "Real Sociedad"
     ],
     [
-     "Osasuna",
-     "Villarreal"
+     "Celta de Vigo",
+     "Atlético de Madrid"
     ],
     [
      "Getafe",
      "Levante"
     ],
     [
-     "Athletic Club",
-     "Real Betis"
-    ],
-    [
      "Valencia",
      "Espanyol"
     ],
     [
-     "Alavés",
-     "Elche"
+     "Athletic Club",
+     "Real Betis"
     ],
     [
-     "Rayo Vallecano",
-     "Atlético de Madrid"
+     "Osasuna",
+     "Villarreal"
+    ],
+    [
+     "Alavés",
+     "Elche"
     ],
     [
      "Villarreal",
@@ -3585,8 +3501,8 @@
      "Alavés"
     ],
     [
-     "Málaga",
-     "Elche"
+     "Rayo Vallecano",
+     "Atlético de Madrid"
     ],
     [
      "Levante",
@@ -3603,6 +3519,10 @@
     [
      "Real Madrid",
      "Getafe"
+    ],
+    [
+     "Málaga",
+     "Elche"
     ],
     [
      "Valencia",
@@ -3625,8 +3545,8 @@
      "Racing de Santander"
     ],
     [
-     "Osasuna",
-     "Barcelona"
+     "Alavés",
+     "Real Sociedad"
     ],
     [
      "Real Madrid",
@@ -3641,56 +3561,48 @@
      "Villarreal"
     ],
     [
-     "Alavés",
-     "Real Sociedad"
-    ],
-    [
-     "Levante",
-     "Espanyol"
-    ],
-    [
-     "Barcelona",
-     "Elche"
-    ],
-    [
-     "Villarreal",
-     "Alavés"
-    ],
-    [
-     "Racing de Santander",
-     "Osasuna"
-    ],
-    [
-     "Málaga",
-     "Real Madrid"
-    ],
-    [
-     "Celta de Vigo",
-     "Valencia"
+     "Osasuna",
+     "Barcelona"
     ],
     [
      "Getafe",
      "Athletic Club"
     ],
     [
+     "Real Betis",
+     "Deportivo La Coruña"
+    ],
+    [
      "Rayo Vallecano",
      "Sevilla"
     ],
     [
-     "Real Betis",
-     "Deportivo La Coruña"
+     "Celta de Vigo",
+     "Valencia"
     ],
     [
      "Atlético de Madrid",
      "Real Sociedad"
     ],
     [
-     "Athletic Club",
-     "Levante"
+     "Málaga",
+     "Real Madrid"
+    ],
+    [
+     "Barcelona",
+     "Elche"
+    ],
+    [
+     "Levante",
+     "Espanyol"
     ],
     [
      "Racing de Santander",
-     "Celta de Vigo"
+     "Osasuna"
+    ],
+    [
+     "Villarreal",
+     "Alavés"
     ],
     [
      "Deportivo La Coruña",
@@ -3701,12 +3613,16 @@
      "Villarreal"
     ],
     [
+     "Athletic Club",
+     "Levante"
+    ],
+    [
      "Real Sociedad",
      "Málaga"
     ],
     [
-     "Real Madrid",
-     "Real Betis"
+     "Racing de Santander",
+     "Celta de Vigo"
     ],
     [
      "Elche",
@@ -3719,6 +3635,10 @@
     [
      "Getafe",
      "Osasuna"
+    ],
+    [
+     "Real Madrid",
+     "Real Betis"
     ],
     [
      "Alavés",
@@ -3745,8 +3665,8 @@
      "Alavés"
     ],
     [
-     "Atlético de Madrid",
-     "Espanyol"
+     "Celta de Vigo",
+     "Getafe"
     ],
     [
      "Rayo Vallecano",
@@ -3761,12 +3681,8 @@
      "Racing de Santander"
     ],
     [
-     "Celta de Vigo",
-     "Getafe"
-    ],
-    [
-     "Valencia",
-     "Racing de Santander"
+     "Atlético de Madrid",
+     "Espanyol"
     ],
     [
      "Elche",
@@ -3781,16 +3697,16 @@
      "Atlético de Madrid"
     ],
     [
+     "Valencia",
+     "Racing de Santander"
+    ],
+    [
      "Real Sociedad",
      "Real Madrid"
     ],
     [
-     "Espanyol",
-     "Rayo Vallecano"
-    ],
-    [
-     "Getafe",
-     "Villarreal"
+     "Athletic Club",
+     "Osasuna"
     ],
     [
      "Real Betis",
@@ -3801,16 +3717,16 @@
      "Celta de Vigo"
     ],
     [
-     "Athletic Club",
-     "Osasuna"
+     "Espanyol",
+     "Rayo Vallecano"
+    ],
+    [
+     "Getafe",
+     "Villarreal"
     ],
     [
      "Levante",
      "Málaga"
-    ],
-    [
-     "Valencia",
-     "Alavés"
     ],
     [
      "Real Madrid",
@@ -3825,8 +3741,8 @@
      "Deportivo La Coruña"
     ],
     [
-     "Real Sociedad",
-     "Real Betis"
+     "Valencia",
+     "Alavés"
     ],
     [
      "Villarreal",
@@ -3843,6 +3759,10 @@
     [
      "Osasuna",
      "Atlético de Madrid"
+    ],
+    [
+     "Real Sociedad",
+     "Real Betis"
     ],
     [
      "Rayo Vallecano",
@@ -4089,12 +4009,12 @@
      "Barcelona"
     ],
     [
-     "Celta de Vigo",
-     "Elche"
-    ],
-    [
      "Atlético de Madrid",
      "Levante"
+    ],
+    [
+     "Celta de Vigo",
+     "Elche"
     ],
     [
      "Osasuna",
@@ -4113,16 +4033,16 @@
      "Málaga"
     ],
     [
-     "Sevilla",
-     "Deportivo La Coruña"
-    ],
-    [
      "Valencia",
      "Getafe"
     ],
     [
      "Alavés",
      "Real Betis"
+    ],
+    [
+     "Sevilla",
+     "Deportivo La Coruña"
     ],
     [
      "Deportivo La Coruña",
@@ -4412,206 +4332,22 @@
      "visitante": "Athletic Club",
      "pendiente": false,
      "córners": [
-      5.25,
-      5.23
+      5.21,
+      5.15
      ],
      "tarjetas": [
-      2.29,
-      2.36
+      2.31,
+      2.35
      ],
-     "lh": 1.2977,
-     "la": 1.0774,
-     "p1": 0.4111,
-     "px": 0.2849,
-     "p2": 0.304,
-     "o25": 0.4238,
-     "btts": 0.4837,
+     "lh": 1.2533,
+     "la": 1.1248,
+     "p1": 0.3872,
+     "px": 0.2881,
+     "p2": 0.3247,
+     "o25": 0.4246,
+     "btts": 0.4878,
      "marcador": "1-1",
-     "p_marcador": 0.1344
-    },
-    {
-     "fecha": "2026-11-01",
-     "local": "Deportivo La Coruña",
-     "visitante": "Osasuna",
-     "pendiente": false,
-     "córners": [
-      5.52,
-      3.97
-     ],
-     "tarjetas": [
-      2.2,
-      2.46
-     ],
-     "lh": 1.3785,
-     "la": 1.0799,
-     "p1": 0.4327,
-     "px": 0.2775,
-     "p2": 0.2899,
-     "o25": 0.4455,
-     "btts": 0.4982,
-     "marcador": "1-1",
-     "p_marcador": 0.1316
-    },
-    {
-     "fecha": "2026-11-01",
-     "local": "Rayo Vallecano",
-     "visitante": "Celta de Vigo",
-     "pendiente": false,
-     "córners": [
-      5.67,
-      3.82
-     ],
-     "tarjetas": [
-      2.46,
-      2.31
-     ],
-     "lh": 1.3531,
-     "la": 1.0974,
-     "p1": 0.4218,
-     "px": 0.279,
-     "p2": 0.2992,
-     "o25": 0.4434,
-     "btts": 0.4983,
-     "marcador": "1-1",
-     "p_marcador": 0.1323
-    },
-    {
-     "fecha": "2026-11-01",
-     "local": "Racing de Santander",
-     "visitante": "Real Madrid",
-     "pendiente": false,
-     "córners": [
-      4.65,
-      6.37
-     ],
-     "tarjetas": [
-      2.4,
-      2.32
-     ],
-     "lh": 1.2698,
-     "la": 2.9867,
-     "p1": 0.1306,
-     "px": 0.1499,
-     "p2": 0.7195,
-     "o25": 0.7971,
-     "btts": 0.6846,
-     "marcador": "1-2",
-     "p_marcador": 0.0803
-    },
-    {
-     "fecha": "2026-11-01",
-     "local": "Barcelona",
-     "visitante": "Alavés",
-     "pendiente": false,
-     "córners": [
-      7.2,
-      3.69
-     ],
-     "tarjetas": [
-      1.93,
-      2.57
-     ],
-     "lh": 2.8581,
-     "la": 0.8245,
-     "p1": 0.7885,
-     "px": 0.134,
-     "p2": 0.0775,
-     "o25": 0.7116,
-     "btts": 0.5313,
-     "marcador": "2-0",
-     "p_marcador": 0.1028
-    },
-    {
-     "fecha": "2026-11-01",
-     "local": "Getafe",
-     "visitante": "Sevilla",
-     "pendiente": false,
-     "córners": [
-      4.37,
-      3.96
-     ],
-     "tarjetas": [
-      2.66,
-      2.93
-     ],
-     "lh": 0.977,
-     "la": 0.9577,
-     "p1": 0.3433,
-     "px": 0.3238,
-     "p2": 0.333,
-     "o25": 0.3056,
-     "btts": 0.3888,
-     "marcador": "0-0",
-     "p_marcador": 0.149
-    },
-    {
-     "fecha": "2026-11-01",
-     "local": "Elche",
-     "visitante": "Valencia",
-     "pendiente": false,
-     "córners": [
-      4.85,
-      4.03
-     ],
-     "tarjetas": [
-      2.26,
-      2.3
-     ],
-     "lh": 1.4938,
-     "la": 1.1024,
-     "p1": 0.458,
-     "px": 0.2663,
-     "p2": 0.2757,
-     "o25": 0.4806,
-     "btts": 0.5221,
-     "marcador": "1-1",
-     "p_marcador": 0.1269
-    },
-    {
-     "fecha": "2026-11-01",
-     "local": "Villarreal",
-     "visitante": "Espanyol",
-     "pendiente": false,
-     "córners": [
-      5.82,
-      3.8
-     ],
-     "tarjetas": [
-      2.15,
-      2.59
-     ],
-     "lh": 2.1817,
-     "la": 0.9853,
-     "p1": 0.6431,
-     "px": 0.2007,
-     "p2": 0.1562,
-     "o25": 0.6132,
-     "btts": 0.559,
-     "marcador": "2-0",
-     "p_marcador": 0.1003
-    },
-    {
-     "fecha": "2026-11-01",
-     "local": "Real Betis",
-     "visitante": "Málaga",
-     "pendiente": false,
-     "córners": [
-      5.37,
-      4.6
-     ],
-     "tarjetas": [
-      1.99,
-      2.47
-     ],
-     "lh": 2.4106,
-     "la": 0.736,
-     "p1": 0.742,
-     "px": 0.1657,
-     "p2": 0.0923,
-     "o25": 0.6088,
-     "btts": 0.4767,
-     "marcador": "2-0",
-     "p_marcador": 0.1249
+     "p_marcador": 0.1361
     },
     {
      "fecha": "2026-11-01",
@@ -4619,22 +4355,91 @@
      "visitante": "Atlético de Madrid",
      "pendiente": false,
      "córners": [
-      4.37,
-      5.54
+      4.35,
+      5.39
      ],
      "tarjetas": [
-      1.93,
-      2.46
+      1.94,
+      2.47
      ],
-     "lh": 1.3682,
-     "la": 1.6435,
-     "p1": 0.316,
-     "px": 0.2474,
-     "p2": 0.4366,
-     "o25": 0.5794,
-     "btts": 0.605,
+     "lh": 1.3535,
+     "la": 1.642,
+     "p1": 0.3119,
+     "px": 0.2496,
+     "p2": 0.4385,
+     "o25": 0.5758,
+     "btts": 0.6026,
      "marcador": "1-1",
-     "p_marcador": 0.1143
+     "p_marcador": 0.1157
+    },
+    {
+     "fecha": "2026-11-01",
+     "local": "Real Betis",
+     "visitante": "Málaga",
+     "pendiente": false,
+     "córners": [
+      5.42,
+      4.51
+     ],
+     "tarjetas": [
+      1.98,
+      2.44
+     ],
+     "lh": 2.3488,
+     "la": 0.7423,
+     "p1": 0.7297,
+     "px": 0.1732,
+     "p2": 0.097,
+     "o25": 0.5969,
+     "btts": 0.4772,
+     "marcador": "2-0",
+     "p_marcador": 0.1254
+    },
+    {
+     "fecha": "2026-11-01",
+     "local": "Villarreal",
+     "visitante": "Espanyol",
+     "pendiente": false,
+     "córners": [
+      5.96,
+      3.82
+     ],
+     "tarjetas": [
+      2.18,
+      2.66
+     ],
+     "lh": 2.2032,
+     "la": 0.9573,
+     "p1": 0.6531,
+     "px": 0.199,
+     "p2": 0.1479,
+     "o25": 0.6118,
+     "btts": 0.5517,
+     "marcador": "2-0",
+     "p_marcador": 0.1029
+    },
+    {
+     "fecha": "2026-11-01",
+     "local": "Elche",
+     "visitante": "Valencia",
+     "pendiente": false,
+     "córners": [
+      4.89,
+      4.02
+     ],
+     "tarjetas": [
+      2.29,
+      2.35
+     ],
+     "lh": 1.5378,
+     "la": 1.0827,
+     "p1": 0.473,
+     "px": 0.2647,
+     "p2": 0.2623,
+     "o25": 0.4867,
+     "btts": 0.5242,
+     "marcador": "1-1",
+     "p_marcador": 0.1261
     },
     {
      "fecha": "2026-11-01",
@@ -4642,22 +4447,137 @@
      "visitante": "Real Sociedad",
      "pendiente": false,
      "córners": [
-      5.96,
-      4.3
+      5.86,
+      4.26
      ],
      "tarjetas": [
-      2.17,
+      2.16,
       2.34
      ],
-     "lh": 1.5777,
-     "la": 1.159,
-     "p1": 0.4664,
-     "px": 0.2576,
-     "p2": 0.276,
-     "o25": 0.5153,
-     "btts": 0.5485,
+     "lh": 1.6535,
+     "la": 1.1542,
+     "p1": 0.4854,
+     "px": 0.2531,
+     "p2": 0.2615,
+     "o25": 0.5324,
+     "btts": 0.5584,
      "marcador": "1-1",
-     "p_marcador": 0.1224
+     "p_marcador": 0.1199
+    },
+    {
+     "fecha": "2026-11-01",
+     "local": "Barcelona",
+     "visitante": "Alavés",
+     "pendiente": false,
+     "córners": [
+      7.12,
+      3.75
+     ],
+     "tarjetas": [
+      1.93,
+      2.57
+     ],
+     "lh": 2.8266,
+     "la": 0.8341,
+     "p1": 0.7819,
+     "px": 0.138,
+     "p2": 0.0801,
+     "o25": 0.7078,
+     "btts": 0.5347,
+     "marcador": "2-0",
+     "p_marcador": 0.1027
+    },
+    {
+     "fecha": "2026-11-01",
+     "local": "Getafe",
+     "visitante": "Sevilla",
+     "pendiente": false,
+     "córners": [
+      4.38,
+      3.95
+     ],
+     "tarjetas": [
+      2.66,
+      2.88
+     ],
+     "lh": 0.965,
+     "la": 0.9972,
+     "p1": 0.3299,
+     "px": 0.3231,
+     "p2": 0.3469,
+     "o25": 0.3131,
+     "btts": 0.3962,
+     "marcador": "0-0",
+     "p_marcador": 0.1461
+    },
+    {
+     "fecha": "2026-11-01",
+     "local": "Racing de Santander",
+     "visitante": "Real Madrid",
+     "pendiente": false,
+     "córners": [
+      4.75,
+      6.35
+     ],
+     "tarjetas": [
+      2.42,
+      2.36
+     ],
+     "lh": 1.2677,
+     "la": 2.9223,
+     "p1": 0.1351,
+     "px": 0.155,
+     "p2": 0.7098,
+     "o25": 0.7884,
+     "btts": 0.6822,
+     "marcador": "1-2",
+     "p_marcador": 0.082
+    },
+    {
+     "fecha": "2026-11-01",
+     "local": "Rayo Vallecano",
+     "visitante": "Celta de Vigo",
+     "pendiente": false,
+     "córners": [
+      5.61,
+      3.8
+     ],
+     "tarjetas": [
+      2.45,
+      2.31
+     ],
+     "lh": 1.2938,
+     "la": 1.1214,
+     "p1": 0.3992,
+     "px": 0.2849,
+     "p2": 0.3159,
+     "o25": 0.4343,
+     "btts": 0.4946,
+     "marcador": "1-1",
+     "p_marcador": 0.1349
+    },
+    {
+     "fecha": "2026-11-01",
+     "local": "Deportivo La Coruña",
+     "visitante": "Osasuna",
+     "pendiente": false,
+     "córners": [
+      5.55,
+      3.9
+     ],
+     "tarjetas": [
+      2.18,
+      2.5
+     ],
+     "lh": 1.3703,
+     "la": 0.9852,
+     "p1": 0.4517,
+     "px": 0.2837,
+     "p2": 0.2646,
+     "o25": 0.4186,
+     "btts": 0.4727,
+     "marcador": "1-1",
+     "p_marcador": 0.1333
     },
     {
      "fecha": "2026-11-08",
@@ -4665,22 +4585,22 @@
      "visitante": "Rayo Vallecano",
      "pendiente": false,
      "córners": [
-      6.67,
-      4.6
+      6.53,
+      4.56
      ],
      "tarjetas": [
-      2.27,
-      2.79
+      2.26,
+      2.8
      ],
-     "lh": 1.5485,
-     "la": 1.2268,
-     "p1": 0.4438,
-     "px": 0.2583,
-     "p2": 0.2979,
-     "o25": 0.5246,
-     "btts": 0.5605,
+     "lh": 1.6075,
+     "la": 1.2131,
+     "p1": 0.4607,
+     "px": 0.2558,
+     "p2": 0.2835,
+     "o25": 0.5354,
+     "btts": 0.5667,
      "marcador": "1-1",
-     "p_marcador": 0.1224
+     "p_marcador": 0.1209
     },
     {
      "fecha": "2026-11-08",
@@ -4688,22 +4608,22 @@
      "visitante": "Racing de Santander",
      "pendiente": false,
      "córners": [
-      6.83,
-      4.26
+      6.64,
+      4.41
      ],
      "tarjetas": [
       2.2,
-      2.49
+      2.5
      ],
-     "lh": 1.7043,
-     "la": 1.488,
-     "p1": 0.4261,
-     "px": 0.2401,
-     "p2": 0.3338,
-     "o25": 0.6185,
-     "btts": 0.6368,
+     "lh": 1.6814,
+     "la": 1.4725,
+     "p1": 0.4231,
+     "px": 0.2435,
+     "p2": 0.3334,
+     "o25": 0.6104,
+     "btts": 0.6316,
      "marcador": "1-1",
-     "p_marcador": 0.1076
+     "p_marcador": 0.11
     },
     {
      "fecha": "2026-11-08",
@@ -4711,45 +4631,22 @@
      "visitante": "Getafe",
      "pendiente": false,
      "córners": [
-      5.37,
-      3.82
+      5.38,
+      3.85
      ],
      "tarjetas": [
-      2.22,
-      2.96
+      2.23,
+      3.02
      ],
-     "lh": 1.672,
-     "la": 0.7072,
-     "p1": 0.6021,
-     "px": 0.2464,
-     "p2": 0.1515,
-     "o25": 0.4249,
-     "btts": 0.4154,
+     "lh": 1.7464,
+     "la": 0.6937,
+     "p1": 0.6225,
+     "px": 0.238,
+     "p2": 0.1395,
+     "o25": 0.4407,
+     "btts": 0.4174,
      "marcador": "1-0",
-     "p_marcador": 0.1512
-    },
-    {
-     "fecha": "2026-11-08",
-     "local": "Atlético de Madrid",
-     "visitante": "Barcelona",
-     "pendiente": false,
-     "córners": [
-      5.58,
-      4.91
-     ],
-     "tarjetas": [
-      2.15,
-      1.9
-     ],
-     "lh": 1.5755,
-     "la": 1.8748,
-     "p1": 0.3242,
-     "px": 0.2284,
-     "p2": 0.4474,
-     "o25": 0.6699,
-     "btts": 0.6746,
-     "marcador": "1-1",
-     "p_marcador": 0.0969
+     "p_marcador": 0.1479
     },
     {
      "fecha": "2026-11-08",
@@ -4757,114 +4654,45 @@
      "visitante": "Deportivo La Coruña",
      "pendiente": false,
      "córners": [
-      5.06,
-      4.62
+      4.92,
+      4.68
      ],
      "tarjetas": [
-      2.27,
+      2.33,
       2.47
      ],
-     "lh": 1.3083,
-     "la": 1.1725,
-     "p1": 0.3929,
-     "px": 0.2791,
-     "p2": 0.328,
-     "o25": 0.4512,
-     "btts": 0.5081,
+     "lh": 1.2165,
+     "la": 1.1408,
+     "p1": 0.3735,
+     "px": 0.2901,
+     "p2": 0.3364,
+     "o25": 0.4191,
+     "btts": 0.4842,
      "marcador": "1-1",
-     "p_marcador": 0.1326
+     "p_marcador": 0.1368
     },
     {
      "fecha": "2026-11-08",
-     "local": "Celta de Vigo",
-     "visitante": "Levante",
+     "local": "Atlético de Madrid",
+     "visitante": "Barcelona",
      "pendiente": false,
      "córners": [
-      4.91,
-      3.75
+      5.54,
+      4.92
      ],
      "tarjetas": [
-      2.12,
-      2.37
+      2.18,
+      1.91
      ],
-     "lh": 1.8037,
-     "la": 1.0046,
-     "p1": 0.5576,
-     "px": 0.2376,
-     "p2": 0.2049,
-     "o25": 0.5325,
-     "btts": 0.5331,
+     "lh": 1.5699,
+     "la": 1.8558,
+     "p1": 0.3255,
+     "px": 0.231,
+     "p2": 0.4435,
+     "o25": 0.6652,
+     "btts": 0.672,
      "marcador": "1-1",
-     "p_marcador": 0.1129
-    },
-    {
-     "fecha": "2026-11-08",
-     "local": "Osasuna",
-     "visitante": "Athletic Club",
-     "pendiente": false,
-     "córners": [
-      4.21,
-      4.87
-     ],
-     "tarjetas": [
-      2.15,
-      2.35
-     ],
-     "lh": 1.2852,
-     "la": 1.199,
-     "p1": 0.3809,
-     "px": 0.2793,
-     "p2": 0.3398,
-     "o25": 0.4521,
-     "btts": 0.5096,
-     "marcador": "1-1",
-     "p_marcador": 0.1328
-    },
-    {
-     "fecha": "2026-11-08",
-     "local": "Elche",
-     "visitante": "Real Betis",
-     "pendiente": false,
-     "córners": [
-      5.08,
-      4.03
-     ],
-     "tarjetas": [
-      2.3,
-      2.21
-     ],
-     "lh": 1.4773,
-     "la": 1.5492,
-     "p1": 0.3597,
-     "px": 0.249,
-     "p2": 0.3912,
-     "o25": 0.5827,
-     "btts": 0.6115,
-     "marcador": "1-1",
-     "p_marcador": 0.1147
-    },
-    {
-     "fecha": "2026-11-08",
-     "local": "Sevilla",
-     "visitante": "Alavés",
-     "pendiente": false,
-     "córners": [
-      5.18,
-      3.81
-     ],
-     "tarjetas": [
-      2.59,
-      2.57
-     ],
-     "lh": 1.26,
-     "la": 1.1268,
-     "p1": 0.3896,
-     "px": 0.2855,
-     "p2": 0.3249,
-     "o25": 0.4268,
-     "btts": 0.4885,
-     "marcador": "1-1",
-     "p_marcador": 0.1349
+     "p_marcador": 0.0986
     },
     {
      "fecha": "2026-11-08",
@@ -4872,45 +4700,114 @@
      "visitante": "Real Madrid",
      "pendiente": false,
      "córners": [
-      4.65,
-      5.17
+      4.66,
+      5.28
      ],
      "tarjetas": [
-      2.21,
-      2.31
+      2.27,
+      2.34
      ],
-     "lh": 0.9254,
-     "la": 1.7216,
-     "p1": 0.1972,
-     "px": 0.2451,
-     "p2": 0.5577,
-     "o25": 0.4933,
-     "btts": 0.4995,
+     "lh": 0.9037,
+     "la": 1.7607,
+     "p1": 0.1862,
+     "px": 0.2422,
+     "p2": 0.5715,
+     "o25": 0.4976,
+     "btts": 0.4972,
      "marcador": "0-1",
+     "p_marcador": 0.1181
+    },
+    {
+     "fecha": "2026-11-08",
+     "local": "Osasuna",
+     "visitante": "Athletic Club",
+     "pendiente": false,
+     "córners": [
+      4.23,
+      4.85
+     ],
+     "tarjetas": [
+      2.16,
+      2.32
+     ],
+     "lh": 1.2681,
+     "la": 1.224,
+     "p1": 0.37,
+     "px": 0.281,
+     "p2": 0.349,
+     "o25": 0.4542,
+     "btts": 0.5126,
+     "marcador": "1-1",
+     "p_marcador": 0.1337
+    },
+    {
+     "fecha": "2026-11-08",
+     "local": "Elche",
+     "visitante": "Real Betis",
+     "pendiente": false,
+     "córners": [
+      5.02,
+      4.0
+     ],
+     "tarjetas": [
+      2.31,
+      2.21
+     ],
+     "lh": 1.4794,
+     "la": 1.4808,
+     "p1": 0.3726,
+     "px": 0.2542,
+     "p2": 0.3732,
+     "o25": 0.5678,
+     "btts": 0.6012,
+     "marcador": "1-1",
      "p_marcador": 0.1182
     },
     {
-     "fecha": "2026-11-22",
-     "local": "Racing de Santander",
-     "visitante": "Real Sociedad",
+     "fecha": "2026-11-08",
+     "local": "Sevilla",
+     "visitante": "Alavés",
      "pendiente": false,
      "córners": [
-      5.21,
-      5.96
+      5.17,
+      3.85
      ],
      "tarjetas": [
-      2.35,
-      2.54
+      2.55,
+      2.55
      ],
-     "lh": 1.8812,
-     "la": 2.2838,
-     "p1": 0.3224,
-     "px": 0.2035,
-     "p2": 0.474,
-     "o25": 0.7851,
-     "btts": 0.7634,
-     "marcador": "1-2",
-     "p_marcador": 0.0762
+     "lh": 1.2764,
+     "la": 1.1111,
+     "p1": 0.3966,
+     "px": 0.287,
+     "p2": 0.3164,
+     "o25": 0.427,
+     "btts": 0.489,
+     "marcador": "1-1",
+     "p_marcador": 0.1356
+    },
+    {
+     "fecha": "2026-11-08",
+     "local": "Celta de Vigo",
+     "visitante": "Levante",
+     "pendiente": false,
+     "córners": [
+      4.79,
+      3.75
+     ],
+     "tarjetas": [
+      2.11,
+      2.36
+     ],
+     "lh": 1.7576,
+     "la": 0.98,
+     "p1": 0.5519,
+     "px": 0.2436,
+     "p2": 0.2045,
+     "o25": 0.5155,
+     "btts": 0.5215,
+     "marcador": "1-1",
+     "p_marcador": 0.1161
     },
     {
      "fecha": "2026-11-22",
@@ -4918,22 +4815,22 @@
      "visitante": "Espanyol",
      "pendiente": false,
      "córners": [
-      6.5,
-      3.36
+      6.47,
+      3.37
      ],
      "tarjetas": [
       2.14,
-      2.44
+      2.47
      ],
-     "lh": 1.4853,
-     "la": 0.9392,
-     "p1": 0.4948,
-     "px": 0.2706,
-     "p2": 0.2346,
-     "o25": 0.4367,
-     "btts": 0.4753,
-     "marcador": "1-1",
-     "p_marcador": 0.1276
+     "lh": 1.5675,
+     "la": 0.9067,
+     "p1": 0.5234,
+     "px": 0.2636,
+     "p2": 0.213,
+     "o25": 0.4495,
+     "btts": 0.4767,
+     "marcador": "1-0",
+     "p_marcador": 0.1271
     },
     {
      "fecha": "2026-11-22",
@@ -4942,44 +4839,44 @@
      "pendiente": false,
      "córners": [
       7.06,
-      3.79
+      3.89
      ],
      "tarjetas": [
-      1.88,
-      2.34
+      1.93,
+      2.37
      ],
-     "lh": 2.7669,
-     "la": 1.0312,
-     "p1": 0.734,
-     "px": 0.1536,
-     "p2": 0.1124,
-     "o25": 0.7308,
-     "btts": 0.6051,
+     "lh": 2.7248,
+     "la": 1.0622,
+     "p1": 0.7207,
+     "px": 0.1595,
+     "p2": 0.1198,
+     "o25": 0.729,
+     "btts": 0.6141,
      "marcador": "2-1",
-     "p_marcador": 0.0885
+     "p_marcador": 0.0894
     },
     {
      "fecha": "2026-11-22",
-     "local": "Osasuna",
-     "visitante": "Málaga",
+     "local": "Racing de Santander",
+     "visitante": "Real Sociedad",
      "pendiente": false,
      "córners": [
-      4.81,
-      4.45
+      5.3,
+      5.84
      ],
      "tarjetas": [
-      2.26,
-      2.4
+      2.37,
+      2.55
      ],
-     "lh": 1.9004,
-     "la": 0.7844,
-     "p1": 0.6341,
-     "px": 0.2215,
-     "p2": 0.1444,
-     "o25": 0.5027,
-     "btts": 0.4657,
-     "marcador": "1-0",
-     "p_marcador": 0.1263
+     "lh": 1.9148,
+     "la": 2.2093,
+     "p1": 0.3405,
+     "px": 0.2074,
+     "p2": 0.4522,
+     "o25": 0.7795,
+     "btts": 0.7618,
+     "marcador": "1-2",
+     "p_marcador": 0.0756
     },
     {
      "fecha": "2026-11-22",
@@ -4987,91 +4884,45 @@
      "visitante": "Valencia",
      "pendiente": false,
      "córners": [
-      5.92,
-      4.57
+      5.95,
+      4.58
      ],
      "tarjetas": [
-      2.47,
-      2.35
+      2.5,
+      2.41
      ],
-     "lh": 1.4738,
-     "la": 0.9495,
-     "p1": 0.4893,
-     "px": 0.2717,
-     "p2": 0.2391,
-     "o25": 0.4364,
-     "btts": 0.4768,
+     "lh": 1.4455,
+     "la": 0.9824,
+     "p1": 0.4727,
+     "px": 0.2759,
+     "p2": 0.2513,
+     "o25": 0.4376,
+     "btts": 0.4833,
      "marcador": "1-1",
-     "p_marcador": 0.1282
+     "p_marcador": 0.1304
     },
     {
      "fecha": "2026-11-22",
-     "local": "Alavés",
-     "visitante": "Deportivo La Coruña",
+     "local": "Osasuna",
+     "visitante": "Málaga",
      "pendiente": false,
      "córners": [
-      5.6,
-      4.41
+      4.87,
+      4.42
      ],
      "tarjetas": [
       2.25,
-      2.49
+      2.36
      ],
-     "lh": 1.4381,
-     "la": 1.0839,
-     "p1": 0.4477,
-     "px": 0.2719,
-     "p2": 0.2804,
-     "o25": 0.4618,
-     "btts": 0.5088,
-     "marcador": "1-1",
-     "p_marcador": 0.1293
-    },
-    {
-     "fecha": "2026-11-22",
-     "local": "Getafe",
-     "visitante": "Atlético de Madrid",
-     "pendiente": false,
-     "córners": [
-      4.23,
-      4.95
-     ],
-     "tarjetas": [
-      2.43,
-      2.5
-     ],
-     "lh": 0.7408,
-     "la": 1.1107,
-     "p1": 0.2388,
-     "px": 0.3239,
-     "p2": 0.4373,
-     "o25": 0.2832,
-     "btts": 0.3552,
-     "marcador": "0-1",
-     "p_marcador": 0.1701
-    },
-    {
-     "fecha": "2026-11-22",
-     "local": "Levante",
-     "visitante": "Elche",
-     "pendiente": false,
-     "córners": [
-      4.76,
-      4.25
-     ],
-     "tarjetas": [
-      2.09,
-      2.55
-     ],
-     "lh": 1.9113,
-     "la": 1.281,
-     "p1": 0.518,
-     "px": 0.2295,
-     "p2": 0.2525,
-     "o25": 0.6185,
-     "btts": 0.6188,
-     "marcador": "1-1",
-     "p_marcador": 0.1039
+     "lh": 1.8524,
+     "la": 0.8131,
+     "p1": 0.6154,
+     "px": 0.2297,
+     "p2": 0.1549,
+     "o25": 0.4979,
+     "btts": 0.4735,
+     "marcador": "1-0",
+     "p_marcador": 0.1246
     },
     {
      "fecha": "2026-11-22",
@@ -5079,71 +4930,140 @@
      "visitante": "Celta de Vigo",
      "pendiente": false,
      "córners": [
-      6.26,
+      6.27,
       3.07
      ],
      "tarjetas": [
-      2.08,
-      2.4
+      2.07,
+      2.41
      ],
-     "lh": 2.2944,
-     "la": 0.8575,
-     "p1": 0.6941,
-     "px": 0.1842,
-     "p2": 0.1217,
-     "o25": 0.61,
-     "btts": 0.5205,
+     "lh": 2.2586,
+     "la": 0.831,
+     "p1": 0.6932,
+     "px": 0.1875,
+     "p2": 0.1194,
+     "o25": 0.5966,
+     "btts": 0.5089,
      "marcador": "2-0",
-     "p_marcador": 0.1126
+     "p_marcador": 0.1161
+    },
+    {
+     "fecha": "2026-11-22",
+     "local": "Sevilla",
+     "visitante": "Real Betis",
+     "pendiente": false,
+     "córners": [
+      5.29,
+      3.83
+     ],
+     "tarjetas": [
+      2.58,
+      2.21
+     ],
+     "lh": 1.2929,
+     "la": 1.4124,
+     "p1": 0.3388,
+     "px": 0.2674,
+     "p2": 0.3938,
+     "o25": 0.5077,
+     "btts": 0.5538,
+     "marcador": "1-1",
+     "p_marcador": 0.1271
+    },
+    {
+     "fecha": "2026-11-22",
+     "local": "Levante",
+     "visitante": "Elche",
+     "pendiente": false,
+     "córners": [
+      4.69,
+      4.17
+     ],
+     "tarjetas": [
+      2.11,
+      2.54
+     ],
+     "lh": 1.8657,
+     "la": 1.3724,
+     "p1": 0.487,
+     "px": 0.2338,
+     "p2": 0.2792,
+     "o25": 0.628,
+     "btts": 0.6351,
+     "marcador": "1-1",
+     "p_marcador": 0.1046
+    },
+    {
+     "fecha": "2026-11-22",
+     "local": "Getafe",
+     "visitante": "Atlético de Madrid",
+     "pendiente": false,
+     "córners": [
+      4.25,
+      4.85
+     ],
+     "tarjetas": [
+      2.44,
+      2.51
+     ],
+     "lh": 0.7339,
+     "la": 1.1485,
+     "p1": 0.2293,
+     "px": 0.3208,
+     "p2": 0.45,
+     "o25": 0.2916,
+     "btts": 0.3604,
+     "marcador": "0-1",
+     "p_marcador": 0.1696
     }
    ],
    "validacion": {
-    "partidos": 371,
-    "desde": "2025-10-24",
-    "hasta": "2026-10-21",
+    "partidos": 375,
+    "desde": "2025-10-26",
+    "hasta": "2026-10-26",
     "mercados": {
      "1X2": {
-      "modelo": 0.5794442686414286,
-      "base": 0.635994946110588,
-      "logloss_modelo": 0.9763847903997886,
-      "logloss_base": 1.0549348380134664,
-      "mejora": 0.08891686610875404,
-      "mercado": 0.5640207966859556
+      "modelo": 0.5757246669280609,
+      "base": 0.6345907538463623,
+      "logloss_modelo": 0.9705963241411809,
+      "logloss_base": 1.0529715715271226,
+      "mejora": 0.09276228271764764,
+      "mercado": 0.5607120778839143
      },
      "Más de 2.5": {
-      "modelo": 0.24086936060996575,
-      "base": 0.2504971169004046,
-      "mejora": 0.0384345992064522
+      "modelo": 0.24116073336930247,
+      "base": 0.25038349504246593,
+      "mejora": 0.036834543233767225
      },
      "Ambos anotan": {
-      "modelo": 0.24610682491622685,
-      "base": 0.24598388857992276,
-      "mejora": -0.0004997739364711595
+      "modelo": 0.24655867486738278,
+      "base": 0.24616716071460434,
+      "mejora": -0.0015904402181099453
      },
      "Córners más de 9.5": {
-      "partidos": 375,
+      "partidos": 381,
       "linea": 9.5,
-      "modelo": 0.24004980183283608,
-      "base": 0.2505449017329316,
-      "prob_media": 0.49423874390820144,
-      "frecuencia_real": 0.49333333333333335,
-      "mejora": 0.041889097832382816
+      "modelo": 0.24113121763646864,
+      "base": 0.25046829970933787,
+      "prob_media": 0.4949083048362334,
+      "frecuencia_real": 0.49081364829396323,
+      "mejora": 0.03727849825189333
      },
      "Tarjetas más de 4.5": {
-      "partidos": 375,
+      "partidos": 381,
       "linea": 4.5,
-      "modelo": 0.24976481622191954,
-      "base": 0.25084794402230903,
-      "prob_media": 0.49538250302126696,
-      "frecuencia_real": 0.48,
-      "mejora": 0.004317865967014556
+      "modelo": 0.24943033811853396,
+      "base": 0.25107419912914686,
+      "prob_media": 0.49557355078320525,
+      "frecuencia_real": 0.48293963254593175,
+      "mejora": 0.006547311576875048
      }
     },
-    "acierto_1x2": 0.5283018867924528,
+    "acierto_1x2": 0.5413333333333333,
     "apuestas_simuladas": {
      "umbral_ve": 0.05,
-     "apuestas": 258,
-     "roi": -0.127984496124031,
+     "apuestas": 257,
+     "roi": -0.1662645914396887,
      "nota": "Apuesta plana de 1 unidad al resultado 1X2 con mayor VE si supera el umbral, a cuota de cierre."
     }
    },
@@ -5174,17 +5094,17 @@
    "nombre": "Bundesliga (Alemania)",
    "temporada": "2026-27",
    "fuente": "footballdata",
-   "home": 1.6593,
-   "away": 1.3609,
-   "rho": -0.0394,
+   "home": 1.6386,
+   "away": 1.3395,
+   "rho": -0.0376,
    "conteos": {
     "córners": {
-     "home": 5.553,
-     "away": 4.3025
+     "home": 5.5666,
+     "away": 4.295
     },
     "tarjetas": {
-     "home": 1.8721,
-     "away": 1.99
+     "home": 1.8697,
+     "away": 2.0007
     }
    },
    "arbitros": {},
@@ -5194,39 +5114,39 @@
     "combinadas": [],
     "historial": {
      "seguras": {
-      "apuestas": 234,
-      "aciertos": 0.6495726495726496,
-      "cuota_media": 1.542991452991453,
-      "roi": -0.0040598290598290645,
-      "roi_min": -0.08340825799725639,
-      "roi_max": 0.07528859987759827
+      "apuestas": 232,
+      "aciertos": 0.646551724137931,
+      "cuota_media": 1.5447413793103448,
+      "roi": -0.007112068965517258,
+      "roi_min": -0.08709828208918137,
+      "roi_max": 0.07287414415814684
      },
      "valor": {
       "apuestas": 219,
-      "aciertos": 0.2922374429223744,
-      "cuota_media": 3.227488584474886,
-      "roi": -0.2178082191780822,
-      "roi_min": -0.3692358432116104,
-      "roi_max": -0.06638059514455405
+      "aciertos": 0.3105022831050228,
+      "cuota_media": 3.2431963470319634,
+      "roi": -0.1591780821917808,
+      "roi_min": -0.3146571705977809,
+      "roi_max": -0.003698993785780702
      },
      "doble": {
       "apuestas": 33,
       "aciertos": 0.48484848484848486,
-      "cuota_media": 2.1566666666666667,
-      "roi": 0.04424242424242424,
-      "roi_min": -0.26973747369207995,
-      "roi_max": 0.35822232217692845
+      "cuota_media": 2.1596969696969697,
+      "roi": 0.04363636363636365,
+      "roi_min": -0.270162941728442,
+      "roi_max": 0.3574356690011693
      },
      "triple": {
       "apuestas": 33,
-      "aciertos": 0.3333333333333333,
-      "cuota_media": 3.212121212121212,
-      "roi": 0.0548484848484848,
-      "roi_min": -0.38009497107315426,
-      "roi_max": 0.4897919407701239
+      "aciertos": 0.30303030303030304,
+      "cuota_media": 3.232727272727272,
+      "roi": -0.04121212121212125,
+      "roi_min": -0.4652197115963001,
+      "roi_max": 0.3827954691720576
      },
-     "desde": "2025-10-18",
-     "hasta": "2026-10-18"
+     "desde": "2025-10-25",
+     "hasta": "2026-10-25"
     }
    },
    "top": {
@@ -5237,472 +5157,436 @@
     "n": 3,
     "label": "Descenso o promoción"
    },
-   "partidos_modelo": 666,
-   "ultimo_resultado": "2026-10-18",
+   "partidos_modelo": 675,
+   "ultimo_resultado": "2026-10-25",
    "equipos": [
     {
      "nombre": "Bayern Múnich",
-     "ataque": 1.9454,
-     "defensa": 0.6747,
-     "local": 1.1426,
-     "partidos": 74,
+     "ataque": 1.9773,
+     "defensa": 0.6757,
+     "local": 1.1331,
+     "partidos": 75,
      "sin_datos": false,
      "córners": [
-      1.2834,
-      0.7649
+      1.2845,
+      0.7714
      ],
      "tarjetas": [
-      0.8989,
-      0.9707
+      0.8946,
+      0.9781
      ]
     },
     {
      "nombre": "Borussia Dortmund",
-     "ataque": 1.1795,
-     "defensa": 0.7185,
-     "local": 1.1143,
-     "partidos": 74,
+     "ataque": 1.1847,
+     "defensa": 0.7066,
+     "local": 1.0911,
+     "partidos": 75,
      "sin_datos": false,
      "córners": [
-      1.0604,
-      0.8859
+      1.086,
+      0.8783
      ],
      "tarjetas": [
-      1.0312,
-      0.9506
+      1.0173,
+      0.9505
      ]
     },
     {
      "nombre": "Stuttgart",
-     "ataque": 1.3837,
-     "defensa": 0.939,
-     "local": 0.8898,
-     "partidos": 74,
+     "ataque": 1.4014,
+     "defensa": 0.9699,
+     "local": 0.8803,
+     "partidos": 75,
      "sin_datos": false,
      "córners": [
-      1.1328,
-      0.941
+      1.1291,
+      0.9462
      ],
      "tarjetas": [
       0.9795,
-      1.0592
+      1.0692
      ]
     },
     {
      "nombre": "Bayer Leverkusen",
-     "ataque": 1.3175,
-     "defensa": 0.8894,
-     "local": 1.0395,
-     "partidos": 74,
+     "ataque": 1.2757,
+     "defensa": 0.917,
+     "local": 1.075,
+     "partidos": 75,
      "sin_datos": false,
      "córners": [
-      1.1695,
-      0.8375
+      1.159,
+      0.8386
      ],
      "tarjetas": [
-      0.984,
-      1.1096
+      0.9976,
+      1.126
      ]
     },
     {
      "nombre": "Mainz 05",
-     "ataque": 1.1811,
-     "defensa": 0.9491,
-     "local": 0.7862,
-     "partidos": 74,
+     "ataque": 1.1986,
+     "defensa": 0.9833,
+     "local": 0.7919,
+     "partidos": 75,
      "sin_datos": false,
      "córners": [
-      1.0128,
-      0.9531
+      1.0125,
+      0.9618
      ],
      "tarjetas": [
-      1.0614,
-      1.0678
+      1.0594,
+      1.0569
      ]
     },
     {
      "nombre": "RB Leipzig",
-     "ataque": 1.0854,
-     "defensa": 0.8965,
-     "local": 1.3333,
-     "partidos": 74,
+     "ataque": 1.0985,
+     "defensa": 0.8854,
+     "local": 1.343,
+     "partidos": 75,
      "sin_datos": false,
      "córners": [
-      1.0463,
-      1.004
+      1.0339,
+      1.011
      ],
      "tarjetas": [
-      0.9249,
-      0.9553
-     ]
-    },
-    {
-     "nombre": "Eintracht Frankfurt",
-     "ataque": 1.2128,
-     "defensa": 1.118,
-     "local": 0.9342,
-     "partidos": 74,
-     "sin_datos": false,
-     "córners": [
-      0.999,
-      0.9581
-     ],
-     "tarjetas": [
-      0.9979,
-      0.9856
+      0.9206,
+      0.9489
      ]
     },
     {
      "nombre": "Hoffenheim",
-     "ataque": 1.1386,
-     "defensa": 1.0628,
-     "local": 1.0153,
-     "partidos": 74,
+     "ataque": 1.1609,
+     "defensa": 1.0434,
+     "local": 1.036,
+     "partidos": 75,
      "sin_datos": false,
      "córners": [
-      1.109,
-      0.9897
+      1.1058,
+      0.9825
      ],
      "tarjetas": [
-      1.0479,
-      0.9195
+      1.0646,
+      0.9335
+     ]
+    },
+    {
+     "nombre": "Eintracht Frankfurt",
+     "ataque": 1.1935,
+     "defensa": 1.1025,
+     "local": 0.9518,
+     "partidos": 75,
+     "sin_datos": false,
+     "córners": [
+      0.9878,
+      0.9856
+     ],
+     "tarjetas": [
+      0.9974,
+      0.9728
      ]
     },
     {
      "nombre": "Freiburg",
-     "ataque": 0.9364,
-     "defensa": 0.9436,
-     "local": 1.2503,
-     "partidos": 74,
+     "ataque": 0.9482,
+     "defensa": 0.9558,
+     "local": 1.239,
+     "partidos": 75,
      "sin_datos": false,
      "córners": [
-      0.9009,
-      0.8819
+      0.9046,
+      0.8876
      ],
      "tarjetas": [
-      0.9311,
-      1.019
-     ]
-    },
-    {
-     "nombre": "Augsburg",
-     "ataque": 1.015,
-     "defensa": 1.0542,
-     "local": 0.9777,
-     "partidos": 74,
-     "sin_datos": false,
-     "córners": [
-      1.0027,
-      1.0871
-     ],
-     "tarjetas": [
-      1.0786,
-      0.9518
-     ]
-    },
-    {
-     "nombre": "Elversberg",
-     "ataque": 1.1294,
-     "defensa": 1.1919,
-     "local": 1.1965,
-     "partidos": 6,
-     "sin_datos": false,
-     "córners": [
-      0.9475,
-      1.1584
-     ],
-     "tarjetas": [
-      1.0138,
-      0.9947
+      0.939,
+      1.0121
      ]
     },
     {
      "nombre": "Werder Bremen",
-     "ataque": 0.9685,
-     "defensa": 1.0456,
-     "local": 0.9345,
-     "partidos": 74,
+     "ataque": 1.0275,
+     "defensa": 1.0585,
+     "local": 0.9031,
+     "partidos": 75,
      "sin_datos": false,
      "córners": [
-      0.946,
-      1.0017
+      0.9534,
+      1.0034
      ],
      "tarjetas": [
-      1.0552,
-      0.9798
+      1.045,
+      0.9795
      ]
     },
     {
-     "nombre": "Schalke 04",
-     "ataque": 0.6807,
-     "defensa": 0.854,
-     "local": 0.7937,
-     "partidos": 6,
+     "nombre": "Augsburg",
+     "ataque": 1.02,
+     "defensa": 1.0622,
+     "local": 0.9715,
+     "partidos": 75,
      "sin_datos": false,
      "córners": [
-      0.912,
-      1.0661
+      0.9985,
+      1.0733
      ],
      "tarjetas": [
-      0.9448,
-      1.0036
-     ]
-    },
-    {
-     "nombre": "Hamburger SV",
-     "ataque": 0.8612,
-     "defensa": 1.0395,
-     "local": 0.9923,
-     "partidos": 40,
-     "sin_datos": false,
-     "córners": [
-      0.8679,
-      1.1091
-     ],
-     "tarjetas": [
-      1.0564,
-      1.104
-     ]
-    },
-    {
-     "nombre": "FC Köln",
-     "ataque": 0.9082,
-     "defensa": 1.0919,
-     "local": 1.1308,
-     "partidos": 40,
-     "sin_datos": false,
-     "córners": [
-      1.0155,
-      1.0737
-     ],
-     "tarjetas": [
-      1.0042,
-      1.0565
-     ]
-    },
-    {
-     "nombre": "Union Berlin",
-     "ataque": 0.7967,
-     "defensa": 1.0199,
-     "local": 1.0366,
-     "partidos": 74,
-     "sin_datos": false,
-     "córners": [
-      0.9698,
-      0.9993
-     ],
-     "tarjetas": [
-      1.0567,
-      0.9953
+      1.0698,
+      0.9635
      ]
     },
     {
      "nombre": "Borussia Mönchengladbach",
-     "ataque": 0.8983,
-     "defensa": 1.1234,
-     "local": 1.0839,
-     "partidos": 74,
+     "ataque": 0.9562,
+     "defensa": 1.1259,
+     "local": 1.0357,
+     "partidos": 75,
      "sin_datos": false,
      "córners": [
-      0.9184,
-      1.0091
+      0.9229,
+      1.0082
      ],
      "tarjetas": [
-      1.0318,
-      1.0212
+      1.0419,
+      1.0207
+     ]
+    },
+    {
+     "nombre": "FC Köln",
+     "ataque": 0.9073,
+     "defensa": 1.0783,
+     "local": 1.1026,
+     "partidos": 41,
+     "sin_datos": false,
+     "córners": [
+      1.0136,
+      1.0772
+     ],
+     "tarjetas": [
+      1.0042,
+      1.0617
+     ]
+    },
+    {
+     "nombre": "Schalke 04",
+     "ataque": 0.6152,
+     "defensa": 0.7974,
+     "local": 0.811,
+     "partidos": 7,
+     "sin_datos": false,
+     "córners": [
+      0.9206,
+      1.0645
+     ],
+     "tarjetas": [
+      0.9558,
+      1.0046
+     ]
+    },
+    {
+     "nombre": "Hamburger SV",
+     "ataque": 0.836,
+     "defensa": 1.0422,
+     "local": 1.016,
+     "partidos": 41,
+     "sin_datos": false,
+     "córners": [
+      0.8641,
+      1.1077
+     ],
+     "tarjetas": [
+      1.0539,
+      1.0935
+     ]
+    },
+    {
+     "nombre": "Union Berlin",
+     "ataque": 0.802,
+     "defensa": 1.0231,
+     "local": 1.038,
+     "partidos": 75,
+     "sin_datos": false,
+     "córners": [
+      0.9556,
+      0.9969
+     ],
+     "tarjetas": [
+      1.0675,
+      0.9882
+     ]
+    },
+    {
+     "nombre": "Elversberg",
+     "ataque": 1.038,
+     "defensa": 1.2628,
+     "local": 1.2319,
+     "partidos": 7,
+     "sin_datos": false,
+     "córners": [
+      0.9646,
+      1.1313
+     ],
+     "tarjetas": [
+      1.0033,
+      0.9868
      ]
     },
     {
      "nombre": "Paderborn",
-     "ataque": 0.7053,
-     "defensa": 1.0218,
-     "local": 0.9744,
-     "partidos": 6,
+     "ataque": 0.7045,
+     "defensa": 0.9492,
+     "local": 0.9714,
+     "partidos": 7,
      "sin_datos": false,
      "córners": [
-      0.9851,
-      1.0555
+      0.9844,
+      1.0446
      ],
      "tarjetas": [
-      0.9639,
-      0.9525
+      0.955,
+      0.9533
      ]
     }
    ],
    "tabla": {
     "Augsburg": {
-     "pj": 6,
-     "pts": 8,
+     "pj": 7,
+     "pts": 9,
+     "gf": 17,
+     "gc": 13
+    },
+    "Bayer Leverkusen": {
+     "pj": 7,
+     "pts": 13,
      "gf": 16,
      "gc": 12
     },
-    "Bayer Leverkusen": {
-     "pj": 6,
-     "pts": 13,
-     "gf": 16,
-     "gc": 9
-    },
     "Bayern Múnich": {
-     "pj": 6,
-     "pts": 14,
-     "gf": 22,
-     "gc": 5
+     "pj": 7,
+     "pts": 17,
+     "gf": 25,
+     "gc": 6
     },
     "Borussia Dortmund": {
-     "pj": 6,
-     "pts": 14,
-     "gf": 11,
+     "pj": 7,
+     "pts": 17,
+     "gf": 12,
      "gc": 4
     },
     "Borussia Mönchengladbach": {
-     "pj": 6,
-     "pts": 0,
-     "gf": 8,
-     "gc": 20
+     "pj": 7,
+     "pts": 3,
+     "gf": 11,
+     "gc": 22
     },
     "Eintracht Frankfurt": {
-     "pj": 6,
+     "pj": 7,
      "pts": 8,
      "gf": 10,
-     "gc": 16
+     "gc": 17
     },
     "Elversberg": {
-     "pj": 6,
+     "pj": 7,
      "pts": 10,
      "gf": 12,
-     "gc": 11
+     "gc": 15
     },
     "FC Köln": {
-     "pj": 6,
-     "pts": 7,
+     "pj": 7,
+     "pts": 8,
      "gf": 8,
      "gc": 11
     },
     "Freiburg": {
-     "pj": 6,
+     "pj": 7,
      "pts": 13,
-     "gf": 15,
-     "gc": 6
+     "gf": 16,
+     "gc": 9
     },
     "Hamburger SV": {
-     "pj": 6,
+     "pj": 7,
      "pts": 9,
      "gf": 6,
-     "gc": 15
+     "gc": 16
     },
     "Hoffenheim": {
-     "pj": 6,
-     "pts": 6,
-     "gf": 11,
+     "pj": 7,
+     "pts": 9,
+     "gf": 14,
      "gc": 14
     },
     "Mainz 05": {
-     "pj": 6,
+     "pj": 7,
      "pts": 10,
-     "gf": 14,
-     "gc": 10
+     "gf": 16,
+     "gc": 13
     },
     "Paderborn": {
-     "pj": 6,
-     "pts": 5,
-     "gf": 5,
+     "pj": 7,
+     "pts": 8,
+     "gf": 6,
      "gc": 9
     },
     "RB Leipzig": {
-     "pj": 6,
-     "pts": 9,
-     "gf": 16,
+     "pj": 7,
+     "pts": 12,
+     "gf": 20,
      "gc": 11
     },
     "Schalke 04": {
-     "pj": 6,
-     "pts": 5,
+     "pj": 7,
+     "pts": 6,
      "gf": 4,
      "gc": 7
     },
     "Stuttgart": {
-     "pj": 6,
+     "pj": 7,
      "pts": 6,
-     "gf": 8,
-     "gc": 10
+     "gf": 10,
+     "gc": 13
     },
     "Union Berlin": {
-     "pj": 6,
-     "pts": 5,
-     "gf": 5,
-     "gc": 17
+     "pj": 7,
+     "pts": 6,
+     "gf": 6,
+     "gc": 18
     },
     "Werder Bremen": {
-     "pj": 6,
-     "pts": 9,
-     "gf": 12,
-     "gc": 12
+     "pj": 7,
+     "pts": 12,
+     "gf": 15,
+     "gc": 14
     }
    },
    "restantes": [
     [
-     "Stuttgart",
-     "Borussia Mönchengladbach"
-    ],
-    [
-     "Borussia Dortmund",
-     "Eintracht Frankfurt"
-    ],
-    [
-     "FC Köln",
-     "Schalke 04"
-    ],
-    [
-     "Augsburg",
-     "Union Berlin"
-    ],
-    [
-     "RB Leipzig",
-     "Elversberg"
-    ],
-    [
-     "Mainz 05",
-     "Werder Bremen"
-    ],
-    [
-     "Paderborn",
-     "Hamburger SV"
-    ],
-    [
-     "Hoffenheim",
-     "Bayer Leverkusen"
-    ],
-    [
-     "Freiburg",
-     "Bayern Múnich"
-    ],
-    [
      "Elversberg",
      "Mainz 05"
-    ],
-    [
-     "Bayer Leverkusen",
-     "Stuttgart"
-    ],
-    [
-     "Werder Bremen",
-     "Hoffenheim"
-    ],
-    [
-     "Bayern Múnich",
-     "Borussia Dortmund"
-    ],
-    [
-     "Schalke 04",
-     "RB Leipzig"
     ],
     [
      "Borussia Mönchengladbach",
      "Paderborn"
     ],
     [
+     "Schalke 04",
+     "RB Leipzig"
+    ],
+    [
      "Augsburg",
      "Freiburg"
+    ],
+    [
+     "Werder Bremen",
+     "Hoffenheim"
+    ],
+    [
+     "Bayer Leverkusen",
+     "Stuttgart"
+    ],
+    [
+     "Bayern Múnich",
+     "Borussia Dortmund"
     ],
     [
      "Eintracht Frankfurt",
@@ -5715,10 +5599,6 @@
     [
      "Hamburger SV",
      "Borussia Mönchengladbach"
-    ],
-    [
-     "Stuttgart",
-     "Werder Bremen"
     ],
     [
      "RB Leipzig",
@@ -5729,6 +5609,10 @@
      "Eintracht Frankfurt"
     ],
     [
+     "Stuttgart",
+     "Werder Bremen"
+    ],
+    [
      "Mainz 05",
      "Bayern Múnich"
     ],
@@ -5753,16 +5637,20 @@
      "FC Köln"
     ],
     [
-     "Eintracht Frankfurt",
-     "Hoffenheim"
-    ],
-    [
      "Schalke 04",
      "Stuttgart"
     ],
     [
+     "Eintracht Frankfurt",
+     "Hoffenheim"
+    ],
+    [
      "Borussia Mönchengladbach",
      "Borussia Dortmund"
+    ],
+    [
+     "Elversberg",
+     "Freiburg"
     ],
     [
      "Bayer Leverkusen",
@@ -5771,10 +5659,6 @@
     [
      "Union Berlin",
      "RB Leipzig"
-    ],
-    [
-     "Elversberg",
-     "Freiburg"
     ],
     [
      "Werder Bremen",
@@ -5789,6 +5673,14 @@
      "Borussia Mönchengladbach"
     ],
     [
+     "Mainz 05",
+     "Union Berlin"
+    ],
+    [
+     "FC Köln",
+     "Elversberg"
+    ],
+    [
      "Stuttgart",
      "Eintracht Frankfurt"
     ],
@@ -5801,12 +5693,8 @@
      "Schalke 04"
     ],
     [
-     "FC Köln",
-     "Elversberg"
-    ],
-    [
-     "Mainz 05",
-     "Union Berlin"
+     "Freiburg",
+     "RB Leipzig"
     ],
     [
      "Hoffenheim",
@@ -5817,48 +5705,40 @@
      "Bayer Leverkusen"
     ],
     [
+     "Augsburg",
+     "FC Köln"
+    ],
+    [
+     "Bayern Múnich",
+     "Paderborn"
+    ],
+    [
      "Freiburg",
-     "RB Leipzig"
-    ],
-    [
-     "Bayer Leverkusen",
-     "Borussia Mönchengladbach"
-    ],
-    [
-     "RB Leipzig",
-     "Mainz 05"
-    ],
-    [
-     "Union Berlin",
-     "Hamburger SV"
-    ],
-    [
-     "Schalke 04",
-     "Borussia Dortmund"
+     "Hoffenheim"
     ],
     [
      "Eintracht Frankfurt",
      "Werder Bremen"
     ],
     [
-     "Freiburg",
-     "Hoffenheim"
-    ],
-    [
-     "Bayern Múnich",
-     "Paderborn"
-    ],
-    [
-     "Augsburg",
-     "FC Köln"
-    ],
-    [
      "Elversberg",
      "Stuttgart"
     ],
     [
-     "Borussia Dortmund",
-     "Augsburg"
+     "Union Berlin",
+     "Hamburger SV"
+    ],
+    [
+     "RB Leipzig",
+     "Mainz 05"
+    ],
+    [
+     "Bayer Leverkusen",
+     "Borussia Mönchengladbach"
+    ],
+    [
+     "Schalke 04",
+     "Borussia Dortmund"
     ],
     [
      "Werder Bremen",
@@ -5869,20 +5749,20 @@
      "Elversberg"
     ],
     [
-     "Mainz 05",
-     "Freiburg"
-    ],
-    [
      "Stuttgart",
      "Union Berlin"
     ],
     [
-     "Hoffenheim",
-     "Bayern Múnich"
+     "Borussia Dortmund",
+     "Augsburg"
     ],
     [
-     "FC Köln",
-     "RB Leipzig"
+     "Mainz 05",
+     "Freiburg"
+    ],
+    [
+     "Hoffenheim",
+     "Bayern Múnich"
     ],
     [
      "Borussia Mönchengladbach",
@@ -5893,28 +5773,36 @@
      "Schalke 04"
     ],
     [
-     "Schalke 04",
-     "Borussia Mönchengladbach"
-    ],
-    [
-     "Bayern Múnich",
-     "Werder Bremen"
+     "FC Köln",
+     "RB Leipzig"
     ],
     [
      "Elversberg",
      "Hamburger SV"
     ],
     [
-     "Freiburg",
-     "Stuttgart"
-    ],
-    [
      "Bayer Leverkusen",
      "Eintracht Frankfurt"
     ],
     [
+     "Schalke 04",
+     "Borussia Mönchengladbach"
+    ],
+    [
+     "Freiburg",
+     "Stuttgart"
+    ],
+    [
+     "Bayern Múnich",
+     "Werder Bremen"
+    ],
+    [
      "Mainz 05",
      "FC Köln"
+    ],
+    [
+     "RB Leipzig",
+     "Borussia Dortmund"
     ],
     [
      "Union Berlin",
@@ -5923,14 +5811,6 @@
     [
      "Augsburg",
      "Paderborn"
-    ],
-    [
-     "RB Leipzig",
-     "Borussia Dortmund"
-    ],
-    [
-     "Hoffenheim",
-     "Elversberg"
     ],
     [
      "Paderborn",
@@ -5949,6 +5829,10 @@
      "Freiburg"
     ],
     [
+     "Hoffenheim",
+     "Elversberg"
+    ],
+    [
      "Eintracht Frankfurt",
      "Schalke 04"
     ],
@@ -5965,8 +5849,8 @@
      "Augsburg"
     ],
     [
-     "Schalke 04",
-     "Werder Bremen"
+     "RB Leipzig",
+     "Stuttgart"
     ],
     [
      "Mainz 05",
@@ -5977,16 +5861,20 @@
      "Hamburger SV"
     ],
     [
+     "Schalke 04",
+     "Werder Bremen"
+    ],
+    [
      "Union Berlin",
      "Paderborn"
     ],
     [
-     "RB Leipzig",
-     "Stuttgart"
-    ],
-    [
      "Augsburg",
      "Borussia Mönchengladbach"
+    ],
+    [
+     "Elversberg",
+     "Eintracht Frankfurt"
     ],
     [
      "FC Köln",
@@ -5997,84 +5885,84 @@
      "Bayer Leverkusen"
     ],
     [
-     "Elversberg",
-     "Eintracht Frankfurt"
-    ],
-    [
-     "Hoffenheim",
-     "RB Leipzig"
-    ],
-    [
-     "Werder Bremen",
-     "Elversberg"
-    ],
-    [
-     "Eintracht Frankfurt",
-     "Bayern Múnich"
-    ],
-    [
-     "Paderborn",
-     "FC Köln"
-    ],
-    [
      "Bayer Leverkusen",
      "Schalke 04"
+    ],
+    [
+     "Borussia Mönchengladbach",
+     "Union Berlin"
     ],
     [
      "Hamburger SV",
      "Augsburg"
     ],
     [
-     "Borussia Mönchengladbach",
-     "Union Berlin"
+     "Stuttgart",
+     "Mainz 05"
     ],
     [
      "Borussia Dortmund",
      "Freiburg"
     ],
     [
-     "Stuttgart",
-     "Mainz 05"
-    ],
-    [
-     "Hoffenheim",
-     "FC Köln"
-    ],
-    [
-     "Stuttgart",
+     "Eintracht Frankfurt",
      "Bayern Múnich"
     ],
     [
-     "Bayer Leverkusen",
-     "Elversberg"
-    ],
-    [
-     "Eintracht Frankfurt",
-     "Union Berlin"
-    ],
-    [
-     "Borussia Mönchengladbach",
+     "Hoffenheim",
      "RB Leipzig"
     ],
     [
      "Paderborn",
-     "Mainz 05"
+     "FC Köln"
     ],
     [
-     "Hamburger SV",
-     "Borussia Dortmund"
+     "Werder Bremen",
+     "Elversberg"
     ],
     [
      "Werder Bremen",
      "Freiburg"
     ],
     [
+     "Hamburger SV",
+     "Borussia Dortmund"
+    ],
+    [
+     "Paderborn",
+     "Mainz 05"
+    ],
+    [
      "Schalke 04",
      "Augsburg"
     ],
     [
+     "Stuttgart",
+     "Bayern Múnich"
+    ],
+    [
+     "Eintracht Frankfurt",
+     "Union Berlin"
+    ],
+    [
+     "Bayer Leverkusen",
+     "Elversberg"
+    ],
+    [
+     "Hoffenheim",
+     "FC Köln"
+    ],
+    [
+     "Borussia Mönchengladbach",
+     "RB Leipzig"
+    ],
+    [
      "Union Berlin",
      "Bayer Leverkusen"
+    ],
+    [
+     "Freiburg",
+     "Paderborn"
     ],
     [
      "Bayern Múnich",
@@ -6083,10 +5971,6 @@
     [
      "Borussia Dortmund",
      "Hoffenheim"
-    ],
-    [
-     "Freiburg",
-     "Paderborn"
     ],
     [
      "Mainz 05",
@@ -6109,8 +5993,8 @@
      "Stuttgart"
     ],
     [
-     "Bayer Leverkusen",
-     "Augsburg"
+     "Eintracht Frankfurt",
+     "Mainz 05"
     ],
     [
      "Schalke 04",
@@ -6121,12 +6005,12 @@
      "RB Leipzig"
     ],
     [
-     "Werder Bremen",
-     "FC Köln"
+     "Bayer Leverkusen",
+     "Augsburg"
     ],
     [
-     "Eintracht Frankfurt",
-     "Mainz 05"
+     "Werder Bremen",
+     "FC Köln"
     ],
     [
      "Bayern Múnich",
@@ -6145,12 +6029,16 @@
      "Hoffenheim"
     ],
     [
-     "Freiburg",
-     "Eintracht Frankfurt"
-    ],
-    [
      "Borussia Dortmund",
      "Stuttgart"
+    ],
+    [
+     "Augsburg",
+     "Werder Bremen"
+    ],
+    [
+     "Freiburg",
+     "Eintracht Frankfurt"
     ],
     [
      "Hoffenheim",
@@ -6161,8 +6049,8 @@
      "Borussia Mönchengladbach"
     ],
     [
-     "Augsburg",
-     "Werder Bremen"
+     "RB Leipzig",
+     "Bayer Leverkusen"
     ],
     [
      "Elversberg",
@@ -6175,14 +6063,6 @@
     [
      "FC Köln",
      "Hamburger SV"
-    ],
-    [
-     "RB Leipzig",
-     "Bayer Leverkusen"
-    ],
-    [
-     "Bayer Leverkusen",
-     "Mainz 05"
     ],
     [
      "Elversberg",
@@ -6201,6 +6081,10 @@
      "Freiburg"
     ],
     [
+     "Bayer Leverkusen",
+     "Mainz 05"
+    ],
+    [
      "Werder Bremen",
      "Borussia Dortmund"
     ],
@@ -6217,8 +6101,8 @@
      "Hoffenheim"
     ],
     [
-     "Hoffenheim",
-     "Borussia Mönchengladbach"
+     "Mainz 05",
+     "Schalke 04"
     ],
     [
      "RB Leipzig",
@@ -6229,16 +6113,20 @@
      "Werder Bremen"
     ],
     [
+     "Hoffenheim",
+     "Borussia Mönchengladbach"
+    ],
+    [
      "Borussia Dortmund",
      "Union Berlin"
     ],
     [
-     "Mainz 05",
-     "Schalke 04"
-    ],
-    [
      "FC Köln",
      "Eintracht Frankfurt"
+    ],
+    [
+     "Stuttgart",
+     "Hamburger SV"
     ],
     [
      "Augsburg",
@@ -6249,84 +6137,84 @@
      "Bayer Leverkusen"
     ],
     [
-     "Stuttgart",
-     "Hamburger SV"
-    ],
-    [
-     "Schalke 04",
-     "FC Köln"
-    ],
-    [
-     "Bayern Múnich",
-     "Freiburg"
-    ],
-    [
-     "Eintracht Frankfurt",
-     "Borussia Dortmund"
-    ],
-    [
-     "Bayer Leverkusen",
-     "Hoffenheim"
-    ],
-    [
      "Werder Bremen",
      "Mainz 05"
-    ],
-    [
-     "Union Berlin",
-     "Augsburg"
     ],
     [
      "Elversberg",
      "RB Leipzig"
     ],
     [
-     "Borussia Mönchengladbach",
-     "Stuttgart"
+     "Union Berlin",
+     "Augsburg"
     ],
     [
      "Hamburger SV",
      "Paderborn"
     ],
     [
-     "RB Leipzig",
-     "Schalke 04"
+     "Borussia Mönchengladbach",
+     "Stuttgart"
     ],
     [
-     "Paderborn",
-     "Borussia Mönchengladbach"
+     "Eintracht Frankfurt",
+     "Borussia Dortmund"
     ],
     [
-     "Hoffenheim",
-     "Werder Bremen"
+     "Schalke 04",
+     "FC Köln"
     ],
     [
-     "FC Köln",
-     "Union Berlin"
+     "Bayer Leverkusen",
+     "Hoffenheim"
     ],
     [
-     "Hamburger SV",
-     "Eintracht Frankfurt"
-    ],
-    [
-     "Mainz 05",
-     "Elversberg"
-    ],
-    [
-     "Freiburg",
-     "Augsburg"
+     "Bayern Múnich",
+     "Freiburg"
     ],
     [
      "Borussia Dortmund",
      "Bayern Múnich"
     ],
     [
+     "Freiburg",
+     "Augsburg"
+    ],
+    [
+     "Mainz 05",
+     "Elversberg"
+    ],
+    [
      "Stuttgart",
      "Bayer Leverkusen"
     ],
     [
+     "Paderborn",
+     "Borussia Mönchengladbach"
+    ],
+    [
+     "FC Köln",
+     "Union Berlin"
+    ],
+    [
+     "Hoffenheim",
+     "Werder Bremen"
+    ],
+    [
+     "RB Leipzig",
+     "Schalke 04"
+    ],
+    [
+     "Hamburger SV",
+     "Eintracht Frankfurt"
+    ],
+    [
      "Werder Bremen",
      "Stuttgart"
+    ],
+    [
+     "Schalke 04",
+     "Hoffenheim"
     ],
     [
      "Bayer Leverkusen",
@@ -6335,10 +6223,6 @@
     [
      "Bayern Múnich",
      "Mainz 05"
-    ],
-    [
-     "Schalke 04",
-     "Hoffenheim"
     ],
     [
      "Eintracht Frankfurt",
@@ -6361,28 +6245,32 @@
      "RB Leipzig"
     ],
     [
-     "Freiburg",
-     "Elversberg"
+     "RB Leipzig",
+     "Union Berlin"
     ],
     [
      "Paderborn",
      "Bayer Leverkusen"
     ],
     [
-     "RB Leipzig",
-     "Union Berlin"
+     "Hamburger SV",
+     "Werder Bremen"
+    ],
+    [
+     "Freiburg",
+     "Elversberg"
     ],
     [
      "Borussia Dortmund",
      "Borussia Mönchengladbach"
     ],
     [
-     "Hamburger SV",
-     "Werder Bremen"
-    ],
-    [
      "FC Köln",
      "Bayern Múnich"
+    ],
+    [
+     "Hoffenheim",
+     "Eintracht Frankfurt"
     ],
     [
      "Mainz 05",
@@ -6393,16 +6281,20 @@
      "Schalke 04"
     ],
     [
-     "Hoffenheim",
-     "Eintracht Frankfurt"
+     "Bayer Leverkusen",
+     "Borussia Dortmund"
     ],
     [
-     "Elversberg",
-     "FC Köln"
+     "Eintracht Frankfurt",
+     "Stuttgart"
     ],
     [
-     "Bayern Múnich",
-     "Hamburger SV"
+     "Schalke 04",
+     "Paderborn"
+    ],
+    [
+     "Union Berlin",
+     "Mainz 05"
     ],
     [
      "Augsburg",
@@ -6413,32 +6305,16 @@
      "Werder Bremen"
     ],
     [
-     "Union Berlin",
-     "Mainz 05"
-    ],
-    [
-     "Bayer Leverkusen",
-     "Borussia Dortmund"
-    ],
-    [
-     "Schalke 04",
-     "Paderborn"
-    ],
-    [
-     "Eintracht Frankfurt",
-     "Stuttgart"
-    ],
-    [
      "RB Leipzig",
      "Freiburg"
     ],
     [
-     "Borussia Dortmund",
-     "Schalke 04"
+     "Bayern Múnich",
+     "Hamburger SV"
     ],
     [
-     "Hamburger SV",
-     "Union Berlin"
+     "Elversberg",
+     "FC Köln"
     ],
     [
      "FC Köln",
@@ -6449,8 +6325,16 @@
      "Bayer Leverkusen"
     ],
     [
+     "Hamburger SV",
+     "Union Berlin"
+    ],
+    [
      "Werder Bremen",
      "Eintracht Frankfurt"
+    ],
+    [
+     "Borussia Dortmund",
+     "Schalke 04"
     ],
     [
      "Hoffenheim",
@@ -6505,28 +6389,28 @@
      "Borussia Dortmund"
     ],
     [
-     "Paderborn",
-     "Augsburg"
+     "Stuttgart",
+     "Freiburg"
     ],
     [
      "Eintracht Frankfurt",
      "Bayer Leverkusen"
     ],
     [
+     "Paderborn",
+     "Augsburg"
+    ],
+    [
+     "Hoffenheim",
+     "Union Berlin"
+    ],
+    [
      "Borussia Mönchengladbach",
      "Schalke 04"
     ],
     [
-     "Stuttgart",
-     "Freiburg"
-    ],
-    [
      "Hamburger SV",
      "Elversberg"
-    ],
-    [
-     "Borussia Dortmund",
-     "RB Leipzig"
     ],
     [
      "FC Köln",
@@ -6537,8 +6421,8 @@
      "Bayern Múnich"
     ],
     [
-     "Hoffenheim",
-     "Union Berlin"
+     "Borussia Dortmund",
+     "RB Leipzig"
     ],
     [
      "Elversberg",
@@ -6656,114 +6540,22 @@
      "visitante": "Mainz 05",
      "pendiente": false,
      "córners": [
-      5.01,
-      5.05
+      5.16,
+      4.92
      ],
      "tarjetas": [
-      2.03,
-      2.1
+      1.98,
+      2.09
      ],
-     "lh": 2.1283,
-     "la": 1.9158,
-     "p1": 0.4355,
-     "px": 0.2104,
-     "p2": 0.3541,
-     "o25": 0.7683,
-     "btts": 0.7541,
-     "marcador": "2-1",
-     "p_marcador": 0.076
-    },
-    {
-     "fecha": "2026-10-31",
-     "local": "Bayer Leverkusen",
-     "visitante": "Stuttgart",
-     "pendiente": false,
-     "córners": [
-      6.11,
-      4.08
-     ],
-     "tarjetas": [
-      1.95,
-      2.16
-     ],
-     "lh": 2.1338,
-     "la": 1.6748,
-     "p1": 0.483,
-     "px": 0.2139,
-     "p2": 0.3031,
-     "o25": 0.7325,
-     "btts": 0.7196,
-     "marcador": "2-1",
-     "p_marcador": 0.0846
-    },
-    {
-     "fecha": "2026-10-31",
-     "local": "Werder Bremen",
-     "visitante": "Hoffenheim",
-     "pendiente": false,
-     "córners": [
-      5.2,
-      4.78
-     ],
-     "tarjetas": [
-      1.82,
-      2.04
-     ],
-     "lh": 1.5961,
-     "la": 1.6202,
-     "p1": 0.374,
-     "px": 0.2418,
-     "p2": 0.3843,
-     "o25": 0.6235,
-     "btts": 0.6437,
-     "marcador": "1-1",
-     "p_marcador": 0.1078
-    },
-    {
-     "fecha": "2026-10-31",
-     "local": "Bayern Múnich",
-     "visitante": "Borussia Dortmund",
-     "pendiente": false,
-     "córners": [
-      6.31,
-      3.49
-     ],
-     "tarjetas": [
-      1.6,
-      1.99
-     ],
-     "lh": 2.6499,
-     "la": 1.083,
-     "p1": 0.7046,
-     "px": 0.1661,
-     "p2": 0.1293,
-     "o25": 0.7201,
-     "btts": 0.6174,
-     "marcador": "2-1",
-     "p_marcador": 0.091
-    },
-    {
-     "fecha": "2026-10-31",
-     "local": "Schalke 04",
-     "visitante": "RB Leipzig",
-     "pendiente": false,
-     "córners": [
-      5.08,
-      4.8
-     ],
-     "tarjetas": [
-      1.69,
-      1.85
-     ],
-     "lh": 0.8037,
-     "la": 1.2614,
-     "p1": 0.2319,
-     "px": 0.302,
-     "p2": 0.4661,
-     "o25": 0.3409,
-     "btts": 0.401,
-     "marcador": "0-1",
-     "p_marcador": 0.1549
+     "lh": 2.0605,
+     "la": 2.0275,
+     "p1": 0.4014,
+     "px": 0.2098,
+     "p2": 0.3888,
+     "o25": 0.7745,
+     "btts": 0.7603,
+     "marcador": "2-2",
+     "p_marcador": 0.0732
     },
     {
      "fecha": "2026-10-31",
@@ -6771,22 +6563,45 @@
      "visitante": "Paderborn",
      "pendiente": false,
      "córners": [
-      5.38,
-      4.28
+      5.37,
+      4.26
      ],
      "tarjetas": [
-      1.84,
-      1.96
+      1.86,
+      1.95
      ],
-     "lh": 1.6508,
-     "la": 1.0784,
-     "p1": 0.5026,
-     "px": 0.2538,
-     "p2": 0.2436,
-     "o25": 0.5135,
-     "btts": 0.5378,
+     "lh": 1.5404,
+     "la": 1.0625,
+     "p1": 0.4788,
+     "px": 0.264,
+     "p2": 0.2572,
+     "o25": 0.4823,
+     "btts": 0.5187,
      "marcador": "1-1",
-     "p_marcador": 0.1208
+     "p_marcador": 0.1258
+    },
+    {
+     "fecha": "2026-10-31",
+     "local": "Schalke 04",
+     "visitante": "RB Leipzig",
+     "pendiente": false,
+     "córners": [
+      5.18,
+      4.73
+     ],
+     "tarjetas": [
+      1.7,
+      1.85
+     ],
+     "lh": 0.7239,
+     "la": 1.1734,
+     "p1": 0.2226,
+     "px": 0.3167,
+     "p2": 0.4607,
+     "o25": 0.2955,
+     "btts": 0.3606,
+     "marcador": "0-1",
+     "p_marcador": 0.1712
     },
     {
      "fecha": "2026-10-31",
@@ -6794,22 +6609,91 @@
      "visitante": "Freiburg",
      "pendiente": false,
      "córners": [
-      4.91,
-      4.21
+      4.93,
+      4.17
      ],
      "tarjetas": [
-      2.06,
-      1.76
+      2.02,
+      1.81
      ],
-     "lh": 1.5538,
-     "la": 1.3434,
-     "p1": 0.4192,
-     "px": 0.2555,
-     "p2": 0.3254,
-     "o25": 0.5534,
-     "btts": 0.5873,
+     "lh": 1.552,
+     "la": 1.3492,
+     "p1": 0.4177,
+     "px": 0.2549,
+     "p2": 0.3273,
+     "o25": 0.5543,
+     "btts": 0.588,
      "marcador": "1-1",
-     "p_marcador": 0.1197
+     "p_marcador": 0.1194
+    },
+    {
+     "fecha": "2026-10-31",
+     "local": "Werder Bremen",
+     "visitante": "Hoffenheim",
+     "pendiente": false,
+     "córners": [
+      5.21,
+      4.77
+     ],
+     "tarjetas": [
+      1.82,
+      2.09
+     ],
+     "lh": 1.5864,
+     "la": 1.646,
+     "p1": 0.3671,
+     "px": 0.2406,
+     "p2": 0.3924,
+     "o25": 0.6268,
+     "btts": 0.6459,
+     "marcador": "1-1",
+     "p_marcador": 0.1069
+    },
+    {
+     "fecha": "2026-10-31",
+     "local": "Bayer Leverkusen",
+     "visitante": "Stuttgart",
+     "pendiente": false,
+     "córners": [
+      6.1,
+      4.07
+     ],
+     "tarjetas": [
+      1.99,
+      2.21
+     ],
+     "lh": 2.1794,
+     "la": 1.7214,
+     "p1": 0.4834,
+     "px": 0.2108,
+     "p2": 0.3059,
+     "o25": 0.747,
+     "btts": 0.7312,
+     "marcador": "2-1",
+     "p_marcador": 0.0827
+    },
+    {
+     "fecha": "2026-10-31",
+     "local": "Bayern Múnich",
+     "visitante": "Borussia Dortmund",
+     "pendiente": false,
+     "córners": [
+      6.28,
+      3.6
+     ],
+     "tarjetas": [
+      1.59,
+      1.99
+     ],
+     "lh": 2.5942,
+     "la": 1.0722,
+     "p1": 0.6978,
+     "px": 0.1698,
+     "p2": 0.1324,
+     "o25": 0.7088,
+     "btts": 0.6113,
+     "marcador": "2-1",
+     "p_marcador": 0.0923
     },
     {
      "fecha": "2026-11-01",
@@ -6817,22 +6701,22 @@
      "visitante": "Hamburger SV",
      "pendiente": false,
      "córners": [
-      6.15,
-      3.58
+      6.09,
+      3.66
      ],
      "tarjetas": [
-      2.06,
-      2.07
+      2.04,
+      2.05
      ],
-     "lh": 1.954,
-     "la": 1.3103,
-     "p1": 0.5205,
-     "px": 0.2274,
-     "p2": 0.2521,
-     "o25": 0.6333,
-     "btts": 0.6306,
+     "lh": 1.9399,
+     "la": 1.2346,
+     "p1": 0.5344,
+     "px": 0.228,
+     "p2": 0.2376,
+     "o25": 0.6147,
+     "btts": 0.6109,
      "marcador": "1-1",
-     "p_marcador": 0.1017
+     "p_marcador": 0.1039
     },
     {
      "fecha": "2026-11-01",
@@ -6840,22 +6724,22 @@
      "visitante": "FC Köln",
      "pendiente": false,
      "córners": [
-      5.78,
-      4.37
+      5.73,
+      4.34
      ],
      "tarjetas": [
-      2.09,
+      2.12,
       1.99
      ],
-     "lh": 1.4963,
-     "la": 1.2607,
-     "p1": 0.4224,
-     "px": 0.2625,
-     "p2": 0.3151,
-     "o25": 0.5202,
-     "btts": 0.5608,
+     "lh": 1.471,
+     "la": 1.2434,
+     "p1": 0.4199,
+     "px": 0.2646,
+     "p2": 0.3155,
+     "o25": 0.5099,
+     "btts": 0.5527,
      "marcador": "1-1",
-     "p_marcador": 0.1245
+     "p_marcador": 0.1257
     },
     {
      "fecha": "2026-11-06",
@@ -6863,45 +6747,22 @@
      "visitante": "Borussia Mönchengladbach",
      "pendiente": false,
      "córners": [
-      4.86,
-      4.38
+      4.85,
+      4.39
      ],
      "tarjetas": [
-      2.02,
-      2.27
+      2.01,
+      2.28
      ],
-     "lh": 1.5928,
-     "la": 1.2708,
-     "p1": 0.4445,
-     "px": 0.2551,
-     "p2": 0.3005,
-     "o25": 0.5456,
-     "btts": 0.5777,
+     "lh": 1.567,
+     "la": 1.3349,
+     "p1": 0.4245,
+     "px": 0.2545,
+     "p2": 0.3211,
+     "o25": 0.5545,
+     "btts": 0.5874,
      "marcador": "1-1",
-     "p_marcador": 0.1201
-    },
-    {
-     "fecha": "2026-11-07",
-     "local": "Stuttgart",
-     "visitante": "Werder Bremen",
-     "pendiente": false,
-     "córners": [
-      6.3,
-      3.83
-     ],
-     "tarjetas": [
-      1.8,
-      2.22
-     ],
-     "lh": 2.1361,
-     "la": 1.2377,
-     "p1": 0.5757,
-     "px": 0.2127,
-     "p2": 0.2116,
-     "o25": 0.6552,
-     "btts": 0.6297,
-     "marcador": "2-1",
-     "p_marcador": 0.0967
+     "p_marcador": 0.1192
     },
     {
      "fecha": "2026-11-07",
@@ -6909,22 +6770,22 @@
      "visitante": "Augsburg",
      "pendiente": false,
      "córners": [
-      6.32,
-      4.33
+      6.18,
+      4.34
      ],
      "tarjetas": [
-      1.65,
-      2.05
+      1.66,
+      2.03
      ],
-     "lh": 2.5313,
-     "la": 1.2383,
-     "p1": 0.6516,
-     "px": 0.1818,
-     "p2": 0.1666,
-     "o25": 0.7261,
-     "btts": 0.6565,
+     "lh": 2.568,
+     "la": 1.2097,
+     "p1": 0.6642,
+     "px": 0.1777,
+     "p2": 0.158,
+     "o25": 0.7275,
+     "btts": 0.6506,
      "marcador": "2-1",
-     "p_marcador": 0.0915
+     "p_marcador": 0.0913
     },
     {
      "fecha": "2026-11-07",
@@ -6932,22 +6793,45 @@
      "visitante": "Eintracht Frankfurt",
      "pendiente": false,
      "córners": [
-      5.24,
-      4.54
+      5.4,
+      4.43
      ],
      "tarjetas": [
-      1.78,
-      1.89
+      1.74,
+      1.9
      ],
-     "lh": 1.275,
-     "la": 1.6865,
-     "p1": 0.2856,
-     "px": 0.248,
-     "p2": 0.4664,
-     "o25": 0.5681,
-     "btts": 0.5915,
+     "lh": 1.2363,
+     "la": 1.5176,
+     "p1": 0.3053,
+     "px": 0.2613,
+     "p2": 0.4334,
+     "o25": 0.5195,
+     "btts": 0.5585,
      "marcador": "1-1",
-     "p_marcador": 0.1156
+     "p_marcador": 0.124
+    },
+    {
+     "fecha": "2026-11-07",
+     "local": "Stuttgart",
+     "visitante": "Werder Bremen",
+     "pendiente": false,
+     "córners": [
+      6.31,
+      3.87
+     ],
+     "tarjetas": [
+      1.79,
+      2.24
+     ],
+     "lh": 2.1398,
+     "la": 1.3349,
+     "p1": 0.5552,
+     "px": 0.2133,
+     "p2": 0.2314,
+     "o25": 0.6744,
+     "btts": 0.6534,
+     "marcador": "2-1",
+     "p_marcador": 0.0947
     },
     {
      "fecha": "2026-11-07",
@@ -6955,22 +6839,22 @@
      "visitante": "Bayern Múnich",
      "pendiente": false,
      "córners": [
-      4.3,
-      5.26
+      4.35,
+      5.31
      ],
      "tarjetas": [
-      1.93,
-      1.91
+      1.94,
+      1.89
      ],
-     "lh": 1.0395,
-     "la": 2.5128,
-     "p1": 0.1339,
-     "px": 0.1751,
-     "p2": 0.691,
-     "o25": 0.6887,
-     "btts": 0.597,
+     "lh": 1.0509,
+     "la": 2.6046,
+     "p1": 0.128,
+     "px": 0.1679,
+     "p2": 0.7041,
+     "o25": 0.7069,
+     "btts": 0.605,
      "marcador": "1-2",
-     "p_marcador": 0.0941
+     "p_marcador": 0.0921
     },
     {
      "fecha": "2026-11-07",
@@ -6978,22 +6862,22 @@
      "visitante": "Elversberg",
      "pendiente": false,
      "córners": [
-      6.82,
-      3.61
+      6.84,
+      3.64
      ],
      "tarjetas": [
-      1.92,
-      1.92
+      1.88,
+      1.91
      ],
-     "lh": 2.5994,
-     "la": 1.1044,
-     "p1": 0.6918,
-     "px": 0.1711,
-     "p2": 0.1371,
-     "o25": 0.7152,
-     "btts": 0.6217,
-     "marcador": "2-1",
-     "p_marcador": 0.0919
+     "lh": 2.6747,
+     "la": 0.9825,
+     "p1": 0.7297,
+     "px": 0.1587,
+     "p2": 0.1116,
+     "o25": 0.7072,
+     "btts": 0.585,
+     "marcador": "2-0",
+     "p_marcador": 0.0923
     },
     {
      "fecha": "2026-11-08",
@@ -7001,22 +6885,22 @@
      "visitante": "Bayer Leverkusen",
      "pendiente": false,
      "córners": [
-      4.72,
-      5.4
+      4.73,
+      5.36
      ],
      "tarjetas": [
-      2.09,
-      2.07
+      2.11,
+      2.12
      ],
-     "lh": 1.5156,
-     "la": 1.9579,
-     "p1": 0.2967,
-     "px": 0.2258,
-     "p2": 0.4775,
-     "o25": 0.6742,
-     "btts": 0.6738,
+     "lh": 1.5031,
+     "la": 1.8427,
+     "p1": 0.3129,
+     "px": 0.2325,
+     "p2": 0.4545,
+     "o25": 0.6497,
+     "btts": 0.6581,
      "marcador": "1-1",
-     "p_marcador": 0.0956
+     "p_marcador": 0.1013
     },
     {
      "fecha": "2026-11-08",
@@ -7024,22 +6908,22 @@
      "visitante": "Union Berlin",
      "pendiente": false,
      "córners": [
-      5.0,
-      3.68
+      5.02,
+      3.64
      ],
      "tarjetas": [
-      1.73,
-      2.14
+      1.74,
+      2.16
      ],
-     "lh": 1.9814,
-     "la": 1.0231,
-     "p1": 0.5923,
-     "px": 0.2219,
-     "p2": 0.1858,
-     "o25": 0.5778,
-     "btts": 0.5562,
+     "lh": 1.9697,
+     "la": 1.0269,
+     "p1": 0.589,
+     "px": 0.2228,
+     "p2": 0.1882,
+     "o25": 0.576,
+     "btts": 0.5561,
      "marcador": "1-1",
-     "p_marcador": 0.1044
+     "p_marcador": 0.1048
     },
     {
      "fecha": "2026-11-08",
@@ -7047,22 +6931,22 @@
      "visitante": "Schalke 04",
      "pendiente": false,
      "córners": [
-      6.57,
+      6.55,
       3.88
      ],
      "tarjetas": [
-      1.97,
-      1.73
+      2.0,
+      1.79
      ],
-     "lh": 1.6381,
-     "la": 0.9846,
-     "p1": 0.522,
-     "px": 0.2555,
-     "p2": 0.2224,
-     "o25": 0.4873,
-     "btts": 0.5093,
-     "marcador": "1-1",
-     "p_marcador": 0.1217
+     "lh": 1.5715,
+     "la": 0.8598,
+     "p1": 0.5367,
+     "px": 0.2623,
+     "p2": 0.201,
+     "o25": 0.4384,
+     "btts": 0.4614,
+     "marcador": "1-0",
+     "p_marcador": 0.1337
     },
     {
      "fecha": "2026-11-20",
@@ -7070,45 +6954,22 @@
      "visitante": "FC Köln",
      "pendiente": false,
      "córners": [
-      7.65,
-      3.34
+      7.7,
+      3.36
      ],
      "tarjetas": [
       1.78,
-      1.94
+      1.97
      ],
-     "lh": 4.0272,
-     "la": 0.8339,
-     "p1": 0.8983,
-     "px": 0.0679,
-     "p2": 0.0337,
-     "o25": 0.8627,
-     "btts": 0.5566,
-     "marcador": "4-0",
-     "p_marcador": 0.0851
-    },
-    {
-     "fecha": "2026-11-21",
-     "local": "Eintracht Frankfurt",
-     "visitante": "Hoffenheim",
-     "pendiente": false,
-     "córners": [
-      5.49,
-      4.57
-     ],
-     "tarjetas": [
-      1.72,
-      2.06
-     ],
-     "lh": 1.9979,
-     "la": 1.7325,
-     "p1": 0.4428,
-     "px": 0.2199,
-     "p2": 0.3373,
-     "o25": 0.7197,
-     "btts": 0.7148,
-     "marcador": "1-1",
-     "p_marcador": 0.0863
+     "lh": 3.9591,
+     "la": 0.8212,
+     "p1": 0.8954,
+     "px": 0.07,
+     "p2": 0.0346,
+     "o25": 0.8552,
+     "btts": 0.5504,
+     "marcador": "3-0",
+     "p_marcador": 0.087
     },
     {
      "fecha": "2026-11-21",
@@ -7116,22 +6977,45 @@
      "visitante": "Stuttgart",
      "pendiente": false,
      "córners": [
-      4.77,
-      5.2
+      4.85,
+      5.16
      ],
      "tarjetas": [
-      1.87,
-      1.96
+      1.91,
+      1.97
      ],
-     "lh": 0.8419,
-     "la": 1.6081,
-     "p1": 0.1913,
-     "px": 0.2584,
-     "p2": 0.5503,
-     "o25": 0.4433,
-     "btts": 0.4597,
+     "lh": 0.7929,
+     "la": 1.4969,
+     "p1": 0.194,
+     "px": 0.2713,
+     "p2": 0.5347,
+     "o25": 0.4013,
+     "btts": 0.4295,
      "marcador": "0-1",
-     "p_marcador": 0.1342
+     "p_marcador": 0.1471
+    },
+    {
+     "fecha": "2026-11-21",
+     "local": "Eintracht Frankfurt",
+     "visitante": "Hoffenheim",
+     "pendiente": false,
+     "córners": [
+      5.4,
+      4.68
+     ],
+     "tarjetas": [
+      1.74,
+      2.07
+     ],
+     "lh": 1.9421,
+     "la": 1.7144,
+     "p1": 0.4344,
+     "px": 0.2226,
+     "p2": 0.343,
+     "o25": 0.7071,
+     "btts": 0.7056,
+     "marcador": "1-1",
+     "p_marcador": 0.0892
     },
     {
      "fecha": "2026-11-21",
@@ -7139,68 +7023,22 @@
      "visitante": "Borussia Dortmund",
      "pendiente": false,
      "córners": [
-      4.52,
-      4.6
+      4.51,
+      4.7
      ],
      "tarjetas": [
-      1.84,
-      2.1
+      1.85,
+      2.08
      ],
-     "lh": 1.1608,
-     "la": 1.8033,
-     "p1": 0.2404,
-     "px": 0.2397,
-     "p2": 0.5199,
-     "o25": 0.5687,
-     "btts": 0.5779,
+     "lh": 1.1467,
+     "la": 1.7867,
+     "p1": 0.2397,
+     "px": 0.2408,
+     "p2": 0.5195,
+     "o25": 0.5617,
+     "btts": 0.5721,
      "marcador": "1-1",
-     "p_marcador": 0.1123
-    },
-    {
-     "fecha": "2026-11-21",
-     "local": "Bayer Leverkusen",
-     "visitante": "Paderborn",
-     "pendiente": false,
-     "córners": [
-      6.85,
-      3.55
-     ],
-     "tarjetas": [
-      1.75,
-      2.13
-     ],
-     "lh": 2.322,
-     "la": 0.8537,
-     "p1": 0.6994,
-     "px": 0.1824,
-     "p2": 0.1182,
-     "o25": 0.615,
-     "btts": 0.5211,
-     "marcador": "2-0",
-     "p_marcador": 0.1126
-    },
-    {
-     "fecha": "2026-11-21",
-     "local": "Union Berlin",
-     "visitante": "RB Leipzig",
-     "pendiente": false,
-     "córners": [
-      5.41,
-      4.5
-     ],
-     "tarjetas": [
-      1.89,
-      1.83
-     ],
-     "lh": 1.2284,
-     "la": 1.5065,
-     "p1": 0.305,
-     "px": 0.2629,
-     "p2": 0.4321,
-     "o25": 0.5149,
-     "btts": 0.5552,
-     "marcador": "1-1",
-     "p_marcador": 0.1248
+     "p_marcador": 0.1131
     },
     {
      "fecha": "2026-11-21",
@@ -7208,22 +7046,68 @@
      "visitante": "Freiburg",
      "pendiente": false,
      "córners": [
-      4.64,
-      4.49
+      4.77,
+      4.4
      ],
      "tarjetas": [
-      1.93,
-      1.84
+      1.9,
+      1.85
      ],
-     "lh": 2.116,
-     "la": 1.5189,
-     "p1": 0.5109,
-     "px": 0.2159,
-     "p2": 0.2731,
-     "o25": 0.7034,
-     "btts": 0.6903,
-     "marcador": "2-1",
-     "p_marcador": 0.0897
+     "lh": 2.0027,
+     "la": 1.604,
+     "p1": 0.4694,
+     "px": 0.2216,
+     "p2": 0.309,
+     "o25": 0.6984,
+     "btts": 0.6944,
+     "marcador": "1-1",
+     "p_marcador": 0.0905
+    },
+    {
+     "fecha": "2026-11-21",
+     "local": "Bayer Leverkusen",
+     "visitante": "Paderborn",
+     "pendiente": false,
+     "córners": [
+      6.74,
+      3.55
+     ],
+     "tarjetas": [
+      1.78,
+      2.15
+     ],
+     "lh": 2.133,
+     "la": 0.8654,
+     "p1": 0.6615,
+     "px": 0.2011,
+     "p2": 0.1374,
+     "o25": 0.5764,
+     "btts": 0.5139,
+     "marcador": "2-0",
+     "p_marcador": 0.1134
+    },
+    {
+     "fecha": "2026-11-21",
+     "local": "Union Berlin",
+     "visitante": "RB Leipzig",
+     "pendiente": false,
+     "córners": [
+      5.38,
+      4.43
+     ],
+     "tarjetas": [
+      1.89,
+      1.82
+     ],
+     "lh": 1.2078,
+     "la": 1.5055,
+     "p1": 0.3002,
+     "px": 0.2632,
+     "p2": 0.4366,
+     "o25": 0.5096,
+     "btts": 0.5501,
+     "marcador": "1-1",
+     "p_marcador": 0.1251
     },
     {
      "fecha": "2026-11-22",
@@ -7231,22 +7115,22 @@
      "visitante": "Hamburger SV",
      "pendiente": false,
      "córners": [
-      5.83,
-      3.74
+      5.88,
+      3.72
      ],
      "tarjetas": [
-      2.18,
-      2.06
+      2.14,
+      2.07
      ],
-     "lh": 1.5611,
-     "la": 1.2254,
-     "p1": 0.4465,
-     "px": 0.2588,
-     "p2": 0.2947,
-     "o25": 0.5273,
-     "btts": 0.5627,
+     "lh": 1.5846,
+     "la": 1.1853,
+     "p1": 0.4617,
+     "px": 0.2575,
+     "p2": 0.2809,
+     "o25": 0.5233,
+     "btts": 0.5564,
      "marcador": "1-1",
-     "p_marcador": 0.1226
+     "p_marcador": 0.1221
     },
     {
      "fecha": "2026-11-22",
@@ -7254,22 +7138,22 @@
      "visitante": "Mainz 05",
      "pendiente": false,
      "córners": [
-      5.31,
-      4.74
+      5.35,
+      4.67
      ],
      "tarjetas": [
-      2.16,
-      2.01
+      2.11,
+      2.04
      ],
-     "lh": 1.5628,
-     "la": 1.6945,
-     "p1": 0.3524,
-     "px": 0.2395,
-     "p2": 0.4082,
-     "o25": 0.6319,
-     "btts": 0.6493,
+     "lh": 1.5967,
+     "la": 1.7054,
+     "p1": 0.3584,
+     "px": 0.2374,
+     "p2": 0.4042,
+     "o25": 0.641,
+     "btts": 0.6563,
      "marcador": "1-1",
-     "p_marcador": 0.106
+     "p_marcador": 0.104
     },
     {
      "fecha": "2026-11-27",
@@ -7277,117 +7161,117 @@
      "visitante": "Borussia Mönchengladbach",
      "pendiente": false,
      "córners": [
-      5.3,
-      3.96
+      5.35,
+      3.98
      ],
      "tarjetas": [
-      2.02,
-      2.01
+      1.99,
+      2.04
      ],
-     "lh": 1.6871,
-     "la": 1.2783,
-     "p1": 0.4659,
-     "px": 0.2479,
-     "p2": 0.2863,
-     "o25": 0.569,
-     "btts": 0.5924,
+     "lh": 1.7119,
+     "la": 1.3558,
+     "p1": 0.4551,
+     "px": 0.244,
+     "p2": 0.3008,
+     "o25": 0.5918,
+     "btts": 0.6123,
      "marcador": "1-1",
-     "p_marcador": 0.1155
+     "p_marcador": 0.112
     },
     {
      "fecha": "2026-11-28",
-     "local": "Stuttgart",
-     "visitante": "Eintracht Frankfurt",
+     "local": "Mainz 05",
+     "visitante": "Union Berlin",
      "pendiente": false,
      "córners": [
-      6.03,
-      4.04
+      5.62,
+      3.95
      ],
      "tarjetas": [
-      1.81,
-      2.1
+      1.96,
+      2.26
      ],
-     "lh": 2.284,
-     "la": 1.5498,
-     "p1": 0.5392,
-     "px": 0.2054,
-     "p2": 0.2554,
-     "o25": 0.7365,
-     "btts": 0.7105,
-     "marcador": "2-1",
-     "p_marcador": 0.0874
+     "lh": 1.5913,
+     "la": 1.0565,
+     "p1": 0.4932,
+     "px": 0.2592,
+     "p2": 0.2476,
+     "o25": 0.4935,
+     "btts": 0.5239,
+     "marcador": "1-1",
+     "p_marcador": 0.1235
     },
     {
      "fecha": "2026-11-28",
-     "local": "Hamburger SV",
-     "visitante": "Bayern Múnich",
+     "local": "FC Köln",
+     "visitante": "Elversberg",
      "pendiente": false,
      "córners": [
-      3.69,
-      6.12
+      6.38,
+      4.46
      ],
      "tarjetas": [
-      1.92,
-      1.97
+      1.85,
+      2.13
      ],
-     "lh": 0.9566,
-     "la": 2.752,
-     "p1": 0.102,
-     "px": 0.1513,
-     "p2": 0.7467,
-     "o25": 0.716,
-     "btts": 0.579,
-     "marcador": "0-2",
-     "p_marcador": 0.0928
+     "lh": 2.07,
+     "la": 1.4994,
+     "p1": 0.5054,
+     "px": 0.2186,
+     "p2": 0.276,
+     "o25": 0.6918,
+     "btts": 0.682,
+     "marcador": "1-1",
+     "p_marcador": 0.0907
     }
    ],
    "validacion": {
     "partidos": 296,
-    "desde": "2025-10-18",
-    "hasta": "2026-10-18",
+    "desde": "2025-10-25",
+    "hasta": "2026-10-25",
     "mercados": {
      "1X2": {
-      "modelo": 0.5777073634349595,
-      "base": 0.6512878324616569,
-      "logloss_modelo": 0.9747956605572401,
-      "logloss_base": 1.0760356661017871,
-      "mejora": 0.11297688266121453,
-      "mercado": 0.5646604208767844
+      "modelo": 0.5784374003924468,
+      "base": 0.6502214349100414,
+      "logloss_modelo": 0.9758157940457489,
+      "logloss_base": 1.0743727782725847,
+      "mejora": 0.1103993665289209,
+      "mercado": 0.5669483120022303
      },
      "Más de 2.5": {
-      "modelo": 0.22729944941332628,
-      "base": 0.22657454938471502,
-      "mejora": -0.0031993885923189413
+      "modelo": 0.22664447911352043,
+      "base": 0.22803117138350712,
+      "mejora": 0.006081152245867916
      },
      "Ambos anotan": {
-      "modelo": 0.2389018350150649,
-      "base": 0.2358069731921039,
-      "mejora": -0.01312455599198814
+      "modelo": 0.2408204398875612,
+      "base": 0.2371656188199163,
+      "mejora": -0.015410416930710547
      },
      "Córners más de 9.5": {
       "partidos": 302,
       "linea": 9.5,
-      "modelo": 0.24730971112239916,
-      "base": 0.2501491539089643,
-      "prob_media": 0.4959745908807468,
-      "frecuencia_real": 0.5231788079470199,
-      "mejora": 0.011350998962796788
+      "modelo": 0.24727398362860167,
+      "base": 0.24979545785165672,
+      "prob_media": 0.49688331334638114,
+      "frecuencia_real": 0.5298013245033113,
+      "mejora": 0.01009415561331961
      },
      "Tarjetas más de 4.5": {
       "partidos": 302,
       "linea": 4.5,
-      "modelo": 0.22089976736896796,
-      "base": 0.21801035234112984,
-      "prob_media": 0.3796185596946553,
-      "frecuencia_real": 0.31788079470198677,
-      "mejora": -0.013253567992573823
+      "modelo": 0.22182142512636244,
+      "base": 0.21985086831202774,
+      "prob_media": 0.3777168827441387,
+      "frecuencia_real": 0.32450331125827814,
+      "mejora": -0.008963152292571053
      }
     },
-    "acierto_1x2": 0.5540540540540541,
+    "acierto_1x2": 0.5472972972972973,
     "apuestas_simuladas": {
      "umbral_ve": 0.05,
-     "apuestas": 188,
-     "roi": -0.1876063829787234,
+     "apuestas": 190,
+     "roi": -0.13299999999999998,
      "nota": "Apuesta plana de 1 unidad al resultado 1X2 con mayor VE si supera el umbral, a cuota de cierre."
     }
    },
