@@ -111,7 +111,7 @@
   "desde": "2025-10-25",
   "hasta": "2026-10-26"
  },
- "generado": "2026-10-27T22:54:21+00:00",
+ "generado": "2026-10-28T01:24:36+00:00",
  "modelo": "Dixon-Coles con decaimiento temporal",
  "parametros": {
   "xi": 0.0019,
@@ -2630,40 +2630,40 @@
     "hasta": "2026-10-25",
     "mercados": {
      "1X2": {
-      "modelo": 0.619062680788248,
+      "modelo": 0.6190626807879825,
       "base": 0.6638135427448674,
-      "logloss_modelo": 1.0312645250987538,
+      "logloss_modelo": 1.0312645250981916,
       "logloss_base": 1.0952574966872046,
-      "mejora": 0.06741480713330228,
+      "mejora": 0.06741480713370218,
       "mercado": 0.6149747916686897
      },
      "Más de 2.5": {
-      "modelo": 0.2505803707238002,
+      "modelo": 0.25058037072365674,
       "base": 0.24835996093479631,
-      "mejora": -0.008940288847874456
+      "mejora": -0.008940288847296696
      },
      "Ambos anotan": {
-      "modelo": 0.24758018688422997,
+      "modelo": 0.2475801868843482,
       "base": 0.24669255999726514,
-      "mejora": -0.0035981096753574526
+      "mejora": -0.003598109675836625
      },
      "Córners más de 9.5": {
       "partidos": 377,
       "linea": 9.5,
       "modelo": 0.25002125818407755,
       "base": 0.24827632047619713,
-      "prob_media": 0.5364420563060873,
+      "prob_media": 0.5364420563060872,
       "frecuencia_real": 0.5464190981432361,
       "mejora": -0.00702820834678719
      },
      "Tarjetas más de 4.5": {
       "partidos": 377,
       "linea": 4.5,
-      "modelo": 0.23184262618575832,
+      "modelo": 0.23184262618575835,
       "base": 0.2349952523051983,
       "prob_media": 0.361172630546864,
       "frecuencia_real": 0.3740053050397878,
-      "mejora": 0.013415701332321062
+      "mejora": 0.01341570133232095
      }
     },
     "acierto_1x2": 0.4786096256684492,
@@ -4327,7 +4327,7 @@
    ],
    "proximos": [
     {
-     "fecha": "2026-10-27",
+     "fecha": "2026-10-28",
      "local": "Rayo Vallecano",
      "visitante": "Athletic Club",
      "pendiente": false,
@@ -5023,40 +5023,40 @@
     "hasta": "2026-10-26",
     "mercados": {
      "1X2": {
-      "modelo": 0.5757246669280609,
+      "modelo": 0.5757246669302173,
       "base": 0.6345907538463623,
-      "logloss_modelo": 0.9705963241411809,
+      "logloss_modelo": 0.9705963241444124,
       "logloss_base": 1.0529715715271226,
-      "mejora": 0.09276228271764764,
+      "mejora": 0.09276228271424958,
       "mercado": 0.5607120778839143
      },
      "Más de 2.5": {
-      "modelo": 0.24116073336930247,
+      "modelo": 0.24116073336993293,
       "base": 0.25038349504246593,
-      "mejora": 0.036834543233767225
+      "mejora": 0.03683454323124924
      },
      "Ambos anotan": {
-      "modelo": 0.24655867486738278,
+      "modelo": 0.24655867486787994,
       "base": 0.24616716071460434,
-      "mejora": -0.0015904402181099453
+      "mejora": -0.001590440220129441
      },
      "Córners más de 9.5": {
       "partidos": 381,
       "linea": 9.5,
-      "modelo": 0.24113121763646864,
+      "modelo": 0.24113121763646855,
       "base": 0.25046829970933787,
-      "prob_media": 0.4949083048362334,
+      "prob_media": 0.4949083048362333,
       "frecuencia_real": 0.49081364829396323,
-      "mejora": 0.03727849825189333
+      "mejora": 0.037278498251893666
      },
      "Tarjetas más de 4.5": {
       "partidos": 381,
       "linea": 4.5,
-      "modelo": 0.24943033811853396,
+      "modelo": 0.24943033811853402,
       "base": 0.25107419912914686,
-      "prob_media": 0.49557355078320525,
+      "prob_media": 0.4955735507832051,
       "frecuencia_real": 0.48293963254593175,
-      "mejora": 0.006547311576875048
+      "mejora": 0.006547311576874826
      }
     },
     "acierto_1x2": 0.5413333333333333,
@@ -7231,40 +7231,40 @@
     "hasta": "2026-10-25",
     "mercados": {
      "1X2": {
-      "modelo": 0.5784374003924468,
+      "modelo": 0.5784374003910283,
       "base": 0.6502214349100414,
-      "logloss_modelo": 0.9758157940457489,
+      "logloss_modelo": 0.9758157940439656,
       "logloss_base": 1.0743727782725847,
-      "mejora": 0.1103993665289209,
+      "mejora": 0.1103993665311025,
       "mercado": 0.5669483120022303
      },
      "Más de 2.5": {
-      "modelo": 0.22664447911352043,
+      "modelo": 0.2266444791136946,
       "base": 0.22803117138350712,
-      "mejora": 0.006081152245867916
+      "mejora": 0.006081152245104082
      },
      "Ambos anotan": {
-      "modelo": 0.2408204398875612,
+      "modelo": 0.24082043988789067,
       "base": 0.2371656188199163,
-      "mejora": -0.015410416930710547
+      "mejora": -0.01541041693209988
      },
      "Córners más de 9.5": {
       "partidos": 302,
       "linea": 9.5,
       "modelo": 0.24727398362860167,
       "base": 0.24979545785165672,
-      "prob_media": 0.49688331334638114,
+      "prob_media": 0.4968833133463811,
       "frecuencia_real": 0.5298013245033113,
       "mejora": 0.01009415561331961
      },
      "Tarjetas más de 4.5": {
       "partidos": 302,
       "linea": 4.5,
-      "modelo": 0.22182142512636244,
+      "modelo": 0.2218214251263625,
       "base": 0.21985086831202774,
       "prob_media": 0.3777168827441387,
       "frecuencia_real": 0.32450331125827814,
-      "mejora": -0.008963152292571053
+      "mejora": -0.008963152292571275
      }
     },
     "acierto_1x2": 0.5472972972972973,
@@ -7374,18 +7374,6 @@
       "prob_mercado": 0.5399
      },
      {
-      "fecha": "2026-10-27",
-      "local": "Sassuolo",
-      "visitante": "Lazio",
-      "inicio": "2026-10-27T17:30:00Z",
-      "mercado": "1X",
-      "etiqueta": "Sassuolo o empate",
-      "prob": 0.5906,
-      "cuota": 1.72,
-      "ve": 0.0134,
-      "prob_mercado": 0.5491
-     },
-     {
       "fecha": "2026-10-28",
       "local": "Monza",
       "visitante": "Napoli",
@@ -7424,18 +7412,6 @@
       "prob_mercado": 0.3113
      },
      {
-      "fecha": "2026-10-27",
-      "local": "Roma",
-      "visitante": "Cagliari",
-      "inicio": "2026-10-27T19:45:00Z",
-      "mercado": "X2",
-      "etiqueta": "Cagliari o empate",
-      "prob": 0.3387,
-      "cuota": 3.39,
-      "ve": 0.148,
-      "prob_mercado": 0.2788
-     },
-     {
       "fecha": "2026-10-28",
       "local": "Venezia",
       "visitante": "Inter",
@@ -7448,18 +7424,6 @@
       "prob_mercado": 0.2971
      },
      {
-      "fecha": "2026-10-27",
-      "local": "Sassuolo",
-      "visitante": "Lazio",
-      "inicio": "2026-10-27T17:30:00Z",
-      "mercado": "u25",
-      "etiqueta": "Menos de 2.5 goles",
-      "prob": 0.5144,
-      "cuota": 2.15,
-      "ve": 0.106,
-      "prob_mercado": 0.4357
-     },
-     {
       "fecha": "2026-10-28",
       "local": "Genoa",
       "visitante": "Juventus",
@@ -7470,237 +7434,9 @@
       "cuota": 5.18,
       "ve": 0.1028,
       "prob_mercado": 0.1819
-     },
-     {
-      "fecha": "2026-10-27",
-      "local": "Torino",
-      "visitante": "Como",
-      "inicio": "2026-10-27T19:45:00Z",
-      "mercado": "u25",
-      "etiqueta": "Menos de 2.5 goles",
-      "prob": 0.4974,
-      "cuota": 2.17,
-      "ve": 0.0794,
-      "prob_mercado": 0.4319
      }
     ],
     "partidos": [
-     {
-      "fecha": "2026-10-27",
-      "local": "Torino",
-      "visitante": "Como",
-      "inicio": "2026-10-27T19:45:00Z",
-      "mercados": [
-       {
-        "mercado": "1",
-        "etiqueta": "Gana Torino",
-        "prob": 0.2329,
-        "cuota": 4.5,
-        "ve": 0.048,
-        "prob_mercado": 0.2096
-       },
-       {
-        "mercado": "X",
-        "etiqueta": "Empate",
-        "prob": 0.243,
-        "cuota": 3.8,
-        "ve": -0.0766,
-        "prob_mercado": 0.2482
-       },
-       {
-        "mercado": "2",
-        "etiqueta": "Gana Como",
-        "prob": 0.5242,
-        "cuota": 1.74,
-        "ve": -0.0879,
-        "prob_mercado": 0.5421
-       },
-       {
-        "mercado": "1X",
-        "etiqueta": "Torino o empate",
-        "prob": 0.4759,
-        "cuota": 2.06,
-        "ve": -0.0195,
-        "prob_mercado": 0.4579
-       },
-       {
-        "mercado": "X2",
-        "etiqueta": "Como o empate",
-        "prob": 0.7672,
-        "cuota": 1.19,
-        "ve": -0.0843,
-        "prob_mercado": 0.7904
-       },
-       {
-        "mercado": "12",
-        "etiqueta": "No hay empate",
-        "prob": 0.7571,
-        "cuota": 1.25,
-        "ve": -0.05,
-        "prob_mercado": 0.7518
-       },
-       {
-        "mercado": "o25",
-        "etiqueta": "Más de 2.5 goles",
-        "prob": 0.5026,
-        "cuota": 1.65,
-        "ve": -0.1707,
-        "prob_mercado": 0.5681
-       },
-       {
-        "mercado": "u25",
-        "etiqueta": "Menos de 2.5 goles",
-        "prob": 0.4974,
-        "cuota": 2.17,
-        "ve": 0.0794,
-        "prob_mercado": 0.4319
-       }
-      ]
-     },
-     {
-      "fecha": "2026-10-27",
-      "local": "Sassuolo",
-      "visitante": "Lazio",
-      "inicio": "2026-10-27T17:30:00Z",
-      "mercados": [
-       {
-        "mercado": "1",
-        "etiqueta": "Gana Sassuolo",
-        "prob": 0.3297,
-        "cuota": 3.33,
-        "ve": 0.0979,
-        "prob_mercado": 0.283
-       },
-       {
-        "mercado": "X",
-        "etiqueta": "Empate",
-        "prob": 0.2609,
-        "cuota": 3.54,
-        "ve": -0.0764,
-        "prob_mercado": 0.2662
-       },
-       {
-        "mercado": "2",
-        "etiqueta": "Gana Lazio",
-        "prob": 0.4094,
-        "cuota": 2.09,
-        "ve": -0.1444,
-        "prob_mercado": 0.4509
-       },
-       {
-        "mercado": "1X",
-        "etiqueta": "Sassuolo o empate",
-        "prob": 0.5906,
-        "cuota": 1.72,
-        "ve": 0.0134,
-        "prob_mercado": 0.5491
-       },
-       {
-        "mercado": "X2",
-        "etiqueta": "Lazio o empate",
-        "prob": 0.6703,
-        "cuota": 1.31,
-        "ve": -0.1191,
-        "prob_mercado": 0.717
-       },
-       {
-        "mercado": "12",
-        "etiqueta": "No hay empate",
-        "prob": 0.7391,
-        "cuota": 1.28,
-        "ve": -0.0509,
-        "prob_mercado": 0.7338
-       },
-       {
-        "mercado": "o25",
-        "etiqueta": "Más de 2.5 goles",
-        "prob": 0.4856,
-        "cuota": 1.66,
-        "ve": -0.1939,
-        "prob_mercado": 0.5643
-       },
-       {
-        "mercado": "u25",
-        "etiqueta": "Menos de 2.5 goles",
-        "prob": 0.5144,
-        "cuota": 2.15,
-        "ve": 0.106,
-        "prob_mercado": 0.4357
-       }
-      ]
-     },
-     {
-      "fecha": "2026-10-27",
-      "local": "Roma",
-      "visitante": "Cagliari",
-      "inicio": "2026-10-27T19:45:00Z",
-      "mercados": [
-       {
-        "mercado": "1",
-        "etiqueta": "Gana Roma",
-        "prob": 0.6614,
-        "cuota": 1.31,
-        "ve": -0.1336,
-        "prob_mercado": 0.7212
-       },
-       {
-        "mercado": "X",
-        "etiqueta": "Empate",
-        "prob": 0.206,
-        "cuota": 5.33,
-        "ve": 0.098,
-        "prob_mercado": 0.1773
-       },
-       {
-        "mercado": "2",
-        "etiqueta": "Gana Cagliari",
-        "prob": 0.1327,
-        "cuota": 9.31,
-        "ve": 0.2354,
-        "prob_mercado": 0.1015
-       },
-       {
-        "mercado": "1X",
-        "etiqueta": "Roma o empate",
-        "prob": 0.8674,
-        "cuota": 1.05,
-        "ve": -0.0879,
-        "prob_mercado": 0.8985
-       },
-       {
-        "mercado": "X2",
-        "etiqueta": "Cagliari o empate",
-        "prob": 0.3387,
-        "cuota": 3.39,
-        "ve": 0.148,
-        "prob_mercado": 0.2788
-       },
-       {
-        "mercado": "12",
-        "etiqueta": "No hay empate",
-        "prob": 0.7941,
-        "cuota": 1.15,
-        "ve": -0.088,
-        "prob_mercado": 0.8227
-       },
-       {
-        "mercado": "o25",
-        "etiqueta": "Más de 2.5 goles",
-        "prob": 0.5045,
-        "cuota": 1.61,
-        "ve": -0.1878,
-        "prob_mercado": 0.5861
-       },
-       {
-        "mercado": "u25",
-        "etiqueta": "Menos de 2.5 goles",
-        "prob": 0.4955,
-        "cuota": 2.28,
-        "ve": 0.1297,
-        "prob_mercado": 0.4139
-       }
-      ]
-     },
      {
       "fecha": "2026-10-28",
       "local": "Venezia",
@@ -9977,99 +9713,6 @@
    ],
    "proximos": [
     {
-     "fecha": "2026-10-27",
-     "local": "Torino",
-     "visitante": "Como",
-     "pendiente": false,
-     "córners": [
-      3.91,
-      4.43
-     ],
-     "tarjetas": [
-      1.93,
-      1.9
-     ],
-     "inicio": "2026-10-27T19:45:00Z",
-     "cuotas": {
-      "c1": 4.5,
-      "cx": 3.8,
-      "c2": 1.74,
-      "co25": 1.65,
-      "cu25": 2.17
-     },
-     "lh": 1.0216,
-     "la": 1.663,
-     "p1": 0.2329,
-     "px": 0.243,
-     "p2": 0.5242,
-     "o25": 0.5026,
-     "btts": 0.5183,
-     "marcador": "1-1",
-     "p_marcador": 0.1155
-    },
-    {
-     "fecha": "2026-10-27",
-     "local": "Sassuolo",
-     "visitante": "Lazio",
-     "pendiente": false,
-     "córners": [
-      4.54,
-      4.54
-     ],
-     "tarjetas": [
-      2.22,
-      2.29
-     ],
-     "inicio": "2026-10-27T17:30:00Z",
-     "cuotas": {
-      "c1": 3.33,
-      "cx": 3.54,
-      "c2": 2.09,
-      "co25": 1.66,
-      "cu25": 2.15
-     },
-     "lh": 1.2227,
-     "la": 1.3935,
-     "p1": 0.3297,
-     "px": 0.2609,
-     "p2": 0.4094,
-     "o25": 0.4856,
-     "btts": 0.53,
-     "marcador": "1-1",
-     "p_marcador": 0.1241
-    },
-    {
-     "fecha": "2026-10-27",
-     "local": "Roma",
-     "visitante": "Cagliari",
-     "pendiente": false,
-     "córners": [
-      6.01,
-      3.26
-     ],
-     "tarjetas": [
-      1.65,
-      2.17
-     ],
-     "inicio": "2026-10-27T19:45:00Z",
-     "cuotas": {
-      "c1": 1.31,
-      "cx": 5.33,
-      "c2": 9.31,
-      "co25": 1.61,
-      "cu25": 2.28
-     },
-     "lh": 1.9554,
-     "la": 0.7372,
-     "p1": 0.6614,
-     "px": 0.206,
-     "p2": 0.1327,
-     "o25": 0.5045,
-     "btts": 0.4474,
-     "marcador": "1-0",
-     "p_marcador": 0.1327
-    },
-    {
      "fecha": "2026-10-28",
      "local": "Venezia",
      "visitante": "Inter",
@@ -10745,6 +10388,75 @@
      "btts": 0.4712,
      "marcador": "0-1",
      "p_marcador": 0.1321
+    },
+    {
+     "fecha": "2026-11-21",
+     "local": "Lazio",
+     "visitante": "Lecce",
+     "pendiente": false,
+     "córners": [
+      5.56,
+      3.88
+     ],
+     "tarjetas": [
+      1.85,
+      2.4
+     ],
+     "lh": 1.6758,
+     "la": 0.7915,
+     "p1": 0.5849,
+     "px": 0.2398,
+     "p2": 0.1753,
+     "o25": 0.4478,
+     "btts": 0.4441,
+     "marcador": "1-0",
+     "p_marcador": 0.1425
+    },
+    {
+     "fecha": "2026-11-21",
+     "local": "Napoli",
+     "visitante": "Torino",
+     "pendiente": false,
+     "córners": [
+      5.88,
+      3.14
+     ],
+     "tarjetas": [
+      1.35,
+      1.95
+     ],
+     "lh": 1.9014,
+     "la": 0.8493,
+     "p1": 0.6217,
+     "px": 0.2162,
+     "p2": 0.162,
+     "o25": 0.5187,
+     "btts": 0.4864,
+     "marcador": "1-0",
+     "p_marcador": 0.1218
+    },
+    {
+     "fecha": "2026-11-21",
+     "local": "Parma",
+     "visitante": "Roma",
+     "pendiente": false,
+     "córners": [
+      3.91,
+      4.91
+     ],
+     "tarjetas": [
+      1.85,
+      2.04
+     ],
+     "lh": 0.7028,
+     "la": 1.5774,
+     "p1": 0.1654,
+     "px": 0.2504,
+     "p2": 0.5842,
+     "o25": 0.3987,
+     "btts": 0.4002,
+     "marcador": "0-1",
+     "p_marcador": 0.1617
     }
    ],
    "validacion": {
@@ -10753,40 +10465,40 @@
     "hasta": "2026-10-25",
     "mercados": {
      "1X2": {
-      "modelo": 0.577472247990891,
+      "modelo": 0.5774722479909072,
       "base": 0.6528871561535142,
-      "logloss_modelo": 0.9729963906027006,
+      "logloss_modelo": 0.9729963906029757,
       "logloss_base": 1.077061357610688,
-      "mejora": 0.11550986637098248,
+      "mejora": 0.11550986637095761,
       "mercado": 0.5677493361233461
      },
      "Más de 2.5": {
-      "modelo": 0.25634372247273596,
+      "modelo": 0.2563437224730274,
       "base": 0.2519987586652188,
-      "mejora": -0.01724200480403737
+      "mejora": -0.017242004805193778
      },
      "Ambos anotan": {
-      "modelo": 0.2486104211787133,
+      "modelo": 0.24861042117842672,
       "base": 0.25065392371664597,
-      "mejora": 0.00815268521486534
+      "mejora": 0.008152685216008648
      },
      "Córners más de 9.5": {
       "partidos": 388,
       "linea": 9.5,
-      "modelo": 0.23991318328467526,
+      "modelo": 0.23991318328467529,
       "base": 0.24166825977897952,
-      "prob_media": 0.4204868083081121,
+      "prob_media": 0.42048680830811197,
       "frecuencia_real": 0.4020618556701031,
-      "mejora": 0.007262337618971548
+      "mejora": 0.007262337618971326
      },
      "Tarjetas más de 4.5": {
       "partidos": 388,
       "linea": 4.5,
-      "modelo": 0.21122421132966734,
+      "modelo": 0.2112242113296684,
       "base": 0.2242507021029409,
-      "prob_media": 0.3638904019948993,
+      "prob_media": 0.363890401994905,
       "frecuencia_real": 0.33762886597938147,
-      "mejora": 0.05808896316094403
+      "mejora": 0.058088963160939255
      }
     },
     "acierto_1x2": 0.5544041450777202,
@@ -12927,22 +12639,22 @@
     "hasta": "2026-10-26",
     "mercados": {
      "1X2": {
-      "modelo": 0.60748890065019,
+      "modelo": 0.6074889006513032,
       "base": 0.65216505086768,
-      "logloss_modelo": 1.0146550290060243,
+      "logloss_modelo": 1.0146550290070793,
       "logloss_base": 1.0782545929400997,
-      "mejora": 0.06850436121661241,
+      "mejora": 0.06850436121490544,
       "mercado": 0.5926675219653834
      },
      "Más de 2.5": {
-      "modelo": 0.24645554802932376,
+      "modelo": 0.2464555480375962,
       "base": 0.24933087134939075,
-      "mejora": 0.011532159272959697
+      "mejora": 0.011532159239781126
      },
      "Ambos anotan": {
-      "modelo": 0.2506154422357467,
+      "modelo": 0.2506154422409432,
       "base": 0.2508027458648496,
-      "mejora": 0.0007468165009795191
+      "mejora": 0.000746816480260315
      },
      "Córners más de 9.5": {
       "partidos": 300,
@@ -12956,11 +12668,11 @@
      "Tarjetas más de 4.5": {
       "partidos": 300,
       "linea": 4.5,
-      "modelo": 0.22453646207584294,
+      "modelo": 0.2245364620758429,
       "base": 0.22836455870105568,
       "prob_media": 0.36644050418592544,
       "frecuencia_real": 0.35,
-      "mejora": 0.01676309426903666
+      "mejora": 0.01676309426903677
      }
     },
     "acierto_1x2": 0.5236486486486487,
