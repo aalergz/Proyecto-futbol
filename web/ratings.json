@@ -111,7 +111,7 @@
   "desde": "2025-10-25",
   "hasta": "2026-10-26"
  },
- "generado": "2026-10-28T21:02:27+00:00",
+ "generado": "2026-10-29T01:23:42+00:00",
  "modelo": "Dixon-Coles con decaimiento temporal",
  "parametros": {
   "xi": 0.0019,
@@ -4327,7 +4327,7 @@
    ],
    "proximos": [
     {
-     "fecha": "2026-10-28",
+     "fecha": "2026-10-29",
      "local": "Rayo Vallecano",
      "visitante": "Athletic Club",
      "pendiente": false,
@@ -7348,57 +7348,9 @@
       "cuota": 1.64,
       "ve": 0.1782,
       "prob_mercado": 0.5702
-     },
-     {
-      "fecha": "2026-10-28",
-      "local": "Parma",
-      "visitante": "Udinese",
-      "inicio": "2026-10-28T17:30:00Z",
-      "mercado": "1X",
-      "etiqueta": "Parma o empate",
-      "prob": 0.5803,
-      "cuota": 1.51,
-      "ve": -0.1251,
-      "prob_mercado": 0.6229
-     },
-     {
-      "fecha": "2026-10-28",
-      "local": "Genoa",
-      "visitante": "Juventus",
-      "inicio": "2026-10-28T19:45:00Z",
-      "mercado": "u25",
-      "etiqueta": "Menos de 2.5 goles",
-      "prob": 0.6021,
-      "cuota": 1.73,
-      "ve": 0.0416,
-      "prob_mercado": 0.5399
-     },
-     {
-      "fecha": "2026-10-28",
-      "local": "Monza",
-      "visitante": "Napoli",
-      "inicio": "2026-10-28T19:45:00Z",
-      "mercado": "2",
-      "etiqueta": "Gana Napoli",
-      "prob": 0.5898,
-      "cuota": 1.74,
-      "ve": 0.0263,
-      "prob_mercado": 0.5413
      }
     ],
     "valor": [
-     {
-      "fecha": "2026-10-28",
-      "local": "Milan",
-      "visitante": "Bologna",
-      "inicio": "2026-10-28T17:30:00Z",
-      "mercado": "2",
-      "etiqueta": "Gana Bologna",
-      "prob": 0.2794,
-      "cuota": 5.3,
-      "ve": 0.4808,
-      "prob_mercado": 0.1777
-     },
      {
       "fecha": "2026-10-29",
       "local": "Fiorentina",
@@ -7410,393 +7362,9 @@
       "cuota": 3.01,
       "ve": 0.4171,
       "prob_mercado": 0.3113
-     },
-     {
-      "fecha": "2026-10-28",
-      "local": "Venezia",
-      "visitante": "Inter",
-      "inicio": "2026-10-28T17:30:00Z",
-      "mercado": "u25",
-      "etiqueta": "Menos de 2.5 goles",
-      "prob": 0.3534,
-      "cuota": 3.17,
-      "ve": 0.1203,
-      "prob_mercado": 0.2971
-     },
-     {
-      "fecha": "2026-10-28",
-      "local": "Genoa",
-      "visitante": "Juventus",
-      "inicio": "2026-10-28T19:45:00Z",
-      "mercado": "1",
-      "etiqueta": "Gana Genoa",
-      "prob": 0.2129,
-      "cuota": 5.18,
-      "ve": 0.1028,
-      "prob_mercado": 0.1819
      }
     ],
     "partidos": [
-     {
-      "fecha": "2026-10-28",
-      "local": "Venezia",
-      "visitante": "Inter",
-      "inicio": "2026-10-28T17:30:00Z",
-      "mercados": [
-       {
-        "mercado": "1",
-        "etiqueta": "Gana Venezia",
-        "prob": 0.1042,
-        "cuota": 7.73,
-        "ve": -0.1945,
-        "prob_mercado": 0.1216
-       },
-       {
-        "mercado": "X",
-        "etiqueta": "Empate",
-        "prob": 0.1585,
-        "cuota": 5.47,
-        "ve": -0.133,
-        "prob_mercado": 0.1718
-       },
-       {
-        "mercado": "2",
-        "etiqueta": "Gana Inter",
-        "prob": 0.7373,
-        "cuota": 1.33,
-        "ve": -0.0194,
-        "prob_mercado": 0.7066
-       },
-       {
-        "mercado": "1X",
-        "etiqueta": "Venezia o empate",
-        "prob": 0.2627,
-        "cuota": 3.2,
-        "ve": -0.1585,
-        "prob_mercado": 0.2934
-       },
-       {
-        "mercado": "X2",
-        "etiqueta": "Inter o empate",
-        "prob": 0.8958,
-        "cuota": 1.07,
-        "ve": -0.0416,
-        "prob_mercado": 0.8784
-       },
-       {
-        "mercado": "12",
-        "etiqueta": "No hay empate",
-        "prob": 0.8415,
-        "cuota": 1.13,
-        "ve": -0.0451,
-        "prob_mercado": 0.8282
-       },
-       {
-        "mercado": "o25",
-        "etiqueta": "Más de 2.5 goles",
-        "prob": 0.6466,
-        "cuota": 1.34,
-        "ve": -0.1336,
-        "prob_mercado": 0.7029
-       },
-       {
-        "mercado": "u25",
-        "etiqueta": "Menos de 2.5 goles",
-        "prob": 0.3534,
-        "cuota": 3.17,
-        "ve": 0.1203,
-        "prob_mercado": 0.2971
-       }
-      ]
-     },
-     {
-      "fecha": "2026-10-28",
-      "local": "Genoa",
-      "visitante": "Juventus",
-      "inicio": "2026-10-28T19:45:00Z",
-      "mercados": [
-       {
-        "mercado": "1",
-        "etiqueta": "Gana Genoa",
-        "prob": 0.2129,
-        "cuota": 5.18,
-        "ve": 0.1028,
-        "prob_mercado": 0.1819
-       },
-       {
-        "mercado": "X",
-        "etiqueta": "Empate",
-        "prob": 0.2664,
-        "cuota": 3.66,
-        "ve": -0.025,
-        "prob_mercado": 0.2574
-       },
-       {
-        "mercado": "2",
-        "etiqueta": "Gana Juventus",
-        "prob": 0.5207,
-        "cuota": 1.68,
-        "ve": -0.1252,
-        "prob_mercado": 0.5607
-       },
-       {
-        "mercado": "1X",
-        "etiqueta": "Genoa o empate",
-        "prob": 0.4793,
-        "cuota": 2.14,
-        "ve": 0.0279,
-        "prob_mercado": 0.4393
-       },
-       {
-        "mercado": "X2",
-        "etiqueta": "Juventus o empate",
-        "prob": 0.7871,
-        "cuota": 1.15,
-        "ve": -0.0937,
-        "prob_mercado": 0.8181
-       },
-       {
-        "mercado": "12",
-        "etiqueta": "No hay empate",
-        "prob": 0.7336,
-        "cuota": 1.27,
-        "ve": -0.0694,
-        "prob_mercado": 0.7426
-       },
-       {
-        "mercado": "o25",
-        "etiqueta": "Más de 2.5 goles",
-        "prob": 0.3979,
-        "cuota": 2.03,
-        "ve": -0.1923,
-        "prob_mercado": 0.4601
-       },
-       {
-        "mercado": "u25",
-        "etiqueta": "Menos de 2.5 goles",
-        "prob": 0.6021,
-        "cuota": 1.73,
-        "ve": 0.0416,
-        "prob_mercado": 0.5399
-       }
-      ]
-     },
-     {
-      "fecha": "2026-10-28",
-      "local": "Milan",
-      "visitante": "Bologna",
-      "inicio": "2026-10-28T17:30:00Z",
-      "mercados": [
-       {
-        "mercado": "1",
-        "etiqueta": "Gana Milan",
-        "prob": 0.4585,
-        "cuota": 1.62,
-        "ve": -0.2572,
-        "prob_mercado": 0.5814
-       },
-       {
-        "mercado": "X",
-        "etiqueta": "Empate",
-        "prob": 0.2622,
-        "cuota": 3.91,
-        "ve": 0.0252,
-        "prob_mercado": 0.2409
-       },
-       {
-        "mercado": "2",
-        "etiqueta": "Gana Bologna",
-        "prob": 0.2794,
-        "cuota": 5.3,
-        "ve": 0.4808,
-        "prob_mercado": 0.1777
-       },
-       {
-        "mercado": "1X",
-        "etiqueta": "Milan o empate",
-        "prob": 0.7207,
-        "cuota": 1.15,
-        "ve": -0.1745,
-        "prob_mercado": 0.8223
-       },
-       {
-        "mercado": "X2",
-        "etiqueta": "Bologna o empate",
-        "prob": 0.5416,
-        "cuota": 2.25,
-        "ve": 0.2186,
-        "prob_mercado": 0.4186
-       },
-       {
-        "mercado": "12",
-        "etiqueta": "No hay empate",
-        "prob": 0.7379,
-        "cuota": 1.24,
-        "ve": -0.0844,
-        "prob_mercado": 0.7591
-       },
-       {
-        "mercado": "o25",
-        "etiqueta": "Más de 2.5 goles",
-        "prob": 0.4609,
-        "cuota": 1.81,
-        "ve": -0.1658,
-        "prob_mercado": 0.5173
-       },
-       {
-        "mercado": "u25",
-        "etiqueta": "Menos de 2.5 goles",
-        "prob": 0.5391,
-        "cuota": 1.94,
-        "ve": 0.0459,
-        "prob_mercado": 0.4827
-       }
-      ]
-     },
-     {
-      "fecha": "2026-10-28",
-      "local": "Parma",
-      "visitante": "Udinese",
-      "inicio": "2026-10-28T17:30:00Z",
-      "mercados": [
-       {
-        "mercado": "1",
-        "etiqueta": "Gana Parma",
-        "prob": 0.3047,
-        "cuota": 2.9,
-        "ve": -0.1164,
-        "prob_mercado": 0.3238
-       },
-       {
-        "mercado": "X",
-        "etiqueta": "Empate",
-        "prob": 0.2756,
-        "cuota": 3.14,
-        "ve": -0.1346,
-        "prob_mercado": 0.2991
-       },
-       {
-        "mercado": "2",
-        "etiqueta": "Gana Udinese",
-        "prob": 0.4197,
-        "cuota": 2.49,
-        "ve": 0.0451,
-        "prob_mercado": 0.3771
-       },
-       {
-        "mercado": "1X",
-        "etiqueta": "Parma o empate",
-        "prob": 0.5803,
-        "cuota": 1.51,
-        "ve": -0.1251,
-        "prob_mercado": 0.6229
-       },
-       {
-        "mercado": "X2",
-        "etiqueta": "Udinese o empate",
-        "prob": 0.6953,
-        "cuota": 1.39,
-        "ve": -0.0344,
-        "prob_mercado": 0.6762
-       },
-       {
-        "mercado": "12",
-        "etiqueta": "No hay empate",
-        "prob": 0.7244,
-        "cuota": 1.34,
-        "ve": -0.0295,
-        "prob_mercado": 0.7009
-       },
-       {
-        "mercado": "o25",
-        "etiqueta": "Más de 2.5 goles",
-        "prob": 0.4214,
-        "cuota": 2.17,
-        "ve": -0.0856,
-        "prob_mercado": 0.4319
-       },
-       {
-        "mercado": "u25",
-        "etiqueta": "Menos de 2.5 goles",
-        "prob": 0.5786,
-        "cuota": 1.65,
-        "ve": -0.0453,
-        "prob_mercado": 0.5681
-       }
-      ]
-     },
-     {
-      "fecha": "2026-10-28",
-      "local": "Monza",
-      "visitante": "Napoli",
-      "inicio": "2026-10-28T19:45:00Z",
-      "mercados": [
-       {
-        "mercado": "1",
-        "etiqueta": "Gana Monza",
-        "prob": 0.1876,
-        "cuota": 4.35,
-        "ve": -0.1839,
-        "prob_mercado": 0.2165
-       },
-       {
-        "mercado": "X",
-        "etiqueta": "Empate",
-        "prob": 0.2227,
-        "cuota": 3.89,
-        "ve": -0.1337,
-        "prob_mercado": 0.2421
-       },
-       {
-        "mercado": "2",
-        "etiqueta": "Gana Napoli",
-        "prob": 0.5898,
-        "cuota": 1.74,
-        "ve": 0.0263,
-        "prob_mercado": 0.5413
-       },
-       {
-        "mercado": "1X",
-        "etiqueta": "Monza o empate",
-        "prob": 0.4103,
-        "cuota": 2.05,
-        "ve": -0.1574,
-        "prob_mercado": 0.4587
-       },
-       {
-        "mercado": "X2",
-        "etiqueta": "Napoli o empate",
-        "prob": 0.8125,
-        "cuota": 1.2,
-        "ve": -0.0232,
-        "prob_mercado": 0.7835
-       },
-       {
-        "mercado": "12",
-        "etiqueta": "No hay empate",
-        "prob": 0.7774,
-        "cuota": 1.24,
-        "ve": -0.0338,
-        "prob_mercado": 0.7579
-       },
-       {
-        "mercado": "o25",
-        "etiqueta": "Más de 2.5 goles",
-        "prob": 0.5327,
-        "cuota": 1.69,
-        "ve": -0.0997,
-        "prob_mercado": 0.5553
-       },
-       {
-        "mercado": "u25",
-        "etiqueta": "Menos de 2.5 goles",
-        "prob": 0.4673,
-        "cuota": 2.11,
-        "ve": -0.014,
-        "prob_mercado": 0.4447
-       }
-      ]
-     },
      {
       "fecha": "2026-10-29",
       "local": "Frosinone",
@@ -7971,49 +7539,6 @@
         "cuota": 1.64,
         "ve": 0.1782,
         "prob_mercado": 0.5702
-       }
-      ]
-     },
-     {
-      "prob": 0.2749,
-      "cuota": 3.57,
-      "ve": -0.0195,
-      "patas": [
-       {
-        "fecha": "2026-10-29",
-        "local": "Frosinone",
-        "visitante": "Lecce",
-        "inicio": "2026-10-29T17:30:00Z",
-        "mercado": "o25",
-        "etiqueta": "Más de 2.5 goles",
-        "prob": 0.6609,
-        "cuota": 1.44,
-        "ve": -0.0483,
-        "prob_mercado": 0.6496
-       },
-       {
-        "fecha": "2026-10-29",
-        "local": "Fiorentina",
-        "visitante": "Atalanta",
-        "inicio": "2026-10-29T19:45:00Z",
-        "mercado": "X2",
-        "etiqueta": "Atalanta o empate",
-        "prob": 0.7169,
-        "cuota": 1.64,
-        "ve": 0.1782,
-        "prob_mercado": 0.5702
-       },
-       {
-        "fecha": "2026-10-28",
-        "local": "Parma",
-        "visitante": "Udinese",
-        "inicio": "2026-10-28T17:30:00Z",
-        "mercado": "1X",
-        "etiqueta": "Parma o empate",
-        "prob": 0.5803,
-        "cuota": 1.51,
-        "ve": -0.1251,
-        "prob_mercado": 0.6229
        }
       ]
      }
@@ -9713,161 +9238,6 @@
    ],
    "proximos": [
     {
-     "fecha": "2026-10-28",
-     "local": "Venezia",
-     "visitante": "Inter",
-     "pendiente": false,
-     "córners": [
-      3.93,
-      5.32
-     ],
-     "tarjetas": [
-      1.79,
-      1.79
-     ],
-     "inicio": "2026-10-28T17:30:00Z",
-     "cuotas": {
-      "c1": 7.73,
-      "cx": 5.47,
-      "c2": 1.33,
-      "co25": 1.34,
-      "cu25": 3.17
-     },
-     "lh": 0.832,
-     "la": 2.4984,
-     "p1": 0.1042,
-     "px": 0.1585,
-     "p2": 0.7373,
-     "o25": 0.6466,
-     "btts": 0.5181,
-     "marcador": "0-2",
-     "p_marcador": 0.1117
-    },
-    {
-     "fecha": "2026-10-28",
-     "local": "Genoa",
-     "visitante": "Juventus",
-     "pendiente": false,
-     "córners": [
-      4.16,
-      5.09
-     ],
-     "tarjetas": [
-      1.84,
-      1.99
-     ],
-     "inicio": "2026-10-28T19:45:00Z",
-     "cuotas": {
-      "c1": 5.18,
-      "cx": 3.66,
-      "c2": 1.68,
-      "co25": 2.03,
-      "cu25": 1.73
-     },
-     "lh": 0.8227,
-     "la": 1.4546,
-     "p1": 0.2129,
-     "px": 0.2664,
-     "p2": 0.5207,
-     "o25": 0.3979,
-     "btts": 0.4294,
-     "marcador": "0-1",
-     "p_marcador": 0.1496
-    },
-    {
-     "fecha": "2026-10-28",
-     "local": "Milan",
-     "visitante": "Bologna",
-     "pendiente": false,
-     "córners": [
-      4.68,
-      3.79
-     ],
-     "tarjetas": [
-      1.87,
-      1.99
-     ],
-     "inicio": "2026-10-28T17:30:00Z",
-     "cuotas": {
-      "c1": 1.62,
-      "cx": 3.91,
-      "c2": 5.3,
-      "co25": 1.81,
-      "cu25": 1.94
-     },
-     "lh": 1.4488,
-     "la": 1.0695,
-     "p1": 0.4585,
-     "px": 0.2622,
-     "p2": 0.2794,
-     "o25": 0.4609,
-     "btts": 0.5021,
-     "marcador": "1-1",
-     "p_marcador": 0.1244
-    },
-    {
-     "fecha": "2026-10-28",
-     "local": "Parma",
-     "visitante": "Udinese",
-     "pendiente": false,
-     "córners": [
-      4.94,
-      4.46
-     ],
-     "tarjetas": [
-      1.59,
-      2.08
-     ],
-     "inicio": "2026-10-28T17:30:00Z",
-     "cuotas": {
-      "c1": 2.9,
-      "cx": 3.14,
-      "c2": 2.49,
-      "co25": 2.17,
-      "cu25": 1.65
-     },
-     "lh": 1.0649,
-     "la": 1.3011,
-     "p1": 0.3047,
-     "px": 0.2756,
-     "p2": 0.4197,
-     "o25": 0.4214,
-     "btts": 0.4764,
-     "marcador": "1-1",
-     "p_marcador": 0.1296
-    },
-    {
-     "fecha": "2026-10-28",
-     "local": "Monza",
-     "visitante": "Napoli",
-     "pendiente": false,
-     "córners": [
-      4.0,
-      4.86
-     ],
-     "tarjetas": [
-      1.8,
-      1.66
-     ],
-     "inicio": "2026-10-28T19:45:00Z",
-     "cuotas": {
-      "c1": 4.35,
-      "cx": 3.89,
-      "c2": 1.74,
-      "co25": 1.69,
-      "cu25": 2.11
-     },
-     "lh": 0.9451,
-     "la": 1.8639,
-     "p1": 0.1876,
-     "px": 0.2227,
-     "p2": 0.5898,
-     "o25": 0.5327,
-     "btts": 0.5162,
-     "marcador": "0-1",
-     "p_marcador": 0.1127
-    },
-    {
      "fecha": "2026-10-29",
      "local": "Frosinone",
      "visitante": "Lecce",
@@ -10457,6 +9827,121 @@
      "btts": 0.4002,
      "marcador": "0-1",
      "p_marcador": 0.1617
+    },
+    {
+     "fecha": "2026-11-21",
+     "local": "Como",
+     "visitante": "Cagliari",
+     "pendiente": false,
+     "córners": [
+      5.85,
+      3.32
+     ],
+     "tarjetas": [
+      1.72,
+      2.28
+     ],
+     "lh": 1.8214,
+     "la": 0.7785,
+     "p1": 0.622,
+     "px": 0.2226,
+     "p2": 0.1553,
+     "o25": 0.4815,
+     "btts": 0.453,
+     "marcador": "1-0",
+     "p_marcador": 0.1357
+    },
+    {
+     "fecha": "2026-11-22",
+     "local": "Milan",
+     "visitante": "Frosinone",
+     "pendiente": false,
+     "córners": [
+      5.56,
+      4.11
+     ],
+     "tarjetas": [
+      1.81,
+      2.02
+     ],
+     "lh": 2.1315,
+     "la": 1.3958,
+     "p1": 0.5439,
+     "px": 0.2072,
+     "p2": 0.2488,
+     "o25": 0.6842,
+     "btts": 0.6628,
+     "marcador": "2-1",
+     "p_marcador": 0.0932
+    },
+    {
+     "fecha": "2026-11-22",
+     "local": "Sassuolo",
+     "visitante": "Genoa",
+     "pendiente": false,
+     "córners": [
+      4.99,
+      4.04
+     ],
+     "tarjetas": [
+      1.99,
+      2.09
+     ],
+     "lh": 1.4318,
+     "la": 1.0688,
+     "p1": 0.4541,
+     "px": 0.2637,
+     "p2": 0.2821,
+     "o25": 0.4563,
+     "btts": 0.4993,
+     "marcador": "1-1",
+     "p_marcador": 0.1251
+    },
+    {
+     "fecha": "2026-11-22",
+     "local": "Atalanta",
+     "visitante": "Inter",
+     "pendiente": false,
+     "córners": [
+      4.47,
+      4.68
+     ],
+     "tarjetas": [
+      1.59,
+      1.65
+     ],
+     "lh": 1.2844,
+     "la": 1.8523,
+     "p1": 0.2659,
+     "px": 0.2264,
+     "p2": 0.5077,
+     "o25": 0.6067,
+     "btts": 0.6094,
+     "marcador": "1-1",
+     "p_marcador": 0.103
+    },
+    {
+     "fecha": "2026-11-22",
+     "local": "Bologna",
+     "visitante": "Udinese",
+     "pendiente": false,
+     "córners": [
+      5.36,
+      3.85
+     ],
+     "tarjetas": [
+      1.61,
+      2.2
+     ],
+     "lh": 1.4546,
+     "la": 1.1405,
+     "p1": 0.4436,
+     "px": 0.2595,
+     "p2": 0.2969,
+     "o25": 0.4803,
+     "btts": 0.521,
+     "marcador": "1-1",
+     "p_marcador": 0.1234
     }
    ],
    "validacion": {
