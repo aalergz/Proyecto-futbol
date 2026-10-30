@@ -111,7 +111,7 @@
   "desde": "2025-10-25",
   "hasta": "2026-10-28"
  },
- "generado": "2026-10-29T22:59:08+00:00",
+ "generado": "2026-10-30T01:26:47+00:00",
  "modelo": "Dixon-Coles con decaimiento temporal",
  "parametros": {
   "xi": 0.0019,
@@ -4327,7 +4327,7 @@
    ],
    "proximos": [
     {
-     "fecha": "2026-10-29",
+     "fecha": "2026-10-30",
      "local": "Rayo Vallecano",
      "visitante": "Athletic Club",
      "pendiente": false,
@@ -7324,225 +7324,9 @@
    },
    "arbitros": {},
    "selecciones": {
-    "seguras": [
-     {
-      "fecha": "2026-10-29",
-      "local": "Frosinone",
-      "visitante": "Lecce",
-      "inicio": "2026-10-29T17:30:00Z",
-      "mercado": "o25",
-      "etiqueta": "Más de 2.5 goles",
-      "prob": 0.6529,
-      "cuota": 1.44,
-      "ve": -0.0598,
-      "prob_mercado": 0.6496
-     },
-     {
-      "fecha": "2026-10-29",
-      "local": "Fiorentina",
-      "visitante": "Atalanta",
-      "inicio": "2026-10-29T19:45:00Z",
-      "mercado": "X2",
-      "etiqueta": "Atalanta o empate",
-      "prob": 0.7183,
-      "cuota": 1.64,
-      "ve": 0.1805,
-      "prob_mercado": 0.5702
-     }
-    ],
-    "valor": [
-     {
-      "fecha": "2026-10-29",
-      "local": "Fiorentina",
-      "visitante": "Atalanta",
-      "inicio": "2026-10-29T19:45:00Z",
-      "mercado": "2",
-      "etiqueta": "Gana Atalanta",
-      "prob": 0.4697,
-      "cuota": 3.01,
-      "ve": 0.4138,
-      "prob_mercado": 0.3113
-     }
-    ],
-    "partidos": [
-     {
-      "fecha": "2026-10-29",
-      "local": "Frosinone",
-      "visitante": "Lecce",
-      "inicio": "2026-10-29T17:30:00Z",
-      "mercados": [
-       {
-        "mercado": "1",
-        "etiqueta": "Gana Frosinone",
-        "prob": 0.5824,
-        "cuota": 1.66,
-        "ve": -0.0332,
-        "prob_mercado": 0.5644
-       },
-       {
-        "mercado": "X",
-        "etiqueta": "Empate",
-        "prob": 0.2053,
-        "cuota": 4.13,
-        "ve": -0.1521,
-        "prob_mercado": 0.2269
-       },
-       {
-        "mercado": "2",
-        "etiqueta": "Gana Lecce",
-        "prob": 0.2122,
-        "cuota": 4.49,
-        "ve": -0.0472,
-        "prob_mercado": 0.2087
-       },
-       {
-        "mercado": "1X",
-        "etiqueta": "Frosinone o empate",
-        "prob": 0.7877,
-        "cuota": 1.18,
-        "ve": -0.0673,
-        "prob_mercado": 0.7913
-       },
-       {
-        "mercado": "X2",
-        "etiqueta": "Lecce o empate",
-        "prob": 0.4175,
-        "cuota": 2.15,
-        "ve": -0.1019,
-        "prob_mercado": 0.4356
-       },
-       {
-        "mercado": "12",
-        "etiqueta": "No hay empate",
-        "prob": 0.7946,
-        "cuota": 1.21,
-        "ve": -0.037,
-        "prob_mercado": 0.7731
-       },
-       {
-        "mercado": "o25",
-        "etiqueta": "Más de 2.5 goles",
-        "prob": 0.6529,
-        "cuota": 1.44,
-        "ve": -0.0598,
-        "prob_mercado": 0.6496
-       },
-       {
-        "mercado": "u25",
-        "etiqueta": "Menos de 2.5 goles",
-        "prob": 0.3471,
-        "cuota": 2.67,
-        "ve": -0.0732,
-        "prob_mercado": 0.3504
-       }
-      ]
-     },
-     {
-      "fecha": "2026-10-29",
-      "local": "Fiorentina",
-      "visitante": "Atalanta",
-      "inicio": "2026-10-29T19:45:00Z",
-      "mercados": [
-       {
-        "mercado": "1",
-        "etiqueta": "Gana Fiorentina",
-        "prob": 0.2817,
-        "cuota": 2.18,
-        "ve": -0.3859,
-        "prob_mercado": 0.4298
-       },
-       {
-        "mercado": "X",
-        "etiqueta": "Empate",
-        "prob": 0.2486,
-        "cuota": 3.62,
-        "ve": -0.1001,
-        "prob_mercado": 0.2589
-       },
-       {
-        "mercado": "2",
-        "etiqueta": "Gana Atalanta",
-        "prob": 0.4697,
-        "cuota": 3.01,
-        "ve": 0.4138,
-        "prob_mercado": 0.3113
-       },
-       {
-        "mercado": "1X",
-        "etiqueta": "Fiorentina o empate",
-        "prob": 0.5303,
-        "cuota": 1.36,
-        "ve": -0.2785,
-        "prob_mercado": 0.6887
-       },
-       {
-        "mercado": "X2",
-        "etiqueta": "Atalanta o empate",
-        "prob": 0.7183,
-        "cuota": 1.64,
-        "ve": 0.1805,
-        "prob_mercado": 0.5702
-       },
-       {
-        "mercado": "12",
-        "etiqueta": "No hay empate",
-        "prob": 0.7514,
-        "cuota": 1.26,
-        "ve": -0.05,
-        "prob_mercado": 0.7411
-       },
-       {
-        "mercado": "o25",
-        "etiqueta": "Más de 2.5 goles",
-        "prob": 0.5223,
-        "cuota": 1.59,
-        "ve": -0.1695,
-        "prob_mercado": 0.5881
-       },
-       {
-        "mercado": "u25",
-        "etiqueta": "Menos de 2.5 goles",
-        "prob": 0.4777,
-        "cuota": 2.27,
-        "ve": 0.0844,
-        "prob_mercado": 0.4119
-       }
-      ]
-     }
-    ],
-    "combinadas": [
-     {
-      "prob": 0.469,
-      "cuota": 2.36,
-      "ve": 0.1075,
-      "patas": [
-       {
-        "fecha": "2026-10-29",
-        "local": "Frosinone",
-        "visitante": "Lecce",
-        "inicio": "2026-10-29T17:30:00Z",
-        "mercado": "o25",
-        "etiqueta": "Más de 2.5 goles",
-        "prob": 0.6529,
-        "cuota": 1.44,
-        "ve": -0.0598,
-        "prob_mercado": 0.6496
-       },
-       {
-        "fecha": "2026-10-29",
-        "local": "Fiorentina",
-        "visitante": "Atalanta",
-        "inicio": "2026-10-29T19:45:00Z",
-        "mercado": "X2",
-        "etiqueta": "Atalanta o empate",
-        "prob": 0.7183,
-        "cuota": 1.64,
-        "ve": 0.1805,
-        "prob_mercado": 0.5702
-       }
-      ]
-     }
-    ],
+    "seguras": [],
+    "valor": [],
+    "combinadas": [],
     "historial": {
      "seguras": {
       "apuestas": 299,
@@ -9206,68 +8990,6 @@
    ],
    "proximos": [
     {
-     "fecha": "2026-10-29",
-     "local": "Frosinone",
-     "visitante": "Lecce",
-     "pendiente": false,
-     "córners": [
-      5.86,
-      4.5
-     ],
-     "tarjetas": [
-      1.69,
-      2.04
-     ],
-     "inicio": "2026-10-29T17:30:00Z",
-     "cuotas": {
-      "c1": 1.66,
-      "cx": 4.13,
-      "c2": 4.49,
-      "co25": 1.44,
-      "cu25": 2.67
-     },
-     "lh": 2.1377,
-     "la": 1.2246,
-     "p1": 0.5824,
-     "px": 0.2053,
-     "p2": 0.2122,
-     "o25": 0.6529,
-     "btts": 0.6229,
-     "marcador": "2-1",
-     "p_marcador": 0.097
-    },
-    {
-     "fecha": "2026-10-29",
-     "local": "Fiorentina",
-     "visitante": "Atalanta",
-     "pendiente": false,
-     "córners": [
-      4.62,
-      4.32
-     ],
-     "tarjetas": [
-      1.68,
-      2.04
-     ],
-     "inicio": "2026-10-29T19:45:00Z",
-     "cuotas": {
-      "c1": 2.18,
-      "cx": 3.62,
-      "c2": 3.01,
-      "co25": 1.59,
-      "cu25": 2.27
-     },
-     "lh": 1.1752,
-     "la": 1.5903,
-     "p1": 0.2817,
-     "px": 0.2486,
-     "p2": 0.4697,
-     "o25": 0.5223,
-     "btts": 0.5504,
-     "marcador": "1-1",
-     "p_marcador": 0.1177
-    },
-    {
      "fecha": "2026-10-31",
      "local": "Udinese",
      "visitante": "Roma",
@@ -9910,6 +9632,52 @@
      "btts": 0.5196,
      "marcador": "1-1",
      "p_marcador": 0.1252
+    },
+    {
+     "fecha": "2026-11-23",
+     "local": "Monza",
+     "visitante": "Fiorentina",
+     "pendiente": false,
+     "córners": [
+      4.47,
+      4.07
+     ],
+     "tarjetas": [
+      1.98,
+      2.07
+     ],
+     "lh": 1.3318,
+     "la": 1.7372,
+     "p1": 0.2949,
+     "px": 0.2349,
+     "p2": 0.4703,
+     "o25": 0.5921,
+     "btts": 0.6065,
+     "marcador": "1-1",
+     "p_marcador": 0.1076
+    },
+    {
+     "fecha": "2026-11-23",
+     "local": "Juventus",
+     "visitante": "Venezia",
+     "pendiente": false,
+     "córners": [
+      6.38,
+      3.6
+     ],
+     "tarjetas": [
+      1.52,
+      2.12
+     ],
+     "lh": 2.0691,
+     "la": 0.7205,
+     "p1": 0.6879,
+     "px": 0.1936,
+     "p2": 0.1186,
+     "o25": 0.5281,
+     "btts": 0.4487,
+     "marcador": "2-0",
+     "p_marcador": 0.1315
     }
    ],
    "validacion": {
