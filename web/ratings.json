@@ -5,18 +5,18 @@
     "mejor": {
      "apuestas": 182,
      "aciertos": 0.6483516483516484,
-     "cuota_media": 1.467197802197802,
-     "roi": -0.05285714285714286,
-     "roi_min": -0.13844032023261343,
-     "roi_max": 0.03272603451832772
+     "cuota_media": 1.4679120879120877,
+     "roi": -0.052142857142857164,
+     "roi_min": -0.13779806329830394,
+     "roi_max": 0.033512349012589614
     },
     "doble": {
      "apuestas": 158,
      "aciertos": 0.3924050632911392,
-     "cuota_media": 2.1964753164556963,
-     "roi": -0.15517594936708867,
-     "roi_min": -0.293832748310751,
-     "roi_max": -0.016519150423426332
+     "cuota_media": 2.1990917721518985,
+     "roi": -0.15255949367088614,
+     "roi_min": -0.2917622614282536,
+     "roi_max": -0.013356725913518663
     },
     "triple": {
      "apuestas": 131,
@@ -35,16 +35,16 @@
     "mejor": {
      "apuestas": 182,
      "aciertos": 0.7967032967032966,
-     "cuota_media": 1.2393406593406593,
-     "roi": -0.012307692307692316,
-     "roi_min": -0.07347495546324981,
-     "roi_max": 0.04885957084786518
+     "cuota_media": 1.2389560439560439,
+     "roi": -0.0126923076923077,
+     "roi_min": -0.0738344187670631,
+     "roi_max": 0.0484498033824477
     },
     "doble": {
      "apuestas": 165,
      "aciertos": 0.6545454545454545,
-     "cuota_media": 1.5518969696969696,
-     "roi": 0.014524242424242422,
+     "cuota_media": 1.55042,
+     "roi": 0.014524242424242427,
      "roi_min": -0.08058779219722258,
      "roi_max": 0.10963627704570743
     },
@@ -63,20 +63,20 @@
    },
    "muy_conservador": {
     "mejor": {
-     "apuestas": 142,
-     "aciertos": 0.9084507042253521,
-     "cuota_media": 1.0861267605633802,
-     "roi": -0.012535211267605586,
-     "roi_min": -0.056154114992371156,
-     "roi_max": 0.03108369245715998
+     "apuestas": 141,
+     "aciertos": 0.9078014184397163,
+     "cuota_media": 1.0858156028368795,
+     "roi": -0.013546099290780097,
+     "roi_min": -0.05744352644899875,
+     "roi_max": 0.030351327867438552
     },
     "doble": {
      "apuestas": 99,
      "aciertos": 0.8282828282828283,
-     "cuota_media": 1.1832393939393941,
-     "roi": -0.022773737373737276,
-     "roi_min": -0.09720494955310668,
-     "roi_max": 0.051657474805632125
+     "cuota_media": 1.1834636363636364,
+     "roi": -0.022549494949494854,
+     "roi_min": -0.09700466696891116,
+     "roi_max": 0.05190567706992146
     },
     "triple": {
      "apuestas": 78,
@@ -95,9 +95,9 @@
   "valor": {
    "apuestas": 183,
    "aciertos": 0.21311475409836064,
-   "cuota_media": 4.413879781420765,
-   "roi": -0.256120218579235,
-   "roi_min": -0.4485259221343716,
+   "cuota_media": 4.41464480874317,
+   "roi": -0.25612021857923495,
+   "roi_min": -0.4485259221343715,
    "roi_max": -0.06371451502409842
   },
   "dias": 185,
@@ -109,9 +109,9 @@
    "ita"
   ],
   "desde": "2025-10-25",
-  "hasta": "2026-10-28"
+  "hasta": "2026-10-29"
  },
- "generado": "2026-10-30T01:26:47+00:00",
+ "generado": "2026-10-30T03:07:31+00:00",
  "modelo": "Dixon-Coles con decaimiento temporal",
  "parametros": {
   "xi": 0.0019,
@@ -7309,17 +7309,17 @@
    "nombre": "Serie A (Italia)",
    "temporada": "2026-27",
    "fuente": "footballdata",
-   "home": 1.3145,
-   "away": 1.216,
-   "rho": -0.0008,
+   "home": 1.3257,
+   "away": 1.2181,
+   "rho": -0.0003,
    "conteos": {
     "córners": {
-     "home": 4.9812,
-     "away": 4.0771
+     "home": 5.0013,
+     "away": 4.0703
     },
     "tarjetas": {
-     "home": 1.7575,
-     "away": 1.9999
+     "home": 1.7562,
+     "away": 2.0015
     }
    },
    "arbitros": {},
@@ -7329,20 +7329,20 @@
     "combinadas": [],
     "historial": {
      "seguras": {
-      "apuestas": 299,
-      "aciertos": 0.5986622073578596,
-      "cuota_media": 1.5523076923076924,
-      "roi": -0.07929765886287626,
-      "roi_min": -0.15160215201579702,
-      "roi_max": -0.0069931657099555206
+      "apuestas": 300,
+      "aciertos": 0.6,
+      "cuota_media": 1.5537666666666667,
+      "roi": -0.07573333333333333,
+      "roi_min": -0.14800524869318965,
+      "roi_max": -0.0034614179734770156
      },
      "valor": {
       "apuestas": 313,
       "aciertos": 0.31629392971246006,
-      "cuota_media": 3.5333546325878595,
-      "roi": -0.027028753993610228,
-      "roi_min": -0.1749150005031973,
-      "roi_max": 0.12085749251597684
+      "cuota_media": 3.5343450479233227,
+      "roi": -0.01833865814696486,
+      "roi_min": -0.16780287250121328,
+      "roi_max": 0.13112555620728356
      },
      "doble": {
       "apuestas": 37,
@@ -7355,13 +7355,13 @@
      "triple": {
       "apuestas": 37,
       "aciertos": 0.32432432432432434,
-      "cuota_media": 3.224864864864865,
-      "roi": 0.036216216216216165,
-      "roi_min": -0.37734970216914965,
-      "roi_max": 0.449782134601582
+      "cuota_media": 3.226486486486486,
+      "roi": 0.037837837837837784,
+      "roi_min": -0.37633861092986065,
+      "roi_max": 0.4520142866055362
      },
-     "desde": "2025-10-28",
-     "hasta": "2026-10-28"
+     "desde": "2025-10-29",
+     "hasta": "2026-10-29"
     }
    },
    "top": {
@@ -7372,336 +7372,336 @@
     "n": 3,
     "label": "Descenso"
    },
-   "partidos_modelo": 848,
-   "ultimo_resultado": "2026-10-28",
+   "partidos_modelo": 850,
+   "ultimo_resultado": "2026-10-29",
    "equipos": [
     {
      "nombre": "Inter",
-     "ataque": 1.6466,
+     "ataque": 1.6417,
      "defensa": 0.7786,
-     "local": 1.1235,
+     "local": 1.1178,
      "partidos": 85,
      "sin_datos": false,
      "córners": [
-      1.2139,
-      0.8136
+      1.2121,
+      0.8138
      ],
      "tarjetas": [
-      0.9333,
-      0.962
+      0.9336,
+      0.9617
      ]
     },
     {
      "nombre": "Roma",
-     "ataque": 1.2741,
-     "defensa": 0.7499,
-     "local": 1.161,
+     "ataque": 1.2685,
+     "defensa": 0.7498,
+     "local": 1.1561,
      "partidos": 85,
      "sin_datos": false,
      "córners": [
-      1.0982,
-      0.8653
+      1.0962,
+      0.8655
      ],
      "tarjetas": [
-      0.9969,
-      1.0647
+      0.9971,
+      1.0641
      ]
     },
     {
      "nombre": "Como",
-     "ataque": 1.2734,
-     "defensa": 0.7666,
-     "local": 1.0452,
+     "ataque": 1.2696,
+     "defensa": 0.7624,
+     "local": 1.0405,
      "partidos": 85,
      "sin_datos": false,
      "córners": [
-      1.0719,
-      0.871
+      1.0708,
+      0.8705
      ],
      "tarjetas": [
-      1.0381,
-      1.1187
+      1.038,
+      1.1181
      ]
     },
     {
      "nombre": "Napoli",
-     "ataque": 1.175,
-     "defensa": 0.7304,
-     "local": 1.1204,
+     "ataque": 1.1717,
+     "defensa": 0.7286,
+     "local": 1.1153,
      "partidos": 85,
      "sin_datos": false,
      "córners": [
-      1.1414,
-      0.8491
+      1.14,
+      0.8488
      ],
      "tarjetas": [
-      0.8435,
-      1.007
+      0.844,
+      1.0068
      ]
     },
     {
      "nombre": "Juventus",
-     "ataque": 1.1604,
-     "defensa": 0.7282,
-     "local": 1.1177,
+     "ataque": 1.1557,
+     "defensa": 0.7246,
+     "local": 1.1128,
      "partidos": 85,
      "sin_datos": false,
      "córners": [
-      1.1837,
-      0.9173
+      1.1816,
+      0.917
      ],
      "tarjetas": [
-      0.9039,
-      1.0309
+      0.9042,
+      1.0306
      ]
     },
     {
      "nombre": "Milan",
-     "ataque": 1.2172,
-     "defensa": 0.8475,
-     "local": 1.0131,
+     "ataque": 1.2135,
+     "defensa": 0.8474,
+     "local": 1.0073,
      "partidos": 85,
      "sin_datos": false,
      "córners": [
-      0.9762,
-      0.9289
+      0.9747,
+      0.9291
      ],
      "tarjetas": [
-      0.982,
-      1.004
+      0.9822,
+      1.0036
      ]
     },
     {
      "nombre": "Atalanta",
-     "ataque": 1.2647,
-     "defensa": 0.9104,
-     "local": 0.972,
-     "partidos": 84,
+     "ataque": 1.2657,
+     "defensa": 0.9201,
+     "local": 0.9661,
+     "partidos": 85,
      "sin_datos": false,
      "córners": [
-      1.0961,
-      0.9491
+      1.087,
+      0.9597
      ],
      "tarjetas": [
-      0.9296,
-      0.8884
+      0.9297,
+      0.8953
      ]
     },
     {
      "nombre": "Lazio",
-     "ataque": 1.1574,
-     "defensa": 0.8639,
-     "local": 1.0367,
+     "ataque": 1.1544,
+     "defensa": 0.864,
+     "local": 1.0316,
      "partidos": 85,
      "sin_datos": false,
      "córners": [
-      1.0143,
-      0.9664
+      1.0131,
+      0.9663
      ],
      "tarjetas": [
-      1.0902,
-      1.2135
+      1.0901,
+      1.2125
      ]
     },
     {
      "nombre": "Bologna",
-     "ataque": 1.151,
-     "defensa": 0.9069,
-     "local": 0.8805,
+     "ataque": 1.1456,
+     "defensa": 0.9067,
+     "local": 0.8782,
      "partidos": 85,
      "sin_datos": false,
      "córners": [
-      0.9984,
-      0.9432
+      0.9968,
+      0.9433
      ],
      "tarjetas": [
-      0.9916,
-      1.061
+      0.9918,
+      1.0605
      ]
     },
     {
      "nombre": "Frosinone",
-     "ataque": 1.4194,
-     "defensa": 1.3262,
-     "local": 1.0635,
-     "partidos": 8,
+     "ataque": 1.528,
+     "defensa": 1.3174,
+     "local": 1.1416,
+     "partidos": 9,
      "sin_datos": false,
      "córners": [
-      1.0844,
-      1.128
+      1.1142,
+      1.1161
      ],
      "tarjetas": [
-      1.0039,
-      1.0324
+      0.9899,
+      1.0403
      ]
     },
     {
      "nombre": "Fiorentina",
-     "ataque": 1.0199,
-     "defensa": 1.0341,
-     "local": 0.9628,
-     "partidos": 84,
+     "ataque": 1.0226,
+     "defensa": 1.0349,
+     "local": 0.9734,
+     "partidos": 85,
      "sin_datos": false,
      "córners": [
-      0.9765,
-      0.9676
+      0.9866,
+      0.9598
      ],
      "tarjetas": [
-      1.0746,
-      1.0985
+      1.082,
+      1.098
      ]
     },
     {
      "nombre": "Udinese",
-     "ataque": 1.0119,
-     "defensa": 1.0818,
-     "local": 0.828,
+     "ataque": 1.0079,
+     "defensa": 1.0817,
+     "local": 0.8247,
      "partidos": 85,
      "sin_datos": false,
      "córners": [
-      1.0,
-      1.0651
+      0.9985,
+      1.0649
      ],
      "tarjetas": [
-      1.0264,
-      0.9191
-     ]
-    },
-    {
-     "nombre": "Torino",
-     "ataque": 0.9547,
-     "defensa": 1.1166,
-     "local": 1.0523,
-     "partidos": 85,
-     "sin_datos": false,
-     "córners": [
-      0.908,
-      1.0267
-     ],
-     "tarjetas": [
-      0.9675,
-      0.8943
+      1.0265,
+      0.919
      ]
     },
     {
      "nombre": "Sassuolo",
-     "ataque": 1.0071,
-     "defensa": 1.1744,
-     "local": 1.086,
+     "ataque": 1.0036,
+     "defensa": 1.1657,
+     "local": 1.0815,
      "partidos": 47,
      "sin_datos": false,
      "córners": [
-      0.9232,
-      1.0715
+      0.9224,
+      1.0707
      ],
      "tarjetas": [
-      1.0315,
-      1.0321
+      1.0313,
+      1.0319
+     ]
+    },
+    {
+     "nombre": "Torino",
+     "ataque": 0.9516,
+     "defensa": 1.1162,
+     "local": 1.0481,
+     "partidos": 85,
+     "sin_datos": false,
+     "córners": [
+      0.9072,
+      1.0264
+     ],
+     "tarjetas": [
+      0.9677,
+      0.8943
      ]
     },
     {
      "nombre": "Genoa",
-     "ataque": 0.8135,
-     "defensa": 0.9812,
-     "local": 1.0965,
+     "ataque": 0.8107,
+     "defensa": 0.9791,
+     "local": 1.0932,
      "partidos": 85,
      "sin_datos": false,
      "córners": [
-      0.9216,
-      1.0835
+      0.9208,
+      1.0828
      ],
      "tarjetas": [
-      0.9921,
-      1.0892
+      0.9922,
+      1.0887
      ]
     },
     {
      "nombre": "Cagliari",
-     "ataque": 0.8737,
-     "defensa": 1.0644,
-     "local": 0.9824,
+     "ataque": 0.8704,
+     "defensa": 1.0643,
+     "local": 0.9779,
      "partidos": 85,
      "sin_datos": false,
      "córners": [
-      0.9601,
-      1.1009
+      0.9587,
+      1.1008
      ],
      "tarjetas": [
-      1.0058,
-      0.9248
+      1.0059,
+      0.9247
      ]
     },
     {
      "nombre": "Parma",
-     "ataque": 0.7145,
+     "ataque": 0.7122,
      "defensa": 1.0102,
-     "local": 0.9949,
+     "local": 0.9914,
      "partidos": 85,
      "sin_datos": false,
      "córners": [
-      0.9159,
-      1.106
+      0.9149,
+      1.1057
      ],
      "tarjetas": [
-      0.9779,
-      1.0139
+      0.9781,
+      1.0135
      ]
     },
     {
      "nombre": "Lecce",
-     "ataque": 0.7593,
-     "defensa": 1.0773,
-     "local": 0.8984,
-     "partidos": 84,
+     "ataque": 0.7558,
+     "defensa": 1.1098,
+     "local": 0.897,
+     "partidos": 85,
      "sin_datos": false,
      "córners": [
-      0.9793,
-      1.084
+      0.9736,
+      1.0974
      ],
      "tarjetas": [
-      0.9874,
-      0.9552
+      0.9925,
+      0.9463
      ]
     },
     {
      "nombre": "Venezia",
-     "ataque": 0.8137,
-     "defensa": 1.2136,
-     "local": 0.9608,
+     "ataque": 0.8099,
+     "defensa": 1.2015,
+     "local": 0.9575,
      "partidos": 47,
      "sin_datos": false,
      "córners": [
-      0.9614,
-      1.0819
+      0.9606,
+      1.081
      ],
      "tarjetas": [
-      1.0301,
+      1.03,
       0.9594
      ]
     },
     {
      "nombre": "Monza",
-     "ataque": 0.9584,
-     "defensa": 1.4007,
-     "local": 1.0223,
+     "ataque": 0.9538,
+     "defensa": 1.4005,
+     "local": 1.0206,
      "partidos": 47,
      "sin_datos": false,
      "córners": [
-      0.9272,
-      1.0216
+      0.9265,
+      1.0215
      ],
      "tarjetas": [
-      1.0272,
-      0.9655
+      1.0273,
+      0.9654
      ]
     }
    ],
    "tabla": {
     "Atalanta": {
-     "pj": 8,
-     "pts": 10,
-     "gf": 14,
-     "gc": 15
+     "pj": 9,
+     "pts": 11,
+     "gf": 16,
+     "gc": 17
     },
     "Bologna": {
      "pj": 9,
@@ -7722,16 +7722,16 @@
      "gc": 8
     },
     "Fiorentina": {
-     "pj": 8,
-     "pts": 4,
-     "gf": 9,
-     "gc": 19
+     "pj": 9,
+     "pts": 5,
+     "gf": 11,
+     "gc": 21
     },
     "Frosinone": {
-     "pj": 8,
-     "pts": 14,
-     "gf": 17,
-     "gc": 13
+     "pj": 9,
+     "pts": 17,
+     "gf": 22,
+     "gc": 14
     },
     "Genoa": {
      "pj": 9,
@@ -7758,10 +7758,10 @@
      "gc": 7
     },
     "Lecce": {
-     "pj": 8,
+     "pj": 9,
      "pts": 9,
-     "gf": 9,
-     "gc": 14
+     "gf": 10,
+     "gc": 19
     },
     "Milan": {
      "pj": 9,
@@ -7820,14 +7820,6 @@
    },
    "restantes": [
     [
-     "Frosinone",
-     "Lecce"
-    ],
-    [
-     "Fiorentina",
-     "Atalanta"
-    ],
-    [
      "Udinese",
      "Roma"
     ],
@@ -7840,18 +7832,6 @@
      "Monza"
     ],
     [
-     "Frosinone",
-     "Torino"
-    ],
-    [
-     "Como",
-     "Venezia"
-    ],
-    [
-     "Lazio",
-     "Cagliari"
-    ],
-    [
      "Juventus",
      "Napoli"
     ],
@@ -7860,12 +7840,24 @@
      "Genoa"
     ],
     [
-     "Sassuolo",
-     "Fiorentina"
+     "Como",
+     "Venezia"
+    ],
+    [
+     "Frosinone",
+     "Torino"
+    ],
+    [
+     "Lazio",
+     "Cagliari"
     ],
     [
      "Atalanta",
      "Parma"
+    ],
+    [
+     "Sassuolo",
+     "Fiorentina"
     ],
     [
      "Venezia",
@@ -7896,12 +7888,12 @@
      "Lazio"
     ],
     [
-     "Inter",
-     "Como"
-    ],
-    [
      "Monza",
      "Atalanta"
+    ],
+    [
+     "Inter",
+     "Como"
     ],
     [
      "Fiorentina",
@@ -7948,8 +7940,8 @@
      "Venezia"
     ],
     [
-     "Udinese",
-     "Fiorentina"
+     "Lecce",
+     "Atalanta"
     ],
     [
      "Torino",
@@ -7964,8 +7956,8 @@
      "Bologna"
     ],
     [
-     "Lecce",
-     "Atalanta"
+     "Udinese",
+     "Fiorentina"
     ],
     [
      "Roma",
@@ -8028,10 +8020,6 @@
      "Roma"
     ],
     [
-     "Cagliari",
-     "Venezia"
-    ],
-    [
      "Inter",
      "Torino"
     ],
@@ -8046,6 +8034,10 @@
     [
      "Juventus",
      "Monza"
+    ],
+    [
+     "Cagliari",
+     "Venezia"
     ],
     [
      "Parma",
@@ -8128,20 +8120,20 @@
      "Lazio"
     ],
     [
-     "Cagliari",
-     "Genoa"
+     "Udinese",
+     "Atalanta"
     ],
     [
      "Como",
      "Lecce"
     ],
     [
-     "Udinese",
-     "Atalanta"
-    ],
-    [
      "Parma",
      "Napoli"
+    ],
+    [
+     "Cagliari",
+     "Genoa"
     ],
     [
      "Roma",
@@ -8408,12 +8400,12 @@
      "Atalanta"
     ],
     [
-     "Bologna",
-     "Como"
-    ],
-    [
      "Torino",
      "Sassuolo"
+    ],
+    [
+     "Bologna",
+     "Como"
     ],
     [
      "Napoli",
@@ -8488,8 +8480,8 @@
      "Milan"
     ],
     [
-     "Genoa",
-     "Lazio"
+     "Inter",
+     "Atalanta"
     ],
     [
      "Parma",
@@ -8504,16 +8496,16 @@
      "Venezia"
     ],
     [
-     "Inter",
-     "Atalanta"
+     "Genoa",
+     "Lazio"
     ],
     [
      "Monza",
      "Genoa"
     ],
     [
-     "Juventus",
-     "Roma"
+     "Milan",
+     "Cagliari"
     ],
     [
      "Sassuolo",
@@ -8524,20 +8516,12 @@
      "Venezia"
     ],
     [
-     "Milan",
-     "Cagliari"
+     "Juventus",
+     "Roma"
     ],
     [
      "Udinese",
      "Inter"
-    ],
-    [
-     "Napoli",
-     "Parma"
-    ],
-    [
-     "Atalanta",
-     "Torino"
     ],
     [
      "Lecce",
@@ -8548,12 +8532,16 @@
      "Frosinone"
     ],
     [
-     "Torino",
-     "Inter"
+     "Napoli",
+     "Parma"
     ],
     [
-     "Como",
-     "Udinese"
+     "Atalanta",
+     "Torino"
+    ],
+    [
+     "Torino",
+     "Inter"
     ],
     [
      "Venezia",
@@ -8568,8 +8556,8 @@
      "Monza"
     ],
     [
-     "Parma",
-     "Lecce"
+     "Como",
+     "Udinese"
     ],
     [
      "Genoa",
@@ -8584,12 +8572,20 @@
      "Napoli"
     ],
     [
+     "Parma",
+     "Lecce"
+    ],
+    [
      "Milan",
      "Sassuolo"
     ],
     [
      "Atalanta",
      "Milan"
+    ],
+    [
+     "Monza",
+     "Bologna"
     ],
     [
      "Roma",
@@ -8604,12 +8600,8 @@
      "Cagliari"
     ],
     [
-     "Monza",
-     "Bologna"
-    ],
-    [
-     "Fiorentina",
-     "Genoa"
+     "Juventus",
+     "Como"
     ],
     [
      "Udinese",
@@ -8624,56 +8616,48 @@
      "Lazio"
     ],
     [
-     "Juventus",
-     "Como"
+     "Fiorentina",
+     "Genoa"
     ],
     [
      "Genoa",
      "Inter"
     ],
     [
-     "Roma",
-     "Bologna"
-    ],
-    [
-     "Lecce",
-     "Lazio"
-    ],
-    [
-     "Cagliari",
-     "Napoli"
-    ],
-    [
-     "Como",
-     "Fiorentina"
-    ],
-    [
-     "Sassuolo",
-     "Atalanta"
-    ],
-    [
-     "Milan",
-     "Monza"
-    ],
-    [
-     "Torino",
-     "Juventus"
+     "Frosinone",
+     "Udinese"
     ],
     [
      "Venezia",
      "Parma"
     ],
     [
-     "Frosinone",
-     "Udinese"
+     "Torino",
+     "Juventus"
     ],
     [
-     "Bologna",
-     "Venezia"
-    ],
-    [
-     "Udinese",
+     "Milan",
      "Monza"
+    ],
+    [
+     "Sassuolo",
+     "Atalanta"
+    ],
+    [
+     "Cagliari",
+     "Napoli"
+    ],
+    [
+     "Lecce",
+     "Lazio"
+    ],
+    [
+     "Roma",
+     "Bologna"
+    ],
+    [
+     "Como",
+     "Fiorentina"
     ],
     [
      "Inter",
@@ -8684,12 +8668,16 @@
      "Como"
     ],
     [
+     "Bologna",
+     "Venezia"
+    ],
+    [
      "Frosinone",
      "Genoa"
     ],
     [
-     "Fiorentina",
-     "Milan"
+     "Udinese",
+     "Monza"
     ],
     [
      "Juventus",
@@ -8700,12 +8688,20 @@
      "Atalanta"
     ],
     [
+     "Fiorentina",
+     "Milan"
+    ],
+    [
      "Napoli",
      "Sassuolo"
     ],
     [
      "Lazio",
      "Torino"
+    ],
+    [
+     "Atalanta",
+     "Udinese"
     ],
     [
      "Torino",
@@ -8724,8 +8720,8 @@
      "Cagliari"
     ],
     [
-     "Atalanta",
-     "Udinese"
+     "Monza",
+     "Inter"
     ],
     [
      "Como",
@@ -8742,10 +8738,6 @@
     [
      "Sassuolo",
      "Lecce"
-    ],
-    [
-     "Monza",
-     "Inter"
     ],
     [
      "Inter",
@@ -8772,6 +8764,10 @@
      "Atalanta"
     ],
     [
+     "Napoli",
+     "Udinese"
+    ],
+    [
      "Cagliari",
      "Monza"
     ],
@@ -8784,12 +8780,8 @@
      "Como"
     ],
     [
-     "Napoli",
-     "Udinese"
-    ],
-    [
-     "Monza",
-     "Venezia"
+     "Bologna",
+     "Fiorentina"
     ],
     [
      "Como",
@@ -8800,24 +8792,16 @@
      "Cagliari"
     ],
     [
+     "Monza",
+     "Venezia"
+    ],
+    [
      "Roma",
      "Napoli"
     ],
     [
-     "Bologna",
-     "Fiorentina"
-    ],
-    [
      "Udinese",
      "Genoa"
-    ],
-    [
-     "Sassuolo",
-     "Frosinone"
-    ],
-    [
-     "Milan",
-     "Lazio"
     ],
     [
      "Torino",
@@ -8828,8 +8812,16 @@
      "Juventus"
     ],
     [
-     "Venezia",
-     "Como"
+     "Sassuolo",
+     "Frosinone"
+    ],
+    [
+     "Milan",
+     "Lazio"
+    ],
+    [
+     "Udinese",
+     "Juventus"
     ],
     [
      "Fiorentina",
@@ -8840,20 +8832,20 @@
      "Atalanta"
     ],
     [
+     "Venezia",
+     "Como"
+    ],
+    [
      "Torino",
      "Bologna"
     ],
     [
-     "Udinese",
-     "Juventus"
+     "Lazio",
+     "Sassuolo"
     ],
     [
      "Parma",
      "Milan"
-    ],
-    [
-     "Lazio",
-     "Sassuolo"
     ],
     [
      "Genoa",
@@ -8888,8 +8880,8 @@
      "Inter"
     ],
     [
-     "Bologna",
-     "Frosinone"
+     "Lazio",
+     "Udinese"
     ],
     [
      "Lecce",
@@ -8904,12 +8896,12 @@
      "Atalanta"
     ],
     [
-     "Lazio",
-     "Udinese"
+     "Bologna",
+     "Frosinone"
     ],
     [
-     "Fiorentina",
-     "Monza"
+     "Udinese",
+     "Sassuolo"
     ],
     [
      "Genoa",
@@ -8920,20 +8912,20 @@
      "Milan"
     ],
     [
-     "Udinese",
-     "Sassuolo"
+     "Fiorentina",
+     "Monza"
     ],
     [
      "Frosinone",
      "Cagliari"
     ],
     [
-     "Atalanta",
-     "Lecce"
-    ],
-    [
      "Parma",
      "Juventus"
+    ],
+    [
+     "Inter",
+     "Lazio"
     ],
     [
      "Roma",
@@ -8944,44 +8936,44 @@
      "Napoli"
     ],
     [
-     "Inter",
-     "Lazio"
-    ],
-    [
-     "Sassuolo",
-     "Inter"
-    ],
-    [
-     "Lazio",
-     "Fiorentina"
-    ],
-    [
-     "Cagliari",
-     "Roma"
-    ],
-    [
-     "Monza",
-     "Torino"
+     "Atalanta",
+     "Lecce"
     ],
     [
      "Como",
      "Genoa"
     ],
     [
-     "Milan",
-     "Udinese"
+     "Napoli",
+     "Atalanta"
     ],
     [
      "Lecce",
      "Venezia"
     ],
     [
-     "Napoli",
-     "Atalanta"
+     "Milan",
+     "Udinese"
     ],
     [
      "Juventus",
      "Frosinone"
+    ],
+    [
+     "Monza",
+     "Torino"
+    ],
+    [
+     "Sassuolo",
+     "Inter"
+    ],
+    [
+     "Cagliari",
+     "Roma"
+    ],
+    [
+     "Lazio",
+     "Fiorentina"
     ],
     [
      "Bologna",
@@ -8995,22 +8987,22 @@
      "visitante": "Roma",
      "pendiente": false,
      "córners": [
-      4.31,
-      4.77
+      4.32,
+      4.75
      ],
      "tarjetas": [
       1.92,
       1.83
      ],
-     "lh": 0.826,
-     "la": 1.6761,
-     "p1": 0.183,
-     "px": 0.2413,
-     "p2": 0.5756,
-     "o25": 0.4567,
-     "btts": 0.4571,
+     "lh": 0.8263,
+     "la": 1.6714,
+     "p1": 0.1838,
+     "px": 0.2418,
+     "p2": 0.5744,
+     "o25": 0.4556,
+     "btts": 0.4567,
      "marcador": "0-1",
-     "p_marcador": 0.1372
+     "p_marcador": 0.1375
     },
     {
      "fecha": "2026-10-31",
@@ -9018,20 +9010,20 @@
      "visitante": "Inter",
      "pendiente": false,
      "córners": [
-      3.96,
-      4.6
+      3.97,
+      4.58
      ],
      "tarjetas": [
       1.66,
-      1.87
+      1.88
      ],
-     "lh": 1.2622,
-     "la": 1.6969,
-     "p1": 0.2851,
-     "px": 0.2388,
-     "p2": 0.4761,
-     "o25": 0.5676,
-     "btts": 0.5857,
+     "lh": 1.2618,
+     "la": 1.6947,
+     "p1": 0.2854,
+     "px": 0.2389,
+     "p2": 0.4757,
+     "o25": 0.567,
+     "btts": 0.5852,
      "marcador": "1-1",
      "p_marcador": 0.1112
     },
@@ -9041,91 +9033,22 @@
      "visitante": "Monza",
      "pendiente": false,
      "córners": [
-      5.08,
-      3.57
+      5.09,
+      3.56
      ],
      "tarjetas": [
       1.68,
       2.18
      ],
-     "lh": 1.8661,
-     "la": 1.0569,
-     "p1": 0.5628,
-     "px": 0.2253,
-     "p2": 0.2119,
-     "o25": 0.5593,
-     "btts": 0.5516,
+     "lh": 1.8677,
+     "la": 1.0535,
+     "p1": 0.564,
+     "px": 0.225,
+     "p2": 0.211,
+     "o25": 0.5589,
+     "btts": 0.5507,
      "marcador": "1-1",
-     "p_marcador": 0.1061
-    },
-    {
-     "fecha": "2026-11-01",
-     "local": "Frosinone",
-     "visitante": "Torino",
-     "pendiente": false,
-     "córners": [
-      5.55,
-      4.18
-     ],
-     "tarjetas": [
-      1.58,
-      2.0
-     ],
-     "lh": 2.2157,
-     "la": 1.5396,
-     "p1": 0.5305,
-     "px": 0.2035,
-     "p2": 0.266,
-     "o25": 0.7238,
-     "btts": 0.6999,
-     "marcador": "2-1",
-     "p_marcador": 0.0884
-    },
-    {
-     "fecha": "2026-11-01",
-     "local": "Como",
-     "visitante": "Venezia",
-     "pendiente": false,
-     "córners": [
-      5.78,
-      3.41
-     ],
-     "tarjetas": [
-      1.75,
-      2.3
-     ],
-     "lh": 2.1234,
-     "la": 0.7585,
-     "p1": 0.6889,
-     "px": 0.19,
-     "p2": 0.1211,
-     "o25": 0.5498,
-     "btts": 0.4681,
-     "marcador": "2-0",
-     "p_marcador": 0.1263
-    },
-    {
-     "fecha": "2026-11-01",
-     "local": "Lazio",
-     "visitante": "Cagliari",
-     "pendiente": false,
-     "córners": [
-      5.56,
-      3.78
-     ],
-     "tarjetas": [
-      1.77,
-      2.44
-     ],
-     "lh": 1.6788,
-     "la": 0.9179,
-     "p1": 0.553,
-     "px": 0.2421,
-     "p2": 0.2049,
-     "o25": 0.4807,
-     "btts": 0.4886,
-     "marcador": "1-0",
-     "p_marcador": 0.125
+     "p_marcador": 0.106
     },
     {
      "fecha": "2026-11-01",
@@ -9133,20 +9056,20 @@
      "visitante": "Napoli",
      "pendiente": false,
      "córners": [
-      5.01,
-      4.27
+      5.02,
+      4.26
      ],
      "tarjetas": [
       1.6,
       1.74
      ],
-     "lh": 1.2452,
-     "la": 1.0405,
-     "p1": 0.4091,
-     "px": 0.283,
-     "p2": 0.3079,
-     "o25": 0.4002,
-     "btts": 0.4607,
+     "lh": 1.2422,
+     "la": 1.0342,
+     "p1": 0.4097,
+     "px": 0.2835,
+     "p2": 0.3067,
+     "o25": 0.3977,
+     "btts": 0.4584,
      "marcador": "1-1",
      "p_marcador": 0.1319
     },
@@ -9156,45 +9079,91 @@
      "visitante": "Genoa",
      "pendiente": false,
      "córners": [
-      5.29,
-      4.07
+      5.27,
+      4.11
      ],
      "tarjetas": [
-      1.89,
-      1.9
+      1.9,
+      1.88
      ],
-     "lh": 0.8798,
-     "la": 1.0657,
-     "p1": 0.2949,
-     "px": 0.312,
-     "p2": 0.3931,
-     "o25": 0.3086,
-     "btts": 0.3837,
+     "lh": 0.88,
+     "la": 1.096,
+     "p1": 0.2891,
+     "px": 0.3083,
+     "p2": 0.4026,
+     "o25": 0.3168,
+     "btts": 0.3897,
      "marcador": "0-1",
-     "p_marcador": 0.1522
+     "p_marcador": 0.1519
     },
     {
-     "fecha": "2026-11-02",
-     "local": "Sassuolo",
-     "visitante": "Fiorentina",
+     "fecha": "2026-11-01",
+     "local": "Como",
+     "visitante": "Venezia",
      "pendiente": false,
      "córners": [
-      4.45,
-      4.27
+      5.79,
+      3.4
      ],
      "tarjetas": [
-      1.99,
-      2.22
+      1.75,
+      2.31
      ],
-     "lh": 1.4868,
-     "la": 1.4565,
-     "p1": 0.3838,
-     "px": 0.2458,
-     "p2": 0.3704,
-     "o25": 0.564,
-     "btts": 0.5936,
-     "marcador": "1-1",
-     "p_marcador": 0.1142
+     "lh": 2.1041,
+     "la": 0.7521,
+     "p1": 0.6869,
+     "px": 0.1915,
+     "p2": 0.1216,
+     "o25": 0.5438,
+     "btts": 0.4642,
+     "marcador": "2-0",
+     "p_marcador": 0.1273
+    },
+    {
+     "fecha": "2026-11-01",
+     "local": "Frosinone",
+     "visitante": "Torino",
+     "pendiente": false,
+     "córners": [
+      5.72,
+      4.12
+     ],
+     "tarjetas": [
+      1.55,
+      2.02
+     ],
+     "lh": 2.5813,
+     "la": 1.5271,
+     "p1": 0.6034,
+     "px": 0.1812,
+     "p2": 0.2155,
+     "o25": 0.7773,
+     "btts": 0.7236,
+     "marcador": "2-1",
+     "p_marcador": 0.0836
+    },
+    {
+     "fecha": "2026-11-01",
+     "local": "Lazio",
+     "visitante": "Cagliari",
+     "pendiente": false,
+     "córners": [
+      5.58,
+      3.77
+     ],
+     "tarjetas": [
+      1.77,
+      2.44
+     ],
+     "lh": 1.6803,
+     "la": 0.916,
+     "p1": 0.5539,
+     "px": 0.2418,
+     "p2": 0.2043,
+     "o25": 0.4806,
+     "btts": 0.4881,
+     "marcador": "1-0",
+     "p_marcador": 0.1252
     },
     {
      "fecha": "2026-11-02",
@@ -9202,22 +9171,45 @@
      "visitante": "Parma",
      "pendiente": false,
      "córners": [
-      6.04,
-      3.54
+      6.01,
+      3.57
      ],
      "tarjetas": [
-      1.66,
-      1.74
+      1.65,
+      1.75
      ],
-     "lh": 1.6323,
-     "la": 0.791,
-     "p1": 0.574,
-     "px": 0.2459,
-     "p2": 0.1801,
-     "o25": 0.4364,
-     "btts": 0.4398,
+     "lh": 1.6375,
+     "la": 0.7983,
+     "p1": 0.5734,
+     "px": 0.2453,
+     "p2": 0.1813,
+     "o25": 0.4396,
+     "btts": 0.443,
      "marcador": "1-0",
-     "p_marcador": 0.1446
+     "p_marcador": 0.1433
+    },
+    {
+     "fecha": "2026-11-02",
+     "local": "Sassuolo",
+     "visitante": "Fiorentina",
+     "pendiente": false,
+     "córners": [
+      4.43,
+      4.3
+     ],
+     "tarjetas": [
+      1.99,
+      2.23
+     ],
+     "lh": 1.4892,
+     "la": 1.4521,
+     "p1": 0.3853,
+     "px": 0.2458,
+     "p2": 0.3689,
+     "o25": 0.5635,
+     "btts": 0.5932,
+     "marcador": "1-1",
+     "p_marcador": 0.1142
     },
     {
      "fecha": "2026-11-06",
@@ -9225,22 +9217,22 @@
      "visitante": "Udinese",
      "pendiente": false,
      "córners": [
-      5.1,
-      4.41
+      5.12,
+      4.39
      ],
      "tarjetas": [
       1.66,
       1.97
      ],
-     "lh": 1.1117,
-     "la": 1.4933,
-     "p1": 0.2821,
-     "px": 0.2581,
-     "p2": 0.4597,
-     "o25": 0.4828,
-     "btts": 0.5204,
+     "lh": 1.112,
+     "la": 1.4751,
+     "p1": 0.2854,
+     "px": 0.2596,
+     "p2": 0.455,
+     "o25": 0.4783,
+     "btts": 0.5176,
      "marcador": "1-1",
-     "p_marcador": 0.1228
+     "p_marcador": 0.1234
     },
     {
      "fecha": "2026-11-07",
@@ -9248,22 +9240,22 @@
      "visitante": "Sassuolo",
      "pendiente": false,
      "córners": [
-      5.86,
-      3.26
+      5.87,
+      3.25
      ],
      "tarjetas": [
       1.81,
       2.2
      ],
-     "lh": 2.2836,
-     "la": 0.9184,
-     "p1": 0.6808,
-     "px": 0.1828,
-     "p2": 0.1364,
-     "o25": 0.6205,
-     "btts": 0.5397,
+     "lh": 2.2663,
+     "la": 0.9167,
+     "p1": 0.6781,
+     "px": 0.1842,
+     "p2": 0.1378,
+     "o25": 0.6165,
+     "btts": 0.5379,
      "marcador": "2-0",
-     "p_marcador": 0.1061
+     "p_marcador": 0.1065
     },
     {
      "fecha": "2026-11-07",
@@ -9271,22 +9263,22 @@
      "visitante": "Bologna",
      "pendiente": false,
      "córners": [
-      4.3,
-      4.5
+      4.32,
+      4.49
      ],
      "tarjetas": [
       1.82,
       2.01
      ],
-     "lh": 0.8474,
-     "la": 1.4139,
-     "p1": 0.2251,
-     "px": 0.2721,
-     "p2": 0.5029,
-     "o25": 0.3937,
-     "btts": 0.4326,
+     "lh": 0.8487,
+     "la": 1.4096,
+     "p1": 0.2262,
+     "px": 0.2724,
+     "p2": 0.5014,
+     "o25": 0.3929,
+     "btts": 0.4324,
      "marcador": "0-1",
-     "p_marcador": 0.1472
+     "p_marcador": 0.1473
     },
     {
      "fecha": "2026-11-07",
@@ -9294,22 +9286,22 @@
      "visitante": "Lecce",
      "pendiente": false,
      "córners": [
-      4.9,
-      4.1
+      4.98,
+      4.07
      ],
      "tarjetas": [
-      1.62,
-      1.77
+      1.61,
+      1.78
      ],
-     "lh": 1.4226,
-     "la": 1.031,
-     "p1": 0.4601,
-     "px": 0.2668,
-     "p2": 0.2731,
-     "o25": 0.4442,
-     "btts": 0.4883,
+     "lh": 1.4675,
+     "la": 1.0276,
+     "p1": 0.4728,
+     "px": 0.2625,
+     "p2": 0.2647,
+     "o25": 0.4549,
+     "btts": 0.4942,
      "marcador": "1-1",
-     "p_marcador": 0.1262
+     "p_marcador": 0.1244
     },
     {
      "fecha": "2026-11-07",
@@ -9317,22 +9309,22 @@
      "visitante": "Frosinone",
      "pendiente": false,
      "córners": [
-      5.39,
-      4.87
+      5.35,
+      4.99
      ],
      "tarjetas": [
-      1.82,
-      1.86
+      1.84,
+      1.83
      ],
-     "lh": 1.4963,
-     "la": 1.8372,
-     "p1": 0.3159,
-     "px": 0.2258,
-     "p2": 0.4583,
-     "o25": 0.6473,
-     "btts": 0.6525,
+     "lh": 1.4865,
+     "la": 1.9809,
+     "p1": 0.2903,
+     "px": 0.2175,
+     "p2": 0.4922,
+     "o25": 0.6731,
+     "btts": 0.6671,
      "marcador": "1-1",
-     "p_marcador": 0.0981
+     "p_marcador": 0.0919
     },
     {
      "fecha": "2026-11-08",
@@ -9340,20 +9332,20 @@
      "visitante": "Milan",
      "pendiente": false,
      "córners": [
-      4.26,
-      4.31
+      4.28,
+      4.3
      ],
      "tarjetas": [
       1.75,
       2.14
      ],
-     "lh": 0.9937,
-     "la": 1.4524,
-     "p1": 0.2582,
-     "px": 0.2649,
-     "p2": 0.4769,
-     "o25": 0.4423,
-     "btts": 0.4825,
+     "lh": 0.9957,
+     "la": 1.4473,
+     "p1": 0.2597,
+     "px": 0.2652,
+     "p2": 0.4751,
+     "o25": 0.4415,
+     "btts": 0.4822,
      "marcador": "0-1",
      "p_marcador": 0.1257
     },
@@ -9363,45 +9355,22 @@
      "visitante": "Lazio",
      "pendiente": false,
      "córners": [
-      5.49,
-      3.51
+      5.51,
+      3.5
      ],
      "tarjetas": [
       1.8,
       2.2
      ],
-     "lh": 1.4951,
-     "la": 1.028,
-     "p1": 0.4798,
-     "px": 0.26,
-     "p2": 0.2602,
-     "o25": 0.4621,
-     "btts": 0.4984,
+     "lh": 1.4968,
+     "la": 1.0245,
+     "p1": 0.4812,
+     "px": 0.2598,
+     "p2": 0.2591,
+     "o25": 0.4616,
+     "btts": 0.4976,
      "marcador": "1-1",
-     "p_marcador": 0.1234
-    },
-    {
-     "fecha": "2026-11-08",
-     "local": "Inter",
-     "visitante": "Como",
-     "pendiente": false,
-     "córners": [
-      5.27,
-      3.56
-     ],
-     "tarjetas": [
-      1.84,
-      2.0
-     ],
-     "lh": 1.8643,
-     "la": 1.2057,
-     "p1": 0.5277,
-     "px": 0.2265,
-     "p2": 0.2458,
-     "o25": 0.5923,
-     "btts": 0.592,
-     "marcador": "1-1",
-     "p_marcador": 0.1044
+     "p_marcador": 0.1233
     },
     {
      "fecha": "2026-11-08",
@@ -9409,22 +9378,45 @@
      "visitante": "Atalanta",
      "pendiente": false,
      "córners": [
-      4.38,
-      4.57
+      4.45,
+      4.52
      ],
      "tarjetas": [
-      1.6,
-      1.79
+      1.62,
+      1.8
      ],
-     "lh": 1.1725,
-     "la": 2.1541,
-     "p1": 0.1996,
-     "px": 0.2029,
-     "p2": 0.5975,
-     "o25": 0.6459,
-     "btts": 0.6104,
+     "lh": 1.1873,
+     "la": 2.1592,
+     "p1": 0.202,
+     "px": 0.2028,
+     "p2": 0.5953,
+     "o25": 0.6498,
+     "btts": 0.6148,
      "marcador": "1-2",
-     "p_marcador": 0.0977
+     "p_marcador": 0.0974
+    },
+    {
+     "fecha": "2026-11-08",
+     "local": "Inter",
+     "visitante": "Como",
+     "pendiente": false,
+     "córners": [
+      5.28,
+      3.55
+     ],
+     "tarjetas": [
+      1.83,
+      2.0
+     ],
+     "lh": 1.8547,
+     "la": 1.2041,
+     "p1": 0.526,
+     "px": 0.2271,
+     "p2": 0.2469,
+     "o25": 0.5899,
+     "btts": 0.5905,
+     "marcador": "1-1",
+     "p_marcador": 0.1049
     },
     {
      "fecha": "2026-11-08",
@@ -9432,22 +9424,22 @@
      "visitante": "Juventus",
      "pendiente": false,
      "córners": [
-      4.46,
-      4.67
+      4.53,
+      4.62
      ],
      "tarjetas": [
-      1.95,
+      1.96,
       1.99
      ],
-     "lh": 0.94,
-     "la": 1.4592,
-     "p1": 0.2429,
-     "px": 0.2653,
-     "p2": 0.4918,
-     "o25": 0.4301,
-     "btts": 0.4679,
+     "lh": 0.9563,
+     "la": 1.4569,
+     "p1": 0.2476,
+     "px": 0.2651,
+     "p2": 0.4872,
+     "o25": 0.4337,
+     "btts": 0.4723,
      "marcador": "0-1",
-     "p_marcador": 0.1324
+     "p_marcador": 0.1304
     },
     {
      "fecha": "2026-11-21",
@@ -9455,22 +9447,22 @@
      "visitante": "Torino",
      "pendiente": false,
      "córners": [
-      5.84,
-      3.14
+      5.85,
+      3.13
      ],
      "tarjetas": [
       1.33,
       1.95
      ],
-     "lh": 1.9323,
-     "la": 0.8479,
-     "p1": 0.6282,
-     "px": 0.2139,
-     "p2": 0.1579,
-     "o25": 0.5258,
-     "btts": 0.489,
+     "lh": 1.9337,
+     "la": 0.8446,
+     "p1": 0.6294,
+     "px": 0.2135,
+     "p2": 0.1571,
+     "o25": 0.5254,
+     "btts": 0.4878,
      "marcador": "1-0",
-     "p_marcador": 0.1198
+     "p_marcador": 0.1201
     },
     {
      "fecha": "2026-11-21",
@@ -9478,22 +9470,22 @@
      "visitante": "Roma",
      "pendiente": false,
      "córners": [
-      3.95,
-      4.95
+      3.96,
+      4.93
      ],
      "tarjetas": [
       1.83,
       2.02
      ],
-     "lh": 0.7007,
-     "la": 1.5651,
-     "p1": 0.1659,
-     "px": 0.253,
-     "p2": 0.5812,
-     "o25": 0.3949,
-     "btts": 0.3986,
+     "lh": 0.7019,
+     "la": 1.5609,
+     "p1": 0.1667,
+     "px": 0.2534,
+     "p2": 0.5798,
+     "o25": 0.3941,
+     "btts": 0.3985,
      "marcador": "0-1",
-     "p_marcador": 0.1623
+     "p_marcador": 0.1624
     },
     {
      "fecha": "2026-11-21",
@@ -9501,22 +9493,22 @@
      "visitante": "Cagliari",
      "pendiente": false,
      "córners": [
-      5.88,
-      3.41
+      5.9,
+      3.4
      ],
      "tarjetas": [
       1.69,
       2.25
      ],
-     "lh": 1.8622,
-     "la": 0.8145,
-     "p1": 0.6215,
-     "px": 0.2202,
-     "p2": 0.1583,
-     "o25": 0.5007,
-     "btts": 0.4707,
+     "lh": 1.8638,
+     "la": 0.8083,
+     "p1": 0.6234,
+     "px": 0.2197,
+     "p2": 0.1569,
+     "o25": 0.4995,
+     "btts": 0.4684,
      "marcador": "1-0",
-     "p_marcador": 0.128
+     "p_marcador": 0.1288
     },
     {
      "fecha": "2026-11-21",
@@ -9524,22 +9516,22 @@
      "visitante": "Lecce",
      "pendiente": false,
      "córners": [
-      5.48,
-      3.86
+      5.56,
+      3.83
      ],
      "tarjetas": [
-      1.83,
-      2.4
+      1.81,
+      2.41
      ],
-     "lh": 1.6991,
-     "la": 0.7977,
-     "p1": 0.5884,
-     "px": 0.2382,
-     "p2": 0.1734,
-     "o25": 0.4554,
-     "btts": 0.4492,
+     "lh": 1.7522,
+     "la": 0.7954,
+     "p1": 0.6015,
+     "px": 0.2319,
+     "p2": 0.1666,
+     "o25": 0.4683,
+     "btts": 0.4535,
      "marcador": "1-0",
-     "p_marcador": 0.1398
+     "p_marcador": 0.1371
     },
     {
      "fecha": "2026-11-22",
@@ -9547,22 +9539,22 @@
      "visitante": "Inter",
      "pendiente": false,
      "córners": [
-      4.44,
-      4.7
+      4.42,
+      4.73
      ],
      "tarjetas": [
       1.57,
-      1.66
+      1.67
      ],
-     "lh": 1.2582,
-     "la": 1.8228,
-     "p1": 0.264,
-     "px": 0.2296,
-     "p2": 0.5064,
-     "o25": 0.5947,
-     "btts": 0.6003,
+     "lh": 1.2621,
+     "la": 1.8401,
+     "p1": 0.2623,
+     "px": 0.2281,
+     "p2": 0.5095,
+     "o25": 0.5993,
+     "btts": 0.6031,
      "marcador": "1-1",
-     "p_marcador": 0.1054
+     "p_marcador": 0.1044
     },
     {
      "fecha": "2026-11-22",
@@ -9570,22 +9562,22 @@
      "visitante": "Udinese",
      "pendiente": false,
      "córners": [
-      5.3,
-      3.85
+      5.31,
+      3.83
      ],
      "tarjetas": [
       1.6,
       2.18
      ],
-     "lh": 1.4413,
-     "la": 1.1159,
-     "p1": 0.4452,
-     "px": 0.2625,
-     "p2": 0.2923,
-     "o25": 0.4708,
-     "btts": 0.5134,
+     "lh": 1.4426,
+     "la": 1.1133,
+     "p1": 0.4462,
+     "px": 0.2623,
+     "p2": 0.2915,
+     "o25": 0.4704,
+     "btts": 0.5129,
      "marcador": "1-1",
-     "p_marcador": 0.1248
+     "p_marcador": 0.1247
     },
     {
      "fecha": "2026-11-22",
@@ -9593,22 +9585,22 @@
      "visitante": "Frosinone",
      "pendiente": false,
      "córners": [
-      5.48,
-      4.11
+      5.44,
+      4.21
      ],
      "tarjetas": [
-      1.78,
-      2.02
+      1.79,
+      1.99
      ],
-     "lh": 2.1498,
-     "la": 1.4628,
-     "p1": 0.533,
-     "px": 0.2072,
-     "p2": 0.2598,
-     "o25": 0.6995,
-     "btts": 0.679,
+     "lh": 2.1349,
+     "la": 1.5773,
+     "p1": 0.5061,
+     "px": 0.2081,
+     "p2": 0.2858,
+     "o25": 0.7166,
+     "btts": 0.6997,
      "marcador": "2-1",
-     "p_marcador": 0.0912
+     "p_marcador": 0.0878
     },
     {
      "fecha": "2026-11-22",
@@ -9616,22 +9608,22 @@
      "visitante": "Genoa",
      "pendiente": false,
      "córners": [
-      4.98,
-      4.03
+      5.0,
+      4.01
      ],
      "tarjetas": [
       1.97,
       2.05
      ],
-     "lh": 1.4108,
-     "la": 1.1618,
-     "p1": 0.4268,
-     "px": 0.2633,
-     "p2": 0.3099,
-     "o25": 0.4747,
-     "btts": 0.5196,
+     "lh": 1.4088,
+     "la": 1.1512,
+     "p1": 0.4287,
+     "px": 0.2637,
+     "p2": 0.3075,
+     "o25": 0.4715,
+     "btts": 0.5167,
      "marcador": "1-1",
-     "p_marcador": 0.1252
+     "p_marcador": 0.1254
     },
     {
      "fecha": "2026-11-23",
@@ -9639,22 +9631,22 @@
      "visitante": "Fiorentina",
      "pendiente": false,
      "córners": [
-      4.47,
-      4.07
+      4.45,
+      4.1
      ],
      "tarjetas": [
       1.98,
-      2.07
+      2.09
      ],
-     "lh": 1.3318,
-     "la": 1.7372,
-     "p1": 0.2949,
-     "px": 0.2349,
-     "p2": 0.4703,
-     "o25": 0.5921,
-     "btts": 0.6065,
+     "lh": 1.3355,
+     "la": 1.7445,
+     "p1": 0.2946,
+     "px": 0.2342,
+     "p2": 0.4712,
+     "o25": 0.5945,
+     "btts": 0.6082,
      "marcador": "1-1",
-     "p_marcador": 0.1076
+     "p_marcador": 0.1071
     },
     {
      "fecha": "2026-11-23",
@@ -9662,71 +9654,71 @@
      "visitante": "Venezia",
      "pendiente": false,
      "córners": [
-      6.38,
-      3.6
+      6.39,
+      3.59
      ],
      "tarjetas": [
       1.52,
       2.12
      ],
-     "lh": 2.0691,
-     "la": 0.7205,
-     "p1": 0.6879,
-     "px": 0.1936,
-     "p2": 0.1186,
-     "o25": 0.5281,
-     "btts": 0.4487,
+     "lh": 2.0484,
+     "la": 0.7148,
+     "p1": 0.6853,
+     "px": 0.1954,
+     "p2": 0.1193,
+     "o25": 0.5217,
+     "btts": 0.4449,
      "marcador": "2-0",
-     "p_marcador": 0.1315
+     "p_marcador": 0.1324
     }
    ],
    "validacion": {
     "partidos": 385,
-    "desde": "2025-10-28",
-    "hasta": "2026-10-28",
+    "desde": "2025-10-29",
+    "hasta": "2026-10-29",
     "mercados": {
      "1X2": {
-      "modelo": 0.573766649696543,
-      "base": 0.6523484459597542,
-      "logloss_modelo": 0.9681532508658204,
-      "logloss_base": 1.0760153177443827,
-      "mejora": 0.12045985048312535,
-      "mercado": 0.5636313738464155
+      "modelo": 0.5738039859901589,
+      "base": 0.6524022760593859,
+      "logloss_modelo": 0.9682305564783474,
+      "logloss_base": 1.0762646781322998,
+      "mejora": 0.12047519291927256,
+      "mercado": 0.5640648017126454
      },
      "Más de 2.5": {
-      "modelo": 0.2557091699363557,
-      "base": 0.25147007310687636,
-      "mejora": -0.01685726168965518
+      "modelo": 0.255408774720208,
+      "base": 0.25176366348696294,
+      "mejora": -0.014478305497940935
      },
      "Ambos anotan": {
-      "modelo": 0.24834497258586244,
-      "base": 0.25053629515588377,
-      "mejora": 0.008746527398985848
+      "modelo": 0.24842196011583215,
+      "base": 0.2507620661271213,
+      "mejora": 0.00933197770871319
      },
      "Córners más de 9.5": {
       "partidos": 387,
       "linea": 9.5,
-      "modelo": 0.23807883879048203,
-      "base": 0.24115221346605661,
-      "prob_media": 0.41997908341875706,
-      "frecuencia_real": 0.3979328165374677,
-      "mejora": 0.012744542674526071
+      "modelo": 0.23767899357886316,
+      "base": 0.2416751923467623,
+      "prob_media": 0.4199094013854667,
+      "frecuencia_real": 0.4005167958656331,
+      "mejora": 0.016535411554220558
      },
      "Tarjetas más de 4.5": {
       "partidos": 387,
       "linea": 4.5,
-      "modelo": 0.20868084727438874,
-      "base": 0.2213002458219224,
-      "prob_media": 0.36316733208838015,
-      "frecuencia_real": 0.3281653746770026,
-      "mejora": 0.057023879484021656
+      "modelo": 0.20979081087472004,
+      "base": 0.22208567481972247,
+      "prob_media": 0.3633502150043596,
+      "frecuencia_real": 0.330749354005168,
+      "mejora": 0.05536090499750945
      }
     },
     "acierto_1x2": 0.5558441558441558,
     "apuestas_simuladas": {
      "umbral_ve": 0.05,
      "apuestas": 282,
-     "roi": -0.024255319148936184,
+     "roi": -0.024255319148936194,
      "nota": "Apuesta plana de 1 unidad al resultado 1X2 con mayor VE si supera el umbral, a cuota de cierre."
     }
    },
