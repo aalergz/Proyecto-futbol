@@ -111,7 +111,7 @@
   "desde": "2025-11-01",
   "hasta": "2026-11-02"
  },
- "generado": "2026-11-04T19:23:48+00:00",
+ "generado": "2026-11-05T01:32:41+00:00",
  "modelo": "Dixon-Coles con decaimiento temporal",
  "parametros": {
   "xi": 0.0019,
@@ -4247,7 +4247,7 @@
    ],
    "proximos": [
     {
-     "fecha": "2026-11-04",
+     "fecha": "2026-11-05",
      "local": "Rayo Vallecano",
      "visitante": "Athletic Club",
      "pendiente": false,
