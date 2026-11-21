@@ -111,7 +111,7 @@
   "desde": "2025-11-08",
   "hasta": "2026-11-08"
  },
- "generado": "2026-11-20T15:18:10+00:00",
+ "generado": "2026-11-21T01:38:58+00:00",
  "modelo": "Dixon-Coles con decaimiento temporal",
  "parametros": {
   "xi": 0.0019,
@@ -3708,18 +3708,6 @@
       "prob_mercado": 0.5605
      },
      {
-      "fecha": "2026-11-20",
-      "local": "Athletic Club",
-      "visitante": "Espanyol",
-      "inicio": "2026-11-20T20:00:00Z",
-      "mercado": "1",
-      "etiqueta": "Gana Athletic Club",
-      "prob": 0.5179,
-      "cuota": 1.48,
-      "ve": -0.2335,
-      "prob_mercado": 0.6347
-     },
-     {
       "fecha": "2026-11-22",
       "local": "Osasuna",
       "visitante": "Málaga",
@@ -3758,18 +3746,6 @@
       "prob_mercado": 0.1591
      },
      {
-      "fecha": "2026-11-20",
-      "local": "Athletic Club",
-      "visitante": "Espanyol",
-      "inicio": "2026-11-20T20:00:00Z",
-      "mercado": "2",
-      "etiqueta": "Gana Espanyol",
-      "prob": 0.2145,
-      "cuota": 6.23,
-      "ve": 0.3363,
-      "prob_mercado": 0.1508
-     },
-     {
       "fecha": "2026-11-22",
       "local": "Barcelona",
       "visitante": "Villarreal",
@@ -3795,78 +3771,6 @@
      }
     ],
     "partidos": [
-     {
-      "fecha": "2026-11-20",
-      "local": "Athletic Club",
-      "visitante": "Espanyol",
-      "inicio": "2026-11-20T20:00:00Z",
-      "mercados": [
-       {
-        "mercado": "1",
-        "etiqueta": "Gana Athletic Club",
-        "prob": 0.5179,
-        "cuota": 1.48,
-        "ve": -0.2335,
-        "prob_mercado": 0.6347
-       },
-       {
-        "mercado": "X",
-        "etiqueta": "Empate",
-        "prob": 0.2676,
-        "cuota": 4.38,
-        "ve": 0.1721,
-        "prob_mercado": 0.2145
-       },
-       {
-        "mercado": "2",
-        "etiqueta": "Gana Espanyol",
-        "prob": 0.2145,
-        "cuota": 6.23,
-        "ve": 0.3363,
-        "prob_mercado": 0.1508
-       },
-       {
-        "mercado": "1X",
-        "etiqueta": "Athletic Club o empate",
-        "prob": 0.7855,
-        "cuota": 1.11,
-        "ve": -0.1311,
-        "prob_mercado": 0.8492
-       },
-       {
-        "mercado": "X2",
-        "etiqueta": "Espanyol o empate",
-        "prob": 0.4821,
-        "cuota": 2.57,
-        "ve": 0.2399,
-        "prob_mercado": 0.3653
-       },
-       {
-        "mercado": "12",
-        "etiqueta": "No hay empate",
-        "prob": 0.7324,
-        "cuota": 1.2,
-        "ve": -0.1241,
-        "prob_mercado": 0.7855
-       },
-       {
-        "mercado": "o25",
-        "etiqueta": "Más de 2.5 goles",
-        "prob": 0.4349,
-        "cuota": 1.68,
-        "ve": -0.2694,
-        "prob_mercado": 0.5567
-       },
-       {
-        "mercado": "u25",
-        "etiqueta": "Menos de 2.5 goles",
-        "prob": 0.5651,
-        "cuota": 2.11,
-        "ve": 0.1924,
-        "prob_mercado": 0.4433
-       }
-      ]
-     },
      {
       "fecha": "2026-11-21",
       "local": "Sevilla",
@@ -5089,10 +4993,6 @@
      "Espanyol"
     ],
     [
-     "Rayo Vallecano",
-     "Athletic Club"
-    ],
-    [
      "Sevilla",
      "Real Betis"
     ],
@@ -5107,6 +5007,10 @@
     [
      "Rayo Vallecano",
      "Valencia"
+    ],
+    [
+     "Rayo Vallecano",
+     "Athletic Club"
     ],
     [
      "Getafe",
@@ -6131,60 +6035,6 @@
    ],
    "proximos": [
     {
-     "fecha": "2026-11-20",
-     "local": "Athletic Club",
-     "visitante": "Espanyol",
-     "pendiente": false,
-     "córners": [
-      6.49,
-      3.48
-     ],
-     "tarjetas": [
-      2.17,
-      2.51
-     ],
-     "inicio": "2026-11-20T20:00:00Z",
-     "cuotas": {
-      "c1": 1.48,
-      "cx": 4.38,
-      "c2": 6.23,
-      "co25": 1.68,
-      "cu25": 2.11
-     },
-     "lh": 1.5283,
-     "la": 0.8895,
-     "p1": 0.5179,
-     "px": 0.2676,
-     "p2": 0.2145,
-     "o25": 0.4349,
-     "btts": 0.466,
-     "marcador": "1-0",
-     "p_marcador": 0.1315
-    },
-    {
-     "fecha": "2026-11-20",
-     "local": "Rayo Vallecano",
-     "visitante": "Athletic Club",
-     "pendiente": false,
-     "córners": [
-      5.34,
-      5.08
-     ],
-     "tarjetas": [
-      2.34,
-      2.31
-     ],
-     "lh": 1.2773,
-     "la": 1.1162,
-     "p1": 0.3961,
-     "px": 0.286,
-     "p2": 0.3179,
-     "o25": 0.4286,
-     "btts": 0.49,
-     "marcador": "1-1",
-     "p_marcador": 0.1352
-    },
-    {
      "fecha": "2026-11-21",
      "local": "Sevilla",
      "visitante": "Real Betis",
@@ -6307,6 +6157,29 @@
      "btts": 0.4812,
      "marcador": "1-1",
      "p_marcador": 0.1284
+    },
+    {
+     "fecha": "2026-11-21",
+     "local": "Rayo Vallecano",
+     "visitante": "Athletic Club",
+     "pendiente": false,
+     "córners": [
+      5.34,
+      5.08
+     ],
+     "tarjetas": [
+      2.34,
+      2.31
+     ],
+     "lh": 1.2773,
+     "la": 1.1162,
+     "p1": 0.3961,
+     "px": 0.286,
+     "p2": 0.3179,
+     "o25": 0.4286,
+     "btts": 0.49,
+     "marcador": "1-1",
+     "p_marcador": 0.1352
     },
     {
      "fecha": "2026-11-22",
@@ -6899,6 +6772,29 @@
      "btts": 0.5662,
      "marcador": "1-1",
      "p_marcador": 0.122
+    },
+    {
+     "fecha": "2026-12-06",
+     "local": "Atlético de Madrid",
+     "visitante": "Real Betis",
+     "pendiente": false,
+     "córners": [
+      6.49,
+      3.77
+     ],
+     "tarjetas": [
+      2.26,
+      1.97
+     ],
+     "lh": 1.9411,
+     "la": 1.0707,
+     "p1": 0.5723,
+     "px": 0.2265,
+     "p2": 0.2012,
+     "o25": 0.5795,
+     "btts": 0.5669,
+     "marcador": "1-1",
+     "p_marcador": 0.1062
     }
    ],
    "validacion": {
@@ -7166,70 +7062,6 @@
      }
     ],
     "partidos": [
-     {
-      "fecha": "2026-11-20",
-      "local": "Bayern Múnich",
-      "visitante": "FC Köln",
-      "inicio": "2026-11-20T19:30:00Z",
-      "mercados": [
-       {
-        "mercado": "1",
-        "etiqueta": "Gana Bayern Múnich",
-        "prob": 0.8935,
-        "cuota": 1.07,
-        "ve": -0.044,
-        "prob_mercado": 0.8815
-       },
-       {
-        "mercado": "X",
-        "etiqueta": "Empate",
-        "prob": 0.0715,
-        "cuota": 12.63,
-        "ve": -0.097,
-        "prob_mercado": 0.0747
-       },
-       {
-        "mercado": "2",
-        "etiqueta": "Gana FC Köln",
-        "prob": 0.0349,
-        "cuota": 21.5,
-        "ve": -0.2497,
-        "prob_mercado": 0.0439
-       },
-       {
-        "mercado": "X2",
-        "etiqueta": "FC Köln o empate",
-        "prob": 0.1064,
-        "cuota": 7.96,
-        "ve": -0.1535,
-        "prob_mercado": 0.1185
-       },
-       {
-        "mercado": "12",
-        "etiqueta": "No hay empate",
-        "prob": 0.9284,
-        "cuota": 1.02,
-        "ve": -0.0537,
-        "prob_mercado": 0.9253
-       },
-       {
-        "mercado": "o25",
-        "etiqueta": "Más de 2.5 goles",
-        "prob": 0.8515,
-        "cuota": 1.13,
-        "ve": -0.0378,
-        "prob_mercado": 0.8328
-       },
-       {
-        "mercado": "u25",
-        "etiqueta": "Menos de 2.5 goles",
-        "prob": 0.1485,
-        "cuota": 5.63,
-        "ve": -0.1639,
-        "prob_mercado": 0.1672
-       }
-      ]
-     },
      {
       "fecha": "2026-11-21",
       "local": "Borussia Mönchengladbach",
@@ -9234,37 +9066,6 @@
    ],
    "proximos": [
     {
-     "fecha": "2026-11-20",
-     "local": "Bayern Múnich",
-     "visitante": "FC Köln",
-     "pendiente": false,
-     "córners": [
-      7.55,
-      3.41
-     ],
-     "tarjetas": [
-      1.82,
-      2.05
-     ],
-     "inicio": "2026-11-20T19:30:00Z",
-     "cuotas": {
-      "c1": 1.07,
-      "cx": 12.63,
-      "c2": 21.5,
-      "co25": 1.13,
-      "cu25": 5.63
-     },
-     "lh": 3.9257,
-     "la": 0.8162,
-     "p1": 0.8935,
-     "px": 0.0715,
-     "p2": 0.0349,
-     "o25": 0.8515,
-     "btts": 0.5481,
-     "marcador": "3-0",
-     "p_marcador": 0.0882
-    },
-    {
      "fecha": "2026-11-21",
      "local": "Borussia Mönchengladbach",
      "visitante": "Borussia Dortmund",
@@ -9994,6 +9795,29 @@
      "btts": 0.5489,
      "marcador": "1-1",
      "p_marcador": 0.1288
+    },
+    {
+     "fecha": "2026-12-12",
+     "local": "Borussia Dortmund",
+     "visitante": "Augsburg",
+     "pendiente": false,
+     "córners": [
+      6.23,
+      3.74
+     ],
+     "tarjetas": [
+      1.8,
+      2.06
+     ],
+     "lh": 2.2866,
+     "la": 0.9937,
+     "p1": 0.6602,
+     "px": 0.1935,
+     "p2": 0.1463,
+     "o25": 0.6366,
+     "btts": 0.5696,
+     "marcador": "2-0",
+     "p_marcador": 0.0983
     }
    ],
    "validacion": {
@@ -13554,18 +13378,6 @@
       "prob_mercado": 0.6294
      },
      {
-      "fecha": "2026-11-20",
-      "local": "Troyes",
-      "visitante": "Le Havre",
-      "inicio": "2026-11-20T19:45:00Z",
-      "mercado": "X2",
-      "etiqueta": "Le Havre o empate",
-      "prob": 0.6484,
-      "cuota": 1.65,
-      "ve": 0.0674,
-      "prob_mercado": 0.5698
-     },
-     {
       "fecha": "2026-11-21",
       "local": "Strasbourg",
       "visitante": "Brest",
@@ -13626,18 +13438,6 @@
       "cuota": 2.85,
       "ve": 0.1808,
       "prob_mercado": 0.3275
-     },
-     {
-      "fecha": "2026-11-20",
-      "local": "Troyes",
-      "visitante": "Le Havre",
-      "inicio": "2026-11-20T19:45:00Z",
-      "mercado": "2",
-      "etiqueta": "Gana Le Havre",
-      "prob": 0.3667,
-      "cuota": 3.2,
-      "ve": 0.1734,
-      "prob_mercado": 0.2931
      },
      {
       "fecha": "2026-11-21",
@@ -13701,78 +13501,6 @@
      }
     ],
     "partidos": [
-     {
-      "fecha": "2026-11-20",
-      "local": "Troyes",
-      "visitante": "Le Havre",
-      "inicio": "2026-11-20T19:45:00Z",
-      "mercados": [
-       {
-        "mercado": "1",
-        "etiqueta": "Gana Troyes",
-        "prob": 0.3516,
-        "cuota": 2.18,
-        "ve": -0.2335,
-        "prob_mercado": 0.4302
-       },
-       {
-        "mercado": "X",
-        "etiqueta": "Empate",
-        "prob": 0.2817,
-        "cuota": 3.39,
-        "ve": -0.045,
-        "prob_mercado": 0.2767
-       },
-       {
-        "mercado": "2",
-        "etiqueta": "Gana Le Havre",
-        "prob": 0.3667,
-        "cuota": 3.2,
-        "ve": 0.1734,
-        "prob_mercado": 0.2931
-       },
-       {
-        "mercado": "1X",
-        "etiqueta": "Troyes o empate",
-        "prob": 0.6333,
-        "cuota": 1.33,
-        "ve": -0.1597,
-        "prob_mercado": 0.7069
-       },
-       {
-        "mercado": "X2",
-        "etiqueta": "Le Havre o empate",
-        "prob": 0.6484,
-        "cuota": 1.65,
-        "ve": 0.0674,
-        "prob_mercado": 0.5698
-       },
-       {
-        "mercado": "12",
-        "etiqueta": "No hay empate",
-        "prob": 0.7183,
-        "cuota": 1.3,
-        "ve": -0.0686,
-        "prob_mercado": 0.7233
-       },
-       {
-        "mercado": "o25",
-        "etiqueta": "Más de 2.5 goles",
-        "prob": 0.4462,
-        "cuota": 1.85,
-        "ve": -0.1745,
-        "prob_mercado": 0.504
-       },
-       {
-        "mercado": "u25",
-        "etiqueta": "Menos de 2.5 goles",
-        "prob": 0.5538,
-        "cuota": 1.88,
-        "ve": 0.0411,
-        "prob_mercado": 0.496
-       }
-      ]
-     },
      {
       "fecha": "2026-11-21",
       "local": "Monaco",
@@ -15741,37 +15469,6 @@
    ],
    "proximos": [
     {
-     "fecha": "2026-11-20",
-     "local": "Troyes",
-     "visitante": "Le Havre",
-     "pendiente": false,
-     "córners": [
-      5.56,
-      3.55
-     ],
-     "tarjetas": [
-      1.81,
-      2.06
-     ],
-     "inicio": "2026-11-20T19:45:00Z",
-     "cuotas": {
-      "c1": 2.18,
-      "cx": 3.39,
-      "c2": 3.2,
-      "co25": 1.85,
-      "cu25": 1.88
-     },
-     "lh": 1.215,
-     "la": 1.2464,
-     "p1": 0.3516,
-     "px": 0.2817,
-     "p2": 0.3667,
-     "o25": 0.4462,
-     "btts": 0.5057,
-     "marcador": "1-1",
-     "p_marcador": 0.1338
-    },
-    {
      "fecha": "2026-11-21",
      "local": "Monaco",
      "visitante": "Auxerre",
@@ -16501,6 +16198,29 @@
      "btts": 0.5241,
      "marcador": "1-1",
      "p_marcador": 0.1276
+    },
+    {
+     "fecha": "2026-12-12",
+     "local": "Le Havre",
+     "visitante": "Le Mans",
+     "pendiente": false,
+     "córners": [
+      5.2,
+      3.86
+     ],
+     "tarjetas": [
+      1.76,
+      2.14
+     ],
+     "lh": 1.4366,
+     "la": 1.2537,
+     "p1": 0.4091,
+     "px": 0.2662,
+     "p2": 0.3247,
+     "o25": 0.504,
+     "btts": 0.549,
+     "marcador": "1-1",
+     "p_marcador": 0.1266
     }
    ],
    "validacion": {
