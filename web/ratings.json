@@ -111,7 +111,7 @@
   "desde": "2025-11-08",
   "hasta": "2026-11-08"
  },
- "generado": "2026-11-22T15:07:21+00:00",
+ "generado": "2026-11-23T00:58:48+00:00",
  "modelo": "Dixon-Coles con decaimiento temporal",
  "parametros": {
   "xi": 0.0019,
@@ -236,191 +236,9 @@
     }
    },
    "selecciones": {
-    "seguras": [
-     {
-      "fecha": "2026-11-22",
-      "local": "Liverpool",
-      "visitante": "Manchester United",
-      "inicio": "2026-11-22T16:30:00Z",
-      "mercado": "o25",
-      "etiqueta": "Más de 2.5 goles",
-      "prob": 0.5905,
-      "cuota": 1.46,
-      "ve": -0.1379,
-      "prob_mercado": 0.6404
-     }
-    ],
-    "valor": [
-     {
-      "fecha": "2026-11-22",
-      "local": "Hull",
-      "visitante": "Brighton",
-      "inicio": "2026-11-22T14:00:00Z",
-      "mercado": "1",
-      "etiqueta": "Gana Hull",
-      "prob": 0.264,
-      "cuota": 6.22,
-      "ve": 0.6421,
-      "prob_mercado": 0.1512
-     },
-     {
-      "fecha": "2026-11-22",
-      "local": "Liverpool",
-      "visitante": "Manchester United",
-      "inicio": "2026-11-22T16:30:00Z",
-      "mercado": "u25",
-      "etiqueta": "Menos de 2.5 goles",
-      "prob": 0.4095,
-      "cuota": 2.6,
-      "ve": 0.0647,
-      "prob_mercado": 0.3596
-     }
-    ],
+    "seguras": [],
+    "valor": [],
     "partidos": [
-     {
-      "fecha": "2026-11-22",
-      "local": "Liverpool",
-      "visitante": "Manchester United",
-      "inicio": "2026-11-22T16:30:00Z",
-      "mercados": [
-       {
-        "mercado": "1",
-        "etiqueta": "Gana Liverpool",
-        "prob": 0.4984,
-        "cuota": 1.74,
-        "ve": -0.1328,
-        "prob_mercado": 0.5415
-       },
-       {
-        "mercado": "X",
-        "etiqueta": "Empate",
-        "prob": 0.2438,
-        "cuota": 4.14,
-        "ve": 0.0093,
-        "prob_mercado": 0.2276
-       },
-       {
-        "mercado": "2",
-        "etiqueta": "Gana Manchester United",
-        "prob": 0.2579,
-        "cuota": 4.08,
-        "ve": 0.0522,
-        "prob_mercado": 0.2309
-       },
-       {
-        "mercado": "1X",
-        "etiqueta": "Liverpool o empate",
-        "prob": 0.7422,
-        "cuota": 1.23,
-        "ve": -0.0907,
-        "prob_mercado": 0.7691
-       },
-       {
-        "mercado": "X2",
-        "etiqueta": "Manchester United o empate",
-        "prob": 0.5017,
-        "cuota": 2.05,
-        "ve": 0.0309,
-        "prob_mercado": 0.4585
-       },
-       {
-        "mercado": "12",
-        "etiqueta": "No hay empate",
-        "prob": 0.7563,
-        "cuota": 1.22,
-        "ve": -0.0775,
-        "prob_mercado": 0.7724
-       },
-       {
-        "mercado": "o25",
-        "etiqueta": "Más de 2.5 goles",
-        "prob": 0.5905,
-        "cuota": 1.46,
-        "ve": -0.1379,
-        "prob_mercado": 0.6404
-       },
-       {
-        "mercado": "u25",
-        "etiqueta": "Menos de 2.5 goles",
-        "prob": 0.4095,
-        "cuota": 2.6,
-        "ve": 0.0647,
-        "prob_mercado": 0.3596
-       }
-      ]
-     },
-     {
-      "fecha": "2026-11-22",
-      "local": "Hull",
-      "visitante": "Brighton",
-      "inicio": "2026-11-22T14:00:00Z",
-      "mercados": [
-       {
-        "mercado": "1",
-        "etiqueta": "Gana Hull",
-        "prob": 0.264,
-        "cuota": 6.22,
-        "ve": 0.6421,
-        "prob_mercado": 0.1512
-       },
-       {
-        "mercado": "X",
-        "etiqueta": "Empate",
-        "prob": 0.2855,
-        "cuota": 4.41,
-        "ve": 0.2591,
-        "prob_mercado": 0.2133
-       },
-       {
-        "mercado": "2",
-        "etiqueta": "Gana Brighton",
-        "prob": 0.4506,
-        "cuota": 1.48,
-        "ve": -0.3331,
-        "prob_mercado": 0.6355
-       },
-       {
-        "mercado": "1X",
-        "etiqueta": "Hull o empate",
-        "prob": 0.5495,
-        "cuota": 2.58,
-        "ve": 0.418,
-        "prob_mercado": 0.3645
-       },
-       {
-        "mercado": "X2",
-        "etiqueta": "Brighton o empate",
-        "prob": 0.7361,
-        "cuota": 1.11,
-        "ve": -0.1843,
-        "prob_mercado": 0.8488
-       },
-       {
-        "mercado": "12",
-        "etiqueta": "No hay empate",
-        "prob": 0.7146,
-        "cuota": 1.2,
-        "ve": -0.1457,
-        "prob_mercado": 0.7867
-       },
-       {
-        "mercado": "o25",
-        "etiqueta": "Más de 2.5 goles",
-        "prob": 0.4331,
-        "cuota": 1.64,
-        "ve": -0.2897,
-        "prob_mercado": 0.5718
-       },
-       {
-        "mercado": "u25",
-        "etiqueta": "Menos de 2.5 goles",
-        "prob": 0.5669,
-        "cuota": 2.19,
-        "ve": 0.2415,
-        "prob_mercado": 0.4282
-       }
-      ]
-     },
      {
       "fecha": "2026-11-23",
       "local": "Brentford",
@@ -2110,70 +1928,6 @@
    ],
    "proximos": [
     {
-     "fecha": "2026-11-22",
-     "local": "Liverpool",
-     "visitante": "Manchester United",
-     "pendiente": false,
-     "córners": [
-      5.82,
-      4.25
-     ],
-     "tarjetas": [
-      1.76,
-      2.3
-     ],
-     "inicio": "2026-11-22T16:30:00Z",
-     "arbitro": "S Barrott",
-     "cuotas": {
-      "c1": 1.74,
-      "cx": 4.14,
-      "c2": 4.08,
-      "co25": 1.46,
-      "cu25": 2.6
-     },
-     "lh": 1.8101,
-     "la": 1.2517,
-     "p1": 0.4984,
-     "px": 0.2438,
-     "p2": 0.2579,
-     "o25": 0.5905,
-     "btts": 0.6038,
-     "marcador": "1-1",
-     "p_marcador": 0.1127
-    },
-    {
-     "fecha": "2026-11-22",
-     "local": "Hull",
-     "visitante": "Brighton",
-     "pendiente": false,
-     "córners": [
-      4.89,
-      5.0
-     ],
-     "tarjetas": [
-      1.88,
-      2.15
-     ],
-     "inicio": "2026-11-22T14:00:00Z",
-     "arbitro": "P Bankes",
-     "cuotas": {
-      "c1": 6.22,
-      "cx": 4.41,
-      "c2": 1.48,
-      "co25": 1.64,
-      "cu25": 2.19
-     },
-     "lh": 1.0114,
-     "la": 1.3994,
-     "p1": 0.264,
-     "px": 0.2855,
-     "p2": 0.4506,
-     "o25": 0.4331,
-     "btts": 0.4873,
-     "marcador": "1-1",
-     "p_marcador": 0.135
-    },
-    {
      "fecha": "2026-11-23",
      "local": "Brentford",
      "visitante": "Everton",
@@ -2825,6 +2579,52 @@
      "btts": 0.6055,
      "marcador": "1-1",
      "p_marcador": 0.1185
+    },
+    {
+     "fecha": "2026-12-05",
+     "local": "Aston Villa",
+     "visitante": "Crystal Palace",
+     "pendiente": false,
+     "córners": [
+      5.88,
+      4.03
+     ],
+     "tarjetas": [
+      1.66,
+      2.45
+     ],
+     "lh": 1.8483,
+     "la": 1.1674,
+     "p1": 0.5263,
+     "px": 0.2409,
+     "p2": 0.2328,
+     "o25": 0.5803,
+     "btts": 0.587,
+     "marcador": "1-1",
+     "p_marcador": 0.1124
+    },
+    {
+     "fecha": "2026-12-05",
+     "local": "Everton",
+     "visitante": "Fulham",
+     "pendiente": false,
+     "córners": [
+      4.86,
+      5.08
+     ],
+     "tarjetas": [
+      1.67,
+      2.01
+     ],
+     "lh": 1.2771,
+     "la": 0.9769,
+     "p1": 0.4247,
+     "px": 0.2995,
+     "p2": 0.2758,
+     "o25": 0.3917,
+     "btts": 0.4579,
+     "marcador": "1-1",
+     "p_marcador": 0.1392
     }
    ],
    "validacion": {
@@ -2910,18 +2710,6 @@
    "selecciones": {
     "seguras": [
      {
-      "fecha": "2026-11-22",
-      "local": "Getafe",
-      "visitante": "Atlético de Madrid",
-      "inicio": "2026-11-22T20:00:00Z",
-      "mercado": "u25",
-      "etiqueta": "Menos de 2.5 goles",
-      "prob": 0.6978,
-      "cuota": 1.77,
-      "ve": 0.2351,
-      "prob_mercado": 0.5267
-     },
-     {
       "fecha": "2026-11-23",
       "local": "Levante",
       "visitante": "Elche",
@@ -2932,347 +2720,10 @@
       "cuota": 1.66,
       "ve": 0.008,
       "prob_mercado": 0.562
-     },
-     {
-      "fecha": "2026-11-22",
-      "local": "Osasuna",
-      "visitante": "Málaga",
-      "inicio": "2026-11-22T17:30:00Z",
-      "mercado": "1",
-      "etiqueta": "Gana Osasuna",
-      "prob": 0.6122,
-      "cuota": 1.8,
-      "ve": 0.102,
-      "prob_mercado": 0.5206
      }
     ],
-    "valor": [
-     {
-      "fecha": "2026-11-22",
-      "local": "Getafe",
-      "visitante": "Atlético de Madrid",
-      "inicio": "2026-11-22T20:00:00Z",
-      "mercado": "1",
-      "etiqueta": "Gana Getafe",
-      "prob": 0.2374,
-      "cuota": 5.87,
-      "ve": 0.3935,
-      "prob_mercado": 0.1591
-     },
-     {
-      "fecha": "2026-11-22",
-      "local": "Barcelona",
-      "visitante": "Villarreal",
-      "inicio": "2026-11-22T13:00:00Z",
-      "mercado": "u25",
-      "etiqueta": "Menos de 2.5 goles",
-      "prob": 0.2595,
-      "cuota": 4.71,
-      "ve": 0.2222,
-      "prob_mercado": 0.199
-     },
-     {
-      "fecha": "2026-11-22",
-      "local": "Osasuna",
-      "visitante": "Málaga",
-      "inicio": "2026-11-22T17:30:00Z",
-      "mercado": "1",
-      "etiqueta": "Gana Osasuna",
-      "prob": 0.6122,
-      "cuota": 1.8,
-      "ve": 0.102,
-      "prob_mercado": 0.5206
-     }
-    ],
+    "valor": [],
     "partidos": [
-     {
-      "fecha": "2026-11-22",
-      "local": "Getafe",
-      "visitante": "Atlético de Madrid",
-      "inicio": "2026-11-22T20:00:00Z",
-      "mercados": [
-       {
-        "mercado": "1",
-        "etiqueta": "Gana Getafe",
-        "prob": 0.2374,
-        "cuota": 5.87,
-        "ve": 0.3935,
-        "prob_mercado": 0.1591
-       },
-       {
-        "mercado": "X",
-        "etiqueta": "Empate",
-        "prob": 0.3174,
-        "cuota": 3.86,
-        "ve": 0.2252,
-        "prob_mercado": 0.242
-       },
-       {
-        "mercado": "2",
-        "etiqueta": "Gana Atlético de Madrid",
-        "prob": 0.4451,
-        "cuota": 1.56,
-        "ve": -0.3056,
-        "prob_mercado": 0.5988
-       },
-       {
-        "mercado": "1X",
-        "etiqueta": "Getafe o empate",
-        "prob": 0.5548,
-        "cuota": 2.33,
-        "ve": 0.292,
-        "prob_mercado": 0.4012
-       },
-       {
-        "mercado": "X2",
-        "etiqueta": "Atlético de Madrid o empate",
-        "prob": 0.7625,
-        "cuota": 1.11,
-        "ve": -0.1529,
-        "prob_mercado": 0.8409
-       },
-       {
-        "mercado": "12",
-        "etiqueta": "No hay empate",
-        "prob": 0.6825,
-        "cuota": 1.23,
-        "ve": -0.1588,
-        "prob_mercado": 0.758
-       },
-       {
-        "mercado": "o25",
-        "etiqueta": "Más de 2.5 goles",
-        "prob": 0.3022,
-        "cuota": 1.97,
-        "ve": -0.4047,
-        "prob_mercado": 0.4733
-       },
-       {
-        "mercado": "u25",
-        "etiqueta": "Menos de 2.5 goles",
-        "prob": 0.6978,
-        "cuota": 1.77,
-        "ve": 0.2351,
-        "prob_mercado": 0.5267
-       }
-      ]
-     },
-     {
-      "fecha": "2026-11-22",
-      "local": "Osasuna",
-      "visitante": "Málaga",
-      "inicio": "2026-11-22T17:30:00Z",
-      "mercados": [
-       {
-        "mercado": "1",
-        "etiqueta": "Gana Osasuna",
-        "prob": 0.6122,
-        "cuota": 1.8,
-        "ve": 0.102,
-        "prob_mercado": 0.5206
-       },
-       {
-        "mercado": "X",
-        "etiqueta": "Empate",
-        "prob": 0.2283,
-        "cuota": 3.53,
-        "ve": -0.1941,
-        "prob_mercado": 0.2655
-       },
-       {
-        "mercado": "2",
-        "etiqueta": "Gana Málaga",
-        "prob": 0.1594,
-        "cuota": 4.38,
-        "ve": -0.3018,
-        "prob_mercado": 0.2139
-       },
-       {
-        "mercado": "1X",
-        "etiqueta": "Osasuna o empate",
-        "prob": 0.8405,
-        "cuota": 1.19,
-        "ve": 0.002,
-        "prob_mercado": 0.7861
-       },
-       {
-        "mercado": "X2",
-        "etiqueta": "Málaga o empate",
-        "prob": 0.3877,
-        "cuota": 1.95,
-        "ve": -0.2422,
-        "prob_mercado": 0.4794
-       },
-       {
-        "mercado": "12",
-        "etiqueta": "No hay empate",
-        "prob": 0.7716,
-        "cuota": 1.28,
-        "ve": -0.0156,
-        "prob_mercado": 0.7345
-       },
-       {
-        "mercado": "o25",
-        "etiqueta": "Más de 2.5 goles",
-        "prob": 0.5083,
-        "cuota": 1.95,
-        "ve": -0.0088,
-        "prob_mercado": 0.4772
-       },
-       {
-        "mercado": "u25",
-        "etiqueta": "Menos de 2.5 goles",
-        "prob": 0.4917,
-        "cuota": 1.78,
-        "ve": -0.1248,
-        "prob_mercado": 0.5228
-       }
-      ]
-     },
-     {
-      "fecha": "2026-11-22",
-      "local": "Barcelona",
-      "visitante": "Villarreal",
-      "inicio": "2026-11-22T13:00:00Z",
-      "mercados": [
-       {
-        "mercado": "1",
-        "etiqueta": "Gana Barcelona",
-        "prob": 0.733,
-        "cuota": 1.2,
-        "ve": -0.1204,
-        "prob_mercado": 0.7813
-       },
-       {
-        "mercado": "X",
-        "etiqueta": "Empate",
-        "prob": 0.1533,
-        "cuota": 7.34,
-        "ve": 0.1252,
-        "prob_mercado": 0.1277
-       },
-       {
-        "mercado": "2",
-        "etiqueta": "Gana Villarreal",
-        "prob": 0.1137,
-        "cuota": 10.31,
-        "ve": 0.1722,
-        "prob_mercado": 0.0909
-       },
-       {
-        "mercado": "1X",
-        "etiqueta": "Barcelona o empate",
-        "prob": 0.8863,
-        "cuota": 1.03,
-        "ve": -0.0859,
-        "prob_mercado": 0.9091
-       },
-       {
-        "mercado": "X2",
-        "etiqueta": "Villarreal o empate",
-        "prob": 0.267,
-        "cuota": 4.29,
-        "ve": 0.1448,
-        "prob_mercado": 0.2187
-       },
-       {
-        "mercado": "12",
-        "etiqueta": "No hay empate",
-        "prob": 0.8467,
-        "cuota": 1.07,
-        "ve": -0.0899,
-        "prob_mercado": 0.8723
-       },
-       {
-        "mercado": "o25",
-        "etiqueta": "Más de 2.5 goles",
-        "prob": 0.7405,
-        "cuota": 1.17,
-        "ve": -0.1336,
-        "prob_mercado": 0.801
-       },
-       {
-        "mercado": "u25",
-        "etiqueta": "Menos de 2.5 goles",
-        "prob": 0.2595,
-        "cuota": 4.71,
-        "ve": 0.2222,
-        "prob_mercado": 0.199
-       }
-      ]
-     },
-     {
-      "fecha": "2026-11-22",
-      "local": "Racing de Santander",
-      "visitante": "Real Sociedad",
-      "inicio": "2026-11-22T15:15:00Z",
-      "mercados": [
-       {
-        "mercado": "1",
-        "etiqueta": "Gana Racing de Santander",
-        "prob": 0.3299,
-        "cuota": 3.17,
-        "ve": 0.0458,
-        "prob_mercado": 0.2959
-       },
-       {
-        "mercado": "X",
-        "etiqueta": "Empate",
-        "prob": 0.2101,
-        "cuota": 4.03,
-        "ve": -0.1533,
-        "prob_mercado": 0.2328
-       },
-       {
-        "mercado": "2",
-        "etiqueta": "Gana Real Sociedad",
-        "prob": 0.46,
-        "cuota": 1.99,
-        "ve": -0.0846,
-        "prob_mercado": 0.4714
-       },
-       {
-        "mercado": "1X",
-        "etiqueta": "Racing de Santander o empate",
-        "prob": 0.54,
-        "cuota": 1.77,
-        "ve": -0.0419,
-        "prob_mercado": 0.5286
-       },
-       {
-        "mercado": "X2",
-        "etiqueta": "Real Sociedad o empate",
-        "prob": 0.6701,
-        "cuota": 1.33,
-        "ve": -0.1073,
-        "prob_mercado": 0.7041
-       },
-       {
-        "mercado": "12",
-        "etiqueta": "No hay empate",
-        "prob": 0.7899,
-        "cuota": 1.22,
-        "ve": -0.0343,
-        "prob_mercado": 0.7672
-       },
-       {
-        "mercado": "o25",
-        "etiqueta": "Más de 2.5 goles",
-        "prob": 0.7619,
-        "cuota": 1.32,
-        "ve": 0.0057,
-        "prob_mercado": 0.7073
-       },
-       {
-        "mercado": "u25",
-        "etiqueta": "Menos de 2.5 goles",
-        "prob": 0.2381,
-        "cuota": 3.19,
-        "ve": -0.2405,
-        "prob_mercado": 0.2927
-       }
-      ]
-     },
      {
       "fecha": "2026-11-23",
       "local": "Levante",
@@ -3346,82 +2797,7 @@
       ]
      }
     ],
-    "combinadas": [
-     {
-      "prob": 0.4237,
-      "cuota": 2.94,
-      "ve": 0.2449,
-      "patas": [
-       {
-        "fecha": "2026-11-22",
-        "local": "Getafe",
-        "visitante": "Atlético de Madrid",
-        "inicio": "2026-11-22T20:00:00Z",
-        "mercado": "u25",
-        "etiqueta": "Menos de 2.5 goles",
-        "prob": 0.6978,
-        "cuota": 1.77,
-        "ve": 0.2351,
-        "prob_mercado": 0.5267
-       },
-       {
-        "fecha": "2026-11-23",
-        "local": "Levante",
-        "visitante": "Elche",
-        "inicio": "2026-11-23T20:00:00Z",
-        "mercado": "o25",
-        "etiqueta": "Más de 2.5 goles",
-        "prob": 0.6072,
-        "cuota": 1.66,
-        "ve": 0.008,
-        "prob_mercado": 0.562
-       }
-      ]
-     },
-     {
-      "prob": 0.2594,
-      "cuota": 5.29,
-      "ve": 0.3719,
-      "patas": [
-       {
-        "fecha": "2026-11-22",
-        "local": "Getafe",
-        "visitante": "Atlético de Madrid",
-        "inicio": "2026-11-22T20:00:00Z",
-        "mercado": "u25",
-        "etiqueta": "Menos de 2.5 goles",
-        "prob": 0.6978,
-        "cuota": 1.77,
-        "ve": 0.2351,
-        "prob_mercado": 0.5267
-       },
-       {
-        "fecha": "2026-11-23",
-        "local": "Levante",
-        "visitante": "Elche",
-        "inicio": "2026-11-23T20:00:00Z",
-        "mercado": "o25",
-        "etiqueta": "Más de 2.5 goles",
-        "prob": 0.6072,
-        "cuota": 1.66,
-        "ve": 0.008,
-        "prob_mercado": 0.562
-       },
-       {
-        "fecha": "2026-11-22",
-        "local": "Osasuna",
-        "visitante": "Málaga",
-        "inicio": "2026-11-22T17:30:00Z",
-        "mercado": "1",
-        "etiqueta": "Gana Osasuna",
-        "prob": 0.6122,
-        "cuota": 1.8,
-        "ve": 0.102,
-        "prob_mercado": 0.5206
-       }
-      ]
-     }
-    ],
+    "combinadas": [],
     "historial": {
      "seguras": {
       "apuestas": 288,
@@ -3951,12 +3327,12 @@
      "Real Sociedad"
     ],
     [
-     "Rayo Vallecano",
-     "Athletic Club"
-    ],
-    [
      "Levante",
      "Elche"
+    ],
+    [
+     "Rayo Vallecano",
+     "Athletic Club"
     ],
     [
      "Málaga",
@@ -4961,153 +4337,6 @@
    ],
    "proximos": [
     {
-     "fecha": "2026-11-22",
-     "local": "Getafe",
-     "visitante": "Atlético de Madrid",
-     "pendiente": false,
-     "córners": [
-      4.22,
-      4.78
-     ],
-     "tarjetas": [
-      2.4,
-      2.51
-     ],
-     "inicio": "2026-11-22T20:00:00Z",
-     "cuotas": {
-      "c1": 5.87,
-      "cx": 3.86,
-      "c2": 1.56,
-      "co25": 1.97,
-      "cu25": 1.77
-     },
-     "lh": 0.7644,
-     "la": 1.1575,
-     "p1": 0.2374,
-     "px": 0.3174,
-     "p2": 0.4451,
-     "o25": 0.3022,
-     "btts": 0.3714,
-     "marcador": "0-1",
-     "p_marcador": 0.1644
-    },
-    {
-     "fecha": "2026-11-22",
-     "local": "Osasuna",
-     "visitante": "Málaga",
-     "pendiente": false,
-     "córners": [
-      5.0,
-      4.36
-     ],
-     "tarjetas": [
-      2.29,
-      2.39
-     ],
-     "inicio": "2026-11-22T17:30:00Z",
-     "cuotas": {
-      "c1": 1.8,
-      "cx": 3.53,
-      "c2": 4.38,
-      "co25": 1.95,
-      "cu25": 1.78
-     },
-     "lh": 1.8678,
-     "la": 0.8403,
-     "p1": 0.6122,
-     "px": 0.2283,
-     "p2": 0.1594,
-     "o25": 0.5083,
-     "btts": 0.4847,
-     "marcador": "1-0",
-     "p_marcador": 0.1205
-    },
-    {
-     "fecha": "2026-11-22",
-     "local": "Barcelona",
-     "visitante": "Villarreal",
-     "pendiente": false,
-     "córners": [
-      6.93,
-      3.9
-     ],
-     "tarjetas": [
-      1.94,
-      2.39
-     ],
-     "inicio": "2026-11-22T13:00:00Z",
-     "cuotas": {
-      "c1": 1.2,
-      "cx": 7.34,
-      "c2": 10.31,
-      "co25": 1.17,
-      "cu25": 4.71
-     },
-     "lh": 2.8001,
-     "la": 1.0591,
-     "p1": 0.733,
-     "px": 0.1533,
-     "p2": 0.1137,
-     "o25": 0.7405,
-     "btts": 0.6159,
-     "marcador": "2-1",
-     "p_marcador": 0.0876
-    },
-    {
-     "fecha": "2026-11-22",
-     "local": "Racing de Santander",
-     "visitante": "Real Sociedad",
-     "pendiente": false,
-     "córners": [
-      5.27,
-      5.81
-     ],
-     "tarjetas": [
-      2.35,
-      2.6
-     ],
-     "inicio": "2026-11-22T15:15:00Z",
-     "cuotas": {
-      "c1": 3.17,
-      "cx": 4.03,
-      "c2": 1.99,
-      "co25": 1.32,
-      "cu25": 3.19
-     },
-     "lh": 1.8307,
-     "la": 2.1694,
-     "p1": 0.3299,
-     "px": 0.2101,
-     "p2": 0.46,
-     "o25": 0.7619,
-     "btts": 0.7466,
-     "marcador": "1-2",
-     "p_marcador": 0.0789
-    },
-    {
-     "fecha": "2026-11-22",
-     "local": "Rayo Vallecano",
-     "visitante": "Athletic Club",
-     "pendiente": false,
-     "córners": [
-      5.34,
-      5.08
-     ],
-     "tarjetas": [
-      2.34,
-      2.31
-     ],
-     "lh": 1.2773,
-     "la": 1.1162,
-     "p1": 0.3961,
-     "px": 0.286,
-     "p2": 0.3179,
-     "o25": 0.4286,
-     "btts": 0.49,
-     "marcador": "1-1",
-     "p_marcador": 0.1352
-    },
-    {
      "fecha": "2026-11-23",
      "local": "Levante",
      "visitante": "Elche",
@@ -5137,6 +4366,29 @@
      "btts": 0.6191,
      "marcador": "1-1",
      "p_marcador": 0.1083
+    },
+    {
+     "fecha": "2026-11-23",
+     "local": "Rayo Vallecano",
+     "visitante": "Athletic Club",
+     "pendiente": false,
+     "córners": [
+      5.34,
+      5.08
+     ],
+     "tarjetas": [
+      2.34,
+      2.31
+     ],
+     "lh": 1.2773,
+     "la": 1.1162,
+     "p1": 0.3961,
+     "px": 0.286,
+     "p2": 0.3179,
+     "o25": 0.4286,
+     "btts": 0.49,
+     "marcador": "1-1",
+     "p_marcador": 0.1352
     },
     {
      "fecha": "2026-11-29",
@@ -5689,6 +4941,98 @@
      "btts": 0.5497,
      "marcador": "1-1",
      "p_marcador": 0.1041
+    },
+    {
+     "fecha": "2026-12-13",
+     "local": "Real Sociedad",
+     "visitante": "Getafe",
+     "pendiente": false,
+     "córners": [
+      6.01,
+      3.71
+     ],
+     "tarjetas": [
+      2.38,
+      3.0
+     ],
+     "lh": 1.3558,
+     "la": 0.8287,
+     "p1": 0.4868,
+     "px": 0.289,
+     "p2": 0.2241,
+     "o25": 0.3731,
+     "btts": 0.4231,
+     "marcador": "1-0",
+     "p_marcador": 0.1477
+    },
+    {
+     "fecha": "2026-12-13",
+     "local": "Levante",
+     "visitante": "Alavés",
+     "pendiente": false,
+     "córners": [
+      4.93,
+      4.52
+     ],
+     "tarjetas": [
+      2.15,
+      2.57
+     ],
+     "lh": 1.6372,
+     "la": 1.227,
+     "p1": 0.4652,
+     "px": 0.2526,
+     "p2": 0.2822,
+     "o25": 0.5457,
+     "btts": 0.5738,
+     "marcador": "1-1",
+     "p_marcador": 0.119
+    },
+    {
+     "fecha": "2026-12-13",
+     "local": "Málaga",
+     "visitante": "Barcelona",
+     "pendiente": false,
+     "córners": [
+      4.76,
+      5.66
+     ],
+     "tarjetas": [
+      2.26,
+      2.05
+     ],
+     "lh": 0.7696,
+     "la": 3.0935,
+     "p1": 0.0591,
+     "px": 0.1138,
+     "p2": 0.8271,
+     "o25": 0.7411,
+     "btts": 0.5144,
+     "marcador": "0-3",
+     "p_marcador": 0.1037
+    },
+    {
+     "fecha": "2026-12-13",
+     "local": "Espanyol",
+     "visitante": "Celta de Vigo",
+     "pendiente": false,
+     "córners": [
+      4.59,
+      3.8
+     ],
+     "tarjetas": [
+      2.4,
+      2.32
+     ],
+     "lh": 1.1005,
+     "la": 1.1137,
+     "p1": 0.3464,
+     "px": 0.3005,
+     "p2": 0.353,
+     "o25": 0.3811,
+     "btts": 0.4534,
+     "marcador": "1-1",
+     "p_marcador": 0.1391
     }
    ],
    "validacion": {
@@ -5783,225 +5127,9 @@
    },
    "arbitros": {},
    "selecciones": {
-    "seguras": [
-     {
-      "fecha": "2026-11-22",
-      "local": "Augsburg",
-      "visitante": "Mainz 05",
-      "inicio": "2026-11-22T14:30:00Z",
-      "mercado": "o25",
-      "etiqueta": "Más de 2.5 goles",
-      "prob": 0.6384,
-      "cuota": 1.4,
-      "ve": -0.1062,
-      "prob_mercado": 0.6675
-     },
-     {
-      "fecha": "2026-11-22",
-      "local": "Werder Bremen",
-      "visitante": "Hamburger SV",
-      "inicio": "2026-11-22T16:30:00Z",
-      "mercado": "o25",
-      "etiqueta": "Más de 2.5 goles",
-      "prob": 0.5191,
-      "cuota": 1.51,
-      "ve": -0.2162,
-      "prob_mercado": 0.6196
-     }
-    ],
-    "valor": [
-     {
-      "fecha": "2026-11-22",
-      "local": "Werder Bremen",
-      "visitante": "Hamburger SV",
-      "inicio": "2026-11-22T16:30:00Z",
-      "mercado": "2",
-      "etiqueta": "Gana Hamburger SV",
-      "prob": 0.2686,
-      "cuota": 4.42,
-      "ve": 0.1872,
-      "prob_mercado": 0.2121
-     }
-    ],
-    "partidos": [
-     {
-      "fecha": "2026-11-22",
-      "local": "Werder Bremen",
-      "visitante": "Hamburger SV",
-      "inicio": "2026-11-22T16:30:00Z",
-      "mercados": [
-       {
-        "mercado": "1",
-        "etiqueta": "Gana Werder Bremen",
-        "prob": 0.4729,
-        "cuota": 1.67,
-        "ve": -0.2103,
-        "prob_mercado": 0.5614
-       },
-       {
-        "mercado": "X",
-        "etiqueta": "Empate",
-        "prob": 0.2585,
-        "cuota": 4.14,
-        "ve": 0.0702,
-        "prob_mercado": 0.2265
-       },
-       {
-        "mercado": "2",
-        "etiqueta": "Gana Hamburger SV",
-        "prob": 0.2686,
-        "cuota": 4.42,
-        "ve": 0.1872,
-        "prob_mercado": 0.2121
-       },
-       {
-        "mercado": "1X",
-        "etiqueta": "Werder Bremen o empate",
-        "prob": 0.7314,
-        "cuota": 1.19,
-        "ve": -0.1296,
-        "prob_mercado": 0.7879
-       },
-       {
-        "mercado": "X2",
-        "etiqueta": "Hamburger SV o empate",
-        "prob": 0.5271,
-        "cuota": 2.14,
-        "ve": 0.1268,
-        "prob_mercado": 0.4386
-       },
-       {
-        "mercado": "12",
-        "etiqueta": "No hay empate",
-        "prob": 0.7415,
-        "cuota": 1.21,
-        "ve": -0.1013,
-        "prob_mercado": 0.7735
-       },
-       {
-        "mercado": "o25",
-        "etiqueta": "Más de 2.5 goles",
-        "prob": 0.5191,
-        "cuota": 1.51,
-        "ve": -0.2162,
-        "prob_mercado": 0.6196
-       },
-       {
-        "mercado": "u25",
-        "etiqueta": "Menos de 2.5 goles",
-        "prob": 0.4809,
-        "cuota": 2.46,
-        "ve": 0.183,
-        "prob_mercado": 0.3804
-       }
-      ]
-     },
-     {
-      "fecha": "2026-11-22",
-      "local": "Augsburg",
-      "visitante": "Mainz 05",
-      "inicio": "2026-11-22T14:30:00Z",
-      "mercados": [
-       {
-        "mercado": "1",
-        "etiqueta": "Gana Augsburg",
-        "prob": 0.3583,
-        "cuota": 2.64,
-        "ve": -0.0541,
-        "prob_mercado": 0.3538
-       },
-       {
-        "mercado": "X",
-        "etiqueta": "Empate",
-        "prob": 0.2394,
-        "cuota": 3.78,
-        "ve": -0.0951,
-        "prob_mercado": 0.2471
-       },
-       {
-        "mercado": "2",
-        "etiqueta": "Gana Mainz 05",
-        "prob": 0.4023,
-        "cuota": 2.34,
-        "ve": -0.0586,
-        "prob_mercado": 0.3991
-       },
-       {
-        "mercado": "1X",
-        "etiqueta": "Augsburg o empate",
-        "prob": 0.5977,
-        "cuota": 1.55,
-        "ve": -0.0709,
-        "prob_mercado": 0.6009
-       },
-       {
-        "mercado": "X2",
-        "etiqueta": "Mainz 05 o empate",
-        "prob": 0.6417,
-        "cuota": 1.45,
-        "ve": -0.0726,
-        "prob_mercado": 0.6462
-       },
-       {
-        "mercado": "12",
-        "etiqueta": "No hay empate",
-        "prob": 0.7606,
-        "cuota": 1.24,
-        "ve": -0.0565,
-        "prob_mercado": 0.7529
-       },
-       {
-        "mercado": "o25",
-        "etiqueta": "Más de 2.5 goles",
-        "prob": 0.6384,
-        "cuota": 1.4,
-        "ve": -0.1062,
-        "prob_mercado": 0.6675
-       },
-       {
-        "mercado": "u25",
-        "etiqueta": "Menos de 2.5 goles",
-        "prob": 0.3616,
-        "cuota": 2.81,
-        "ve": 0.0161,
-        "prob_mercado": 0.3325
-       }
-      ]
-     }
-    ],
-    "combinadas": [
-     {
-      "prob": 0.3314,
-      "cuota": 2.11,
-      "ve": -0.2994,
-      "patas": [
-       {
-        "fecha": "2026-11-22",
-        "local": "Augsburg",
-        "visitante": "Mainz 05",
-        "inicio": "2026-11-22T14:30:00Z",
-        "mercado": "o25",
-        "etiqueta": "Más de 2.5 goles",
-        "prob": 0.6384,
-        "cuota": 1.4,
-        "ve": -0.1062,
-        "prob_mercado": 0.6675
-       },
-       {
-        "fecha": "2026-11-22",
-        "local": "Werder Bremen",
-        "visitante": "Hamburger SV",
-        "inicio": "2026-11-22T16:30:00Z",
-        "mercado": "o25",
-        "etiqueta": "Más de 2.5 goles",
-        "prob": 0.5191,
-        "cuota": 1.51,
-        "ve": -0.2162,
-        "prob_mercado": 0.6196
-       }
-      ]
-     }
-    ],
+    "seguras": [],
+    "valor": [],
+    "combinadas": [],
     "historial": {
      "seguras": {
       "apuestas": 228,
@@ -7353,68 +6481,6 @@
    ],
    "proximos": [
     {
-     "fecha": "2026-11-22",
-     "local": "Werder Bremen",
-     "visitante": "Hamburger SV",
-     "pendiente": false,
-     "córners": [
-      5.87,
-      3.78
-     ],
-     "tarjetas": [
-      2.15,
-      2.06
-     ],
-     "inicio": "2026-11-22T16:30:00Z",
-     "cuotas": {
-      "c1": 1.67,
-      "cx": 4.14,
-      "c2": 4.42,
-      "co25": 1.51,
-      "cu25": 2.46
-     },
-     "lh": 1.6016,
-     "la": 1.1508,
-     "p1": 0.4729,
-     "px": 0.2585,
-     "p2": 0.2686,
-     "o25": 0.5191,
-     "btts": 0.5511,
-     "marcador": "1-1",
-     "p_marcador": 0.1228
-    },
-    {
-     "fecha": "2026-11-22",
-     "local": "Augsburg",
-     "visitante": "Mainz 05",
-     "pendiente": false,
-     "córners": [
-      5.24,
-      4.74
-     ],
-     "tarjetas": [
-      2.05,
-      2.12
-     ],
-     "inicio": "2026-11-22T14:30:00Z",
-     "cuotas": {
-      "c1": 2.64,
-      "cx": 3.78,
-      "c2": 2.34,
-      "co25": 1.4,
-      "cu25": 2.81
-     },
-     "lh": 1.5926,
-     "la": 1.6968,
-     "p1": 0.3583,
-     "px": 0.2394,
-     "p2": 0.4023,
-     "o25": 0.6384,
-     "btts": 0.6551,
-     "marcador": "1-1",
-     "p_marcador": 0.1053
-    },
-    {
      "fecha": "2026-11-27",
      "local": "Werder Bremen",
      "visitante": "Borussia Mönchengladbach",
@@ -8057,6 +7123,52 @@
      "btts": 0.4143,
      "marcador": "0-1",
      "p_marcador": 0.14
+    },
+    {
+     "fecha": "2026-12-19",
+     "local": "Bayern Múnich",
+     "visitante": "Werder Bremen",
+     "pendiente": false,
+     "córners": [
+      7.07,
+      3.26
+     ],
+     "tarjetas": [
+      1.6,
+      2.07
+     ],
+     "lh": 3.7446,
+     "la": 0.911,
+     "p1": 0.8669,
+     "px": 0.0857,
+     "p2": 0.0474,
+     "o25": 0.8429,
+     "btts": 0.5852,
+     "marcador": "3-0",
+     "p_marcador": 0.0834
+    },
+    {
+     "fecha": "2026-12-19",
+     "local": "Elversberg",
+     "visitante": "Hamburger SV",
+     "pendiente": false,
+     "córners": [
+      5.98,
+      4.45
+     ],
+     "tarjetas": [
+      2.02,
+      2.17
+     ],
+     "lh": 2.3667,
+     "la": 1.312,
+     "p1": 0.605,
+     "px": 0.1972,
+     "p2": 0.1977,
+     "o25": 0.7109,
+     "btts": 0.6657,
+     "marcador": "2-1",
+     "p_marcador": 0.0928
     }
    ],
    "validacion": {
@@ -8160,18 +7272,6 @@
    "selecciones": {
     "seguras": [
      {
-      "fecha": "2026-11-22",
-      "local": "Sassuolo",
-      "visitante": "Genoa",
-      "inicio": "2026-11-22T14:00:00Z",
-      "mercado": "1X",
-      "etiqueta": "Sassuolo o empate",
-      "prob": 0.6678,
-      "cuota": 1.51,
-      "ve": 0.0099,
-      "prob_mercado": 0.6202
-     },
-     {
       "fecha": "2026-11-23",
       "local": "Monza",
       "visitante": "Fiorentina",
@@ -8182,455 +7282,10 @@
       "cuota": 1.57,
       "ve": -0.0547,
       "prob_mercado": 0.5943
-     },
-     {
-      "fecha": "2026-11-22",
-      "local": "Milan",
-      "visitante": "Frosinone",
-      "inicio": "2026-11-22T17:00:00Z",
-      "mercado": "1",
-      "etiqueta": "Gana Milan",
-      "prob": 0.5141,
-      "cuota": 1.52,
-      "ve": -0.2186,
-      "prob_mercado": 0.6173
-     },
-     {
-      "fecha": "2026-11-22",
-      "local": "Atalanta",
-      "visitante": "Inter",
-      "inicio": "2026-11-22T19:45:00Z",
-      "mercado": "2",
-      "etiqueta": "Gana Inter",
-      "prob": 0.5172,
-      "cuota": 1.59,
-      "ve": -0.1777,
-      "prob_mercado": 0.5917
      }
     ],
-    "valor": [
-     {
-      "fecha": "2026-11-22",
-      "local": "Milan",
-      "visitante": "Frosinone",
-      "inicio": "2026-11-22T17:00:00Z",
-      "mercado": "2",
-      "etiqueta": "Gana Frosinone",
-      "prob": 0.271,
-      "cuota": 5.21,
-      "ve": 0.4119,
-      "prob_mercado": 0.1801
-     },
-     {
-      "fecha": "2026-11-22",
-      "local": "Bologna",
-      "visitante": "Udinese",
-      "inicio": "2026-11-22T14:00:00Z",
-      "mercado": "2",
-      "etiqueta": "Gana Udinese",
-      "prob": 0.2787,
-      "cuota": 4.7,
-      "ve": 0.3099,
-      "prob_mercado": 0.1997
-     },
-     {
-      "fecha": "2026-11-22",
-      "local": "Atalanta",
-      "visitante": "Inter",
-      "inicio": "2026-11-22T19:45:00Z",
-      "mercado": "1",
-      "etiqueta": "Gana Atalanta",
-      "prob": 0.2557,
-      "cuota": 4.79,
-      "ve": 0.2248,
-      "prob_mercado": 0.1964
-     },
-     {
-      "fecha": "2026-11-22",
-      "local": "Sassuolo",
-      "visitante": "Genoa",
-      "inicio": "2026-11-22T14:00:00Z",
-      "mercado": "1",
-      "etiqueta": "Gana Sassuolo",
-      "prob": 0.4102,
-      "cuota": 2.75,
-      "ve": 0.128,
-      "prob_mercado": 0.3411
-     },
-     {
-      "fecha": "2026-11-22",
-      "local": "Juventus",
-      "visitante": "Venezia",
-      "inicio": "2026-11-22T11:30:00Z",
-      "mercado": "u25",
-      "etiqueta": "Menos de 2.5 goles",
-      "prob": 0.4902,
-      "cuota": 2.26,
-      "ve": 0.1079,
-      "prob_mercado": 0.413
-     }
-    ],
+    "valor": [],
     "partidos": [
-     {
-      "fecha": "2026-11-22",
-      "local": "Bologna",
-      "visitante": "Udinese",
-      "inicio": "2026-11-22T14:00:00Z",
-      "mercados": [
-       {
-        "mercado": "1",
-        "etiqueta": "Gana Bologna",
-        "prob": 0.4685,
-        "cuota": 1.71,
-        "ve": -0.1989,
-        "prob_mercado": 0.5488
-       },
-       {
-        "mercado": "X",
-        "etiqueta": "Empate",
-        "prob": 0.2527,
-        "cuota": 3.73,
-        "ve": -0.0574,
-        "prob_mercado": 0.2516
-       },
-       {
-        "mercado": "2",
-        "etiqueta": "Gana Udinese",
-        "prob": 0.2787,
-        "cuota": 4.7,
-        "ve": 0.3099,
-        "prob_mercado": 0.1997
-       },
-       {
-        "mercado": "1X",
-        "etiqueta": "Bologna o empate",
-        "prob": 0.7212,
-        "cuota": 1.17,
-        "ve": -0.1544,
-        "prob_mercado": 0.8003
-       },
-       {
-        "mercado": "X2",
-        "etiqueta": "Udinese o empate",
-        "prob": 0.5314,
-        "cuota": 2.08,
-        "ve": 0.1051,
-        "prob_mercado": 0.4512
-       },
-       {
-        "mercado": "12",
-        "etiqueta": "No hay empate",
-        "prob": 0.7472,
-        "cuota": 1.25,
-        "ve": -0.0631,
-        "prob_mercado": 0.7484
-       },
-       {
-        "mercado": "o25",
-        "etiqueta": "Más de 2.5 goles",
-        "prob": 0.4942,
-        "cuota": 1.86,
-        "ve": -0.0808,
-        "prob_mercado": 0.5013
-       },
-       {
-        "mercado": "u25",
-        "etiqueta": "Menos de 2.5 goles",
-        "prob": 0.5058,
-        "cuota": 1.87,
-        "ve": -0.0542,
-        "prob_mercado": 0.4987
-       }
-      ]
-     },
-     {
-      "fecha": "2026-11-22",
-      "local": "Juventus",
-      "visitante": "Venezia",
-      "inicio": "2026-11-22T11:30:00Z",
-      "mercados": [
-       {
-        "mercado": "1",
-        "etiqueta": "Gana Juventus",
-        "prob": 0.679,
-        "cuota": 1.34,
-        "ve": -0.0901,
-        "prob_mercado": 0.6995
-       },
-       {
-        "mercado": "X",
-        "etiqueta": "Empate",
-        "prob": 0.1983,
-        "cuota": 5.08,
-        "ve": 0.0074,
-        "prob_mercado": 0.1845
-       },
-       {
-        "mercado": "2",
-        "etiqueta": "Gana Venezia",
-        "prob": 0.1227,
-        "cuota": 8.08,
-        "ve": -0.0086,
-        "prob_mercado": 0.116
-       },
-       {
-        "mercado": "1X",
-        "etiqueta": "Juventus o empate",
-        "prob": 0.8773,
-        "cuota": 1.06,
-        "ve": -0.0698,
-        "prob_mercado": 0.884
-       },
-       {
-        "mercado": "X2",
-        "etiqueta": "Venezia o empate",
-        "prob": 0.321,
-        "cuota": 3.12,
-        "ve": 0.0012,
-        "prob_mercado": 0.3005
-       },
-       {
-        "mercado": "12",
-        "etiqueta": "No hay empate",
-        "prob": 0.8017,
-        "cuota": 1.15,
-        "ve": -0.0785,
-        "prob_mercado": 0.8155
-       },
-       {
-        "mercado": "o25",
-        "etiqueta": "Más de 2.5 goles",
-        "prob": 0.5098,
-        "cuota": 1.59,
-        "ve": -0.1894,
-        "prob_mercado": 0.587
-       },
-       {
-        "mercado": "u25",
-        "etiqueta": "Menos de 2.5 goles",
-        "prob": 0.4902,
-        "cuota": 2.26,
-        "ve": 0.1079,
-        "prob_mercado": 0.413
-       }
-      ]
-     },
-     {
-      "fecha": "2026-11-22",
-      "local": "Sassuolo",
-      "visitante": "Genoa",
-      "inicio": "2026-11-22T14:00:00Z",
-      "mercados": [
-       {
-        "mercado": "1",
-        "etiqueta": "Gana Sassuolo",
-        "prob": 0.4102,
-        "cuota": 2.75,
-        "ve": 0.128,
-        "prob_mercado": 0.3411
-       },
-       {
-        "mercado": "X",
-        "etiqueta": "Empate",
-        "prob": 0.2576,
-        "cuota": 3.36,
-        "ve": -0.1345,
-        "prob_mercado": 0.2792
-       },
-       {
-        "mercado": "2",
-        "etiqueta": "Gana Genoa",
-        "prob": 0.3322,
-        "cuota": 2.47,
-        "ve": -0.1795,
-        "prob_mercado": 0.3798
-       },
-       {
-        "mercado": "1X",
-        "etiqueta": "Sassuolo o empate",
-        "prob": 0.6678,
-        "cuota": 1.51,
-        "ve": 0.0099,
-        "prob_mercado": 0.6202
-       },
-       {
-        "mercado": "X2",
-        "etiqueta": "Genoa o empate",
-        "prob": 0.5898,
-        "cuota": 1.42,
-        "ve": -0.1604,
-        "prob_mercado": 0.6589
-       },
-       {
-        "mercado": "12",
-        "etiqueta": "No hay empate",
-        "prob": 0.7424,
-        "cuota": 1.3,
-        "ve": -0.034,
-        "prob_mercado": 0.7208
-       },
-       {
-        "mercado": "o25",
-        "etiqueta": "Más de 2.5 goles",
-        "prob": 0.496,
-        "cuota": 1.87,
-        "ve": -0.0725,
-        "prob_mercado": 0.4987
-       },
-       {
-        "mercado": "u25",
-        "etiqueta": "Menos de 2.5 goles",
-        "prob": 0.504,
-        "cuota": 1.86,
-        "ve": -0.0626,
-        "prob_mercado": 0.5013
-       }
-      ]
-     },
-     {
-      "fecha": "2026-11-22",
-      "local": "Milan",
-      "visitante": "Frosinone",
-      "inicio": "2026-11-22T17:00:00Z",
-      "mercados": [
-       {
-        "mercado": "1",
-        "etiqueta": "Gana Milan",
-        "prob": 0.5141,
-        "cuota": 1.52,
-        "ve": -0.2186,
-        "prob_mercado": 0.6173
-       },
-       {
-        "mercado": "X",
-        "etiqueta": "Empate",
-        "prob": 0.2149,
-        "cuota": 4.63,
-        "ve": -0.005,
-        "prob_mercado": 0.2026
-       },
-       {
-        "mercado": "2",
-        "etiqueta": "Gana Frosinone",
-        "prob": 0.271,
-        "cuota": 5.21,
-        "ve": 0.4119,
-        "prob_mercado": 0.1801
-       },
-       {
-        "mercado": "1X",
-        "etiqueta": "Milan o empate",
-        "prob": 0.729,
-        "cuota": 1.14,
-        "ve": -0.1658,
-        "prob_mercado": 0.8199
-       },
-       {
-        "mercado": "X2",
-        "etiqueta": "Frosinone o empate",
-        "prob": 0.4859,
-        "cuota": 2.45,
-        "ve": 0.1912,
-        "prob_mercado": 0.3827
-       },
-       {
-        "mercado": "12",
-        "etiqueta": "No hay empate",
-        "prob": 0.7851,
-        "cuota": 1.18,
-        "ve": -0.0762,
-        "prob_mercado": 0.7974
-       },
-       {
-        "mercado": "o25",
-        "etiqueta": "Más de 2.5 goles",
-        "prob": 0.6633,
-        "cuota": 1.34,
-        "ve": -0.1112,
-        "prob_mercado": 0.6989
-       },
-       {
-        "mercado": "u25",
-        "etiqueta": "Menos de 2.5 goles",
-        "prob": 0.3367,
-        "cuota": 3.11,
-        "ve": 0.0471,
-        "prob_mercado": 0.3011
-       }
-      ]
-     },
-     {
-      "fecha": "2026-11-22",
-      "local": "Atalanta",
-      "visitante": "Inter",
-      "inicio": "2026-11-22T19:45:00Z",
-      "mercados": [
-       {
-        "mercado": "1",
-        "etiqueta": "Gana Atalanta",
-        "prob": 0.2557,
-        "cuota": 4.79,
-        "ve": 0.2248,
-        "prob_mercado": 0.1964
-       },
-       {
-        "mercado": "X",
-        "etiqueta": "Empate",
-        "prob": 0.2271,
-        "cuota": 4.44,
-        "ve": 0.0083,
-        "prob_mercado": 0.2119
-       },
-       {
-        "mercado": "2",
-        "etiqueta": "Gana Inter",
-        "prob": 0.5172,
-        "cuota": 1.59,
-        "ve": -0.1777,
-        "prob_mercado": 0.5917
-       },
-       {
-        "mercado": "1X",
-        "etiqueta": "Atalanta o empate",
-        "prob": 0.4828,
-        "cuota": 2.3,
-        "ve": 0.1125,
-        "prob_mercado": 0.4083
-       },
-       {
-        "mercado": "X2",
-        "etiqueta": "Inter o empate",
-        "prob": 0.7443,
-        "cuota": 1.17,
-        "ve": -0.1286,
-        "prob_mercado": 0.8036
-       },
-       {
-        "mercado": "12",
-        "etiqueta": "No hay empate",
-        "prob": 0.7729,
-        "cuota": 1.19,
-        "ve": -0.0774,
-        "prob_mercado": 0.7881
-       },
-       {
-        "mercado": "o25",
-        "etiqueta": "Más de 2.5 goles",
-        "prob": 0.5902,
-        "cuota": 1.39,
-        "ve": -0.1796,
-        "prob_mercado": 0.6729
-       },
-       {
-        "mercado": "u25",
-        "etiqueta": "Menos de 2.5 goles",
-        "prob": 0.4098,
-        "cuota": 2.86,
-        "ve": 0.172,
-        "prob_mercado": 0.3271
-       }
-      ]
-     },
      {
       "fecha": "2026-11-23",
       "local": "Monza",
@@ -8704,82 +7359,7 @@
       ]
      }
     ],
-    "combinadas": [
-     {
-      "prob": 0.4021,
-      "cuota": 2.37,
-      "ve": -0.0468,
-      "patas": [
-       {
-        "fecha": "2026-11-22",
-        "local": "Sassuolo",
-        "visitante": "Genoa",
-        "inicio": "2026-11-22T14:00:00Z",
-        "mercado": "1X",
-        "etiqueta": "Sassuolo o empate",
-        "prob": 0.6678,
-        "cuota": 1.51,
-        "ve": 0.0099,
-        "prob_mercado": 0.6202
-       },
-       {
-        "fecha": "2026-11-23",
-        "local": "Monza",
-        "visitante": "Fiorentina",
-        "inicio": "2026-11-23T19:45:00Z",
-        "mercado": "o25",
-        "etiqueta": "Más de 2.5 goles",
-        "prob": 0.6021,
-        "cuota": 1.57,
-        "ve": -0.0547,
-        "prob_mercado": 0.5943
-       }
-      ]
-     },
-     {
-      "prob": 0.2067,
-      "cuota": 3.6,
-      "ve": -0.2551,
-      "patas": [
-       {
-        "fecha": "2026-11-22",
-        "local": "Sassuolo",
-        "visitante": "Genoa",
-        "inicio": "2026-11-22T14:00:00Z",
-        "mercado": "1X",
-        "etiqueta": "Sassuolo o empate",
-        "prob": 0.6678,
-        "cuota": 1.51,
-        "ve": 0.0099,
-        "prob_mercado": 0.6202
-       },
-       {
-        "fecha": "2026-11-23",
-        "local": "Monza",
-        "visitante": "Fiorentina",
-        "inicio": "2026-11-23T19:45:00Z",
-        "mercado": "o25",
-        "etiqueta": "Más de 2.5 goles",
-        "prob": 0.6021,
-        "cuota": 1.57,
-        "ve": -0.0547,
-        "prob_mercado": 0.5943
-       },
-       {
-        "fecha": "2026-11-22",
-        "local": "Milan",
-        "visitante": "Frosinone",
-        "inicio": "2026-11-22T17:00:00Z",
-        "mercado": "1",
-        "etiqueta": "Gana Milan",
-        "prob": 0.5141,
-        "cuota": 1.52,
-        "ve": -0.2186,
-        "prob_mercado": 0.6173
-       }
-      ]
-     }
-    ],
+    "combinadas": [],
     "historial": {
      "seguras": {
       "apuestas": 295,
@@ -10355,161 +8935,6 @@
    ],
    "proximos": [
     {
-     "fecha": "2026-11-22",
-     "local": "Bologna",
-     "visitante": "Udinese",
-     "pendiente": false,
-     "córners": [
-      5.41,
-      3.85
-     ],
-     "tarjetas": [
-      1.61,
-      2.14
-     ],
-     "inicio": "2026-11-22T14:00:00Z",
-     "cuotas": {
-      "c1": 1.71,
-      "cx": 3.73,
-      "c2": 4.7,
-      "co25": 1.86,
-      "cu25": 1.87
-     },
-     "lh": 1.5311,
-     "la": 1.1196,
-     "p1": 0.4685,
-     "px": 0.2527,
-     "p2": 0.2787,
-     "o25": 0.4942,
-     "btts": 0.527,
-     "marcador": "1-1",
-     "p_marcador": 0.1201
-    },
-    {
-     "fecha": "2026-11-22",
-     "local": "Juventus",
-     "visitante": "Venezia",
-     "pendiente": false,
-     "córners": [
-      6.76,
-      3.54
-     ],
-     "tarjetas": [
-      1.53,
-      2.12
-     ],
-     "inicio": "2026-11-22T11:30:00Z",
-     "cuotas": {
-      "c1": 1.34,
-      "cx": 5.08,
-      "c2": 8.08,
-      "co25": 1.59,
-      "cu25": 2.26
-     },
-     "lh": 2.005,
-     "la": 0.7089,
-     "p1": 0.679,
-     "px": 0.1983,
-     "p2": 0.1227,
-     "o25": 0.5098,
-     "btts": 0.4387,
-     "marcador": "1-0",
-     "p_marcador": 0.1336
-    },
-    {
-     "fecha": "2026-11-22",
-     "local": "Sassuolo",
-     "visitante": "Genoa",
-     "pendiente": false,
-     "córners": [
-      4.88,
-      4.05
-     ],
-     "tarjetas": [
-      1.99,
-      2.08
-     ],
-     "inicio": "2026-11-22T14:00:00Z",
-     "cuotas": {
-      "c1": 2.75,
-      "cx": 3.36,
-      "c2": 2.47,
-      "co25": 1.87,
-      "cu25": 1.86
-     },
-     "lh": 1.413,
-     "la": 1.2447,
-     "p1": 0.4102,
-     "px": 0.2576,
-     "p2": 0.3322,
-     "o25": 0.496,
-     "btts": 0.5377,
-     "marcador": "1-1",
-     "p_marcador": 0.1224
-    },
-    {
-     "fecha": "2026-11-22",
-     "local": "Milan",
-     "visitante": "Frosinone",
-     "pendiente": false,
-     "córners": [
-      5.34,
-      4.54
-     ],
-     "tarjetas": [
-      1.82,
-      1.95
-     ],
-     "inicio": "2026-11-22T17:00:00Z",
-     "cuotas": {
-      "c1": 1.52,
-      "cx": 4.63,
-      "c2": 5.21,
-      "co25": 1.34,
-      "cu25": 3.11
-     },
-     "lh": 2.0048,
-     "la": 1.4112,
-     "p1": 0.5141,
-     "px": 0.2149,
-     "p2": 0.271,
-     "o25": 0.6633,
-     "btts": 0.6536,
-     "marcador": "2-1",
-     "p_marcador": 0.0931
-    },
-    {
-     "fecha": "2026-11-22",
-     "local": "Atalanta",
-     "visitante": "Inter",
-     "pendiente": false,
-     "córners": [
-      4.36,
-      4.84
-     ],
-     "tarjetas": [
-      1.55,
-      1.67
-     ],
-     "inicio": "2026-11-22T19:45:00Z",
-     "cuotas": {
-      "c1": 4.79,
-      "cx": 4.44,
-      "c2": 1.59,
-      "co25": 1.39,
-      "cu25": 2.86
-     },
-     "lh": 1.2261,
-     "la": 1.8345,
-     "p1": 0.2557,
-     "px": 0.2271,
-     "p2": 0.5172,
-     "o25": 0.5902,
-     "btts": 0.5929,
-     "marcador": "1-1",
-     "p_marcador": 0.1046
-    },
-    {
      "fecha": "2026-11-23",
      "local": "Monza",
      "visitante": "Fiorentina",
@@ -11091,6 +9516,121 @@
      "btts": 0.4798,
      "marcador": "1-0",
      "p_marcador": 0.1292
+    },
+    {
+     "fecha": "2026-12-13",
+     "local": "Inter",
+     "visitante": "Torino",
+     "pendiente": false,
+     "córners": [
+      6.29,
+      3.02
+     ],
+     "tarjetas": [
+      1.47,
+      1.87
+     ],
+     "lh": 2.6616,
+     "la": 0.8558,
+     "p1": 0.7574,
+     "px": 0.146,
+     "p2": 0.0966,
+     "o25": 0.6823,
+     "btts": 0.5344,
+     "marcador": "2-0",
+     "p_marcador": 0.1051
+    },
+    {
+     "fecha": "2026-12-13",
+     "local": "Como",
+     "visitante": "Bologna",
+     "pendiente": false,
+     "córners": [
+      4.95,
+      3.62
+     ],
+     "tarjetas": [
+      1.89,
+      2.23
+     ],
+     "lh": 1.5537,
+     "la": 1.0712,
+     "p1": 0.4856,
+     "px": 0.2517,
+     "p2": 0.2627,
+     "o25": 0.4878,
+     "btts": 0.5175,
+     "marcador": "1-1",
+     "p_marcador": 0.1197
+    },
+    {
+     "fecha": "2026-12-13",
+     "local": "Lecce",
+     "visitante": "Sassuolo",
+     "pendiente": false,
+     "córners": [
+      5.3,
+      4.07
+     ],
+     "tarjetas": [
+      1.84,
+      1.96
+     ],
+     "lh": 1.1137,
+     "la": 1.3268,
+     "p1": 0.3137,
+     "px": 0.2701,
+     "p2": 0.4162,
+     "o25": 0.4408,
+     "btts": 0.4925,
+     "marcador": "1-1",
+     "p_marcador": 0.1278
+    },
+    {
+     "fecha": "2026-12-13",
+     "local": "Udinese",
+     "visitante": "Frosinone",
+     "pendiente": false,
+     "córners": [
+      5.66,
+      5.07
+     ],
+     "tarjetas": [
+      1.86,
+      1.78
+     ],
+     "lh": 1.3814,
+     "la": 1.9077,
+     "p1": 0.2795,
+     "px": 0.2213,
+     "p2": 0.4993,
+     "o25": 0.6384,
+     "btts": 0.6369,
+     "marcador": "1-1",
+     "p_marcador": 0.0975
+    },
+    {
+     "fecha": "2026-12-13",
+     "local": "Parma",
+     "visitante": "Fiorentina",
+     "pendiente": false,
+     "córners": [
+      4.46,
+      4.6
+     ],
+     "tarjetas": [
+      1.86,
+      2.17
+     ],
+     "lh": 1.0112,
+     "la": 1.3426,
+     "p1": 0.2828,
+     "px": 0.2731,
+     "p2": 0.4441,
+     "o25": 0.4182,
+     "btts": 0.4691,
+     "marcador": "0-1",
+     "p_marcador": 0.1285
     }
    ],
    "validacion": {
@@ -11187,376 +9727,9 @@
    },
    "arbitros": {},
    "selecciones": {
-    "seguras": [
-     {
-      "fecha": "2026-11-22",
-      "local": "Marseille",
-      "visitante": "Le Mans",
-      "inicio": "2026-11-22T19:45:00Z",
-      "mercado": "o25",
-      "etiqueta": "Más de 2.5 goles",
-      "prob": 0.7612,
-      "cuota": 1.49,
-      "ve": 0.1342,
-      "prob_mercado": 0.6275
-     },
-     {
-      "fecha": "2026-11-22",
-      "local": "Lorient",
-      "visitante": "Rennes",
-      "inicio": "2026-11-22T16:15:00Z",
-      "mercado": "1X",
-      "etiqueta": "Lorient o empate",
-      "prob": 0.6542,
-      "cuota": 1.54,
-      "ve": 0.0065,
-      "prob_mercado": 0.6084
-     },
-     {
-      "fecha": "2026-11-22",
-      "local": "Paris FC",
-      "visitante": "Angers",
-      "inicio": "2026-11-22T14:00:00Z",
-      "mercado": "o25",
-      "etiqueta": "Más de 2.5 goles",
-      "prob": 0.5169,
-      "cuota": 1.58,
-      "ve": -0.1833,
-      "prob_mercado": 0.5907
-     }
-    ],
-    "valor": [
-     {
-      "fecha": "2026-11-22",
-      "local": "Lorient",
-      "visitante": "Rennes",
-      "inicio": "2026-11-22T16:15:00Z",
-      "mercado": "1",
-      "etiqueta": "Gana Lorient",
-      "prob": 0.4049,
-      "cuota": 2.81,
-      "ve": 0.1378,
-      "prob_mercado": 0.3331
-     },
-     {
-      "fecha": "2026-11-22",
-      "local": "Marseille",
-      "visitante": "Le Mans",
-      "inicio": "2026-11-22T19:45:00Z",
-      "mercado": "o25",
-      "etiqueta": "Más de 2.5 goles",
-      "prob": 0.7612,
-      "cuota": 1.49,
-      "ve": 0.1342,
-      "prob_mercado": 0.6275
-     },
-     {
-      "fecha": "2026-11-22",
-      "local": "Paris FC",
-      "visitante": "Angers",
-      "inicio": "2026-11-22T14:00:00Z",
-      "mercado": "u25",
-      "etiqueta": "Menos de 2.5 goles",
-      "prob": 0.4831,
-      "cuota": 2.28,
-      "ve": 0.1015,
-      "prob_mercado": 0.4093
-     }
-    ],
-    "partidos": [
-     {
-      "fecha": "2026-11-22",
-      "local": "Lorient",
-      "visitante": "Rennes",
-      "inicio": "2026-11-22T16:15:00Z",
-      "mercados": [
-       {
-        "mercado": "1",
-        "etiqueta": "Gana Lorient",
-        "prob": 0.4049,
-        "cuota": 2.81,
-        "ve": 0.1378,
-        "prob_mercado": 0.3331
-       },
-       {
-        "mercado": "X",
-        "etiqueta": "Empate",
-        "prob": 0.2493,
-        "cuota": 3.4,
-        "ve": -0.1524,
-        "prob_mercado": 0.2753
-       },
-       {
-        "mercado": "2",
-        "etiqueta": "Gana Rennes",
-        "prob": 0.3458,
-        "cuota": 2.39,
-        "ve": -0.1735,
-        "prob_mercado": 0.3916
-       },
-       {
-        "mercado": "1X",
-        "etiqueta": "Lorient o empate",
-        "prob": 0.6542,
-        "cuota": 1.54,
-        "ve": 0.0065,
-        "prob_mercado": 0.6084
-       },
-       {
-        "mercado": "X2",
-        "etiqueta": "Rennes o empate",
-        "prob": 0.5951,
-        "cuota": 1.4,
-        "ve": -0.1648,
-        "prob_mercado": 0.6669
-       },
-       {
-        "mercado": "12",
-        "etiqueta": "No hay empate",
-        "prob": 0.7507,
-        "cuota": 1.29,
-        "ve": -0.0305,
-        "prob_mercado": 0.7247
-       },
-       {
-        "mercado": "o25",
-        "etiqueta": "Más de 2.5 goles",
-        "prob": 0.5815,
-        "cuota": 1.82,
-        "ve": 0.0583,
-        "prob_mercado": 0.5121
-       },
-       {
-        "mercado": "u25",
-        "etiqueta": "Menos de 2.5 goles",
-        "prob": 0.4185,
-        "cuota": 1.91,
-        "ve": -0.2007,
-        "prob_mercado": 0.4879
-       }
-      ]
-     },
-     {
-      "fecha": "2026-11-22",
-      "local": "Paris FC",
-      "visitante": "Angers",
-      "inicio": "2026-11-22T14:00:00Z",
-      "mercados": [
-       {
-        "mercado": "1",
-        "etiqueta": "Gana Paris FC",
-        "prob": 0.6632,
-        "cuota": 1.31,
-        "ve": -0.1312,
-        "prob_mercado": 0.7135
-       },
-       {
-        "mercado": "X",
-        "etiqueta": "Empate",
-        "prob": 0.2096,
-        "cuota": 5.22,
-        "ve": 0.0941,
-        "prob_mercado": 0.1791
-       },
-       {
-        "mercado": "2",
-        "etiqueta": "Gana Angers",
-        "prob": 0.1272,
-        "cuota": 8.7,
-        "ve": 0.1066,
-        "prob_mercado": 0.1074
-       },
-       {
-        "mercado": "1X",
-        "etiqueta": "Paris FC o empate",
-        "prob": 0.8728,
-        "cuota": 1.05,
-        "ve": -0.086,
-        "prob_mercado": 0.8926
-       },
-       {
-        "mercado": "X2",
-        "etiqueta": "Angers o empate",
-        "prob": 0.3368,
-        "cuota": 3.26,
-        "ve": 0.0988,
-        "prob_mercado": 0.2865
-       },
-       {
-        "mercado": "12",
-        "etiqueta": "No hay empate",
-        "prob": 0.7904,
-        "cuota": 1.14,
-        "ve": -0.1001,
-        "prob_mercado": 0.8209
-       },
-       {
-        "mercado": "o25",
-        "etiqueta": "Más de 2.5 goles",
-        "prob": 0.5169,
-        "cuota": 1.58,
-        "ve": -0.1833,
-        "prob_mercado": 0.5907
-       },
-       {
-        "mercado": "u25",
-        "etiqueta": "Menos de 2.5 goles",
-        "prob": 0.4831,
-        "cuota": 2.28,
-        "ve": 0.1015,
-        "prob_mercado": 0.4093
-       }
-      ]
-     },
-     {
-      "fecha": "2026-11-22",
-      "local": "Marseille",
-      "visitante": "Le Mans",
-      "inicio": "2026-11-22T19:45:00Z",
-      "mercados": [
-       {
-        "mercado": "1",
-        "etiqueta": "Gana Marseille",
-        "prob": 0.7404,
-        "cuota": 1.45,
-        "ve": 0.0736,
-        "prob_mercado": 0.645
-       },
-       {
-        "mercado": "X",
-        "etiqueta": "Empate",
-        "prob": 0.1476,
-        "cuota": 4.66,
-        "ve": -0.3122,
-        "prob_mercado": 0.2007
-       },
-       {
-        "mercado": "2",
-        "etiqueta": "Gana Le Mans",
-        "prob": 0.112,
-        "cuota": 6.06,
-        "ve": -0.3213,
-        "prob_mercado": 0.1543
-       },
-       {
-        "mercado": "1X",
-        "etiqueta": "Marseille o empate",
-        "prob": 0.888,
-        "cuota": 1.11,
-        "ve": -0.018,
-        "prob_mercado": 0.8457
-       },
-       {
-        "mercado": "X2",
-        "etiqueta": "Le Mans o empate",
-        "prob": 0.2596,
-        "cuota": 2.63,
-        "ve": -0.3161,
-        "prob_mercado": 0.355
-       },
-       {
-        "mercado": "12",
-        "etiqueta": "No hay empate",
-        "prob": 0.8524,
-        "cuota": 1.17,
-        "ve": -0.0027,
-        "prob_mercado": 0.7993
-       },
-       {
-        "mercado": "o25",
-        "etiqueta": "Más de 2.5 goles",
-        "prob": 0.7612,
-        "cuota": 1.49,
-        "ve": 0.1342,
-        "prob_mercado": 0.6275
-       },
-       {
-        "mercado": "u25",
-        "etiqueta": "Menos de 2.5 goles",
-        "prob": 0.2388,
-        "cuota": 2.51,
-        "ve": -0.4006,
-        "prob_mercado": 0.3725
-       }
-      ]
-     }
-    ],
-    "combinadas": [
-     {
-      "prob": 0.498,
-      "cuota": 2.29,
-      "ve": 0.1427,
-      "patas": [
-       {
-        "fecha": "2026-11-22",
-        "local": "Marseille",
-        "visitante": "Le Mans",
-        "inicio": "2026-11-22T19:45:00Z",
-        "mercado": "o25",
-        "etiqueta": "Más de 2.5 goles",
-        "prob": 0.7612,
-        "cuota": 1.49,
-        "ve": 0.1342,
-        "prob_mercado": 0.6275
-       },
-       {
-        "fecha": "2026-11-22",
-        "local": "Lorient",
-        "visitante": "Rennes",
-        "inicio": "2026-11-22T16:15:00Z",
-        "mercado": "1X",
-        "etiqueta": "Lorient o empate",
-        "prob": 0.6542,
-        "cuota": 1.54,
-        "ve": 0.0065,
-        "prob_mercado": 0.6084
-       }
-      ]
-     },
-     {
-      "prob": 0.2574,
-      "cuota": 3.63,
-      "ve": -0.0668,
-      "patas": [
-       {
-        "fecha": "2026-11-22",
-        "local": "Marseille",
-        "visitante": "Le Mans",
-        "inicio": "2026-11-22T19:45:00Z",
-        "mercado": "o25",
-        "etiqueta": "Más de 2.5 goles",
-        "prob": 0.7612,
-        "cuota": 1.49,
-        "ve": 0.1342,
-        "prob_mercado": 0.6275
-       },
-       {
-        "fecha": "2026-11-22",
-        "local": "Lorient",
-        "visitante": "Rennes",
-        "inicio": "2026-11-22T16:15:00Z",
-        "mercado": "1X",
-        "etiqueta": "Lorient o empate",
-        "prob": 0.6542,
-        "cuota": 1.54,
-        "ve": 0.0065,
-        "prob_mercado": 0.6084
-       },
-       {
-        "fecha": "2026-11-22",
-        "local": "Paris FC",
-        "visitante": "Angers",
-        "inicio": "2026-11-22T14:00:00Z",
-        "mercado": "o25",
-        "etiqueta": "Más de 2.5 goles",
-        "prob": 0.5169,
-        "cuota": 1.58,
-        "ve": -0.1833,
-        "prob_mercado": 0.5907
-       }
-      ]
-     }
-    ],
+    "seguras": [],
+    "valor": [],
+    "combinadas": [],
     "historial": {
      "seguras": {
       "apuestas": 226,
@@ -12872,99 +11045,6 @@
    ],
    "proximos": [
     {
-     "fecha": "2026-11-22",
-     "local": "Lorient",
-     "visitante": "Rennes",
-     "pendiente": false,
-     "córners": [
-      4.27,
-      5.33
-     ],
-     "tarjetas": [
-      1.82,
-      2.14
-     ],
-     "inicio": "2026-11-22T16:15:00Z",
-     "cuotas": {
-      "c1": 2.81,
-      "cx": 3.4,
-      "c2": 2.39,
-      "co25": 1.82,
-      "cu25": 1.91
-     },
-     "lh": 1.578,
-     "la": 1.4432,
-     "p1": 0.4049,
-     "px": 0.2493,
-     "p2": 0.3458,
-     "o25": 0.5815,
-     "btts": 0.6101,
-     "marcador": "1-1",
-     "p_marcador": 0.115
-    },
-    {
-     "fecha": "2026-11-22",
-     "local": "Paris FC",
-     "visitante": "Angers",
-     "pendiente": false,
-     "córners": [
-      5.0,
-      4.02
-     ],
-     "tarjetas": [
-      1.8,
-      1.78
-     ],
-     "inicio": "2026-11-22T14:00:00Z",
-     "cuotas": {
-      "c1": 1.31,
-      "cx": 5.22,
-      "c2": 8.7,
-      "co25": 1.58,
-      "cu25": 2.28
-     },
-     "lh": 1.9957,
-     "la": 0.7477,
-     "p1": 0.6632,
-     "px": 0.2096,
-     "p2": 0.1272,
-     "o25": 0.5169,
-     "btts": 0.4584,
-     "marcador": "2-0",
-     "p_marcador": 0.1282
-    },
-    {
-     "fecha": "2026-11-22",
-     "local": "Marseille",
-     "visitante": "Le Mans",
-     "pendiente": false,
-     "córners": [
-      5.73,
-      3.21
-     ],
-     "tarjetas": [
-      1.86,
-      2.08
-     ],
-     "inicio": "2026-11-22T19:45:00Z",
-     "cuotas": {
-      "c1": 1.45,
-      "cx": 4.66,
-      "c2": 6.06,
-      "co25": 1.49,
-      "cu25": 2.51
-     },
-     "lh": 2.8994,
-     "la": 1.0963,
-     "p1": 0.7404,
-     "px": 0.1476,
-     "p2": 0.112,
-     "o25": 0.7612,
-     "btts": 0.6313,
-     "marcador": "2-1",
-     "p_marcador": 0.0848
-    },
-    {
      "fecha": "2026-11-27",
      "local": "Brest",
      "visitante": "Paris FC",
@@ -13584,6 +11664,75 @@
      "btts": 0.6302,
      "marcador": "1-1",
      "p_marcador": 0.1055
+    },
+    {
+     "fecha": "2027-01-02",
+     "local": "Le Mans",
+     "visitante": "Lyon",
+     "pendiente": false,
+     "córners": [
+      4.75,
+      5.07
+     ],
+     "tarjetas": [
+      2.09,
+      1.91
+     ],
+     "lh": 1.1934,
+     "la": 1.7099,
+     "p1": 0.2627,
+     "px": 0.2465,
+     "p2": 0.4908,
+     "o25": 0.5548,
+     "btts": 0.5747,
+     "marcador": "1-1",
+     "p_marcador": 0.1159
+    },
+    {
+     "fecha": "2027-01-02",
+     "local": "Lille",
+     "visitante": "Strasbourg",
+     "pendiente": false,
+     "córners": [
+      5.22,
+      3.48
+     ],
+     "tarjetas": [
+      1.95,
+      2.04
+     ],
+     "lh": 1.6167,
+     "la": 1.0435,
+     "p1": 0.5029,
+     "px": 0.2565,
+     "p2": 0.2406,
+     "o25": 0.4966,
+     "btts": 0.5234,
+     "marcador": "1-1",
+     "p_marcador": 0.1222
+    },
+    {
+     "fecha": "2027-01-02",
+     "local": "Lorient",
+     "visitante": "Auxerre",
+     "pendiente": false,
+     "córners": [
+      4.8,
+      4.5
+     ],
+     "tarjetas": [
+      1.74,
+      2.23
+     ],
+     "lh": 1.5718,
+     "la": 1.0455,
+     "p1": 0.4911,
+     "px": 0.2608,
+     "p2": 0.2481,
+     "o25": 0.4859,
+     "btts": 0.5181,
+     "marcador": "1-1",
+     "p_marcador": 0.1242
     }
    ],
    "validacion": {
